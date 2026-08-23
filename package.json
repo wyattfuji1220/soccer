@@ -10,7 +10,8 @@
     "typecheck": "tsc --noEmit",
     "export:output": "node scripts/copy-to-output.mjs",
     "data:wikipedia": "node scripts/fetch-wikipedia.mjs",
-    "data:fixtures": "node scripts/fetch-fixtures.mjs"
+    "data:fixtures": "node scripts/fetch-fixtures.mjs",
+    "data:videos": "node scripts/verify-videos.mjs"
   },
   "dependencies": {
     "next": "^15.5.23",

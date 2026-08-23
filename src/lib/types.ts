@@ -80,3 +80,15 @@ export type Fixture = {
   status: "SCHEDULED" | "IN_PLAY" | "FINISHED";
   score?: { home: number | null; away: number | null };
 };
+
+/** 選手ページに埋め込む公式動画。権利者自身のチャンネルのものだけを扱う */
+export type PlayerVideo = {
+  playerSlug: string;
+  videoId: string;
+  /** YouTube の oEmbed が返した実際のタイトル */
+  title: string;
+  /** YouTube の oEmbed が返した実際のチャンネル名 */
+  channel: string;
+  channelUrl: string;
+  verifiedAt: string;
+};

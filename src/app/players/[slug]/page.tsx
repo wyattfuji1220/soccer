@@ -5,6 +5,7 @@ import { players } from "@/data/players";
 import { leagueMap } from "@/data/leagues";
 import { broadcasters } from "@/data/broadcasters";
 import { PositionBadge, ConfidenceBadge, AdDisclosure } from "@/components/Badges";
+import { PlayerVideos } from "@/components/PlayerVideos";
 import { age, formatDateJa, yen } from "@/lib/format";
 import { amazonSearchUrl, rakutenSearchUrl, broadcasterLink } from "@/lib/affiliate";
 
@@ -112,6 +113,8 @@ export default async function PlayerPage({ params }: Props) {
           Wikipedia の記述は クリエイティブ・コモンズ 表示-継承ライセンス にもとづき参照しています。
         </p>
       </section>
+
+      <PlayerVideos slug={player.slug} playerName={player.nameJa} />
 
       {watchOptions.length > 0 && (
         <section className="mt-12">
