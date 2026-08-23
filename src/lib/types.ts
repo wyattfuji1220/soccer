@@ -26,6 +26,8 @@ export type League = {
   country: string;
   /** football-data.org のコンペティションコード（無料枠で取得可能なもののみ） */
   footballDataCode?: string;
+  /** 1クラブあたりのリーグ戦年間試合数。視聴プラン診断の単価計算に使う */
+  matchesPerSeason: number;
 };
 
 export type Position = "GK" | "DF" | "MF" | "FW";
@@ -63,4 +65,18 @@ export type Broadcaster = {
   freeTrialNote?: string;
   lastChecked: string;
   confidence: Confidence;
+};
+
+/** 試合。日程は football-data.org から取得し、日本時間への変換は表示時に行う */
+export type Fixture = {
+  id: string;
+  league: LeagueId;
+  /** ISO 8601（UTC） */
+  utcDate: string;
+  homeTeam: string;
+  homeTeamEn: string;
+  awayTeam: string;
+  awayTeamEn: string;
+  status: "SCHEDULED" | "IN_PLAY" | "FINISHED";
+  score?: { home: number | null; away: number | null };
 };

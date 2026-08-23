@@ -2,8 +2,14 @@ import Link from "next/link";
 import { players } from "@/data/players";
 import { leagues, leagueMap } from "@/data/leagues";
 import { PlayerCard } from "@/components/PlayerCard";
+import { TonightBoard } from "@/components/TonightBoard";
+import { getFixtures, groupByNight, playersInFixture } from "@/lib/fixtures";
+import { SITE_URL } from "@/lib/site";
 
 export default function Home() {
+  // 静的ビルド時点の日時。クライアント側で実時刻に差し替わる。
+  const buildTime = new Date().toISOString();
+
   const byLeague = leagues
     .map((l) => ({ league: l, count: players.filter((p) => p.league === l.id).length }))
     .filter((x) => x.count > 0)
@@ -11,41 +17,78 @@ export default function Home() {
 
   const featured = players.slice(0, 8);
 
+  // 検索結果に日程が出る可能性を上げるため、直近の試合を SportsEvent として出力する
+  const nextNight = groupByNight(getFixtures(new Date()))[0];
+  const eventsJsonLd = (nextNight?.fixtures ?? []).slice(0, 8).map((f) => ({
+    "@context": "https://schema.org",
+    "@type": "SportsEvent",
+    name: `${f.homeTeam} vs ${f.awayTeam}`,
+    startDate: f.utcDate,
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    location: { "@type": "Place", name: f.homeTeam, address: leagueMap[f.league].country },
+    competitor: [
+      { "@type": "SportsTeam", name: f.homeTeamEn },
+      { "@type": "SportsTeam", name: f.awayTeamEn },
+    ],
+    url: `${SITE_URL}/fixtures/`,
+    about: playersInFixture(f).map((p) => ({ "@type": "Person", name: p.nameJa })),
+  }));
+
   return (
     <>
-      <section className="border-b" style={{ borderColor: "var(--border)" }}>
-        <div className="mx-auto max-w-6xl px-4 py-16 md:py-24">
-          <p className="text-sm font-semibold text-pitch-600 dark:text-pitch-300 mb-4">
-            欧州で戦う日本人選手のファクトデータベース
-          </p>
-          <h1 className="text-3xl md:text-5xl font-bold leading-tight tracking-tight max-w-3xl">
-            誰が、どこで、いつ戦っているか。
-            <br />
-            出典付きで、正確に。
-          </h1>
-          <p className="mt-6 max-w-2xl muted leading-relaxed">
-            所属クラブ・経歴・試合日程を一次情報にもとづいて整理しています。
-            推測や噂は載せません。情報の確度と最終確認日をすべてのページに明記しています。
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link
-              href="/players/"
-              className="px-5 py-3 rounded-lg bg-pitch-500 text-white font-semibold hover:bg-pitch-600 transition-colors"
-            >
-              選手を探す
-            </Link>
-            <Link
-              href="/guides/"
-              className="px-5 py-3 rounded-lg surface font-semibold hover:border-pitch-500/50 transition-colors"
-            >
-              日本から観る方法
-            </Link>
-          </div>
-        </div>
+      <section className="mx-auto max-w-5xl px-4 pt-14 pb-6">
+        <p className="text-sm font-semibold text-pitch-600 dark:text-pitch-300">
+          欧州で戦う日本人選手のファクトデータベース
+        </p>
+        <h1 className="mt-4 text-3xl md:text-5xl font-bold leading-tight tracking-tight max-w-3xl">
+          今夜、誰の試合が、
+          <br />
+          何時に、どこで観られるか。
+        </h1>
+        <p className="mt-5 max-w-2xl muted leading-relaxed">
+          海外組の試合を日本時間で並べ、それぞれの配信先まで示します。所属や経歴は出典と最終確認日つき。
+          推測や噂は載せません。
+        </p>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-12">
-        <h2 className="text-xl font-bold mb-6">リーグ別</h2>
+      <section className="mx-auto max-w-5xl px-4 pb-4">
+        <TonightBoard buildTime={buildTime} />
+        {eventsJsonLd.map((e, i) => (
+          <script
+            key={i}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(e) }}
+          />
+        ))}
+      </section>
+
+      <section className="mx-auto max-w-5xl px-4 py-8">
+        <Link
+          href="/watch-plan/"
+          className="block rounded-2xl p-6 sm:p-8 border border-pitch-500/40 hover:border-pitch-500 transition-colors"
+          style={{ background: "color-mix(in srgb, var(--color-pitch-500) 7%, var(--surface))" }}
+        >
+          <div className="flex items-start justify-between gap-6 flex-wrap">
+            <div className="max-w-xl">
+              <p className="text-xs font-bold text-pitch-600 dark:text-pitch-300">視聴プラン診断</p>
+              <p className="mt-2 text-xl sm:text-2xl font-bold leading-snug">
+                その契約、本当に必要ですか。
+              </p>
+              <p className="mt-3 text-sm muted leading-relaxed">
+                追いかけたい選手を選ぶだけで、必要な配信サービスの組み合わせ・年間費用・
+                1試合あたりの単価を計算します。
+              </p>
+            </div>
+            <span className="text-sm font-semibold text-pitch-600 dark:text-pitch-300 whitespace-nowrap">
+              診断する →
+            </span>
+          </div>
+        </Link>
+      </section>
+
+      <section className="mx-auto max-w-5xl px-4 py-8">
+        <h2 className="text-xl font-bold mb-5">リーグ別</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           {byLeague.map(({ league, count }) => (
             <Link
@@ -53,7 +96,10 @@ export default function Home() {
               href={`/players/?league=${league.id}`}
               className="surface rounded-xl p-4 hover:border-pitch-500/50 transition-colors"
             >
-              <p className="text-2xl font-bold">{count}<span className="text-sm font-normal muted ml-1">人</span></p>
+              <p className="text-2xl font-bold tabular-nums">
+                {count}
+                <span className="text-sm font-normal muted ml-1">人</span>
+              </p>
               <p className="text-sm mt-1 truncate">{league.name}</p>
               <p className="text-xs muted">{league.country}</p>
             </Link>
@@ -61,8 +107,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-12">
-        <div className="flex items-baseline justify-between mb-6">
+      <section className="mx-auto max-w-5xl px-4 py-8">
+        <div className="flex items-baseline justify-between mb-5">
           <h2 className="text-xl font-bold">注目の選手</h2>
           <Link href="/players/" className="text-sm text-pitch-600 dark:text-pitch-300 hover:underline">
             すべて見る →
@@ -75,9 +121,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-12">
-        <div className="surface rounded-2xl p-8">
-          <h2 className="text-xl font-bold mb-3">このサイトの編集方針</h2>
+      <section className="mx-auto max-w-5xl px-4 py-8">
+        <div className="surface rounded-2xl p-6 sm:p-8">
+          <h2 className="text-xl font-bold mb-4">このサイトの編集方針</h2>
           <ul className="space-y-3 text-sm leading-relaxed muted">
             <li>
               <strong style={{ color: "var(--text)" }}>出典を明示する。</strong>{" "}

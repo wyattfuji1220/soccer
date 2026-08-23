@@ -1,88 +1,140 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import fixtures from "@/data/fixtures.json";
 import { leagueMap } from "@/data/leagues";
-import { players } from "@/data/players";
-import type { LeagueId } from "@/lib/types";
+import { broadcasters } from "@/data/broadcasters";
+import { broadcasterLink } from "@/lib/affiliate";
+import {
+  getFixtures,
+  groupByNight,
+  playersInFixture,
+  usingSampleData,
+  fixturesUpdatedAt,
+} from "@/lib/fixtures";
+import { jstTime, jstDate, fromJst } from "@/lib/jst";
 
 export const metadata: Metadata = {
-  title: "日本人選手が出場するリーグの試合日程",
+  title: "海外組の試合日程｜日本時間で見る欧州各リーグ",
   description:
-    "海外組が所属するクラブの試合日程を、日本時間で一覧表示します。データは football-data.org から取得しています。",
+    "日本人選手が所属するクラブの試合日程を、日本時間で一覧表示します。各試合の配信サービスも併記しています。",
 };
 
-type Match = {
-  id: number;
-  league: LeagueId;
-  utcDate: string;
-  homeTeam: string;
-  awayTeam: string;
-  status: string;
-  score?: { home: number | null; away: number | null };
-};
-
-const data = fixtures as { updatedAt: string | null; matches: Match[] };
-
-function jstLabel(utc: string) {
-  const d = new Date(utc);
-  const jst = new Date(d.getTime() + 9 * 60 * 60 * 1000);
-  const w = ["日", "月", "火", "水", "木", "金", "土"][jst.getUTCDay()];
-  const p = (n: number) => String(n).padStart(2, "0");
-  return `${jst.getUTCMonth() + 1}/${p(jst.getUTCDate())}（${w}）${p(jst.getUTCHours())}:${p(jst.getUTCMinutes())}`;
+function nightHeading(key: string): string {
+  const [y, m, d] = key.split("-").map(Number);
+  return jstDate(fromJst(y, m, d, 12));
 }
 
 export default function FixturesPage() {
-  const watchedLeagues = [...new Set(players.map((p) => p.league))];
+  const nights = groupByNight(getFixtures(new Date()));
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
       <h1 className="text-3xl font-bold tracking-tight">試合日程</h1>
       <p className="mt-3 muted text-sm max-w-2xl leading-relaxed">
-        海外組が所属するクラブの試合を、日本時間（JST）で表示します。
-        {data.updatedAt ? `データ最終更新: ${data.updatedAt}` : ""}
+        日本時間（JST）で表示しています。欧州の夜の試合は日本時間だと翌朝になるため、
+        夜9時から翌朝9時までを「ひと晩」としてまとめています。
+        {fixturesUpdatedAt ? ` データ最終更新: ${fixturesUpdatedAt}` : ""}
       </p>
 
-      {data.matches.length === 0 ? (
-        <div className="mt-8 surface rounded-xl p-6">
-          <p className="font-semibold">日程データは未取得です</p>
-          <p className="mt-2 text-sm muted leading-relaxed">
-            日程は football-data.org の無料APIから取得します。APIキーを{" "}
-            <code className="px-1.5 py-0.5 rounded text-xs" style={{ background: "var(--border)" }}>.env.local</code>{" "}
-            に設定したうえで、次のコマンドを実行してください。
-          </p>
-          <pre className="mt-4 text-xs rounded-lg p-4 overflow-x-auto" style={{ background: "var(--border)" }}>
-npm run data:fixtures
-          </pre>
-          <p className="mt-4 text-sm muted">
-            現在の対象リーグ:{" "}
-            {watchedLeagues.map((id) => leagueMap[id].name).join(" / ")}
-          </p>
-        </div>
-      ) : (
-        <ul className="mt-8 space-y-2">
-          {data.matches.map((m) => (
-            <li key={m.id} className="surface rounded-lg px-4 py-3 flex items-center gap-4 text-sm">
-              <span className="muted text-xs w-32 shrink-0">{jstLabel(m.utcDate)}</span>
-              <span className="text-xs muted w-28 shrink-0 truncate">{leagueMap[m.league]?.name}</span>
-              <span className="flex-1 truncate">
-                {m.homeTeam} <span className="muted">vs</span> {m.awayTeam}
-              </span>
-              {m.score && m.score.home !== null && (
-                <span className="font-bold tabular-nums">{m.score.home} - {m.score.away}</span>
-              )}
-            </li>
-          ))}
-        </ul>
+      {usingSampleData && (
+        <p className="mt-5 text-sm px-4 py-3 rounded-lg bg-amber-500/12 text-amber-700 dark:text-amber-400 leading-relaxed">
+          <strong>これはサンプル日程です。</strong>{" "}
+          football-data.org のAPIキーを <code className="font-mono text-xs">.env.local</code> に設定し、
+          <code className="font-mono text-xs">npm run data:fixtures</code> を実行すると実際の日程に切り替わります。
+        </p>
       )}
 
-      <p className="mt-8 text-xs muted">
+      {nights.length === 0 && (
+        <p className="mt-10 text-center muted text-sm">予定されている試合がありません。</p>
+      )}
+
+      <div className="mt-10 space-y-10">
+        {nights.map(({ key, fixtures }) => (
+          <section key={key}>
+            <h2 className="text-sm font-bold tracking-wide pb-2 border-b" style={{ borderColor: "var(--border)" }}>
+              {nightHeading(key)}の夜
+              <span className="ml-2 muted font-normal">{fixtures.length}試合</span>
+            </h2>
+
+            <div>
+              {fixtures.map((f) => {
+                const kickoff = new Date(f.utcDate);
+                const league = leagueMap[f.league];
+                const featured = playersInFixture(f);
+                const options = broadcasters.filter((b) => b.leagues.includes(f.league));
+
+                return (
+                  <div
+                    key={f.id}
+                    className="grid grid-cols-[auto_1fr] gap-x-4 py-4 border-b"
+                    style={{ borderColor: "var(--border)" }}
+                  >
+                    <div className="pt-0.5">
+                      <p className="text-base font-bold tabular-nums leading-none">{jstTime(kickoff)}</p>
+                    </div>
+                    <div className="min-w-0">
+                      <p className="text-xs muted">{league.name}</p>
+                      <p className="mt-1 font-semibold leading-snug">
+                        {f.homeTeam} <span className="muted font-normal mx-0.5">vs</span> {f.awayTeam}
+                        {f.score && f.score.home !== null && (
+                          <span className="ml-3 tabular-nums">
+                            {f.score.home} - {f.score.away}
+                          </span>
+                        )}
+                      </p>
+                      {featured.length > 0 && (
+                        <div className="mt-2 flex flex-wrap gap-1.5">
+                          {featured.map((p) => (
+                            <Link
+                              key={p.slug}
+                              href={`/players/${p.slug}/`}
+                              className="text-xs px-2 py-1 rounded-full border hover:border-pitch-500 transition-colors"
+                              style={{ borderColor: "var(--border)" }}
+                            >
+                              {p.nameJa}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                      {options.length > 0 && (
+                        <div className="mt-2 flex flex-wrap items-center gap-2">
+                          <span className="text-[11px] muted">視聴</span>
+                          {options.map((b) => (
+                            <a
+                              key={b.id}
+                              href={broadcasterLink(b)}
+                              target="_blank"
+                              rel="noopener noreferrer sponsored"
+                              className="text-[11px] font-semibold px-2 py-1 rounded bg-pitch-500/10 text-pitch-600 dark:text-pitch-300 hover:bg-pitch-500/20 transition-colors"
+                            >
+                              {b.name}
+                            </a>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </section>
+        ))}
+      </div>
+
+      <p className="mt-10 text-xs muted leading-relaxed">
         日程データ出典:{" "}
-        <a href="https://www.football-data.org/" target="_blank" rel="noopener noreferrer nofollow" className="hover:underline">
+        <a
+          href="https://www.football-data.org/"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          className="hover:underline"
+        >
           football-data.org
         </a>
-        。試合の中継予定は{" "}
-        <Link href="/guides/" className="text-pitch-600 dark:text-pitch-300 hover:underline">視聴ガイド</Link>
-        をご覧ください。
+        。どのサービスを契約すべきかは{" "}
+        <Link href="/watch-plan/" className="text-pitch-600 dark:text-pitch-300 hover:underline">
+          視聴プラン診断
+        </Link>
+        で計算できます。本ページの配信サービスへのリンクには広告が含まれます。
       </p>
     </div>
   );
