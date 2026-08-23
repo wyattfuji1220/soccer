@@ -48,6 +48,7 @@ jobs:
         env:
           NEXT_PUBLIC_BASE_PATH: /soccer
           NEXT_PUBLIC_SITE_URL: https://wyattfuji1220.github.io/soccer
+          NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ secrets.GOOGLE_SITE_VERIFICATION }}
           NEXT_PUBLIC_AMAZON_TAG: ${{ secrets.AMAZON_TAG }}
           NEXT_PUBLIC_RAKUTEN_AFFILIATE_ID: ${{ secrets.RAKUTEN_AFFILIATE_ID }}
         run: npm run build

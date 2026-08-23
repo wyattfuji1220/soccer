@@ -11,6 +11,10 @@ export const metadata: Metadata = {
   },
   description:
     "欧州各リーグでプレーする日本人選手の所属・経歴・試合日程を、出典付きで整理したファクトデータベース。日本からの視聴方法もまとめています。",
+  // Search Console の所有権確認コード。リポジトリシークレットから注入する
+  verification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
+    : undefined,
   openGraph: {
     type: "website",
     locale: "ja_JP",
