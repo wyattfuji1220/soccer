@@ -31,6 +31,37 @@ npm run dev
 | `npm run data:wikipedia` | 選手データを Wikipedia と照合し `output/data-verification.md` を生成 |
 | `npm run data:fixtures` | football-data.org から試合日程を取得し `src/data/fixtures.json` を更新 |
 
+## デプロイ
+
+GitHub Actions で GitHub Pages に自動デプロイする（`.github/workflows/deploy.yml`）。
+
+- `main` へのプッシュごとにビルドして公開
+- 毎日 21:00 JST に再ビルド（日程データの鮮度を保つため）
+- 公開URL: https://wyattfuji1220.github.io/soccer/
+
+### 初回のみ必要な設定
+
+GitHub リポジトリの **Settings → Pages → Build and deployment → Source** を
+**「GitHub Actions」** に変更する。これを行うまでワークフローは失敗する。
+
+### リポジトリシークレット（任意）
+
+**Settings → Secrets and variables → Actions** に登録すると、ビルド時に反映される。
+未登録でもビルドは通る。
+
+| シークレット名 | 用途 |
+| --- | --- |
+| `FOOTBALL_DATA_TOKEN` | 実際の試合日程を取得する。未設定ならサンプル日程のまま |
+| `AMAZON_TAG` | AmazonアソシエイトのトラッキングID |
+| `RAKUTEN_AFFILIATE_ID` | 楽天アフィリエイトID |
+
+### サブパス配信について
+
+GitHub Pages はリポジトリ名のサブパス（`/soccer/`）で配信されるため、
+ワークフローで `NEXT_PUBLIC_BASE_PATH=/soccer` を渡している。
+独自ドメインを取得してルート配信に切り替える場合は、この環境変数を外し、
+`NEXT_PUBLIC_SITE_URL` を新しいドメインに変更する。
+
 ## データの扱い方
 
 `src/lib/types.ts` の `confidence` フィールドで、情報の確度を2段階で管理する。

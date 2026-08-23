@@ -1,0 +1,70 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  # 日程データの鮮度を保つため毎日再ビルドする（21:00 JST = 12:00 UTC）
+  schedule:
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - run: npm ci
+
+      - name: 型チェック
+        run: npm run typecheck
+
+      - name: 試合日程を取得
+        # APIキーが未設定のうちはスキップされ、サンプル日程のままビルドされる
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+        run: |
+          if [ -n "$FOOTBALL_DATA_TOKEN" ]; then
+            npm run data:fixtures
+          else
+            echo "FOOTBALL_DATA_TOKEN が未設定のため、サンプル日程のままビルドします"
+          fi
+
+      - name: ビルド
+        env:
+          NEXT_PUBLIC_BASE_PATH: /soccer
+          NEXT_PUBLIC_SITE_URL: https://wyattfuji1220.github.io/soccer
+          NEXT_PUBLIC_AMAZON_TAG: ${{ secrets.AMAZON_TAG }}
+          NEXT_PUBLIC_RAKUTEN_AFFILIATE_ID: ${{ secrets.RAKUTEN_AFFILIATE_ID }}
+        run: npm run build
+
+      - name: Jekyll の処理を無効化
+        run: touch out/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
