@@ -30,7 +30,17 @@ function existingFacts() {
 }
 
 const facts = existingFacts();
-const slugOf = (nameEn) => nameEn.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+/**
+ * ローマ字表記には長音符号が含まれることがある（例: Keisuke Gotō）。
+ * 表示はそのまま残し、URLに使うときだけ Goto に落とす。
+ */
+const slugOf = (nameEn) =>
+  nameEn
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
 const esc = (s) => String(s).replace(/\\/g, "\\\\").replace(/"/g, '\\"');
 
 const abroad = fetched
