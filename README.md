@@ -37,7 +37,7 @@ GitHub Actions で GitHub Pages に自動デプロイする（`.github/workflows
 
 - `main` へのプッシュごとにビルドして公開
 - 毎日 21:00 JST に再ビルド（日程データの鮮度を保つため）
-- 公開URL: https://wyattfuji1220.github.io/soccer/
+- 公開URL: https://kaigai-gumi.com/
 
 ### 初回のみ必要な設定
 
@@ -55,12 +55,11 @@ GitHub リポジトリの **Settings → Pages → Build and deployment → Sour
 | `AMAZON_TAG` | AmazonアソシエイトのトラッキングID |
 | `RAKUTEN_AFFILIATE_ID` | 楽天アフィリエイトID |
 
-### サブパス配信について
+### 独自ドメイン
 
-GitHub Pages はリポジトリ名のサブパス（`/soccer/`）で配信されるため、
-ワークフローで `NEXT_PUBLIC_BASE_PATH=/soccer` を渡している。
-独自ドメインを取得してルート配信に切り替える場合は、この環境変数を外し、
-`NEXT_PUBLIC_SITE_URL` を新しいドメインに変更する。
+`kaigai-gumi.com` をルート配信している。DNSはムームーDNSで管理し、
+GitHub Pages の A/AAAA レコードと www の CNAME を設定済み。
+`public/CNAME` がビルド成果物に含まれるため、Actionsデプロイでもカスタムドメイン設定が維持される。
 
 ## データの扱い方
 
