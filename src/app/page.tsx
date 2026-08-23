@@ -5,6 +5,7 @@ import { PlayerCard } from "@/components/PlayerCard";
 import { TonightBoard } from "@/components/TonightBoard";
 import { getFixtures, groupByNight, playersInFixture } from "@/lib/fixtures";
 import { SITE_URL } from "@/lib/site";
+import type { LeagueId } from "@/lib/types";
 
 export default function Home() {
   // 静的ビルド時点の日時。クライアント側で実時刻に差し替わる。
@@ -15,7 +16,17 @@ export default function Home() {
     .filter((x) => x.count > 0)
     .sort((a, b) => b.count - a.count);
 
-  const featured = players.slice(0, 8);
+  // 選手データは五十音順なので、そのまま並べると偏る。主要リーグの選手を優先して見せる
+  const featurePriority: LeagueId[] = ["premier-league", "la-liga", "bundesliga", "serie-a", "ligue-1"];
+  const featured = [...players]
+    .sort((a, b) => {
+      const rank = (id: LeagueId) => {
+        const i = featurePriority.indexOf(id);
+        return i === -1 ? featurePriority.length : i;
+      };
+      return rank(a.league) - rank(b.league);
+    })
+    .slice(0, 8);
 
   // 検索結果に日程が出る可能性を上げるため、直近の試合を SportsEvent として出力する
   const nextNight = groupByNight(getFixtures(new Date()))[0];

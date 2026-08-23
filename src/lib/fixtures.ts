@@ -18,7 +18,7 @@ export const fixturesUpdatedAt = file.updatedAt;
  * サンプル日程。football-data.org のAPIキー設定前でも体験を確認できるようにする。
  * クラブ名は掲載中の選手の所属クラブから取っているため、選手との紐付けもそのまま動く。
  */
-const opponents: Record<LeagueId, { ja: string; en: string }[]> = {
+const opponents: Partial<Record<LeagueId, { ja: string; en: string }[]>> = {
   "premier-league": [
     { ja: "マンチェスター・シティ", en: "Manchester City" },
     { ja: "トッテナム・ホットスパー", en: "Tottenham Hotspur" },
@@ -56,6 +56,17 @@ const opponents: Record<LeagueId, { ja: string; en: string }[]> = {
     { ja: "ハート・オブ・ミドロシアン", en: "Heart of Midlothian" },
     { ja: "アバディーンFC", en: "Aberdeen FC" },
   ],
+  championship: [
+    { ja: "リーズ・ユナイテッド", en: "Leeds United" },
+    { ja: "ノリッジ・シティ", en: "Norwich City" },
+  ],
+  "bundesliga-2": [
+    { ja: "ハンブルガーSV", en: "Hamburger SV" },
+    { ja: "ヘルタ・ベルリン", en: "Hertha BSC" },
+  ],
+  "segunda-division": [{ ja: "レアル・サラゴサ", en: "Real Zaragoza" }],
+  "challenger-pro-league": [{ ja: "ロンメルSK", en: "Lommel SK" }],
+  "danish-superliga": [{ ja: "ブレンビーIF", en: "Brøndby IF" }],
 };
 
 /** 掲載中の選手が所属するクラブ（リーグごと） */
@@ -97,23 +108,26 @@ export function sampleFixtures(now: Date): Fixture[] {
 
   const [by, bm, bd] = nightKey(now).split("-").map(Number);
 
-  return slots.map((slot, i) => {
+  return slots.flatMap<Fixture>((slot, i) => {
     const { league, club } = entries[i % entries.length];
     const pool = opponents[league];
+    if (!pool || pool.length === 0) return [];
     const opponent = pool[i % pool.length];
     const homeIsOurs = i % 2 === 0;
     const kickoff = fromJst(by, bm, bd + slot.nightOffset, slot.hour, slot.minute);
 
-    return {
-      id: `sample-${i}`,
-      league,
-      utcDate: kickoff.toISOString(),
-      homeTeam: homeIsOurs ? club.ja : opponent.ja,
-      homeTeamEn: homeIsOurs ? club.en : opponent.en,
-      awayTeam: homeIsOurs ? opponent.ja : club.ja,
-      awayTeamEn: homeIsOurs ? opponent.en : club.en,
-      status: "SCHEDULED" as const,
-    };
+    return [
+      {
+        id: `sample-${i}`,
+        league,
+        utcDate: kickoff.toISOString(),
+        homeTeam: homeIsOurs ? club.ja : opponent.ja,
+        homeTeamEn: homeIsOurs ? club.en : opponent.en,
+        awayTeam: homeIsOurs ? opponent.ja : club.ja,
+        awayTeamEn: homeIsOurs ? opponent.en : club.en,
+        status: "SCHEDULED",
+      },
+    ];
   });
 }
 

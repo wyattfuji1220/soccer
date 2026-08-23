@@ -15,9 +15,14 @@ export type LeagueId =
   | "serie-a"
   | "ligue-1"
   | "eredivisie"
-  | "jupiler-pro-league"
   | "primeira-liga"
-  | "scottish-premiership";
+  | "jupiler-pro-league"
+  | "scottish-premiership"
+  | "danish-superliga"
+  | "championship"
+  | "bundesliga-2"
+  | "segunda-division"
+  | "challenger-pro-league";
 
 export type League = {
   id: LeagueId;
@@ -47,8 +52,24 @@ export type Player = {
   /** 所属情報の確度。移籍市場中は needs-review になりやすい */
   confidence: Confidence;
   sources: Source[];
-  /** 事実の箇条書き。ニュースの転載ではなく、確認済みの事実のみ */
-  facts: string[];
+  /** 事実の箇条書き。ニュースの転載ではなく、確認済みの事実のみ。任意 */
+  facts?: string[];
+  /** クラブ遍歴。Wikipediaのインフォボックスから機械的に取得している */
+  career: CareerRow[];
+  /** 代表歴 */
+  nationalCareer: CareerRow[];
+};
+
+export type CareerRow = {
+  /** "2019-2022" や "2022-" のような表記のまま持つ */
+  years: string | null;
+  team: string;
+  /** IOCコード。国旗表示ではなく国名の判別に使う */
+  country: string | null;
+  /** 期限付き移籍 */
+  loan: boolean;
+  apps: number | null;
+  goals: number | null;
 };
 
 /** 日本国内での視聴手段。放映権は毎シーズン変動するため lastChecked を必ず表示する */

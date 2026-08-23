@@ -6,6 +6,7 @@ import { leagueMap } from "@/data/leagues";
 import { broadcasters } from "@/data/broadcasters";
 import { PositionBadge, ConfidenceBadge, AdDisclosure } from "@/components/Badges";
 import { PlayerVideos } from "@/components/PlayerVideos";
+import { CareerTimeline } from "@/components/CareerTimeline";
 import { age, formatDateJa, yen } from "@/lib/format";
 import { amazonSearchUrl, rakutenSearchUrl, broadcasterLink } from "@/lib/affiliate";
 
@@ -85,17 +86,21 @@ export default async function PlayerPage({ params }: Props) {
         </dl>
       </section>
 
-      <section className="mt-10">
-        <h2 className="text-xl font-bold mb-4">経歴・特徴</h2>
-        <ul className="space-y-3">
-          {player.facts.map((f, i) => (
-            <li key={i} className="flex gap-3 text-sm leading-relaxed">
-              <span className="mt-2 w-1.5 h-1.5 rounded-full bg-pitch-500 shrink-0" aria-hidden />
-              <span>{f}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
+      {player.facts && player.facts.length > 0 && (
+        <section className="mt-10">
+          <h2 className="text-xl font-bold mb-4">特徴</h2>
+          <ul className="space-y-3">
+            {player.facts.map((f, i) => (
+              <li key={i} className="flex gap-3 text-sm leading-relaxed">
+                <span className="mt-2 w-1.5 h-1.5 rounded-full bg-pitch-500 shrink-0" aria-hidden />
+                <span>{f}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <CareerTimeline career={player.career} nationalCareer={player.nationalCareer} />
 
       <section className="mt-10">
         <h2 className="text-xl font-bold mb-4">出典</h2>
