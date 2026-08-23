@@ -68,9 +68,15 @@ function PlanCard({ plan, tone }: { plan: Plan; tone: "primary" | "compare" }) {
           {plan.unavailable.length > 0 && (
             <p className="text-xs px-3 py-2 rounded-md bg-amber-500/12 text-amber-700 dark:text-amber-400">
               {plan.unavailable.map((l) => leagueMap[l].name).join("・")}
-              は、当サイトが掲載しているどのサービスでも配信を確認できていません。この分の試合は集計に含めていません。
+              は、当サイトが掲載しているどのサービスでも全試合の配信を確認できていません。この分の試合は集計に含めていません。
             </p>
           )}
+          {plan.partialOnly.map((x) => (
+            <p key={x.league} className="text-xs px-3 py-2 rounded-md bg-black/5 dark:bg-white/10 muted">
+              ただし{leagueMap[x.league].name}は、{x.services.join("・")}
+              で毎節一部の試合を観られます。全試合ではないため、上の試合数には含めていません。
+            </p>
+          ))}
         </div>
       )}
 

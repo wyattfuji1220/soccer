@@ -1,60 +1,83 @@
 import type { Broadcaster } from "@/lib/types";
 
 /**
- * 日本国内の視聴手段。
- * 放映権はシーズンごと（時にはシーズン途中でも）変わるため、
- * すべて lastChecked を必ずUIに表示し、confidence: "needs-review" を初期値とする。
- * 契約更新時期（毎年7月・1月）に必ず各社公式ページで再確認すること。
+ * 日本国内の視聴手段。2026-27シーズン開幕時点で確認した内容。
+ *
+ * 放映権はシーズンごと（時にはシーズン途中でも）変わる。すべて lastChecked をUIに表示し、
+ * 申し込み前に公式ページを見てもらう前提で書く。
+ *
+ * 2026年8月24日の確認で、前シーズンまでの前提が大きく変わっていた。
+ *  - プレミアリーグは U-NEXT の独占配信になり、DAZNでは観られない
+ *  - エールディヴィジも U-NEXT
+ *  - SPOTV NOW は欧州主要リーグの配信から外れている
+ *  - スコティッシュ・プレミアシップは国内の定額配信がなく、クラブ公式チャンネルのみ
  */
 export const broadcasters: Broadcaster[] = [
+  {
+    id: "u-next-soccer-pack",
+    name: "U-NEXT サッカーパック",
+    monthlyPriceYen: 2600,
+    leagues: ["premier-league", "la-liga", "eredivisie"],
+    officialUrl: "https://www.video.unext.jp/lp/football_pack",
+    lastChecked: "2026-08-24",
+    confidence: "verified",
+    note: "プレミアリーグは全試合独占配信。FAカップ、コパ・デル・レイ、DFBポカール、KNVBカップも対象。見放題プランに入らず、このパック単体でも契約できる。",
+  },
+  {
+    id: "dmm-dazn",
+    name: "DMM×DAZNホーダイ",
+    monthlyPriceYen: 3480,
+    leagues: ["bundesliga", "la-liga", "serie-a", "ligue-1", "jupiler-pro-league", "primeira-liga"],
+    partialLeagues: ["championship"],
+    officialUrl: "https://dmm-dazn.com/",
+    lastChecked: "2026-08-24",
+    confidence: "verified",
+    note: "DAZNと同じ内容をDMMプレミアム込みで視聴できる。月払いではDAZN本体より安い。",
+  },
   {
     id: "dazn",
     name: "DAZN",
     monthlyPriceYen: 4200,
-    leagues: ["la-liga", "serie-a", "premier-league"],
+    leagues: ["bundesliga", "la-liga", "serie-a", "ligue-1", "jupiler-pro-league", "primeira-liga"],
+    partialLeagues: ["championship"],
     officialUrl: "https://www.dazn.com/ja-JP/",
-    lastChecked: "2026-08-23",
-    confidence: "needs-review",
-    freeTrialNote: "料金プランが複数あり、視聴できるリーグがプランにより異なる。",
-  },
-  {
-    id: "spotv-now",
-    name: "SPOTV NOW",
-    monthlyPriceYen: 1300,
-    leagues: ["premier-league", "la-liga", "ligue-1", "eredivisie", "primeira-liga"],
-    officialUrl: "https://www.spotvnow.co.jp/",
-    lastChecked: "2026-08-23",
-    confidence: "needs-review",
-  },
-  {
-    id: "u-next",
-    name: "U-NEXT",
-    monthlyPriceYen: 2189,
-    leagues: ["premier-league", "ligue-1"],
-    officialUrl: "https://video.unext.jp/",
-    lastChecked: "2026-08-23",
-    confidence: "needs-review",
-    freeTrialNote: "無料トライアルの有無・期間は時期により変動。",
+    lastChecked: "2026-08-24",
+    confidence: "verified",
+    note: "スタンダード月間プランの価格。年間一括やABEMA de DAZNなど、より安い契約経路がある。EFLチャンピオンシップは毎節3試合前後の配信で全試合ではない。",
   },
   {
     id: "abema",
     name: "ABEMA",
-    monthlyPriceYen: 1080,
-    leagues: ["premier-league"],
+    monthlyPriceYen: 0,
+    leagues: [],
+    partialLeagues: ["bundesliga"],
     officialUrl: "https://abema.tv/",
-    lastChecked: "2026-08-23",
-    confidence: "needs-review",
-    freeTrialNote: "無料で視聴できる試合も一部ある。",
+    lastChecked: "2026-08-24",
+    confidence: "verified",
+    note: "ブンデスリーガのうち、日本人選手が所属するクラブを中心に毎節一部の試合を無料生中継。全試合ではない。",
+    freeTrialNote: "対象試合は無料で視聴できる。",
   },
   {
-    id: "wowow",
-    name: "WOWOW",
-    monthlyPriceYen: 2530,
-    leagues: ["la-liga"],
-    officialUrl: "https://www.wowow.co.jp/",
-    lastChecked: "2026-08-23",
+    id: "celtic-tv",
+    name: "セルティックTV",
+    monthlyPriceYen: 3000,
+    leagues: ["scottish-premiership"],
+    officialUrl: "https://celticfc.com/",
+    lastChecked: "2026-08-24",
     confidence: "needs-review",
+    note: "セルティックFCが運営する公式チャンネル。同クラブの試合が中心で、リーグ全体の配信ではない。料金はポンド建てのため円換算は変動する。",
   },
 ];
 
 export const broadcasterMap = Object.fromEntries(broadcasters.map((b) => [b.id, b]));
+
+/**
+ * 国内の定額配信サービスで視聴手段が確認できていないリーグ。
+ * 「情報がない」ことを黙って隠さず、明示するために持つ。
+ */
+export const leaguesWithoutBroadcaster: Record<string, string> = {
+  "bundesliga-2": "国内での定額配信は確認できていません。",
+  "segunda-division": "国内での定額配信は確認できていません。",
+  "challenger-pro-league": "国内での定額配信は確認できていません。",
+  "danish-superliga": "国内での定額配信は確認できていません。",
+};

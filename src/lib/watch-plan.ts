@@ -11,6 +11,8 @@ export type Plan = {
   droppedByPlan: LeagueId[];
   /** 当サイトの掲載サービスでは配信元が見つからないリーグ */
   unavailable: LeagueId[];
+  /** 全試合の配信はないが、一部の試合なら観られるリーグ */
+  partialOnly: { league: LeagueId; services: string[] }[];
   /** 対象クラブのリーグ戦の年間試合数の合計 */
   matchesPerYear: number;
   /** 年額 ÷ 視聴できる試合数 */
@@ -26,6 +28,15 @@ function buildPlan(services: Broadcaster[], needed: LeagueId[], selected: Player
   const uncovered = needed.filter((l) => !covered.includes(l));
   const unavailable = uncovered.filter((l) => !broadcasters.some((b) => b.leagues.includes(l)));
   const droppedByPlan = uncovered.filter((l) => !unavailable.includes(l));
+
+  // 全試合の配信がないリーグでも、一部の試合なら観られることがある。
+  // 試合数には数えないが、読者にとっては重要な情報なので別に持つ。
+  const partialOnly = uncovered
+    .map((league) => ({
+      league,
+      services: broadcasters.filter((b) => b.partialLeagues?.includes(league)).map((b) => b.name),
+    }))
+    .filter((x) => x.services.length > 0);
 
   // 視聴できる試合数は「カバーされているリーグに所属するクラブ」だけを数える。
   // 同じクラブに複数の日本人選手がいても試合は1つなので、クラブ単位で重複を除く。
@@ -48,6 +59,7 @@ function buildPlan(services: Broadcaster[], needed: LeagueId[], selected: Player
     covered,
     droppedByPlan,
     unavailable,
+    partialOnly,
     matchesPerYear,
     yenPerMatch: matchesPerYear > 0 ? Math.round(annualYen / matchesPerYear) : null,
   };

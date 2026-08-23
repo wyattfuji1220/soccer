@@ -78,12 +78,16 @@ export type Broadcaster = {
   name: string;
   /** 月額（円）。無料プランのみの場合は 0 */
   monthlyPriceYen: number;
-  /** 現時点で配信していると確認できたリーグ */
+  /** 全試合を配信していると確認できたリーグ */
   leagues: LeagueId[];
+  /** 一部の試合のみ配信しているリーグ。全試合は観られないため、試合数の集計には含めない */
+  partialLeagues?: LeagueId[];
   officialUrl: string;
   /** アフィリエイトリンク。未設定なら officialUrl にフォールバック */
   affiliateUrl?: string;
   freeTrialNote?: string;
+  /** 配信範囲の但し書き。「全試合ではない」などの重要な限定はここに書く */
+  note?: string;
   lastChecked: string;
   confidence: Confidence;
 };
@@ -126,3 +130,11 @@ export type Club = {
   currentPlayers: string[];
   pastPlayers: { nameJa: string; years: string | null; loan: boolean }[];
 };
+
+/** 記事の本文を構成するブロック。表や注意書きを混ぜられるようにしている */
+export type Block =
+  | { type: "p"; text: string }
+  | { type: "list"; items: string[] }
+  | { type: "table"; head: string[]; rows: string[][]; note?: string }
+  | { type: "callout"; text: string }
+  | { type: "broadcasters"; league: LeagueId; heading: string };

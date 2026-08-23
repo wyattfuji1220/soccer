@@ -3,13 +3,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { players } from "@/data/players";
 import { leagueMap } from "@/data/leagues";
-import { broadcasters } from "@/data/broadcasters";
 import { clubsForPlayer } from "@/data/clubs";
 import { PositionBadge, ConfidenceBadge, AdDisclosure } from "@/components/Badges";
 import { PlayerVideos } from "@/components/PlayerVideos";
+import { BroadcasterList } from "@/components/BroadcasterList";
 import { CareerTimeline } from "@/components/CareerTimeline";
-import { age, formatDateJa, yen } from "@/lib/format";
-import { amazonSearchUrl, rakutenSearchUrl, broadcasterLink } from "@/lib/affiliate";
+import { age, formatDateJa } from "@/lib/format";
+import { amazonSearchUrl, rakutenSearchUrl } from "@/lib/affiliate";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -34,7 +34,6 @@ export default async function PlayerPage({ params }: Props) {
   if (!player) notFound();
 
   const league = leagueMap[player.league];
-  const watchOptions = broadcasters.filter((b) => b.leagues.includes(player.league));
   const latestCheck = player.sources[0]?.checkedAt;
   const relatedClubs = clubsForPlayer(player.nameJa);
 
@@ -123,39 +122,7 @@ export default async function PlayerPage({ params }: Props) {
 
       <PlayerVideos slug={player.slug} playerName={player.nameJa} />
 
-      {watchOptions.length > 0 && (
-        <section className="mt-12">
-          <h2 className="text-xl font-bold mb-2">{player.nameJa}の試合を日本から観るには</h2>
-          <p className="text-sm muted mb-4">
-            {league.name}を配信しているサービスです。放映権は変動するため、必ず公式ページで最新の配信対象をご確認ください。
-          </p>
-          <div className="mb-4">
-            <AdDisclosure />
-          </div>
-          <div className="space-y-3">
-            {watchOptions.map((b) => (
-              <div key={b.id} className="surface rounded-xl p-5 flex flex-wrap items-center gap-4">
-                <div className="min-w-0 flex-1">
-                  <p className="font-bold">{b.name}</p>
-                  <p className="text-sm muted mt-0.5">
-                    月額 {yen(b.monthlyPriceYen)}〜
-                    {b.freeTrialNote ? ` ・ ${b.freeTrialNote}` : ""}
-                  </p>
-                  <p className="text-xs muted mt-1">配信内容の最終確認: {b.lastChecked}</p>
-                </div>
-                <a
-                  href={broadcasterLink(b)}
-                  target="_blank"
-                  rel="noopener noreferrer sponsored"
-                  className="px-4 py-2.5 rounded-lg bg-pitch-500 text-white text-sm font-semibold hover:bg-pitch-600 transition-colors shrink-0"
-                >
-                  公式サイトで確認
-                </a>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
+      <BroadcasterList league={player.league} heading={`${player.nameJa}の試合を日本から観るには`} />
 
       <section className="mt-12">
         <h2 className="text-xl font-bold mb-4">関連ページ</h2>

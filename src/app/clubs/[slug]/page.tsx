@@ -4,11 +4,8 @@ import { notFound } from "next/navigation";
 import { clubs } from "@/data/clubs";
 import { players } from "@/data/players";
 import { leagueMap } from "@/data/leagues";
-import { broadcasters } from "@/data/broadcasters";
 import { PlayerCard } from "@/components/PlayerCard";
-import { AdDisclosure } from "@/components/Badges";
-import { broadcasterLink } from "@/lib/affiliate";
-import { yen } from "@/lib/format";
+import { BroadcasterList } from "@/components/BroadcasterList";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -56,9 +53,6 @@ export default async function ClubPage({ params }: Props) {
   if (!ctx) notFound();
   const { club, current, league, isJapanese } = ctx;
 
-  const watchOptions = current[0]
-    ? broadcasters.filter((b) => b.leagues.includes(current[0].league))
-    : [];
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
@@ -135,34 +129,9 @@ export default async function ClubPage({ params }: Props) {
         </section>
       )}
 
-      {watchOptions.length > 0 && league && (
-        <section className="mt-12">
-          <h2 className="text-xl font-bold mb-2">{club.name}の試合を日本から観るには</h2>
-          <p className="text-sm muted mb-4">
-            {league.name}を配信しているサービスです。放映権は変動するため、必ず公式ページで最新の配信対象をご確認ください。
-          </p>
-          <div className="mb-4">
-            <AdDisclosure />
-          </div>
-          <div className="space-y-3">
-            {watchOptions.map((b) => (
-              <div key={b.id} className="surface rounded-xl p-5 flex flex-wrap items-center gap-4">
-                <div className="min-w-0 flex-1">
-                  <p className="font-bold">{b.name}</p>
-                  <p className="text-sm muted mt-0.5">月額 {yen(b.monthlyPriceYen)}〜</p>
-                  <p className="text-xs muted mt-1">配信内容の最終確認: {b.lastChecked}</p>
-                </div>
-                <a
-                  href={broadcasterLink(b)}
-                  target="_blank"
-                  rel="noopener noreferrer sponsored"
-                  className="px-4 py-2.5 rounded-lg bg-pitch-500 text-white text-sm font-semibold hover:bg-pitch-600 transition-colors shrink-0"
-                >
-                  公式サイトで確認
-                </a>
-              </div>
-            ))}
-          </div>
+      {current[0] && (
+        <>
+          <BroadcasterList league={current[0].league} heading={`${club.name}の試合を日本から観るには`} />
           <p className="mt-4 text-sm muted">
             複数の選手を追いかけている場合は{" "}
             <Link href="/watch-plan/" className="text-pitch-600 dark:text-pitch-300 hover:underline">
@@ -170,7 +139,7 @@ export default async function ClubPage({ params }: Props) {
             </Link>
             で必要な契約と1試合あたりの単価を計算できます。
           </p>
-        </section>
+        </>
       )}
 
       <section className="mt-12">
