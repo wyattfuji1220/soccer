@@ -1,0 +1,836 @@
+<title>海外組ポータルの勝ち筋</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=JetBrains+Mono:wght@500;700&display=swap">
+
+<style>
+:root {
+  --paper:        #f2f3f5;
+  --surface:      #ffffff;
+  --surface-alt:  #e8eaee;
+  --rule:         #d2d6dd;
+  --rule-strong:  #b3b9c4;
+  --ink:          #12161c;
+  --ink-soft:     #4c5563;
+  --ink-faint:    #6f7886;
+  --accent:       #b45f10;
+  --accent-soft:  rgba(180, 95, 16, 0.10);
+  --cool:         #40607f;
+  --cool-soft:    rgba(64, 96, 127, 0.10);
+  --good:         #2b6b57;
+  --bad:          #a3452f;
+
+  --f-display: "Shippori Mincho B1", "Yu Mincho", "Hiragino Mincho ProN", serif;
+  --f-body:    "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  --f-mono:    "JetBrains Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:        #0f1317;
+    --surface:      #161b21;
+    --surface-alt:  #1d242c;
+    --rule:         #2a333d;
+    --rule-strong:  #3d4854;
+    --ink:          #e4e8ec;
+    --ink-soft:     #a3adba;
+    --ink-faint:    #838d99;
+    --accent:       #e09147;
+    --accent-soft:  rgba(224, 145, 71, 0.13);
+    --cool:         #7ba3c9;
+    --cool-soft:    rgba(123, 163, 201, 0.13);
+    --good:         #5fae92;
+    --bad:          #d8765c;
+  }
+}
+
+:root[data-theme="dark"] {
+  --paper:        #0f1317;
+  --surface:      #161b21;
+  --surface-alt:  #1d242c;
+  --rule:         #2a333d;
+  --rule-strong:  #3d4854;
+  --ink:          #e4e8ec;
+  --ink-soft:     #a3adba;
+  --ink-faint:    #838d99;
+  --accent:       #e09147;
+  --accent-soft:  rgba(224, 145, 71, 0.13);
+  --cool:         #7ba3c9;
+  --cool-soft:    rgba(123, 163, 201, 0.13);
+  --good:         #5fae92;
+  --bad:          #d8765c;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--f-body);
+  font-size: 16px;
+  line-height: 1.9;
+  -webkit-font-smoothing: antialiased;
+}
+
+code {
+  font-family: var(--f-mono);
+  font-size: 0.88em;
+  background: var(--surface-alt);
+  padding: 1px 5px;
+}
+
+.wrap {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 24px 120px;
+}
+
+.eyebrow {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 14px;
+}
+
+.hero {
+  padding: 88px 0 56px;
+  border-bottom: 2px solid var(--ink);
+}
+.hero h1 {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: clamp(30px, 5.6vw, 54px);
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  margin: 0 0 28px;
+  text-wrap: balance;
+}
+.hero h1 em {
+  font-style: normal;
+  background: linear-gradient(transparent 62%, var(--accent-soft) 62%);
+  border-bottom: 2px solid var(--accent);
+}
+.hero p {
+  max-width: 62ch;
+  color: var(--ink-soft);
+  margin: 0 0 12px;
+}
+.meta {
+  font-family: var(--f-mono);
+  font-size: 12px;
+  color: var(--ink-faint);
+  margin-top: 36px;
+  letter-spacing: 0.04em;
+  line-height: 1.9;
+}
+
+section { padding: 76px 0 0; }
+
+h2 {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: clamp(22px, 3.4vw, 31px);
+  line-height: 1.55;
+  margin: 0 0 12px;
+  text-wrap: balance;
+}
+h3 {
+  font-family: var(--f-body);
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 42px 0 12px;
+  text-wrap: balance;
+}
+.lede {
+  color: var(--ink-soft);
+  max-width: 64ch;
+  margin: 0;
+}
+p { max-width: 64ch; }
+
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.rivals {
+  display: grid;
+  gap: 20px;
+  margin-top: 34px;
+}
+@media (min-width: 760px) { .rivals { grid-template-columns: 1fr 1fr; } }
+
+.rival {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--rule-strong);
+  padding: 26px 24px 28px;
+  display: flex;
+  flex-direction: column;
+}
+.rival.direct { border-top-color: var(--accent); }
+.rival.indirect { border-top-color: var(--cool); }
+
+.rival .host {
+  font-family: var(--f-mono);
+  font-size: 12px;
+  color: var(--ink-faint);
+  letter-spacing: 0.02em;
+  word-break: break-all;
+  margin: 8px 0 0;
+}
+.rival .kind {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  padding: 3px 9px;
+  align-self: flex-start;
+}
+.rival.direct .kind { background: var(--accent-soft); color: var(--accent); }
+.rival.indirect .kind { background: var(--cool-soft); color: var(--cool); }
+
+.rival h3 { margin: 4px 0 10px; font-size: 20px; }
+.rival p { font-size: 14.5px; line-height: 1.85; color: var(--ink-soft); margin: 0 0 12px; max-width: none; }
+
+.verdict {
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px solid var(--rule);
+  font-size: 14.5px;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  margin-top: 30px;
+}
+.stat {
+  padding: 22px 20px;
+  border-right: 1px solid var(--rule);
+}
+.stat:last-child { border-right: none; }
+.stat .n {
+  font-family: var(--f-mono);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+  display: block;
+}
+.stat .n.us { color: var(--accent); }
+.stat .l {
+  font-size: 12.5px;
+  color: var(--ink-faint);
+  line-height: 1.7;
+  margin-top: 6px;
+  display: block;
+}
+
+.findings { margin-top: 26px; }
+.finding {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--rule);
+  align-items: start;
+}
+.finding:first-child { border-top: 1px solid var(--rule); }
+.finding .tag {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--bad);
+  padding-top: 5px;
+  letter-spacing: 0.05em;
+}
+.finding .body { min-width: 0; }
+.finding .what { font-weight: 700; font-size: 15px; line-height: 1.75; margin: 0; max-width: none; }
+.finding .ev {
+  font-family: var(--f-mono);
+  font-size: 12.5px;
+  color: var(--ink-faint);
+  line-height: 1.85;
+  margin: 6px 0 0;
+  word-break: break-word;
+  max-width: none;
+}
+
+.gap {
+  margin-top: 34px;
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  padding: 30px 24px 24px;
+  overflow-x: auto;
+}
+.axis {
+  min-width: 580px;
+  position: relative;
+  height: 130px;
+}
+.axis-line {
+  height: 2px;
+  background: var(--rule-strong);
+  position: absolute;
+  left: 0; right: 0; top: 84px;
+}
+.axis-line::after {
+  content: "";
+  position: absolute;
+  right: 0; top: -4px;
+  border-left: 9px solid var(--rule-strong);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+.axis-labels {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--ink-faint);
+  position: absolute;
+  left: 0; right: 0; top: 100px;
+}
+.pin {
+  position: absolute;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 190px;
+  top: 6px;
+}
+.pin .dot {
+  width: 11px; height: 11px;
+  border-radius: 50%;
+  margin: 10px auto 0;
+  background: var(--cool);
+}
+.pin.us .dot { background: var(--accent); width: 15px; height: 15px; margin-top: 8px; }
+.pin .nm { font-size: 13px; font-weight: 700; line-height: 1.6; }
+.pin .sub { font-family: var(--f-mono); font-size: 11px; color: var(--ink-faint); }
+.pin.us .nm { color: var(--accent); }
+
+.zone {
+  position: absolute;
+  top: 0; height: 86px;
+  background: var(--accent-soft);
+  border-left: 1px dashed var(--accent);
+  border-right: 1px dashed var(--accent);
+}
+
+.tablewrap { overflow-x: auto; margin-top: 30px; border: 1px solid var(--rule); }
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 660px;
+  background: var(--surface);
+  font-size: 14px;
+}
+th, td {
+  text-align: left;
+  padding: 13px 16px;
+  border-bottom: 1px solid var(--rule);
+  line-height: 1.7;
+  vertical-align: top;
+}
+thead th {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--ink-faint);
+  background: var(--surface-alt);
+  white-space: nowrap;
+}
+thead th.mine { color: var(--accent); }
+tbody tr:last-child td { border-bottom: none; }
+td.f { font-weight: 700; width: 27%; }
+td.mine { background: var(--accent-soft); }
+.mark { font-family: var(--f-mono); font-weight: 700; }
+.mark.y { color: var(--good); }
+.mark.n { color: var(--bad); }
+
+.moves { margin-top: 32px; }
+.move {
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  gap: 20px;
+  padding: 28px 0;
+  border-top: 1px solid var(--rule);
+}
+.move:last-child { border-bottom: 1px solid var(--rule); }
+.rank {
+  font-family: var(--f-mono);
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.3;
+}
+.move h3 { margin: 0 0 8px; font-size: 18px; }
+.move p { font-size: 14.5px; color: var(--ink-soft); margin: 0 0 14px; }
+.why {
+  font-size: 13.5px;
+  line-height: 1.85;
+  border-left: 2px solid var(--accent);
+  background: var(--accent-soft);
+  padding: 10px 14px 12px;
+  color: var(--ink);
+}
+.why b {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  display: block;
+  color: var(--accent);
+  margin-bottom: 2px;
+}
+
+.phases { display: grid; gap: 18px; margin-top: 32px; }
+@media (min-width: 800px) { .phases { grid-template-columns: repeat(3, 1fr); } }
+.phase {
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  padding: 22px 20px 24px;
+}
+.phase .p-n {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--ink-faint);
+  margin: 0;
+}
+.phase h3 { margin: 8px 0 4px; font-size: 17px; }
+.phase .cost {
+  font-family: var(--f-mono);
+  font-size: 12px;
+  color: var(--accent);
+  margin: 0 0 14px;
+}
+.phase ul { margin: 0; padding-left: 18px; font-size: 14px; color: var(--ink-soft); line-height: 1.85; }
+
+.warns { margin-top: 28px; display: flex; flex-direction: column; gap: 12px; }
+.warn {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--bad);
+  padding: 20px 22px;
+}
+.warn h3 { margin: 0 0 6px; font-size: 15.5px; }
+.warn p { margin: 0; font-size: 14px; color: var(--ink-soft); max-width: none; }
+
+.close {
+  margin-top: 82px;
+  border-top: 2px solid var(--ink);
+  padding-top: 34px;
+}
+.close .final {
+  font-family: var(--f-display);
+  font-size: 19px;
+  line-height: 1.95;
+  max-width: 54ch;
+}
+.note {
+  margin-top: 44px;
+  font-size: 12.5px;
+  color: var(--ink-faint);
+  line-height: 1.85;
+  max-width: 72ch;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="hero">
+    <p class="eyebrow">競合ベンチマーク / 2026-08-23</p>
+    <h1>速報では勝てない。<br><em>「これから観る」</em>で勝つ。</h1>
+    <p>競合2サイトを実際に読み込んで分析しました。両者はまったく別の生き物で、片方は戦う相手ですらありません。そして両者に共通する巨大な空白があります。</p>
+    <p><strong>「今夜、誰の試合が、何時に、どこで観られるのか」に誰も答えていない。</strong>ここが我々の陣地であり、同時にアフィリエイト収益と完全に一致する場所です。</p>
+    <p class="meta">調査対象: jpfootballhub.com ／ football-zone.net<br>調査方法: 実ページの取得とDOM構造の解析</p>
+  </header>
+
+  <section>
+    <p class="eyebrow">分析</p>
+    <h2>競合は2社ではなく、1社しかいない</h2>
+    <p class="lede">同じ「海外の日本人選手」を扱っていても、事業の形が違えば戦場も違います。片方は避ける相手、片方は倒す相手です。</p>
+
+    <div class="rivals">
+      <div class="rival indirect">
+        <span class="kind">戦わない</span>
+        <p class="host">football-zone.net</p>
+        <h3>フットボールゾーン</h3>
+        <p>サッカー専門の総合ニュースメディア。柿谷曜一朗、福西崇史、家本政明ら元プロ・元審判の寄稿陣を抱え、速報とコラムを大量に出しています。広告はGoogle Ad Manager、Taboola、Criteo、Amazon APSを併用した本格的なディスプレイ広告運用。</p>
+        <p>これは<strong>取材力と人件費で殴り合う土俵</strong>です。個人規模の運営が速報性で勝つ方法はありません。</p>
+        <div class="verdict">同じ土俵に上がらない。ニュースは彼らに任せ、我々は「構造化された事実」と「意思決定の支援」を担当する。</div>
+      </div>
+
+      <div class="rival direct">
+        <span class="kind">倒す</span>
+        <p class="host">jpfootballhub.com</p>
+        <h3>海外日本人サッカーハブ</h3>
+        <p>83選手・14リーグを毎日更新するデータベース型サイト。SofaScore／FotMob／Kicker／Fantacalcioの4社採点比較という明確な独自軸を持ち、公式YouTube（DAZN Japan・JFATV・U-NEXT）の埋め込みで映像も権利上クリーンに扱っています。</p>
+        <p>収益は確認した範囲では<strong>Googleアドセンスのみ</strong>。試合の視聴手段への導線は見当たりませんでした。</p>
+        <div class="verdict">直接の競合。物量では現状負けている。だが正確性・体験・収益設計の3点で抜ける。</div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><span class="n">83</span><span class="l">競合の掲載選手数</span></div>
+      <div class="stat"><span class="n us">14</span><span class="l">現在の我々</span></div>
+      <div class="stat"><span class="n">4</span><span class="l">競合のプレミアリーグ在籍者。<br>本体はロングテール</span></div>
+      <div class="stat"><span class="n">0</span><span class="l">両社の視聴導線</span></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">分析</p>
+    <h2>物量の裏で、正確性が崩れている</h2>
+    <p class="lede">競合の実ページで確認した破綻です。毎日83人分を自動更新する運用は、これだけの綻びと引き換えに成り立っています。ここが突きどころです。</p>
+
+    <div class="findings">
+      <div class="finding">
+        <span class="tag">01</span>
+        <div class="body">
+          <p class="what">8月末なのに「今後の試合」が5月の日程で埋まっている</p>
+          <p class="ev">宮代大聖のページ「今後の試合」欄: 5/10、5/17、5/25、6/1 が予定として表示。開幕直後の8〜9月の試合が一件も出てこない。</p>
+        </div>
+      </div>
+      <div class="finding">
+        <span class="tag">02</span>
+        <div class="body">
+          <p class="what">同一カードが時刻違いで二重に掲載されている</p>
+          <p class="ev">「5/25 UDラス・パルマス vs レアル・ソシエダB」が 21:00 と 03:00 の2件として並列表示されている。</p>
+        </div>
+      </div>
+      <div class="finding">
+        <span class="tag">03</span>
+        <div class="body">
+          <p class="what">サイト内で選手の所属クラブが矛盾している</p>
+          <p class="ev">選手一覧では冨安健洋を「エールディヴィジ／アヤックス・アムステルダム」と記載。一方、同サイトの採点記事見出しは「C・パレス加入の冨安健洋に試練か」。どちらが正しいのか読者には判断できない。</p>
+        </div>
+      </div>
+      <div class="finding">
+        <span class="tag">04</span>
+        <div class="body">
+          <p class="what">記事見出しに選手名の誤字が残っている</p>
+          <p class="ev">2026/08/19付の見出し「宮代大勝がスペイン2年目開幕戦で1アシスト」。正しくは宮代大聖。校正が追いついていない。</p>
+        </div>
+      </div>
+      <div class="finding">
+        <span class="tag">05</span>
+        <div class="body">
+          <p class="what">同じ試合について記事が3〜4本に分裂している</p>
+          <p class="ev">宮代大聖の8/17開幕戦だけで「メディア」「朝刊」「夜刊」と4本。1選手あたり37記事。内容が重複し、検索結果で自サイト同士が食い合う構造になっている。</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>我々の答え</h3>
+    <p>すでに実装済みの確度表示（出典確認済／要再確認）と最終確認日が、そのまま差別化になります。<strong>「不確かなものを不確かと書く」ことは、誠実さであると同時に競合優位です。</strong>競合は自信満々に矛盾した数字を出し、我々は確度を添えて出す。この差はサイトの信頼という一点に効きます。</p>
+  </section>
+
+  <section>
+    <p class="eyebrow">戦略</p>
+    <h2>空白地帯は「観る前」にある</h2>
+    <p class="lede">両社とも、試合が終わってから記録と評価を出します。試合が始まる前の読者——「今日は何を観ればいい？」「それはどこで観られる？」——を誰も引き受けていません。</p>
+
+    <div class="gap">
+      <div class="axis">
+        <div class="zone" style="left:6%; width:32%;"></div>
+        <div class="pin us" style="left:22%;">
+          <div class="nm">海外組ポータル</div>
+          <div class="sub">空白地帯</div>
+          <div class="dot"></div>
+        </div>
+        <div class="pin" style="left:63%;">
+          <div class="nm">jpfootballhub</div>
+          <div class="sub">記録・採点</div>
+          <div class="dot"></div>
+        </div>
+        <div class="pin" style="left:88%;">
+          <div class="nm">football-zone</div>
+          <div class="sub">速報・コラム</div>
+          <div class="dot"></div>
+        </div>
+        <div class="axis-line"></div>
+        <div class="axis-labels">
+          <span>キックオフ前</span>
+          <span>試合中</span>
+          <span>試合後</span>
+        </div>
+      </div>
+    </div>
+
+    <p style="margin-top:28px;">この位置取りが決定的に重要なのは、<strong>収益と完全に一致するから</strong>です。「観たあと」の読者にDAZNを勧めても遅い。「観る前」の読者には、視聴手段の提示がお節介ではなく<strong>必要な情報</strong>になります。広告ではなく機能として成立する。これがアドセンス一本の競合に対する構造的な優位です。</p>
+  </section>
+
+  <section>
+    <p class="eyebrow">戦略</p>
+    <h2>機能比較で、どこを取るか</h2>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr>
+            <th>機能</th>
+            <th>jpfootballhub</th>
+            <th>football-zone</th>
+            <th class="mine">海外組ポータル（目標）</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="f">選手データベース</td>
+            <td>83名・毎日更新</td>
+            <td><span class="mark n">なし</span></td>
+            <td class="mine">40〜60名・出典と確度つき</td>
+          </tr>
+          <tr>
+            <td class="f">試合日程（日本時間）</td>
+            <td>あり（日付処理に不具合）</td>
+            <td><span class="mark n">なし</span></td>
+            <td class="mine">今夜のキックオフを主役に</td>
+          </tr>
+          <tr>
+            <td class="f">視聴手段の案内</td>
+            <td><span class="mark n">なし</span></td>
+            <td><span class="mark n">なし</span></td>
+            <td class="mine"><span class="mark y">中核機能</span></td>
+          </tr>
+          <tr>
+            <td class="f">料金の最適化提案</td>
+            <td><span class="mark n">なし</span></td>
+            <td><span class="mark n">なし</span></td>
+            <td class="mine"><span class="mark y">視聴プラン診断</span></td>
+          </tr>
+          <tr>
+            <td class="f">カレンダー連携</td>
+            <td><span class="mark n">なし</span></td>
+            <td><span class="mark n">なし</span></td>
+            <td class="mine"><span class="mark y">.ics書き出し</span></td>
+          </tr>
+          <tr>
+            <td class="f">採点比較</td>
+            <td><span class="mark y">4社比較（独自性）</span></td>
+            <td><span class="mark n">なし</span></td>
+            <td class="mine">当面は追わない</td>
+          </tr>
+          <tr>
+            <td class="f">速報ニュース</td>
+            <td>メディア要約</td>
+            <td><span class="mark y">本業</span></td>
+            <td class="mine">追わない</td>
+          </tr>
+          <tr>
+            <td class="f">公式ハイライト動画</td>
+            <td><span class="mark y">YouTube埋め込み</span></td>
+            <td>あり</td>
+            <td class="mine">同じ手を採用する</td>
+          </tr>
+          <tr>
+            <td class="f">情報の確度表示</td>
+            <td><span class="mark n">なし</span></td>
+            <td><span class="mark n">なし</span></td>
+            <td class="mine"><span class="mark y">実装済み</span></td>
+          </tr>
+          <tr>
+            <td class="f">ダークモード</td>
+            <td><span class="mark n">なし</span></td>
+            <td><span class="mark n">なし</span></td>
+            <td class="mine"><span class="mark y">実装済み</span></td>
+          </tr>
+          <tr>
+            <td class="f">収益手段</td>
+            <td>アドセンスのみ</td>
+            <td>大手ディスプレイ広告網</td>
+            <td class="mine">視聴アフィリエイト＋物販</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>ビジュアルで勝つ：制約を武器に変える</h3>
+    <p>我々は権利上、選手写真もクラブロゴも使えません。一見不利ですが、競合の見た目は<strong>素のPHP、絵文字の多用、高すぎる情報密度</strong>で、写真の有無以前に整理されていません。写真がないぶんを<strong>データビジュアル</strong>で埋めれば、むしろ独自の見た目になります。</p>
+    <p>具体的には、ピッチ図の上に選手のポジションを配置するSVGマップ、シーズン成績のスパークライン、リーグ別在籍数のバブルチャート、キックオフまでのカウントダウン。すべて自作のベクター表現で、権利リスクはゼロ。<strong>「写真のないサッカーサイト」ではなく「図解が読めるサッカーサイト」</strong>として設計します。</p>
+  </section>
+
+  <section>
+    <p class="eyebrow">実行</p>
+    <h2>優先順位つきの打ち手</h2>
+    <p class="lede">上から順に効きます。番号は着手順です。</p>
+
+    <div class="moves">
+      <div class="move">
+        <div class="rank">01</div>
+        <div>
+          <h3>「今夜のキックオフ」をトップの主役にする</h3>
+          <p>日本時間のタイムラインで今日から明日の試合を並べ、各試合に出場が見込まれる日本人選手と配信サービスのバッジを添える。キックオフまでのカウントダウン付き。</p>
+          <div class="why"><b>効く理由</b>毎日更新される＝毎日見に来る理由になり、検索エンジンのクロール頻度も上がる。同時に全試合が視聴サービスへの導線になる。競合のトップページは動画の羅列で「今日何を観るべきか」が分からない。</div>
+        </div>
+      </div>
+
+      <div class="move">
+        <div class="rank">02</div>
+        <div>
+          <h3>視聴プラン診断</h3>
+          <p>追いたい選手を複数選ぶと、必要な配信サービスの組み合わせと年間費用、そして<strong>1試合あたりの単価</strong>を計算して提示する。「三笘と久保の両方を観るなら、この2社で年◯円、1試合あたり◯円」。</p>
+          <div class="why"><b>効く理由</b>収益の本命。読者にとっては純粋に便利な計算ツールで、我々にとっては申込直前の接点。両競合にこの機能はなく、他の個人サイトでもほぼ見かけない。</div>
+        </div>
+      </div>
+
+      <div class="move">
+        <div class="rank">03</div>
+        <div>
+          <h3>選手データベースを40〜60名へ、正確性を担保しながら拡張</h3>
+          <p>競合の83名を全数では追わない。<strong>出場機会のある選手</strong>に絞り、所属と経歴を一次情報で確定させる。競合が薄いプレミアリーグ（在籍4名）ではなく、ベルギー・ブンデスリーガ・チャンピオンシップのロングテールが実際の主戦場です。</p>
+          <div class="why"><b>効く理由</b>「[選手名] 所属」「[選手名] 今どこ」の検索需要は選手の数だけ存在する。数で負けても、1ページの正確さと視聴導線で1人あたりの価値が上回る。</div>
+        </div>
+      </div>
+
+      <div class="move">
+        <div class="rank">04</div>
+        <div>
+          <h3>公式YouTubeの埋め込み</h3>
+          <p>DAZN Japan、JFATV、U-NEXTフットボールなど<strong>権利者自身が公開しているチャンネル</strong>の動画を選手ページに埋め込む。競合がすでに実践している、権利上クリーンな映像の使い方。良い手は素直に真似ます。</p>
+          <div class="why"><b>効く理由</b>滞在時間が伸び、写真が使えない弱点を映像で補える。YouTubeの公式埋め込みプレーヤー経由なので著作権上の問題がない。</div>
+        </div>
+      </div>
+
+      <div class="move">
+        <div class="rank">05</div>
+        <div>
+          <h3>カレンダー書き出し（.ics）</h3>
+          <p>「三笘の試合をカレンダーに追加」ボタン。日本時間に変換済みの予定が読者のスマホに入り、キックオフ前に通知が届く。</p>
+          <div class="why"><b>効く理由</b>再訪を機械的に生む唯一の仕掛け。読者の手元に我々の予定が残る。静的サイトのまま実装できる。</div>
+        </div>
+      </div>
+
+      <div class="move">
+        <div class="rank">06</div>
+        <div>
+          <h3>順位表と得点ランキング</h3>
+          <p>football-data.orgの無料枠で取得できる範囲。所属クラブの現在順位を選手ページに表示する。</p>
+          <div class="why"><b>効く理由</b>低コストでページに厚みが出る。競合も持っている基本機能なので、欠けていると見劣りする。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">実行</p>
+    <h2>検索流入をどこから取るか</h2>
+    <p class="lede">競合と同じキーワードを取りに行っても勝てません。彼らが持っていない検索意図を狙います。</p>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr>
+            <th>狙うキーワード群</th>
+            <th>検索意図</th>
+            <th class="mine">受け皿ページ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="f">[選手名] 放送／中継／試合 いつ</td><td>今から観たい</td><td class="mine">選手ページの視聴セクション</td></tr>
+          <tr><td class="f">[リーグ名] 日本時間／キックオフ</td><td>時差を知りたい</td><td class="mine">今夜のキックオフ＋時差ガイド</td></tr>
+          <tr><td class="f">[サービス名] [リーグ名] 観れない</td><td>契約を見直したい</td><td class="mine">視聴プラン診断</td></tr>
+          <tr><td class="f">海外サッカー 配信 比較／安い</td><td>どれを契約するか迷っている</td><td class="mine">視聴プラン診断＋比較記事</td></tr>
+          <tr><td class="f">[選手名] 今どこ／移籍</td><td>所属を確認したい</td><td class="mine">選手ページ（確度表示つき）</td></tr>
+          <tr><td class="f">[クラブ名] 日本人</td><td>誰がいるか知りたい</td><td class="mine">クラブ別ページ（新規）</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top:28px;">加えて構造化データ（Person／SportsEvent／FAQPage／BreadcrumbList）を入れることで、検索結果に日程や選手情報がリッチに表示される可能性が上がります。競合のjpfootballhubは選手ページに構造化データを入れていますが、試合日程のSportsEventは見当たりませんでした。<strong>「今夜のキックオフ」にSportsEventを付けるのは、まだ空いている枠です。</strong></p>
+  </section>
+
+  <section>
+    <p class="eyebrow">実行</p>
+    <h2>3つのフェーズ</h2>
+
+    <div class="phases">
+      <div class="phase">
+        <p class="p-n">PHASE 1 ／ 〜2週間</p>
+        <h3>公開して、導線を作る</h3>
+        <p class="cost">追加コスト 0円</p>
+        <ul>
+          <li>今夜のキックオフ</li>
+          <li>視聴プラン診断</li>
+          <li>選手40名まで拡張</li>
+          <li>順位表</li>
+          <li>公開＋Search Console登録</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <p class="p-n">PHASE 2 ／ 〜1.5か月</p>
+        <h3>厚みを出して、審査を通す</h3>
+        <p class="cost">追加コスト 0円</p>
+        <ul>
+          <li>公式YouTube埋め込み</li>
+          <li>カレンダー書き出し</li>
+          <li>クラブ別ページ</li>
+          <li>視聴ガイド記事を20本へ</li>
+          <li>アドセンス申請</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <p class="p-n">PHASE 3 ／ 収益が立ってから</p>
+        <h3>データで正面から殴る</h3>
+        <p class="cost">月額 3,000〜5,000円程度</p>
+        <ul>
+          <li>有料APIで個人スタッツ</li>
+          <li>選手比較機能</li>
+          <li>独自集計ランキング</li>
+          <li>選手数を60〜80名へ</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">制約</p>
+    <h2>正直に言っておくべきこと</h2>
+
+    <div class="warns">
+      <div class="warn">
+        <h3>競合と同じデータ源は使えないし、使わない</h3>
+        <p>jpfootballhubは選手IDに「tm-」を使い、成績欄に「Transfermarkt」と明記し、「毎日Wikipedia・transfermarkt由来のデータを照合して更新」と自ら書いています。Transfermarktの利用規約は自動収集と再利用を制限しており、我々はこの手段を採りません。結果として<strong>選手個人の詳細スタッツは無料では揃いません。</strong>ここは正面から張り合わず、視聴導線と正確性で勝負を分けます。</p>
+      </div>
+      <div class="warn">
+        <h3>無料APIの守備範囲には限界がある</h3>
+        <p>football-data.orgの無料枠で取れるのは試合日程・結果・順位表・得点ランキングまで。<strong>試合ごとの選手スタッツや採点は取得できません。</strong>採点比較で競合と正面勝負するにはPhase 3の有料API（月3,000〜5,000円程度）が必要です。それまでは戦線を広げない判断を推奨します。</p>
+      </div>
+      <div class="warn">
+        <h3>83名を毎日更新する運用体力は今はない</h3>
+        <p>だからこそ、<strong>自動化できる領域（日程・結果・順位）と、人が守る領域（所属・経歴）を分離する</strong>設計にしています。競合の破綻は、人が守るべき部分まで自動化した結果です。同じ轍は踏みません。</p>
+      </div>
+      <div class="warn">
+        <h3>現在の掲載データは移籍市場のさなかで古い</h3>
+        <p>競合サイトを見る限り、板倉滉のボルシアMG復帰や小杉啓太のフランクフルト移籍など、シードデータに反映されていない動きが多数あります。競合の記述自体も矛盾しているため鵜呑みにはできません。<strong>Phase 1で全選手を一次情報にあたって確定させる作業が必要です。</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="close">
+    <p class="eyebrow">結論</p>
+    <p class="final">競合は83人分の記録を持っている。だが読者が「今夜どれを観ればいいか」と思ったとき、答えられるサイトはまだ存在しない。<br><br>数で追いつく必要はありません。<strong>読者が試合を観る直前の3分間</strong>を取りにいきます。</p>
+    <p class="note">本レポートは2026年8月23日に取得した各サイトの公開ページにもとづきます。競合サイトの記述への言及は事実関係の確認を目的としたもので、内容の転載は行っていません。「確認した範囲では」と記した箇所は、調査時に閲覧したページからの推定を含みます。競合サイトの掲載内容を我々のデータベースに取り込むことはしません。</p>
+  </div>
+
+</div>
