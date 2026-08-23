@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pitch-50: #eefbf3;
+  --color-pitch-300: #6ee7a0;
+  --color-pitch-500: #16a34a;
+  --color-pitch-600: #12833c;
+  --color-ink-900: #0b1220;
+  --color-ink-800: #121a2b;
+  --color-ink-700: #1b2540;
+  --color-ink-500: #4a5878;
+  --color-ink-300: #98a3bd;
+
+  --font-sans: "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, system-ui, sans-serif;
+}
+
+:root {
+  --bg: #ffffff;
+  --surface: #f6f8fb;
+  --border: #e3e8f0;
+  --text: #0b1220;
+  --text-muted: #56617c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1220;
+    --surface: #121a2b;
+    --border: #22304d;
+    --text: #eaeff8;
+    --text-muted: #98a3bd;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.surface {
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.muted {
+  color: var(--text-muted);
+}

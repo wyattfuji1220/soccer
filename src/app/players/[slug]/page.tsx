@@ -1,0 +1,185 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { players } from "@/data/players";
+import { leagueMap } from "@/data/leagues";
+import { broadcasters } from "@/data/broadcasters";
+import { PositionBadge, ConfidenceBadge, AdDisclosure } from "@/components/Badges";
+import { age, formatDateJa, yen } from "@/lib/format";
+import { amazonSearchUrl, rakutenSearchUrl, broadcasterLink } from "@/lib/affiliate";
+
+type Props = { params: Promise<{ slug: string }> };
+
+export function generateStaticParams() {
+  return players.map((p) => ({ slug: p.slug }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const player = players.find((p) => p.slug === slug);
+  if (!player) return {};
+  const league = leagueMap[player.league];
+  return {
+    title: `${player.nameJa}（${player.club}）の経歴・所属・視聴方法`,
+    description: `${player.nameJa}（${player.nameEn}）の所属クラブ、ポジション、経歴を出典付きで整理。${league.name}の試合を日本から観る方法もまとめています。`,
+  };
+}
+
+export default async function PlayerPage({ params }: Props) {
+  const { slug } = await params;
+  const player = players.find((p) => p.slug === slug);
+  if (!player) notFound();
+
+  const league = leagueMap[player.league];
+  const watchOptions = broadcasters.filter((b) => b.leagues.includes(player.league));
+  const latestCheck = player.sources[0]?.checkedAt;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: player.nameJa,
+    alternateName: player.nameEn,
+    birthDate: player.birthDate,
+    nationality: { "@type": "Country", name: "Japan" },
+    jobTitle: "プロサッカー選手",
+    affiliation: { "@type": "SportsTeam", name: player.clubEn },
+  };
+
+  return (
+    <div className="mx-auto max-w-4xl px-4 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+
+      <nav className="text-sm muted mb-6">
+        <Link href="/players/" className="hover:underline">選手一覧</Link>
+        <span className="mx-2">/</span>
+        <span>{player.nameJa}</span>
+      </nav>
+
+      <div className="flex items-start gap-4 flex-wrap">
+        <PositionBadge position={player.position} />
+        <div>
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight">{player.nameJa}</h1>
+          <p className="muted mt-1">{player.nameEn}</p>
+        </div>
+      </div>
+
+      <div className="mt-4">
+        <ConfidenceBadge confidence={player.confidence} checkedAt={latestCheck} />
+      </div>
+
+      <section className="mt-8 surface rounded-xl overflow-hidden">
+        <dl className="divide-y" style={{ borderColor: "var(--border)" }}>
+          {[
+            ["所属クラブ", player.club],
+            ["リーグ", `${league.name}（${league.country}）`],
+            ["ポジション", player.position],
+            ["生年月日", `${formatDateJa(player.birthDate)}（${age(player.birthDate)}歳）`],
+            ...(player.squadNumber ? [["背番号", String(player.squadNumber)]] : []),
+          ].map(([k, v]) => (
+            <div key={k} className="grid grid-cols-3 gap-4 px-5 py-3.5 text-sm" style={{ borderColor: "var(--border)" }}>
+              <dt className="muted">{k}</dt>
+              <dd className="col-span-2 font-medium">{v}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+
+      <section className="mt-10">
+        <h2 className="text-xl font-bold mb-4">経歴・特徴</h2>
+        <ul className="space-y-3">
+          {player.facts.map((f, i) => (
+            <li key={i} className="flex gap-3 text-sm leading-relaxed">
+              <span className="mt-2 w-1.5 h-1.5 rounded-full bg-pitch-500 shrink-0" aria-hidden />
+              <span>{f}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="mt-10">
+        <h2 className="text-xl font-bold mb-4">出典</h2>
+        <ul className="space-y-2 text-sm">
+          {player.sources.map((s) => (
+            <li key={s.url}>
+              <a href={s.url} target="_blank" rel="noopener noreferrer nofollow" className="text-pitch-600 dark:text-pitch-300 hover:underline">
+                {s.label}
+              </a>
+              <span className="muted ml-2 text-xs">最終確認 {s.checkedAt}</span>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-3 text-xs muted">
+          Wikipedia の記述は クリエイティブ・コモンズ 表示-継承ライセンス にもとづき参照しています。
+        </p>
+      </section>
+
+      {watchOptions.length > 0 && (
+        <section className="mt-12">
+          <h2 className="text-xl font-bold mb-2">{player.nameJa}の試合を日本から観るには</h2>
+          <p className="text-sm muted mb-4">
+            {league.name}を配信しているサービスです。放映権は変動するため、必ず公式ページで最新の配信対象をご確認ください。
+          </p>
+          <div className="mb-4">
+            <AdDisclosure />
+          </div>
+          <div className="space-y-3">
+            {watchOptions.map((b) => (
+              <div key={b.id} className="surface rounded-xl p-5 flex flex-wrap items-center gap-4">
+                <div className="min-w-0 flex-1">
+                  <p className="font-bold">{b.name}</p>
+                  <p className="text-sm muted mt-0.5">
+                    月額 {yen(b.monthlyPriceYen)}〜
+                    {b.freeTrialNote ? ` ・ ${b.freeTrialNote}` : ""}
+                  </p>
+                  <p className="text-xs muted mt-1">配信内容の最終確認: {b.lastChecked}</p>
+                </div>
+                <a
+                  href={broadcasterLink(b)}
+                  target="_blank"
+                  rel="noopener noreferrer sponsored"
+                  className="px-4 py-2.5 rounded-lg bg-pitch-500 text-white text-sm font-semibold hover:bg-pitch-600 transition-colors shrink-0"
+                >
+                  公式サイトで確認
+                </a>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <section className="mt-12">
+        <h2 className="text-xl font-bold mb-2">関連グッズ・書籍を探す</h2>
+        <p className="text-sm muted mb-4">各ショップの検索結果ページへ移動します。</p>
+        <div className="mb-4">
+          <AdDisclosure />
+        </div>
+        <div className="flex flex-wrap gap-3">
+          <a
+            href={amazonSearchUrl(`${player.nameJa} ${player.clubEn} ユニフォーム`)}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="px-4 py-2.5 rounded-lg surface text-sm font-semibold hover:border-pitch-500/50 transition-colors"
+          >
+            Amazonでユニフォームを探す
+          </a>
+          <a
+            href={rakutenSearchUrl(`${player.nameJa} ユニフォーム`)}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="px-4 py-2.5 rounded-lg surface text-sm font-semibold hover:border-pitch-500/50 transition-colors"
+          >
+            楽天市場でユニフォームを探す
+          </a>
+          <a
+            href={amazonSearchUrl(`${league.name} 書籍`)}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="px-4 py-2.5 rounded-lg surface text-sm font-semibold hover:border-pitch-500/50 transition-colors"
+          >
+            {league.name}関連の書籍を探す
+          </a>
+        </div>
+      </section>
+    </div>
+  );
+}
