@@ -24,6 +24,7 @@ export const metadata: Metadata = {
 
 const nav = [
   { href: "/players/", label: "選手一覧" },
+  { href: "/clubs/", label: "クラブ別" },
   { href: "/fixtures/", label: "試合日程" },
   { href: "/watch-plan/", label: "視聴プラン診断" },
   { href: "/guides/", label: "視聴ガイド" },

@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { players } from "@/data/players";
 import { leagueMap } from "@/data/leagues";
 import { broadcasters } from "@/data/broadcasters";
+import { clubsForPlayer } from "@/data/clubs";
 import { PositionBadge, ConfidenceBadge, AdDisclosure } from "@/components/Badges";
 import { PlayerVideos } from "@/components/PlayerVideos";
 import { CareerTimeline } from "@/components/CareerTimeline";
@@ -35,6 +36,7 @@ export default async function PlayerPage({ params }: Props) {
   const league = leagueMap[player.league];
   const watchOptions = broadcasters.filter((b) => b.leagues.includes(player.league));
   const latestCheck = player.sources[0]?.checkedAt;
+  const relatedClubs = clubsForPlayer(player.nameJa);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -154,6 +156,29 @@ export default async function PlayerPage({ params }: Props) {
           </div>
         </section>
       )}
+
+      <section className="mt-12">
+        <h2 className="text-xl font-bold mb-4">関連ページ</h2>
+        <div className="flex flex-wrap gap-2">
+          {relatedClubs.map((c) => (
+            <Link
+              key={c.slug}
+              href={`/clubs/${c.slug}/`}
+              className="text-sm px-3 py-2 rounded-lg border hover:border-pitch-500/60 transition-colors"
+              style={{ borderColor: "var(--border)" }}
+            >
+              {c.name}の日本人選手
+            </Link>
+          ))}
+          <Link
+            href={`/players/?league=${player.league}`}
+            className="text-sm px-3 py-2 rounded-lg border hover:border-pitch-500/60 transition-colors"
+            style={{ borderColor: "var(--border)" }}
+          >
+            {league.name}の日本人選手
+          </Link>
+        </div>
+      </section>
 
       <section className="mt-12">
         <h2 className="text-xl font-bold mb-2">関連グッズ・書籍を探す</h2>

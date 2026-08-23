@@ -12,7 +12,8 @@
     "data:wikipedia": "node scripts/fetch-wikipedia.mjs",
     "data:fixtures": "node scripts/fetch-fixtures.mjs",
     "data:videos": "node scripts/verify-videos.mjs",
-    "data:players": "node scripts/fetch-players.mjs scripts/player-candidates.json && node scripts/generate-players.mjs"
+    "data:players": "node scripts/fetch-players.mjs scripts/player-candidates.json && node scripts/generate-players.mjs && node scripts/fetch-clubs.mjs",
+    "data:clubs": "node scripts/fetch-clubs.mjs"
   },
   "dependencies": {
     "next": "^15.5.23",

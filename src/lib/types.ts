@@ -113,3 +113,16 @@ export type PlayerVideo = {
   channelUrl: string;
   verifiedAt: string;
 };
+
+/** クラブ。掲載選手の現所属とクラブ遍歴から集約している */
+export type Club = {
+  slug: string;
+  name: string;
+  nameEn: string | null;
+  /** Wikipediaの記事名。出典リンクに使う */
+  article: string;
+  /** IOCコード。日本のクラブか海外かの判別に使う */
+  countries: string[];
+  currentPlayers: string[];
+  pastPlayers: { nameJa: string; years: string | null; loan: boolean }[];
+};

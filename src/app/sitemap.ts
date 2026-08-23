@@ -1,12 +1,13 @@
 import type { MetadataRoute } from "next";
 import { players } from "@/data/players";
 import { guides } from "@/data/guides";
+import { clubs } from "@/data/clubs";
 import { SITE_URL } from "@/lib/site";
 
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPaths = ["", "/players", "/fixtures", "/watch-plan", "/guides", "/about", "/privacy"];
+  const staticPaths = ["", "/players", "/clubs", "/fixtures", "/watch-plan", "/guides", "/about", "/privacy"];
   return [
     ...staticPaths.map((p) => ({
       url: `${SITE_URL}${p}/`,
@@ -17,6 +18,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${SITE_URL}/players/${p.slug}/`,
       changeFrequency: "weekly" as const,
       priority: 0.7,
+    })),
+    ...clubs.map((c) => ({
+      url: `${SITE_URL}/clubs/${c.slug}/`,
+      changeFrequency: "weekly" as const,
+      priority: 0.6,
     })),
     ...guides.map((g) => ({
       url: `${SITE_URL}/guides/${g.slug}/`,

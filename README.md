@@ -29,6 +29,7 @@ npm run dev
 | `npm run export:output` | `out/` を `output/site/` に複製 |
 | `npm run typecheck` | 型チェック |
 | `npm run data:players` | Wikipedia のインフォボックスから選手データを取得し `src/data/players.ts` を再生成 |
+| `npm run data:clubs` | 選手データからクラブ別ページのデータを再生成 |
 | `npm run data:videos` | 掲載中の公式動画がまだ公開されているか再確認 |
 | `npm run data:wikipedia` | 選手データを Wikipedia と照合し `output/data-verification.md` を生成 |
 | `npm run data:fixtures` | football-data.org から試合日程を取得し `src/data/fixtures.json` を更新 |
