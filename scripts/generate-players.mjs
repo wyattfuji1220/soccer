@@ -47,6 +47,28 @@ const abroad = fetched
   .filter((p) => p.abroad && p.leagueId && p.birthDate && p.position)
   .sort((a, b) => a.nameJa.localeCompare(b.nameJa, "ja"));
 
+// 海外クラブに所属しているのに落ちた選手は、たいていリーグ名のエイリアス漏れが原因。
+// 黙って消えると気づけないため、必ず理由をつけて知らせる。
+const dropped = fetched
+  .filter((p) => p.abroad && !abroad.includes(p))
+  .map((p) => {
+    const why = !p.leagueId
+      ? `リーグ「${p.leagueLabel ?? "不明"}」が未対応（scripts/fetch-players.mjs の leagueAlias に追加する）`
+      : !p.birthDate
+        ? "生年月日を取得できなかった"
+        : "ポジションを取得できなかった";
+    return `  ${p.nameJa}（${p.club ?? "所属不明"}）: ${why}`;
+  });
+if (dropped.length > 0) {
+  console.warn(`\n海外クラブ所属だが掲載できなかった選手が ${dropped.length}人います`);
+  console.warn(dropped.join("\n") + "\n");
+}
+
+const returned = fetched.filter((p) => !p.abroad).map((p) => `${p.nameJa}（${p.club ?? "不明"}）`);
+if (returned.length > 0) {
+  console.log(`国内クラブ所属または所属を特定できず対象外: ${returned.length}人 — ${returned.join(" / ")}`);
+}
+
 const seen = new Set();
 const rows = [];
 for (const p of abroad) {

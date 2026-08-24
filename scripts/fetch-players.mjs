@@ -13,15 +13,14 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { politeDelay, USER_AGENT } from "./_env.mjs";
+import { fetchWithRetry, politeDelay, USER_AGENT } from "./_env.mjs";
 
 const ROOT = process.cwd();
 const API = "https://ja.wikipedia.org/w/api.php";
 
 async function api(params) {
   const url = `${API}?${new URLSearchParams({ format: "json", formatversion: "2", ...params })}`;
-  const res = await fetch(url, { headers: { "User-Agent": USER_AGENT } });
-  if (!res.ok) throw new Error(`Wikipedia API ${res.status}`);
+  const res = await fetchWithRetry(url, { headers: { "User-Agent": USER_AGENT } });
   return res.json();
 }
 
@@ -208,8 +207,13 @@ const leagueAlias = {
   "EFLチャンピオンシップ": "championship",
   "フットボールリーグ": "championship",
   "プリメーラ・ディビシオン": "la-liga",
+  "ラ・リーガ": "la-liga",
+  "ラリーガ": "la-liga",
+  "ラリーガ・エア・スポーツ": "segunda-division",
   "セグンダ・ディビシオン": "segunda-division",
   "ドイツ・ブンデスリーガ": "bundesliga",
+  "ブンデスリーガ": "bundesliga",
+  "2.ブンデスリーガ": "bundesliga-2",
   "2. ブンデスリーガ": "bundesliga-2",
   "セリエA": "serie-a",
   "フランスプロサッカーリーグ": "ligue-1",

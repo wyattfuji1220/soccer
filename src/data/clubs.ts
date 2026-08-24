@@ -7,7 +7,7 @@ import type { Club } from "@/lib/types";
  * リダイレクト解決で正式な記事名に寄せている。
  * 現所属選手がいる、または過去に2人以上が在籍したクラブだけを収録している。
  *
- * 最終取得: 2026-08-23
+ * 最終取得: 2026-08-24
  */
 export const clubs: Club[] = [
   {
@@ -127,18 +127,6 @@ export const clubs: Club[] = [
     pastPlayers: [
       { nameJa: "橋岡大樹", years: "2026", loan: true },
       { nameJa: "渡辺剛", years: "2023-2025", loan: false },
-    ],
-  },
-  {
-    slug: "nec-nijmegen",
-    name: "NECナイメヘン",
-    nameEn: "NEC Nijmegen",
-    article: "NECナイメヘン",
-    countries: ["NLD", "NED"],
-    currentPlayers: ["小川航基"],
-    pastPlayers: [
-      { nameJa: "塩貝健人", years: "2024-2026", loan: false },
-      { nameJa: "佐野航大", years: "2023-2026", loan: false },
     ],
   },
   {
@@ -439,6 +427,17 @@ export const clubs: Club[] = [
     ],
   },
   {
+    slug: "valencia-cf",
+    name: "バレンシアCF",
+    nameEn: "Valencia CF",
+    article: "バレンシアCF",
+    countries: ["ESP"],
+    currentPlayers: ["佐藤龍之介"],
+    pastPlayers: [
+
+    ],
+  },
+  {
     slug: "kawasaki-frontale",
     name: "川崎フロンターレ",
     nameEn: "Kawasaki Frontale",
@@ -468,6 +467,7 @@ export const clubs: Club[] = [
       { nameJa: "松木玖生", years: "2022-2024", loan: false },
       { nameJa: "野澤大志ブランドン", years: "2020-2025", loan: false },
       { nameJa: "荒木遼太郎", years: "2024", loan: true },
+      { nameJa: "佐藤龍之介", years: "2023-2026", loan: false },
     ],
   },
   {
@@ -569,19 +569,6 @@ export const clubs: Club[] = [
     ],
   },
   {
-    slug: "jubilo-iwata",
-    name: "ジュビロ磐田",
-    nameEn: "Júbilo Iwata",
-    article: "ジュビロ磐田",
-    countries: ["JPN"],
-    currentPlayers: [],
-    pastPlayers: [
-      { nameJa: "伊藤洋輝", years: "2018-2022", loan: false },
-      { nameJa: "小川航基", years: "2016-2021", loan: false },
-      { nameJa: "後藤啓介", years: "2023-2024", loan: false },
-    ],
-  },
-  {
     slug: "royale-union-saint-gilloise",
     name: "ロイヤル・ユニオン・サン＝ジロワーズ",
     nameEn: "Royale Union Saint-Gilloise",
@@ -642,18 +629,6 @@ export const clubs: Club[] = [
     ],
   },
   {
-    slug: "mito-hollyhock",
-    name: "水戸ホーリーホック",
-    nameEn: "Mito HollyHock",
-    article: "水戸ホーリーホック",
-    countries: ["JPN"],
-    currentPlayers: [],
-    pastPlayers: [
-      { nameJa: "前田大然", years: "2017", loan: true },
-      { nameJa: "小川航基", years: "2019", loan: true },
-    ],
-  },
-  {
     slug: "nagoya-grampus",
     name: "名古屋グランパスエイト",
     nameEn: "Nagoya Grampus",
@@ -663,6 +638,18 @@ export const clubs: Club[] = [
     pastPlayers: [
       { nameJa: "菅原由勢", years: "2018-2020", loan: false },
       { nameJa: "伊藤洋輝", years: "2019", loan: true },
+    ],
+  },
+  {
+    slug: "jubilo-iwata",
+    name: "ジュビロ磐田",
+    nameEn: "Júbilo Iwata",
+    article: "ジュビロ磐田",
+    countries: ["JPN"],
+    currentPlayers: [],
+    pastPlayers: [
+      { nameJa: "伊藤洋輝", years: "2018-2022", loan: false },
+      { nameJa: "後藤啓介", years: "2023-2024", loan: false },
     ],
   },
   {
@@ -678,15 +665,15 @@ export const clubs: Club[] = [
     ],
   },
   {
-    slug: "yokohama",
-    name: "横浜FC",
-    nameEn: "Yokohama FC",
-    article: "横浜FC",
-    countries: ["JPN"],
+    slug: "nec-nijmegen",
+    name: "NECナイメヘン",
+    nameEn: "NEC Nijmegen",
+    article: "NECナイメヘン",
+    countries: ["NED"],
     currentPlayers: [],
     pastPlayers: [
-      { nameJa: "小川航基", years: "2022-2024", loan: false },
-      { nameJa: "斉藤光毅", years: "2018-2020", loan: false },
+      { nameJa: "塩貝健人", years: "2024-2026", loan: false },
+      { nameJa: "佐野航大", years: "2023-2026", loan: false },
     ],
   },
   {
@@ -711,6 +698,18 @@ export const clubs: Club[] = [
     pastPlayers: [
       { nameJa: "藤田譲瑠チマ", years: "2021", loan: false },
       { nameJa: "宮代大聖", years: "2021", loan: true },
+    ],
+  },
+  {
+    slug: "fagiano-okayama",
+    name: "ファジアーノ岡山FC",
+    nameEn: "Fagiano Okayama",
+    article: "ファジアーノ岡山FC",
+    countries: ["JPN"],
+    currentPlayers: [],
+    pastPlayers: [
+      { nameJa: "佐野航大", years: "2022-2023", loan: false },
+      { nameJa: "佐藤龍之介", years: "2025", loan: true },
     ],
   },
 ];

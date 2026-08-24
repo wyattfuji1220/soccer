@@ -9,15 +9,14 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { politeDelay, USER_AGENT } from "./_env.mjs";
+import { fetchWithRetry, politeDelay, USER_AGENT } from "./_env.mjs";
 
 const ROOT = process.cwd();
 const API = "https://ja.wikipedia.org/w/api.php";
 
 async function api(params) {
   const url = `${API}?${new URLSearchParams({ format: "json", formatversion: "2", ...params })}`;
-  const res = await fetch(url, { headers: { "User-Agent": USER_AGENT } });
-  if (!res.ok) throw new Error(`Wikipedia API ${res.status}`);
+  const res = await fetchWithRetry(url, { headers: { "User-Agent": USER_AGENT } });
   return res.json();
 }
 
