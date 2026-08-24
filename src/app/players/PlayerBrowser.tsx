@@ -1,7 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import { useSearchParams } from "next/navigation";
+import { useEffect, useMemo, useState } from "react";
 import { players } from "@/data/players";
 import { leagues } from "@/data/leagues";
 import { PlayerCard } from "@/components/PlayerCard";
@@ -10,12 +9,19 @@ import type { LeagueId, Position } from "@/lib/types";
 const positions: Position[] = ["GK", "DF", "MF", "FW"];
 
 export function PlayerBrowser() {
-  const params = useSearchParams();
-  const initialLeague = (params.get("league") as LeagueId | null) ?? "all";
-
-  const [league, setLeague] = useState<LeagueId | "all">(initialLeague);
+  const [league, setLeague] = useState<LeagueId | "all">("all");
   const [position, setPosition] = useState<Position | "all">("all");
   const [query, setQuery] = useState("");
+
+  // useSearchParams を使うと静的書き出し時に中身が空のHTMLになり、
+  // クローラーから選手一覧が見えなくなる。全件を含んだHTMLを出したうえで、
+  // 読み込み後に ?league= を反映する。
+  useEffect(() => {
+    const requested = new URLSearchParams(window.location.search).get("league");
+    if (requested && leagues.some((l) => l.id === requested)) {
+      setLeague(requested as LeagueId);
+    }
+  }, []);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();

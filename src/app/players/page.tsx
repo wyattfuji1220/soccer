@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
 import { PlayerBrowser } from "./PlayerBrowser";
 
 export const metadata: Metadata = {
@@ -15,9 +14,7 @@ export default function PlayersPage() {
       <p className="mt-3 muted text-sm max-w-2xl leading-relaxed">
         リーグとポジションで絞り込めます。所属クラブは移籍により変動するため、各選手ページで最終確認日と出典をご確認ください。
       </p>
-      <Suspense fallback={<p className="mt-8 muted text-sm">読み込み中…</p>}>
-        <PlayerBrowser />
-      </Suspense>
+      <PlayerBrowser />
     </div>
   );
 }
