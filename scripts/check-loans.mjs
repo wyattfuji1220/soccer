@@ -31,8 +31,15 @@ function loanStatus(player) {
 const players = loadPlayers();
 const thisYear = new Date().getFullYear();
 
+// 人が一次情報で確認した結果。所属クラブが確認時と同じ間だけ有効で、
+// クラブが変われば再び確認対象に戻る。
+const confirmed = new Map(
+  JSON.parse(fs.readFileSync("scripts/loan-confirmed.json", "utf8")).map((c) => [c.slug, c])
+);
+
 const onLoan = [];
 const ambiguous = [];
+const resolved = [];
 
 for (const player of players) {
   const status = loanStatus(player);
@@ -47,7 +54,14 @@ for (const player of players) {
   const recent = player.career.filter(
     (r) => r.loan && r.years === String(thisYear) && !settled.has(r.team)
   );
-  if (recent.length > 0) ambiguous.push({ player, rows: recent });
+  if (recent.length === 0) continue;
+
+  const record = confirmed.get(player.slug);
+  if (record && record.club === player.club) {
+    resolved.push({ player, record });
+    continue;
+  }
+  ambiguous.push({ player, rows: recent });
 }
 
 const lines = [];
@@ -96,9 +110,25 @@ if (ambiguous.length === 0) {
   }
 }
 
+lines.push(`## 確認済みの選手（${resolved.length}人）`);
+lines.push("");
+lines.push("クラブ遍歴に紛らわしい貸出行があるが、一次情報で所属を確認したもの。");
+lines.push("所属クラブが変わると自動的に確認対象へ戻る。");
+lines.push("");
+if (resolved.length === 0) {
+  lines.push("なし");
+} else {
+  lines.push("| 選手 | 所属 | 確認日 | 備考 |");
+  lines.push("| --- | --- | --- | --- |");
+  for (const { player, record } of resolved) {
+    lines.push(`| ${player.nameJa} | ${player.club} | ${record.confirmedAt} | ${record.note} |`);
+  }
+}
+lines.push("");
+
 fs.mkdirSync("output", { recursive: true });
 const out = path.join("output", "loan-review.md");
 fs.writeFileSync(out, lines.join("\n") + "\n", "utf8");
 
-console.log(`期限付き移籍中: ${onLoan.length}人 / 判定できず: ${ambiguous.length}人`);
+console.log(`期限付き移籍中: ${onLoan.length}人 / 判定できず: ${ambiguous.length}人 / 確認済み: ${resolved.length}人`);
 console.log(`${out} に書き出しました。`);
