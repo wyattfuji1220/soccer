@@ -30,6 +30,17 @@ export function ConfidenceBadge({ confidence, checkedAt }: { confidence: Confide
   );
 }
 
+export function LoanBadge({ parentClub }: { parentClub?: string | null }) {
+  return (
+    <span
+      className="inline-flex items-center text-xs px-2 py-1 rounded bg-violet-500/15 text-violet-700 dark:text-violet-300"
+      title={parentClub ? `保有元は${parentClub}` : undefined}
+    >
+      期限付き移籍中
+    </span>
+  );
+}
+
 export function AdDisclosure() {
   return (
     <p className="text-xs muted border rounded-md px-3 py-2" style={{ borderColor: "var(--border)" }}>

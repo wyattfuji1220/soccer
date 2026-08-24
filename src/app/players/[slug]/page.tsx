@@ -4,10 +4,11 @@ import { notFound } from "next/navigation";
 import { players } from "@/data/players";
 import { leagueMap } from "@/data/leagues";
 import { clubsForPlayer } from "@/data/clubs";
-import { PositionBadge, ConfidenceBadge, AdDisclosure } from "@/components/Badges";
+import { PositionBadge, ConfidenceBadge, LoanBadge, AdDisclosure } from "@/components/Badges";
 import { PlayerVideos } from "@/components/PlayerVideos";
 import { BroadcasterList } from "@/components/BroadcasterList";
 import { CareerTimeline } from "@/components/CareerTimeline";
+import { loanStatus } from "@/lib/loan";
 import { age, formatDateJa } from "@/lib/format";
 import { amazonSearchUrl, rakutenSearchUrl } from "@/lib/affiliate";
 
@@ -36,6 +37,7 @@ export default async function PlayerPage({ params }: Props) {
   const league = leagueMap[player.league];
   const latestCheck = player.sources[0]?.checkedAt;
   const relatedClubs = clubsForPlayer(player.nameJa);
+  const loan = loanStatus(player);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -66,14 +68,25 @@ export default async function PlayerPage({ params }: Props) {
         </div>
       </div>
 
-      <div className="mt-4">
+      <div className="mt-4 flex flex-wrap items-center gap-2">
         <ConfidenceBadge confidence={player.confidence} checkedAt={latestCheck} />
+        {loan.onLoan && <LoanBadge parentClub={loan.parentClub} />}
       </div>
+
+      {loan.onLoan && (
+        <p className="mt-4 text-sm px-4 py-3 rounded-lg bg-violet-500/10 text-violet-800 dark:text-violet-200 leading-relaxed">
+          {loan.parentClub
+            ? `${loan.parentClub}から${player.club}へ期限付き移籍中です。契約上の保有元は${loan.parentClub}のため、移籍期間の終了後に所属が変わる可能性があります。`
+            : `${player.club}へ期限付き移籍中です。移籍期間の終了後に所属が変わる可能性があります。`}
+          クラブ遍歴の記載にもとづく判定です。
+        </p>
+      )}
 
       <section className="mt-8 surface rounded-xl overflow-hidden">
         <dl className="divide-y" style={{ borderColor: "var(--border)" }}>
           {[
             ["所属クラブ", player.club],
+            ...(loan.onLoan && loan.parentClub ? [["保有元クラブ", loan.parentClub]] : []),
             ["リーグ", `${league.name}（${league.country}）`],
             ["ポジション", player.position],
             ["生年月日", `${formatDateJa(player.birthDate)}（${age(player.birthDate)}歳）`],
