@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { leagueMap } from "@/data/leagues";
+import { cupMap } from "@/data/cups";
 import { broadcasters } from "@/data/broadcasters";
 import { broadcasterLink } from "@/lib/affiliate";
 import {
@@ -70,7 +71,16 @@ function MatchRow({ fixture, now }: { fixture: Fixture; now: Date }) {
 
       <div className="min-w-0">
         <div className="flex items-center gap-2 flex-wrap">
-          <span className="text-[11px] muted">{league.name}</span>
+          {fixture.cup ? (
+            <span
+              className="text-[11px] font-bold px-2 py-0.5 rounded-sm"
+              style={{ background: "var(--accent-soft)", color: "var(--accent)" }}
+            >
+              {cupMap[fixture.cup].name}
+            </span>
+          ) : (
+            <span className="text-[11px] muted">{league.name}</span>
+          )}
           <Countdown kickoff={kickoff} now={now} />
         </div>
 

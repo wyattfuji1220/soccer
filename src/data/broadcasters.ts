@@ -1,4 +1,4 @@
-import type { Broadcaster } from "@/lib/types";
+import type { Broadcaster, CupId } from "@/lib/types";
 
 /**
  * 日本国内の視聴手段。2026-27シーズン開幕時点で確認した内容。
@@ -18,6 +18,7 @@ export const broadcasters: Broadcaster[] = [
     name: "U-NEXT サッカーパック",
     monthlyPriceYen: 2600,
     leagues: ["premier-league", "la-liga", "eredivisie"],
+    cups: ["fa-cup", "copa-del-rey", "dfb-pokal", "knvb-cup"],
     officialUrl: "https://www.video.unext.jp/lp/football_pack",
     lastChecked: "2026-08-24",
     confidence: "verified",
@@ -75,6 +76,24 @@ export const broadcasterMap = Object.fromEntries(broadcasters.map((b) => [b.id, 
  * 国内の定額配信サービスで視聴手段が確認できていないリーグ。
  * 「情報がない」ことを黙って隠さず、明示するために持つ。
  */
+/**
+ * 配信元を確認できていないカップ戦。
+ *
+ * とくに欧州カップ戦は、リーグ戦とは別の事業者が権利を持つことが多い。
+ * 憶測で埋めず、確認できていないことをそのまま書く。
+ */
+export const cupsWithoutBroadcaster: Partial<Record<CupId, string>> = {
+  "champions-league": "国内の配信元を当サイトでは確認できていません。",
+  "europa-league": "国内の配信元を当サイトでは確認できていません。",
+  "conference-league": "国内の配信元を当サイトでは確認できていません。",
+  "efl-cup": "国内の配信元を当サイトでは確認できていません。",
+  "coppa-italia": "国内の配信元を当サイトでは確認できていません。",
+  "coupe-de-france": "国内の配信元を当サイトでは確認できていません。",
+  "taca-de-portugal": "国内の配信元を当サイトでは確認できていません。",
+  "belgian-cup": "国内の配信元を当サイトでは確認できていません。",
+  "scottish-cup": "国内の配信元を当サイトでは確認できていません。",
+};
+
 export const leaguesWithoutBroadcaster: Record<string, string> = {
   "bundesliga-2": "国内での定額配信は確認できていません。",
   "segunda-division": "国内での定額配信は確認できていません。",

@@ -35,6 +35,36 @@ export type League = {
   matchesPerSeason: number;
 };
 
+export type CupId =
+  | "champions-league"
+  | "europa-league"
+  | "conference-league"
+  | "fa-cup"
+  | "efl-cup"
+  | "dfb-pokal"
+  | "copa-del-rey"
+  | "coppa-italia"
+  | "coupe-de-france"
+  | "knvb-cup"
+  | "taca-de-portugal"
+  | "belgian-cup"
+  | "scottish-cup";
+
+export type Cup = {
+  id: CupId;
+  name: string;
+  nameEn: string;
+  /** 欧州大会か、各国の国内カップか */
+  scope: "europe" | "domestic";
+  /** 国内カップの開催国。欧州大会では未設定 */
+  country?: string;
+  /** このカップ戦に出場しうるクラブが所属するリーグ */
+  leagues: LeagueId[];
+  /** football-data.org のコンペティションコード。無料枠で取れるものだけ設定する */
+  footballDataCode?: string;
+  officialUrl: string;
+};
+
 export type Position = "GK" | "DF" | "MF" | "FW";
 
 export type Player = {
@@ -82,6 +112,8 @@ export type Broadcaster = {
   leagues: LeagueId[];
   /** 一部の試合のみ配信しているリーグ。全試合は観られないため、試合数の集計には含めない */
   partialLeagues?: LeagueId[];
+  /** 配信を確認できたカップ戦 */
+  cups?: CupId[];
   officialUrl: string;
   /** アフィリエイトリンク。未設定なら officialUrl にフォールバック */
   affiliateUrl?: string;
@@ -96,6 +128,8 @@ export type Broadcaster = {
 export type Fixture = {
   id: string;
   league: LeagueId;
+  /** リーグ戦以外の場合に入る。未設定ならリーグ戦 */
+  cup?: CupId;
   /** ISO 8601（UTC） */
   utcDate: string;
   homeTeam: string;

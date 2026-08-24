@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { leagueMap } from "@/data/leagues";
+import { cupMap } from "@/data/cups";
 import { broadcasters } from "@/data/broadcasters";
 import { broadcasterLink } from "@/lib/affiliate";
 import {
@@ -72,7 +73,18 @@ export default function FixturesPage() {
                       <p className="num text-xl font-semibold leading-none accent">{jstTime(kickoff)}</p>
                     </div>
                     <div className="min-w-0">
-                      <p className="text-xs muted">{league.name}</p>
+                      {f.cup ? (
+                        <p>
+                          <span
+                            className="text-[11px] font-bold px-2 py-0.5 rounded-sm"
+                            style={{ background: "var(--accent-soft)", color: "var(--accent)" }}
+                          >
+                            {cupMap[f.cup].name}
+                          </span>
+                        </p>
+                      ) : (
+                        <p className="text-xs muted">{league.name}</p>
+                      )}
                       <p className="mt-1 font-semibold leading-snug">
                         {f.homeTeam} <span className="muted font-normal mx-0.5">vs</span> {f.awayTeam}
                         {f.score && f.score.home !== null && (
@@ -87,7 +99,7 @@ export default function FixturesPage() {
                             <Link
                               key={p.slug}
                               href={`/players/${p.slug}/`}
-                              className="text-xs px-2 py-1 rounded-full border hover:border-pitch-500 transition-colors"
+                              className="text-xs px-2 py-1 rounded-sm border hover:border-pitch-500 transition-colors"
                               style={{ borderColor: "var(--border)" }}
                             >
                               {p.nameJa}

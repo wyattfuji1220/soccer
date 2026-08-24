@@ -19,6 +19,15 @@ if (!TOKEN) {
   process.exit(1);
 }
 
+/**
+ * 無料枠で日程を取得できるカップ戦。
+ * チャンピオンズリーグのみが対象で、ヨーロッパリーグや各国のカップ戦は有料プランが要る
+ * （https://www.football-data.org/coverage）。
+ */
+const CUP_CODES = {
+  "champions-league": "CL",
+};
+
 const LEAGUE_CODES = {
   "premier-league": "PL",
   "la-liga": "PD",
@@ -84,6 +93,45 @@ for (const [leagueId, clubs] of clubsByLeague) {
     });
   }
   console.log(`  ${leagueId}: ${hits.length}件`);
+  await politeDelay();
+}
+
+// カップ戦は複数リーグのクラブが同じ大会に出るため、リーグ単位ではなく大会単位で引く。
+const allClubs = new Set([...clubsByLeague.values()].flatMap((set) => [...set]));
+const leagueOfClub = new Map();
+for (const [leagueId, clubs] of clubsByLeague) {
+  for (const c of clubs) leagueOfClub.set(c, leagueId);
+}
+
+for (const [cupId, code] of Object.entries(CUP_CODES)) {
+  const url = `https://api.football-data.org/v4/competitions/${code}/matches?dateFrom=${dateFrom}&dateTo=${dateTo}`;
+  const res = await fetch(url, { headers: { "X-Auth-Token": TOKEN, "User-Agent": USER_AGENT } });
+  if (!res.ok) {
+    console.error(`  失敗: ${cupId} (HTTP ${res.status})`);
+    await politeDelay();
+    continue;
+  }
+  const data = await res.json();
+  const hits = (data.matches ?? []).filter(
+    (m) => matchesClub(m.homeTeam.name, allClubs) || matchesClub(m.awayTeam.name, allClubs)
+  );
+  for (const m of hits) {
+    // 掲載選手のクラブがどちらかにいるはずなので、そのクラブのリーグを試合のリーグとして持つ
+    const ours =
+      [...allClubs].find((c) => matchesClub(m.homeTeam.name, [c])) ??
+      [...allClubs].find((c) => matchesClub(m.awayTeam.name, [c]));
+    matches.push({
+      id: m.id,
+      league: leagueOfClub.get(ours) ?? "premier-league",
+      cup: cupId,
+      utcDate: m.utcDate,
+      homeTeam: m.homeTeam.shortName ?? m.homeTeam.name,
+      awayTeam: m.awayTeam.shortName ?? m.awayTeam.name,
+      status: m.status,
+      score: { home: m.score?.fullTime?.home ?? null, away: m.score?.fullTime?.away ?? null },
+    });
+  }
+  console.log(`  ${cupId}: ${hits.length}件`);
   await politeDelay();
 }
 

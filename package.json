@@ -11,6 +11,7 @@
     "export:output": "node scripts/copy-to-output.mjs",
     "data:wikipedia": "node scripts/fetch-wikipedia.mjs",
     "data:fixtures": "node scripts/fetch-fixtures.mjs",
+    "data:competitions": "node scripts/check-competitions.mjs",
     "data:videos": "node scripts/verify-videos.mjs",
     "data:players": "node scripts/fetch-players.mjs scripts/player-candidates.json && node scripts/generate-players.mjs && node scripts/fetch-clubs.mjs",
     "data:clubs": "node scripts/fetch-clubs.mjs",

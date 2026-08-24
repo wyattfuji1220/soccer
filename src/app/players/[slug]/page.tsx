@@ -7,6 +7,7 @@ import { clubsForPlayer } from "@/data/clubs";
 import { PositionBadge, ConfidenceBadge, LoanBadge, AdDisclosure } from "@/components/Badges";
 import { PlayerVideos } from "@/components/PlayerVideos";
 import { BroadcasterList } from "@/components/BroadcasterList";
+import { CupCoverage } from "@/components/CupCoverage";
 import { CareerTimeline } from "@/components/CareerTimeline";
 import { loanStatus } from "@/lib/loan";
 import { age, formatDateJa } from "@/lib/format";
@@ -136,6 +137,8 @@ export default async function PlayerPage({ params }: Props) {
       <PlayerVideos slug={player.slug} playerName={player.nameJa} />
 
       <BroadcasterList league={player.league} heading={`${player.nameJa}の試合を日本から観るには`} />
+
+      <CupCoverage league={player.league} />
 
       <section className="mt-12">
         <h2 className="text-xl font-bold mb-4">関連ページ</h2>
