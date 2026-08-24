@@ -48,6 +48,9 @@ jobs:
         env:
           NEXT_PUBLIC_SITE_URL: https://kaigai-gumi.com
           NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ secrets.GOOGLE_SITE_VERIFICATION }}
+          NEXT_PUBLIC_ADSENSE_CLIENT: ${{ secrets.ADSENSE_CLIENT }}
+          NEXT_PUBLIC_CONTACT_FORM_URL: ${{ secrets.CONTACT_FORM_URL }}
+          NEXT_PUBLIC_CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
           NEXT_PUBLIC_AMAZON_TAG: ${{ secrets.AMAZON_TAG }}
           NEXT_PUBLIC_RAKUTEN_AFFILIATE_ID: ${{ secrets.RAKUTEN_AFFILIATE_ID }}
         run: npm run build

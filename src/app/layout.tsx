@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { SITE_URL, SITE_NAME } from "@/lib/site";
+import { SITE_URL, SITE_NAME, ADSENSE_CLIENT } from "@/lib/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -33,6 +33,15 @@ const nav = [
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
+      {ADSENSE_CLIENT && (
+        <head>
+          <script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+            crossOrigin="anonymous"
+          />
+        </head>
+      )}
       <body className="min-h-screen flex flex-col">
         <header className="sticky top-0 z-50 backdrop-blur border-b" style={{ borderColor: "var(--border)", background: "color-mix(in srgb, var(--bg) 85%, transparent)" }}>
           <div className="mx-auto max-w-6xl px-4 h-16 flex items-center gap-6">

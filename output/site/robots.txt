@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 
-Sitemap: https://kaigaigumi-portal.example/sitemap.xml
+Sitemap: https://kaigai-gumi.com/sitemap.xml

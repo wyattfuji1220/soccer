@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CONTACT_FORM_URL, CONTACT_EMAIL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "サイトについて",
@@ -56,6 +57,44 @@ export default function AboutPage() {
           ))}
         </section>
       ))}
+
+      <section className="mt-10">
+        <h2 className="text-xl font-bold mb-4">お問い合わせ</h2>
+        <p className="leading-8 text-[15px]">
+          掲載内容の誤りのご指摘、権利に関するご連絡、その他のお問い合わせは以下からお願いします。
+          いただいた内容は確認のうえ、必要に応じて修正いたします。
+        </p>
+        {CONTACT_FORM_URL ? (
+          <a
+            href={CONTACT_FORM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-block px-5 py-3 rounded-lg bg-pitch-500 text-white text-sm font-semibold hover:bg-pitch-600 transition-colors"
+          >
+            お問い合わせフォームを開く
+          </a>
+        ) : CONTACT_EMAIL ? (
+          <p className="mt-4 text-[15px]">
+            <a
+              href={`mailto:${CONTACT_EMAIL}`}
+              className="text-pitch-600 dark:text-pitch-300 hover:underline font-medium"
+            >
+              {CONTACT_EMAIL}
+            </a>
+          </p>
+        ) : (
+          <p className="mt-4 text-sm muted">お問い合わせ方法は準備中です。</p>
+        )}
+      </section>
+
+      <section className="mt-10">
+        <h2 className="text-xl font-bold mb-4">サイトの構成</h2>
+        <p className="leading-8 text-[15px] mb-4">
+          本サイトは静的なウェブサイトとして構築され、GitHub Pages で公開しています。
+          選手データはWikipedia日本語版から定期的に取得し、毎日再ビルドしています。
+          サーバー側でユーザーの情報を受け取る仕組みは持っていません。
+        </p>
+      </section>
     </div>
   );
 }
