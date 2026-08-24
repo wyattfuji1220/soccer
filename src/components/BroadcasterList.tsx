@@ -42,32 +42,37 @@ export function BroadcasterList({
       </div>
       <div className="space-y-3">
         {options.map((b) => (
-          <div key={b.id} className="surface rounded-xl p-5">
+          <div key={b.id} className="surface rounded-lg p-5">
             <div className="flex flex-wrap items-start gap-4">
               <div className="min-w-0 flex-1">
                 <p className="font-bold">
                   {b.name}
                   {b.partialLeagues?.includes(league) && (
-                    <span className="ml-2 text-[11px] font-bold px-2 py-0.5 rounded bg-amber-500/15 text-amber-700 dark:text-amber-400 align-middle">
+                    <span className="ml-2 text-[11px] font-bold px-2 py-0.5 rounded-sm bg-amber-500/15 text-amber-700 dark:text-amber-400 align-middle">
                       一部の試合のみ
                     </span>
                   )}
                 </p>
-                <p className="text-sm muted mt-0.5">
-                  {b.monthlyPriceYen === 0 ? "対象試合は無料" : `月額 ${yen(b.monthlyPriceYen)}`}
-                </p>
+                {b.monthlyPriceYen === 0 ? (
+                  <p className="text-sm muted mt-1">対象試合は無料</p>
+                ) : (
+                  <p className="mt-1">
+                    <span className="num text-xl font-semibold">{yen(b.monthlyPriceYen)}</span>
+                    <span className="text-xs muted ml-1.5">/ 月</span>
+                  </p>
+                )}
               </div>
               <a
                 href={broadcasterLink(b)}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
-                className="px-4 py-2.5 rounded-lg bg-pitch-500 text-white text-sm font-semibold hover:bg-pitch-600 transition-colors shrink-0"
+                className="px-4 py-2.5 rounded-md bg-pitch-500 text-white text-sm font-semibold hover:bg-pitch-600 transition-colors shrink-0"
               >
                 公式サイトで確認
               </a>
             </div>
             {b.note && <p className="text-xs muted mt-3 leading-relaxed">{b.note}</p>}
-            <p className="text-[11px] muted mt-2">配信内容の最終確認: {b.lastChecked}</p>
+            <p className="text-[11px] muted mt-2 num">配信内容の最終確認: {b.lastChecked}</p>
           </div>
         ))}
       </div>

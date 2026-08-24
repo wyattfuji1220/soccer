@@ -12,14 +12,15 @@ function PlanCard({ plan, tone }: { plan: Plan; tone: "primary" | "compare" }) {
   const primary = tone === "primary";
   return (
     <div
-      className={`rounded-xl p-5 sm:p-6 border ${primary ? "border-pitch-500" : ""}`}
+      className="rounded-xl p-5 sm:p-6 border"
       style={{
-        borderColor: primary ? undefined : "var(--border)",
-        background: primary ? "color-mix(in srgb, var(--color-pitch-500) 7%, var(--surface))" : "var(--surface)",
+        borderColor: "var(--border)",
+        borderTop: primary ? "2px solid var(--accent)" : undefined,
+        background: primary ? "color-mix(in srgb, var(--accent) 5%, var(--surface))" : "var(--surface)",
       }}
     >
-      <p className={`text-xs font-bold mb-3 ${primary ? "text-pitch-600 dark:text-pitch-300" : "muted"}`}>
-        {primary ? "おすすめの組み合わせ" : "1社だけで契約する場合"}
+      <p className={`label mb-3 ${primary ? "text-pitch-600 dark:text-pitch-300" : ""}`}>
+        {primary ? "Best Combination" : "Single Service"}
       </p>
 
       <div className="flex flex-wrap items-center gap-2">
@@ -31,26 +32,26 @@ function PlanCard({ plan, tone }: { plan: Plan; tone: "primary" | "compare" }) {
         ))}
       </div>
 
-      <dl className="mt-5 grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <dl className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-5">
         <div>
-          <dt className="text-[11px] muted">月額合計</dt>
-          <dd className="text-xl font-bold tabular-nums mt-0.5">{yen(plan.monthlyYen)}</dd>
+          <dt className="label muted" style={{ fontSize: "10px" }}>月額合計</dt>
+          <dd className="num text-2xl font-semibold mt-1">{yen(plan.monthlyYen)}</dd>
         </div>
         <div>
-          <dt className="text-[11px] muted">年間</dt>
-          <dd className="text-xl font-bold tabular-nums mt-0.5">{yen(plan.annualYen)}</dd>
+          <dt className="label muted" style={{ fontSize: "10px" }}>年間</dt>
+          <dd className="num text-2xl font-semibold mt-1">{yen(plan.annualYen)}</dd>
         </div>
         <div>
-          <dt className="text-[11px] muted">観られる試合</dt>
-          <dd className="text-xl font-bold tabular-nums mt-0.5">
+          <dt className="label muted" style={{ fontSize: "10px" }}>観られる試合</dt>
+          <dd className="num text-2xl font-semibold mt-1">
             {plan.matchesPerYear}
-            <span className="text-xs font-normal muted ml-1">試合/年</span>
+            <span className="text-xs font-normal muted ml-1.5 font-sans">試合/年</span>
           </dd>
         </div>
         <div>
-          <dt className="text-[11px] muted">1試合あたり</dt>
+          <dt className="label muted" style={{ fontSize: "10px" }}>1試合あたり</dt>
           <dd
-            className={`text-xl font-bold tabular-nums mt-0.5 ${primary ? "text-pitch-600 dark:text-pitch-300" : ""}`}
+            className={`num text-2xl font-semibold mt-1 ${primary ? "text-pitch-600 dark:text-pitch-300" : ""}`}
           >
             {plan.yenPerMatch !== null ? yen(plan.yenPerMatch) : "—"}
           </dd>

@@ -9,7 +9,7 @@ const positionStyle: Record<Position, string> = {
 
 export function PositionBadge({ position }: { position: Position }) {
   return (
-    <span className={`inline-flex items-center justify-center w-9 h-6 rounded text-xs font-bold ${positionStyle[position]}`}>
+    <span className={`num inline-flex items-center justify-center w-9 h-6 rounded-sm text-xs font-semibold ${positionStyle[position]}`}>
       {position}
     </span>
   );
@@ -18,13 +18,13 @@ export function PositionBadge({ position }: { position: Position }) {
 export function ConfidenceBadge({ confidence, checkedAt }: { confidence: Confidence; checkedAt?: string }) {
   if (confidence === "verified") {
     return (
-      <span className="inline-flex items-center gap-1 text-xs px-2 py-1 rounded bg-pitch-500/15 text-pitch-600 dark:text-pitch-300">
+      <span className="num inline-flex items-center gap-1 text-[11px] px-2 py-1 rounded-sm bg-pitch-500/15 text-pitch-600 dark:text-pitch-300">
         出典確認済{checkedAt ? `（${checkedAt}）` : ""}
       </span>
     );
   }
   return (
-    <span className="inline-flex items-center gap-1 text-xs px-2 py-1 rounded bg-amber-500/15 text-amber-700 dark:text-amber-400">
+    <span className="num inline-flex items-center gap-1 text-[11px] px-2 py-1 rounded-sm bg-amber-500/15 text-amber-700 dark:text-amber-400">
       要再確認{checkedAt ? `（最終確認 ${checkedAt}）` : ""}
     </span>
   );
@@ -33,7 +33,7 @@ export function ConfidenceBadge({ confidence, checkedAt }: { confidence: Confide
 export function LoanBadge({ parentClub }: { parentClub?: string | null }) {
   return (
     <span
-      className="inline-flex items-center text-xs px-2 py-1 rounded bg-violet-500/15 text-violet-700 dark:text-violet-300"
+      className="num inline-flex items-center text-[11px] px-2 py-1 rounded-sm bg-violet-500/15 text-violet-700 dark:text-violet-300"
       title={parentClub ? `保有元は${parentClub}` : undefined}
     >
       期限付き移籍中
@@ -43,7 +43,7 @@ export function LoanBadge({ parentClub }: { parentClub?: string | null }) {
 
 export function AdDisclosure() {
   return (
-    <p className="text-xs muted border rounded-md px-3 py-2" style={{ borderColor: "var(--border)" }}>
+    <p className="text-xs muted border rounded-sm px-3 py-2" style={{ borderColor: "var(--border)" }}>
       本セクションのリンクには広告（アフィリエイトリンク）が含まれます。価格・配信対象は各サービスの公式ページでご確認ください。
     </p>
   );

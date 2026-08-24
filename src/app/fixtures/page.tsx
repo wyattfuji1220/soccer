@@ -69,14 +69,14 @@ export default function FixturesPage() {
                     style={{ borderColor: "var(--border)" }}
                   >
                     <div className="pt-0.5">
-                      <p className="text-base font-bold tabular-nums leading-none">{jstTime(kickoff)}</p>
+                      <p className="num text-xl font-semibold leading-none accent">{jstTime(kickoff)}</p>
                     </div>
                     <div className="min-w-0">
                       <p className="text-xs muted">{league.name}</p>
                       <p className="mt-1 font-semibold leading-snug">
                         {f.homeTeam} <span className="muted font-normal mx-0.5">vs</span> {f.awayTeam}
                         {f.score && f.score.home !== null && (
-                          <span className="ml-3 tabular-nums">
+                          <span className="ml-3 num">
                             {f.score.home} - {f.score.away}
                           </span>
                         )}

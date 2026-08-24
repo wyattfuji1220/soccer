@@ -59,7 +59,7 @@ function BlockView({ block }: { block: Block }) {
                     {row.map((cell, j) => (
                       <td
                         key={j}
-                        className={`px-4 py-3 align-top leading-6 ${j > 0 ? "tabular-nums" : "font-medium"}`}
+                        className={`px-4 py-3 align-top leading-6 ${j > 0 ? "num" : "font-medium"}`}
                         style={{ borderTop: i === 0 ? "none" : "1px solid var(--border)" }}
                       >
                         {cell}
@@ -150,7 +150,7 @@ export default async function GuidePage({ params }: Props) {
         </section>
       )}
 
-      <section className="mt-12 surface rounded-2xl p-6">
+      <section className="mt-12 surface rounded-xl p-6">
         <p className="font-bold">追いかけたい選手が複数いる場合</p>
         <p className="mt-2 text-sm muted leading-relaxed">
           必要な契約の組み合わせは直感では判断しにくくなります。選手を選ぶだけで、必要なサービス・年間費用・

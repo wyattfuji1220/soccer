@@ -104,7 +104,7 @@ export default async function ClubPage({ params }: Props) {
                   className="grid grid-cols-[5.5rem_1fr_auto] gap-3 items-baseline py-3 border-t"
                   style={{ borderColor: "var(--border)" }}
                 >
-                  <span className="text-xs muted tabular-nums">{past.years ?? "—"}</span>
+                  <span className="text-xs muted num">{past.years ?? "—"}</span>
                   <span>
                     {p ? (
                       <Link href={`/players/${p.slug}/`} className="text-sm font-medium hover:underline">

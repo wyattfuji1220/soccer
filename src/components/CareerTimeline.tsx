@@ -2,19 +2,19 @@ import type { CareerRow } from "@/lib/types";
 
 function Row({ row, current }: { row: CareerRow; current: boolean }) {
   return (
-    <li className="grid grid-cols-[5.5rem_1fr_auto] gap-x-3 gap-y-1 items-baseline py-2.5 border-t" style={{ borderColor: "var(--border)" }}>
-      <span className="text-xs muted tabular-nums whitespace-nowrap">{row.years ?? "—"}</span>
+    <li className="grid grid-cols-[5.5rem_1fr_auto] gap-x-3 gap-y-1 items-baseline py-2.5 hair">
+      <span className="text-xs muted num whitespace-nowrap">{row.years ?? "—"}</span>
 
       <span className="min-w-0">
         <span className={`text-sm ${current ? "font-bold" : ""}`}>{row.team}</span>
         {row.loan && (
-          <span className="ml-2 text-[10px] px-1.5 py-0.5 rounded bg-black/5 dark:bg-white/10 muted align-middle">
+          <span className="ml-2 text-[10px] px-1.5 py-0.5 rounded-sm muted align-middle" style={{ background: "color-mix(in srgb, var(--text) 7%, transparent)" }}>
             期限付き
           </span>
         )}
       </span>
 
-      <span className="text-xs tabular-nums whitespace-nowrap muted">
+      <span className="text-xs num whitespace-nowrap muted">
         {row.apps !== null ? (
           <>
             {row.apps}
@@ -47,7 +47,7 @@ function Section({ title, rows, note }: { title: string; rows: CareerRow[]; note
       <div className="flex items-baseline justify-between gap-4">
         <h3 className="text-sm font-bold">{title}</h3>
         {total.apps > 0 && (
-          <p className="text-xs muted tabular-nums">
+          <p className="text-xs muted num">
             通算 {total.apps}試合 {total.goals}得点
           </p>
         )}

@@ -67,9 +67,9 @@ export default function ClubsPage() {
               href={`/clubs/${c.slug}/`}
               className="surface rounded-xl p-4 hover:border-pitch-500/50 transition-colors"
             >
-              <p className="text-2xl font-bold tabular-nums">
+              <p className="num text-3xl font-semibold accent">
                 {c.pastPlayers.length}
-                <span className="text-sm font-normal muted ml-1">人</span>
+                <span className="text-sm font-normal muted ml-1.5 font-sans">人</span>
               </p>
               <p className="text-sm mt-1 leading-snug">{c.name}</p>
             </Link>

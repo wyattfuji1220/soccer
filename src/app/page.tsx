@@ -49,10 +49,9 @@ export default function Home() {
   return (
     <>
       <section className="mx-auto max-w-5xl px-4 pt-14 pb-6">
-        <p className="text-sm font-semibold text-pitch-600 dark:text-pitch-300">
-          欧州で戦う日本人選手のファクトデータベース
-        </p>
-        <h1 className="mt-4 text-3xl md:text-5xl font-bold leading-tight tracking-tight max-w-3xl">
+        <p className="label text-pitch-600 dark:text-pitch-300">Japanese Players Abroad</p>
+        <p className="mt-3 text-sm font-bold">欧州で戦う日本人選手のファクトデータベース</p>
+        <h1 className="mt-4 text-3xl md:text-5xl font-black leading-tight max-w-3xl">
           今夜、誰の試合が、
           <br />
           何時に、どこで観られるか。
@@ -77,12 +76,16 @@ export default function Home() {
       <section className="mx-auto max-w-5xl px-4 py-8">
         <Link
           href="/watch-plan/"
-          className="block rounded-2xl p-6 sm:p-8 border border-pitch-500/40 hover:border-pitch-500 transition-colors"
-          style={{ background: "color-mix(in srgb, var(--color-pitch-500) 7%, var(--surface))" }}
+          className="block rounded-xl p-6 sm:p-8 border hover:border-pitch-500/70 transition-colors"
+          style={{
+            borderColor: "var(--border)",
+            borderTop: "2px solid var(--accent)",
+            background: "color-mix(in srgb, var(--accent) 5%, var(--surface))",
+          }}
         >
           <div className="flex items-start justify-between gap-6 flex-wrap">
             <div className="max-w-xl">
-              <p className="text-xs font-bold text-pitch-600 dark:text-pitch-300">視聴プラン診断</p>
+              <p className="label text-pitch-600 dark:text-pitch-300">Watch Plan Finder</p>
               <p className="mt-2 text-xl sm:text-2xl font-bold leading-snug">
                 その契約、本当に必要ですか。
               </p>
@@ -105,11 +108,11 @@ export default function Home() {
             <Link
               key={league.id}
               href={`/players/?league=${league.id}`}
-              className="surface rounded-xl p-4 hover:border-pitch-500/50 transition-colors"
+              className="surface rounded-lg p-4 hover:border-pitch-500/60 transition-colors"
             >
-              <p className="text-2xl font-bold tabular-nums">
+              <p className="num text-3xl font-semibold accent">
                 {count}
-                <span className="text-sm font-normal muted ml-1">人</span>
+                <span className="text-sm font-normal muted ml-1.5 font-sans">人</span>
               </p>
               <p className="text-sm mt-1 truncate">{league.name}</p>
               <p className="text-xs muted">{league.country}</p>
@@ -133,7 +136,7 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-5xl px-4 py-8">
-        <div className="surface rounded-2xl p-6 sm:p-8">
+        <div className="surface rounded-xl p-6 sm:p-8">
           <h2 className="text-xl font-bold mb-4">このサイトの編集方針</h2>
           <ul className="space-y-3 text-sm leading-relaxed muted">
             <li>
@@ -149,7 +152,7 @@ export default function Home() {
               移籍市場の期間中など、情報が変動しうる項目には「要再確認」を表示します。
             </li>
           </ul>
-          <p className="mt-6 text-xs muted">
+          <p className="mt-6 text-xs muted num">
             現在の掲載選手数: {players.length}人 / 対象リーグ: {Object.keys(leagueMap).length}リーグ
           </p>
         </div>

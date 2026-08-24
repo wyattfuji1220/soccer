@@ -1,34 +1,46 @@
 @import "tailwindcss";
 
 @theme {
-  --color-pitch-50: #eefbf3;
-  --color-pitch-300: #6ee7a0;
-  --color-pitch-500: #16a34a;
-  --color-pitch-600: #12833c;
-  --color-ink-900: #0b1220;
-  --color-ink-800: #121a2b;
-  --color-ink-700: #1b2540;
+  --color-pitch-50: #ecfaf2;
+  --color-pitch-300: #5fe09a;
+  --color-pitch-500: #109a55;
+  --color-pitch-600: #0c7a42;
+  --color-ink-900: #0a1120;
+  --color-ink-800: #101a2c;
+  --color-ink-700: #1b2740;
   --color-ink-500: #4a5878;
-  --color-ink-300: #98a3bd;
+  --color-ink-300: #8496b6;
 
   --font-sans: "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
+/* 明るい面。数字と罫線で作る端末の見た目を、紙色の地でも保つ */
 :root {
-  --bg: #ffffff;
-  --surface: #f6f8fb;
-  --border: #e3e8f0;
-  --text: #0b1220;
-  --text-muted: #56617c;
+  --bg: #f5f8fc;
+  --surface: #ffffff;
+  --border: #d5dded;
+  --hairline: #e7ecf6;
+  --text: #0a1020;
+  --text-muted: #56668a;
+  --accent: #0c7a42;
+  --accent-soft: rgba(16, 154, 85, 0.1);
+  --live: #a8620a;
+  --live-soft: rgba(168, 98, 10, 0.1);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #0b1220;
-    --surface: #121a2b;
-    --border: #22304d;
-    --text: #eaeff8;
-    --text-muted: #98a3bd;
+    --bg: #0a1120;
+    --surface: #101a2c;
+    --border: #22304c;
+    --hairline: #1a2640;
+    --text: #e9eefa;
+    --text-muted: #8496b6;
+    --accent: #5fe09a;
+    --accent-soft: rgba(95, 224, 154, 0.12);
+    --live: #f5a524;
+    --live-soft: rgba(245, 165, 36, 0.12);
   }
 }
 
@@ -43,6 +55,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+h1,
+h2,
+h3 {
+  letter-spacing: -0.02em;
+}
+
 .surface {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -50,4 +68,29 @@ body {
 
 .muted {
   color: var(--text-muted);
+}
+
+/* 数字はこのサイトの主役。等幅・桁揃えで並べる */
+.num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+/* 項目名。小さく、字間を空けて、内容から一段下げる。色は使う側で指定する */
+.label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* 行の区切り。枠線より薄く、密度を上げるための罫 */
+.hair {
+  border-top: 1px solid var(--hairline);
+}
+
+.accent {
+  color: var(--accent);
 }

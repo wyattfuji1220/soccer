@@ -33,28 +33,38 @@ const nav = [
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
-      {ADSENSE_CLIENT && (
-        <head>
+      <head>
+        {/* 数字用。ラテン文字のみのため軽い */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+        />
+        {ADSENSE_CLIENT && (
           <script
             async
             src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
             crossOrigin="anonymous"
           />
-        </head>
-      )}
+        )}
+      </head>
       <body className="min-h-screen flex flex-col">
-        <header className="sticky top-0 z-50 backdrop-blur border-b" style={{ borderColor: "var(--border)", background: "color-mix(in srgb, var(--bg) 85%, transparent)" }}>
-          <div className="mx-auto max-w-6xl px-4 h-16 flex items-center gap-6">
-            <Link href="/" className="flex items-center gap-2 font-bold tracking-tight">
-              <span className="inline-block w-3 h-3 rounded-full bg-pitch-500" aria-hidden />
+        <header
+          className="sticky top-0 z-50 backdrop-blur border-b"
+          style={{ borderColor: "var(--border)", background: "color-mix(in srgb, var(--bg) 88%, transparent)" }}
+        >
+          <div className="mx-auto max-w-6xl px-4 h-14 flex items-center gap-6">
+            <Link href="/" className="flex items-center gap-2.5 font-bold tracking-tight shrink-0">
+              <span className="inline-block w-2 h-2 bg-pitch-500" aria-hidden />
               <span>海外組ポータル</span>
             </Link>
-            <nav className="ml-auto flex items-center gap-1 text-sm">
+            <nav className="ml-auto flex items-center gap-0.5 text-[13px] overflow-x-auto">
               {nav.map((n) => (
                 <Link
                   key={n.href}
                   href={n.href}
-                  className="px-3 py-2 rounded-md hover:bg-pitch-500/10 transition-colors"
+                  className="px-2.5 py-1.5 rounded whitespace-nowrap hover:bg-pitch-500/10 hover:text-pitch-600 dark:hover:text-pitch-300 transition-colors"
                 >
                   {n.label}
                 </Link>
@@ -67,7 +77,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <footer className="border-t mt-16" style={{ borderColor: "var(--border)" }}>
           <div className="mx-auto max-w-6xl px-4 py-10 text-sm muted space-y-3">
-            <p className="font-semibold" style={{ color: "var(--text)" }}>海外組ポータル</p>
+            <p className="label muted">Kaigai-Gumi Portal</p>
+            <p className="font-bold text-base" style={{ color: "var(--text)" }}>海外組ポータル</p>
             <p>
               当サイトは公開情報にもとづく事実の整理を目的としています。選手写真・クラブロゴ・試合映像等の
               著作権保護対象コンテンツは掲載していません。データの出典は各ページに明記しています。
