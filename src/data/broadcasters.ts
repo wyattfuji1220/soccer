@@ -59,6 +59,18 @@ export const broadcasters: Broadcaster[] = [
     freeTrialNote: "対象試合は無料で視聴できる。",
   },
   {
+    id: "wowow-on-demand",
+    name: "WOWOWオンデマンド",
+    monthlyPriceYen: 2530,
+    leagues: [],
+    cups: ["champions-league", "europa-league", "conference-league"],
+    officialUrl: "https://wod.wowow.co.jp/genre/106",
+    lastChecked: "2026-08-25",
+    confidence: "verified",
+    note: "スタンダードプラン（月額2,530円・税込）の価格。UEFAチャンピオンズリーグ、ヨーロッパリーグ、カンファレンスリーグ、UEFAスーパーカップが対象。国内リーグ戦の配信はない。CL・ELだけを観るなら、2026-27シーズンパス（12,100円・税込）という買い切りもある。",
+    freeTrialNote: "ショートハイライトは無料で視聴できる。",
+  },
+  {
     id: "celtic-tv",
     name: "セルティックTV",
     monthlyPriceYen: 3000,
@@ -83,9 +95,6 @@ export const broadcasterMap = Object.fromEntries(broadcasters.map((b) => [b.id, 
  * 憶測で埋めず、確認できていないことをそのまま書く。
  */
 export const cupsWithoutBroadcaster: Partial<Record<CupId, string>> = {
-  "champions-league": "国内の配信元を当サイトでは確認できていません。",
-  "europa-league": "国内の配信元を当サイトでは確認できていません。",
-  "conference-league": "国内の配信元を当サイトでは確認できていません。",
   "efl-cup": "国内の配信元を当サイトでは確認できていません。",
   "coppa-italia": "国内の配信元を当サイトでは確認できていません。",
   "coupe-de-france": "国内の配信元を当サイトでは確認できていません。",
