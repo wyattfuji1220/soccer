@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, SITE_NAME, ADSENSE_CLIENT } from "@/lib/site";
+import { usingSampleData } from "@/lib/fixtures";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -85,6 +86,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               著作権保護対象コンテンツは掲載していません。データの出典は各ページに明記しています。
             </p>
             <p>本サイトはアフィリエイトプログラムに参加しており、リンクを経由した購入・登録により収益を得る場合があります。</p>
+            {/* 利用規約 7.1 で指定された文言。表記はそのまま用いる */}
+            {!usingSampleData && (
+              <p>
+                Football data provided by the{" "}
+                <a
+                  href="https://www.football-data.org/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="hover:underline"
+                >
+                  Football-Data.org API
+                </a>
+              </p>
+            )}
             <div className="flex gap-4 pt-2">
               <Link href="/about/" className="hover:underline">サイトについて</Link>
               <Link href="/privacy/" className="hover:underline">プライバシーポリシー</Link>
