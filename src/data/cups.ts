@@ -10,6 +10,9 @@ import type { Cup, CupId, LeagueId } from "@/lib/types";
  * footballDataCode は無料枠で日程を取得できるものだけ設定している。
  * 無料枠に含まれるカップ戦はチャンピオンズリーグのみ（2026年8月25日時点、
  * https://www.football-data.org/coverage の公開表で確認）。
+ *
+ * ただし予選ラウンドは Champions League Qualification という別大会として扱われ、
+ * こちらは無料枠に含まれない。そのため日程に出るのはリーグフェーズ（9月開幕）以降。
  */
 export const cups: Cup[] = [
   {

@@ -65,6 +65,12 @@ function CupBlock({ cup }: { cup: Cup }) {
       <p className="mt-4 text-xs muted">
         対象リーグ: {cup.leagues.map((l) => leagueMap[l].name).join("・")}
       </p>
+      <p className="mt-1 text-xs muted">
+        日程の掲載:{" "}
+        {cup.footballDataCode
+          ? "本大会のみ。予選ラウンドは当サイトのデータ取得の対象外です。"
+          : "なし。当サイトの試合日程ページには表示されません。"}
+      </p>
       <p className="mt-1 text-xs">
         <a
           href={cup.officialUrl}

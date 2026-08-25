@@ -7,7 +7,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { loadEnv, politeDelay, USER_AGENT } from "./_env.mjs";
+import { fetchWithRetry, loadEnv, politeDelay, USER_AGENT } from "./_env.mjs";
 
 const ROOT = process.cwd();
 loadEnv(ROOT);
@@ -92,6 +92,88 @@ function displayName(team) {
 
 /** 何を取得できて、何ができなかったかを残す。無言で欠けるのを防ぐ */
 const report = [];
+
+const hasJapanese = (s) => /[぀-ヿ㐀-鿿]/.test(s);
+
+/**
+ * 掲載外の対戦相手クラブの日本語名を Wikipedia から引く。
+ *
+ * APIの略称（Atleti、Barça）では記事にたどり着けないため、正式名称で引く。
+ * 日本語記事が {{サッカークラブ}} を持つことを確かめてから採用する。
+ * 過去に「クリスタル・パレス」がロンドンの建物の記事に化けた例があるため、
+ * 確証が持てないものは英語表記のまま残す。
+ */
+async function resolveJapaneseNames(englishNames) {
+  const resolved = new Map();
+  if (englishNames.length === 0) return resolved;
+
+  const follow = (title, table) => {
+    let t = title;
+    for (let i = 0; i < 3; i++) t = table.get(t) ?? t;
+    return t;
+  };
+
+  // 1. 英語版から日本語版へのリンクを引く
+  const candidates = new Map();
+  for (let i = 0; i < englishNames.length; i += 50) {
+    const chunk = englishNames.slice(i, i + 50);
+    const url = `https://en.wikipedia.org/w/api.php?${new URLSearchParams({
+      format: "json",
+      formatversion: "2",
+      action: "query",
+      titles: chunk.join("|"),
+      prop: "langlinks",
+      lllang: "ja",
+      lllimit: "500",
+      redirects: "1",
+    })}`;
+    const data = await (await fetchWithRetry(url, { headers: { "User-Agent": USER_AGENT } })).json();
+    const table = new Map();
+    for (const n of data.query?.normalized ?? []) table.set(n.from, n.to);
+    for (const r of data.query?.redirects ?? []) table.set(r.from, r.to);
+    const pages = new Map((data.query?.pages ?? []).map((x) => [x.title, x]));
+    for (const name of chunk) {
+      const ja = pages.get(follow(name, table))?.langlinks?.[0]?.title;
+      if (ja) candidates.set(name, ja);
+    }
+    if (i + 50 < englishNames.length) await politeDelay();
+  }
+  if (candidates.size === 0) return resolved;
+
+  // 2. その日本語記事が本当にサッカークラブの記事か確かめる
+  const jaTitles = [...new Set(candidates.values())];
+  const verified = new Set();
+  for (let i = 0; i < jaTitles.length; i += 50) {
+    const chunk = jaTitles.slice(i, i + 50);
+    const url = `https://ja.wikipedia.org/w/api.php?${new URLSearchParams({
+      format: "json",
+      formatversion: "2",
+      action: "query",
+      titles: chunk.join("|"),
+      prop: "revisions",
+      rvprop: "content",
+      rvslots: "main",
+      redirects: "1",
+    })}`;
+    await politeDelay();
+    const data = await (await fetchWithRetry(url, { headers: { "User-Agent": USER_AGENT } })).json();
+    const table = new Map();
+    for (const n of data.query?.normalized ?? []) table.set(n.from, n.to);
+    for (const r of data.query?.redirects ?? []) table.set(r.from, r.to);
+    const pages = new Map((data.query?.pages ?? []).map((x) => [x.title, x]));
+    for (const title of chunk) {
+      const page = pages.get(follow(title, table));
+      const text = page?.revisions?.[0]?.slots?.main?.content ?? "";
+      if (text.includes("{{サッカークラブ")) verified.add(title);
+    }
+  }
+
+  for (const [en, ja] of candidates) {
+    if (verified.has(ja)) resolved.set(en, ja);
+  }
+  return resolved;
+}
+
 const dateFrom = new Date().toISOString().slice(0, 10);
 const dateTo = new Date(Date.now() + 21 * 86400000).toISOString().slice(0, 10);
 
@@ -179,6 +261,33 @@ for (const [cupId, code] of Object.entries(CUP_CODES)) {
   });
   console.log(`  ${cupId}: 全${(data.matches ?? []).length}試合中 ${hits.length}件が掲載クラブ`);
   await politeDelay();
+}
+
+// 掲載外のクラブは英語のまま残っている。Wikipediaで日本語名が確かめられた分だけ差し替える。
+const unresolved = [
+  ...new Set(
+    matches.flatMap((m) => [
+      hasJapanese(m.homeTeam) ? [] : [m.homeTeamEn],
+      hasJapanese(m.awayTeam) ? [] : [m.awayTeamEn],
+    ].flat())
+  ),
+].filter(Boolean);
+
+if (unresolved.length > 0) {
+  console.log(`\n対戦相手 ${unresolved.length}クラブの日本語名を Wikipedia で確認します`);
+  await politeDelay();
+  const jaNames = await resolveJapaneseNames(unresolved);
+  for (const m of matches) {
+    if (!hasJapanese(m.homeTeam) && jaNames.has(m.homeTeamEn)) m.homeTeam = jaNames.get(m.homeTeamEn);
+    if (!hasJapanese(m.awayTeam) && jaNames.has(m.awayTeamEn)) m.awayTeam = jaNames.get(m.awayTeamEn);
+  }
+  console.log(`  ${jaNames.size}クラブを日本語名にしました（残り${unresolved.length - jaNames.size}クラブは英語のまま）`);
+  report.push({
+    competition: "club-names",
+    ok: true,
+    count: jaNames.size,
+    total: unresolved.length,
+  });
 }
 
 matches.sort((a, b) => a.utcDate.localeCompare(b.utcDate));
