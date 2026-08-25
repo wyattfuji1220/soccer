@@ -3,8 +3,18 @@ import { players } from "@/data/players";
 import raw from "@/data/fixtures.json";
 import { fromJst, nightKey } from "./jst";
 
+export type FetchReport = {
+  competition: string;
+  ok: boolean;
+  count?: number;
+  /** APIが返した全試合数。掲載クラブの試合が0件なのか、取得自体が空なのかを見分ける */
+  total?: number;
+  error?: string;
+};
+
 type FixtureFile = {
   updatedAt: string | null;
+  report?: FetchReport[];
   matches: Fixture[];
 };
 
@@ -13,6 +23,9 @@ const file = raw as unknown as FixtureFile;
 /** 実データが未取得かどうか。UIでサンプル表示であることを明示するために使う */
 export const usingSampleData = file.matches.length === 0;
 export const fixturesUpdatedAt = file.updatedAt;
+
+/** 取得できなかった大会。黙って欠けるのを避けるため、UIに出す */
+export const fetchFailures = (file.report ?? []).filter((r) => !r.ok);
 
 /**
  * サンプル日程。football-data.org のAPIキー設定前でも体験を確認できるようにする。

@@ -10,6 +10,7 @@ import {
   playersInFixture,
   usingSampleData,
   fixturesUpdatedAt,
+  fetchFailures,
 } from "@/lib/fixtures";
 import { jstTime, jstDate, fromJst } from "@/lib/jst";
 
@@ -41,6 +42,14 @@ export default function FixturesPage() {
           <strong>これはサンプル日程です。</strong>{" "}
           football-data.org のAPIキーを <code className="font-mono text-xs">.env.local</code> に設定し、
           <code className="font-mono text-xs">npm run data:fixtures</code> を実行すると実際の日程に切り替わります。
+        </p>
+      )}
+
+      {fetchFailures.length > 0 && (
+        <p className="mt-5 text-sm px-4 py-3 rounded-lg bg-amber-500/12 text-amber-700 dark:text-amber-400 leading-relaxed">
+          次の大会の日程は取得できませんでした:{" "}
+          {fetchFailures.map((f) => `${f.competition}（${f.error}）`).join(" / ")}
+          。このページには含まれていません。
         </p>
       )}
 
