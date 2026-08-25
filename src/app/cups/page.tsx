@@ -6,6 +6,7 @@ import { leagueMap } from "@/data/leagues";
 import { broadcasters, cupsWithoutBroadcaster } from "@/data/broadcasters";
 import { broadcasterLink } from "@/lib/affiliate";
 import { AdDisclosure } from "@/components/Badges";
+import { Flag } from "@/components/Flag";
 import type { Cup } from "@/lib/types";
 
 export const metadata: Metadata = {
@@ -29,7 +30,8 @@ function CupBlock({ cup }: { cup: Cup }) {
       <div className="flex items-baseline justify-between gap-4 flex-wrap">
         <div>
           <h3 className="text-lg font-bold">{cup.name}</h3>
-          <p className="text-[11px] muted mt-0.5">
+          <p className="text-[11px] muted mt-0.5 flex items-center gap-1.5">
+            {cup.country && <Flag country={cup.country} size={10} />}
             {cup.nameEn} ・ {cup.scope === "europe" ? "欧州大会" : `${cup.country}の国内カップ`}
           </p>
         </div>

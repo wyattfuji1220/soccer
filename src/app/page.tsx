@@ -4,6 +4,7 @@ import { leagues, leagueMap } from "@/data/leagues";
 import { clubs } from "@/data/clubs";
 import { guides } from "@/data/guides";
 import { PlayerCard } from "@/components/PlayerCard";
+import { Flag } from "@/components/Flag";
 import { TonightBoard } from "@/components/TonightBoard";
 import { getFixtures, groupByNight, playersInFixture } from "@/lib/fixtures";
 import { SITE_URL } from "@/lib/site";
@@ -128,18 +129,35 @@ export default function Home() {
         <p className="label muted">Browse by League</p>
         <h2 className="text-xl font-bold mt-2 mb-1">リーグ別</h2>
         <p className="text-sm muted mb-5">クリックすると、そのリーグの選手だけに絞り込みます。</p>
-        <ul className="surface rounded-lg px-5 py-1 md:grid md:grid-cols-2 md:gap-x-10">
+        <ul className="surface rounded-lg px-5 py-2 md:grid md:grid-cols-2 md:gap-x-10">
           {byLeague.map(({ league, count }, i) => (
-            <li key={league.id} className={i === 0 || i === 1 ? "md:border-t-0" : ""} style={{ borderTop: i === 0 ? "none" : "1px solid var(--hairline)" }}>
+            <li
+              key={league.id}
+              className={i === 0 || i === 1 ? "md:border-t-0" : ""}
+              style={{ borderTop: i === 0 ? "none" : "1px solid var(--hairline)" }}
+            >
               <Link
                 href={`/players/?league=${league.id}`}
-                className="grid grid-cols-[2.5rem_1fr_auto] items-baseline gap-4 py-2.5 group"
+                className="grid grid-cols-[auto_1fr_2rem] items-center gap-x-3 gap-y-1.5 py-2.5 group"
               >
-                <span className="num text-xl font-semibold accent text-right">{count}</span>
+                <Flag country={league.country} size={13} />
                 <span className="text-sm font-medium truncate group-hover:text-pitch-600 dark:group-hover:text-pitch-300 transition-colors">
                   {league.name}
                 </span>
-                <span className="text-xs muted">{league.country}</span>
+                <span className="num text-base font-semibold accent text-right">{count}</span>
+                <span
+                  className="col-start-2 col-span-2 h-1.5 rounded-sm overflow-hidden"
+                  style={{ background: "color-mix(in srgb, var(--text) 7%, transparent)" }}
+                  aria-hidden
+                >
+                  <span
+                    className="block h-full rounded-sm"
+                    style={{
+                      width: `${(count / byLeague[0].count) * 100}%`,
+                      background: "var(--accent)",
+                    }}
+                  />
+                </span>
               </Link>
             </li>
           ))}

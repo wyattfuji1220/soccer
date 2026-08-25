@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Player } from "@/lib/types";
 import { leagueMap } from "@/data/leagues";
 import { PositionBadge, LoanBadge } from "./Badges";
+import { Flag } from "./Flag";
 import { loanStatus } from "@/lib/loan";
 import { age } from "@/lib/format";
 
@@ -25,8 +26,10 @@ export function PlayerCard({ player }: { player: Player }) {
       </div>
       <div className="text-sm space-y-1">
         <p className="truncate">{player.club}</p>
-        <p className="text-xs muted">
-          {league.name} <span className="num ml-1">{age(player.birthDate)}</span>歳
+        <p className="text-xs muted flex items-center gap-1.5">
+          <Flag country={league.country} size={11} />
+          {league.name}
+          <span className="num ml-0.5">{age(player.birthDate)}</span>歳
         </p>
         {loan.onLoan && (
           <p className="pt-1">

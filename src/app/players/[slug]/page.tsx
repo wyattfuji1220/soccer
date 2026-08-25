@@ -8,6 +8,7 @@ import { PositionBadge, ConfidenceBadge, LoanBadge, AdDisclosure } from "@/compo
 import { PlayerVideos } from "@/components/PlayerVideos";
 import { BroadcasterList } from "@/components/BroadcasterList";
 import { CupCoverage } from "@/components/CupCoverage";
+import { Flag } from "@/components/Flag";
 import { CareerTimeline } from "@/components/CareerTimeline";
 import { loanStatus } from "@/lib/loan";
 import { age, formatDateJa } from "@/lib/format";
@@ -85,14 +86,20 @@ export default async function PlayerPage({ params }: Props) {
 
       <section className="mt-8 surface rounded-xl overflow-hidden">
         <dl className="divide-y" style={{ borderColor: "var(--border)" }}>
-          {[
+          {([
             ["所属クラブ", player.club],
             ...(loan.onLoan && loan.parentClub ? [["保有元クラブ", loan.parentClub]] : []),
-            ["リーグ", `${league.name}（${league.country}）`],
+            [
+              "リーグ",
+              <span key="league" className="flex items-center gap-2">
+                <Flag country={league.country} size={13} />
+                {league.name}（{league.country}）
+              </span>,
+            ],
             ["ポジション", player.position],
             ["生年月日", `${formatDateJa(player.birthDate)}（${age(player.birthDate)}歳）`],
             ...(player.squadNumber ? [["背番号", String(player.squadNumber)]] : []),
-          ].map(([k, v]) => (
+          ] as [string, React.ReactNode][]).map(([k, v]) => (
             <div key={k} className="grid grid-cols-3 gap-4 px-5 py-3.5 text-sm" style={{ borderColor: "var(--border)" }}>
               <dt className="muted">{k}</dt>
               <dd className="col-span-2 font-medium">{v}</dd>

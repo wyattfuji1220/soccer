@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { leagueMap } from "@/data/leagues";
 import { cupMap } from "@/data/cups";
+import { Flag } from "./Flag";
 import { broadcasters } from "@/data/broadcasters";
 import { broadcasterLink } from "@/lib/affiliate";
 import {
@@ -79,7 +80,10 @@ function MatchRow({ fixture, now }: { fixture: Fixture; now: Date }) {
               {cupMap[fixture.cup].name}
             </span>
           ) : (
-            <span className="text-[11px] muted">{league.name}</span>
+            <span className="text-[11px] muted flex items-center gap-1.5">
+              <Flag country={league.country} size={10} />
+              {league.name}
+            </span>
           )}
           <Countdown kickoff={kickoff} now={now} />
         </div>

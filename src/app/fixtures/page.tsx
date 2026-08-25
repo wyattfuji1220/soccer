@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { leagueMap } from "@/data/leagues";
 import { cupMap } from "@/data/cups";
+import { Flag } from "@/components/Flag";
 import { broadcasters } from "@/data/broadcasters";
 import { broadcasterLink } from "@/lib/affiliate";
 import {
@@ -92,7 +93,10 @@ export default function FixturesPage() {
                           </span>
                         </p>
                       ) : (
-                        <p className="text-xs muted">{league.name}</p>
+                        <p className="text-xs muted flex items-center gap-1.5">
+                          <Flag country={league.country} size={11} />
+                          {league.name}
+                        </p>
                       )}
                       <p className="mt-1 font-semibold leading-snug">
                         {f.homeTeam} <span className="muted font-normal mx-0.5">vs</span> {f.awayTeam}
