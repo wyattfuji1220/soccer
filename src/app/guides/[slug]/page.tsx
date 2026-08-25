@@ -21,11 +21,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 function BlockView({ block }: { block: Block }) {
   switch (block.type) {
     case "p":
-      return <p className="leading-8 text-[15px] mb-4">{block.text}</p>;
+      return <p className="leading-8 text-[15px] mb-4 max-w-[40em]">{block.text}</p>;
 
     case "list":
       return (
-        <ul className="space-y-2.5 mb-5">
+        <ul className="space-y-2.5 mb-5 max-w-[40em]">
           {block.items.map((item, i) => (
             <li key={i} className="flex gap-3 text-[15px] leading-7">
               <span className="mt-2.5 w-1.5 h-1.5 rounded-full bg-pitch-500 shrink-0" aria-hidden />
@@ -77,7 +77,7 @@ function BlockView({ block }: { block: Block }) {
     case "callout":
       return (
         <p
-          className="text-[15px] leading-7 mb-5 px-5 py-4 rounded-xl border-l-4 border-pitch-500"
+          className="text-[15px] leading-7 mb-5 px-5 py-4 rounded-lg border-l-2 border-pitch-500 max-w-[42em]"
           style={{ background: "color-mix(in srgb, var(--color-pitch-500) 7%, var(--surface))" }}
         >
           {block.text}

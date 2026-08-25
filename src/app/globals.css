@@ -13,6 +13,32 @@
 
   --font-sans: "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /*
+   * 文字サイズは 16px を基準に約1.25倍ずつ。段階を絞って迷いをなくす。
+   * 行間は日本語向けに広くとる。欧文の目安（1.5前後）では詰まって見える。
+   */
+  --text-xs: 0.75rem;
+  --text-xs--line-height: 1.75;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.85;
+  --text-base: 1rem;
+  --text-base--line-height: 1.95;
+  --text-lg: 1.125rem;
+  --text-lg--line-height: 1.7;
+  --text-xl: 1.375rem;
+  --text-xl--line-height: 1.55;
+  --text-2xl: 1.6875rem;
+  --text-2xl--line-height: 1.45;
+  --text-3xl: 2.125rem;
+  --text-3xl--line-height: 1.3;
+  --text-4xl: 2.625rem;
+  --text-4xl--line-height: 1.2;
+  --text-5xl: 3.25rem;
+  --text-5xl--line-height: 1.12;
+
+  --leading-relaxed: 1.9;
+  --leading-loose: 2.1;
 }
 
 /* 明るい面。数字と罫線で作る端末の見た目を、紙色の地でも保つ */
@@ -52,6 +78,8 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-sans);
+  /* サイズ指定のない要素の基準。日本語は欧文より行間を要する */
+  line-height: 1.9;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -59,6 +87,7 @@ h1,
 h2,
 h3 {
   letter-spacing: -0.02em;
+  text-wrap: balance;
 }
 
 .surface {
@@ -75,6 +104,8 @@ h3 {
   font-family: var(--font-mono);
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.02em;
+  /* 数字は桁の並びが主役。行間は詰めて塊として見せる */
+  line-height: 1.25;
 }
 
 /* 項目名。小さく、字間を空けて、内容から一段下げる。色は使う側で指定する */
@@ -93,4 +124,19 @@ h3 {
 
 .accent {
   color: var(--accent);
+}
+
+/*
+ * 小さなチップ状のリンク。指で押す領域を確保する。
+ * 見た目の大きさは変えず、狭い画面でだけ高さを足す。
+ */
+.tap {
+  display: inline-flex;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  .tap {
+    min-height: 40px;
+  }
 }

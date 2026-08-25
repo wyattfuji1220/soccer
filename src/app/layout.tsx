@@ -57,7 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           style={{ borderColor: "var(--border)", background: "color-mix(in srgb, var(--bg) 88%, transparent)" }}
         >
           <div className="mx-auto max-w-6xl px-4 h-14 flex items-center gap-6">
-            <Link href="/" className="flex items-center gap-2.5 font-bold tracking-tight shrink-0">
+            <Link href="/" className="tap gap-2.5 font-bold tracking-tight shrink-0">
               <span className="inline-block w-2 h-2 bg-pitch-500" aria-hidden />
               <span>海外組ポータル</span>
             </Link>
@@ -66,7 +66,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Link
                   key={n.href}
                   href={n.href}
-                  className="px-2.5 py-1.5 rounded whitespace-nowrap hover:bg-pitch-500/10 hover:text-pitch-600 dark:hover:text-pitch-300 transition-colors"
+                  className="tap px-2.5 py-1.5 rounded whitespace-nowrap hover:bg-pitch-500/10 hover:text-pitch-600 dark:hover:text-pitch-300 transition-colors"
                 >
                   {n.label}
                 </Link>

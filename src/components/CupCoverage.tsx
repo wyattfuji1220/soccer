@@ -29,7 +29,7 @@ function CupRow({ cup, first }: { cup: Cup; first: boolean }) {
                 href={broadcasterLink(b)}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
-                className="text-xs font-semibold px-2 py-1 rounded-sm text-pitch-600 dark:text-pitch-300 hover:opacity-80 transition-opacity"
+                className="tap text-xs font-semibold px-2.5 py-1 rounded-sm text-pitch-600 dark:text-pitch-300 hover:opacity-80 transition-opacity"
                 style={{ background: "var(--accent-soft)" }}
               >
                 {b.name}

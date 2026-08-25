@@ -53,14 +53,14 @@ export default function AboutPage() {
         <section key={s.h} className="mt-10">
           <h2 className="text-xl font-bold mb-4">{s.h}</h2>
           {s.p.map((p, i) => (
-            <p key={i} className="leading-8 text-[15px] mb-4">{p}</p>
+            <p key={i} className="leading-8 text-[15px] mb-4 max-w-[40em]">{p}</p>
           ))}
         </section>
       ))}
 
       <section className="mt-10">
         <h2 className="text-xl font-bold mb-4">お問い合わせ</h2>
-        <p className="leading-8 text-[15px]">
+        <p className="leading-8 text-[15px] max-w-[40em]">
           掲載内容の誤りのご指摘、権利に関するご連絡、その他のお問い合わせは以下からお願いします。
           いただいた内容は確認のうえ、必要に応じて修正いたします。
         </p>

@@ -61,12 +61,12 @@ function MatchRow({ fixture, now }: { fixture: Fixture; now: Date }) {
     <div className="grid grid-cols-[68px_1fr] sm:grid-cols-[84px_1fr] gap-x-4 gap-y-2 py-4 hair">
       <div className="pt-0.5">
         <p
-          className="num text-2xl sm:text-[26px] font-semibold leading-none"
+          className="num text-xl sm:text-2xl font-semibold"
           style={{ color: live ? "var(--live)" : "var(--accent)" }}
         >
           {jstTime(kickoff)}
         </p>
-        <p className="label muted mt-1.5" style={{ fontSize: "10px" }}>JST</p>
+        <p className="label muted mt-1.5">JST</p>
       </div>
 
       <div className="min-w-0">
@@ -94,7 +94,7 @@ function MatchRow({ fixture, now }: { fixture: Fixture; now: Date }) {
               <Link
                 key={p.slug}
                 href={`/players/${p.slug}/`}
-                className="text-xs px-2 py-1 rounded-sm border hover:border-pitch-500 hover:text-pitch-600 dark:hover:text-pitch-300 transition-colors"
+                className="tap text-xs px-2.5 py-1 rounded-sm border hover:border-pitch-500 hover:text-pitch-600 dark:hover:text-pitch-300 transition-colors"
                 style={{ borderColor: "var(--border)" }}
               >
                 {p.nameJa}
@@ -105,14 +105,14 @@ function MatchRow({ fixture, now }: { fixture: Fixture; now: Date }) {
 
         {options.length > 0 && (
           <div className="mt-2.5 flex flex-wrap items-center gap-2">
-            <span className="label muted" style={{ fontSize: "10px" }}>Watch</span>
+            <span className="label muted">Watch</span>
             {options.map((b) => (
               <a
                 key={b.id}
                 href={broadcasterLink(b)}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
-                className="text-[11px] font-semibold px-2 py-1 rounded-sm text-pitch-600 dark:text-pitch-300 hover:opacity-80 transition-opacity"
+                className="tap text-[11px] font-semibold px-2.5 py-1 rounded-sm text-pitch-600 dark:text-pitch-300 hover:opacity-80 transition-opacity"
                 style={{ background: "var(--accent-soft)" }}
               >
                 {b.name}
@@ -147,7 +147,7 @@ export function TonightBoard({ buildTime }: { buildTime: string }) {
       <div className="px-5 sm:px-6 pt-5 pb-3 flex items-baseline justify-between gap-4 flex-wrap">
         <div>
           <p className="label muted mb-1.5">Tonight</p>
-          <h2 className="text-lg font-bold">
+          <h2 className="text-xl font-bold">
             {current ? nightLabel(current.key, today, nextNightKey(today)) : "今夜"}のキックオフ
           </h2>
           <p className="text-xs muted mt-1">
@@ -176,7 +176,7 @@ export function TonightBoard({ buildTime }: { buildTime: string }) {
           <span className="muted">
             {nightLabel(following.key, today, nextNightKey(today))}は{following.fixtures.length}試合
           </span>
-          <Link href="/fixtures/" className="font-semibold text-pitch-600 dark:text-pitch-300 hover:underline">
+          <Link href="/fixtures/" className="tap font-semibold text-pitch-600 dark:text-pitch-300 hover:underline">
             日程をすべて見る →
           </Link>
         </div>

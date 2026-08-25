@@ -108,7 +108,7 @@ export default function FixturesPage() {
                             <Link
                               key={p.slug}
                               href={`/players/${p.slug}/`}
-                              className="text-xs px-2 py-1 rounded-sm border hover:border-pitch-500 transition-colors"
+                              className="tap text-xs px-2.5 py-1 rounded-sm border hover:border-pitch-500 transition-colors"
                               style={{ borderColor: "var(--border)" }}
                             >
                               {p.nameJa}

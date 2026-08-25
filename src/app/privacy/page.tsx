@@ -92,7 +92,7 @@ export default function PrivacyPage() {
             const links = typeof item === "string" ? undefined : item.links;
             return (
               <div key={i} className="mb-4">
-                <p className="leading-8 text-[15px]">{text}</p>
+                <p className="leading-8 text-[15px] max-w-[40em]">{text}</p>
                 {links && (
                   <ul className="mt-2 space-y-1 text-sm">
                     {links.map((l) => (
@@ -117,7 +117,7 @@ export default function PrivacyPage() {
 
       <section className="mt-10">
         <h2 className="text-xl font-bold mb-4">お問い合わせ</h2>
-        <p className="leading-8 text-[15px]">
+        <p className="leading-8 text-[15px] max-w-[40em]">
           掲載内容の誤りのご指摘、権利に関するご連絡は{" "}
           <Link href="/about/" className="text-pitch-600 dark:text-pitch-300 hover:underline">
             サイトについて

@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { players } from "@/data/players";
 import { leagues, leagueMap } from "@/data/leagues";
+import { clubs } from "@/data/clubs";
+import { guides } from "@/data/guides";
 import { PlayerCard } from "@/components/PlayerCard";
 import { TonightBoard } from "@/components/TonightBoard";
 import { getFixtures, groupByNight, playersInFixture } from "@/lib/fixtures";
@@ -56,10 +58,27 @@ export default function Home() {
           <br />
           何時に、どこで観られるか。
         </h1>
-        <p className="mt-5 max-w-2xl muted leading-relaxed">
+        <p className="mt-5 max-w-2xl muted">
           海外組の試合を日本時間で並べ、それぞれの配信先まで示します。所属や経歴は出典と最終確認日つき。
           推測や噂は載せません。
         </p>
+
+        <dl className="mt-8 flex flex-wrap gap-x-10 gap-y-5">
+          {[
+            ["掲載選手", players.length, "人"],
+            ["対象リーグ", byLeague.length, "リーグ"],
+            ["クラブ", clubs.length, "クラブ"],
+            ["視聴ガイド", guides.length, "本"],
+          ].map(([label, value, unit]) => (
+            <div key={label as string}>
+              <dt className="label muted">{label}</dt>
+              <dd className="num text-2xl font-semibold mt-1.5">
+                {value}
+                <span className="text-xs font-normal muted ml-1.5 font-sans">{unit}</span>
+              </dd>
+            </div>
+          ))}
+        </dl>
       </section>
 
       <section className="mx-auto max-w-5xl px-4 pb-4">
@@ -101,30 +120,36 @@ export default function Home() {
         </Link>
       </section>
 
-      <section className="mx-auto max-w-5xl px-4 py-8">
-        <h2 className="text-xl font-bold mb-5">リーグ別</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          {byLeague.map(({ league, count }) => (
-            <Link
-              key={league.id}
-              href={`/players/?league=${league.id}`}
-              className="surface rounded-lg p-4 hover:border-pitch-500/60 transition-colors"
-            >
-              <p className="num text-3xl font-semibold accent">
-                {count}
-                <span className="text-sm font-normal muted ml-1.5 font-sans">人</span>
-              </p>
-              <p className="text-sm mt-1 truncate">{league.name}</p>
-              <p className="text-xs muted">{league.country}</p>
-            </Link>
+      <div className="mx-auto max-w-5xl px-4 pt-10">
+        <div className="border-t" style={{ borderColor: "var(--border)" }} />
+      </div>
+
+      <section className="mx-auto max-w-5xl px-4 pt-10 pb-8">
+        <p className="label muted">Browse by League</p>
+        <h2 className="text-xl font-bold mt-2 mb-1">リーグ別</h2>
+        <p className="text-sm muted mb-5">クリックすると、そのリーグの選手だけに絞り込みます。</p>
+        <ul className="surface rounded-lg px-5 py-1 md:grid md:grid-cols-2 md:gap-x-10">
+          {byLeague.map(({ league, count }, i) => (
+            <li key={league.id} className={i === 0 || i === 1 ? "md:border-t-0" : ""} style={{ borderTop: i === 0 ? "none" : "1px solid var(--hairline)" }}>
+              <Link
+                href={`/players/?league=${league.id}`}
+                className="grid grid-cols-[2.5rem_1fr_auto] items-baseline gap-4 py-2.5 group"
+              >
+                <span className="num text-xl font-semibold accent text-right">{count}</span>
+                <span className="text-sm font-medium truncate group-hover:text-pitch-600 dark:group-hover:text-pitch-300 transition-colors">
+                  {league.name}
+                </span>
+                <span className="text-xs muted">{league.country}</span>
+              </Link>
+            </li>
           ))}
-        </div>
+        </ul>
       </section>
 
       <section className="mx-auto max-w-5xl px-4 py-8">
         <div className="flex items-baseline justify-between mb-5">
           <h2 className="text-xl font-bold">注目の選手</h2>
-          <Link href="/players/" className="text-sm text-pitch-600 dark:text-pitch-300 hover:underline">
+          <Link href="/players/" className="tap text-sm text-pitch-600 dark:text-pitch-300 hover:underline">
             すべて見る →
           </Link>
         </div>
@@ -152,9 +177,6 @@ export default function Home() {
               移籍市場の期間中など、情報が変動しうる項目には「要再確認」を表示します。
             </li>
           </ul>
-          <p className="mt-6 text-xs muted num">
-            現在の掲載選手数: {players.length}人 / 対象リーグ: {Object.keys(leagueMap).length}リーグ
-          </p>
         </div>
       </section>
     </>

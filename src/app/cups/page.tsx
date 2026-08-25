@@ -120,7 +120,7 @@ export default function CupsPage() {
       <h1 className="mt-2 text-3xl md:text-4xl font-black leading-tight">
         カップ戦を日本から観る方法
       </h1>
-      <p className="mt-5 leading-relaxed muted">
+      <p className="mt-5 leading-relaxed muted max-w-[40em]">
         海外組はリーグ戦と並行して、欧州大会や国内カップにも出場します。
         ところがカップ戦は主催者がリーグと異なるため、
         <strong style={{ color: "var(--text)" }}>配信契約もリーグ戦とは別枠</strong>
