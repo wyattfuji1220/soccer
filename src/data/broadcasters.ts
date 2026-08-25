@@ -20,9 +20,9 @@ export const broadcasters: Broadcaster[] = [
     leagues: ["premier-league", "la-liga", "eredivisie"],
     cups: ["fa-cup", "copa-del-rey", "dfb-pokal", "knvb-cup"],
     officialUrl: "https://www.video.unext.jp/lp/football_pack",
-    lastChecked: "2026-08-24",
+    lastChecked: "2026-08-25",
     confidence: "verified",
-    note: "プレミアリーグは全試合独占配信。FAカップ、コパ・デル・レイ、DFBポカール、KNVBカップも対象。見放題プランに入らず、このパック単体でも契約できる。",
+    note: "プレミアリーグは全試合独占配信。公式の対象作品はプレミアリーグ、ラ・リーガ、エールディヴィジ、FAカップ、FAコミュニティ・シールド、コパ・デル・レイ、スーペルコパ・デ・エスパーニャ、DFBポカール、KNVBカップ、ウィメンズ・スーパーリーグ。サッカーパック単体でも契約できる。パック自体に無料期間はないが、月額プランの無料トライアル特典（1,200ポイント）を充当すると初月1,400円になる。",
   },
   {
     id: "dmm-dazn",
@@ -30,8 +30,9 @@ export const broadcasters: Broadcaster[] = [
     monthlyPriceYen: 3480,
     leagues: ["bundesliga", "la-liga", "serie-a", "ligue-1", "jupiler-pro-league", "primeira-liga"],
     partialLeagues: ["championship"],
+    cups: ["efl-cup"],
     officialUrl: "https://dmm-dazn.com/",
-    lastChecked: "2026-08-24",
+    lastChecked: "2026-08-25",
     confidence: "verified",
     note: "DAZNと同じ内容をDMMプレミアム込みで視聴できる。月払いではDAZN本体より安い。",
   },
@@ -41,8 +42,9 @@ export const broadcasters: Broadcaster[] = [
     monthlyPriceYen: 4200,
     leagues: ["bundesliga", "la-liga", "serie-a", "ligue-1", "jupiler-pro-league", "primeira-liga"],
     partialLeagues: ["championship"],
+    cups: ["efl-cup"],
     officialUrl: "https://www.dazn.com/ja-JP/",
-    lastChecked: "2026-08-24",
+    lastChecked: "2026-08-25",
     confidence: "verified",
     note: "スタンダード月間プランの価格。年間一括やABEMA de DAZNなど、より安い契約経路がある。EFLチャンピオンシップは毎節3試合前後の配信で全試合ではない。",
   },
@@ -95,12 +97,11 @@ export const broadcasterMap = Object.fromEntries(broadcasters.map((b) => [b.id, 
  * 憶測で埋めず、確認できていないことをそのまま書く。
  */
 export const cupsWithoutBroadcaster: Partial<Record<CupId, string>> = {
-  "efl-cup": "国内の配信元を当サイトでは確認できていません。",
-  "coppa-italia": "国内の配信元を当サイトでは確認できていません。",
-  "coupe-de-france": "国内の配信元を当サイトでは確認できていません。",
-  "taca-de-portugal": "国内の配信元を当サイトでは確認できていません。",
-  "belgian-cup": "国内の配信元を当サイトでは確認できていません。",
-  "scottish-cup": "国内の配信元を当サイトでは確認できていません。",
+  "coppa-italia": "U-NEXT、DAZN、WOWOWオンデマンドの配信対象には含まれていません（2026年8月25日に各公式ページで確認）。他の視聴手段は確認できていません。",
+  "coupe-de-france": "U-NEXT、DAZN、WOWOWオンデマンドの配信対象には含まれていません（2026年8月25日に各公式ページで確認）。他の視聴手段は確認できていません。",
+  "taca-de-portugal": "U-NEXT、DAZN、WOWOWオンデマンドの配信対象には含まれていません（2026年8月25日に各公式ページで確認）。他の視聴手段は確認できていません。",
+  "belgian-cup": "U-NEXT、DAZN、WOWOWオンデマンドの配信対象には含まれていません（2026年8月25日に各公式ページで確認）。他の視聴手段は確認できていません。",
+  "scottish-cup": "U-NEXT、DAZN、WOWOWオンデマンドの配信対象には含まれていません（2026年8月25日に各公式ページで確認）。他の視聴手段は確認できていません。",
 };
 
 export const leaguesWithoutBroadcaster: Record<string, string> = {
