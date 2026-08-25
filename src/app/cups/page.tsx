@@ -119,7 +119,7 @@ export default function CupsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faq) }} />
 
       <p className="label muted">Cup Competitions</p>
-      <h1 className="mt-2 text-3xl md:text-4xl font-black leading-tight">
+      <h1 className="mt-2 text-3xl md:text-4xl font-bold leading-tight">
         カップ戦を日本から観る方法
       </h1>
       <p className="mt-5 leading-relaxed muted max-w-[40em]">

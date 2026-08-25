@@ -3,6 +3,7 @@ import Link from "next/link";
 import { leagueMap } from "@/data/leagues";
 import { cupMap } from "@/data/cups";
 import { Flag } from "@/components/Flag";
+import { KickoffChart } from "@/components/KickoffChart";
 import { broadcasters } from "@/data/broadcasters";
 import { broadcasterLink } from "@/lib/affiliate";
 import {
@@ -27,7 +28,8 @@ function nightHeading(key: string): string {
 }
 
 export default function FixturesPage() {
-  const nights = groupByNight(getFixtures(new Date()));
+  const all = getFixtures(new Date());
+  const nights = groupByNight(all);
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
@@ -53,6 +55,8 @@ export default function FixturesPage() {
           。このページには含まれていません。
         </p>
       )}
+
+      <KickoffChart fixtures={all} />
 
       {nights.length === 0 && (
         <p className="mt-10 text-center muted text-sm">予定されている試合がありません。</p>

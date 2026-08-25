@@ -48,6 +48,11 @@ export function jstTime(date: Date): string {
   return timeFormatter.format(date);
 }
 
+/** 日本時間の「時」だけを取り出す。0〜23 */
+export function jstHour(date: Date): number {
+  return Number(timeFormatter.format(date).slice(0, 2));
+}
+
 /** "8月24日(月)" 相当の短縮形 "8/24(月)" */
 export function jstDate(date: Date): string {
   return dateFormatter.format(date).replace(/\s/g, "");

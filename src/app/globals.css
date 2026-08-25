@@ -11,7 +11,7 @@
   --color-ink-500: #4a5878;
   --color-ink-300: #8496b6;
 
-  --font-sans: "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, system-ui, sans-serif;
+  --font-sans: "Noto Sans JP", "Helvetica Neue", Helvetica, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Arial, "Yu Gothic", Meiryo, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 
   /*

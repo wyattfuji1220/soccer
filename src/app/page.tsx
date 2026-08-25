@@ -54,7 +54,7 @@ export default function Home() {
       <section className="mx-auto max-w-5xl px-4 pt-14 pb-6">
         <p className="label text-pitch-600 dark:text-pitch-300">Japanese Players Abroad</p>
         <p className="mt-3 text-sm font-bold">欧州で戦う日本人選手のファクトデータベース</p>
-        <h1 className="mt-4 text-3xl md:text-5xl font-black leading-tight max-w-3xl">
+        <h1 className="mt-4 text-3xl md:text-5xl font-bold leading-tight max-w-3xl">
           今夜、誰の試合が、
           <br />
           何時に、どこで観られるか。

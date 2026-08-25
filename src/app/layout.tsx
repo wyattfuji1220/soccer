@@ -50,12 +50,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ja">
       <head>
-        {/* 数字用。ラテン文字のみのため軽い */}
+        {/* 本文は Noto Sans JP、数字は IBM Plex Mono */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+JP:wght@400;700;900&display=swap"
         />
         {ADSENSE_CLIENT && (
           <script
