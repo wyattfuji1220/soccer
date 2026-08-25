@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, SITE_NAME, ADSENSE_CLIENT } from "@/lib/site";
 import { usingSampleData } from "@/lib/fixtures";
+import { BallMark } from "@/components/Logo";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -20,7 +21,20 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ja_JP",
     siteName: SITE_NAME,
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: SITE_NAME }],
   },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og.png"],
+  },
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon-32.png", type: "image/png", sizes: "32x32" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180" }],
+  },
+  manifest: "/manifest.webmanifest",
 };
 
 const nav = [
@@ -57,8 +71,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           style={{ borderColor: "var(--border)", background: "color-mix(in srgb, var(--bg) 88%, transparent)" }}
         >
           <div className="mx-auto max-w-6xl px-4 h-14 flex items-center gap-6">
-            <Link href="/" className="tap gap-2.5 font-bold tracking-tight shrink-0">
-              <span className="inline-block w-2 h-2 bg-pitch-500" aria-hidden />
+            <Link
+              href="/"
+              className="tap gap-2.5 font-bold tracking-tight shrink-0 text-pitch-600 dark:text-pitch-300"
+            >
+              <BallMark size={20} />
               <span>海外組ポータル</span>
             </Link>
             <nav className="ml-auto flex items-center gap-0.5 text-[13px] overflow-x-auto">
@@ -80,7 +97,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="border-t mt-16" style={{ borderColor: "var(--border)" }}>
           <div className="mx-auto max-w-6xl px-4 py-10 text-sm muted space-y-3">
             <p className="label muted">Kaigai-Gumi Portal</p>
-            <p className="font-bold text-base" style={{ color: "var(--text)" }}>海外組ポータル</p>
+            <p className="flex items-center gap-2 font-bold text-base text-pitch-600 dark:text-pitch-300">
+              <BallMark size={17} />
+              海外組ポータル
+            </p>
             <p>
               当サイトは公開情報にもとづく事実の整理を目的としています。選手写真・クラブロゴ・試合映像等の
               著作権保護対象コンテンツは掲載していません。データの出典は各ページに明記しています。

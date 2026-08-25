@@ -9,6 +9,7 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "export:output": "node scripts/copy-to-output.mjs",
+    "assets:icons": "node scripts/make-icons.mjs",
     "data:wikipedia": "node scripts/fetch-wikipedia.mjs",
     "data:fixtures": "node scripts/fetch-fixtures.mjs",
     "data:competitions": "node scripts/check-competitions.mjs",
