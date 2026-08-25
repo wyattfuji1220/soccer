@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+/*
+ * 本文の書体。このサイトに出てくる文字だけを収めた1ファイルを自前で配信する。
+ * Google Fonts から読むとページごとに断片が追加で落ちてくるため
+ * （選手一覧で実測54ファイル・1.3MB）、まとめて持つほうが軽い。
+ * 生成は scripts/make-font.py（npm run assets:font）。
+ */
+@font-face {
+  font-family: "Noto Sans JP";
+  src: url("/fonts/noto-sans-jp-subset.woff2") format("woff2");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --color-pitch-50: #ecfaf2;
   --color-pitch-300: #5fe09a;

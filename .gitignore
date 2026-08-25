@@ -7,3 +7,5 @@ out/
 .DS_Store
 next-env.d.ts
 tsconfig.tsbuildinfo
+scripts/fonts/NotoSansJP.ttf
+scripts/fonts/rendered-chars.txt
