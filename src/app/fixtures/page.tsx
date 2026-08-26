@@ -3,7 +3,6 @@ import Link from "next/link";
 import { leagueMap } from "@/data/leagues";
 import { cupMap } from "@/data/cups";
 import { Flag } from "@/components/Flag";
-import { KickoffChart } from "@/components/KickoffChart";
 import { broadcasters } from "@/data/broadcasters";
 import { broadcasterLink } from "@/lib/affiliate";
 import {
@@ -55,8 +54,6 @@ export default function FixturesPage() {
           。このページには含まれていません。
         </p>
       )}
-
-      <KickoffChart fixtures={all} />
 
       {nights.length === 0 && (
         <p className="mt-10 text-center muted text-sm">予定されている試合がありません。</p>
