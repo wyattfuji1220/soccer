@@ -34,11 +34,11 @@ function PlanCard({ plan, tone }: { plan: Plan; tone: "primary" | "compare" }) {
 
       <dl className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-5">
         <div>
-          <dt className="label muted">月額合計</dt>
+          <dt className="label muted">月額合計（税込）</dt>
           <dd className="num text-2xl font-semibold mt-1">{yen(plan.monthlyYen)}</dd>
         </div>
         <div>
-          <dt className="label muted">年間</dt>
+          <dt className="label muted">年間（税込）</dt>
           <dd className="num text-2xl font-semibold mt-1">{yen(plan.annualYen)}</dd>
         </div>
         <div>
@@ -49,7 +49,7 @@ function PlanCard({ plan, tone }: { plan: Plan; tone: "primary" | "compare" }) {
           </dd>
         </div>
         <div>
-          <dt className="label muted">1試合あたり</dt>
+          <dt className="label muted">1試合あたり（税込）</dt>
           <dd
             className={`num text-2xl font-semibold mt-1 ${primary ? "text-pitch-600 dark:text-pitch-300" : ""}`}
           >

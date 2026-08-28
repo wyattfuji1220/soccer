@@ -58,7 +58,7 @@ export function BroadcasterList({
                 ) : (
                   <p className="mt-1">
                     <span className="num text-xl font-semibold">{yen(b.monthlyPriceYen)}</span>
-                    <span className="text-xs muted ml-1.5">/ 月</span>
+                    <span className="text-xs muted ml-1.5">/ 月（税込）</span>
                   </p>
                 )}
               </div>

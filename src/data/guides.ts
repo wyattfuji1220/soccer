@@ -90,7 +90,7 @@ export const guides: Guide[] = [
         ],
       },
       {
-        heading: "料金と対象",
+        heading: "料金（税込）と対象",
         blocks: [
           {
             type: "table",
