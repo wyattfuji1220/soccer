@@ -25,18 +25,6 @@ export const broadcasters: Broadcaster[] = [
     note: "プレミアリーグは全試合独占配信。公式の対象作品はプレミアリーグ、ラ・リーガ、エールディヴィジ、FAカップ、FAコミュニティ・シールド、コパ・デル・レイ、スーペルコパ・デ・エスパーニャ、DFBポカール、KNVBカップ、ウィメンズ・スーパーリーグ。サッカーパック単体でも契約できる。パック自体に無料期間はないが、月額プランの無料トライアル特典（1,200ポイント）を充当すると初月1,400円になる。",
   },
   {
-    id: "dmm-dazn",
-    name: "DMM×DAZNホーダイ",
-    monthlyPriceYen: 3480,
-    leagues: ["bundesliga", "la-liga", "serie-a", "ligue-1", "jupiler-pro-league", "primeira-liga"],
-    partialLeagues: ["championship"],
-    cups: ["efl-cup"],
-    officialUrl: "https://dmm-dazn.com/",
-    lastChecked: "2026-08-25",
-    confidence: "verified",
-    note: "DAZNと同じ内容をDMMプレミアム込みで視聴できる。月払いではDAZN本体より安い。",
-  },
-  {
     id: "dazn",
     name: "DAZN",
     monthlyPriceYen: 4200,

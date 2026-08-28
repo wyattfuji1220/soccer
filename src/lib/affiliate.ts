@@ -28,7 +28,6 @@ export function rakutenSearchUrl(keyword: string): string {
  */
 const BROADCASTER_URLS: Record<string, string | undefined> = {
   "u-next-soccer-pack": process.env.NEXT_PUBLIC_AFFILIATE_UNEXT,
-  "dmm-dazn": process.env.NEXT_PUBLIC_AFFILIATE_DMM,
   dazn: process.env.NEXT_PUBLIC_AFFILIATE_DAZN,
   "wowow-on-demand": process.env.NEXT_PUBLIC_AFFILIATE_WOWOW,
   abema: process.env.NEXT_PUBLIC_AFFILIATE_ABEMA,
