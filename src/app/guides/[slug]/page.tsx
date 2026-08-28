@@ -150,6 +150,13 @@ export default async function GuidePage({ params }: Props) {
         </section>
       )}
 
+      <section className="mt-12">
+        <p className="label muted mb-2">Editorial Note</p>
+        <p className="text-xs muted leading-relaxed max-w-[42em]">
+          本サイトの文章は、運営者が生成AIを用いて作成しています。配信サービスの料金・配信対象、選手の所属・経歴は公式サイトやWikipediaなどの一次情報と照合し、最終確認日を各ページに明記しています。
+        </p>
+      </section>
+
       <section className="mt-12 surface rounded-xl p-6">
         <p className="font-bold">追いかけたい選手が複数いる場合</p>
         <p className="mt-2 text-sm muted leading-relaxed">
