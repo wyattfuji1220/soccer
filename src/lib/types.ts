@@ -116,7 +116,6 @@ export type Broadcaster = {
   cups?: CupId[];
   officialUrl: string;
   /** アフィリエイトリンク。未設定なら officialUrl にフォールバック */
-  affiliateUrl?: string;
   freeTrialNote?: string;
   /** 配信範囲の但し書き。「全試合ではない」などの重要な限定はここに書く */
   note?: string;

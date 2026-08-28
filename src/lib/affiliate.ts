@@ -19,9 +19,25 @@ export function rakutenSearchUrl(keyword: string): string {
   return `https://hb.afl.rakuten.co.jp/hgc/${RAKUTEN_AFFILIATE_ID}/?pc=${encodeURIComponent(base)}`;
 }
 
-/** 配信サービスへのリンク。アフィリエイトURL未設定なら公式URLを使う */
-export function broadcasterLink(b: { officialUrl: string; affiliateUrl?: string }): string {
-  return b.affiliateUrl ?? b.officialUrl;
+/**
+ * 配信サービスのアフィリエイトURL。
+ *
+ * ASPが発行するURLには識別子が含まれるため、データファイルには置かない
+ * （このリポジトリは公開されている）。Next.js は環境変数を静的に置き換えるので、
+ * 変数名は文字列として書き下す必要があり、動的な参照にはできない。
+ */
+const BROADCASTER_URLS: Record<string, string | undefined> = {
+  "u-next-soccer-pack": process.env.NEXT_PUBLIC_AFFILIATE_UNEXT,
+  "dmm-dazn": process.env.NEXT_PUBLIC_AFFILIATE_DMM,
+  dazn: process.env.NEXT_PUBLIC_AFFILIATE_DAZN,
+  "wowow-on-demand": process.env.NEXT_PUBLIC_AFFILIATE_WOWOW,
+  abema: process.env.NEXT_PUBLIC_AFFILIATE_ABEMA,
+  "celtic-tv": process.env.NEXT_PUBLIC_AFFILIATE_CELTIC,
+};
+
+/** 配信サービスへのリンク。未設定なら公式URLに落ちる（提携前でもサイトは壊れない） */
+export function broadcasterLink(b: { id: string; officialUrl: string }): string {
+  return BROADCASTER_URLS[b.id] || b.officialUrl;
 }
 
 /** 広告表記が必要なリンクかどうか（景表法・ステマ規制対応） */
