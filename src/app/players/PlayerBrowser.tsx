@@ -8,10 +8,19 @@ import type { LeagueId, Position } from "@/lib/types";
 
 const positions: Position[] = ["GK", "DF", "MF", "FW"];
 
+type Sort = "name" | "age-asc" | "age-desc";
+
+const sorts: { id: Sort; label: string }[] = [
+  { id: "name", label: "五十音順" },
+  { id: "age-asc", label: "年齢が若い順" },
+  { id: "age-desc", label: "年齢が高い順" },
+];
+
 export function PlayerBrowser() {
   const [league, setLeague] = useState<LeagueId | "all">("all");
   const [position, setPosition] = useState<Position | "all">("all");
   const [query, setQuery] = useState("");
+  const [sort, setSort] = useState<Sort>("name");
 
   // useSearchParams を使うと静的書き出し時に中身が空のHTMLになり、
   // クローラーから選手一覧が見えなくなる。全件を含んだHTMLを出したうえで、
@@ -25,13 +34,21 @@ export function PlayerBrowser() {
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return players.filter((p) => {
+    const list = players.filter((p) => {
       if (league !== "all" && p.league !== league) return false;
       if (position !== "all" && p.position !== position) return false;
       if (q && !`${p.nameJa}${p.nameEn}${p.club}${p.clubEn}`.toLowerCase().includes(q)) return false;
       return true;
     });
-  }, [league, position, query]);
+
+    if (sort === "name") return list;
+    // 生年月日が新しいほど若い。同じ日なら名前順で並びを安定させる
+    return [...list].sort((a, b) => {
+      const diff = b.birthDate.localeCompare(a.birthDate);
+      if (diff !== 0) return sort === "age-asc" ? diff : -diff;
+      return a.nameJa.localeCompare(b.nameJa, "ja");
+    });
+  }, [league, position, query, sort]);
 
   const chip = (active: boolean) =>
     `px-3 py-1.5 rounded-full text-sm border transition-colors ${
@@ -77,7 +94,21 @@ export function PlayerBrowser() {
         ))}
       </div>
 
-      <p className="mt-6 text-sm muted">{filtered.length}人</p>
+      <div className="mt-3 flex flex-wrap gap-2">
+        {sorts.map((s) => (
+          <button
+            key={s.id}
+            onClick={() => setSort(s.id)}
+            aria-pressed={sort === s.id}
+            className={chip(sort === s.id)}
+            style={{ borderColor: "var(--border)" }}
+          >
+            {s.label}
+          </button>
+        ))}
+      </div>
+
+      <p className="mt-6 text-sm muted num">{filtered.length}人</p>
 
       <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {filtered.map((p) => (
