@@ -3,6 +3,8 @@ import { players } from "@/data/players";
 import { leagues, leagueMap } from "@/data/leagues";
 import { broadcasters } from "@/data/broadcasters";
 import { loanStatus } from "@/lib/loan";
+import { clubs } from "@/data/clubs";
+import { metricMap, rankBy, type MetricId } from "@/lib/rankings";
 
 export type Guide = {
   slug: string;
@@ -59,6 +61,44 @@ const withoutBroadcastLeagues = [...new Set(withoutBroadcast.map((p) => p.league
   .map((id) => `${leagueMap[id].name}の${withoutBroadcast.filter((p) => p.league === id).length}人`)
   .join("、");
 
+/* --------------------------------------------------------------------------
+ * ランキング記事で使う集計。/rankings/ と同じ計算を共有する。
+ * -------------------------------------------------------------------------- */
+
+const THIS_YEAR = new Date().getFullYear();
+
+/** リーグ別の平均年齢。人数が少ないリーグは平均が振れるため3人以上に絞る */
+const avgAgeByLeague = byLeague
+  .filter((x) => x.count >= 3)
+  .map(({ league, count }) => {
+    const ages = players
+      .filter((p) => p.league === league.id)
+      .map((p) => THIS_YEAR - Number(p.birthDate.slice(0, 4)));
+    return {
+      league,
+      count,
+      avg: ages.reduce((a, b) => a + b, 0) / ages.length,
+    };
+  })
+  .sort((a, b) => a.avg - b.avg);
+
+const rankRows = (id: MetricId, take: number) =>
+  rankBy(metricMap[id]).slice(0, take);
+
+/** 海を渡った年齢の中央値 */
+const medianFirstMoveAge = (() => {
+  const vs = rankBy(metricMap["age-first-move"]).map((r) => r.value);
+  return vs.length > 0 ? vs[Math.floor(vs.length / 2)] : null;
+})();
+
+const stvvPlayers = players.filter((p) => p.club === "シント＝トロイデンVV");
+const stvvClub = clubs.find((c) => c.slug === "sint-truidense-vv");
+
+const belgiumPlayers = players.filter((p) => p.league === "jupiler-pro-league");
+const belgiumClubs = [...new Set(belgiumPlayers.map((p) => p.club))].sort((a, b) =>
+  a.localeCompare(b, "ja")
+);
+
 const officialSources = [
   { label: "U-NEXT サッカーパック 公式ページ", url: "https://www.video.unext.jp/lp/football_pack" },
   { label: "DAZN 公式サイト", url: "https://www.dazn.com/ja-JP/" },
@@ -66,6 +106,404 @@ const officialSources = [
 ];
 
 export const guides: Guide[] = [
+  /* ------------------------------------------------------------------ */
+  {
+    slug: "japanese-players-league-ladder",
+    title: "海外組の階段——日本人選手はどのリーグから入り、どこへ向かうのか",
+    description:
+      "掲載中の日本人選手をリーグ別に平均年齢で並べると、きれいな階段が現れます。ベルギーとドイツ2部が入口、プレミアリーグが到達点という構造をデータで確かめます。",
+    updatedAt: CHECKED,
+    sections: [
+      {
+        heading: "リーグごとに、年齢層がはっきり違う",
+        blocks: [
+          {
+            type: "p",
+            text: `当サイトが掲載している${players.length}人を、所属リーグごとに平均年齢で並べてみました。順番に意味があります。若い選手が集まるリーグと、経験を積んだ選手が集まるリーグが、はっきり分かれています。`,
+          },
+          {
+            type: "table",
+            head: ["リーグ", "平均年齢", "在籍数"],
+            rows: avgAgeByLeague.map((x) => [
+              x.league.name,
+              `${x.avg.toFixed(1)}歳`,
+              `${x.count}人`,
+            ]),
+            note: "在籍3人以上のリーグのみ。人数が少ないと平均が大きく振れるためです。年齢は誕生日を考慮しない概算です。",
+          },
+          {
+            type: "p",
+            text: "下に行くほど平均年齢が上がります。これは偶然の並びではなく、日本人選手が欧州でたどる経路を映しています。",
+          },
+        ],
+      },
+      {
+        heading: "入口はどこか",
+        blocks: [
+          {
+            type: "p",
+            text: `平均年齢が最も低いのは${avgAgeByLeague[0].league.name}で${avgAgeByLeague[0].avg.toFixed(1)}歳、次が${avgAgeByLeague[1].league.name}の${avgAgeByLeague[1].avg.toFixed(1)}歳です。ここに${avgAgeByLeague[0].count + avgAgeByLeague[1].count}人が集まっています。`,
+          },
+          {
+            type: "p",
+            text: "この2つに共通するのは、移籍市場での競争がプレミアリーグやラ・リーガほど激しくなく、労働許可の要件も比較的緩やかなことです。欧州で初めてプレーする選手にとって、現実的に扉が開いている場所だと言えます。",
+          },
+          {
+            type: "callout",
+            text: "つまり「まずここで結果を出し、次の移籍で上を目指す」という段取りが、実際の在籍データに現れているということです。",
+          },
+        ],
+      },
+      {
+        heading: "到達点はどこか",
+        blocks: [
+          {
+            type: "p",
+            text: `平均年齢が最も高いのは${avgAgeByLeague[avgAgeByLeague.length - 1].league.name}で${avgAgeByLeague[avgAgeByLeague.length - 1].avg.toFixed(1)}歳です。若手がいきなり移る場所ではなく、他のリーグで実績を積んだ選手が集まる場所になっています。`,
+          },
+          {
+            type: "p",
+            text: "実際、この階段は「移籍のたびに一段上がる」という形で個々の選手の経歴にも現れます。各選手ページのクラブ遍歴を見ると、下位リーグから始めて段階的に移っていった軌跡が読み取れます。",
+          },
+        ],
+      },
+      {
+        heading: "この見方の限界",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "平均年齢はあくまで在籍者の分布であり、個々の選手の実力や評価を表すものではありません。",
+              "在籍数が少ないリーグは1人の増減で平均が大きく動くため、3人以上のリーグに絞っています。",
+              "当サイトが把握している範囲の集計です。掲載していない選手は含まれません。",
+              "年齢は生年から機械的に計算しており、誕生日の前後で1歳の誤差が出ることがあります。",
+            ],
+          },
+          {
+            type: "p",
+            text: "数字が示すのは傾向であって、法則ではありません。ベルギーを経由せず主要リーグに直接移る選手も、その逆の経路をたどる選手もいます。",
+          },
+        ],
+      },
+      {
+        heading: "リーグを跨いで並べてみる",
+        blocks: [
+          {
+            type: "p",
+            text: "所属リーグが違うと選手同士を比べる機会はほとんどありませんが、通算の記録なら横に並べられます。海外クラブでの通算出場数や、何歳で海を渡ったかといった指標でランキングを用意しています。",
+          },
+        ],
+      },
+    ],
+  },
+
+  /* ------------------------------------------------------------------ */
+  {
+    slug: "sint-truiden-japanese-players",
+    title: `シント＝トロイデンに日本人が${stvvPlayers.length}人いる理由`,
+    description: `当サイトが掲載するクラブのなかで、日本人選手が最も多いのはベルギーのシント＝トロイデンVVです。現在${stvvPlayers.length}人が在籍しています。その背景と、試合を日本から観る方法をまとめます。`,
+    league: "jupiler-pro-league",
+    updatedAt: CHECKED,
+    sections: [
+      {
+        heading: `いま在籍している${stvvPlayers.length}人`,
+        blocks: [
+          {
+            type: "table",
+            head: ["選手", "ポジション"],
+            rows: stvvPlayers.map((p) => [p.nameJa, p.position]),
+            note: `${CHECKED}時点で当サイトが確認している在籍者です。移籍により変動します。`,
+          },
+          {
+            type: "p",
+            text: `2番目に多いクラブが${multiPlayerClubs[1]?.[1].count ?? 0}人であることを考えると、突出した人数です。1クラブに日本人が${stvvPlayers.length}人というのは、欧州全体を見ても例がほとんどありません。`,
+          },
+        ],
+      },
+      {
+        heading: "日本企業が出資している",
+        blocks: [
+          {
+            type: "p",
+            text: "理由ははっきりしています。このクラブには日本のIT企業であるDMM.comが出資しており、会長も日本人が務めています。日本人選手が欧州へ渡る際の受け皿として機能してきました。",
+          },
+          {
+            type: "callout",
+            text: "資本関係があるからといって出場が約束されるわけではありません。実際に出場機会を得られず、他クラブへ移る選手もいます。あくまで「扉が開きやすい」という話です。",
+          },
+        ],
+      },
+      {
+        heading: "過去に在籍した日本人選手",
+        blocks: [
+          {
+            type: "p",
+            text: stvvClub
+              ? `当サイトの掲載選手だけでも、過去に${stvvClub.pastPlayers.length}人がこのクラブに在籍していました。現在は他のリーグで主力になっている選手も含まれます。`
+              : "過去の在籍者は各選手ページのクラブ遍歴から確認できます。",
+          },
+          {
+            type: "p",
+            text: "つまりこのクラブは、日本人選手にとって「欧州の入口」として繰り返し使われてきた場所だということです。ここで結果を出して次のクラブへ移る、という経路が実際に何度も起きています。",
+          },
+        ],
+      },
+      {
+        heading: "試合を日本から観るには",
+        blocks: [
+          {
+            type: "p",
+            text: "シント＝トロイデンが戦うジュピラー・プロ・リーグは、DAZNで配信されています。同じ契約でブンデスリーガ、セリエA、ラ・リーガ、リーグ・アン、プリメイラ・リーガも対象に含まれます。",
+          },
+          {
+            type: "broadcasters",
+            league: "jupiler-pro-league",
+            heading: "ジュピラー・プロ・リーグの配信",
+          },
+        ],
+      },
+    ],
+  },
+
+  /* ------------------------------------------------------------------ */
+  {
+    slug: "age-when-players-move-abroad",
+    title: "日本人選手は何歳で海を渡るのか",
+    description: `掲載中の選手が最初に海外クラブへ移った年齢を集計しました。中央値は${medianFirstMoveAge ?? "—"}歳です。10代で渡る選手と、国内で実績を積んでから渡る選手に分かれます。`,
+    updatedAt: CHECKED,
+    sections: [
+      {
+        heading: `中央値は${medianFirstMoveAge ?? "—"}歳`,
+        blocks: [
+          {
+            type: "p",
+            text: `各選手のクラブ遍歴から、最初に日本国外のクラブへ移った年を取り出し、そのときの年齢を計算しました。中央値は${medianFirstMoveAge ?? "—"}歳です。`,
+          },
+          {
+            type: "p",
+            text: "「若いうちに海外へ」という言い方をよく聞きますが、実際には20代前半で渡る選手が中心で、10代での移籍はまだ少数派です。",
+          },
+        ],
+      },
+      {
+        heading: "10代で渡った選手",
+        blocks: [
+          {
+            type: "table",
+            head: ["選手", "渡欧時の年齢", "現在の所属"],
+            rows: rankRows("age-first-move", 10).map((r) => [
+              r.player.nameJa,
+              `${r.value}歳`,
+              r.player.club,
+            ]),
+            note: "誕生日を考慮しない概算のため、1歳の誤差が出ることがあります。",
+          },
+          {
+            type: "p",
+            text: "10代で渡る選手は、Jリーグでの出場数が少ないまま移籍しているのが特徴です。国内で実績を積んでからではなく、若いうちに欧州の育成環境へ入る経路を選んでいます。",
+          },
+        ],
+      },
+      {
+        heading: "この数字の読み方",
+        blocks: [
+          {
+            type: "list",
+            items: [
+              "「最初に海外クラブへ移った年」は、クラブ遍歴の記載から機械的に取り出しています。",
+              "年代別代表での海外遠征や、育成年代での短期留学は含みません。あくまでクラブ在籍の記録です。",
+              "当サイトが掲載している選手のみの集計です。現在は国内でプレーする元海外組は含みません。",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+
+  /* ------------------------------------------------------------------ */
+  {
+    slug: "clubs-with-multiple-japanese-players",
+    title: `日本人が2人以上いるクラブ${multiPlayerClubs.length}選`,
+    description: `同じクラブに日本人選手が複数いると、練習でも試合でも日本語が飛び交います。当サイトの掲載範囲では${multiPlayerClubs.length}クラブが該当します。一覧と、それぞれの試合を観る方法をまとめました。`,
+    updatedAt: CHECKED,
+    sections: [
+      {
+        heading: `該当は${multiPlayerClubs.length}クラブ`,
+        blocks: [
+          {
+            type: "table",
+            head: ["クラブ", "人数", "リーグ"],
+            rows: multiPlayerClubs.map(([club, v]) => [
+              club,
+              `${v.count}人`,
+              leagueMap[v.league].name,
+            ]),
+            note: `${CHECKED}時点の在籍です。移籍により変動します。`,
+          },
+        ],
+      },
+      {
+        heading: "複数人いると何が変わるか",
+        blocks: [
+          {
+            type: "p",
+            text: "観る側にとっては効率が上がります。1試合で複数の日本人選手を同時に追えるため、契約する配信サービスあたりの価値が高くなります。",
+          },
+          {
+            type: "p",
+            text: "また、同じクラブに複数いるということは、そのクラブが日本人選手を評価する下地を持っているということでもあります。次の日本人選手が加入する可能性も相対的に高くなります。",
+          },
+          {
+            type: "callout",
+            text: "ただし全員が同時に出場するとは限りません。ポジションが重なっている場合は、むしろ出場機会を奪い合う関係になります。",
+          },
+        ],
+      },
+      {
+        heading: "どの契約で何クラブ観られるか",
+        blocks: [
+          {
+            type: "p",
+            text: "追いかけたい選手を選ぶと、必要な配信サービスの組み合わせと1試合あたりの単価を計算できます。複数のクラブを追う場合、契約の重複を避けられます。",
+          },
+        ],
+      },
+    ],
+  },
+
+  /* ------------------------------------------------------------------ */
+  {
+    slug: "long-serving-japanese-players-abroad",
+    title: "欧州で10年以上プレーする日本人選手たち",
+    description:
+      "海外挑戦が長い選手を、最初に海外クラブへ移った年から数えて並べました。10年以上にわたり欧州で戦い続けている選手の軌跡をたどります。",
+    updatedAt: CHECKED,
+    sections: [
+      {
+        heading: "海外挑戦が長い順",
+        blocks: [
+          {
+            type: "table",
+            head: ["選手", "海外挑戦", "現在の所属"],
+            rows: rankRows("years-abroad", 10).map((r) => [
+              r.player.nameJa,
+              `${r.value}年目`,
+              r.player.club,
+            ]),
+            note: "最初に日本国外のクラブへ移った年から数えています。途中で日本に戻った期間も含みます。",
+          },
+        ],
+      },
+      {
+        heading: "長く続けることの意味",
+        blocks: [
+          {
+            type: "p",
+            text: "欧州で長く在籍を続けるには、移籍のたびに新しい環境で評価を得直す必要があります。言語も戦術も違うクラブを渡り歩きながら出場機会を確保し続けることは、能力だけでは説明がつきません。",
+          },
+          {
+            type: "p",
+            text: "在籍したクラブ数を見ると、その過程が数字で見えます。1つのクラブに落ち着く選手もいれば、5つ6つと渡り歩いた選手もいます。",
+          },
+          {
+            type: "table",
+            head: ["選手", "在籍した海外クラブ数", "現在の所属"],
+            rows: rankRows("abroad-clubs", 8).map((r) => [
+              r.player.nameJa,
+              `${r.value}クラブ`,
+              r.player.club,
+            ]),
+            note: "同じクラブに二度在籍した場合は1つとして数えています。",
+          },
+        ],
+      },
+      {
+        heading: "通算出場数で見ると",
+        blocks: [
+          {
+            type: "table",
+            head: ["選手", "海外通算出場", "現在の所属"],
+            rows: rankRows("abroad-apps", 8).map((r) => [
+              r.player.nameJa,
+              `${r.value}試合`,
+              r.player.club,
+            ]),
+            note: "日本国外のクラブでのリーグ戦のみ。カップ戦や代表戦は含みません。Wikipediaの更新状況によって最新節が反映されていない場合があります。",
+          },
+        ],
+      },
+    ],
+  },
+
+  /* ------------------------------------------------------------------ */
+  {
+    slug: "how-to-watch-belgian-pro-league",
+    title: "ジュピラー・プロ・リーグを日本から観る方法",
+    description: `ベルギーのジュピラー・プロ・リーグには日本人選手が${belgiumPlayers.length}人在籍しており、当サイトの掲載リーグで最多です。配信サービス、料金、キックオフ時刻の日本時間を整理します。`,
+    league: "jupiler-pro-league",
+    updatedAt: CHECKED,
+    sources: officialSources,
+    sections: [
+      {
+        heading: "日本人選手が最も多いリーグ",
+        blocks: [
+          {
+            type: "p",
+            text: `当サイトが把握している範囲で、ジュピラー・プロ・リーグには${belgiumPlayers.length}人の日本人選手が在籍しています。掲載している全リーグのなかで最も多い人数です。`,
+          },
+          {
+            type: "table",
+            head: ["クラブ", "在籍する掲載選手"],
+            rows: belgiumClubs.map((club) => [
+              club,
+              belgiumPlayers.filter((p) => p.club === club).map((p) => p.nameJa).join("、"),
+            ]),
+            note: `${CHECKED}時点の在籍です。`,
+          },
+        ],
+      },
+      {
+        heading: "配信と料金",
+        blocks: [
+          {
+            type: "p",
+            text: "ジュピラー・プロ・リーグはDAZNで配信されています。同じ契約でブンデスリーガ、セリエA、ラ・リーガ、リーグ・アン、プリメイラ・リーガも対象に含まれるため、ベルギーの試合だけのために追加の契約をする必要はありません。",
+          },
+          {
+            type: "broadcasters",
+            league: "jupiler-pro-league",
+            heading: "ジュピラー・プロ・リーグの配信",
+          },
+        ],
+      },
+      {
+        heading: "キックオフ時刻",
+        blocks: [
+          {
+            type: "p",
+            text: "ベルギーは日本との時差が8時間（夏時間は7時間）です。現地の土曜夜の試合は日本時間の日曜未明になります。日曜の昼に組まれる試合であれば、日本時間の夜に観られます。",
+          },
+          {
+            type: "p",
+            text: "実際の日本時間は試合日程ページで確認できます。夜9時から翌朝9時までを「ひと晩」としてまとめているため、深夜の試合も探しやすくなっています。",
+          },
+        ],
+      },
+      {
+        heading: "なぜ日本人選手が集まるのか",
+        blocks: [
+          {
+            type: "p",
+            text: "ベルギーは欧州のなかでも移籍市場の競争が比較的穏やかで、労働許可の要件も主要リーグほど厳しくありません。欧州で最初にプレーする場所として選ばれやすい土壌があります。",
+          },
+          {
+            type: "p",
+            text: `平均年齢を見ても、このリーグは若い選手が中心です。ここで結果を出して主要リーグへ移る、という経路が実際に何度も起きています。`,
+          },
+        ],
+      },
+    ],
+  },
   /* ------------------------------------------------------------------ */
   {
     slug: "how-to-watch-premier-league",
