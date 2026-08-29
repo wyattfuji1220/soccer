@@ -122,7 +122,7 @@ export function WatchPlanFinder() {
     .filter((g) => g.list.length > 0);
 
   return (
-    <div className="mt-10">
+    <div className="jp-auto mt-10">
       <section>
         <div className="flex items-baseline justify-between gap-4 flex-wrap">
           <h2 className="text-xl font-bold">1. 追いかけたい選手を選ぶ</h2>
@@ -205,8 +205,7 @@ export function WatchPlanFinder() {
             )}
 
             <p className="text-xs muted leading-relaxed pt-2">
-              「観られる試合」は選んだ選手の所属クラブのリーグ戦のみを数えています（カップ戦・欧州カップは配信契約が
-              別になることが多いため含めていません）。同じクラブに複数の選手がいる場合は1試合として計算します。
+              「観られる試合」は選んだ選手の所属クラブのリーグ戦のみを数えています（カップ戦・欧州カップは配信契約が別になることが多いため含めていません）。同じクラブに複数の選手がいる場合は1試合として計算します。
               {AD_DISCLOSURE}
             </p>
           </div>

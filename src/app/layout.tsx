@@ -4,6 +4,7 @@ import { SITE_URL, SITE_NAME, ADSENSE_CLIENT } from "@/lib/site";
 import { usingSampleData } from "@/lib/fixtures";
 import { Logo } from "@/components/Logo";
 import "./globals.css";
+import { Jp } from "@/lib/jp";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -100,13 +101,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex-1">{children}</main>
 
         <footer className="border-t mt-16" style={{ borderColor: "var(--border)" }}>
-          <div className="mx-auto max-w-6xl px-4 py-10 text-sm muted space-y-3">
+          <Jp as="div" className="mx-auto max-w-6xl px-4 py-10 text-sm muted space-y-3">
             <p className="text-pitch-600 dark:text-pitch-300">
               <Logo scale={1.15} />
             </p>
             <p>
-              当サイトは公開情報にもとづく事実の整理を目的としています。選手写真・クラブロゴ・試合映像等の
-              著作権保護対象コンテンツは掲載していません。データの出典は各ページに明記しています。
+              当サイトは公開情報にもとづく事実の整理を目的としています。選手写真・クラブロゴ・試合映像等の著作権保護対象コンテンツは掲載していません。データの出典は各ページに明記しています。
             </p>
             <p>本サイトはアフィリエイトプログラムに参加しており、リンクを経由した購入・登録により収益を得る場合があります。</p>
             {/* 利用規約 7.1 で指定された文言。表記はそのまま用いる */}
@@ -127,7 +127,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/about/" className="hover:underline">サイトについて</Link>
               <Link href="/privacy/" className="hover:underline">プライバシーポリシー</Link>
             </div>
-          </div>
+          </Jp>
         </footer>
       </body>
     </html>

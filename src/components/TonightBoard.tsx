@@ -59,7 +59,7 @@ function MatchRow({ fixture, now }: { fixture: Fixture; now: Date }) {
   const live = isLive(kickoff, now);
 
   return (
-    <div className="grid grid-cols-[68px_1fr] sm:grid-cols-[84px_1fr] gap-x-4 gap-y-2 py-4 hair">
+    <div className="jp-auto grid grid-cols-[68px_1fr] sm:grid-cols-[84px_1fr] gap-x-4 gap-y-2 py-4 hair">
       <div className="pt-0.5">
         <p
           className="num text-xl sm:text-2xl font-semibold"

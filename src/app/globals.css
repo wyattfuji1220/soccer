@@ -95,6 +95,48 @@ body {
   /* サイズ指定のない要素の基準。日本語は欧文より行間を要する */
   line-height: 1.9;
   -webkit-font-smoothing: antialiased;
+
+  /*
+   * 行の折り返し方（サイト共通の決まり）。
+   *   1. 語の途中では折り返さない
+   *   2. 助詞や句読点を行頭に置かない
+   *   3. 意味の切れ目で折り返す
+   * strict は禁則処理をいちばん厳しくし、行頭の「、」「）」「ー」や
+   * 小書き仮名を防ぐ。auto-phrase は文節で折り返す指定で、対応する
+   * ブラウザなら 3 もこれだけで満たせる。未対応のブラウザ向けには
+   * src/lib/jp.tsx の <Jp> が文節の境目に <wbr> を置く。
+   */
+  line-break: strict;
+  overflow-wrap: normal;
+  word-break: auto-phrase;
+}
+
+/*
+ * <Jp> が入れた <wbr> の位置だけで折り返す。keep-all がそれ以外の位置での
+ * 折り返しを止める。長い固有名詞が1行に収まらないときだけ break-word で逃がす。
+ */
+.jp {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+/*
+ * <Jp> を使えない箇所（クライアントコンポーネント）は keep-all を解く。
+ * ブラウザとNodeで文節の切り方がずれるとハイドレーションが合わなくなるため、
+ * <wbr> は入れずにブラウザ側の判断に任せる。auto-phrase に対応していれば
+ * 文節で折り返し、そうでなければ既定の折り返しに戻る。
+ */
+.jp-auto {
+  word-break: normal;
+  word-break: auto-phrase;
+}
+
+/* 最終行に1語だけ残る「泣き別れ」を避ける */
+p,
+li,
+dd,
+figcaption {
+  text-wrap: pretty;
 }
 
 h1,

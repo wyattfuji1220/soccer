@@ -4,6 +4,7 @@ import { players } from "@/data/players";
 import { leagueMap } from "@/data/leagues";
 import { metrics, rankBy } from "@/lib/rankings";
 import { RankingBoard } from "./RankingBoard";
+import { Jp } from "@/lib/jp";
 
 export const metadata: Metadata = {
   title: "海外組ランキング｜リーグを跨いだ通算成績",
@@ -29,7 +30,7 @@ export default function RankingsPage() {
   };
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-12">
+    <Jp as="div" className="mx-auto max-w-3xl px-4 py-12">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <p className="label muted">Rankings</p>
@@ -39,9 +40,7 @@ export default function RankingsPage() {
         海外組を並べる
       </h1>
       <p className="mt-5 leading-relaxed muted max-w-[40em]">
-        所属リーグが違うと、選手同士を比べる機会はほとんどありません。
-        ここでは掲載中の{players.length}人を、リーグの枠を外して同じ指標で並べています。
-        今季の成績ではなく<strong style={{ color: "var(--text)" }}>キャリアの通算値</strong>です。
+        所属リーグが違うと、選手同士を比べる機会はほとんどありません。ここでは掲載中の{players.length}人を、リーグの枠を外して同じ指標で並べています。今季の成績ではなく<strong style={{ color: "var(--text)" }}>キャリアの通算値</strong>です。
       </p>
 
       <RankingBoard />
@@ -96,6 +95,6 @@ export default function RankingsPage() {
           で絞り込めます（{Object.keys(leagueMap).length}リーグ）。
         </p>
       </section>
-    </div>
+    </Jp>
   );
 }

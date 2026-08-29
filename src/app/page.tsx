@@ -9,6 +9,7 @@ import { TonightBoard } from "@/components/TonightBoard";
 import { getFixtures, groupByNight, playersInFixture } from "@/lib/fixtures";
 import { SITE_URL } from "@/lib/site";
 import type { LeagueId } from "@/lib/types";
+import { Jp } from "@/lib/jp";
 
 export default function Home() {
   // 静的ビルド時点の日時。クライアント側で実時刻に差し替わる。
@@ -50,7 +51,7 @@ export default function Home() {
   }));
 
   return (
-    <>
+    <Jp as="div">
       <section className="mx-auto max-w-5xl px-4 pt-14 pb-6">
         <p className="label text-pitch-600 dark:text-pitch-300">Japanese Players Abroad</p>
         <p className="mt-3 text-sm font-bold">欧州で戦う日本人選手のファクトデータベース</p>
@@ -60,8 +61,7 @@ export default function Home() {
           何時に、どこで観られるか。
         </h1>
         <p className="mt-5 max-w-2xl muted">
-          海外組の試合を日本時間で並べ、それぞれの配信先まで示します。所属や経歴は出典と最終確認日つき。
-          推測や噂は載せません。
+          海外組の試合を日本時間で並べ、それぞれの配信先まで示します。所属や経歴は出典と最終確認日つき。推測や噂は載せません。
         </p>
 
         <dl className="mt-8 flex flex-wrap gap-x-10 gap-y-5">
@@ -197,6 +197,6 @@ export default function Home() {
           </ul>
         </div>
       </section>
-    </>
+    </Jp>
   );
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { WatchPlanFinder } from "./WatchPlanFinder";
+import { Jp } from "@/lib/jp";
 
 export const metadata: Metadata = {
   title: "視聴プラン診断｜追いたい選手から必要な配信サービスを計算",
@@ -34,7 +35,7 @@ export default function WatchPlanPage() {
   };
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-12">
+    <Jp as="div" className="mx-auto max-w-4xl px-4 py-12">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <p className="text-sm font-semibold text-pitch-600 dark:text-pitch-300">視聴プラン診断</p>
@@ -60,6 +61,6 @@ export default function WatchPlanPage() {
           ))}
         </dl>
       </section>
-    </div>
+    </Jp>
   );
 }

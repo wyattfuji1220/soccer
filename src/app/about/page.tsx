@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { CONTACT_FORM_URL, CONTACT_EMAIL } from "@/lib/site";
+import { Jp } from "@/lib/jp";
 
 export const metadata: Metadata = {
   title: "サイトについて",
@@ -54,7 +55,7 @@ const sections = [
 
 export default function AboutPage() {
   return (
-    <div className="mx-auto max-w-3xl px-4 py-12">
+    <Jp as="div" className="mx-auto max-w-3xl px-4 py-12">
       <h1 className="text-3xl font-bold tracking-tight">サイトについて</h1>
       {sections.map((s) => (
         <section key={s.h} className="mt-10">
@@ -68,8 +69,7 @@ export default function AboutPage() {
       <section className="mt-10">
         <h2 className="text-xl font-bold mb-4">お問い合わせ</h2>
         <p className="leading-8 text-[15px] max-w-[40em]">
-          掲載内容の誤りのご指摘、権利に関するご連絡、その他のお問い合わせは以下からお願いします。
-          いただいた内容は確認のうえ、必要に応じて修正いたします。
+          掲載内容の誤りのご指摘、権利に関するご連絡、その他のお問い合わせは以下からお願いします。いただいた内容は確認のうえ、必要に応じて修正いたします。
         </p>
         {CONTACT_FORM_URL ? (
           <a
@@ -97,11 +97,9 @@ export default function AboutPage() {
       <section className="mt-10">
         <h2 className="text-xl font-bold mb-4">サイトの構成</h2>
         <p className="leading-8 text-[15px] mb-4">
-          本サイトは静的なウェブサイトとして構築され、GitHub Pages で公開しています。
-          選手データはWikipedia日本語版から定期的に取得し、毎日再ビルドしています。
-          サーバー側でユーザーの情報を受け取る仕組みは持っていません。
+          本サイトは静的なウェブサイトとして構築され、GitHub Pages で公開しています。選手データはWikipedia日本語版から定期的に取得し、毎日再ビルドしています。サーバー側でユーザーの情報を受け取る仕組みは持っていません。
         </p>
       </section>
-    </div>
+    </Jp>
   );
 }

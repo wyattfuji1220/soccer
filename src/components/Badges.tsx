@@ -1,4 +1,5 @@
 import type { Confidence, Position } from "@/lib/types";
+import { Jp } from "@/lib/jp";
 
 const positionStyle: Record<Position, string> = {
   GK: "bg-amber-500/15 text-amber-600 dark:text-amber-400",
@@ -43,8 +44,8 @@ export function LoanBadge({ parentClub }: { parentClub?: string | null }) {
 
 export function AdDisclosure() {
   return (
-    <p className="text-xs muted border rounded-sm px-3 py-2" style={{ borderColor: "var(--border)" }}>
+    <Jp as="p" className="text-xs muted border rounded-sm px-3 py-2" style={{ borderColor: "var(--border)" }}>
       本セクションのリンクには広告（アフィリエイトリンク）が含まれます。価格・配信対象は各サービスの公式ページでご確認ください。
-    </p>
+    </Jp>
   );
 }

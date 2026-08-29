@@ -14,6 +14,7 @@ import {
   fetchFailures,
 } from "@/lib/fixtures";
 import { jstTime, jstDate, fromJst } from "@/lib/jst";
+import { Jp } from "@/lib/jp";
 
 export const metadata: Metadata = {
   title: "海外組の試合日程｜日本時間で見る欧州各リーグ",
@@ -31,11 +32,10 @@ export default function FixturesPage() {
   const nights = groupByNight(all);
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-12">
+    <Jp as="div" className="mx-auto max-w-4xl px-4 py-12">
       <h1 className="text-3xl font-bold tracking-tight">試合日程</h1>
       <p className="mt-3 muted text-sm max-w-2xl leading-relaxed">
-        日本時間（JST）で表示しています。欧州の夜の試合は日本時間だと翌朝になるため、
-        夜9時から翌朝9時までを「ひと晩」としてまとめています。
+        日本時間（JST）で表示しています。欧州の夜の試合は日本時間だと翌朝になるため、夜9時から翌朝9時までを「ひと晩」としてまとめています。
         {fixturesUpdatedAt ? ` データ最終更新: ${fixturesUpdatedAt}` : ""}
       </p>
 
@@ -162,6 +162,6 @@ export default function FixturesPage() {
         </Link>
         で計算できます。本ページの配信サービスへのリンクには広告が含まれます。
       </p>
-    </div>
+    </Jp>
   );
 }

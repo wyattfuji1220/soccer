@@ -58,7 +58,7 @@ export function PlayerBrowser() {
     }`;
 
   return (
-    <div className="mt-8">
+    <div className="jp-auto mt-8">
       <input
         type="search"
         value={query}

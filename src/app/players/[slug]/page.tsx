@@ -13,6 +13,7 @@ import { CareerTimeline } from "@/components/CareerTimeline";
 import { loanStatus } from "@/lib/loan";
 import { age, formatDateJa } from "@/lib/format";
 import { amazonSearchUrl, rakutenSearchUrl } from "@/lib/affiliate";
+import { Jp } from "@/lib/jp";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -53,7 +54,7 @@ export default async function PlayerPage({ params }: Props) {
   };
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-12">
+    <Jp as="div" className="mx-auto max-w-4xl px-4 py-12">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <nav className="text-sm muted mb-6">
@@ -203,6 +204,6 @@ export default async function PlayerPage({ params }: Props) {
           </a>
         </div>
       </section>
-    </div>
+    </Jp>
   );
 }

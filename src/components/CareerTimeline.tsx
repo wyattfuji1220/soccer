@@ -1,4 +1,5 @@
 import type { CareerRow } from "@/lib/types";
+import { Jp } from "@/lib/jp";
 
 function Row({
   row,
@@ -98,7 +99,7 @@ export function CareerTimeline({
   if (career.length === 0 && nationalCareer.length === 0) return null;
 
   return (
-    <section className="mt-12">
+    <Jp as="section" className="mt-12">
       <h2 className="text-xl font-bold mb-1">経歴</h2>
       <p className="text-sm muted mb-4 leading-relaxed max-w-[40em]">
         出場数・得点数はリーグ戦の記録です。Wikipediaの更新状況によっては最新の試合が反映されていない場合があります。
@@ -116,6 +117,6 @@ export function CareerTimeline({
         <Section title="クラブ" rows={career} />
         <Section title="代表" rows={nationalCareer} />
       </div>
-    </section>
+    </Jp>
   );
 }

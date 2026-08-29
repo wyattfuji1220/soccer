@@ -6,6 +6,7 @@ import { players } from "@/data/players";
 import { leagueMap } from "@/data/leagues";
 import { PlayerCard } from "@/components/PlayerCard";
 import { BroadcasterList } from "@/components/BroadcasterList";
+import { Jp } from "@/lib/jp";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -55,7 +56,7 @@ export default async function ClubPage({ params }: Props) {
 
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-12">
+    <Jp as="div" className="mx-auto max-w-4xl px-4 py-12">
       <nav className="text-sm muted mb-6">
         <Link href="/clubs/" className="hover:underline">クラブ別</Link>
         <span className="mx-2">/</span>
@@ -158,6 +159,6 @@ export default async function ClubPage({ params }: Props) {
           在籍情報は各選手のWikipedia記事のクラブ遍歴から集計しています。当サイトに掲載していない選手は含まれません。
         </p>
       </section>
-    </div>
+    </Jp>
   );
 }

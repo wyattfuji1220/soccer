@@ -4,6 +4,7 @@ import { broadcasterLink } from "@/lib/affiliate";
 import { yen } from "@/lib/format";
 import { AdDisclosure } from "./Badges";
 import type { LeagueId } from "@/lib/types";
+import { Jp } from "@/lib/jp";
 
 export function BroadcasterList({
   league,
@@ -20,19 +21,19 @@ export function BroadcasterList({
 
   if (options.length === 0) {
     return (
-      <section className="mt-12">
+      <Jp as="section" className="mt-12">
         <h2 className="text-xl font-bold mb-3">{heading}</h2>
         <p className="text-sm px-4 py-3 rounded-lg bg-amber-500/12 text-amber-700 dark:text-amber-400 leading-relaxed">
           {name}を配信している国内のサービスは、当サイトでは確認できていません。
           {missing ? "" : "（2026年8月24日時点）"}
           クラブ公式チャンネルなど、リーグ単位ではない視聴手段がある場合があります。
         </p>
-      </section>
+      </Jp>
     );
   }
 
   return (
-    <section className="mt-12">
+    <Jp as="section" className="mt-12">
       <h2 className="text-xl font-bold mb-2">{heading}</h2>
       <p className="text-sm muted mb-4">
         {name}を配信しているサービスです。放映権は変動するため、申し込む前に必ず公式ページで最新の配信対象をご確認ください。
@@ -76,6 +77,6 @@ export function BroadcasterList({
           </div>
         ))}
       </div>
-    </section>
+    </Jp>
   );
 }

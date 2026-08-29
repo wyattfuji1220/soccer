@@ -8,6 +8,7 @@ import { broadcasterLink } from "@/lib/affiliate";
 import { AdDisclosure } from "@/components/Badges";
 import { Flag } from "@/components/Flag";
 import type { Cup } from "@/lib/types";
+import { Jp } from "@/lib/jp";
 
 export const metadata: Metadata = {
   title: "カップ戦を日本から観る方法",
@@ -26,7 +27,7 @@ function CupBlock({ cup }: { cup: Cup }) {
   const related = playersFor(cup);
 
   return (
-    <section className="py-6 hair">
+    <Jp as="section" className="py-6 hair">
       <div className="flex items-baseline justify-between gap-4 flex-wrap">
         <div>
           <h3 className="text-lg font-bold">{cup.name}</h3>
@@ -83,7 +84,7 @@ function CupBlock({ cup }: { cup: Cup }) {
           公式サイト
         </a>
       </p>
-    </section>
+    </Jp>
   );
 }
 
@@ -115,7 +116,7 @@ export default function CupsPage() {
   };
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-12">
+    <Jp as="div" className="mx-auto max-w-3xl px-4 py-12">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faq) }} />
 
       <p className="label muted">Cup Competitions</p>
@@ -123,11 +124,9 @@ export default function CupsPage() {
         カップ戦を日本から観る方法
       </h1>
       <p className="mt-5 leading-relaxed muted max-w-[40em]">
-        海外組はリーグ戦と並行して、欧州大会や国内カップにも出場します。
-        ところがカップ戦は主催者がリーグと異なるため、
+        海外組はリーグ戦と並行して、欧州大会や国内カップにも出場します。ところがカップ戦は主催者がリーグと異なるため、
         <strong style={{ color: "var(--text)" }}>配信契約もリーグ戦とは別枠</strong>
-        で結ばれることが多く、「リーグは観られるのにカップ戦は観られない」という取りこぼしが起きます。
-        契約する前に、リーグ名だけでなく大会名で配信対象を確認してください。
+        で結ばれることが多く、「リーグは観られるのにカップ戦は観られない」という取りこぼしが起きます。契約する前に、リーグ名だけでなく大会名で配信対象を確認してください。
       </p>
 
       <div className="mt-6">
@@ -137,8 +136,7 @@ export default function CupsPage() {
       <section className="mt-12">
         <h2 className="text-xl font-bold">欧州大会</h2>
         <p className="text-sm muted mt-2 leading-relaxed">
-          前季のリーグ成績や国内カップの結果で出場権が決まります。シーズン中は木曜・水曜の深夜に組まれることが多く、
-          リーグ戦とは別の曜日に試合が増えます。
+          前季のリーグ成績や国内カップの結果で出場権が決まります。シーズン中は木曜・水曜の深夜に組まれることが多く、リーグ戦とは別の曜日に試合が増えます。
         </p>
         <div className="mt-4">
           {europe.map((c) => (
@@ -150,8 +148,7 @@ export default function CupsPage() {
       <section className="mt-12">
         <h2 className="text-xl font-bold">国内カップ</h2>
         <p className="text-sm muted mt-2 leading-relaxed">
-          下部リーグのクラブも参加するノックアウト方式のため、
-          日程がリーグ戦の合間に不定期に入ります。
+          下部リーグのクラブも参加するノックアウト方式のため、日程がリーグ戦の合間に不定期に入ります。
         </p>
         <div className="mt-4">
           {domestic.map((c) => (
@@ -165,13 +162,11 @@ export default function CupsPage() {
         <ul className="space-y-3 text-sm leading-relaxed muted">
           <li>
             <strong style={{ color: "var(--text)" }}>出場するかどうかは別の話です。</strong>{" "}
-            ここに挙げているのは「そのリーグのクラブが出場しうる大会」であり、
-            個々のクラブが実際に出場するかは前季の成績と勝ち上がりで決まります。
+            ここに挙げているのは「そのリーグのクラブが出場しうる大会」であり、個々のクラブが実際に出場するかは前季の成績と勝ち上がりで決まります。
           </li>
           <li>
             <strong style={{ color: "var(--text)" }}>配信元が空欄の大会があります。</strong>{" "}
-            確認できていないものを埋めると誤った契約につながるため、
-            確認できていないことをそのまま書いています。
+            確認できていないものを埋めると誤った契約につながるため、確認できていないことをそのまま書いています。
           </li>
           <li>
             <strong style={{ color: "var(--text)" }}>放映権は変わります。</strong>{" "}
@@ -207,6 +202,6 @@ export default function CupsPage() {
           </Link>
         </div>
       </section>
-    </div>
+    </Jp>
   );
 }

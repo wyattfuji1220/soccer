@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { guides } from "@/data/guides";
 import { BroadcasterList } from "@/components/BroadcasterList";
 import type { Block } from "@/lib/types";
+import { Jp } from "@/lib/jp";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -21,23 +22,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 function BlockView({ block }: { block: Block }) {
   switch (block.type) {
     case "p":
-      return <p className="leading-8 text-[15px] mb-4 max-w-[40em]">{block.text}</p>;
+      return (
+        <Jp as="p" className="leading-8 text-[15px] mb-4 max-w-[40em]">
+          {block.text}
+        </Jp>
+      );
 
     case "list":
       return (
-        <ul className="space-y-2.5 mb-5 max-w-[40em]">
+        <Jp as="ul" className="space-y-2.5 mb-5 max-w-[40em]">
           {block.items.map((item, i) => (
             <li key={i} className="flex gap-3 text-[15px] leading-7">
               <span className="mt-2.5 w-1.5 h-1.5 rounded-full bg-pitch-500 shrink-0" aria-hidden />
               <span>{item}</span>
             </li>
           ))}
-        </ul>
+        </Jp>
       );
 
     case "table":
       return (
-        <figure className="m-0 mb-6">
+        <Jp as="figure" className="m-0 mb-6">
           <div className="overflow-x-auto rounded-xl border" style={{ borderColor: "var(--border)" }}>
             <table className="w-full text-sm border-collapse min-w-[26rem]">
               <thead>
@@ -71,17 +76,18 @@ function BlockView({ block }: { block: Block }) {
             </table>
           </div>
           {block.note && <figcaption className="text-xs muted mt-2 leading-relaxed">{block.note}</figcaption>}
-        </figure>
+        </Jp>
       );
 
     case "callout":
       return (
-        <p
+        <Jp
+          as="p"
           className="text-[15px] leading-7 mb-5 px-5 py-4 rounded-lg border-l-2 border-pitch-500 max-w-[42em]"
           style={{ background: "color-mix(in srgb, var(--color-pitch-500) 7%, var(--surface))" }}
         >
           {block.text}
-        </p>
+        </Jp>
       );
 
     case "broadcasters":
@@ -104,7 +110,7 @@ export default async function GuidePage({ params }: Props) {
   };
 
   return (
-    <article className="mx-auto max-w-3xl px-4 py-12">
+    <Jp as="article" className="mx-auto max-w-3xl px-4 py-12">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <nav className="text-sm muted mb-6">
@@ -144,8 +150,7 @@ export default async function GuidePage({ params }: Props) {
             ))}
           </ul>
           <p className="mt-3 text-xs muted leading-relaxed">
-            料金と配信対象は{guide.updatedAt}時点で各サービスの公式ページを確認した内容です。
-            放映権はシーズンごと、時にはシーズン途中でも変更されます。申し込み前に必ず公式ページで最新の情報をご確認ください。
+            料金と配信対象は{guide.updatedAt}時点で各サービスの公式ページを確認した内容です。放映権はシーズンごと、時にはシーズン途中でも変更されます。申し込み前に必ず公式ページで最新の情報をご確認ください。
           </p>
         </section>
       )}
@@ -170,6 +175,6 @@ export default async function GuidePage({ params }: Props) {
           視聴プラン診断を使う →
         </Link>
       </section>
-    </article>
+    </Jp>
   );
 }

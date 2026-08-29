@@ -36,7 +36,7 @@ export function RankingBoard() {
   const max = rows.length > 0 ? Math.max(...rows.map((r) => r.value)) : 0;
 
   return (
-    <div className="mt-8">
+    <div className="jp-auto mt-8">
       <div className="flex flex-wrap gap-2">
         {metrics.map((m) => (
           <button

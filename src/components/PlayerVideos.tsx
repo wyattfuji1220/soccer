@@ -1,4 +1,5 @@
 import { videosForPlayer } from "@/data/videos";
+import { Jp } from "@/lib/jp";
 
 /**
  * 権利者公式チャンネルの動画のみを埋め込む。
@@ -14,11 +15,10 @@ export function PlayerVideos({ slug, playerName }: { slug: string; playerName: s
   const channels = [...new Set(videos.map((v) => v.channel))];
 
   return (
-    <section className="mt-12">
+    <Jp as="section" className="mt-12">
       <h2 className="text-xl font-bold mb-2">{playerName}の公式ハイライト</h2>
       <p className="text-sm muted mb-5 leading-relaxed">
-        放送・配信の権利者が公式チャンネルで公開している動画です（{channels.join("・")}）。
-        当サイトは動画を保存・再配信しておらず、YouTubeの公式プレーヤーを埋め込んでいます。
+        放送・配信の権利者が公式チャンネルで公開している動画です（{channels.join("・")}）。当サイトは動画を保存・再配信しておらず、YouTubeの公式プレーヤーを埋め込んでいます。
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -56,6 +56,6 @@ export function PlayerVideos({ slug, playerName }: { slug: string; playerName: s
           </figure>
         ))}
       </div>
-    </section>
+    </Jp>
   );
 }

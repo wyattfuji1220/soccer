@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { guides } from "@/data/guides";
+import { Jp } from "@/lib/jp";
 
 export const metadata: Metadata = {
   title: "視聴ガイド",
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function GuidesPage() {
   return (
-    <div className="mx-auto max-w-4xl px-4 py-12">
+    <Jp as="div" className="mx-auto max-w-4xl px-4 py-12">
       <h1 className="text-3xl font-bold tracking-tight">視聴ガイド</h1>
       <p className="mt-3 muted text-sm max-w-2xl leading-relaxed">
         海外リーグを日本から観るための情報を整理しています。配信サービスの契約内容は変動するため、各記事の更新日をご確認ください。
@@ -27,6 +28,6 @@ export default function GuidesPage() {
           </Link>
         ))}
       </div>
-    </div>
+    </Jp>
   );
 }

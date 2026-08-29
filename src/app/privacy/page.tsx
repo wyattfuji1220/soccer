@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Jp } from "@/lib/jp";
 
 export const metadata: Metadata = {
   title: "プライバシーポリシー",
@@ -80,7 +81,7 @@ const sections: Section[] = [
 
 export default function PrivacyPage() {
   return (
-    <div className="mx-auto max-w-3xl px-4 py-12">
+    <Jp as="div" className="mx-auto max-w-3xl px-4 py-12">
       <h1 className="text-3xl font-bold tracking-tight">プライバシーポリシー</h1>
       <p className="mt-3 text-xs muted">最終更新 2026-08-24</p>
 
@@ -125,6 +126,6 @@ export default function PrivacyPage() {
           のページのお問い合わせフォームからお知らせください。出典を添えていただけますと、確認のうえ速やかに修正いたします。
         </p>
       </section>
-    </div>
+    </Jp>
   );
 }

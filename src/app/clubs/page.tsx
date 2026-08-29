@@ -3,6 +3,7 @@ import Link from "next/link";
 import { clubs } from "@/data/clubs";
 import { players } from "@/data/players";
 import { leagueMap } from "@/data/leagues";
+import { Jp } from "@/lib/jp";
 
 export const metadata: Metadata = {
   title: "クラブ別に日本人選手を探す",
@@ -27,11 +28,10 @@ export default function ClubsPage() {
   );
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-12">
+    <Jp as="div" className="mx-auto max-w-5xl px-4 py-12">
       <h1 className="text-3xl font-bold tracking-tight">クラブ別</h1>
       <p className="mt-3 muted text-sm max-w-2xl leading-relaxed">
-        日本人選手が現在所属しているクラブと、過去に在籍したクラブをまとめています。
-        同じクラブに複数の日本人が集まっている例や、海外へ選手を送り出しているJリーグのクラブも見えてきます。
+        日本人選手が現在所属しているクラブと、過去に在籍したクラブをまとめています。同じクラブに複数の日本人が集まっている例や、海外へ選手を送り出しているJリーグのクラブも見えてきます。
       </p>
 
       <section className="mt-10">
@@ -57,8 +57,7 @@ export default function ClubsPage() {
       <section className="mt-14">
         <h2 className="text-xl font-bold">海外へ選手を送り出したJリーグのクラブ</h2>
         <p className="text-sm muted mt-1 max-w-2xl leading-relaxed">
-          現在の掲載選手が、海外へ渡る前に在籍していたクラブです。人数はあくまで当サイトの掲載範囲での集計で、
-          そのクラブの育成実績のすべてを表すものではありません。
+          現在の掲載選手が、海外へ渡る前に在籍していたクラブです。人数はあくまで当サイトの掲載範囲での集計で、そのクラブの育成実績のすべてを表すものではありません。
         </p>
         <div className="mt-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
           {senders.map((c) => (
@@ -96,6 +95,6 @@ export default function ClubsPage() {
           </div>
         </section>
       )}
-    </div>
+    </Jp>
   );
 }
