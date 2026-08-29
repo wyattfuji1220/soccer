@@ -64,6 +64,25 @@ if (dropped.length > 0) {
   console.warn(dropped.join("\n") + "\n");
 }
 
+/*
+ * クラブ記事の「ディビジョン」が2部を指しているのに、1部のリーグに割り当てて
+ * いないか検算する。表示名だけで判定していた頃、ドイツの2部クラブを1部として
+ * 扱っていたことがあるため。
+ */
+const TOP_TIER = new Set([
+  "premier-league", "la-liga", "bundesliga", "serie-a", "ligue-1",
+  "eredivisie", "primeira-liga", "jupiler-pro-league",
+  "scottish-premiership", "danish-superliga",
+]);
+const tierConflicts = abroad
+  .filter((p) => /2部|3部/.test(p.leagueDivision ?? "") && TOP_TIER.has(p.leagueId))
+  .map((p) => `  ${p.nameJa}（${p.club}）: リーグ=${p.leagueId} だが記事のディビジョンは「${p.leagueDivision}」`);
+if (tierConflicts.length > 0) {
+  console.warn(`\nリーグの階層が合わない選手が ${tierConflicts.length}人います`);
+  console.warn("scripts/fetch-players.mjs の leagueArticleAlias に記事名を追加すること");
+  console.warn(tierConflicts.join("\n") + "\n");
+}
+
 const returned = fetched.filter((p) => !p.abroad).map((p) => `${p.nameJa}（${p.club ?? "不明"}）`);
 if (returned.length > 0) {
   console.log(`国内クラブ所属または所属を特定できず対象外: ${returned.length}人 — ${returned.join(" / ")}`);

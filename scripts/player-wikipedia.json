@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-24",
+  "fetchedAt": "2026-08-29",
   "missing": [],
   "players": [
     {
@@ -129,9 +129,11 @@
       "clubArticle": "レアル・ソシエダ",
       "clubEn": "Real Sociedad",
       "leagueLabel": "プリメーラ・ディビシオン",
+      "leagueArticle": "プリメーラ・ディビシオン",
+      "leagueDivision": "1部",
       "leagueId": "la-liga",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "三笘薫",
@@ -180,9 +182,11 @@
       "clubArticle": "ブライトン・アンド・ホーヴ・アルビオンFC",
       "clubEn": "Brighton & Hove Albion F.C.",
       "leagueLabel": "プレミアリーグ",
+      "leagueArticle": "プレミアリーグ",
+      "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "遠藤航",
@@ -271,9 +275,11 @@
       "clubArticle": "リヴァプールFC",
       "clubEn": "Liverpool F.C.",
       "leagueLabel": "プレミアリーグ",
+      "leagueArticle": "プレミアリーグ",
+      "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "冨安健洋",
@@ -378,9 +384,11 @@
       "clubArticle": "クリスタル・パレスFC",
       "clubEn": "Crystal Palace F.C.",
       "leagueLabel": "プレミアリーグ",
+      "leagueArticle": "プレミアリーグ",
+      "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "鎌田大地",
@@ -445,9 +453,11 @@
       "clubArticle": "クリスタル・パレスFC",
       "clubEn": "Crystal Palace F.C.",
       "leagueLabel": "プレミアリーグ",
+      "leagueArticle": "プレミアリーグ",
+      "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "堂安律",
@@ -517,7 +527,7 @@
         {
           "years": "2013-2015",
           "team": "日本 U-17",
-          "country": "JPN",
+          "country": null,
           "loan": false,
           "apps": 4,
           "goals": 1
@@ -525,7 +535,7 @@
         {
           "years": "2015-2017",
           "team": "日本 U-20",
-          "country": "JPN",
+          "country": null,
           "loan": false,
           "apps": 9,
           "goals": 4
@@ -533,7 +543,7 @@
         {
           "years": "2019-2021",
           "team": "日本 U-24",
-          "country": "JPN",
+          "country": null,
           "loan": false,
           "apps": 5,
           "goals": 5
@@ -548,8 +558,8 @@
         },
         {
           "years": "2018-",
-          "team": "日本",
-          "country": "JPN",
+          "team": "日本代表",
+          "country": null,
           "loan": false,
           "apps": 69,
           "goals": 11
@@ -560,9 +570,11 @@
       "clubArticle": "アイントラハト・フランクフルト",
       "clubEn": "Eintracht Frankfurt",
       "leagueLabel": "ドイツ・ブンデスリーガ",
+      "leagueArticle": "サッカー・ブンデスリーガ_(ドイツ)",
+      "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "伊東純也",
@@ -589,7 +601,7 @@
         },
         {
           "years": "2018-2020",
-          "team": "KRCゲンク",
+          "team": "ゲンク",
           "country": "BEL",
           "loan": true,
           "apps": 42,
@@ -597,7 +609,7 @@
         },
         {
           "years": "2020-2022",
-          "team": "KRCゲンク",
+          "team": "ゲンク",
           "country": "BEL",
           "loan": false,
           "apps": 78,
@@ -613,7 +625,7 @@
         },
         {
           "years": "2025-",
-          "team": "KRCゲンク",
+          "team": "ゲンク",
           "country": "BEL",
           "loan": false,
           "apps": 28,
@@ -635,9 +647,11 @@
       "clubArticle": "KRCゲンク",
       "clubEn": "KRC Genk",
       "leagueLabel": "ジュピラー・プロ・リーグ",
+      "leagueArticle": "ベルギー・ファースト・ディビジョンA",
+      "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "上田綺世",
@@ -702,9 +716,11 @@
       "clubArticle": "フェイエノールト",
       "clubEn": "Feyenoord",
       "leagueLabel": "エールディヴィジ",
+      "leagueArticle": "エールディヴィジ (男子サッカー)",
+      "leagueDivision": "1部",
       "leagueId": "eredivisie",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "南野拓実",
@@ -793,9 +809,11 @@
       "clubArticle": "ASモナコ",
       "clubEn": "AS Monaco FC",
       "leagueLabel": "フランスプロサッカーリーグ",
+      "leagueArticle": "フランスプロサッカーリーグ",
+      "leagueDivision": "[[リーグ・アン]](1部)",
       "leagueId": "ligue-1",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "板倉滉",
@@ -932,16 +950,18 @@
       "clubArticle": "ボルシア・メンヒェングラートバッハ",
       "clubEn": "Borussia Mönchengladbach",
       "leagueLabel": "ドイツ・ブンデスリーガ",
+      "leagueArticle": "サッカー・ブンデスリーガ (ドイツ)",
+      "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "守田英正",
       "nameEn": "Hidemasa Morita",
       "birthDate": "1995-05-10",
       "position": "MF",
-      "squadNumber": null,
+      "squadNumber": 5,
       "career": [
         {
           "years": "2018-2020",
@@ -991,9 +1011,11 @@
       "clubArticle": "ハル・シティAFC",
       "clubEn": "Hull City A.F.C.",
       "leagueLabel": "プレミアリーグ",
+      "leagueArticle": "プレミアリーグ",
+      "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "前田大然",
@@ -1098,9 +1120,11 @@
       "clubArticle": "イプスウィッチ・タウンFC",
       "clubEn": "Ipswich Town F.C.",
       "leagueLabel": "プレミアリーグ",
+      "leagueArticle": "プレミアリーグ",
+      "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "鈴木彩艶",
@@ -1205,9 +1229,11 @@
       "clubArticle": "アストン・ヴィラFC",
       "clubEn": "Aston Villa F.C.",
       "leagueLabel": "プレミアリーグ",
+      "leagueArticle": "プレミアリーグ",
+      "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "中村敬斗",
@@ -1269,7 +1295,7 @@
         {
           "years": "2017",
           "team": "日本 U-17",
-          "country": "JPN",
+          "country": null,
           "loan": false,
           "apps": 11,
           "goals": 5
@@ -1277,15 +1303,15 @@
         {
           "years": "2019",
           "team": "日本 U-20",
-          "country": "JPN",
+          "country": null,
           "loan": false,
           "apps": 4,
           "goals": 0
         },
         {
           "years": "2023-",
-          "team": "日本",
-          "country": "JPN",
+          "team": "日本代表",
+          "country": null,
           "loan": false,
           "apps": 29,
           "goals": 11
@@ -1296,9 +1322,11 @@
       "clubArticle": "スタッド・ランス",
       "clubEn": "Stade de Reims",
       "leagueLabel": "フランスプロサッカーリーグ",
-      "leagueId": "ligue-1",
+      "leagueArticle": "フランスプロサッカーリーグ",
+      "leagueDivision": "[[リーグ・ドゥ]](2部)",
+      "leagueId": "ligue-2",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "菅原由勢",
@@ -1379,9 +1407,11 @@
       "clubArticle": "サウサンプトンFC",
       "clubEn": "Southampton F.C.",
       "leagueLabel": "EFLチャンピオンシップ",
+      "leagueArticle": "EFLチャンピオンシップ",
+      "leagueDivision": "2部",
       "leagueId": "championship",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "田中碧",
@@ -1446,9 +1476,11 @@
       "clubArticle": "リーズ・ユナイテッドFC",
       "clubEn": "Leeds United F.C.",
       "leagueLabel": "プレミアリーグ",
+      "leagueArticle": "プレミアリーグ",
+      "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "橋岡大樹",
@@ -1537,9 +1569,11 @@
       "clubArticle": "ボルシア・メンヒェングラートバッハ",
       "clubEn": "Borussia Mönchengladbach",
       "leagueLabel": "ドイツ・ブンデスリーガ",
+      "leagueArticle": "サッカー・ブンデスリーガ (ドイツ)",
+      "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "伊藤洋輝",
@@ -1612,9 +1646,11 @@
       "clubArticle": "FCバイエルン・ミュンヘン",
       "clubEn": "FC Bayern Munich",
       "leagueLabel": "ドイツ・ブンデスリーガ",
+      "leagueArticle": "サッカー・ブンデスリーガ (ドイツ)",
+      "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "佐野海舟",
@@ -1641,7 +1677,7 @@
         },
         {
           "years": "2024-",
-          "team": "マインツ",
+          "team": "1.FSVマインツ05",
           "country": "GER",
           "loan": false,
           "apps": 68,
@@ -1663,9 +1699,11 @@
       "clubArticle": "1.FSVマインツ05",
       "clubEn": "1. FSV Mainz 05",
       "leagueLabel": "ドイツ・ブンデスリーガ",
+      "leagueArticle": "サッカー・ブンデスリーガ (ドイツ)",
+      "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "町野修斗",
@@ -1738,9 +1776,11 @@
       "clubArticle": "ボルシア・メンヒェングラートバッハ",
       "clubEn": "Borussia Mönchengladbach",
       "leagueLabel": "ドイツ・ブンデスリーガ",
+      "leagueArticle": "サッカー・ブンデスリーガ (ドイツ)",
+      "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "浅野拓磨",
@@ -1869,9 +1909,11 @@
       "clubArticle": "サンフレッチェ広島F.C",
       "clubEn": "Sanfrecce Hiroshima",
       "leagueLabel": "日本プロサッカーリーグ",
+      "leagueArticle": "日本プロサッカーリーグ",
+      "leagueDivision": "[[J1リーグ]]",
       "leagueId": null,
       "abroad": false,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "奥川雅也",
@@ -1992,9 +2034,11 @@
       "clubArticle": "京都サンガF.C.",
       "clubEn": "Kyoto Sanga FC",
       "leagueLabel": "日本プロサッカーリーグ",
+      "leagueArticle": "日本プロサッカーリーグ",
+      "leagueDivision": "[[J1リーグ]]",
       "leagueId": null,
       "abroad": false,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "町田浩樹",
@@ -2059,9 +2103,11 @@
       "clubArticle": "TSG1899ホッフェンハイム",
       "clubEn": "TSG 1899 Hoffenheim",
       "leagueLabel": "ドイツ・ブンデスリーガ",
+      "leagueArticle": "サッカー・ブンデスリーガ (ドイツ)",
+      "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "川辺駿",
@@ -2150,16 +2196,18 @@
       "clubArticle": "サンフレッチェ広島F.C",
       "clubEn": "Sanfrecce Hiroshima",
       "leagueLabel": "日本プロサッカーリーグ",
+      "leagueArticle": "日本プロサッカーリーグ",
+      "leagueDivision": "[[J1リーグ]]",
       "leagueId": null,
       "abroad": false,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "小川航基",
       "nameEn": "Koki Ogawa",
       "birthDate": "1997-08-08",
       "position": "FW",
-      "squadNumber": null,
+      "squadNumber": 9,
       "career": [
         {
           "years": "2016-2021",
@@ -2206,8 +2254,8 @@
           "team": "FC町田ゼルビア",
           "country": "JPN",
           "loan": false,
-          "apps": null,
-          "goals": null
+          "apps": 0,
+          "goals": 0
         }
       ],
       "nationalCareer": [
@@ -2241,9 +2289,11 @@
       "clubArticle": "FC町田ゼルビア",
       "clubEn": "FC Machida Zelvia",
       "leagueLabel": "日本プロサッカーリーグ",
+      "leagueArticle": "日本プロサッカーリーグ",
+      "leagueDivision": "[[J1リーグ]]",
       "leagueId": null,
       "abroad": false,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "塩貝健人",
@@ -2308,9 +2358,11 @@
       "clubArticle": "VfLヴォルフスブルク",
       "clubEn": "VfL Wolfsburg",
       "leagueLabel": "2. ブンデスリーガ",
+      "leagueArticle": "2. ブンデスリーガ (ドイツサッカー)",
+      "leagueDivision": "2部",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "渡辺剛",
@@ -2367,9 +2419,11 @@
       "clubArticle": "フェイエノールト",
       "clubEn": "Feyenoord",
       "leagueLabel": "エールディヴィジ",
+      "leagueArticle": "エールディヴィジ (男子サッカー)",
+      "leagueDivision": "1部",
       "leagueId": "eredivisie",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "福井太智",
@@ -2442,9 +2496,11 @@
       "clubArticle": "FCアロウカ",
       "clubEn": "F.C. Arouca",
       "leagueLabel": "プリメイラ・リーガ",
+      "leagueArticle": "プリメイラ・リーガ",
+      "leagueDivision": "1部",
       "leagueId": "primeira-liga",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "後藤啓介",
@@ -2525,9 +2581,11 @@
       "clubArticle": "SCフライブルク",
       "clubEn": "SC Freiburg",
       "leagueLabel": "ドイツ・ブンデスリーガ",
+      "leagueArticle": "サッカー・ブンデスリーガ (ドイツ)",
+      "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "横山歩夢",
@@ -2583,9 +2641,11 @@
       "clubArticle": "KRCゲンク",
       "clubEn": "KRC Genk",
       "leagueLabel": "ジュピラー・プロ・リーグ",
+      "leagueArticle": "ベルギー・ファースト・ディビジョンA",
+      "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "山本理仁",
@@ -2650,9 +2710,11 @@
       "clubArticle": "SCフライブルク",
       "clubEn": "SC Freiburg",
       "leagueLabel": "ドイツ・ブンデスリーガ",
+      "leagueArticle": "サッカー・ブンデスリーガ (ドイツ)",
+      "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "藤田譲瑠チマ",
@@ -2733,9 +2795,11 @@
       "clubArticle": "FCザンクトパウリ",
       "clubEn": "FC St. Pauli",
       "leagueLabel": "2. ブンデスリーガ",
+      "leagueArticle": "2. ブンデスリーガ (ドイツサッカー)",
+      "leagueDivision": "2部",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "旗手怜央",
@@ -2792,9 +2856,11 @@
       "clubArticle": "セルティックFC",
       "clubEn": "Celtic F.C.",
       "leagueLabel": "スコティッシュ・プレミアシップ",
+      "leagueArticle": "スコティッシュ・プレミアシップ",
+      "leagueDivision": "1部",
       "leagueId": "scottish-premiership",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "宮代大聖",
@@ -2891,9 +2957,11 @@
       "clubArticle": "UDラス・パルマス",
       "clubEn": "UD Las Palmas",
       "leagueLabel": "セグンダ・ディビシオン",
+      "leagueArticle": "セグンダ・ディビシオン",
+      "leagueDivision": "2部",
       "leagueId": "segunda-division",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "松木玖生",
@@ -2934,9 +3002,11 @@
       "clubArticle": "サウサンプトンFC",
       "clubEn": "Southampton F.C.",
       "leagueLabel": "EFLチャンピオンシップ",
+      "leagueArticle": "EFLチャンピオンシップ",
+      "leagueDivision": "2部",
       "leagueId": "championship",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "斉藤光毅",
@@ -3049,9 +3119,11 @@
       "clubArticle": "クイーンズ・パーク・レンジャーズFC",
       "clubEn": "Queens Park Rangers F.C.",
       "leagueLabel": "フットボールリーグ",
+      "leagueArticle": "イングリッシュ・フットボールリーグ",
+      "leagueDivision": "[[EFLチャンピオンシップ|チャンピオンシップ]]",
       "leagueId": "championship",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "平河悠",
@@ -3124,9 +3196,11 @@
       "clubArticle": "ブリストル・シティFC",
       "clubEn": "Bristol City F.C.",
       "leagueLabel": "EFLチャンピオンシップ",
+      "leagueArticle": "EFLチャンピオンシップ",
+      "leagueDivision": "2部",
       "leagueId": "championship",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "佐野航大",
@@ -3145,7 +3219,7 @@
         },
         {
           "years": "2023-2026",
-          "team": "NEC",
+          "team": "NECナイメヘン",
           "country": "NED",
           "loan": false,
           "apps": 84,
@@ -3153,7 +3227,7 @@
         },
         {
           "years": "2026-",
-          "team": "PSV",
+          "team": "PSVアイントホーフェン",
           "country": "NED",
           "loan": false,
           "apps": 1,
@@ -3191,9 +3265,11 @@
       "clubArticle": "PSVアイントホーフェン",
       "clubEn": "PSV Eindhoven",
       "leagueLabel": "エールディヴィジ",
+      "leagueArticle": "エールディヴィジ (男子サッカー)",
+      "leagueDivision": "1部",
       "leagueId": "eredivisie",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "鈴木唯人",
@@ -3266,9 +3342,11 @@
       "clubArticle": "SCフライブルク",
       "clubEn": "SC Freiburg",
       "leagueLabel": "ドイツ・ブンデスリーガ",
+      "leagueArticle": "サッカー・ブンデスリーガ (ドイツ)",
+      "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "大橋祐紀",
@@ -3317,9 +3395,11 @@
       "clubArticle": "ブラックバーン・ローヴァーズFC",
       "clubEn": "Blackburn Rovers F.C.",
       "leagueLabel": "EFLチャンピオンシップ",
+      "leagueArticle": "EFLチャンピオンシップ",
+      "leagueDivision": "2部",
       "leagueId": "championship",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "相馬勇紀",
@@ -3384,9 +3464,11 @@
       "clubArticle": "FC町田ゼルビア",
       "clubEn": "FC Machida Zelvia",
       "leagueLabel": "日本プロサッカーリーグ",
+      "leagueArticle": "日本プロサッカーリーグ",
+      "leagueDivision": "[[J1リーグ]]",
       "leagueId": null,
       "abroad": false,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "三戸舜介",
@@ -3475,9 +3557,11 @@
       "clubArticle": "スパルタ・ロッテルダム",
       "clubEn": "Sparta Rotterdam",
       "leagueLabel": "エールディヴィジ",
+      "leagueArticle": "エールディヴィジ",
+      "leagueDivision": "1部",
       "leagueId": "eredivisie",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "松尾佑介",
@@ -3525,9 +3609,11 @@
       "clubArticle": "FC町田ゼルビア",
       "clubEn": "FC Machida Zelvia",
       "leagueLabel": "日本プロサッカーリーグ",
+      "leagueArticle": "日本プロサッカーリーグ",
+      "leagueDivision": "[[J1リーグ]]",
       "leagueId": null,
       "abroad": false,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "高井幸大",
@@ -3592,9 +3678,11 @@
       "clubArticle": "トッテナム・ホットスパーFC",
       "clubEn": "Tottenham Hotspur F.C.",
       "leagueLabel": "プレミアリーグ",
+      "leagueArticle": "プレミアリーグ",
+      "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "小杉啓太",
@@ -3659,9 +3747,11 @@
       "clubArticle": "アイントラハト・フランクフルト",
       "clubEn": "Eintracht Frankfurt",
       "leagueLabel": "ドイツ・ブンデスリーガ",
+      "leagueArticle": "サッカー・ブンデスリーガ_(ドイツ)",
+      "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "野澤大志ブランドン",
@@ -3758,9 +3848,11 @@
       "clubArticle": "ロイヤル・アントワープFC",
       "clubEn": "Royal Antwerp FC",
       "leagueLabel": "ベルギー・ファースト・ディビジョンA",
+      "leagueArticle": "ベルギー・ファースト・ディビジョンA",
+      "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "伊藤涼太郎",
@@ -3841,9 +3933,11 @@
       "clubArticle": null,
       "clubEn": null,
       "leagueLabel": null,
+      "leagueArticle": null,
+      "leagueDivision": null,
       "leagueId": null,
       "abroad": false,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "半田陸",
@@ -3908,9 +4002,11 @@
       "clubArticle": "ガンバ大阪",
       "clubEn": "Gamba Osaka",
       "leagueLabel": "日本プロサッカーリーグ",
+      "leagueArticle": "日本プロサッカーリーグ",
+      "leagueDivision": "[[J1リーグ]]",
       "leagueId": null,
       "abroad": false,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "関根大輝",
@@ -3967,9 +4063,11 @@
       "clubArticle": "ホルシュタイン・キール",
       "clubEn": "Holstein Kiel",
       "leagueLabel": "2. ブンデスリーガ",
+      "leagueArticle": "2. ブンデスリーガ (ドイツサッカー)",
+      "leagueDivision": "2部",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "荒木遼太郎",
@@ -4026,9 +4124,11 @@
       "clubArticle": "シント＝トロイデンVV",
       "clubEn": "Sint-Truidense VV",
       "leagueLabel": "ベルギー・ファースト・ディビジョンA",
+      "leagueArticle": "ベルギー・ファースト・ディビジョンA",
+      "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "毎熊晟矢",
@@ -4077,9 +4177,11 @@
       "clubArticle": "AZアルクマール",
       "clubEn": "AZ Alkmaar",
       "leagueLabel": "エールディヴィジ",
+      "leagueArticle": "エールディヴィジ (男子サッカー)",
+      "leagueDivision": "1部",
       "leagueId": "eredivisie",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "西村拓真",
@@ -4167,9 +4269,11 @@
       "clubArticle": "FC町田ゼルビア",
       "clubEn": "FC Machida Zelvia",
       "leagueLabel": "日本プロサッカーリーグ",
+      "leagueArticle": "日本プロサッカーリーグ",
+      "leagueDivision": "[[J1リーグ]]",
       "leagueId": null,
       "abroad": false,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "細谷真大",
@@ -4202,9 +4306,11 @@
       "clubArticle": "柏レイソル",
       "clubEn": "Kashiwa Reysol",
       "leagueLabel": "日本プロサッカーリーグ",
+      "leagueArticle": "日本プロサッカーリーグ",
+      "leagueDivision": "[[J1リーグ]]",
       "leagueId": null,
       "abroad": false,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "望月ヘンリー海輝",
@@ -4237,9 +4343,11 @@
       "clubArticle": "FC町田ゼルビア",
       "clubEn": "FC Machida Zelvia",
       "leagueLabel": "日本プロサッカーリーグ",
+      "leagueArticle": "日本プロサッカーリーグ",
+      "leagueDivision": "[[J1リーグ]]",
       "leagueId": null,
       "abroad": false,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "鈴木淳之介",
@@ -4280,16 +4388,18 @@
       "clubArticle": "FCコペンハーゲン",
       "clubEn": "F.C. Copenhagen",
       "leagueLabel": "デンマーク・スーペルリーガ",
+      "leagueArticle": "デンマーク・スーペルリーガ",
+      "leagueDivision": "1部",
       "leagueId": "danish-superliga",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "藤尾翔太",
       "nameEn": "Shota Fujio",
       "birthDate": "2001-05-02",
       "position": "FW",
-      "squadNumber": 9,
+      "squadNumber": 15,
       "career": [
         {
           "years": "2020-2023",
@@ -4332,12 +4442,20 @@
           "goals": 8
         },
         {
-          "years": "2024-",
+          "years": "2024-2026",
           "team": "FC町田ゼルビア",
           "country": null,
           "loan": false,
-          "apps": 83,
+          "apps": 85,
           "goals": 13
+        },
+        {
+          "years": "2026-",
+          "team": "柏レイソル",
+          "country": null,
+          "loan": false,
+          "apps": null,
+          "goals": null
         }
       ],
       "nationalCareer": [
@@ -4351,13 +4469,15 @@
         }
       ],
       "country": "JPN",
-      "club": "FC町田ゼルビア",
-      "clubArticle": "FC町田ゼルビア",
-      "clubEn": "FC Machida Zelvia",
+      "club": "柏レイソル",
+      "clubArticle": "柏レイソル",
+      "clubEn": "Kashiwa Reysol",
       "leagueLabel": "日本プロサッカーリーグ",
+      "leagueArticle": "日本プロサッカーリーグ",
+      "leagueDivision": "[[J1リーグ]]",
       "leagueId": null,
       "abroad": false,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "石原広教",
@@ -4405,9 +4525,11 @@
       "clubArticle": "FC東京",
       "clubEn": "FC Tokyo",
       "leagueLabel": "日本プロサッカーリーグ",
+      "leagueArticle": "日本プロサッカーリーグ",
+      "leagueDivision": "[[J1リーグ]]",
       "leagueId": null,
       "abroad": false,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "角田涼太朗",
@@ -4472,9 +4594,11 @@
       "clubArticle": "横浜F・マリノス",
       "clubEn": "Yokohama F. Marinos",
       "leagueLabel": "日本プロサッカーリーグ",
+      "leagueArticle": "日本プロサッカーリーグ",
+      "leagueDivision": "[[J1リーグ]]",
       "leagueId": null,
       "abroad": false,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "原口元気",
@@ -4579,16 +4703,18 @@
       "clubArticle": "KベールスホットVA",
       "clubEn": "K Beerschot VA",
       "leagueLabel": "チャレンジャー・プロ・リーグ",
+      "leagueArticle": "ベルギー・ファースト・ディビジョンB",
+      "leagueDivision": "2部",
       "leagueId": "challenger-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "伊藤敦樹",
       "nameEn": "Atsuki Ito",
       "birthDate": "1998-08-11",
       "position": "MF",
-      "squadNumber": 15,
+      "squadNumber": null,
       "career": [
         {
           "years": "2021-2024",
@@ -4599,12 +4725,20 @@
           "goals": 12
         },
         {
-          "years": "2024-",
-          "team": "KAAヘント",
+          "years": "2024-2026",
+          "team": "ヘント",
           "country": "BEL",
           "loan": false,
-          "apps": 51,
+          "apps": 65,
           "goals": 6
+        },
+        {
+          "years": "2026-",
+          "team": "ボルトン",
+          "country": "ENG",
+          "loan": false,
+          "apps": 0,
+          "goals": 0
         }
       ],
       "nationalCareer": [
@@ -4617,14 +4751,16 @@
           "goals": 1
         }
       ],
-      "country": "BEL",
-      "club": "KAAヘント",
-      "clubArticle": "KAAヘント",
-      "clubEn": "KAA Gent",
-      "leagueLabel": "ベルギー・ファースト・ディビジョンA",
-      "leagueId": "jupiler-pro-league",
+      "country": "ENG",
+      "club": "ボルトン・ワンダラーズFC",
+      "clubArticle": "ボルトン・ワンダラーズFC",
+      "clubEn": "Bolton Wanderers F.C.",
+      "leagueLabel": "EFLチャンピオンシップ",
+      "leagueArticle": "EFLチャンピオンシップ",
+      "leagueDivision": "2部",
+      "leagueId": "championship",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
     },
     {
       "nameJa": "佐藤龍之介",
@@ -4673,9 +4809,2366 @@
       "clubArticle": "バレンシアCF",
       "clubEn": "Valencia CF",
       "leagueLabel": "ラリーガ",
+      "leagueArticle": "プリメーラ・ディビシオン",
+      "leagueDivision": "1部",
       "leagueId": "la-liga",
       "abroad": true,
-      "checkedAt": "2026-08-24"
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "アペルカンプ真大",
+      "nameEn": "Appelkamp Shinta",
+      "birthDate": "2000-11-01",
+      "position": "MF",
+      "squadNumber": null,
+      "career": [
+        {
+          "years": "2019",
+          "team": "デュッセルドルフ U-23",
+          "country": "GER",
+          "loan": false,
+          "apps": 25,
+          "goals": 8
+        },
+        {
+          "years": "2019-2026",
+          "team": "デュッセルドルフ",
+          "country": "GER",
+          "loan": false,
+          "apps": 159,
+          "goals": 21
+        },
+        {
+          "years": "2026-",
+          "team": "グロイター・フュルト",
+          "country": "GER",
+          "loan": false,
+          "apps": null,
+          "goals": null
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2017",
+          "team": "日本 U-17",
+          "country": "JPN",
+          "loan": false,
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2018",
+          "team": "日本 U-18",
+          "country": null,
+          "loan": false,
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2021",
+          "team": "ドイツ U-21",
+          "country": null,
+          "loan": false,
+          "apps": 2,
+          "goals": 0
+        }
+      ],
+      "country": "GER",
+      "club": "SpVggグロイター・フュルト",
+      "clubArticle": "SpVggグロイター・フュルト",
+      "clubEn": "SpVgg Greuther Fürth",
+      "leagueLabel": "2. ブンデスリーガ",
+      "leagueArticle": "2. ブンデスリーガ (ドイツサッカー)",
+      "leagueDivision": "2部",
+      "leagueId": "bundesliga-2",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "福田師王",
+      "nameEn": "Shiou Fukuda",
+      "birthDate": "2004-04-08",
+      "position": "FW",
+      "squadNumber": 13,
+      "career": [
+        {
+          "years": "2023-2025",
+          "team": "ボルシアMG II",
+          "country": "GER",
+          "loan": false,
+          "apps": 36,
+          "goals": 11
+        },
+        {
+          "years": "2024-2026",
+          "team": "ボルシアMG",
+          "country": "GER",
+          "loan": false,
+          "apps": 11,
+          "goals": 1
+        },
+        {
+          "years": "2025-2026",
+          "team": "カールスルーエ",
+          "country": "GER",
+          "loan": true,
+          "apps": 20,
+          "goals": 6
+        },
+        {
+          "years": "2026-",
+          "team": "カールスルーエ",
+          "country": "GER",
+          "loan": false,
+          "apps": null,
+          "goals": null
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2023",
+          "team": "日本U-20",
+          "country": null,
+          "loan": false,
+          "apps": 3,
+          "goals": 0
+        }
+      ],
+      "country": "GER",
+      "club": "カールスルーエSC",
+      "clubArticle": "カールスルーエSC",
+      "clubEn": "Karlsruher SC",
+      "leagueLabel": "ブンデスリーガ",
+      "leagueArticle": "サッカー・ブンデスリーガ (ドイツ)",
+      "leagueDivision": "[[2. ブンデスリーガ (ドイツサッカー)|2部]]",
+      "leagueId": "bundesliga-2",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "岩田智輝",
+      "nameEn": "Tomoki Iwata",
+      "birthDate": "1997-04-07",
+      "position": "MF",
+      "squadNumber": 24,
+      "career": [
+        {
+          "years": "2016-2020",
+          "team": "大分トリニータ",
+          "country": "JPN",
+          "loan": false,
+          "apps": 112,
+          "goals": 7
+        },
+        {
+          "years": "2021-2023",
+          "team": "横浜F・マリノス",
+          "country": "JPN",
+          "loan": false,
+          "apps": 66,
+          "goals": 2
+        },
+        {
+          "years": "2023",
+          "team": "セルティック",
+          "country": "SCO",
+          "loan": true,
+          "apps": 13,
+          "goals": 0
+        },
+        {
+          "years": "2023-2024",
+          "team": "セルティック",
+          "country": "SCO",
+          "loan": false,
+          "apps": 19,
+          "goals": 1
+        },
+        {
+          "years": "2024-",
+          "team": "バーミンガム・シティ",
+          "country": "ENG",
+          "loan": false,
+          "apps": 85,
+          "goals": 9
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2015-2017",
+          "team": "日本 U-18/19/20",
+          "country": null,
+          "loan": false,
+          "apps": 14,
+          "goals": 0
+        },
+        {
+          "years": "2019",
+          "team": "日本 U-22",
+          "country": null,
+          "loan": false,
+          "apps": 3,
+          "goals": 0
+        }
+      ],
+      "country": "ENG",
+      "club": "バーミンガム・シティFC",
+      "clubArticle": "バーミンガム・シティFC",
+      "clubEn": "Birmingham City F.C.",
+      "leagueLabel": "EFLチャンピオンシップ",
+      "leagueArticle": "EFLチャンピオンシップ",
+      "leagueDivision": "2部",
+      "leagueId": "championship",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "三好康児",
+      "nameEn": "Koji Miyoshi",
+      "birthDate": "1997-03-26",
+      "position": "MF",
+      "squadNumber": 23,
+      "career": [
+        {
+          "years": "2015-2020",
+          "team": "川崎フロンターレ",
+          "country": "JPN",
+          "loan": false,
+          "apps": 31,
+          "goals": 5
+        },
+        {
+          "years": "2015",
+          "team": "Jリーグ・アンダー22選抜",
+          "country": "JPN",
+          "loan": true,
+          "apps": 8,
+          "goals": 1
+        },
+        {
+          "years": "2018",
+          "team": "北海道コンサドーレ札幌",
+          "country": "JPN",
+          "loan": true,
+          "apps": 26,
+          "goals": 3
+        },
+        {
+          "years": "2019",
+          "team": "横浜F・マリノス",
+          "country": "JPN",
+          "loan": true,
+          "apps": 19,
+          "goals": 3
+        },
+        {
+          "years": "2019-2020",
+          "team": "ロイヤル・アントワープ",
+          "country": "BEL",
+          "loan": true,
+          "apps": 14,
+          "goals": 1
+        },
+        {
+          "years": "2020-2023",
+          "team": "ロイヤル・アントワープ",
+          "country": "BEL",
+          "loan": false,
+          "apps": 49,
+          "goals": 4
+        },
+        {
+          "years": "2023-2024",
+          "team": "バーミンガム",
+          "country": "ENG",
+          "loan": false,
+          "apps": 46,
+          "goals": 6
+        },
+        {
+          "years": "2024-",
+          "team": "ボーフム",
+          "country": "GER",
+          "loan": false,
+          "apps": 15,
+          "goals": 1
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2013",
+          "team": "日本U-17",
+          "country": null,
+          "loan": false,
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2017",
+          "team": "日本U-20",
+          "country": null,
+          "loan": false,
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2020",
+          "team": "日本U-23",
+          "country": null,
+          "loan": false,
+          "apps": 5,
+          "goals": 1
+        },
+        {
+          "years": "2019-2020",
+          "team": "日本代表",
+          "country": null,
+          "loan": false,
+          "apps": 5,
+          "goals": 2
+        }
+      ],
+      "country": "GER",
+      "club": "VfLボーフム",
+      "clubArticle": "VfLボーフム",
+      "clubEn": "VfL Bochum",
+      "leagueLabel": "2. ブンデスリーガ",
+      "leagueArticle": "2. ブンデスリーガ (ドイツサッカー)",
+      "leagueDivision": "2部",
+      "leagueId": "bundesliga-2",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "藤本寛也",
+      "nameEn": "Kanya Fujimoto",
+      "birthDate": "1999-07-01",
+      "position": "MF",
+      "squadNumber": null,
+      "career": [
+        {
+          "years": "2018-2022",
+          "team": "東京ヴェルディ",
+          "country": "JPN",
+          "loan": false,
+          "apps": 49,
+          "goals": 4
+        },
+        {
+          "years": "2020-2022",
+          "team": "ジル・ヴィセンテ",
+          "country": "POR",
+          "loan": true,
+          "apps": 59,
+          "goals": 4
+        },
+        {
+          "years": "2022-2025",
+          "team": "ジル・ヴィセンテ",
+          "country": "POR",
+          "loan": false,
+          "apps": 97,
+          "goals": 8
+        },
+        {
+          "years": "2025-",
+          "team": "バーミンガム・シティFC",
+          "country": "ENG",
+          "loan": false,
+          "apps": 5,
+          "goals": 0
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2019",
+          "team": "日本U-20",
+          "country": null,
+          "loan": false,
+          "apps": 2,
+          "goals": 0
+        }
+      ],
+      "country": "ENG",
+      "club": "バーミンガム・シティFC",
+      "clubArticle": "バーミンガム・シティFC",
+      "clubEn": "Birmingham City F.C.",
+      "leagueLabel": "EFLチャンピオンシップ",
+      "leagueArticle": "EFLチャンピオンシップ",
+      "leagueDivision": "2部",
+      "leagueId": "championship",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "川崎颯太",
+      "nameEn": "Sota Kawasaki",
+      "birthDate": "2001-07-30",
+      "position": "MF",
+      "squadNumber": 24,
+      "career": [
+        {
+          "years": "2020-2026",
+          "team": "京都サンガF.C.",
+          "country": "JPN",
+          "loan": false,
+          "apps": 166,
+          "goals": 13
+        },
+        {
+          "years": "2025-2026",
+          "team": "1.FSVマインツ05",
+          "country": "GER",
+          "loan": true,
+          "apps": 10,
+          "goals": 0
+        },
+        {
+          "years": "2026-",
+          "team": "1.FSVマインツ05",
+          "country": "GER",
+          "loan": false,
+          "apps": null,
+          "goals": null
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2019",
+          "team": "日本 U-18",
+          "country": null,
+          "loan": false,
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2024",
+          "team": "日本 U-23",
+          "country": null,
+          "loan": false,
+          "apps": 3,
+          "goals": 0
+        }
+      ],
+      "country": "GER",
+      "club": "1.FSVマインツ05",
+      "clubArticle": "1.FSVマインツ05",
+      "clubEn": "1. FSV Mainz 05",
+      "leagueLabel": "ドイツ・ブンデスリーガ",
+      "leagueArticle": "サッカー・ブンデスリーガ (ドイツ)",
+      "leagueDivision": "1部",
+      "leagueId": "bundesliga",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "宇野禅斗",
+      "nameEn": "Zento Uno",
+      "birthDate": "2003-11-20",
+      "position": "MF",
+      "squadNumber": 47,
+      "career": [
+        {
+          "years": "2022-2024",
+          "team": "FC町田ゼルビア",
+          "country": "JPN",
+          "loan": false,
+          "apps": 31,
+          "goals": 3
+        },
+        {
+          "years": "2024",
+          "team": "清水エスパルス",
+          "country": "JPN",
+          "loan": true,
+          "apps": 12,
+          "goals": 2
+        },
+        {
+          "years": "2025-2026",
+          "team": "清水エスパルス",
+          "country": "JPN",
+          "loan": false,
+          "apps": 44,
+          "goals": 1
+        },
+        {
+          "years": "2026-",
+          "team": "ボルシアMG",
+          "country": "GER",
+          "loan": false,
+          "apps": null,
+          "goals": null
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2025-",
+          "team": "日本代表",
+          "country": null,
+          "loan": false,
+          "apps": 2,
+          "goals": 0
+        }
+      ],
+      "country": "GER",
+      "club": "ボルシア・メンヒェングラートバッハ",
+      "clubArticle": "ボルシア・メンヒェングラートバッハ",
+      "clubEn": "Borussia Mönchengladbach",
+      "leagueLabel": "ドイツ・ブンデスリーガ",
+      "leagueArticle": "サッカー・ブンデスリーガ (ドイツ)",
+      "leagueDivision": "1部",
+      "leagueId": "bundesliga",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "坂元達裕",
+      "nameEn": "Tatsuhiro Sakamoto",
+      "birthDate": "1996-10-22",
+      "position": "MF",
+      "squadNumber": 7,
+      "career": [
+        {
+          "years": "2019",
+          "team": "モンテディオ山形",
+          "country": "JPN",
+          "loan": false,
+          "apps": 42,
+          "goals": 7
+        },
+        {
+          "years": "2020-2022",
+          "team": "セレッソ大阪",
+          "country": "JPN",
+          "loan": false,
+          "apps": 66,
+          "goals": 8
+        },
+        {
+          "years": "2022",
+          "team": "オーステンデ",
+          "country": "BEL",
+          "loan": true,
+          "apps": 12,
+          "goals": 0
+        },
+        {
+          "years": "2022-2023",
+          "team": "オーステンデ",
+          "country": "BEL",
+          "loan": false,
+          "apps": 30,
+          "goals": 0
+        },
+        {
+          "years": "2023-",
+          "team": "コヴェントリー・シティ",
+          "country": "ENG",
+          "loan": false,
+          "apps": 106,
+          "goals": 18
+        }
+      ],
+      "nationalCareer": [],
+      "country": "ENG",
+      "club": "コヴェントリー・シティFC",
+      "clubArticle": "コヴェントリー・シティFC",
+      "clubEn": "Coventry City F.C.",
+      "leagueLabel": "プレミアリーグ",
+      "leagueArticle": "プレミアリーグ",
+      "leagueDivision": "1部",
+      "leagueId": "premier-league",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "森下龍矢",
+      "nameEn": "Ryuya Morishita",
+      "birthDate": "1997-04-11",
+      "position": "MF",
+      "squadNumber": 25,
+      "career": [
+        {
+          "years": "2020",
+          "team": "サガン鳥栖",
+          "country": "JPN",
+          "loan": false,
+          "apps": 33,
+          "goals": 3
+        },
+        {
+          "years": "2021-2024",
+          "team": "名古屋グランパス",
+          "country": "JPN",
+          "loan": false,
+          "apps": 54,
+          "goals": 1
+        },
+        {
+          "years": "2024",
+          "team": "レギア・ワルシャワ",
+          "country": "POL",
+          "loan": true,
+          "apps": 30,
+          "goals": 4
+        },
+        {
+          "years": "2024-2025",
+          "team": "レギア・ワルシャワ",
+          "country": "POL",
+          "loan": false,
+          "apps": 18,
+          "goals": 3
+        },
+        {
+          "years": "2025-",
+          "team": "ブラックバーン",
+          "country": "ENG",
+          "loan": false,
+          "apps": 37,
+          "goals": 4
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2015",
+          "team": "日本 U-18",
+          "country": null,
+          "loan": false,
+          "apps": null,
+          "goals": null
+        }
+      ],
+      "country": "ENG",
+      "club": "ブラックバーン・ローヴァーズFC",
+      "clubArticle": "ブラックバーン・ローヴァーズFC",
+      "clubEn": "Blackburn Rovers F.C.",
+      "leagueLabel": "EFLチャンピオンシップ",
+      "leagueArticle": "EFLチャンピオンシップ",
+      "leagueDivision": "2部",
+      "leagueId": "championship",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "倍井謙",
+      "nameEn": "Ken Masui",
+      "birthDate": "2001-04-04",
+      "position": "MF",
+      "squadNumber": null,
+      "career": [
+        {
+          "years": "2023-",
+          "team": "名古屋グランパス",
+          "country": "JPN",
+          "loan": false,
+          "apps": 26,
+          "goals": 2
+        },
+        {
+          "years": "2025",
+          "team": "ジュビロ磐田",
+          "country": "JPN",
+          "loan": true,
+          "apps": 38,
+          "goals": 6
+        },
+        {
+          "years": "2026",
+          "team": "ベールスホット",
+          "country": "BEL",
+          "loan": true,
+          "apps": 10,
+          "goals": 2
+        },
+        {
+          "years": "2026-",
+          "team": "KVコルトレイク",
+          "country": "BEL",
+          "loan": true,
+          "apps": null,
+          "goals": null
+        }
+      ],
+      "nationalCareer": [],
+      "country": "BEL",
+      "club": "KVコルトレイク",
+      "clubArticle": "KVコルトレイク",
+      "clubEn": "KV Kortrijk",
+      "leagueLabel": "チャレンジャー・プロ・リーグ",
+      "leagueArticle": "ベルギー・ファースト・ディビジョンB",
+      "leagueDivision": "2部",
+      "leagueId": "challenger-pro-league",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "市原吏音",
+      "nameEn": "Rion Ichihara",
+      "birthDate": "2005-07-07",
+      "position": "DF",
+      "squadNumber": 18,
+      "career": [
+        {
+          "years": "2023-2025",
+          "team": "大宮アルディージャ<br/ >/ RB大宮アルディージャ",
+          "country": "JPN",
+          "loan": false,
+          "apps": 77,
+          "goals": 5
+        },
+        {
+          "years": "2026-",
+          "team": "AZアルクマール",
+          "country": "NED",
+          "loan": false,
+          "apps": null,
+          "goals": null
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2024",
+          "team": "日本 U-19",
+          "country": null,
+          "loan": false,
+          "apps": null,
+          "goals": null
+        },
+        {
+          "years": "2025",
+          "team": "日本 U-20",
+          "country": null,
+          "loan": false,
+          "apps": null,
+          "goals": null
+        },
+        {
+          "years": "2026-",
+          "team": "日本 U-21",
+          "country": null,
+          "loan": false,
+          "apps": null,
+          "goals": null
+        }
+      ],
+      "country": "NED",
+      "club": "AZアルクマール",
+      "clubArticle": "AZアルクマール",
+      "clubEn": "AZ Alkmaar",
+      "leagueLabel": "エールディヴィジ",
+      "leagueArticle": "エールディヴィジ (男子サッカー)",
+      "leagueDivision": "1部",
+      "leagueId": "eredivisie",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "荻原拓也",
+      "nameEn": "Takuya Ogiwara",
+      "birthDate": "1999-11-23",
+      "position": "DF",
+      "squadNumber": null,
+      "career": [
+        {
+          "years": "2018-",
+          "team": "浦和レッズ",
+          "country": "JPN",
+          "loan": false,
+          "apps": 76,
+          "goals": 1
+        },
+        {
+          "years": "2020",
+          "team": "アルビレックス新潟",
+          "country": "JPN",
+          "loan": true,
+          "apps": 24,
+          "goals": 0
+        },
+        {
+          "years": "2021-2022",
+          "team": "京都サンガF.C.",
+          "country": "JPN",
+          "loan": true,
+          "apps": 61,
+          "goals": 4
+        },
+        {
+          "years": "2024-2025",
+          "team": "ディナモ・ザグレブ",
+          "country": "CRO",
+          "loan": true,
+          "apps": 12,
+          "goals": 0
+        },
+        {
+          "years": "2026-",
+          "team": "OHルーヴェン",
+          "country": "BEL",
+          "loan": true,
+          "apps": 0,
+          "goals": 0
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2017-2019",
+          "team": "日本 U-20",
+          "country": null,
+          "loan": false,
+          "apps": null,
+          "goals": null
+        }
+      ],
+      "country": "BEL",
+      "club": "OHルーヴェン",
+      "clubArticle": "OHルーヴェン",
+      "clubEn": "Oud-Heverlee Leuven",
+      "leagueLabel": "ジュピラー・プロ・リーグ",
+      "leagueArticle": "ベルギー・ファースト・ディビジョンA",
+      "leagueDivision": "1部",
+      "leagueId": "jupiler-pro-league",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "山田新",
+      "nameEn": "Shin Yamada",
+      "birthDate": "2000-05-30",
+      "position": "FW",
+      "squadNumber": 20,
+      "career": [
+        {
+          "years": "2023-2025",
+          "team": "川崎フロンターレ",
+          "country": "JPN",
+          "loan": false,
+          "apps": 86,
+          "goals": 25
+        },
+        {
+          "years": "2025-",
+          "team": "セルティック",
+          "country": "SCO",
+          "loan": false,
+          "apps": 8,
+          "goals": 0
+        },
+        {
+          "years": "2026",
+          "team": "プロイセン・ミュンスター",
+          "country": "GER",
+          "loan": true,
+          "apps": null,
+          "goals": null
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2025",
+          "team": "日本代表",
+          "country": null,
+          "loan": false,
+          "apps": 1,
+          "goals": 0
+        }
+      ],
+      "country": "BEL",
+      "club": "OHルーヴェン",
+      "clubArticle": "OHルーヴェン",
+      "clubEn": "Oud-Heverlee Leuven",
+      "leagueLabel": "ジュピラー・プロ・リーグ",
+      "leagueArticle": "ベルギー・ファースト・ディビジョンA",
+      "leagueDivision": "1部",
+      "leagueId": "jupiler-pro-league",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "瀬古歩夢",
+      "nameEn": "Ayumu Seko",
+      "birthDate": "2000-06-07",
+      "position": "DF",
+      "squadNumber": 15,
+      "career": [
+        {
+          "years": "2019-2021",
+          "team": "セレッソ大阪",
+          "country": "JPN",
+          "loan": false,
+          "apps": 67,
+          "goals": 2
+        },
+        {
+          "years": "2022-2025",
+          "team": "グラスホッパー",
+          "country": "SUI",
+          "loan": false,
+          "apps": 117,
+          "goals": 1
+        },
+        {
+          "years": "2025-",
+          "team": "ル・アーヴル",
+          "country": "FRA",
+          "loan": false,
+          "apps": 30,
+          "goals": 0
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2019",
+          "team": "日本 U-20",
+          "country": "JPN",
+          "loan": false,
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2021",
+          "team": "日本 U-24",
+          "country": "JPN",
+          "loan": false,
+          "apps": 0,
+          "goals": 0
+        },
+        {
+          "years": "2023-",
+          "team": "日本",
+          "country": "JPN",
+          "loan": false,
+          "apps": 16,
+          "goals": 0
+        }
+      ],
+      "country": "FRA",
+      "club": "ル・アーヴルAC",
+      "clubArticle": "ル・アーヴルAC",
+      "clubEn": "Le Havre AC",
+      "leagueLabel": "フランスプロサッカーリーグ",
+      "leagueArticle": "フランスプロサッカーリーグ",
+      "leagueDivision": "[[リーグ・アン]](1部)",
+      "leagueId": "ligue-1",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "中村草太",
+      "nameEn": "Sota Nakamura",
+      "birthDate": "2002-10-15",
+      "position": "FW",
+      "squadNumber": 30,
+      "career": [
+        {
+          "years": "2025-",
+          "team": "サンフレッチェ広島",
+          "country": "JPN",
+          "loan": false,
+          "apps": 48,
+          "goals": 11
+        },
+        {
+          "years": "2026-",
+          "team": "ル・アーヴル",
+          "country": "FRA",
+          "loan": true,
+          "apps": null,
+          "goals": null
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2025-",
+          "team": "日本代表",
+          "country": null,
+          "loan": false,
+          "apps": 2,
+          "goals": 1
+        }
+      ],
+      "country": "FRA",
+      "club": "ル・アーヴルAC",
+      "clubArticle": "ル・アーヴルAC",
+      "clubEn": "Le Havre AC",
+      "leagueLabel": "フランスプロサッカーリーグ",
+      "leagueArticle": "フランスプロサッカーリーグ",
+      "leagueDivision": "[[リーグ・アン]](1部)",
+      "leagueId": "ligue-1",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "水多海斗",
+      "nameEn": "Kaito Mizuta",
+      "birthDate": "2000-04-08",
+      "position": "MF",
+      "squadNumber": 17,
+      "career": [
+        {
+          "years": "2019-2021",
+          "team": "シュトラーレン",
+          "country": "GER",
+          "loan": false,
+          "apps": 60,
+          "goals": 17
+        },
+        {
+          "years": "2021-2023",
+          "team": "マインツII",
+          "country": "GER",
+          "loan": false,
+          "apps": 66,
+          "goals": 15
+        },
+        {
+          "years": "2023-2025",
+          "team": "アルミニア・ビーレフェルト",
+          "country": "GER",
+          "loan": false,
+          "apps": 39,
+          "goals": 6
+        },
+        {
+          "years": "2025-2026",
+          "team": "ロートヴァイス・エッセン",
+          "country": "GER",
+          "loan": false,
+          "apps": 36,
+          "goals": 9
+        },
+        {
+          "years": "2026-",
+          "team": "ル・アーヴルAC",
+          "country": "FRA",
+          "loan": false,
+          "apps": null,
+          "goals": null
+        }
+      ],
+      "nationalCareer": [],
+      "country": "FRA",
+      "club": "ル・アーヴルAC",
+      "clubArticle": "ル・アーヴルAC",
+      "clubEn": "Le Havre AC",
+      "leagueLabel": "フランスプロサッカーリーグ",
+      "leagueArticle": "フランスプロサッカーリーグ",
+      "leagueDivision": "[[リーグ・アン]](1部)",
+      "leagueId": "ligue-1",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "横田大祐",
+      "nameEn": "Daisuke Yokota",
+      "birthDate": "2000-06-15",
+      "position": "MF",
+      "squadNumber": 17,
+      "career": [
+        {
+          "years": "2021-2022",
+          "team": "ヴァルミエラ",
+          "country": "LAT",
+          "loan": false,
+          "apps": 57,
+          "goals": 9
+        },
+        {
+          "years": "2023-2024",
+          "team": "グールニク・ザブジェ",
+          "country": "POL",
+          "loan": false,
+          "apps": 31,
+          "goals": 9
+        },
+        {
+          "years": "2024-2026",
+          "team": "ヘント",
+          "country": "BEL",
+          "loan": false,
+          "apps": 9,
+          "goals": 1
+        },
+        {
+          "years": "2024-2025",
+          "team": "カイザースラウテルン",
+          "country": "GER",
+          "loan": true,
+          "apps": 25,
+          "goals": 4
+        },
+        {
+          "years": "2025-2026",
+          "team": "ハノーファー",
+          "country": "GER",
+          "loan": true,
+          "apps": 28,
+          "goals": 5
+        },
+        {
+          "years": "2026-",
+          "team": "レンジャーズ",
+          "country": "SCO",
+          "loan": false,
+          "apps": null,
+          "goals": null
+        }
+      ],
+      "nationalCareer": [],
+      "country": "SCO",
+      "club": "レンジャーズFC",
+      "clubArticle": "レンジャーズFC",
+      "clubEn": "Rangers F.C.",
+      "leagueLabel": "スコティッシュ・プレミアシップ",
+      "leagueArticle": "スコティッシュ・プレミアシップ",
+      "leagueDivision": "1部",
+      "leagueId": "scottish-premiership",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "秋山裕紀",
+      "nameEn": "Hiroki Akiyama",
+      "birthDate": "2000-12-09",
+      "position": "MF",
+      "squadNumber": 16,
+      "career": [
+        {
+          "years": "2019-",
+          "team": "アルビレックス新潟",
+          "country": "JPN",
+          "loan": false,
+          "apps": 118,
+          "goals": 3
+        },
+        {
+          "years": "2020",
+          "team": "アスルクラロ沼津",
+          "country": "JPN",
+          "loan": true,
+          "apps": 8,
+          "goals": 3
+        },
+        {
+          "years": "2021",
+          "team": "鹿児島ユナイテッドFC",
+          "country": "JPN",
+          "loan": true,
+          "apps": 9,
+          "goals": 1
+        },
+        {
+          "years": "2025-",
+          "team": "SVダルムシュタット98",
+          "country": "GER",
+          "loan": true,
+          "apps": 32,
+          "goals": 3
+        }
+      ],
+      "nationalCareer": [],
+      "country": "GER",
+      "club": "SVダルムシュタット98",
+      "clubArticle": "SVダルムシュタット98",
+      "clubEn": "SV Darmstadt 98",
+      "leagueLabel": "ブンデスリーガ",
+      "leagueArticle": "2. ブンデスリーガ (ドイツサッカー)",
+      "leagueDivision": "2部",
+      "leagueId": "bundesliga-2",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "古川陽介",
+      "nameEn": "Yosuke Furukawa",
+      "birthDate": "2003-07-16",
+      "position": "MF",
+      "squadNumber": null,
+      "career": [
+        {
+          "years": "2022-2025",
+          "team": "ジュビロ磐田",
+          "country": "JPN",
+          "loan": false,
+          "apps": 59,
+          "goals": 4
+        },
+        {
+          "years": "2024-2025",
+          "team": "グールニク・ザブジェ",
+          "country": "POL",
+          "loan": true,
+          "apps": 24,
+          "goals": 2
+        },
+        {
+          "years": "2025-",
+          "team": "ダルムシュタット",
+          "country": "GER",
+          "loan": false,
+          "apps": null,
+          "goals": null
+        }
+      ],
+      "nationalCareer": [],
+      "country": "GER",
+      "club": "SVダルムシュタット98",
+      "clubArticle": "SVダルムシュタット98",
+      "clubEn": "SV Darmstadt 98",
+      "leagueLabel": "ブンデスリーガ",
+      "leagueArticle": "2. ブンデスリーガ (ドイツサッカー)",
+      "leagueDivision": "2部",
+      "leagueId": "bundesliga-2",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "松田隼風",
+      "nameEn": "Hayate Matsuda",
+      "birthDate": "2003-10-02",
+      "position": "DF",
+      "squadNumber": 3,
+      "career": [
+        {
+          "years": "2022-2025",
+          "team": "水戸ホーリーホック",
+          "country": "JPN",
+          "loan": false,
+          "apps": 20,
+          "goals": 1
+        },
+        {
+          "years": "2023-2025",
+          "team": "ハノーファー96 II",
+          "country": "GER",
+          "loan": true,
+          "apps": 62,
+          "goals": 4
+        },
+        {
+          "years": "2025-",
+          "team": "ハノーファー96",
+          "country": "GER",
+          "loan": false,
+          "apps": null,
+          "goals": null
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2019-2020",
+          "team": "日本 U-16/17",
+          "country": null,
+          "loan": false,
+          "apps": null,
+          "goals": null
+        },
+        {
+          "years": "2023",
+          "team": "日本 U-20",
+          "country": null,
+          "loan": false,
+          "apps": 6,
+          "goals": 0
+        }
+      ],
+      "country": "GER",
+      "club": "ハノーファー96",
+      "clubArticle": "ハノーファー96",
+      "clubEn": "Hannover 96",
+      "leagueLabel": "ブンデスリーガ",
+      "leagueArticle": "サッカー・ブンデスリーガ (ドイツ)",
+      "leagueDivision": "[[2. ブンデスリーガ (ドイツサッカー)|2部]]",
+      "leagueId": "bundesliga-2",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "安部大晴",
+      "nameEn": "Taisei Abe",
+      "birthDate": "2004-06-07",
+      "position": "MF",
+      "squadNumber": null,
+      "career": [
+        {
+          "years": "2021-",
+          "team": "V・ファーレン長崎",
+          "country": "JPN",
+          "loan": false,
+          "apps": 47,
+          "goals": 2
+        },
+        {
+          "years": "2025-2026",
+          "team": "FCルツェルン",
+          "country": "SUI",
+          "loan": true,
+          "apps": 34,
+          "goals": 0
+        },
+        {
+          "years": "2026-",
+          "team": "ホルシュタイン・キール",
+          "country": "GER",
+          "loan": true,
+          "apps": null,
+          "goals": null
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2023",
+          "team": "日本 U-20",
+          "country": null,
+          "loan": false,
+          "apps": 2,
+          "goals": 0
+        }
+      ],
+      "country": "GER",
+      "club": "ホルシュタイン・キール",
+      "clubArticle": "ホルシュタイン・キール",
+      "clubEn": "Holstein Kiel",
+      "leagueLabel": "2. ブンデスリーガ",
+      "leagueArticle": "2. ブンデスリーガ (ドイツサッカー)",
+      "leagueDivision": "2部",
+      "leagueId": "bundesliga-2",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "高橋仁胡",
+      "nameEn": "Niko Takahashi",
+      "birthDate": "2005-08-16",
+      "position": "DF",
+      "squadNumber": null,
+      "career": [
+        {
+          "years": "2024-",
+          "team": "セレッソ大阪",
+          "country": "JPN",
+          "loan": false,
+          "apps": 23,
+          "goals": 1
+        },
+        {
+          "years": "2026",
+          "team": "アルメレ・シティFC",
+          "country": "NED",
+          "loan": true,
+          "apps": 16,
+          "goals": 0
+        },
+        {
+          "years": "2026-",
+          "team": "ホルシュタイン・キール",
+          "country": "GER",
+          "loan": true,
+          "apps": null,
+          "goals": null
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2021",
+          "team": "スペイン U-16",
+          "country": null,
+          "loan": false,
+          "apps": null,
+          "goals": null
+        },
+        {
+          "years": "2022",
+          "team": "日本 U-19",
+          "country": null,
+          "loan": false,
+          "apps": null,
+          "goals": null
+        },
+        {
+          "years": "2023",
+          "team": "日本 U-20",
+          "country": null,
+          "loan": false,
+          "apps": 3,
+          "goals": 0
+        }
+      ],
+      "country": "GER",
+      "club": "ホルシュタイン・キール",
+      "clubArticle": "ホルシュタイン・キール",
+      "clubEn": "Holstein Kiel",
+      "leagueLabel": "2. ブンデスリーガ",
+      "leagueArticle": "2. ブンデスリーガ (ドイツサッカー)",
+      "leagueDivision": "2部",
+      "leagueId": "bundesliga-2",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "安藤智哉",
+      "nameEn": "Tomoya Ando",
+      "birthDate": "1999-01-10",
+      "position": "DF",
+      "squadNumber": 15,
+      "career": [
+        {
+          "years": "2021-2022",
+          "team": "FC今治",
+          "country": "JPN",
+          "loan": false,
+          "apps": 44,
+          "goals": 7
+        },
+        {
+          "years": "2023-2024",
+          "team": "大分トリニータ",
+          "country": "JPN",
+          "loan": false,
+          "apps": 64,
+          "goals": 2
+        },
+        {
+          "years": "2025",
+          "team": "アビスパ福岡",
+          "country": "JPN",
+          "loan": false,
+          "apps": 36,
+          "goals": 4
+        },
+        {
+          "years": "2026-",
+          "team": "FCザンクトパウリ",
+          "country": "GER",
+          "loan": false,
+          "apps": 15,
+          "goals": null
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2018",
+          "team": "日本 U-19",
+          "country": null,
+          "loan": false,
+          "apps": null,
+          "goals": null
+        },
+        {
+          "years": "2025-",
+          "team": "日本代表",
+          "country": null,
+          "loan": false,
+          "apps": 3,
+          "goals": 0
+        }
+      ],
+      "country": "GER",
+      "club": "FCザンクトパウリ",
+      "clubArticle": "FCザンクトパウリ",
+      "clubEn": "FC St. Pauli",
+      "leagueLabel": "2. ブンデスリーガ",
+      "leagueArticle": "2. ブンデスリーガ (ドイツサッカー)",
+      "leagueDivision": "2部",
+      "leagueId": "bundesliga-2",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "原大智",
+      "nameEn": "Taichi Hara",
+      "birthDate": "1999-05-05",
+      "position": "FW",
+      "squadNumber": 18,
+      "career": [
+        {
+          "years": "2017-2019",
+          "team": "FC東京U-23",
+          "country": "JPN",
+          "loan": false,
+          "apps": 72,
+          "goals": 28
+        },
+        {
+          "years": "2018-2020",
+          "team": "FC東京",
+          "country": "JPN",
+          "loan": false,
+          "apps": 26,
+          "goals": 3
+        },
+        {
+          "years": "2021",
+          "team": "NKイストラ1961",
+          "country": "CRO",
+          "loan": false,
+          "apps": 14,
+          "goals": 2
+        },
+        {
+          "years": "2021-2023",
+          "team": "デポルティーボ・アラベス",
+          "country": "ESP",
+          "loan": false,
+          "apps": 15,
+          "goals": 1
+        },
+        {
+          "years": "2021-2022",
+          "team": "シント＝トロイデンVV",
+          "country": "BEL",
+          "loan": true,
+          "apps": 28,
+          "goals": 8
+        },
+        {
+          "years": "2023",
+          "team": "シント＝トロイデンVV",
+          "country": "BEL",
+          "loan": true,
+          "apps": 11,
+          "goals": 0
+        },
+        {
+          "years": "2023-2025",
+          "team": "京都サンガF.C.",
+          "country": "JPN",
+          "loan": false,
+          "apps": 84,
+          "goals": 20
+        },
+        {
+          "years": "2026-",
+          "team": "FCザンクトパウリ",
+          "country": "GER",
+          "loan": false,
+          "apps": 2,
+          "goals": 0
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2019",
+          "team": "日本 U-20",
+          "country": null,
+          "loan": false,
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2025-",
+          "team": "日本代表",
+          "country": null,
+          "loan": false,
+          "apps": 2,
+          "goals": 0
+        }
+      ],
+      "country": "GER",
+      "club": "FCザンクトパウリ",
+      "clubArticle": "FCザンクトパウリ",
+      "clubEn": "FC St. Pauli",
+      "leagueLabel": "2. ブンデスリーガ",
+      "leagueArticle": "2. ブンデスリーガ (ドイツサッカー)",
+      "leagueDivision": "2部",
+      "leagueId": "bundesliga-2",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "安藤晃希",
+      "nameEn": "Koki Ando",
+      "birthDate": "2007-09-22",
+      "position": "MF",
+      "squadNumber": 33,
+      "career": [
+        {
+          "years": "2026",
+          "team": "水戸ホーリーホック",
+          "country": null,
+          "loan": false,
+          "apps": 8,
+          "goals": 2
+        },
+        {
+          "years": "2026-",
+          "team": "ロイヤル・アントワープFC",
+          "country": null,
+          "loan": false,
+          "apps": null,
+          "goals": null
+        }
+      ],
+      "nationalCareer": [],
+      "country": "BEL",
+      "club": "ロイヤル・アントワープFC",
+      "clubArticle": "ロイヤル・アントワープFC",
+      "clubEn": "Royal Antwerp FC",
+      "leagueLabel": "ベルギー・ファースト・ディビジョンA",
+      "leagueArticle": "ベルギー・ファースト・ディビジョンA",
+      "leagueDivision": "1部",
+      "leagueId": "jupiler-pro-league",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "綱島悠斗",
+      "nameEn": "Yuto Tsunashima",
+      "birthDate": "2000-08-15",
+      "position": "DF",
+      "squadNumber": 4,
+      "career": [
+        {
+          "years": "2023-2025",
+          "team": "東京ヴェルディ",
+          "country": "JPN",
+          "loan": false,
+          "apps": 87,
+          "goals": 7
+        },
+        {
+          "years": "2025-",
+          "team": "ロイヤル・アントワープ",
+          "country": "BEL",
+          "loan": false,
+          "apps": 24,
+          "goals": 1
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2025-",
+          "team": "日本代表",
+          "country": null,
+          "loan": false,
+          "apps": 1,
+          "goals": 0
+        }
+      ],
+      "country": "BEL",
+      "club": "ロイヤル・アントワープFC",
+      "clubArticle": "ロイヤル・アントワープFC",
+      "clubEn": "Royal Antwerp FC",
+      "leagueLabel": "ベルギー・ファースト・ディビジョンA",
+      "leagueArticle": "ベルギー・ファースト・ディビジョンA",
+      "leagueDivision": "1部",
+      "leagueId": "jupiler-pro-league",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "石渡ネルソン",
+      "nameEn": "Nelson Ishiwatari",
+      "birthDate": "2005-05-10",
+      "position": "MF",
+      "squadNumber": 18,
+      "career": [
+        {
+          "years": "2022-2026",
+          "team": "セレッソ大阪",
+          "country": "JPN",
+          "loan": false,
+          "apps": 18,
+          "goals": 0
+        },
+        {
+          "years": "2024",
+          "team": "愛媛FC",
+          "country": "JPN",
+          "loan": true,
+          "apps": 12,
+          "goals": 1
+        },
+        {
+          "years": "2025",
+          "team": "いわきFC",
+          "country": "JPN",
+          "loan": true,
+          "apps": 29,
+          "goals": 4
+        },
+        {
+          "years": "2026-",
+          "team": "シント = トロイデン",
+          "country": "BEL",
+          "loan": false,
+          "apps": null,
+          "goals": null
+        }
+      ],
+      "nationalCareer": [],
+      "country": "BEL",
+      "club": "シント＝トロイデンVV",
+      "clubArticle": "シント＝トロイデンVV",
+      "clubEn": "Sint-Truidense VV",
+      "leagueLabel": "ベルギー・ファースト・ディビジョンA",
+      "leagueArticle": "ベルギー・ファースト・ディビジョンA",
+      "leagueDivision": "1部",
+      "leagueId": "jupiler-pro-league",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "小久保玲央ブライアン",
+      "nameEn": "Kokubo Leobrian",
+      "birthDate": "2001-01-23",
+      "position": "GK",
+      "squadNumber": 16,
+      "career": [
+        {
+          "years": "2020-2024",
+          "team": "ベンフィカB",
+          "country": "POR",
+          "loan": false,
+          "apps": 25,
+          "goals": 0
+        },
+        {
+          "years": "2022-2024",
+          "team": "ベンフィカ",
+          "country": "POR",
+          "loan": false,
+          "apps": 0,
+          "goals": 0
+        },
+        {
+          "years": "2024-",
+          "team": "シント＝トロイデン",
+          "country": "BEL",
+          "loan": false,
+          "apps": 63,
+          "goals": 0
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2016",
+          "team": "日本U-16",
+          "country": null,
+          "loan": false,
+          "apps": null,
+          "goals": null
+        },
+        {
+          "years": "2018-2019",
+          "team": "日本U-18",
+          "country": null,
+          "loan": false,
+          "apps": null,
+          "goals": null
+        },
+        {
+          "years": "2019-2024",
+          "team": "日本U-23",
+          "country": null,
+          "loan": false,
+          "apps": 4,
+          "goals": 0
+        }
+      ],
+      "country": "BEL",
+      "club": "シント＝トロイデンVV",
+      "clubArticle": "シント＝トロイデンVV",
+      "clubEn": "Sint-Truidense VV",
+      "leagueLabel": "ベルギー・ファースト・ディビジョンA",
+      "leagueArticle": "ベルギー・ファースト・ディビジョンA",
+      "leagueDivision": "1部",
+      "leagueId": "jupiler-pro-league",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "新川志音",
+      "nameEn": "Shion Shinkawa",
+      "birthDate": "2007-08-06",
+      "position": "FW",
+      "squadNumber": 99,
+      "career": [
+        {
+          "years": "2025",
+          "team": "サガン鳥栖",
+          "country": "JPN",
+          "loan": false,
+          "apps": 33,
+          "goals": 5
+        },
+        {
+          "years": "2026-",
+          "team": "シント＝トロイデンVV",
+          "country": "BEL",
+          "loan": false,
+          "apps": 0,
+          "goals": 0
+        }
+      ],
+      "nationalCareer": [],
+      "country": "BEL",
+      "club": "シント＝トロイデンVV",
+      "clubArticle": "シント＝トロイデンVV",
+      "clubEn": "Sint-Truidense VV",
+      "leagueLabel": "ベルギー・ファースト・ディビジョンA",
+      "leagueArticle": "ベルギー・ファースト・ディビジョンA",
+      "leagueDivision": "1部",
+      "leagueId": "jupiler-pro-league",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "谷口彰悟",
+      "nameEn": "Shogo Taniguchi",
+      "birthDate": "1991-07-15",
+      "position": "DF",
+      "squadNumber": 5,
+      "career": [
+        {
+          "years": "2014-2022",
+          "team": "川崎フロンターレ",
+          "country": "JPN",
+          "loan": false,
+          "apps": 289,
+          "goals": 20
+        },
+        {
+          "years": "2023-2024",
+          "team": "アル・ラーヤン",
+          "country": "QAT",
+          "loan": false,
+          "apps": 37,
+          "goals": 1
+        },
+        {
+          "years": "2024-",
+          "team": "シント＝トロイデン",
+          "country": "BEL",
+          "loan": false,
+          "apps": 43,
+          "goals": 2
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2015-",
+          "team": "日本代表",
+          "country": null,
+          "loan": false,
+          "apps": 41,
+          "goals": 1
+        }
+      ],
+      "country": "BEL",
+      "club": "シント＝トロイデンVV",
+      "clubArticle": "シント＝トロイデンVV",
+      "clubEn": "Sint-Truidense VV",
+      "leagueLabel": "ベルギー・ファースト・ディビジョンA",
+      "leagueArticle": "ベルギー・ファースト・ディビジョンA",
+      "leagueDivision": "1部",
+      "leagueId": "jupiler-pro-league",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "畑大雅",
+      "nameEn": "Taiga Hata",
+      "birthDate": "2002-01-20",
+      "position": "DF",
+      "squadNumber": 3,
+      "career": [
+        {
+          "years": "2020-2025",
+          "team": "湘南ベルマーレ",
+          "country": "JPN",
+          "loan": false,
+          "apps": 128,
+          "goals": 4
+        },
+        {
+          "years": "2025-",
+          "team": "シント＝トロイデンVV",
+          "country": "BEL",
+          "loan": false,
+          "apps": 26,
+          "goals": 0
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2018-2019",
+          "team": "日本 U-17",
+          "country": null,
+          "loan": false,
+          "apps": 13,
+          "goals": 0
+        }
+      ],
+      "country": "BEL",
+      "club": "シント＝トロイデンVV",
+      "clubArticle": "シント＝トロイデンVV",
+      "clubEn": "Sint-Truidense VV",
+      "leagueLabel": "ベルギー・ファースト・ディビジョンA",
+      "leagueArticle": "ベルギー・ファースト・ディビジョンA",
+      "leagueDivision": "1部",
+      "leagueId": "jupiler-pro-league",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "松澤海斗",
+      "nameEn": "Kaito Matsuzawa",
+      "birthDate": "2001-02-05",
+      "position": "MF",
+      "squadNumber": 38,
+      "career": [
+        {
+          "years": "2023-2025",
+          "team": "V・ファーレン長崎",
+          "country": "JPN",
+          "loan": false,
+          "apps": 63,
+          "goals": 4
+        },
+        {
+          "years": "2025-",
+          "team": "シント＝トロイデンVV",
+          "country": "BEL",
+          "loan": false,
+          "apps": 22,
+          "goals": 2
+        }
+      ],
+      "nationalCareer": [],
+      "country": "BEL",
+      "club": "シント＝トロイデンVV",
+      "clubArticle": "シント＝トロイデンVV",
+      "clubEn": "Sint-Truidense VV",
+      "leagueLabel": "ベルギー・ファースト・ディビジョンA",
+      "leagueArticle": "ベルギー・ファースト・ディビジョンA",
+      "leagueDivision": "1部",
+      "leagueId": "jupiler-pro-league",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "田中聡",
+      "nameEn": "Satoshi Tanaka",
+      "birthDate": "2002-08-13",
+      "position": "MF",
+      "squadNumber": 13,
+      "career": [
+        {
+          "years": "2020-2024",
+          "team": "湘南ベルマーレ",
+          "country": "JPN",
+          "loan": false,
+          "apps": 114,
+          "goals": 7
+        },
+        {
+          "years": "2022-2023",
+          "team": "コルトレイク",
+          "country": "BEL",
+          "loan": true,
+          "apps": 15,
+          "goals": 0
+        },
+        {
+          "years": "2025",
+          "team": "サンフレッチェ広島",
+          "country": "JPN",
+          "loan": false,
+          "apps": 26,
+          "goals": 1
+        },
+        {
+          "years": "2026",
+          "team": "デュッセルドルフ",
+          "country": "GER",
+          "loan": false,
+          "apps": 13,
+          "goals": 0
+        },
+        {
+          "years": "2026-",
+          "team": "シャルケ",
+          "country": "GER",
+          "loan": false,
+          "apps": null,
+          "goals": null
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2019",
+          "team": "日本 U-17",
+          "country": null,
+          "loan": false,
+          "apps": 9,
+          "goals": 0
+        },
+        {
+          "years": "2025-",
+          "team": "日本代表",
+          "country": null,
+          "loan": false,
+          "apps": 1,
+          "goals": 0
+        }
+      ],
+      "country": "GER",
+      "club": "シャルケ04",
+      "clubArticle": "シャルケ04",
+      "clubEn": "FC Schalke 04",
+      "leagueLabel": "ブンデスリーガ",
+      "leagueArticle": "サッカー・ブンデスリーガ (ドイツ)",
+      "leagueDivision": "1部",
+      "leagueId": "bundesliga",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "ハーフナー・ニッキ",
+      "nameEn": "Nikki Havenaar",
+      "birthDate": "1995-02-16",
+      "position": "DF",
+      "squadNumber": null,
+      "career": [
+        {
+          "years": "2013-2015",
+          "team": "名古屋グランパス",
+          "country": "JPN",
+          "loan": false,
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2014-2015",
+          "team": "Jリーグ・U-22選抜",
+          "country": "JPN",
+          "loan": true,
+          "apps": 7,
+          "goals": 1
+        },
+        {
+          "years": "2016-2018",
+          "team": "SVホルン",
+          "country": "AUT",
+          "loan": false,
+          "apps": 66,
+          "goals": 4
+        },
+        {
+          "years": "2018-2019",
+          "team": "FCヴィル1900",
+          "country": "SWI",
+          "loan": false,
+          "apps": 27,
+          "goals": 2
+        },
+        {
+          "years": "2019-2023",
+          "team": "FCトゥーン",
+          "country": "SWI",
+          "loan": false,
+          "apps": 92,
+          "goals": 14
+        },
+        {
+          "years": "2022-2023",
+          "team": "ヌーシャテル",
+          "country": "SWI",
+          "loan": true,
+          "apps": 26,
+          "goals": 2
+        },
+        {
+          "years": "2023-2026",
+          "team": "SVリート",
+          "country": "AUT",
+          "loan": false,
+          "apps": 88,
+          "goals": 16
+        },
+        {
+          "years": "2026-",
+          "team": "ユニオンSG",
+          "country": "BEL",
+          "loan": false,
+          "apps": null,
+          "goals": null
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2011-2012",
+          "team": "日本 U-18",
+          "country": null,
+          "loan": false,
+          "apps": 4,
+          "goals": 1
+        },
+        {
+          "years": "2013",
+          "team": "日本 U-19",
+          "country": null,
+          "loan": false,
+          "apps": 1,
+          "goals": 0
+        }
+      ],
+      "country": "BEL",
+      "club": "ロイヤル・ユニオン・サン＝ジロワーズ",
+      "clubArticle": "ロイヤル・ユニオン・サン＝ジロワーズ",
+      "clubEn": "Royale Union Saint-Gilloise",
+      "leagueLabel": "ベルギー・ファースト・ディビジョンA",
+      "leagueArticle": "ベルギー・ファースト・ディビジョンA",
+      "leagueDivision": "1部",
+      "leagueId": "jupiler-pro-league",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "木村誠二",
+      "nameEn": "Seiji Kimura",
+      "birthDate": "2001-08-24",
+      "position": "DF",
+      "squadNumber": 5,
+      "career": [
+        {
+          "years": "2018-2019",
+          "team": "FC東京U-23",
+          "country": "JPN",
+          "loan": false,
+          "apps": 37,
+          "goals": 1
+        },
+        {
+          "years": "2020-2025",
+          "team": "FC東京",
+          "country": "JPN",
+          "loan": false,
+          "apps": 23,
+          "goals": 0
+        },
+        {
+          "years": "2021",
+          "team": "京都サンガF.C.",
+          "country": "JPN",
+          "loan": true,
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2021",
+          "team": "SC相模原",
+          "country": "JPN",
+          "loan": true,
+          "apps": 17,
+          "goals": 1
+        },
+        {
+          "years": "2022",
+          "team": "モンテディオ山形",
+          "country": "JPN",
+          "loan": true,
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "years": "2024",
+          "team": "サガン鳥栖",
+          "country": "JPN",
+          "loan": true,
+          "apps": 26,
+          "goals": 1
+        },
+        {
+          "years": "2025-",
+          "team": "KVCウェステルロー",
+          "country": "BEL",
+          "loan": false,
+          "apps": 14,
+          "goals": 1
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2024",
+          "team": "日本U-23",
+          "country": null,
+          "loan": false,
+          "apps": 3,
+          "goals": 0
+        }
+      ],
+      "country": "BEL",
+      "club": "KVCウェステルロー",
+      "clubArticle": "KVCウェステルロー",
+      "clubEn": "KVC Westerlo",
+      "leagueLabel": "ベルギー・ファースト・ディビジョンA",
+      "leagueArticle": "ベルギー・ファースト・ディビジョンA",
+      "leagueDivision": "1部",
+      "leagueId": "jupiler-pro-league",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "齋藤俊輔",
+      "nameEn": "Shunsuke Saito",
+      "birthDate": "2005-04-26",
+      "position": "MF",
+      "squadNumber": 38,
+      "career": [
+        {
+          "years": "2024-2025",
+          "team": "水戸ホーリーホック",
+          "country": "JPN",
+          "loan": false,
+          "apps": 43,
+          "goals": 9
+        },
+        {
+          "years": "2026-",
+          "team": "ウェステルロー",
+          "country": "BEL",
+          "loan": false,
+          "apps": 7,
+          "goals": 0
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2025-",
+          "team": "日本 U-20",
+          "country": null,
+          "loan": false,
+          "apps": 2,
+          "goals": 0
+        }
+      ],
+      "country": "BEL",
+      "club": "KVCウェステルロー",
+      "clubArticle": "KVCウェステルロー",
+      "clubEn": "KVC Westerlo",
+      "leagueLabel": "ベルギー・ファースト・ディビジョンA",
+      "leagueArticle": "ベルギー・ファースト・ディビジョンA",
+      "leagueDivision": "1部",
+      "leagueId": "jupiler-pro-league",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "坂本一彩",
+      "nameEn": "Isa Sakamoto",
+      "birthDate": "2003-08-26",
+      "position": "FW",
+      "squadNumber": 13,
+      "career": [
+        {
+          "years": "2020",
+          "team": "ガンバ大阪U-23",
+          "country": "JPN",
+          "loan": false,
+          "apps": 11,
+          "goals": 3
+        },
+        {
+          "years": "2022-2025",
+          "team": "ガンバ大阪",
+          "country": "JPN",
+          "loan": false,
+          "apps": 46,
+          "goals": 11
+        },
+        {
+          "years": "2023",
+          "team": "ファジアーノ岡山",
+          "country": "JPN",
+          "loan": true,
+          "apps": 24,
+          "goals": 4
+        },
+        {
+          "years": "2025",
+          "team": "ウェステルロー",
+          "country": "BEL",
+          "loan": true,
+          "apps": 9,
+          "goals": 3
+        },
+        {
+          "years": "2025-",
+          "team": "ウェステルロー",
+          "country": "BEL",
+          "loan": false,
+          "apps": 30,
+          "goals": 4
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2023",
+          "team": "日本U-20",
+          "country": null,
+          "loan": false,
+          "apps": 2,
+          "goals": 1
+        }
+      ],
+      "country": "BEL",
+      "club": "KVCウェステルロー",
+      "clubArticle": "KVCウェステルロー",
+      "clubEn": "KVC Westerlo",
+      "leagueLabel": "ベルギー・ファースト・ディビジョンA",
+      "leagueArticle": "ベルギー・ファースト・ディビジョンA",
+      "leagueDivision": "1部",
+      "leagueId": "jupiler-pro-league",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
+    },
+    {
+      "nameJa": "喜多壱也",
+      "nameEn": "Kazunari Kita",
+      "birthDate": "2005-09-16",
+      "position": "DF",
+      "squadNumber": 15,
+      "career": [
+        {
+          "years": "2024-2026",
+          "team": "京都サンガF.C.",
+          "country": "JPN",
+          "loan": false,
+          "apps": 0,
+          "goals": 0
+        },
+        {
+          "years": "2025-2026",
+          "team": "レアル・ソシエダB",
+          "country": "ESP",
+          "loan": true,
+          "apps": 31,
+          "goals": 0
+        },
+        {
+          "years": "2026-",
+          "team": "レアル・ソシエダB",
+          "country": "ESP",
+          "loan": false,
+          "apps": null,
+          "goals": null
+        }
+      ],
+      "nationalCareer": [],
+      "country": "ESP",
+      "club": "レアル・ソシエダB",
+      "clubArticle": "レアル・ソシエダB",
+      "clubEn": "Real Sociedad B",
+      "leagueLabel": "セグンダ・ディビシオン",
+      "leagueArticle": "セグンダ・ディビシオン",
+      "leagueDivision": "2部",
+      "leagueId": "segunda-division",
+      "abroad": true,
+      "checkedAt": "2026-08-29"
     }
   ]
 }

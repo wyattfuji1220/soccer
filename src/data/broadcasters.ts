@@ -94,6 +94,7 @@ export const cupsWithoutBroadcaster: Partial<Record<CupId, string>> = {
 
 export const leaguesWithoutBroadcaster: Record<string, string> = {
   "bundesliga-2": "国内での定額配信は確認できていません。",
+  "ligue-2": "国内での定額配信は確認できていません。",
   "segunda-division": "国内での定額配信は確認できていません。",
   "challenger-pro-league": "国内での定額配信は確認できていません。",
   "danish-superliga": "国内での定額配信は確認できていません。",

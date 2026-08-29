@@ -21,6 +21,7 @@ export type LeagueId =
   | "danish-superliga"
   | "championship"
   | "bundesliga-2"
+  | "ligue-2"
   | "segunda-division"
   | "challenger-pro-league";
 

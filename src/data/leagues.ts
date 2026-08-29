@@ -21,6 +21,7 @@ export const leagues: League[] = [
   // 2部リーグ。日本人選手の在籍が多く、検索需要も無視できない
   { id: "championship", name: "EFLチャンピオンシップ", nameEn: "EFL Championship", country: "イングランド", matchesPerSeason: 46 },
   { id: "bundesliga-2", name: "2.ブンデスリーガ", nameEn: "2. Bundesliga", country: "ドイツ", footballDataCode: "BL2", matchesPerSeason: 34 },
+  { id: "ligue-2", name: "リーグ・ドゥ", nameEn: "Ligue 2", country: "フランス", matchesPerSeason: 34 },
   { id: "segunda-division", name: "セグンダ・ディビシオン", nameEn: "Segunda División", country: "スペイン", matchesPerSeason: 42 },
   { id: "challenger-pro-league", name: "チャレンジャー・プロ・リーグ", nameEn: "Challenger Pro League", country: "ベルギー", matchesPerSeason: 30 },
 ];

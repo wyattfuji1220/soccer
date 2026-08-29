@@ -202,6 +202,35 @@ const clubArticleAlias = {
  * Wikipedia上のリーグ表記をサイト内のIDに正規化する。
  * 同じリーグが複数の名前で書かれている（ジュピラー・プロ・リーグ／ベルギー・ファースト・ディビジョンA など）。
  */
+/*
+ * リーグはリンク先の記事名で判定する。
+ * インフォボックスの表示名は当てにならない。たとえばドイツの2部クラブは
+ *   [[2. ブンデスリーガ (ドイツサッカー)|ブンデスリーガ]]
+ * と書かれ、1部クラブの表示名と区別がつかない。
+ */
+const leagueArticleAlias = {
+  "プレミアリーグ": "premier-league",
+  "EFLチャンピオンシップ": "championship",
+  "フットボールリーグ": "championship",
+  "サッカー・ブンデスリーガ (ドイツ)": "bundesliga",
+  "2. ブンデスリーガ (ドイツサッカー)": "bundesliga-2",
+  "リーグ・ドゥ": "ligue-2",
+  "リーガ・エスパニョーラ": "la-liga",
+  "プリメーラ・ディビシオン (スペイン)": "la-liga",
+  "セグンダ・ディビシオン": "segunda-division",
+  "セリエA (サッカー)": "serie-a",
+  "リーグ・アン": "ligue-1",
+  "フランスプロサッカーリーグ": "ligue-1",
+  "エールディヴィジ": "eredivisie",
+  "プリメイラ・リーガ": "primeira-liga",
+  "ベルギー・ファースト・ディビジョンA": "jupiler-pro-league",
+  "ベルギー・ファースト・ディビジョンB": "challenger-pro-league",
+  "スコティッシュ・プレミアシップ": "scottish-premiership",
+  "スーペルリーガ (デンマーク)": "danish-superliga",
+  "デンマーク・スーペルリーガ": "danish-superliga",
+};
+
+/** 記事名で引けなかったときの保険。表示名で引く */
 const leagueAlias = {
   "プレミアリーグ": "premier-league",
   "EFLチャンピオンシップ": "championship",
@@ -231,7 +260,20 @@ function parseClub(text) {
   const leagueRaw = templateField(text, "リーグ");
   const league = linkTarget(leagueRaw);
   const label = league?.label ?? (stripMarkup(leagueRaw ?? "") || null);
-  return { leagueArticle: league?.article ?? null, leagueLabel: label };
+  /*
+   * 「ディビジョン」欄。クラブ記事の「リーグ」はリーグ機構を指すことがあり、
+   * ハノーファー96のように1部の記事へリンクしながら実際は2部、という例がある。
+   * 階層はこちらで確定させる。
+   */
+  const divisionRaw = templateField(text, "ディビジョン");
+  const divisionLink = linkTarget(divisionRaw);
+  const division = stripMarkup(divisionRaw ?? "") || null;
+  return {
+    leagueArticle: league?.article ?? null,
+    leagueLabel: label,
+    division,
+    divisionArticle: divisionLink?.article ?? null,
+  };
 }
 
 /** アルファベット表記は「KUBO Takefusa」形式なので「Takefusa Kubo」に直す */
@@ -287,6 +329,25 @@ for (const [title, text] of clubText) {
   clubInfo.set(title, { ...parseClub(text), en: clubEn.get(title) ?? null });
 }
 
+/**
+ * クラブ情報からリーグを決める。
+ * 「ディビジョン」が下部リーグを指している場合はそちらを優先する。
+ * 対応するリーグを持っていなければ null にして、掲載対象から外す。
+ */
+function resolveLeague(info) {
+  if (!info) return null;
+  const base =
+    (info.leagueArticle ? leagueArticleAlias[info.leagueArticle] : null) ??
+    (info.leagueLabel ? leagueAlias[info.leagueLabel] : null) ??
+    null;
+  if (!/2部|3部/.test(info.division ?? "")) return base;
+  // ディビジョンがリンクになっていれば、そちらが階層の正解。
+  // ただの「2部」でリンクが無い場合も多いので、そのときは元の判定を使う。
+  // 食い違いは generate-players.mjs の検算で警告する。
+  const fromDivision = info.divisionArticle ? leagueArticleAlias[info.divisionArticle] : null;
+  return fromDivision ?? base;
+}
+
 const today = new Date().toISOString().slice(0, 10);
 const result = parsed.map((p) => {
   const info = p.clubArticle ? clubInfo.get(p.clubArticle) : null;
@@ -303,7 +364,9 @@ const result = parsed.map((p) => {
     clubArticle: p.clubArticle,
     clubEn: info?.en ?? null,
     leagueLabel: info?.leagueLabel ?? null,
-    leagueId: info?.leagueLabel ? (leagueAlias[info.leagueLabel] ?? null) : null,
+    leagueArticle: info?.leagueArticle ?? null,
+    leagueDivision: info?.division ?? null,
+    leagueId: resolveLeague(info),
     abroad: p.country !== null && p.country !== "JPN",
     checkedAt: today,
   };
