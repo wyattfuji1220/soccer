@@ -175,6 +175,14 @@
           "loan": false,
           "apps": 3,
           "goals": 1
+        },
+        {
+          "years": "2021-",
+          "team": "日本代表",
+          "country": null,
+          "loan": false,
+          "apps": 31,
+          "goals": 9
         }
       ],
       "country": "ENG",
@@ -263,7 +271,7 @@
         },
         {
           "years": "2015-2026",
-          "team": "日本",
+          "team": "日本代表",
           "country": "JPN",
           "loan": false,
           "apps": 73,
@@ -441,7 +449,7 @@
       "nationalCareer": [
         {
           "years": "2019-",
-          "team": "日本",
+          "team": "日本代表",
           "country": "JPN",
           "loan": false,
           "apps": 53,
@@ -635,7 +643,7 @@
       "nationalCareer": [
         {
           "years": "2017-",
-          "team": "日本",
+          "team": "日本代表",
           "country": "JPN",
           "loan": false,
           "apps": 73,
@@ -704,7 +712,7 @@
         },
         {
           "years": "2019-",
-          "team": "日本",
+          "team": "日本代表",
           "country": "JPN",
           "loan": false,
           "apps": 43,
@@ -943,6 +951,14 @@
           "loan": false,
           "apps": 6,
           "goals": 0
+        },
+        {
+          "years": "2019-",
+          "team": "日本代表",
+          "country": null,
+          "loan": false,
+          "apps": 42,
+          "goals": 2
         }
       ],
       "country": "GER",
@@ -1108,7 +1124,7 @@
         },
         {
           "years": "2019-",
-          "team": "日本",
+          "team": "日本代表",
           "country": "JPN",
           "loan": false,
           "apps": 30,
@@ -1395,7 +1411,7 @@
         },
         {
           "years": "2020-",
-          "team": "日本",
+          "team": "日本代表",
           "country": "JPN",
           "loan": false,
           "apps": 25,
@@ -1464,7 +1480,7 @@
         },
         {
           "years": "2019-",
-          "team": "日本",
+          "team": "日本代表",
           "country": "JPN",
           "loan": false,
           "apps": 41,
@@ -1634,7 +1650,7 @@
         },
         {
           "years": "2022-",
-          "team": "日本",
+          "team": "日本代表",
           "country": "JPN",
           "loan": false,
           "apps": 28,
@@ -2277,7 +2293,7 @@
         },
         {
           "years": "2019-",
-          "team": "日本",
+          "team": "日本代表",
           "country": "JPN",
           "loan": false,
           "apps": 18,
@@ -2411,6 +2427,14 @@
           "country": null,
           "loan": false,
           "apps": 4,
+          "goals": 0
+        },
+        {
+          "years": "2019-",
+          "team": "日本代表",
+          "country": null,
+          "loan": false,
+          "apps": 13,
           "goals": 0
         }
       ],
@@ -2574,6 +2598,14 @@
           "loan": false,
           "apps": 2,
           "goals": 1
+        },
+        {
+          "years": "2025-",
+          "team": "日本代表",
+          "country": null,
+          "loan": false,
+          "apps": 5,
+          "goals": 0
         }
       ],
       "country": "GER",
@@ -2787,6 +2819,14 @@
           "country": null,
           "loan": false,
           "apps": 4,
+          "goals": 0
+        },
+        {
+          "years": "2022-",
+          "team": "日本代表",
+          "country": null,
+          "loan": false,
+          "apps": 7,
           "goals": 0
         }
       ],
@@ -3836,7 +3876,7 @@
         },
         {
           "years": "2024-",
-          "team": "日本",
+          "team": "日本代表",
           "country": null,
           "loan": false,
           "apps": 0,
@@ -3994,6 +4034,14 @@
           "country": null,
           "loan": false,
           "apps": 8,
+          "goals": 0
+        },
+        {
+          "years": "2023",
+          "team": "日本代表",
+          "country": null,
+          "loan": false,
+          "apps": 0,
           "goals": 0
         }
       ],
@@ -4263,7 +4311,16 @@
           "goals": 7
         }
       ],
-      "nationalCareer": [],
+      "nationalCareer": [
+        {
+          "years": "2022-",
+          "team": "日本代表",
+          "country": null,
+          "loan": false,
+          "apps": 5,
+          "goals": 3
+        }
+      ],
       "country": "JPN",
       "club": "FC町田ゼルビア",
       "clubArticle": "FC町田ゼルビア",
@@ -4299,6 +4356,14 @@
           "loan": false,
           "apps": 4,
           "goals": 1
+        },
+        {
+          "years": "2022-",
+          "team": "日本代表",
+          "country": null,
+          "loan": false,
+          "apps": 9,
+          "goals": 3
         }
       ],
       "country": "JPN",
@@ -4376,7 +4441,7 @@
       "nationalCareer": [
         {
           "years": "2025-",
-          "team": "日本",
+          "team": "日本代表",
           "country": "JPN",
           "loan": false,
           "apps": 8,
@@ -5009,6 +5074,14 @@
           "loan": false,
           "apps": 3,
           "goals": 0
+        },
+        {
+          "years": "2019-2022",
+          "team": "日本代表",
+          "country": null,
+          "loan": false,
+          "apps": 4,
+          "goals": 0
         }
       ],
       "country": "ENG",
@@ -5248,6 +5321,14 @@
           "loan": false,
           "apps": 3,
           "goals": 0
+        },
+        {
+          "years": "2023",
+          "team": "日本代表",
+          "country": null,
+          "loan": false,
+          "apps": 0,
+          "goals": 0
         }
       ],
       "country": "GER",
@@ -5370,7 +5451,16 @@
           "goals": 18
         }
       ],
-      "nationalCareer": [],
+      "nationalCareer": [
+        {
+          "years": "2021",
+          "team": "日本代表",
+          "country": null,
+          "loan": false,
+          "apps": 2,
+          "goals": 0
+        }
+      ],
       "country": "ENG",
       "club": "コヴェントリー・シティFC",
       "clubArticle": "コヴェントリー・シティFC",
@@ -5438,6 +5528,14 @@
           "loan": false,
           "apps": null,
           "goals": null
+        },
+        {
+          "years": "2023-",
+          "team": "日本代表",
+          "country": null,
+          "loan": false,
+          "apps": 3,
+          "goals": 1
         }
       ],
       "country": "ENG",
@@ -5737,7 +5835,7 @@
         },
         {
           "years": "2023-",
-          "team": "日本",
+          "team": "日本代表",
           "country": "JPN",
           "loan": false,
           "apps": 16,
@@ -6566,6 +6664,14 @@
           "loan": false,
           "apps": 4,
           "goals": 0
+        },
+        {
+          "years": "2025-",
+          "team": "日本代表",
+          "country": null,
+          "loan": false,
+          "apps": null,
+          "goals": null
         }
       ],
       "country": "BEL",

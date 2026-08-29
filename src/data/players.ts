@@ -50,11 +50,6 @@ export const players: Player[] = [
     league: "jupiler-pro-league",
     confidence: "needs-review",
     sources: [wiki("ハーフナー・ニッキ", "2026-08-29")],
-    facts: [
-      "VfBシュツットガルトではブンデスリーガのデュエル勝利数で最多を記録した実績を持つ。",
-      "2023年にリヴァプールへ移籍。",
-      "日本代表のキャプテンを務めた経験がある。",
-    ],
     career: [
       { years: "2013-2015", team: "名古屋グランパス", country: "JPN", loan: false, apps: 3, goals: 0 },
       { years: "2014-2015", team: "Jリーグ・U-22選抜", country: "JPN", loan: true, apps: 7, goals: 1 },
@@ -82,10 +77,6 @@ export const players: Player[] = [
     squadNumber: 33,
     confidence: "needs-review",
     sources: [wiki("安藤晃希", "2026-08-29")],
-    facts: [
-      "アイントラハト・フランクフルトで2021-22シーズンのUEFAヨーロッパリーグ制覇に貢献。",
-      "サガン鳥栖から欧州へ渡った。",
-    ],
     career: [
       { years: "2026", team: "水戸ホーリーホック", country: null, loan: false, apps: 8, goals: 2 },
       { years: "2026-", team: "ロイヤル・アントワープFC", country: null, loan: false, apps: null, goals: null },
@@ -149,11 +140,6 @@ export const players: Player[] = [
     squadNumber: 10,
     confidence: "needs-review",
     sources: [wiki("伊東純也", "2026-08-29")],
-    facts: [
-      "FCバルセロナの下部組織を経て、FC東京でJ1デビュー。",
-      "2019年にレアル・マドリードへ移籍し、以降スペインのクラブでプレー。",
-      "日本代表としてカタールW杯（2022年）に出場。",
-    ],
     career: [
       { years: "2015", team: "ヴァンフォーレ甲府", country: "JPN", loan: false, apps: 30, goals: 4 },
       { years: "2016-2020", team: "柏レイソル", country: "JPN", loan: false, apps: 101, goals: 19 },
@@ -163,7 +149,7 @@ export const players: Player[] = [
       { years: "2025-", team: "ゲンク", country: "BEL", loan: false, apps: 28, goals: 6 },
     ],
     nationalCareer: [
-      { years: "2017-", team: "日本", country: "JPN", loan: false, apps: 73, goals: 16 },
+      { years: "2017-", team: "日本代表", country: "JPN", loan: false, apps: 73, goals: 16 },
     ],
   },
   {
@@ -207,7 +193,7 @@ export const players: Player[] = [
     ],
     nationalCareer: [
       { years: "2019", team: "日本 U-20", country: "JPN", loan: false, apps: 3, goals: 0 },
-      { years: "2022-", team: "日本", country: "JPN", loan: false, apps: 28, goals: 1 },
+      { years: "2022-", team: "日本代表", country: "JPN", loan: false, apps: 28, goals: 1 },
     ],
   },
   {
@@ -245,9 +231,9 @@ export const players: Player[] = [
     confidence: "needs-review",
     sources: [wiki("遠藤航", "2026-08-29")],
     facts: [
-      "筑波大学在学中にドリブルを主題とした卒業論文を執筆したことで知られる。",
-      "川崎フロンターレを経て2021年にブライトンへ移籍。",
-      "カタールW杯スペイン戦での折り返しは日本の決勝点を生んだ。",
+      "VfBシュトゥットガルト時代の2020-21シーズン、ブンデスリーガのデュエル勝利数で1位を記録した。",
+      "2023年にリヴァプールへ移籍し、プレミアリーグでプレーしている。",
+      "日本代表でキャプテンを務めた経験がある。",
     ],
     career: [
       { years: "2010-2015", team: "湘南ベルマーレ", country: "JPN", loan: false, apps: 158, goals: 23 },
@@ -260,7 +246,7 @@ export const players: Player[] = [
     nationalCareer: [
       { years: "2016", team: "日本 U-23", country: "JPN", loan: false, apps: 3, goals: 0 },
       { years: "2021", team: "日本 U-24（OA）", country: "JPN", loan: false, apps: 6, goals: 0 },
-      { years: "2015-2026", team: "日本", country: "JPN", loan: false, apps: 73, goals: 4 },
+      { years: "2015-2026", team: "日本代表", country: "JPN", loan: false, apps: 73, goals: 4 },
     ],
   },
   {
@@ -298,10 +284,6 @@ export const players: Player[] = [
     squadNumber: 64,
     confidence: "needs-review",
     sources: [wiki("横山歩夢", "2026-08-29")],
-    facts: [
-      "法政大学在学中に鹿島アントラーズでプロデビュー。",
-      "セルクル・ブリュッヘを経て2023年にフェイエノールトへ加入。",
-    ],
     career: [
       { years: "2021-2022", team: "松本山雅FC", country: "JPN", loan: false, apps: 45, goals: 11 },
       { years: "2023-2024", team: "サガン鳥栖", country: "JPN", loan: false, apps: 41, goals: 5 },
@@ -348,10 +330,6 @@ export const players: Player[] = [
     league: "jupiler-pro-league",
     confidence: "needs-review",
     sources: [wiki("荻原拓也", "2026-08-29")],
-    facts: [
-      "ガンバ大阪の下部組織出身。オーストリア、オランダを経てフランスへ。",
-      "左ウイングから内側に切れ込む形での得点力が特長。",
-    ],
     career: [
       { years: "2018-", team: "浦和レッズ", country: "JPN", loan: false, apps: 76, goals: 1 },
       { years: "2020", team: "アルビレックス新潟", country: "JPN", loan: true, apps: 24, goals: 0 },
@@ -376,8 +354,8 @@ export const players: Player[] = [
     confidence: "needs-review",
     sources: [wiki("鎌田大地", "2026-08-29")],
     facts: [
-      "ガンバ大阪の下部組織出身。フローニンゲン、PSVを経てドイツへ。",
-      "カタールW杯のドイツ戦・スペイン戦の両方でゴールを記録した。",
+      "サガン鳥栖から2017年に欧州へ渡った。",
+      "アイントラハト・フランクフルトで2021-22シーズンのUEFAヨーロッパリーグ制覇に貢献した。",
     ],
     career: [
       { years: "2015-2017", team: "サガン鳥栖", country: "JPN", loan: false, apps: 65, goals: 13 },
@@ -387,7 +365,7 @@ export const players: Player[] = [
       { years: "2024-", team: "クリスタル・パレスFC", country: "ENG", loan: false, apps: 62, goals: 0 },
     ],
     nationalCareer: [
-      { years: "2019-", team: "日本", country: "JPN", loan: false, apps: 53, goals: 14 },
+      { years: "2019-", team: "日本代表", country: "JPN", loan: false, apps: 53, goals: 14 },
     ],
   },
   {
@@ -434,6 +412,7 @@ export const players: Player[] = [
     nationalCareer: [
       { years: "2015-2017", team: "日本 U-18/19/20", country: null, loan: false, apps: 14, goals: 0 },
       { years: "2019", team: "日本 U-22", country: null, loan: false, apps: 3, goals: 0 },
+      { years: "2019-2022", team: "日本代表", country: null, loan: false, apps: 4, goals: 0 },
     ],
   },
   {
@@ -492,8 +471,9 @@ export const players: Player[] = [
     confidence: "needs-review",
     sources: [wiki("久保建英", "2026-08-29")],
     facts: [
-      "アビスパ福岡の下部組織出身。シント＝トロイデン、ボローニャを経て2021年にアーセナルへ加入。",
-      "右サイドバック・左サイドバック・センターバックをこなすユーティリティ性が特長。",
+      "FCバルセロナの下部組織を経て、FC東京でJ1デビューを果たした。",
+      "2019年にレアル・マドリードへ移籍。以降はスペインのクラブでプレーを続けている。",
+      "日本代表としてカタールW杯（2022年）に出場した。",
     ],
     career: [
       { years: "2016-2018", team: "FC東京U-23", country: "JPN", loan: false, apps: 34, goals: 5 },
@@ -665,6 +645,7 @@ export const players: Player[] = [
     nationalCareer: [
       { years: "2020", team: "日本 U-16", country: null, loan: false, apps: 4, goals: 0 },
       { years: "2022-2023", team: "日本 U-18", country: null, loan: false, apps: 2, goals: 1 },
+      { years: "2025-", team: "日本代表", country: null, loan: false, apps: 5, goals: 0 },
     ],
   },
   {
@@ -766,10 +747,6 @@ export const players: Player[] = [
     squadNumber: 39,
     confidence: "needs-review",
     sources: [wiki("佐藤龍之介", "2026-08-29")],
-    facts: [
-      "浦和レッズの下部組織出身。シント＝トロイデンを経てセリエAへ。",
-      "190cmを超える体格とリーチを活かしたシュートストップが持ち味。",
-    ],
     career: [
       { years: "2023-2026", team: "FC東京", country: "JPN", loan: false, apps: 22, goals: 6 },
       { years: "2025", team: "ファジアーノ岡山", country: "JPN", loan: true, apps: 28, goals: 6 },
@@ -843,7 +820,7 @@ export const players: Player[] = [
       { years: "2023-", team: "コヴェントリー・シティ", country: "ENG", loan: false, apps: 106, goals: 18 },
     ],
     nationalCareer: [
-
+      { years: "2021", team: "日本代表", country: null, loan: false, apps: 2, goals: 0 },
     ],
   },
   {
@@ -935,6 +912,11 @@ export const players: Player[] = [
     squadNumber: 7,
     confidence: "needs-review",
     sources: [wiki("三笘薫", "2026-08-29")],
+    facts: [
+      "筑波大学在学中に、自身のドリブルを主題とした卒業論文を書いたことで知られる。",
+      "川崎フロンターレから2021年にブライトンへ移籍し、ユニオンSGでの武者修行を経て定着した。",
+      "カタールW杯スペイン戦での折り返しが、日本の決勝点につながった。",
+    ],
     career: [
       { years: "2020-2021", team: "川崎フロンターレ", country: "JPN", loan: false, apps: 50, goals: 21 },
       { years: "2021-", team: "ブライトン", country: "ENG", loan: false, apps: 113, goals: 23 },
@@ -942,6 +924,7 @@ export const players: Player[] = [
     ],
     nationalCareer: [
       { years: "2021", team: "日本 U-23", country: null, loan: false, apps: 3, goals: 1 },
+      { years: "2021-", team: "日本代表", country: null, loan: false, apps: 31, goals: 9 },
     ],
   },
   {
@@ -1075,6 +1058,7 @@ export const players: Player[] = [
       { years: "2016", team: "日本U-16", country: null, loan: false, apps: null, goals: null },
       { years: "2018-2019", team: "日本U-18", country: null, loan: false, apps: null, goals: null },
       { years: "2019-2024", team: "日本U-23", country: null, loan: false, apps: 4, goals: 0 },
+      { years: "2025-", team: "日本代表", country: null, loan: false, apps: null, goals: null },
     ],
   },
   {
@@ -1173,6 +1157,10 @@ export const players: Player[] = [
     squadNumber: 9,
     confidence: "needs-review",
     sources: [wiki("上田綺世", "2026-08-29")],
+    facts: [
+      "法政大学在学中に、特別指定選手として鹿島アントラーズでプロデビューした。",
+      "セルクル・ブルージュを経て2023年にフェイエノールトへ加入した。",
+    ],
     career: [
       { years: "2019-2022", team: "鹿島アントラーズ", country: "JPN", loan: false, apps: 86, goals: 38 },
       { years: "2022-2023", team: "セルクル・ブルージュ", country: "BEL", loan: false, apps: 40, goals: 22 },
@@ -1181,7 +1169,7 @@ export const players: Player[] = [
     nationalCareer: [
       { years: "2018-2021", team: "日本 U-23", country: "JPN", loan: false, apps: 17, goals: 6 },
       { years: "2021", team: "日本・オリンピック", country: "JPN", loan: false, apps: 6, goals: 0 },
-      { years: "2019-", team: "日本", country: "JPN", loan: false, apps: 43, goals: 18 },
+      { years: "2019-", team: "日本代表", country: "JPN", loan: false, apps: 43, goals: 18 },
     ],
   },
   {
@@ -1225,6 +1213,7 @@ export const players: Player[] = [
     ],
     nationalCareer: [
       { years: "2015", team: "日本 U-18", country: null, loan: false, apps: null, goals: null },
+      { years: "2023-", team: "日本代表", country: null, loan: false, apps: 3, goals: 1 },
     ],
   },
   {
@@ -1272,7 +1261,7 @@ export const players: Player[] = [
     nationalCareer: [
       { years: "2015-2017", team: "日本 U-17", country: "JPN", loan: false, apps: 4, goals: 0 },
       { years: "2018-2019", team: "日本 U-20", country: "JPN", loan: false, apps: 4, goals: 0 },
-      { years: "2020-", team: "日本", country: "JPN", loan: false, apps: 25, goals: 2 },
+      { years: "2020-", team: "日本代表", country: "JPN", loan: false, apps: 25, goals: 2 },
     ],
   },
   {
@@ -1295,7 +1284,7 @@ export const players: Player[] = [
     nationalCareer: [
       { years: "2019", team: "日本 U-20", country: "JPN", loan: false, apps: 3, goals: 0 },
       { years: "2021", team: "日本 U-24", country: "JPN", loan: false, apps: 0, goals: 0 },
-      { years: "2023-", team: "日本", country: "JPN", loan: false, apps: 16, goals: 0 },
+      { years: "2023-", team: "日本代表", country: "JPN", loan: false, apps: 16, goals: 0 },
     ],
   },
   {
@@ -1368,6 +1357,7 @@ export const players: Player[] = [
     nationalCareer: [
       { years: "2019", team: "日本 U-18", country: null, loan: false, apps: 3, goals: 0 },
       { years: "2024", team: "日本 U-23", country: null, loan: false, apps: 3, goals: 0 },
+      { years: "2023", team: "日本代表", country: null, loan: false, apps: 0, goals: 0 },
     ],
   },
   {
@@ -1395,7 +1385,7 @@ export const players: Player[] = [
     nationalCareer: [
       { years: "2018-2021", team: "日本 U-23", country: "JPN", loan: false, apps: 14, goals: 8 },
       { years: "2021", team: "日本・オリンピック", country: "JPN", loan: false, apps: 3, goals: 1 },
-      { years: "2019-", team: "日本", country: "JPN", loan: false, apps: 30, goals: 5 },
+      { years: "2019-", team: "日本代表", country: "JPN", loan: false, apps: 30, goals: 5 },
     ],
   },
   {
@@ -1452,6 +1442,10 @@ export const players: Player[] = [
     squadNumber: 17,
     confidence: "needs-review",
     sources: [wiki("中村敬斗", "2026-08-29")],
+    facts: [
+      "ガンバ大阪の下部組織出身。オランダ、ベルギー、オーストリアを渡り歩いてフランスにたどり着いた。",
+      "左ウイングから内側へ切れ込み、左足で仕留める形を得意とする。",
+    ],
     career: [
       { years: "2018-2021", team: "ガンバ大阪", country: "JPN", loan: false, apps: 45, goals: 6 },
       { years: "2019-2020", team: "FCトゥウェンテ", country: "NED", loan: true, apps: 17, goals: 4 },
@@ -1577,7 +1571,7 @@ export const players: Player[] = [
     ],
     nationalCareer: [
       { years: "2021", team: "日本・オリンピック", country: "JPN", loan: false, apps: 6, goals: 0 },
-      { years: "2019-", team: "日本", country: "JPN", loan: false, apps: 41, goals: 8 },
+      { years: "2019-", team: "日本代表", country: "JPN", loan: false, apps: 41, goals: 8 },
     ],
   },
   {
@@ -1600,6 +1594,7 @@ export const players: Player[] = [
     ],
     nationalCareer: [
       { years: "2019-2021", team: "日本 U-23", country: null, loan: false, apps: 4, goals: 0 },
+      { years: "2019-", team: "日本代表", country: null, loan: false, apps: 13, goals: 0 },
     ],
   },
   {
@@ -1625,6 +1620,7 @@ export const players: Player[] = [
       { years: "2019", team: "日本 U-17", country: null, loan: false, apps: 4, goals: 0 },
       { years: "2020-2021", team: "日本 U-19", country: null, loan: false, apps: null, goals: null },
       { years: "2021-2024", team: "日本 U-23", country: null, loan: false, apps: 4, goals: 0 },
+      { years: "2022-", team: "日本代表", country: null, loan: false, apps: 7, goals: 0 },
     ],
   },
   {
@@ -1660,6 +1656,10 @@ export const players: Player[] = [
     squadNumber: 20,
     confidence: "needs-review",
     sources: [wiki("堂安律", "2026-08-29")],
+    facts: [
+      "ガンバ大阪の下部組織出身。フローニンゲン、PSVアイントホーフェンを経てドイツへ渡った。",
+      "カタールW杯では、ドイツ戦とスペイン戦の両方でゴールを記録した。",
+    ],
     career: [
       { years: "2015-2018", team: "ガンバ大阪", country: "JPN", loan: false, apps: 36, goals: 13 },
       { years: "2017-2018", team: "FCフローニンゲン", country: "NED", loan: true, apps: 29, goals: 9 },
@@ -1774,6 +1774,7 @@ export const players: Player[] = [
       { years: "2018", team: "日本 U-21", country: null, loan: false, apps: 14, goals: 2 },
       { years: "2019-2020", team: "日本 U-23", country: null, loan: false, apps: 5, goals: 0 },
       { years: "2021", team: "日本・オリンピック", country: null, loan: false, apps: 6, goals: 0 },
+      { years: "2019-", team: "日本代表", country: null, loan: false, apps: 42, goals: 2 },
     ],
   },
   {
@@ -1788,6 +1789,10 @@ export const players: Player[] = [
     squadNumber: 17,
     confidence: "needs-review",
     sources: [wiki("冨安健洋", "2026-08-29")],
+    facts: [
+      "アビスパ福岡の下部組織出身。シント＝トロイデン、ボローニャを経て2021年にアーセナルへ加入した。",
+      "右サイドバック・左サイドバック・センターバックをこなすユーティリティ性が特長。",
+    ],
     career: [
       { years: "2015-2017", team: "アビスパ福岡", country: "JPN", loan: false, apps: 45, goals: 1 },
       { years: "2018-2019", team: "シント＝トロイデン", country: "BEL", loan: false, apps: 27, goals: 1 },
@@ -1944,7 +1949,7 @@ export const players: Player[] = [
       { years: "2019", team: "日本 U-17", country: null, loan: false, apps: 4, goals: 0 },
       { years: "2019", team: "日本 U-18", country: null, loan: false, apps: 2, goals: 0 },
       { years: "2024", team: "日本 U-23", country: null, loan: false, apps: 0, goals: 0 },
-      { years: "2024-", team: "日本", country: null, loan: false, apps: 0, goals: 0 },
+      { years: "2024-", team: "日本代表", country: null, loan: false, apps: 0, goals: 0 },
     ],
   },
   {
@@ -1959,6 +1964,10 @@ export const players: Player[] = [
     squadNumber: 1,
     confidence: "needs-review",
     sources: [wiki("鈴木彩艶", "2026-08-29")],
+    facts: [
+      "浦和レッズの下部組織出身。シント＝トロイデンでの経験を経てセリエAへ渡った。",
+      "190cmを超える体格とリーチを活かしたシュートストップが持ち味。",
+    ],
     career: [
       { years: "2021-2024", team: "浦和レッズ", country: "JPN", loan: false, apps: 8, goals: 0 },
       { years: "2023-2024", team: "シント＝トロイデン", country: "BEL", loan: true, apps: 32, goals: 0 },
@@ -1992,7 +2001,7 @@ export const players: Player[] = [
       { years: "2025-", team: "FCコペンハーゲン", country: "DEN", loan: false, apps: 22, goals: 2 },
     ],
     nationalCareer: [
-      { years: "2025-", team: "日本", country: "JPN", loan: false, apps: 8, goals: 0 },
+      { years: "2025-", team: "日本代表", country: "JPN", loan: false, apps: 8, goals: 0 },
     ],
   },
   {

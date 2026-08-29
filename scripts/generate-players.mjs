@@ -15,21 +15,30 @@ const outPath = path.join(ROOT, "src/data/players.ts");
 
 const { players: fetched } = JSON.parse(fs.readFileSync(dataPath, "utf8"));
 
-/** 既存ファイルから slug ごとの facts を拾う */
-function existingFacts() {
-  if (!fs.existsSync(outPath)) return new Map();
-  const src = fs.readFileSync(outPath, "utf8");
+/**
+ * facts（特徴の箇条書き）は人が書いて管理する。
+ *
+ * 以前は生成後の players.ts から正規表現で読み戻していたが、選手ブロックを
+ * またいで次の選手の facts を拾ってしまい、9人分が別人の情報になっていた。
+ * 生成物を自分で読み返す構造そのものが原因なので、独立したファイルを
+ * 唯一の出どころにする。
+ */
+function handWrittenFacts() {
+  const src = path.join(ROOT, "src/data/player-facts.ts");
+  if (!fs.existsSync(src)) return new Map();
+  const text = fs.readFileSync(src, "utf8");
   const map = new Map();
-  const re = /slug:\s*"([^"]+)"[\s\S]*?facts:\s*\[([\s\S]*?)\]/g;
+  // "slug": [ ... ] を1件ずつ切り出す。角括弧を跨がないので混線しない
+  const re = /"([a-z0-9-]+)":\s*\[([^\]]*)\]/g;
   let m;
-  while ((m = re.exec(src))) {
+  while ((m = re.exec(text))) {
     const items = [...m[2].matchAll(/"((?:[^"\\]|\\.)*)"/g)].map((x) => x[1]);
     if (items.length) map.set(m[1], items);
   }
   return map;
 }
 
-const facts = existingFacts();
+const facts = handWrittenFacts();
 /**
  * ローマ字表記には長音符号が含まれることがある（例: Keisuke Gotō）。
  * 表示はそのまま残し、URLに使うときだけ Goto に落とす。
