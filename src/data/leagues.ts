@@ -24,6 +24,17 @@ export const leagues: League[] = [
   { id: "ligue-2", name: "リーグ・ドゥ", nameEn: "Ligue 2", country: "フランス", matchesPerSeason: 34 },
   { id: "segunda-division", name: "セグンダ・ディビシオン", nameEn: "Segunda División", country: "スペイン", matchesPerSeason: 42 },
   { id: "challenger-pro-league", name: "チャレンジャー・プロ・リーグ", nameEn: "Challenger Pro League", country: "ベルギー", matchesPerSeason: 30 },
+
+  /*
+   * 5大リーグ以外の1部。日本人選手が渡る先として定着してきたため掲載する。
+   * 国内の配信は確認できていないものが多く、視聴手段は各リーグの記事に委ねる。
+   */
+  { id: "austrian-bundesliga", name: "オーストリア・ブンデスリーガ", nameEn: "Austrian Bundesliga", country: "オーストリア", matchesPerSeason: 32 },
+  { id: "swiss-super-league", name: "スイス・スーパーリーグ", nameEn: "Swiss Super League", country: "スイス", matchesPerSeason: 38 },
+  { id: "ekstraklasa", name: "エクストラクラサ", nameEn: "Ekstraklasa", country: "ポーランド", matchesPerSeason: 34 },
+  { id: "slovak-superliga", name: "スロバキア・スーペルリーガ", nameEn: "Slovak First Football League", country: "スロバキア", matchesPerSeason: 32 },
+  { id: "serbian-superliga", name: "セルビア・スーペルリーガ", nameEn: "Serbian SuperLiga", country: "セルビア", matchesPerSeason: 37 },
+  { id: "croatian-hnl", name: "クロアチア・1部リーグ", nameEn: "SuperSport HNL", country: "クロアチア", matchesPerSeason: 36 },
 ];
 
 export const leagueMap = Object.fromEntries(leagues.map((l) => [l.id, l])) as Record<League["id"], League>;

@@ -23,7 +23,13 @@ export type LeagueId =
   | "bundesliga-2"
   | "ligue-2"
   | "segunda-division"
-  | "challenger-pro-league";
+  | "challenger-pro-league"
+  | "austrian-bundesliga"
+  | "swiss-super-league"
+  | "ekstraklasa"
+  | "slovak-superliga"
+  | "serbian-superliga"
+  | "croatian-hnl";
 
 export type League = {
   id: LeagueId;

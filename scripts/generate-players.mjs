@@ -53,7 +53,7 @@ const slugOf = (nameEn) =>
 const esc = (s) => String(s).replace(/\\/g, "\\\\").replace(/"/g, '\\"');
 
 const abroad = fetched
-  .filter((p) => p.abroad && p.leagueId && p.birthDate && p.position)
+  .filter((p) => p.abroad && p.leagueId && p.birthDate && p.position && p.nameEn)
   .sort((a, b) => a.nameJa.localeCompare(b.nameJa, "ja"));
 
 // 海外クラブに所属しているのに落ちた選手は、たいていリーグ名のエイリアス漏れが原因。
@@ -65,7 +65,9 @@ const dropped = fetched
       ? `リーグ「${p.leagueLabel ?? "不明"}」が未対応（scripts/fetch-players.mjs の leagueAlias に追加する）`
       : !p.birthDate
         ? "生年月日を取得できなかった"
-        : "ポジションを取得できなかった";
+        : !p.position
+          ? "ポジションを取得できなかった"
+          : "アルファベット表記がなく、URLに使う slug を作れなかった";
     return `  ${p.nameJa}（${p.club ?? "所属不明"}）: ${why}`;
   });
 if (dropped.length > 0) {
@@ -82,6 +84,8 @@ const TOP_TIER = new Set([
   "premier-league", "la-liga", "bundesliga", "serie-a", "ligue-1",
   "eredivisie", "primeira-liga", "jupiler-pro-league",
   "scottish-premiership", "danish-superliga",
+  "austrian-bundesliga", "swiss-super-league", "ekstraklasa",
+  "slovak-superliga", "serbian-superliga", "croatian-hnl",
 ]);
 const tierConflicts = abroad
   .filter((p) => /2部|3部/.test(p.leagueDivision ?? "") && TOP_TIER.has(p.leagueId))

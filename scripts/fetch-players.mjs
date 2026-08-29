@@ -118,6 +118,23 @@ const leagueArticleAlias = {
   "スコティッシュ・プレミアシップ": "scottish-premiership",
   "スーペルリーガ (デンマーク)": "danish-superliga",
   "デンマーク・スーペルリーガ": "danish-superliga",
+
+  // 5大リーグ以外の1部
+  "オーストリア・ブンデスリーガ": "austrian-bundesliga",
+  "サッカー・ブンデスリーガ (オーストリア)": "austrian-bundesliga",
+  "スーパーリーグ (スイス)": "swiss-super-league",
+  "エクストラクラサ": "ekstraklasa",
+  "フォルトゥナ・リーガ": "slovak-superliga",
+  "セルビア・スーペルリーガ": "serbian-superliga",
+  "クロアチア・フットボールリーグ": "croatian-hnl",
+};
+
+/*
+ * クラブ記事に「リーグ」欄が無いことがある。所属を落とすと選手ごと消えるため、
+ * 記事名で直接ひもづける。書き足すときは必ずクラブ公式で階層を確かめること。
+ */
+const clubLeagueOverride = {
+  "パトロ・アイスデン・マースメヘレン": "challenger-pro-league",
 };
 
 /** 記事名で引けなかったときの保険。表示名で引く */
@@ -144,6 +161,13 @@ const leagueAlias = {
   "チャレンジャー・プロ・リーグ": "challenger-pro-league",
   "スコティッシュ・プレミアシップ": "scottish-premiership",
   "デンマーク・スーペルリーガ": "danish-superliga",
+  "オーストリア・ブンデスリーガ": "austrian-bundesliga",
+  "スーパーリーグ": "swiss-super-league",
+  "エクストラクラサ": "ekstraklasa",
+  "ニケー・リーガ": "slovak-superliga",
+  "スロバキア・スーペルリーガ": "slovak-superliga",
+  "セルビア・スーペルリーガ": "serbian-superliga",
+  "1.HNL": "croatian-hnl",
 };
 
 function parseClub(text) {
@@ -166,15 +190,37 @@ function parseClub(text) {
   };
 }
 
-/** アルファベット表記は「KUBO Takefusa」形式なので「Takefusa Kubo」に直す */
-function normalizeName(alpha) {
-  if (!alpha) return null;
-  const parts = alpha.split(/\s+/).filter(Boolean);
-  if (parts.length < 2) return alpha;
-  const surname = parts[0];
-  const given = parts.slice(1).join(" ");
-  const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();
-  return `${given.split(" ").map(cap).join(" ")} ${cap(surname)}`;
+/** 比較用に長音符号を落とす。Itō と Ito を同じ語として扱うため */
+function plain(s) {
+  return s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+}
+
+/**
+ * ローマ字表記を組み立てる。
+ *
+ * 日本語版の「アルファベット表記」欄は並びが揃っていない。「ITO Junya」と姓を
+ * 先に書く記事もあれば、「Shinta Appelkamp」と名を先に書く記事もある。
+ * 一律に入れ替えていたころ、後藤啓介が「Goto Keisuke」になっていた。
+ *
+ * 英語版の記事名は必ず名→姓の並びなので、並び順の判定にはそちらを使う。
+ * 綴りは日本語版の欄を優先する（英語版は Itō や Leo Kokubo のように、
+ * 長音符号つきだったり短縮形だったりするため）。
+ */
+function romaji(alphabet, enTitle) {
+  // 「Ao Tanaka (footballer, born 1998)」のような曖昧さ回避を落とす
+  const en = enTitle ? enTitle.replace(/\s*\([^)]*\)$/, "").trim() : null;
+  if (!alphabet) return en;
+
+  const parts = alphabet.split(/\s+/).filter(Boolean);
+  if (parts.length < 2) return alphabet;
+  const cap = (w) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase();
+
+  const surnameFirst = en
+    ? plain(parts[0]) === plain(en.split(/\s+/).at(-1))
+    : /^[A-Z][A-Z'’-]+$/.test(parts[0]); // 英語版が無ければ、姓を大文字で書く慣習に頼る
+
+  const ordered = surnameFirst ? [...parts.slice(1), parts[0]] : parts;
+  return ordered.map(cap).join(" ");
 }
 
 const inputPath = process.argv[2];
@@ -224,11 +270,12 @@ for (const [title, text] of clubText) {
  * 「ディビジョン」が下部リーグを指している場合はそちらを優先する。
  * 対応するリーグを持っていなければ null にして、掲載対象から外す。
  */
-function resolveLeague(info) {
-  if (!info) return null;
+function resolveLeague(info, clubArticle) {
+  if (!info) return clubLeagueOverride[clubArticle] ?? null;
   const base =
     (info.leagueArticle ? leagueArticleAlias[info.leagueArticle] : null) ??
     (info.leagueLabel ? leagueAlias[info.leagueLabel] : null) ??
+    clubLeagueOverride[clubArticle] ??
     null;
   if (!/2部|3部/.test(info.division ?? "")) return base;
   // ディビジョンがリンクになっていれば、そちらが階層の正解。
@@ -238,12 +285,27 @@ function resolveLeague(info) {
   return fromDivision ?? base;
 }
 
+/*
+ * ローマ字表記は英語版の記事名を第一の出どころにする。
+ *
+ * 日本語版の「アルファベット表記」欄は並びが揃っていない。「KUBO Takefusa」と
+ * 姓を先に書く記事もあれば、「Shinta Appelkamp」と名を先に書く記事もあり、
+ * 機械的に入れ替えると後藤啓介が「Goto Keisuke」になってしまう。
+ * 英語版の記事名は必ず名→姓の並びなので、そちらを優先する。
+ * 英語版に記事が無い選手だけ、日本語版の欄から組み立てる。
+ */
+const enTitles = await fetchEnglishTitles(parsed.map((p) => p.nameJa));
+for (const p of parsed) p.nameEn = romaji(p.alphabet, enTitles.get(p.nameJa) ?? null);
+const noName = parsed.filter((p) => !p.nameEn).map((p) => p.nameJa);
+console.log(`ローマ字表記: ${parsed.length - noName.length}人ぶん確定（うち英語版を参照 ${enTitles.size}人）`);
+if (noName.length) console.warn(`  ローマ字を取れず掲載できません: ${noName.join(" / ")}`);
+
 const today = new Date().toISOString().slice(0, 10);
 const result = parsed.map((p) => {
   const info = p.clubArticle ? clubInfo.get(p.clubArticle) : null;
   return {
     nameJa: p.nameJa.replace(/\s*\(サッカー選手\)$/, ""),
-    nameEn: normalizeName(p.alphabet),
+    nameEn: p.nameEn,
     birthDate: p.birthDate,
     position: p.position,
     squadNumber: p.squadNumber,
@@ -256,7 +318,7 @@ const result = parsed.map((p) => {
     leagueLabel: info?.leagueLabel ?? null,
     leagueArticle: info?.leagueArticle ?? null,
     leagueDivision: info?.division ?? null,
-    leagueId: resolveLeague(info),
+    leagueId: resolveLeague(info, p.clubArticle),
     abroad: p.country !== null && p.country !== "JPN",
     checkedAt: today,
   };
