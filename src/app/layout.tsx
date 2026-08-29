@@ -41,6 +41,7 @@ const nav = [
   { href: "/players/", label: "選手一覧" },
   { href: "/clubs/", label: "クラブ別" },
   { href: "/fixtures/", label: "試合日程" },
+  { href: "/rankings/", label: "ランキング" },
   { href: "/watch-plan/", label: "視聴プラン診断" },
   { href: "/cups/", label: "カップ戦" },
   { href: "/guides/", label: "視聴ガイド" },

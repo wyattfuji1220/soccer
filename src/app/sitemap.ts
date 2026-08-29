@@ -7,12 +7,12 @@ import { SITE_URL } from "@/lib/site";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPaths = ["", "/players", "/clubs", "/fixtures", "/watch-plan", "/cups", "/guides", "/about", "/privacy"];
+  const staticPaths = ["", "/players", "/clubs", "/fixtures", "/rankings", "/watch-plan", "/cups", "/guides", "/about", "/privacy"];
   return [
     ...staticPaths.map((p) => ({
       url: `${SITE_URL}${p}/`,
       changeFrequency: "weekly" as const,
-      priority: p === "" ? 1 : p === "/watch-plan" ? 0.95 : p === "/cups" ? 0.9 : 0.8,
+      priority: p === "" ? 1 : p === "/watch-plan" ? 0.95 : p === "/rankings" || p === "/cups" ? 0.9 : 0.8,
     })),
     ...players.map((p) => ({
       url: `${SITE_URL}/players/${p.slug}/`,
