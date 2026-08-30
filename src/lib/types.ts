@@ -248,6 +248,12 @@ export type Fixture = {
   homeTeamEn: string;
   awayTeam: string;
   awayTeamEn: string;
+  /**
+   * この試合に関わる、当サイト側のクラブ名（clubEn）。取得時に引き当てている。
+   * APIのクラブ名と当サイトの表記は揃っていないため、選手との紐付けはこちらで行う。
+   * 古いデータには入っていないので、無いときは表記を正規化して突き合わせる。
+   */
+  clubsEn?: string[];
   status: "SCHEDULED" | "IN_PLAY" | "FINISHED";
   score?: { home: number | null; away: number | null };
 };

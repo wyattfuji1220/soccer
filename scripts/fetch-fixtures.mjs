@@ -68,9 +68,19 @@ function readClubNames() {
 }
 
 const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
-const matchesClub = (teamName, wanted) => {
+const matchesClub = (teamName, wanted) => resolveClubs(teamName, wanted).length > 0;
+
+/*
+ * APIのクラブ名から、当サイト側のクラブ名を引き当てる。
+ * 表記が揃っていない（APIは "Brighton & Hove Albion FC"、こちらは
+ * "Brighton & Hove Albion F.C."）ため、記号を落として突き合わせる。
+ *
+ * 引き当てた名前は試合データに残す。表示側で毎回この照合をやり直すと、
+ * 片方が厳密一致のままになって選手名が出ない、といった食い違いが起きる。
+ */
+const resolveClubs = (teamName, wanted) => {
   const t = norm(teamName);
-  return [...wanted].some((w) => {
+  return [...wanted].filter((w) => {
     const n = norm(w);
     return t.includes(n) || n.includes(t);
   });
@@ -209,6 +219,8 @@ for (const [leagueId, clubs] of clubsByLeague) {
       homeTeamEn: m.homeTeam.name,
       awayTeam: displayName(m.awayTeam),
       awayTeamEn: m.awayTeam.name,
+      // 当サイト側のクラブ名。選手との紐付けはこれで行う
+      clubsEn: [...new Set([...resolveClubs(m.homeTeam.name, clubs), ...resolveClubs(m.awayTeam.name, clubs)])],
       status: m.status,
       score: { home: m.score?.fullTime?.home ?? null, away: m.score?.fullTime?.away ?? null },
     });
@@ -253,6 +265,7 @@ for (const [cupId, code] of Object.entries(CUP_CODES)) {
       homeTeamEn: m.homeTeam.name,
       awayTeam: displayName(m.awayTeam),
       awayTeamEn: m.awayTeam.name,
+      clubsEn: [...new Set([...resolveClubs(m.homeTeam.name, allClubs), ...resolveClubs(m.awayTeam.name, allClubs)])],
       status: m.status,
       score: { home: m.score?.fullTime?.home ?? null, away: m.score?.fullTime?.away ?? null },
     });

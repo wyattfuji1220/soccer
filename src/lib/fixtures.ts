@@ -167,11 +167,27 @@ export function upcomingFixtures(now: Date): Fixture[] {
   return getFixtures(now).filter((f) => !finished.has(f.id));
 }
 
+/**
+ * クラブ名を突き合わせるための正規化。
+ * APIは "Brighton & Hove Albion FC"、当サイトは "Brighton & Hove Albion F.C." と
+ * 表記が揃っていない。厳密一致で比べていたころ、プレミアリーグの試合に
+ * 選手名がまったく出ていなかった。
+ */
+const clubKey = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
+
 /** その試合に出場しうる掲載選手 */
 export function playersInFixture(fixture: Fixture): Player[] {
-  return players.filter(
-    (p) => p.clubEn === fixture.homeTeamEn || p.clubEn === fixture.awayTeamEn
-  );
+  // 取得時に引き当てた名前があればそれを使う。厳密に一致する
+  if (fixture.clubsEn && fixture.clubsEn.length > 0) {
+    const wanted = new Set(fixture.clubsEn);
+    return players.filter((p) => wanted.has(p.clubEn));
+  }
+  // 古いデータ向けの保険。表記を正規化して照らす
+  const teams = [clubKey(fixture.homeTeamEn), clubKey(fixture.awayTeamEn)];
+  return players.filter((p) => {
+    const c = clubKey(p.clubEn);
+    return teams.some((t) => t === c || t.includes(c) || c.includes(t));
+  });
 }
 
 /** 観戦ナイトごとにまとめる */
