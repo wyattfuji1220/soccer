@@ -41,9 +41,21 @@ Next.js 15（App Router、`output: "export"` による静的サイト）/ TypeSc
 ```
 npm run data:players    # 候補 → 選手 → クラブ（毎日、GitHub Actions が実行）
 npm run data:transfers  # 前回との差分を移籍として記録
+npm run data:season     # 今季の出場・得点（英語版Wikipediaの成績表から）
 npm run data:alumni     # 過去に海外でプレーした選手（重いので週1）
 npm run data:check      # 掲載データとWikipedia原文の突き合わせ
+npm run data:fixtures   # 試合日程と結果（要 FOOTBALL_DATA_TOKEN）
+npm run data:standings  # 順位表（要 FOOTBALL_DATA_TOKEN）
 ```
+
+今季の成績は英語版Wikipediaの「Career statistics」表から取る。日本語版の
+インフォボックスはクラブ在籍中の通算値しか持たず、今季ぶんを切り出せない。
+版の差分で出そうとすると、編集者が前季の数字をあとから書き足すぶんまで
+今季として数えてしまうので採らない。
+
+football-data.org は無料枠のまま使う。取れるのは日程・結果・順位表だけで、
+選手ごとのスタッツとラインナップは有料。有料プランの検討は月間収益が
+2万円を超えてから。
 
 移籍は噂を扱わない。Wikipedia のインフォボックスが書き換わった＝確定したものだけを
 `src/data/transfers.ts` に追記する。日付は「当サイトが確認した日」であって発表日ではない。
