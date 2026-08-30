@@ -12,6 +12,7 @@ import { Flag } from "@/components/Flag";
  *
  * 終わった試合のスコアは既定で隠している。日程を確かめに来ただけの人に
  * 結果が目に入るのは、録画で観る人にとって困るため。
+ * 表示にした状態は覚えない。開き直すたびに隠れた状態から始める。
  */
 
 export type FixtureRow = {
@@ -144,7 +145,7 @@ export function FixtureBoard({ rows, todayNight, leagues }: Props) {
         <div>
           <p className="font-bold text-sm">結果はふせてあります</p>
           <p className="text-xs muted mt-1 leading-relaxed">
-            終わった試合のスコアは隠しています。あとから観るつもりの試合の結果が、目に入らないようにするためです。
+            終わった試合のスコアは隠しています。ページを開き直すと、また隠れます。
           </p>
         </div>
         <button

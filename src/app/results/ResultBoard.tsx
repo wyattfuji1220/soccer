@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import Link from "next/link";
 import { Flag } from "@/components/Flag";
 
@@ -8,8 +8,11 @@ import { Flag } from "@/components/Flag";
  * 試合結果の一覧。
  *
  * スコアは既定でふせる。ハイライトを探しに来た人にとって、
- * 結果が先に目に入るのは困るため。表示の選択はブラウザに覚えさせ、
- * 毎回押し直さなくて済むようにする。
+ * 結果が先に目に入るのは困るため。
+ *
+ * 表示にした状態は覚えない。ページを開き直せばまた隠れる。
+ * 覚えてしまうと、あとで別の試合を観るつもりで来たときに、
+ * 前回の選択のせいで結果が目に入ってしまうため。
  */
 
 export type ResultRow = {
@@ -28,8 +31,6 @@ export type ResultRow = {
   highlight: { videoId: string; title: string; channel: string; url: string } | null;
 };
 
-const STORAGE_KEY = "kaigaigumi:show-scores";
-
 export function ResultBoard({
   rows,
   leagues,
@@ -40,29 +41,6 @@ export function ResultBoard({
   const [league, setLeague] = useState("all");
   const [onlyHighlights, setOnlyHighlights] = useState(false);
   const [showScores, setShowScores] = useState(false);
-
-  /*
-   * 表示の選択を覚える。読み込みは描画のあとに行う。
-   * 最初の描画で読むと、サーバーが作ったHTMLと食い違って警告が出る。
-   */
-  useEffect(() => {
-    try {
-      if (localStorage.getItem(STORAGE_KEY) === "1") setShowScores(true);
-    } catch {
-      // 保存を禁止している環境では覚えないだけで、表示には影響しない
-    }
-  }, []);
-
-  const toggleScores = () => {
-    setShowScores((v) => {
-      try {
-        localStorage.setItem(STORAGE_KEY, v ? "0" : "1");
-      } catch {
-        /* 覚えられなくても続行する */
-      }
-      return !v;
-    });
-  };
 
   const shown = useMemo(
     () =>
@@ -112,12 +90,12 @@ export function ResultBoard({
         <div>
           <p className="font-bold text-sm">スコアはふせてあります</p>
           <p className="text-xs muted mt-1 leading-relaxed">
-            これから観る人のために隠しています。一度表示にすると、次からもこの端末では表示のままになります。
+            これから観る人のために隠しています。ページを開き直すと、また隠れます。
           </p>
         </div>
         <button
           type="button"
-          onClick={toggleScores}
+          onClick={() => setShowScores((v) => !v)}
           aria-pressed={showScores}
           className={`tap px-4 py-2.5 rounded-lg text-sm font-semibold border transition-colors ${
             showScores ? "bg-pitch-500 text-white border-pitch-500" : "surface hover:border-pitch-500/60"
