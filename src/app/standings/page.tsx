@@ -5,6 +5,8 @@ import { players } from "@/data/players";
 import { hasStandings, standings, standingsFailures, standingsUpdatedAt, zoneOf } from "@/lib/standings";
 import { Flag } from "@/components/Flag";
 import { Jp } from "@/lib/jp";
+import { JsonLd } from "@/components/JsonLd";
+import { collection } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "海外組がいるクラブの順位表｜リーグを跨いで一覧",
@@ -25,6 +27,14 @@ export default function StandingsPage() {
 
   return (
     <Jp as="div" className="mx-auto max-w-4xl px-4 py-12">
+      <JsonLd
+        data={collection({
+          name: "海外組がいるクラブの順位",
+          description: "日本人選手が所属する欧州クラブの順位を、リーグを跨いで並べた一覧",
+          path: "/standings/",
+          items: standings.map((s) => ({ name: `${s.position}位 ${s.club}` })),
+        })}
+      />
       <p className="label muted">Standings</p>
       <h1 className="text-3xl md:text-4xl font-bold tracking-tight leading-tight mt-1">
         海外組がいるクラブの順位

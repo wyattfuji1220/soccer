@@ -12,6 +12,8 @@ import { CupCoverage } from "@/components/CupCoverage";
 import { Flag } from "@/components/Flag";
 import { age } from "@/lib/format";
 import { Jp } from "@/lib/jp";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumb, collection } from "@/lib/schema";
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -63,6 +65,15 @@ export default async function LeaguePage({ params }: Props) {
 
   return (
     <Jp as="div" className="mx-auto max-w-5xl px-4 py-12">
+      <JsonLd data={breadcrumb([{ name: "選手一覧", path: "/players/" }, { name: league.name }])} />
+      <JsonLd
+        data={collection({
+          name: `${league.name}の日本人選手`,
+          description: `${league.country}の${league.name}に所属する日本人選手${squad.length}人の一覧`,
+          path: `/leagues/${league.id}/`,
+          items: squad.map((p) => ({ name: p.nameJa, path: `/players/${p.slug}/` })),
+        })}
+      />
       <nav className="text-sm muted mb-6">
         <Link href="/players/" className="hover:underline">
           選手一覧

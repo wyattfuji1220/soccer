@@ -6,6 +6,8 @@ import { PlayerCard } from "@/components/PlayerCard";
 import { Flag } from "@/components/Flag";
 import { age } from "@/lib/format";
 import { Jp } from "@/lib/jp";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumb, collection } from "@/lib/schema";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -31,6 +33,15 @@ export default async function ListPage({ params }: Props) {
 
   return (
     <Jp as="div" className="mx-auto max-w-6xl px-4 py-12">
+      <JsonLd data={breadcrumb([{ name: "選手一覧", path: "/players/" }, { name: list.heading }])} />
+      <JsonLd
+        data={collection({
+          name: list.title,
+          description: list.description,
+          path: `/lists/${list.slug}/`,
+          items: list.players.map((p) => ({ name: p.nameJa, path: `/players/${p.slug}/` })),
+        })}
+      />
       <nav className="text-sm muted mb-6">
         <Link href="/players/" className="hover:underline">
           選手一覧

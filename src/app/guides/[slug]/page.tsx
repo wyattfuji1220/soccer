@@ -5,6 +5,8 @@ import { guides } from "@/data/guides";
 import { BroadcasterList } from "@/components/BroadcasterList";
 import type { Block } from "@/lib/types";
 import { Jp } from "@/lib/jp";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumb } from "@/lib/schema";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -113,6 +115,7 @@ export default async function GuidePage({ params }: Props) {
     <Jp as="article" className="mx-auto max-w-3xl px-4 py-12">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
+      <JsonLd data={breadcrumb([{ name: "視聴ガイド", path: "/guides/" }, { name: guide.title }])} />
       <nav className="text-sm muted mb-6">
         <Link href="/guides/" className="hover:underline">視聴ガイド</Link>
         <span className="mx-2">/</span>

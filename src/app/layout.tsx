@@ -18,7 +18,14 @@ export const metadata: Metadata = {
    * 正規URL。相対指定にしておくと、Next.js が各ページのパスに解決してくれる。
    * 末尾スラッシュあり（trailingSlash: true）と無しが別URLとして拾われるのを防ぐ。
    */
-  alternates: { canonical: "./" },
+  alternates: {
+    canonical: "./",
+    // RSSリーダーが自動で見つけられるようにする
+    types: {
+      "application/rss+xml": [{ url: "/feed.xml", title: `${SITE_NAME} の更新` }],
+      "application/feed+json": [{ url: "/feed.json", title: `${SITE_NAME} の更新` }],
+    },
+  },
   // Search Console の所有権確認コード。リポジトリシークレットから注入する
   verification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
     ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }

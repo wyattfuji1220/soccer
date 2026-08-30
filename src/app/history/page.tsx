@@ -5,6 +5,8 @@ import { players } from "@/data/players";
 import { countryNameJa, isEurope } from "@/lib/countries";
 import { countriesOf, pioneers } from "@/lib/alumni";
 import { Jp } from "@/lib/jp";
+import { JsonLd } from "@/components/JsonLd";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "日本人選手の海外挑戦史｜1977年から今日まで",
@@ -80,6 +82,17 @@ function Bar({ value, max }: { value: number; max: number }) {
 export default function HistoryPage() {
   return (
     <Jp as="div" className="mx-auto max-w-3xl px-4 py-12">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: "日本人選手の海外挑戦史",
+          description: `${FIRST_YEAR}年から現在までに海外のクラブへ渡った日本人選手${alumni.length}人の記録を、年ごと・国ごとに集計したもの`,
+          inLanguage: "ja",
+          isAccessibleForFree: true,
+          url: `${SITE_URL}/history/`,
+        }}
+      />
       <p className="label muted">History</p>
       <h1 className="text-3xl md:text-4xl font-bold tracking-tight leading-tight mt-1">
         日本人選手の海外挑戦史

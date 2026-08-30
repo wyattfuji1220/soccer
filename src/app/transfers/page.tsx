@@ -7,6 +7,8 @@ import { transferWindows } from "@/data/transfer-windows";
 import { currentSeasonYear, movesInYear, type SeasonMove } from "@/lib/transfers";
 import { Flag } from "@/components/Flag";
 import { Jp } from "@/lib/jp";
+import { JsonLd } from "@/components/JsonLd";
+import { collection } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "海外組の移籍まとめ｜確定した移籍だけを出典つきで",
@@ -99,6 +101,17 @@ export default function TransfersPage() {
 
   return (
     <Jp as="div" className="mx-auto max-w-3xl px-4 py-12">
+      <JsonLd
+        data={collection({
+          name: `${SEASON}年に所属が変わった選手`,
+          description: "欧州でプレーする日本人選手のうち、確定した移籍だけをまとめた一覧",
+          path: "/transfers/",
+          items: [...toEurope, ...inEurope, ...firstClub].map((m) => ({
+            name: `${m.player.nameJa} → ${m.to.team}`,
+            path: `/players/${m.player.slug}/`,
+          })),
+        })}
+      />
       <p className="label muted">Transfers</p>
       <h1 className="text-3xl md:text-4xl font-bold tracking-tight leading-tight mt-1">確定した移籍だけ</h1>
       <p className="mt-5 leading-relaxed muted max-w-[40em]">

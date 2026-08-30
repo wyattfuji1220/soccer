@@ -9,6 +9,8 @@ import { leagueMap } from "@/data/leagues";
 import { PlayerCard } from "@/components/PlayerCard";
 import { BroadcasterList } from "@/components/BroadcasterList";
 import { Jp } from "@/lib/jp";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumb, sportsTeam } from "@/lib/schema";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -60,6 +62,16 @@ export default async function ClubPage({ params }: Props) {
 
   return (
     <Jp as="div" className="mx-auto max-w-4xl px-4 py-12">
+      <JsonLd data={breadcrumb([{ name: "クラブ別", path: "/clubs/" }, { name: club.name }])} />
+      <JsonLd
+        data={sportsTeam({
+          name: club.name,
+          nameEn: club.nameEn,
+          path: `/clubs/${club.slug}/`,
+          article: club.article,
+          members: current.map((p) => ({ name: p.nameJa, path: `/players/${p.slug}/` })),
+        })}
+      />
       <nav className="text-sm muted mb-6">
         <Link href="/clubs/" className="hover:underline">クラブ別</Link>
         <span className="mx-2">/</span>

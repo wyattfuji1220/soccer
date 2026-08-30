@@ -15,6 +15,8 @@ import { loanStatus } from "@/lib/loan";
 import { age, formatDateJa } from "@/lib/format";
 import { amazonSearchUrl, rakutenSearchUrl } from "@/lib/affiliate";
 import { Jp } from "@/lib/jp";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumb } from "@/lib/schema";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -59,6 +61,7 @@ export default async function PlayerPage({ params }: Props) {
     <Jp as="div" className="mx-auto max-w-4xl px-4 py-12">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
+      <JsonLd data={breadcrumb([{ name: "選手一覧", path: "/players/" }, { name: player.nameJa }])} />
       <nav className="text-sm muted mb-6">
         <Link href="/players/" className="hover:underline">選手一覧</Link>
         <span className="mx-2">/</span>

@@ -4,6 +4,8 @@ import { players } from "@/data/players";
 import { broadcasters } from "@/data/broadcasters";
 import { CoverageFinder } from "./CoverageFinder";
 import { Jp } from "@/lib/jp";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumb } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "契約中のサービスで観られる海外組｜逆引き診断",
@@ -39,6 +41,7 @@ export default function CoveragePage() {
     <Jp as="div" className="mx-auto max-w-4xl px-4 py-12">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faq) }} />
 
+      <JsonLd data={breadcrumb([{ name: "視聴プラン診断", path: "/watch-plan/" }, { name: "契約から逆引き" }])} />
       <nav className="text-sm muted mb-6">
         <Link href="/watch-plan/" className="hover:underline">
           視聴プラン診断
