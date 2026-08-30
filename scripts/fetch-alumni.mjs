@@ -67,32 +67,41 @@ for (const name of candidates) {
   const abroad = info.career.filter((c) => c.country && c.country !== "JPN");
   if (abroad.length === 0) { skipped.push(name); continue; }
 
-  const spans = abroad.map(years).filter(Boolean);
-  if (spans.length === 0) { skipped.push(name); continue; }
+  /*
+   * 在籍を1件ずつ持つ。クラブや国ごとの「いつ」を出すのに要る。
+   * 選手全体の from で代用すると、中村俊輔のセルティック在籍が
+   * レッジーナに渡った2002年から始まっていることになってしまう。
+   * クラブ名は記事名で持つ（表示名は「ボルシアMG」のように略されて、
+   * ほかのデータと突き合わせられない）。
+   */
+  const spells = abroad
+    .map((c) => ({ row: c, span: years(c) }))
+    .filter((x) => x.span !== null)
+    .map((x) => ({ club: x.row.teamArticle ?? x.row.team, country: x.row.country, from: x.span.from, to: x.span.to }));
+  if (spells.length === 0) { skipped.push(name); continue; }
 
-  const from = Math.min(...spans.map((s) => s.from));
+  const from = Math.min(...spells.map((s) => s.from));
   // 「2021-」のように終わりが書かれていなければ、まだ在籍中とみなして null
-  const to = spans.some((s) => s.to === null) ? null : Math.max(...spans.map((s) => s.to));
+  const to = spells.some((s) => s.to === null) ? null : Math.max(...spells.map((s) => s.to));
 
-  rows.push({
-    nameJa: name.replace(/\s*\(サッカー選手\)$/, ""),
-    article: name,
-    from,
-    to,
-    countries: [...new Set(abroad.map((c) => c.country))],
-    clubs: [...new Set(abroad.map((c) => c.team))],
-  });
+  rows.push({ nameJa: name.replace(/\s*\(サッカー選手\)$/, ""), article: name, from, to, spells });
 }
 
 rows.sort((a, b) => a.from - b.from || a.nameJa.localeCompare(b.nameJa, "ja"));
 
 const esc = (s) => String(s).replace(/\\/g, "\\\\").replace(/"/g, '\\"');
-const arr = (list) => `[${list.map((x) => `"${esc(x)}"`).join(", ")}]`;
+const spell = (s) => `{ club: "${esc(s.club)}", country: "${s.country}", from: ${s.from}, to: ${s.to ?? "null"} }`;
 
 const body = rows
   .map(
     (r) =>
-      `  { nameJa: "${esc(r.nameJa)}", article: "${esc(r.article)}", from: ${r.from}, to: ${r.to ?? "null"}, countries: ${arr(r.countries)}, clubs: ${arr(r.clubs)} },`
+      `  {
+    nameJa: "${esc(r.nameJa)}",
+    article: "${esc(r.article)}",
+    from: ${r.from},
+    to: ${r.to ?? "null"},
+    spells: [${r.spells.map(spell).join(", ")}],
+  },`
   )
   .join("\n");
 

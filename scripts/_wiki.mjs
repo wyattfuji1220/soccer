@@ -98,6 +98,8 @@ export function parseCareer(text, yearKey, teamKey, appKey, goalKey) {
     rows.push({
       years: years || null,
       team: label,
+      // リンク先の記事名。表示名は略されるため、クラブを突き合わせるときはこちらを使う
+      teamArticle: link?.article ?? null,
       country: flag ? flag[1].toUpperCase() : null,
       loan,
       apps: apps ? Number(apps[0]) : null,

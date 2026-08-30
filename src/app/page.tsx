@@ -132,7 +132,7 @@ export default function Home() {
       <section className="mx-auto max-w-5xl px-4 pt-10 pb-8">
         <p className="label muted">Browse by League</p>
         <h2 className="text-xl font-bold mt-2 mb-1">リーグ別</h2>
-        <p className="text-sm muted mb-5">クリックすると、そのリーグの選手だけに絞り込みます。</p>
+        <p className="text-sm muted mb-5">リーグごとに、所属選手・今季の記録・日本から観る方法をまとめています。</p>
         <ul className="surface rounded-lg px-5 py-2 md:grid md:grid-cols-2 md:gap-x-10">
           {byLeague.map(({ league, count }, i) => (
             <li
@@ -141,7 +141,7 @@ export default function Home() {
               style={{ borderTop: i === 0 ? "none" : "1px solid var(--hairline)" }}
             >
               <Link
-                href={`/players/?league=${league.id}`}
+                href={`/leagues/${league.id}/`}
                 className="grid grid-cols-[auto_1fr_2rem] items-center gap-x-3 gap-y-1.5 py-2.5 group"
               >
                 <Flag country={league.country} size={13} />

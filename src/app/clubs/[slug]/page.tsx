@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { clubs } from "@/data/clubs";
 import { players } from "@/data/players";
+import { alumniAtClub, countriesOf } from "@/lib/alumni";
+import { countryNameJa } from "@/lib/countries";
 import { leagueMap } from "@/data/leagues";
 import { PlayerCard } from "@/components/PlayerCard";
 import { BroadcasterList } from "@/components/BroadcasterList";
@@ -23,9 +25,10 @@ function context(slug: string) {
     .filter((p): p is NonNullable<typeof p> => Boolean(p));
 
   const league = current[0] ? leagueMap[current[0].league] : null;
+  const history = alumniAtClub(club.article);
   const isJapanese = club.countries.includes("JPN") && current.length === 0;
 
-  return { club, current, league, isJapanese };
+  return { club, current, league, isJapanese, history };
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -52,7 +55,7 @@ export default async function ClubPage({ params }: Props) {
   const { slug } = await params;
   const ctx = context(slug);
   if (!ctx) notFound();
-  const { club, current, league, isJapanese } = ctx;
+  const { club, current, league, isJapanese, history } = ctx;
 
 
   return (
@@ -143,6 +146,36 @@ export default async function ClubPage({ params }: Props) {
         </>
       )}
 
+      {history.length > 0 && (
+        <section className="mt-12">
+          <h2 className="text-xl font-bold mb-1">歴代の日本人選手</h2>
+          <p className="text-sm muted mb-4 leading-relaxed max-w-[40em]">
+            当サイトの掲載範囲の外まで広げ、このクラブに在籍した記録がある日本人選手を並べています。引退した選手や国内へ戻った選手を含みます。
+          </p>
+          <ul className="list-none p-0 m-0">
+            {history.map(({ player, from, to }) => (
+              <li key={player.article} className="grid grid-cols-[7rem_1fr] gap-3 items-baseline py-3 border-t" style={{ borderColor: "var(--hairline)" }}>
+                <span className="num text-xs muted">
+                  {from}
+                  {to === null ? "年〜" : to === from ? "年" : `〜${to}`}
+                </span>
+                <span className="text-sm">
+                  <a
+                    href={`https://ja.wikipedia.org/wiki/${encodeURIComponent(player.article)}`}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="font-medium hover:underline"
+                  >
+                    {player.nameJa}
+                  </a>
+                  <span className="muted text-xs ml-2">{countriesOf(player).map(countryNameJa).join("・")}</span>
+                </span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       <section className="mt-12">
         <h2 className="text-xl font-bold mb-3">出典</h2>
         <p className="text-sm">
@@ -156,7 +189,7 @@ export default async function ClubPage({ params }: Props) {
           </a>
         </p>
         <p className="mt-2 text-xs muted leading-relaxed">
-          在籍情報は各選手のWikipedia記事のクラブ遍歴から集計しています。当サイトに掲載していない選手は含まれません。
+          在籍情報は各選手のWikipedia記事のクラブ遍歴から集計しています。歴代の一覧はWikipediaに記事がある選手が対象で、記事のない選手は含まれません。
         </p>
       </section>
     </Jp>

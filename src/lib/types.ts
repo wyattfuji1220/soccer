@@ -92,9 +92,20 @@ export type Alumnus = {
   from: number;
   /** 最後に海外クラブに在籍した年。在籍中なら null */
   to: number | null;
-  /** 在籍した国（ISO 3文字コード） */
-  countries: string[];
-  clubs: string[];
+  /**
+   * 海外クラブでの在籍1件ずつ。クラブや国ごとの「いつ」を出すには、
+   * 選手全体の from ではなくこちらを見る。中村俊輔の from は2002年
+   * （レッジーナ）だが、セルティック在籍は2005年からになる。
+   */
+  spells: {
+    /** クラブのWikipedia記事名 */
+    club: string;
+    /** ISO 3文字コード */
+    country: string;
+    from: number;
+    /** 在籍中なら null */
+    to: number | null;
+  }[];
 };
 
 /**

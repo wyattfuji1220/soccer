@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { alumni } from "@/data/alumni";
 import { players } from "@/data/players";
-import { countryNameJa, isEurope, normalizeCountry } from "@/lib/countries";
+import { countryNameJa, isEurope } from "@/lib/countries";
+import { countriesOf, pioneers } from "@/lib/alumni";
 import { Jp } from "@/lib/jp";
 
 export const metadata: Metadata = {
@@ -42,7 +43,7 @@ const byDecade = (() => {
 const countryCounts = (() => {
   const m = new Map<string, number>();
   for (const a of alumni) {
-    for (const c of new Set(a.countries.map(normalizeCountry))) m.set(c, (m.get(c) ?? 0) + 1);
+    for (const c of countriesOf(a)) m.set(c, (m.get(c) ?? 0) + 1);
   }
   return [...m].sort((a, b) => b[1] - a[1]);
 })();
@@ -50,9 +51,13 @@ const countryCounts = (() => {
 const europeCountries = countryCounts.filter(([c]) => isEurope(c));
 const outsideEurope = countryCounts.filter(([c]) => !isEurope(c));
 
-const clubCount = new Set(alumni.flatMap((a) => a.clubs)).size;
+const clubCount = new Set(alumni.flatMap((a) => a.spells.map((s) => s.club))).size;
 
-const pioneers = alumni.filter((a) => a.from === FIRST_YEAR);
+/** 国ごとの「最初の1人」。渡航先が広がった順に並ぶ */
+const firsts = pioneers();
+
+/** いちばん古い記録の年に渡った選手。導入文で名前を出す */
+const firstMovers = alumni.filter((a) => a.from === FIRST_YEAR);
 
 /** 海外での在籍年数が長い順。在籍中の選手は今年までとして数える */
 const longest = alumni
@@ -80,7 +85,7 @@ export default function HistoryPage() {
         日本人選手の海外挑戦史
       </h1>
       <p className="mt-5 leading-relaxed muted max-w-[40em]">
-        {FIRST_YEAR}年に{pioneers.map((p) => p.nameJa).join("・")}が海外のクラブへ渡ってから、いま掲載中の{players.length}人まで。Wikipediaに記事がある選手のクラブ遍歴から、{alumni.length}人分の記録を集計しました。
+        {FIRST_YEAR}年に{firstMovers.map((p) => p.nameJa).join("・")}が海外のクラブへ渡ってから、いま掲載中の{players.length}人まで。Wikipediaに記事がある選手のクラブ遍歴から、{alumni.length}人分の記録を集計しました。
       </p>
 
       <section className="mt-12">
@@ -164,6 +169,51 @@ export default function HistoryPage() {
       </section>
 
       <section className="mt-14">
+        <h2 className="text-xl font-bold mb-1">その国に最初に渡った日本人</h2>
+        <p className="text-sm muted mb-4 leading-relaxed max-w-[40em]">
+          国ごとに、いちばん早くその国のクラブへ在籍した選手です。渡航先が広がっていった順に並べています。同じ年に複数いる場合は全員を挙げています。
+        </p>
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm border-collapse min-w-[30rem]">
+            <thead>
+              <tr>
+                {["年", "国", "最初に渡った選手", "のべ人数"].map((h) => (
+                  <th
+                    key={h}
+                    className="text-left font-bold px-4 py-3 whitespace-nowrap"
+                    style={{ background: "var(--surface)", borderBottom: "1px solid var(--border)" }}
+                  >
+                    {h}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {firsts.map((r, i) => (
+                <tr key={r.country}>
+                  <td className="px-4 py-3 num" style={{ borderTop: i === 0 ? "none" : "1px solid var(--border)" }}>
+                    {r.year}
+                  </td>
+                  <td className="px-4 py-3 font-medium whitespace-nowrap" style={{ borderTop: i === 0 ? "none" : "1px solid var(--border)" }}>
+                    {countryNameJa(r.country)}
+                  </td>
+                  <td className="px-4 py-3" style={{ borderTop: i === 0 ? "none" : "1px solid var(--border)" }}>
+                    {r.names.join("、")}
+                  </td>
+                  <td className="px-4 py-3 num" style={{ borderTop: i === 0 ? "none" : "1px solid var(--border)" }}>
+                    {r.total}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-3 text-xs muted leading-relaxed">
+          在籍年は年単位でしか分からないため、同じ年のうち誰が先だったかまでは判別できません。
+        </p>
+      </section>
+
+      <section className="mt-14">
         <h2 className="text-xl font-bold mb-1">海外に長くいた選手</h2>
         <p className="text-sm muted mb-4 leading-relaxed max-w-[40em]">
           最初に海外クラブへ移った年から、最後に在籍した年までの長さです。在籍中の選手は{THIS_YEAR}年までとして数えています。
@@ -174,7 +224,7 @@ export default function HistoryPage() {
               <span className="font-medium">
                 {a.nameJa}
                 <span className="text-xs muted ml-2">
-                  {a.from}年〜{a.to ?? "現在"} ・ {a.countries.map(normalizeCountry).filter((c, i, s) => s.indexOf(c) === i).map(countryNameJa).join("・")}
+                  {a.from}年〜{a.to ?? "現在"} ・ {countriesOf(a).map(countryNameJa).join("・")}
                 </span>
               </span>
               <span className="num font-semibold whitespace-nowrap">{years}年</span>
