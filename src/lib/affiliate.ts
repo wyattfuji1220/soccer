@@ -6,6 +6,32 @@
 const AMAZON_TAG = process.env.NEXT_PUBLIC_AMAZON_TAG ?? "";
 const RAKUTEN_AFFILIATE_ID = process.env.NEXT_PUBLIC_RAKUTEN_AFFILIATE_ID ?? "";
 
+/*
+ * もしもアフィリエイトの「どこでもリンク」。
+ *
+ * 楽天とは、楽天アフィリエイト直ではなく、もしも経由で提携している。
+ * リンクの形が違い（af.moshimo.com/af/c/click?…&url=遷移先）、直リンク用の
+ * IDでは動かない。管理画面で作ったリンクをそのまま環境変数に入れてもらい、
+ * その url パラメータだけを差し替えて使う。
+ *
+ * パラメータ名が増減しても壊れないよう、URLとして解析してから組み立てる。
+ */
+const MOSHIMO_RAKUTEN = process.env.NEXT_PUBLIC_AFFILIATE_MOSHIMO_RAKUTEN ?? "";
+
+/** どこでもリンクの遷移先を差し替える。設定が無ければ null */
+function moshimoLink(template: string, destination: string): string | null {
+  if (!template) return null;
+  try {
+    const url = new URL(template);
+    if (!url.searchParams.has("url")) return null;
+    url.searchParams.set("url", destination);
+    return url.toString();
+  } catch {
+    // 環境変数の値が壊れていてもサイトは動かす。通常のリンクに落ちる
+    return null;
+  }
+}
+
 export function amazonSearchUrl(keyword: string): string {
   const url = new URL("https://www.amazon.co.jp/s");
   url.searchParams.set("k", keyword);
@@ -15,6 +41,9 @@ export function amazonSearchUrl(keyword: string): string {
 
 export function rakutenSearchUrl(keyword: string): string {
   const base = `https://search.rakuten.co.jp/search/mall/${encodeURIComponent(keyword)}/`;
+  // もしも経由を優先する。直の楽天アフィリエイトと両方は使えない
+  const viaMoshimo = moshimoLink(MOSHIMO_RAKUTEN, base);
+  if (viaMoshimo) return viaMoshimo;
   if (!RAKUTEN_AFFILIATE_ID) return base;
   return `https://hb.afl.rakuten.co.jp/hgc/${RAKUTEN_AFFILIATE_ID}/?pc=${encodeURIComponent(base)}`;
 }
