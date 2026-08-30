@@ -185,11 +185,12 @@ async function resolveJapaneseNames(englishNames) {
 }
 
 /*
- * 過去7日ぶんも取る。終わった試合はスコアつきで返ってくるので、
- * 「先週どうだったか」を結果として出せる。無料枠でも同じエンドポイントで済む。
+ * 過去2週間から先1か月ぶんを取る。終わった試合はスコアつきで返るので
+ * 結果としても出せる。無料枠でも同じエンドポイントで済む。
+ * 日付タブで前後を行き来できるようにしたぶん、範囲を広げてある。
  */
-const dateFrom = new Date(Date.now() - 7 * 86400000).toISOString().slice(0, 10);
-const dateTo = new Date(Date.now() + 21 * 86400000).toISOString().slice(0, 10);
+const dateFrom = new Date(Date.now() - 14 * 86400000).toISOString().slice(0, 10);
+const dateTo = new Date(Date.now() + 30 * 86400000).toISOString().slice(0, 10);
 
 const matches = [];
 for (const [leagueId, clubs] of clubsByLeague) {
