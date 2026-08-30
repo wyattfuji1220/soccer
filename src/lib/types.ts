@@ -42,6 +42,61 @@ export type League = {
   matchesPerSeason: number;
 };
 
+/**
+ * 所属が変わったことの記録。噂は含まず、Wikipediaのインフォボックスが
+ * 書き換わった＝移籍が確定して反映されたものだけを扱う。
+ *   move    … 掲載中の選手が別のクラブへ移った
+ *   arrived … 新たに掲載対象になった（欧州のリーグへ来た）
+ *   left    … 掲載対象から外れた（国内復帰、対象外リーグへの移籍など）
+ */
+export type Transfer = {
+  /** 当サイトが変化を確認した日。クラブの発表日ではない */
+  date: string;
+  slug: string;
+  nameJa: string;
+  kind: "move" | "arrived" | "left";
+  fromClub: string | null;
+  toClub: string | null;
+  fromLeague: LeagueId | null;
+  toLeague: LeagueId | null;
+};
+
+/**
+ * 移籍市場が閉まる日時。締切を過ぎると、次の市場が開くまで登録ができない。
+ * 「いま契約を決めるか、移籍が落ち着くまで待つか」の判断材料として出す。
+ *
+ * 時刻まで公式に確認できたものだけ precision を "time" にする。
+ * 日付しか確認できていないものは "date" とし、時刻を書かない。
+ */
+export type TransferWindow = {
+  id: string;
+  /** 「2026年 夏」のような市場の呼び名 */
+  label: string;
+  leagues: LeagueId[];
+  /** 締切。オフセットつきのISO8601で持ち、表示時に日本時間へ直す */
+  closesAt: string;
+  precision: "time" | "date";
+  confidence: Confidence;
+  source: Source;
+};
+
+/**
+ * 海外のクラブに在籍した記録がある選手の要約。歴史の集計にだけ使う。
+ * 出場数や背番号は持たない（当時の記録が揃わないため）。
+ */
+export type Alumnus = {
+  nameJa: string;
+  /** Wikipediaの記事名。曖昧さ回避の括弧が付くことがある */
+  article: string;
+  /** 初めて海外クラブに在籍した年 */
+  from: number;
+  /** 最後に海外クラブに在籍した年。在籍中なら null */
+  to: number | null;
+  /** 在籍した国（ISO 3文字コード） */
+  countries: string[];
+  clubs: string[];
+};
+
 export type CupId =
   | "champions-league"
   | "europa-league"

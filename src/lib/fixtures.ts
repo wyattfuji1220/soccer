@@ -150,6 +150,23 @@ export function getFixtures(now: Date): Fixture[] {
   return [...list].sort((a, b) => a.utcDate.localeCompare(b.utcDate));
 }
 
+/**
+ * 終わった試合。スコアが両方そろっているものだけを結果として扱う。
+ * 中止や延期は status が FINISHED にならないので自然に外れる。
+ */
+export function finishedFixtures(now: Date): Fixture[] {
+  return getFixtures(now)
+    .filter((f) => f.status === "FINISHED" && f.score?.home != null && f.score?.away != null)
+    .filter((f) => new Date(f.utcDate) <= now)
+    .sort((a, b) => b.utcDate.localeCompare(a.utcDate));
+}
+
+/** これからの試合。日程ページの本体はこちら */
+export function upcomingFixtures(now: Date): Fixture[] {
+  const finished = new Set(finishedFixtures(now).map((f) => f.id));
+  return getFixtures(now).filter((f) => !finished.has(f.id));
+}
+
 /** その試合に出場しうる掲載選手 */
 export function playersInFixture(fixture: Fixture): Player[] {
   return players.filter(

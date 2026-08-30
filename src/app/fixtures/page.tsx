@@ -6,7 +6,8 @@ import { Flag } from "@/components/Flag";
 import { broadcasters } from "@/data/broadcasters";
 import { broadcasterLink } from "@/lib/affiliate";
 import {
-  getFixtures,
+  finishedFixtures,
+  upcomingFixtures,
   groupByNight,
   playersInFixture,
   usingSampleData,
@@ -28,8 +29,10 @@ function nightHeading(key: string): string {
 }
 
 export default function FixturesPage() {
-  const all = getFixtures(new Date());
-  const nights = groupByNight(all);
+  const now = new Date();
+  const nights = groupByNight(upcomingFixtures(now));
+  // 終わった試合は直近の20件だけ。過去をさかのぼる用途のページではない
+  const results = finishedFixtures(now).slice(0, 20);
 
   return (
     <Jp as="div" className="mx-auto max-w-4xl px-4 py-12">
@@ -145,6 +148,44 @@ export default function FixturesPage() {
           </section>
         ))}
       </div>
+
+      {results.length > 0 && (
+        <section className="mt-16">
+          <h2 className="text-xl font-bold">終わった試合</h2>
+          <p className="text-sm muted mt-2 mb-4 leading-relaxed max-w-[40em]">
+            直近1週間のうち、掲載クラブが出場した試合の結果です。出場した選手までは取得できないため、名前は所属選手を並べています。
+          </p>
+          <div>
+            {results.map((f) => {
+              const kickoff = new Date(f.utcDate);
+              const league = leagueMap[f.league];
+              const featured = playersInFixture(f);
+              return (
+                <div key={f.id} className="grid grid-cols-[4.5rem_1fr_auto] gap-x-3 gap-y-1 py-3.5 hair items-baseline">
+                  <span className="num text-xs muted">{jstDate(kickoff)}</span>
+                  <span className="text-sm">
+                    {f.homeTeam} <span className="muted">対</span> {f.awayTeam}
+                  </span>
+                  <span className="num font-semibold whitespace-nowrap">
+                    {f.score?.home}–{f.score?.away}
+                  </span>
+                  <span className="col-start-2 col-span-2 text-xs muted flex flex-wrap items-center gap-x-2 gap-y-1">
+                    <span className="flex items-center gap-1.5">
+                      <Flag country={league.country} size={10} />
+                      {f.cup ? cupMap[f.cup].name : league.name}
+                    </span>
+                    {featured.map((p) => (
+                      <Link key={p.slug} href={`/players/${p.slug}/`} className="hover:underline">
+                        {p.nameJa}
+                      </Link>
+                    ))}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      )}
 
       <p className="mt-10 text-xs muted leading-relaxed">
         日程データ出典:{" "}

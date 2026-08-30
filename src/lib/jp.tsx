@@ -118,7 +118,7 @@ export function phrases(text: string): string[] {
  * 語尾の記号には入れない。そこは文節の切れ目なので折り返してよい。
  */
 const JOINER = "⁠";
-const BREAKABLE = /[・＝=／/－\-ー〜～:：;；]/g;
+const BREAKABLE = /[・＝=／/－\-ー〜～:：;；.．]/g;
 
 function unbreakable(part: string): string {
   return part.replace(BREAKABLE, (m, at: number) => {

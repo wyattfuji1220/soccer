@@ -1,0 +1,65 @@
+name: 選手データの更新
+
+# 公開用のビルド（deploy.yml）は 12:00 UTC に走る。
+# その30分前にデータを取り直し、変わっていればコミットしておく。
+# コミットは GITHUB_TOKEN で行うため deploy.yml は再起動されない。
+# 毎日の実行では日曜だけ、重い経歴データ（1200件超）もまとめて取り直す。
+on:
+  schedule:
+    # 月〜土は選手データだけ。日曜は経歴データもまとめて取り直す
+    - cron: "30 11 * * 1-6"
+    - cron: "0 11 * * 0"
+  workflow_dispatch:
+    inputs:
+      alumni:
+        description: "経歴データ（src/data/alumni.ts）も取り直す"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - run: npm ci
+
+      - name: 選手データを取り直す
+        run: npm run data:players
+
+      - name: 所属の変化を記録する
+        run: npm run data:transfers
+
+      - name: 掲載データを点検する
+        run: npm run data:check
+
+      - name: 経歴データを取り直す（日曜と手動実行のみ）
+        if: github.event.schedule == '0 11 * * 0' || github.event.inputs.alumni == 'true'
+        run: npm run data:alumni
+
+      - name: 型チェック
+        run: npm run typecheck
+
+      - name: 変更があればコミットする
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "データに変更はありません"
+            exit 0
+          fi
+          git add -A
+          git commit -m "選手データを自動更新した（$(date -u +%Y-%m-%d)）"
+          git push

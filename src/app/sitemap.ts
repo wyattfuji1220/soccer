@@ -2,17 +2,23 @@ import type { MetadataRoute } from "next";
 import { players } from "@/data/players";
 import { guides } from "@/data/guides";
 import { clubs } from "@/data/clubs";
+import { playerLists } from "@/lib/lists";
 import { SITE_URL } from "@/lib/site";
 
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPaths = ["", "/players", "/clubs", "/fixtures", "/rankings", "/watch-plan", "/cups", "/guides", "/about", "/privacy"];
+  const staticPaths = ["", "/players", "/clubs", "/fixtures", "/rankings", "/transfers", "/history", "/watch-plan", "/cups", "/guides", "/about", "/privacy"];
   return [
     ...staticPaths.map((p) => ({
       url: `${SITE_URL}${p}/`,
       changeFrequency: "weekly" as const,
       priority: p === "" ? 1 : p === "/watch-plan" ? 0.95 : p === "/rankings" || p === "/cups" ? 0.9 : 0.8,
+    })),
+    ...playerLists.map((l) => ({
+      url: `${SITE_URL}/lists/${l.slug}/`,
+      changeFrequency: "weekly" as const,
+      priority: 0.75,
     })),
     ...players.map((p) => ({
       url: `${SITE_URL}/players/${p.slug}/`,

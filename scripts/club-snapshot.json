@@ -1,0 +1,500 @@
+{
+ "takenAt": "2026-08-29",
+ "players": {
+  "shinta-appelkamp": {
+   "nameJa": "アペルカンプ真大",
+   "club": "SpVggグロイター・フュルト",
+   "league": "bundesliga-2"
+  },
+  "anrie-chase": {
+   "nameJa": "チェイス・アンリ",
+   "club": "レッドブル・ザルツブルク",
+   "league": "austrian-bundesliga"
+  },
+  "nikki-havenaar": {
+   "nameJa": "ハーフナー・ニッキ",
+   "club": "ロイヤル・ユニオン・サン＝ジロワーズ",
+   "league": "jupiler-pro-league"
+  },
+  "william-popp": {
+   "nameJa": "ポープ・ウィリアム",
+   "club": "KベールスホットVA",
+   "league": "challenger-pro-league"
+  },
+  "koki-ando": {
+   "nameJa": "安藤晃希",
+   "club": "ロイヤル・アントワープFC",
+   "league": "jupiler-pro-league"
+  },
+  "tomoya-ando": {
+   "nameJa": "安藤智哉",
+   "club": "FCザンクトパウリ",
+   "league": "bundesliga-2"
+  },
+  "taisei-abe": {
+   "nameJa": "安部大晴",
+   "club": "ホルシュタイン・キール",
+   "league": "bundesliga-2"
+  },
+  "junya-ito": {
+   "nameJa": "伊東純也",
+   "club": "KRCゲンク",
+   "league": "jupiler-pro-league"
+  },
+  "atsuki-ito": {
+   "nameJa": "伊藤敦樹",
+   "club": "ボルトン・ワンダラーズFC",
+   "league": "championship"
+  },
+  "hiroki-ito": {
+   "nameJa": "伊藤洋輝",
+   "club": "FCバイエルン・ミュンヘン",
+   "league": "bundesliga"
+  },
+  "zento-uno": {
+   "nameJa": "宇野禅斗",
+   "club": "ボルシア・メンヒェングラートバッハ",
+   "league": "bundesliga"
+  },
+  "wataru-endo": {
+   "nameJa": "遠藤航",
+   "club": "リヴァプールFC",
+   "league": "premier-league"
+  },
+  "kento-shiogai": {
+   "nameJa": "塩貝健人",
+   "club": "VfLヴォルフスブルク",
+   "league": "bundesliga-2"
+  },
+  "ayumu-yokoyama": {
+   "nameJa": "横山歩夢",
+   "club": "KRCゲンク",
+   "league": "jupiler-pro-league"
+  },
+  "daisuke-yokota": {
+   "nameJa": "横田大祐",
+   "club": "レンジャーズFC",
+   "league": "scottish-premiership"
+  },
+  "takuya-ogiwara": {
+   "nameJa": "荻原拓也",
+   "club": "OHルーヴェン",
+   "league": "jupiler-pro-league"
+  },
+  "tsubasa-kasayanagi": {
+   "nameJa": "笠柳翼",
+   "club": "パトロ・アイスデン・マースメヘレン",
+   "league": "challenger-pro-league"
+  },
+  "daichi-kamada": {
+   "nameJa": "鎌田大地",
+   "club": "クリスタル・パレスFC",
+   "league": "premier-league"
+  },
+  "hiroki-sekine": {
+   "nameJa": "関根大輝",
+   "club": "ホルシュタイン・キール",
+   "league": "bundesliga-2"
+  },
+  "tomoki-iwata": {
+   "nameJa": "岩田智輝",
+   "club": "バーミンガム・シティFC",
+   "league": "championship"
+  },
+  "kazunari-kita": {
+   "nameJa": "喜多壱也",
+   "club": "レアル・ソシエダB",
+   "league": "segunda-division"
+  },
+  "reo-hatate": {
+   "nameJa": "旗手怜央",
+   "club": "セルティックFC",
+   "league": "scottish-premiership"
+  },
+  "yumeki-yoshinaga": {
+   "nameJa": "吉永夢希",
+   "club": "KRCゲンク",
+   "league": "jupiler-pro-league"
+  },
+  "takefusa-kubo": {
+   "nameJa": "久保建英",
+   "club": "レアル・ソシエダ",
+   "league": "la-liga"
+  },
+  "taisei-miyashiro": {
+   "nameJa": "宮代大聖",
+   "club": "UDラス・パルマス",
+   "league": "segunda-division"
+  },
+  "daiki-hashioka": {
+   "nameJa": "橋岡大樹",
+   "club": "ボルシア・メンヒェングラートバッハ",
+   "league": "bundesliga"
+  },
+  "genki-haraguchi": {
+   "nameJa": "原口元気",
+   "club": "KベールスホットVA",
+   "league": "challenger-pro-league"
+  },
+  "taichi-hara": {
+   "nameJa": "原大智",
+   "club": "FCザンクトパウリ",
+   "league": "bundesliga-2"
+  },
+  "yosuke-furukawa": {
+   "nameJa": "古川陽介",
+   "club": "SVダルムシュタット98",
+   "league": "bundesliga-2"
+  },
+  "keisuke-goto": {
+   "nameJa": "後藤啓介",
+   "club": "SCフライブルク",
+   "league": "bundesliga"
+  },
+  "yuto-tsunashima": {
+   "nameJa": "綱島悠斗",
+   "club": "ロイヤル・アントワープFC",
+   "league": "jupiler-pro-league"
+  },
+  "ryotaro-araki": {
+   "nameJa": "荒木遼太郎",
+   "club": "シント＝トロイデンVV",
+   "league": "jupiler-pro-league"
+  },
+  "kota-takai": {
+   "nameJa": "高井幸大",
+   "club": "トッテナム・ホットスパーFC",
+   "league": "premier-league"
+  },
+  "rento-takaoka": {
+   "nameJa": "高岡伶颯",
+   "club": "パトロ・アイスデン・マースメヘレン",
+   "league": "challenger-pro-league"
+  },
+  "ryunosuke-sato": {
+   "nameJa": "佐藤龍之介",
+   "club": "バレンシアCF",
+   "league": "la-liga"
+  },
+  "kaishu-sano": {
+   "nameJa": "佐野海舟",
+   "club": "1.FSVマインツ05",
+   "league": "bundesliga"
+  },
+  "kodai-sano": {
+   "nameJa": "佐野航大",
+   "club": "PSVアイントホーフェン",
+   "league": "eredivisie"
+  },
+  "tatsuhiro-sakamoto": {
+   "nameJa": "坂元達裕",
+   "club": "コヴェントリー・シティFC",
+   "league": "premier-league"
+  },
+  "isa-sakamoto": {
+   "nameJa": "坂本一彩",
+   "club": "KVCウェステルロー",
+   "league": "jupiler-pro-league"
+  },
+  "shunsuke-mito": {
+   "nameJa": "三戸舜介",
+   "club": "スパルタ・ロッテルダム",
+   "league": "eredivisie"
+  },
+  "koji-miyoshi": {
+   "nameJa": "三好康児",
+   "club": "VfLボーフム",
+   "league": "bundesliga-2"
+  },
+  "kaoru-mitoma": {
+   "nameJa": "三笘薫",
+   "club": "ブライトン・アンド・ホーヴ・アルビオンFC",
+   "league": "premier-league"
+  },
+  "shin-yamada": {
+   "nameJa": "山田新",
+   "club": "OHルーヴェン",
+   "league": "jupiler-pro-league"
+  },
+  "rihito-yamamoto": {
+   "nameJa": "山本理仁",
+   "club": "SCフライブルク",
+   "league": "bundesliga"
+  },
+  "rion-ichihara": {
+   "nameJa": "市原吏音",
+   "club": "AZアルクマール",
+   "league": "eredivisie"
+  },
+  "hidemasa-morita": {
+   "nameJa": "守田英正",
+   "club": "ハル・シティAFC",
+   "league": "premier-league"
+  },
+  "hiroki-akiyama": {
+   "nameJa": "秋山裕紀",
+   "club": "SVダルムシュタット98",
+   "league": "bundesliga-2"
+  },
+  "leobrian-kokubo": {
+   "nameJa": "小久保玲央ブライアン",
+   "club": "シント＝トロイデンVV",
+   "league": "jupiler-pro-league"
+  },
+  "keita-kosugi": {
+   "nameJa": "小杉啓太",
+   "club": "アイントラハト・フランクフルト",
+   "league": "bundesliga"
+  },
+  "yuki-kobayashi": {
+   "nameJa": "小林友希",
+   "club": "ヤギエロニア・ビャウィストク",
+   "league": "ekstraklasa"
+  },
+  "daiki-matsuoka": {
+   "nameJa": "松岡大起",
+   "club": "ŠKスロヴァン・ブラチスラヴァ",
+   "league": "slovak-superliga"
+  },
+  "hayate-matsuda": {
+   "nameJa": "松田隼風",
+   "club": "ハノーファー96",
+   "league": "bundesliga-2"
+  },
+  "kuryu-matsuki": {
+   "nameJa": "松木玖生",
+   "club": "サウサンプトンFC",
+   "league": "championship"
+  },
+  "kaito-matsuzawa": {
+   "nameJa": "松澤海斗",
+   "club": "シント＝トロイデンVV",
+   "league": "jupiler-pro-league"
+  },
+  "ayase-ueda": {
+   "nameJa": "上田綺世",
+   "club": "フェイエノールト",
+   "league": "eredivisie"
+  },
+  "keigo-tsunemoto": {
+   "nameJa": "常本佳吾",
+   "club": "FCバーゼル",
+   "league": "swiss-super-league"
+  },
+  "shion-shinkawa": {
+   "nameJa": "新川志音",
+   "club": "シント＝トロイデンVV",
+   "league": "jupiler-pro-league"
+  },
+  "ryuya-morishita": {
+   "nameJa": "森下龍矢",
+   "club": "ブラックバーン・ローヴァーズFC",
+   "league": "championship"
+  },
+  "kaito-mizuta": {
+   "nameJa": "水多海斗",
+   "club": "ル・アーヴルAC",
+   "league": "ligue-1"
+  },
+  "yukinari-sugawara": {
+   "nameJa": "菅原由勢",
+   "club": "サウサンプトンFC",
+   "league": "championship"
+  },
+  "ayumu-seko": {
+   "nameJa": "瀬古歩夢",
+   "club": "ル・アーヴルAC",
+   "league": "ligue-1"
+  },
+  "koki-saito": {
+   "nameJa": "斉藤光毅",
+   "club": "クイーンズ・パーク・レンジャーズFC",
+   "league": "championship"
+  },
+  "nelson-ishiwatari": {
+   "nameJa": "石渡ネルソン",
+   "club": "シント＝トロイデンVV",
+   "league": "jupiler-pro-league"
+  },
+  "sota-kawasaki": {
+   "nameJa": "川﨑颯太",
+   "club": "1.FSVマインツ05",
+   "league": "bundesliga"
+  },
+  "daizen-maeda": {
+   "nameJa": "前田大然",
+   "club": "イプスウィッチ・タウンFC",
+   "league": "premier-league"
+  },
+  "yuki-ohashi": {
+   "nameJa": "大橋祐紀",
+   "club": "ブラックバーン・ローヴァーズFC",
+   "league": "championship"
+  },
+  "ryonosuke-ohori": {
+   "nameJa": "大堀亮之介",
+   "club": "FKラドニク・スルドゥリツァ",
+   "league": "serbian-superliga"
+  },
+  "shogo-taniguchi": {
+   "nameJa": "谷口彰悟",
+   "club": "シント＝トロイデンVV",
+   "league": "jupiler-pro-league"
+  },
+  "yuta-nakayama": {
+   "nameJa": "中山雄太",
+   "club": "レッドスター・ベオグラード",
+   "league": "serbian-superliga"
+  },
+  "keito-nakamura": {
+   "nameJa": "中村敬斗",
+   "club": "スタッド・ランス",
+   "league": "ligue-2"
+  },
+  "sota-nakamura": {
+   "nameJa": "中村草太",
+   "club": "ル・アーヴルAC",
+   "league": "ligue-1"
+  },
+  "shingo-nakano": {
+   "nameJa": "中埜信吾",
+   "club": "SCラインドルフ・アルタッハ",
+   "league": "austrian-bundesliga"
+  },
+  "koki-machida": {
+   "nameJa": "町田浩樹",
+   "club": "TSG1899ホッフェンハイム",
+   "league": "bundesliga"
+  },
+  "shuto-machino": {
+   "nameJa": "町野修斗",
+   "club": "ボルシア・メンヒェングラートバッハ",
+   "league": "bundesliga"
+  },
+  "mio-backhaus": {
+   "nameJa": "長田澪",
+   "club": "SCフライブルク",
+   "league": "bundesliga"
+  },
+  "satoshi-tanaka": {
+   "nameJa": "田中聡",
+   "club": "シャルケ04",
+   "league": "bundesliga"
+  },
+  "ao-tanaka": {
+   "nameJa": "田中碧",
+   "club": "リーズ・ユナイテッドFC",
+   "league": "premier-league"
+  },
+  "tsuyoshi-watanabe": {
+   "nameJa": "渡辺剛",
+   "club": "フェイエノールト",
+   "league": "eredivisie"
+  },
+  "joel-chima-fujita": {
+   "nameJa": "藤田譲瑠チマ",
+   "club": "FCザンクトパウリ",
+   "league": "bundesliga-2"
+  },
+  "kanya-fujimoto": {
+   "nameJa": "藤本寛也",
+   "club": "バーミンガム・シティFC",
+   "league": "championship"
+  },
+  "ritsu-doan": {
+   "nameJa": "堂安律",
+   "club": "アイントラハト・フランクフルト",
+   "league": "bundesliga"
+  },
+  "takumi-minamino": {
+   "nameJa": "南野拓実",
+   "club": "ASモナコ",
+   "league": "ligue-1"
+  },
+  "ken-masui": {
+   "nameJa": "倍井謙",
+   "club": "KVコルトレイク",
+   "league": "challenger-pro-league"
+  },
+  "taiga-hata": {
+   "nameJa": "畑大雅",
+   "club": "シント＝トロイデンVV",
+   "league": "jupiler-pro-league"
+  },
+  "kou-itakura": {
+   "nameJa": "板倉滉",
+   "club": "ボルシア・メンヒェングラートバッハ",
+   "league": "bundesliga"
+  },
+  "takehiro-tomiyasu": {
+   "nameJa": "冨安健洋",
+   "club": "クリスタル・パレスFC",
+   "league": "premier-league"
+  },
+  "taichi-fukui": {
+   "nameJa": "福井太智",
+   "club": "FCアロウカ",
+   "league": "primeira-liga"
+  },
+  "shiou-fukuda": {
+   "nameJa": "福田師王",
+   "club": "カールスルーエSC",
+   "league": "bundesliga-2"
+  },
+  "sho-fukuda": {
+   "nameJa": "福田翔生",
+   "club": "ブレンビーIF",
+   "league": "danish-superliga"
+  },
+  "yu-hirakawa": {
+   "nameJa": "平河悠",
+   "club": "ブリストル・シティFC",
+   "league": "championship"
+  },
+  "sota-kitano": {
+   "nameJa": "北野颯太",
+   "club": "レッドブル・ザルツブルク",
+   "league": "austrian-bundesliga"
+  },
+  "seiya-maikuma": {
+   "nameJa": "毎熊晟矢",
+   "club": "AZアルクマール",
+   "league": "eredivisie"
+  },
+  "seiji-kimura": {
+   "nameJa": "木村誠二",
+   "club": "KVCウェステルロー",
+   "league": "jupiler-pro-league"
+  },
+  "taishi-brandon-nozawa": {
+   "nameJa": "野澤大志ブランドン",
+   "club": "ロイヤル・アントワープFC",
+   "league": "jupiler-pro-league"
+  },
+  "zion-suzuki": {
+   "nameJa": "鈴木彩艶",
+   "club": "アストン・ヴィラFC",
+   "league": "premier-league"
+  },
+  "junnosuke-suzuki": {
+   "nameJa": "鈴木淳之介",
+   "club": "FCコペンハーゲン",
+   "league": "danish-superliga"
+  },
+  "yuito-suzuki": {
+   "nameJa": "鈴木唯人",
+   "club": "SCフライブルク",
+   "league": "bundesliga"
+  },
+  "shunsuke-saito": {
+   "nameJa": "齋藤俊輔",
+   "club": "KVCウェステルロー",
+   "league": "jupiler-pro-league"
+  },
+  "niko-takahashi": {
+   "nameJa": "髙橋仁胡",
+   "club": "ホルシュタイン・キール",
+   "league": "bundesliga-2"
+  }
+ }
+}

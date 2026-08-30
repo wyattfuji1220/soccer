@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { PlayerBrowser } from "./PlayerBrowser";
+import { playerLists } from "@/lib/lists";
 import { Jp } from "@/lib/jp";
 
 export const metadata: Metadata = {
@@ -15,6 +17,20 @@ export default function PlayersPage() {
       <p className="mt-3 muted text-sm max-w-2xl leading-relaxed">
         リーグとポジションで絞り込めます。所属クラブは移籍により変動するため、各選手ページで最終確認日と出典をご確認ください。
       </p>
+      <div className="mt-5 flex flex-wrap gap-2">
+        <span className="label muted self-center mr-1">切り口から</span>
+        {playerLists.map((l) => (
+          <Link
+            key={l.slug}
+            href={`/lists/${l.slug}/`}
+            className="tap px-3 py-2 rounded-md text-sm surface hover:border-pitch-500/60 transition-colors"
+          >
+            {l.heading}
+            <span className="num muted ml-1.5 text-xs">{l.players.length}</span>
+          </Link>
+        ))}
+      </div>
+
       <PlayerBrowser />
     </Jp>
   );

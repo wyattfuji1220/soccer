@@ -31,8 +31,22 @@ Next.js 15（App Router、`output: "export"` による静的サイト）/ TypeSc
 
 ## データ更新のワークフロー
 
-選手データの自動書き換えは行わない。`npm run data:wikipedia` は照合レポート（`output/data-verification.md`）を
+選手データの自動書き換えは行わない。`npm run data:check` は照合レポート（`output/player-audit.md`）を
 出力するだけで、修正は人間が一次情報を見て判断する。
+
+掲載候補は `npm run data:candidates` が Wikipedia の
+「ヨーロッパのサッカーリーグに所属する日本人選手一覧」から作る。手で書き足さない。
+対象の国と階層は `scripts/fetch-candidates.mjs` の `SCOPE` で決める。
+
+```
+npm run data:players    # 候補 → 選手 → クラブ（毎日、GitHub Actions が実行）
+npm run data:transfers  # 前回との差分を移籍として記録
+npm run data:alumni     # 過去に海外でプレーした選手（重いので週1）
+npm run data:check      # 掲載データとWikipedia原文の突き合わせ
+```
+
+移籍は噂を扱わない。Wikipedia のインフォボックスが書き換わった＝確定したものだけを
+`src/data/transfers.ts` に追記する。日付は「当サイトが確認した日」であって発表日ではない。
 
 ## テスト・検証
 

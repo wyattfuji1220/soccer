@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { players } from "@/data/players";
+import { alumni } from "@/data/alumni";
+import { currentSeasonYear } from "@/lib/transfers";
 import { leagues, leagueMap } from "@/data/leagues";
 import { clubs } from "@/data/clubs";
 import { guides } from "@/data/guides";
@@ -10,6 +12,8 @@ import { getFixtures, groupByNight, playersInFixture } from "@/lib/fixtures";
 import { SITE_URL } from "@/lib/site";
 import type { LeagueId } from "@/lib/types";
 import { Jp } from "@/lib/jp";
+
+const SEASON = currentSeasonYear();
 
 export default function Home() {
   // 静的ビルド時点の日時。クライアント側で実時刻に差し替わる。
@@ -175,6 +179,28 @@ export default function Home() {
           {featured.map((p) => (
             <PlayerCard key={p.slug} player={p} />
           ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-5xl px-4 pt-10 pb-8">
+        <p className="label muted">More</p>
+        <h2 className="text-xl font-bold mt-2 mb-1">移籍と、これまでの歩み</h2>
+        <p className="text-sm muted mb-5">噂は載せません。確定した事実と、積み上がった記録だけを置いています。</p>
+        <div className="grid gap-4 sm:grid-cols-2">
+          <Link href="/transfers/" className="surface rounded-xl p-6 hover:border-pitch-500/60 transition-colors">
+            <p className="label text-pitch-600 dark:text-pitch-300">Transfers</p>
+            <p className="mt-2 font-bold">確定した移籍だけ</p>
+            <p className="mt-2 text-sm muted leading-relaxed">
+              {SEASON}年に所属が変わった選手と、移籍市場が閉まるまでの日数を日本時間で。
+            </p>
+          </Link>
+          <Link href="/history/" className="surface rounded-xl p-6 hover:border-pitch-500/60 transition-colors">
+            <p className="label text-pitch-600 dark:text-pitch-300">History</p>
+            <p className="mt-2 font-bold">日本人選手の海外挑戦史</p>
+            <p className="mt-2 text-sm muted leading-relaxed">
+              1977年の奥寺康彦から今日まで、{alumni.length}人分の記録を年ごとに集計しました。
+            </p>
+          </Link>
         </div>
       </section>
 

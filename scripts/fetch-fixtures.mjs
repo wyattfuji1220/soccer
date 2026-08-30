@@ -174,7 +174,11 @@ async function resolveJapaneseNames(englishNames) {
   return resolved;
 }
 
-const dateFrom = new Date().toISOString().slice(0, 10);
+/*
+ * 過去7日ぶんも取る。終わった試合はスコアつきで返ってくるので、
+ * 「先週どうだったか」を結果として出せる。無料枠でも同じエンドポイントで済む。
+ */
+const dateFrom = new Date(Date.now() - 7 * 86400000).toISOString().slice(0, 10);
 const dateTo = new Date(Date.now() + 21 * 86400000).toISOString().slice(0, 10);
 
 const matches = [];
