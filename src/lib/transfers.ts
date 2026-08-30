@@ -46,7 +46,14 @@ export function movesInYear(year: number, list: Player[] = players): SeasonMove[
       out.push({ player, to: row, from, league: player.league });
     }
   }
-  return out.sort((a, b) => a.player.nameJa.localeCompare(b.player.nameJa, "ja"));
+  /*
+   * 同じ年に同じクラブの行が2つ並ぶことがある。期限付きで加入したあと
+   * 完全移籍に切り替わった場合で、Wikipediaでは別の行に書かれる。
+   * 移籍としては1件なので、あとの行（＝現在の契約）だけを残す。
+   */
+  const latest = new Map<string, SeasonMove>();
+  for (const m of out) latest.set(`${m.player.slug} / ${m.to.team}`, m);
+  return [...latest.values()].sort((a, b) => a.player.nameJa.localeCompare(b.player.nameJa, "ja"));
 }
 
 /** 日本のクラブから欧州へ渡った移籍だけを取り出す */
