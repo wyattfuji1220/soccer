@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { WatchPlanFinder } from "./WatchPlanFinder";
 import { Jp } from "@/lib/jp";
 
@@ -49,6 +50,20 @@ export default function WatchPlanPage() {
       </p>
 
       <WatchPlanFinder />
+
+      <section className="mt-14 surface rounded-xl p-6">
+        <p className="label muted">Reverse Check</p>
+        <p className="mt-2 font-bold">すでに契約している場合は、逆から調べられます</p>
+        <p className="mt-2 text-sm muted leading-relaxed">
+          いま契約しているサービスを選ぶと、観られる選手と取りこぼしている選手が分かります。あと1社足すと何人増えるかも計算します。
+        </p>
+        <Link
+          href="/watch-plan/coverage/"
+          className="mt-4 inline-block px-4 py-2.5 rounded-lg bg-pitch-500 text-white text-sm font-semibold hover:bg-pitch-600 transition-colors"
+        >
+          契約から逆引きする →
+        </Link>
+      </section>
 
       <section className="mt-16">
         <h2 className="text-lg font-bold mb-5">よくある質問</h2>
