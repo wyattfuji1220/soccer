@@ -848,7 +848,7 @@ export const alumni: Alumnus[] = [
     article: "宮市亮",
     from: 2011,
     to: 2021,
-    spells: [{ club: "アーセナルFC", country: "ENG", from: 2011, to: 2015 }, { club: "フェイエノールト", country: "NED", from: 2011, to: 2011 }, { club: "ボルトン・ワンダラーズFC", country: "ENG", from: 2012, to: 2012 }, { club: "ウィガン・アスレティックFC", country: "ENG", from: 2012, to: 2013 }, { club: "FCトゥウェンテ", country: "NED", from: 2014, to: 2015 }, { club: "FCザンクトパウリ", country: "DEU", from: 2015, to: 2021 }],
+    spells: [{ club: "アーセナルFC", country: "ENG", from: 2011, to: 2015 }, { club: "フェイエノールト", country: "NED", from: 2011, to: 2011 }, { club: "ボルトン・ワンダラーズFC", country: "ENG", from: 2012, to: 2012 }, { club: "ウィガン・アスレティックFC", country: "ENG", from: 2012, to: 2013 }, { club: "FCトゥウェンテ", country: "NED", from: 2014, to: 2015 }, { club: "FCトゥウェンテ", country: "NED", from: 2014, to: 2015 }, { club: "FCザンクトパウリ", country: "DEU", from: 2015, to: 2021 }, { club: "FCザンクトパウリ", country: "DEU", from: 2015, to: 2019 }],
   },
   {
     nameJa: "高木善朗",
