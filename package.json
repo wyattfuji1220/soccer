@@ -17,6 +17,7 @@
     "data:videos": "node scripts/verify-videos.mjs",
     "data:transfers": "node scripts/detect-transfers.mjs",
     "data:alumni": "node scripts/fetch-alumni.mjs",
+    "data:standings": "node scripts/fetch-standings.mjs",
     "data:season": "node scripts/fetch-season-stats.mjs && node scripts/generate-season-stats.mjs",
     "data:check": "node scripts/check-players.mjs",
     "data:candidates": "node scripts/fetch-candidates.mjs --report",

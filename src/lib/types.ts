@@ -124,6 +124,28 @@ export type SeasonStat = {
   source: string | null;
 };
 
+/**
+ * 順位表の1行。日本人選手が所属するクラブぶんだけを持つ。
+ * 無料枠で順位表を取れるリーグ（footballDataCode があるもの）に限られる。
+ */
+export type Standing = {
+  league: LeagueId;
+  club: string;
+  clubEn: string;
+  players: string[];
+  position: number;
+  /** そのリーグの参加チーム数 */
+  total: number;
+  played: number;
+  points: number;
+  won: number;
+  draw: number;
+  lost: number;
+  goalDifference: number;
+  /** 首位との勝点差 */
+  behindLeader: number | null;
+};
+
 export type CupId =
   | "champions-league"
   | "europa-league"

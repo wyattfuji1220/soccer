@@ -9,7 +9,7 @@ import { SITE_URL } from "@/lib/site";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPaths = ["", "/players", "/clubs", "/fixtures", "/rankings", "/transfers", "/history", "/watch-plan", "/watch-plan/coverage", "/cups", "/guides", "/about", "/privacy"];
+  const staticPaths = ["", "/players", "/clubs", "/fixtures", "/rankings", "/standings", "/transfers", "/history", "/watch-plan", "/watch-plan/coverage", "/cups", "/guides", "/about", "/privacy"];
   return [
     ...staticPaths.map((p) => ({
       url: `${SITE_URL}${p}/`,

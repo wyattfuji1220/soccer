@@ -33,13 +33,14 @@ jobs:
       - name: 型チェック
         run: npm run typecheck
 
-      - name: 試合日程を取得
+      - name: 試合日程と順位表を取得
         # APIキーが未設定のうちはスキップされ、サンプル日程のままビルドされる
         env:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
         run: |
           if [ -n "$FOOTBALL_DATA_TOKEN" ]; then
             npm run data:fixtures
+            npm run data:standings
           else
             echo "FOOTBALL_DATA_TOKEN が未設定のため、サンプル日程のままビルドします"
           fi
