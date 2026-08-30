@@ -12,6 +12,7 @@
     "assets:icons": "node scripts/make-icons.mjs",
     "assets:og-font": "python scripts/make-og-font.py",
     "assets:font": "python scripts/make-font.py",
+    "check:highlights": "node scripts/check-highlights.mjs",
     "data:wikipedia": "node scripts/fetch-wikipedia.mjs",
     "data:fixtures": "node scripts/fetch-fixtures.mjs",
     "data:competitions": "node scripts/check-competitions.mjs",
