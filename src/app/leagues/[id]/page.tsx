@@ -26,9 +26,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const league = leagues.find((l) => l.id === id);
   if (!league) return {};
   const n = players.filter((p) => p.league === league.id).length;
+  const title = `${league.name}の日本人選手${n}人｜所属クラブと視聴方法`;
+  const description = `${league.name}（${league.country}）でプレーする日本人選手${n}人を、所属クラブ・今季の成績とあわせて一覧にしています。日本から試合を観る方法もまとめました。`;
+  const image = { url: `/leagues/${league.id}/og.png`, width: 1200, height: 630, alt: league.name };
   return {
-    title: `${league.name}の日本人選手${n}人｜所属クラブと視聴方法`,
-    description: `${league.name}（${league.country}）でプレーする日本人選手${n}人を、所属クラブ・今季の成績とあわせて一覧にしています。日本から試合を観る方法もまとめました。`,
+    title,
+    description,
+    openGraph: { title, description, images: [image] },
+    twitter: { title, description, images: [image] },
   };
 }
 

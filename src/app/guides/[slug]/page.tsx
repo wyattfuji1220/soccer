@@ -18,7 +18,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const guide = guides.find((g) => g.slug === slug);
   if (!guide) return {};
-  return { title: guide.title, description: guide.description };
+  const image = { url: `/guides/${guide.slug}/og.png`, width: 1200, height: 630, alt: guide.title };
+  return {
+    title: guide.title,
+    description: guide.description,
+    openGraph: { title: guide.title, description: guide.description, images: [image] },
+    twitter: { title: guide.title, description: guide.description, images: [image] },
+  };
 }
 
 function BlockView({ block }: { block: Block }) {

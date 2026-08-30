@@ -29,9 +29,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const player = players.find((p) => p.slug === slug);
   if (!player) return {};
   const league = leagueMap[player.league];
+  const title = `${player.nameJa}（${player.club}）の経歴・所属・視聴方法`;
+  const description = `${player.nameJa}（${player.nameEn}）の所属クラブ、ポジション、経歴を出典付きで整理。${league.name}の試合を日本から観る方法もまとめています。`;
+  // 選手名の入ったカード画像。共有されたときに誰のページか分かるようにする
+  const image = { url: `/players/${player.slug}/og.png`, width: 1200, height: 630, alt: player.nameJa };
   return {
-    title: `${player.nameJa}（${player.club}）の経歴・所属・視聴方法`,
-    description: `${player.nameJa}（${player.nameEn}）の所属クラブ、ポジション、経歴を出典付きで整理。${league.name}の試合を日本から観る方法もまとめています。`,
+    title,
+    description,
+    openGraph: { title, description, images: [image] },
+    twitter: { title, description, images: [image] },
   };
 }
 

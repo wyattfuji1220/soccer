@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fclubs\u002F[slug]","\u002Fguides\u002F[slug]","\u002Fguides\u002F[slug]\u002Fog.png","\u002Fleagues\u002F[id]","\u002Fleagues\u002F[id]\u002Fog.png","\u002Flists\u002F[slug]","\u002Fplayers\u002F[slug]","\u002Fplayers\u002F[slug]\u002Fog.png"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

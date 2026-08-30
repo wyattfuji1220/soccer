@@ -69,6 +69,20 @@ npm run typecheck
 npm run build
 ```
 
+## SNS用のカード画像（OGP）
+
+選手・リーグ・記事のページは `og.png` というルートで画像を作る（`src/lib/og.tsx`）。
+Next の `opengraph-image.tsx` は拡張子の無いファイルとして書き出され、
+GitHub Pages では画像として配信されないため使わない。
+
+描画に使う書体は `scripts/fonts/og-*.ttf`。元の Noto Sans JP は可変フォントで
+Satori が扱えないため、太さを固定した静的なTTFを別に作っている。
+**選手やクラブを増やしたら作り直すこと**（収録外の文字は豆腐になる）。
+
+```
+npm run assets:og-font
+```
+
 ## 成果物の置き場所
 
 `output/site/` にビルド済みサイトを置く（`npm run export:output`）。
