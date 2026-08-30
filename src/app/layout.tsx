@@ -54,6 +54,7 @@ const nav = [
   { href: "/players/", label: "選手一覧" },
   { href: "/clubs/", label: "クラブ別" },
   { href: "/fixtures/", label: "試合日程" },
+  { href: "/results/", label: "試合結果" },
   { href: "/rankings/", label: "ランキング" },
   { href: "/standings/", label: "順位表" },
   { href: "/transfers/", label: "移籍" },

@@ -146,6 +146,23 @@ export type Standing = {
   behindLeader: number | null;
 };
 
+/**
+ * 権利者の公式チャンネルに投稿された試合ハイライト。
+ * 動画IDと題名だけを持ち、映像は扱わない。表示はYouTubeのプレーヤーへの
+ * リンクで、当サイトが保存も再配信もしない。
+ */
+export type Highlight = {
+  videoId: string;
+  /** YYYY-MM-DD。試合との突き合わせに使う */
+  publishedAt: string;
+  channel: string;
+  title: string;
+  /** 題名に出てきた掲載クラブ（src/data/clubs.ts の name） */
+  clubs: string[];
+  /** 題名に出てきた掲載選手 */
+  players: string[];
+};
+
 export type CupId =
   | "champions-league"
   | "europa-league"

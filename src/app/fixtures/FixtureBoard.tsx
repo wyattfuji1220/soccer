@@ -191,18 +191,18 @@ export function FixtureBoard({ rows, todayNight, leagues }: Props) {
       </div>
 
       {pastShown.length > 0 && (
-        <details className="mt-10 surface rounded-lg">
-          <summary className="cursor-pointer px-5 py-4 text-sm font-semibold">
-            終わった試合を見る
-            <span className="num muted ml-2 font-normal">{pastShown.length}試合</span>
-          </summary>
-          <div className="px-5 pb-2">
-            <p className="text-xs muted mb-2 leading-relaxed">ここではスコアをそのまま表示します。</p>
-            {pastShown.map((r) => (
-              <Row key={r.id} row={r} showScore />
-            ))}
-          </div>
-        </details>
+        <Link
+          href="/results/"
+          className="mt-10 surface rounded-lg px-5 py-4 flex items-center justify-between gap-4 hover:border-pitch-500/60 transition-colors"
+        >
+          <span>
+            <span className="font-semibold text-sm">終わった試合とハイライト</span>
+            <span className="block text-xs muted mt-1">
+              直近の{pastShown.length}試合。公式チャンネルのハイライトがあれば一緒に並べています。
+            </span>
+          </span>
+          <span className="text-sm font-semibold text-pitch-600 dark:text-pitch-300 whitespace-nowrap">結果を見る →</span>
+        </Link>
       )}
     </div>
   );

@@ -45,6 +45,17 @@ jobs:
       - name: 今季の成績を取り直す
         run: npm run data:season
 
+      - name: ハイライト動画を取り直す
+        # キーが未設定なら前回の内容のままビルドする
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: |
+          if [ -n "$YOUTUBE_API_KEY" ]; then
+            npm run data:highlights
+          else
+            echo "YOUTUBE_API_KEY が未設定のため、ハイライトの更新をとばします"
+          fi
+
       - name: 掲載データを点検する
         run: npm run data:check
 

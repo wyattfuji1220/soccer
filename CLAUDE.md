@@ -46,7 +46,13 @@ npm run data:alumni     # 過去に海外でプレーした選手（重いので
 npm run data:check      # 掲載データとWikipedia原文の突き合わせ
 npm run data:fixtures   # 試合日程と結果（要 FOOTBALL_DATA_TOKEN）
 npm run data:standings  # 順位表（要 FOOTBALL_DATA_TOKEN）
+npm run data:highlights # 試合ハイライト（要 YOUTUBE_API_KEY）
 ```
+
+ハイライトは権利者の公式チャンネル（DAZN Japan / U-NEXT フットボール）の投稿だけを扱う。
+動画IDと題名を持つだけで、映像は保存も再配信もしない。リーグでは絞らないので、
+権利者が新しいリーグの投稿を始めれば自動的に載る。
+どれだけ出ているかは `npm run check:highlights` で数えられる。
 
 今季の成績は英語版Wikipediaの「Career statistics」表から取る。日本語版の
 インフォボックスはクラブ在籍中の通算値しか持たず、今季ぶんを切り出せない。
