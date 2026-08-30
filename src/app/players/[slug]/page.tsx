@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { players } from "@/data/players";
 import { leagueMap } from "@/data/leagues";
+import { season, seasonStatMap } from "@/data/season-stats";
 import { clubsForPlayer } from "@/data/clubs";
 import { PositionBadge, ConfidenceBadge, LoanBadge, AdDisclosure } from "@/components/Badges";
 import { PlayerVideos } from "@/components/PlayerVideos";
@@ -38,6 +39,7 @@ export default async function PlayerPage({ params }: Props) {
   if (!player) notFound();
 
   const league = leagueMap[player.league];
+  const stat = seasonStatMap[player.slug];
   const latestCheck = player.sources[0]?.checkedAt;
   const relatedClubs = clubsForPlayer(player.nameJa);
   const loan = loanStatus(player);
@@ -108,6 +110,41 @@ export default async function PlayerPage({ params }: Props) {
           ))}
         </dl>
       </section>
+
+      {stat && (
+        <section className="mt-10">
+          <h2 className="text-xl font-bold mb-1">今季の記録（{season}）</h2>
+          <p className="text-sm muted mb-4 leading-relaxed max-w-[40em]">
+            リーグ戦のみの記録です。カップ戦・欧州カップ・代表戦は含みません。
+          </p>
+          <div className="surface rounded-xl grid grid-cols-2 sm:grid-cols-3 divide-x" style={{ borderColor: "var(--border)" }}>
+            <div className="px-5 py-4">
+              <p className="label muted">出場</p>
+              <p className="num text-3xl font-semibold mt-1">{stat.apps}</p>
+            </div>
+            <div className="px-5 py-4">
+              <p className="label muted">得点</p>
+              <p className="num text-3xl font-semibold mt-1">{stat.goals}</p>
+            </div>
+            <div className="px-5 py-4 col-span-2 sm:col-span-1">
+              <p className="label muted">この数字の時点</p>
+              <p className="num text-sm mt-2">{stat.updatedAt ?? "記載なし"}</p>
+            </div>
+          </div>
+          <p className="mt-3 text-xs muted leading-relaxed max-w-[42em]">
+            出典:{" "}
+            <a
+              href={`https://en.wikipedia.org/wiki/${encodeURIComponent(stat.source ?? "")}`}
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="text-pitch-600 dark:text-pitch-300 hover:underline"
+            >
+              英語版Wikipedia「{stat.source}」の Career statistics
+            </a>
+            。表が更新されるまで直近の試合は反映されません。
+          </p>
+        </section>
+      )}
 
       {player.facts && player.facts.length > 0 && (
         <section className="mt-10">

@@ -123,8 +123,19 @@ export function parsePlayer(text) {
   const pos = stripMarkup(posRaw ?? "").match(/\b(GK|DF|MF|FW)\b/);
   const number = stripMarkup(templateField(text, "背番号") ?? "").match(/\d+/);
   const alpha = stripMarkup(templateField(text, "アルファベット表記") ?? "");
+  /*
+   * 「クラブ成績更新日」は、出場数・得点数がいつ時点のものかを書いた欄。
+   * 今季の積み上げをこの数字の差から出すので、鮮度を必ず一緒に持ち回る。
+   * 「2025年5月26日」のほか「2025-05-26」形式もある。
+   */
+  const statsRaw = stripMarkup(templateField(text, "クラブ成績更新日") ?? "");
+  const statsDate =
+    statsRaw.match(/(\d{4})年\s*(\d{1,2})月\s*(\d{1,2})日/) ?? statsRaw.match(/(\d{4})-(\d{1,2})-(\d{1,2})/);
 
   return {
+    statsCheckedAt: statsDate
+      ? `${statsDate[1]}-${String(statsDate[2]).padStart(2, "0")}-${String(statsDate[3]).padStart(2, "0")}`
+      : null,
     birthDate: birth ? `${birth[1]}-${String(birth[2]).padStart(2, "0")}-${String(birth[3]).padStart(2, "0")}` : null,
     career: parseCareer(text, "年", "クラブ", "出場", "得点"),
     nationalCareer: parseCareer(text, "代表年", "代表", "代表出場", "代表得点"),

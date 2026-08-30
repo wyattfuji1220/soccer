@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { players } from "@/data/players";
+import { seasonStats } from "@/data/season-stats";
 import { leagueMap } from "@/data/leagues";
 import { metrics, rankBy } from "@/lib/rankings";
 import { RankingBoard } from "./RankingBoard";
@@ -49,7 +50,11 @@ export default function RankingsPage() {
         <h2 className="text-lg font-bold mb-3">この数字の出どころと限界</h2>
         <ul className="space-y-3 text-sm leading-relaxed muted">
           <li>
-            <strong style={{ color: "var(--text)" }}>出典はWikipedia日本語版です。</strong>{" "}
+            <strong style={{ color: "var(--text)" }}>今季の記録だけ出どころが違います。</strong>{" "}
+            日本語版のインフォボックスはクラブ在籍中の通算値しか持たないため、今季ぶんは英語版の「Career statistics」表から取っています。今季の行がまだ書かれていない選手はランキングに現れません（{players.length}人中{seasonStats.length}人が対象）。0試合という意味ではない点にご注意ください。
+          </li>
+          <li>
+            <strong style={{ color: "var(--text)" }}>通算の出典はWikipedia日本語版です。</strong>{" "}
             各選手のクラブ遍歴と代表歴に記載された出場数・得点数を合計しています。有料の統計サービスは使っていません。
           </li>
           <li>

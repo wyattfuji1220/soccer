@@ -309,6 +309,7 @@ const result = parsed.map((p) => {
     birthDate: p.birthDate,
     position: p.position,
     squadNumber: p.squadNumber,
+    statsCheckedAt: p.statsCheckedAt,
     career: p.career,
     nationalCareer: p.nationalCareer,
     country: p.country,

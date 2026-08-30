@@ -1,0 +1,446 @@
+{
+ "season": "2026-27",
+ "takenAt": "2026-08-30",
+ "players": {
+  "ハーフナー・ニッキ": {
+   "division": "Belgian Pro League",
+   "apps": 1,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-15",
+   "source": "Nikki Havenaar"
+  },
+  "安藤晃希": {
+   "division": "Belgian Pro League",
+   "apps": 0,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-05-30",
+   "source": "Koki Ando (footballer)"
+  },
+  "安藤智哉": {
+   "division": "2. Bundesliga",
+   "apps": 2,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-23",
+   "source": "Tomoya Ando"
+  },
+  "伊東純也": {
+   "division": "Belgian Pro League",
+   "apps": 3,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-22",
+   "source": "Junya Itō"
+  },
+  "伊藤敦樹": {
+   "division": "EFL Championship",
+   "apps": 0,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-05-31",
+   "source": "Atsuki Itō"
+  },
+  "伊藤洋輝": {
+   "division": "Bundesliga",
+   "apps": 0,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-05-23",
+   "source": "Hiroki Itō (footballer, born 1999)"
+  },
+  "宇野禅斗": {
+   "division": "Bundesliga",
+   "apps": 0,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-05-24",
+   "source": "Zento Uno"
+  },
+  "塩貝健人": {
+   "division": "2. Bundesliga",
+   "apps": 2,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-24",
+   "source": "Kento Shiogai"
+  },
+  "横山歩夢": {
+   "division": "Belgian Pro League",
+   "apps": 3,
+   "goals": 1,
+   "european": true,
+   "updatedAt": "2026-08-22",
+   "source": "Ayumu Yokoyama"
+  },
+  "鎌田大地": {
+   "division": "Premier League",
+   "apps": 1,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-22",
+   "source": "Daichi Kamada"
+  },
+  "喜多壱也": {
+   "division": "Segunda División",
+   "apps": 0,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-05-24",
+   "source": "Kazunari Kita"
+  },
+  "旗手怜央": {
+   "division": null,
+   "apps": 0,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-25",
+   "source": "Reo Hatate"
+  },
+  "久保建英": {
+   "division": "La Liga",
+   "apps": 3,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-29",
+   "source": "Takefusa Kubo"
+  },
+  "橋岡大樹": {
+   "division": "Bundesliga",
+   "apps": 0,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-23",
+   "source": "Daiki Hashioka"
+  },
+  "原大智": {
+   "division": "2. Bundesliga",
+   "apps": 2,
+   "goals": 1,
+   "european": true,
+   "updatedAt": "2026-08-23",
+   "source": "Taichi Hara"
+  },
+  "後藤啓介": {
+   "division": "Bundesliga",
+   "apps": 0,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-27",
+   "source": "Keisuke Gotō"
+  },
+  "荒木遼太郎": {
+   "division": "Belgian Pro League",
+   "apps": 0,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-20",
+   "source": "Ryōtarō Araki"
+  },
+  "高岡伶颯": {
+   "division": "Challenger Pro League",
+   "apps": 2,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-22",
+   "source": "Rento Takaoka"
+  },
+  "佐藤龍之介": {
+   "division": "La Liga",
+   "apps": 0,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-03-06",
+   "source": "Ryūnosuke Satō"
+  },
+  "佐野海舟": {
+   "division": "Bundesliga",
+   "apps": 0,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-23",
+   "source": "Kaishū Sano"
+  },
+  "佐野航大": {
+   "division": "Eredivisie",
+   "apps": 2,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-23",
+   "source": "Kodai Sano (footballer)"
+  },
+  "坂元達裕": {
+   "division": "Premier League",
+   "apps": 1,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-29",
+   "source": "Tatsuhiro Sakamoto"
+  },
+  "三戸舜介": {
+   "division": "Eredivisie",
+   "apps": 3,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-22",
+   "source": "Shunsuke Mito"
+  },
+  "三好康児": {
+   "division": null,
+   "apps": 2,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-23",
+   "source": "Kōji Miyoshi"
+  },
+  "山本理仁": {
+   "division": "Bundesliga",
+   "apps": 0,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-05-24",
+   "source": "Rihito Yamamoto"
+  },
+  "市原吏音": {
+   "division": "Eredivisie",
+   "apps": 1,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-15",
+   "source": "Rion Ichihara"
+  },
+  "守田英正": {
+   "division": "Premier League",
+   "apps": 0,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-25",
+   "source": "Hidemasa Morita"
+  },
+  "小杉啓太": {
+   "division": "Bundesliga",
+   "apps": 0,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-21",
+   "source": "Keita Kosugi"
+  },
+  "小林友希": {
+   "division": "Ekstraklasa",
+   "apps": 3,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-27",
+   "source": "Yuki Kobayashi (footballer, born 2000)"
+  },
+  "松岡大起": {
+   "division": "Slovak First Football League",
+   "apps": 4,
+   "goals": 1,
+   "european": true,
+   "updatedAt": "2026-08-22",
+   "source": "Daiki Matsuoka"
+  },
+  "松木玖生": {
+   "division": "Championship",
+   "apps": 3,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-29",
+   "source": "Kuryu Matsuki"
+  },
+  "上田綺世": {
+   "division": "Eredivisie",
+   "apps": 3,
+   "goals": 2,
+   "european": true,
+   "updatedAt": "2026-08-16",
+   "source": "Ayase Ueda"
+  },
+  "森下龍矢": {
+   "division": "Championship",
+   "apps": 1,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-14",
+   "source": "Ryōya Morishita"
+  },
+  "水多海斗": {
+   "division": "Ligue 1",
+   "apps": 1,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-23",
+   "source": "Kaito Mizuta"
+  },
+  "菅原由勢": {
+   "division": "Championship",
+   "apps": 0,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-05-09",
+   "source": "Yukinari Sugawara"
+  },
+  "瀬古歩夢": {
+   "division": null,
+   "apps": 1,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-23",
+   "source": "Ayumu Seko"
+  },
+  "斉藤光毅": {
+   "division": "EFL Championship",
+   "apps": 1,
+   "goals": 1,
+   "european": true,
+   "updatedAt": "2026-08-15",
+   "source": "Kōki Saitō (footballer)"
+  },
+  "川﨑颯太": {
+   "division": "Bundesliga",
+   "apps": 0,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-04-16",
+   "source": "Sōta Kawasaki"
+  },
+  "前田大然": {
+   "division": "Premier League",
+   "apps": 1,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-25",
+   "source": "Daizen Maeda"
+  },
+  "大橋祐紀": {
+   "division": "Championship",
+   "apps": 1,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-14",
+   "source": "Yūki Ōhashi"
+  },
+  "中村草太": {
+   "division": "Ligue 1",
+   "apps": 1,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-23",
+   "source": "Sōta Nakamura"
+  },
+  "町野修斗": {
+   "division": "Bundesliga",
+   "apps": 0,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-23",
+   "source": "Shūto Machino"
+  },
+  "長田澪": {
+   "division": "Bundesliga",
+   "apps": 0,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-27",
+   "source": "Mio Backhaus"
+  },
+  "田中聡": {
+   "division": "Bundesliga",
+   "apps": 0,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-24",
+   "source": "Satoshi Tanaka"
+  },
+  "田中碧": {
+   "division": "Premier League",
+   "apps": 0,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-25",
+   "source": "Ao Tanaka"
+  },
+  "渡辺剛": {
+   "division": "Eredivisie",
+   "apps": 1,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-16",
+   "source": "Tsuyoshi Watanabe"
+  },
+  "藤田譲瑠チマ": {
+   "division": "2. Bundesliga",
+   "apps": 2,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-23",
+   "source": "Joel Chima Fujita"
+  },
+  "板倉滉": {
+   "division": "Bundesliga",
+   "apps": 0,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-23",
+   "source": "Kō Itakura"
+  },
+  "冨安健洋": {
+   "division": "Premier League",
+   "apps": 1,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-22",
+   "source": "Takehiro Tomiyasu"
+  },
+  "福田師王": {
+   "division": "2. Bundesliga",
+   "apps": 0,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-05-17",
+   "source": "Shiō Fukuda"
+  },
+  "北野颯太": {
+   "division": "Austrian Bundesliga",
+   "apps": 2,
+   "goals": 1,
+   "european": true,
+   "updatedAt": "2026-08-27",
+   "source": "Sōta Kitano"
+  },
+  "毎熊晟矢": {
+   "division": "Eredivisie",
+   "apps": 2,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-22",
+   "source": "Seiya Maikuma"
+  },
+  "鈴木彩艶": {
+   "division": "Premier League",
+   "apps": 0,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-05-17",
+   "source": "Zion Suzuki"
+  },
+  "鈴木淳之介": {
+   "division": "Danish Superliga",
+   "apps": 4,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-27",
+   "source": "Junnosuke Suzuki"
+  },
+  "鈴木唯人": {
+   "division": "Bundesliga",
+   "apps": 0,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-27",
+   "source": "Yuito Suzuki"
+  }
+ }
+}

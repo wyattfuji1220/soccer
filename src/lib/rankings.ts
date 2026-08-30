@@ -1,5 +1,6 @@
 import type { CareerRow, Player } from "@/lib/types";
 import { players } from "@/data/players";
+import { season, seasonStatMap } from "@/data/season-stats";
 
 /**
  * 掲載データからリーグ横断のランキングを組み立てる。
@@ -10,6 +11,8 @@ import { players } from "@/data/players";
  */
 
 export type MetricId =
+  | "season-goals"
+  | "season-apps"
   | "abroad-apps"
   | "abroad-goals"
   | "caps"
@@ -68,6 +71,27 @@ function caps(p: Player): number | null {
 const THIS_YEAR = new Date().getFullYear();
 
 export const metrics: Metric[] = [
+  /*
+   * 今季ぶんだけは英語版Wikipediaの成績表から取っている。日本語版の
+   * インフォボックスはクラブ在籍中の通算値しか持たず、今季を切り出せないため。
+   * 記載がまだ無い選手はランキングに現れない。0試合という意味ではない。
+   */
+  {
+    id: "season-goals",
+    name: `今季の得点（${season}）`,
+    unit: "点",
+    note: `${season}シーズンのリーグ戦の得点です。英語版Wikipediaの成績表に今季の行がある選手だけが対象で、カップ戦・欧州カップ・代表戦は含みません。`,
+    order: "desc",
+    value: (p) => seasonStatMap[p.slug]?.goals ?? null,
+  },
+  {
+    id: "season-apps",
+    name: `今季の出場（${season}）`,
+    unit: "試合",
+    note: `${season}シーズンのリーグ戦の出場数です。選手ごとに数字の更新時点が違うため、順位は目安としてご覧ください。`,
+    order: "desc",
+    value: (p) => seasonStatMap[p.slug]?.apps ?? null,
+  },
   {
     id: "abroad-apps",
     name: "海外クラブ通算出場数",

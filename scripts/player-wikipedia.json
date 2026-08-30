@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-29",
+  "fetchedAt": "2026-08-30",
   "missing": [],
   "players": [
     {
@@ -8,6 +8,7 @@
       "birthDate": "2000-11-01",
       "position": "MF",
       "squadNumber": null,
+      "statsCheckedAt": "2026-07-03",
       "career": [
         {
           "years": "2019",
@@ -69,7 +70,7 @@
       "leagueDivision": "2部",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "チェイス・アンリ",
@@ -77,6 +78,7 @@
       "birthDate": "2004-03-24",
       "position": "DF",
       "squadNumber": 45,
+      "statsCheckedAt": "2026-08-21",
       "career": [
         {
           "years": "2022-",
@@ -146,7 +148,7 @@
       "leagueDivision": "1部",
       "leagueId": "austrian-bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "ハーフナー・ニッキ",
@@ -154,6 +156,7 @@
       "birthDate": "1995-02-16",
       "position": "DF",
       "squadNumber": null,
+      "statsCheckedAt": null,
       "career": [
         {
           "years": "2013-2015",
@@ -247,7 +250,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "ポープ・ウィリアム",
@@ -255,6 +258,7 @@
       "birthDate": "1994-10-21",
       "position": "GK",
       "squadNumber": null,
+      "statsCheckedAt": "2026-01-25",
       "career": [
         {
           "years": "2013-2017",
@@ -364,7 +368,7 @@
       "leagueDivision": "2部",
       "leagueId": "challenger-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "安藤晃希",
@@ -372,6 +376,7 @@
       "birthDate": "2007-09-22",
       "position": "MF",
       "squadNumber": 33,
+      "statsCheckedAt": "2026-06-18",
       "career": [
         {
           "years": "2026",
@@ -400,7 +405,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "安藤智哉",
@@ -408,6 +413,7 @@
       "birthDate": "1999-01-10",
       "position": "DF",
       "squadNumber": 15,
+      "statsCheckedAt": "2023-11-12",
       "career": [
         {
           "years": "2021-2022",
@@ -469,7 +475,7 @@
       "leagueDivision": "2部",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "安部大晴",
@@ -477,6 +483,7 @@
       "birthDate": "2004-06-07",
       "position": "MF",
       "squadNumber": null,
+      "statsCheckedAt": "2026-06-30",
       "career": [
         {
           "years": "2021-",
@@ -522,7 +529,7 @@
       "leagueDivision": "2部",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "伊東純也",
@@ -530,6 +537,7 @@
       "birthDate": "1993-03-09",
       "position": "MF",
       "squadNumber": 10,
+      "statsCheckedAt": "2026-08-10",
       "career": [
         {
           "years": "2015",
@@ -599,7 +607,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "伊藤敦樹",
@@ -607,6 +615,7 @@
       "birthDate": "1998-08-11",
       "position": "MF",
       "squadNumber": null,
+      "statsCheckedAt": "2026-08-29",
       "career": [
         {
           "years": "2021-2024",
@@ -652,7 +661,7 @@
       "leagueDivision": "2部",
       "leagueId": "championship",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "伊藤洋輝",
@@ -660,6 +669,7 @@
       "birthDate": "1999-05-12",
       "position": "DF",
       "squadNumber": 21,
+      "statsCheckedAt": "2025-05-28",
       "career": [
         {
           "years": "2018-2022",
@@ -729,7 +739,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "宇野禅斗",
@@ -737,6 +747,7 @@
       "birthDate": "2003-11-20",
       "position": "MF",
       "squadNumber": 47,
+      "statsCheckedAt": "2026-07-04",
       "career": [
         {
           "years": "2022-2024",
@@ -790,7 +801,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "浦田樹",
@@ -798,6 +809,7 @@
       "birthDate": "1997-01-29",
       "position": "DF",
       "squadNumber": 25,
+      "statsCheckedAt": "2025-01-21",
       "career": [
         {
           "years": "2015-2017",
@@ -907,7 +919,7 @@
       "leagueDivision": "1部",
       "leagueId": null,
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "遠藤航",
@@ -915,6 +927,7 @@
       "birthDate": "1993-02-09",
       "position": "MF",
       "squadNumber": 3,
+      "statsCheckedAt": "2026-05-26",
       "career": [
         {
           "years": "2010-2015",
@@ -1000,7 +1013,7 @@
       "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "塩貝健人",
@@ -1008,6 +1021,7 @@
       "birthDate": "2005-03-26",
       "position": "FW",
       "squadNumber": 7,
+      "statsCheckedAt": "2025-05-28",
       "career": [
         {
           "years": "2024",
@@ -1069,7 +1083,7 @@
       "leagueDivision": "2部",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "横山歩夢",
@@ -1077,6 +1091,7 @@
       "birthDate": "2003-03-04",
       "position": "FW",
       "squadNumber": 64,
+      "statsCheckedAt": "2026-06-28",
       "career": [
         {
           "years": "2021-2022",
@@ -1129,7 +1144,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "横田大祐",
@@ -1137,6 +1152,7 @@
       "birthDate": "2000-06-15",
       "position": "MF",
       "squadNumber": 17,
+      "statsCheckedAt": "2026-08-06",
       "career": [
         {
           "years": "2021-2022",
@@ -1197,7 +1213,7 @@
       "leagueDivision": "1部",
       "leagueId": "scottish-premiership",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "荻原拓也",
@@ -1205,6 +1221,7 @@
       "birthDate": "1999-11-23",
       "position": "DF",
       "squadNumber": null,
+      "statsCheckedAt": "2026-07-17",
       "career": [
         {
           "years": "2018-",
@@ -1266,7 +1283,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "笠柳翼",
@@ -1274,6 +1291,7 @@
       "birthDate": "2003-06-24",
       "position": "MF",
       "squadNumber": 33,
+      "statsCheckedAt": "2026-07-17",
       "career": [
         {
           "years": "2022-",
@@ -1302,7 +1320,7 @@
       "leagueDivision": null,
       "leagueId": "challenger-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "鎌田大地",
@@ -1310,6 +1328,7 @@
       "birthDate": "1996-08-05",
       "position": "MF",
       "squadNumber": 18,
+      "statsCheckedAt": "2026-06-17",
       "career": [
         {
           "years": "2015-2017",
@@ -1371,7 +1390,7 @@
       "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "関根大輝",
@@ -1379,6 +1398,7 @@
       "birthDate": "2002-08-11",
       "position": "DF",
       "squadNumber": 32,
+      "statsCheckedAt": "2026-06-28",
       "career": [
         {
           "years": "2023-2024",
@@ -1432,7 +1452,7 @@
       "leagueDivision": "2部",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "岩田智輝",
@@ -1440,6 +1460,7 @@
       "birthDate": "1997-04-07",
       "position": "MF",
       "squadNumber": 24,
+      "statsCheckedAt": "2026-05-12",
       "career": [
         {
           "years": "2016-2020",
@@ -1517,7 +1538,7 @@
       "leagueDivision": "2部",
       "leagueId": "championship",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "喜多壱也",
@@ -1525,6 +1546,7 @@
       "birthDate": "2005-09-16",
       "position": "DF",
       "squadNumber": 15,
+      "statsCheckedAt": "2026-07-02",
       "career": [
         {
           "years": "2024-2026",
@@ -1561,7 +1583,7 @@
       "leagueDivision": "2部",
       "leagueId": "segunda-division",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "旗手怜央",
@@ -1569,6 +1591,7 @@
       "birthDate": "1997-11-21",
       "position": "MF",
       "squadNumber": 41,
+      "statsCheckedAt": "2025-05-28",
       "career": [
         {
           "years": "2019-2021",
@@ -1622,7 +1645,7 @@
       "leagueDivision": "1部",
       "leagueId": "scottish-premiership",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "吉永夢希",
@@ -1630,6 +1653,7 @@
       "birthDate": "2006-02-22",
       "position": "DF",
       "squadNumber": 55,
+      "statsCheckedAt": "2025-08-13",
       "career": [
         {
           "years": "2024-",
@@ -1658,7 +1682,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "久保建英",
@@ -1666,6 +1690,7 @@
       "birthDate": "2001-06-04",
       "position": "MF",
       "squadNumber": 14,
+      "statsCheckedAt": "2025-11-10",
       "career": [
         {
           "years": "2016-2018",
@@ -1791,7 +1816,7 @@
       "leagueDivision": "1部",
       "leagueId": "la-liga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "宮代大聖",
@@ -1799,6 +1824,7 @@
       "birthDate": "2000-05-26",
       "position": "FW",
       "squadNumber": 18,
+      "statsCheckedAt": "2026-06-26",
       "career": [
         {
           "years": "2018-2023",
@@ -1892,7 +1918,7 @@
       "leagueDivision": "2部",
       "leagueId": "segunda-division",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "橋岡大樹",
@@ -1900,6 +1926,7 @@
       "birthDate": "1999-05-17",
       "position": "DF",
       "squadNumber": 14,
+      "statsCheckedAt": "2026-08-12",
       "career": [
         {
           "years": "2018-2021",
@@ -1985,7 +2012,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "原口元気",
@@ -1993,6 +2020,7 @@
       "birthDate": "1991-05-09",
       "position": "MF",
       "squadNumber": 78,
+      "statsCheckedAt": "2026-05-25",
       "career": [
         {
           "years": "2009-2014",
@@ -2094,7 +2122,7 @@
       "leagueDivision": "2部",
       "leagueId": "challenger-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "原大智",
@@ -2102,6 +2130,7 @@
       "birthDate": "1999-05-05",
       "position": "FW",
       "squadNumber": 18,
+      "statsCheckedAt": "2026-03-20",
       "career": [
         {
           "years": "2017-2019",
@@ -2195,7 +2224,7 @@
       "leagueDivision": "2部",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "古川陽介",
@@ -2203,6 +2232,7 @@
       "birthDate": "2003-07-16",
       "position": "MF",
       "squadNumber": null,
+      "statsCheckedAt": "2025-06-19",
       "career": [
         {
           "years": "2022-2025",
@@ -2239,7 +2269,7 @@
       "leagueDivision": "2部",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "後藤啓介",
@@ -2247,6 +2277,7 @@
       "birthDate": "2005-06-03",
       "position": "FW",
       "squadNumber": 42,
+      "statsCheckedAt": "2026-06-11",
       "career": [
         {
           "years": "2023-2024",
@@ -2332,7 +2363,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "綱島悠斗",
@@ -2340,6 +2371,7 @@
       "birthDate": "2000-08-15",
       "position": "DF",
       "squadNumber": 4,
+      "statsCheckedAt": "2026-06-30",
       "career": [
         {
           "years": "2023-2025",
@@ -2377,7 +2409,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "荒木遼太郎",
@@ -2385,6 +2417,7 @@
       "birthDate": "2002-01-29",
       "position": "MF",
       "squadNumber": 71,
+      "statsCheckedAt": "2026-06-10",
       "career": [
         {
           "years": "2020-2026",
@@ -2438,7 +2471,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "高井幸大",
@@ -2446,6 +2479,7 @@
       "birthDate": "2004-09-04",
       "position": "DF",
       "squadNumber": 25,
+      "statsCheckedAt": "2026-01-02",
       "career": [
         {
           "years": "2022-2025",
@@ -2507,7 +2541,7 @@
       "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "高岡伶颯",
@@ -2515,6 +2549,7 @@
       "birthDate": "2007-03-12",
       "position": "FW",
       "squadNumber": null,
+      "statsCheckedAt": "2025-08-06",
       "career": [
         {
           "years": "2025-2026",
@@ -2560,7 +2595,7 @@
       "leagueDivision": null,
       "leagueId": "challenger-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "佐藤龍之介",
@@ -2568,6 +2603,7 @@
       "birthDate": "2006-10-16",
       "position": "MF",
       "squadNumber": 39,
+      "statsCheckedAt": "2026-06-10",
       "career": [
         {
           "years": "2023-2026",
@@ -2613,7 +2649,7 @@
       "leagueDivision": "1部",
       "leagueId": "la-liga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "佐野海舟",
@@ -2621,6 +2657,7 @@
       "birthDate": "2000-12-30",
       "position": "MF",
       "squadNumber": 6,
+      "statsCheckedAt": "2026-06-21",
       "career": [
         {
           "years": "2019-2022",
@@ -2666,7 +2703,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "佐野航大",
@@ -2674,6 +2711,7 @@
       "birthDate": "2003-09-25",
       "position": "FW",
       "squadNumber": 24,
+      "statsCheckedAt": "2025-05-28",
       "career": [
         {
           "years": "2022-2023",
@@ -2735,7 +2773,7 @@
       "leagueDivision": "1部",
       "leagueId": "eredivisie",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "坂元達裕",
@@ -2743,6 +2781,7 @@
       "birthDate": "1996-10-22",
       "position": "MF",
       "squadNumber": 7,
+      "statsCheckedAt": "2026-05-21",
       "career": [
         {
           "years": "2019",
@@ -2804,7 +2843,7 @@
       "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "坂本一彩",
@@ -2812,6 +2851,7 @@
       "birthDate": "2003-08-26",
       "position": "FW",
       "squadNumber": 13,
+      "statsCheckedAt": "2026-06-08",
       "career": [
         {
           "years": "2020",
@@ -2873,7 +2913,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "三戸舜介",
@@ -2881,6 +2921,7 @@
       "birthDate": "2002-09-28",
       "position": "MF",
       "squadNumber": null,
+      "statsCheckedAt": "2025-05-28",
       "career": [
         {
           "years": "2020-2023",
@@ -2966,7 +3007,7 @@
       "leagueDivision": "1部",
       "leagueId": "eredivisie",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "三好康児",
@@ -2974,6 +3015,7 @@
       "birthDate": "1997-03-26",
       "position": "MF",
       "squadNumber": 23,
+      "statsCheckedAt": "2025-05-18",
       "career": [
         {
           "years": "2015-2020",
@@ -3083,7 +3125,7 @@
       "leagueDivision": "2部",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "三笘薫",
@@ -3091,6 +3133,7 @@
       "birthDate": "1997-05-20",
       "position": "MF",
       "squadNumber": 7,
+      "statsCheckedAt": "2025-05-26",
       "career": [
         {
           "years": "2020-2021",
@@ -3144,7 +3187,7 @@
       "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "山田新",
@@ -3152,6 +3195,7 @@
       "birthDate": "2000-05-30",
       "position": "FW",
       "squadNumber": 20,
+      "statsCheckedAt": "2025-07-19",
       "career": [
         {
           "years": "2023-2025",
@@ -3197,7 +3241,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "山本理仁",
@@ -3205,6 +3249,7 @@
       "birthDate": "2001-12-12",
       "position": "MF",
       "squadNumber": 20,
+      "statsCheckedAt": "2026-06-28",
       "career": [
         {
           "years": "2019-2022",
@@ -3266,7 +3311,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "市原吏音",
@@ -3274,6 +3319,7 @@
       "birthDate": "2005-07-07",
       "position": "DF",
       "squadNumber": 18,
+      "statsCheckedAt": "2026-01-31",
       "career": [
         {
           "years": "2023-2025",
@@ -3327,7 +3373,7 @@
       "leagueDivision": "1部",
       "leagueId": "eredivisie",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "守田英正",
@@ -3335,6 +3381,7 @@
       "birthDate": "1995-05-10",
       "position": "MF",
       "squadNumber": 5,
+      "statsCheckedAt": "2026-07-25",
       "career": [
         {
           "years": "2018-2020",
@@ -3388,7 +3435,7 @@
       "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "秋山裕紀",
@@ -3396,6 +3443,7 @@
       "birthDate": "2000-12-09",
       "position": "MF",
       "squadNumber": 16,
+      "statsCheckedAt": "2026-05-29",
       "career": [
         {
           "years": "2019-",
@@ -3440,7 +3488,7 @@
       "leagueDivision": "2部",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "小久保玲央ブライアン",
@@ -3448,6 +3496,7 @@
       "birthDate": "2001-01-23",
       "position": "GK",
       "squadNumber": 16,
+      "statsCheckedAt": "2026-06-28",
       "career": [
         {
           "years": "2020-2024",
@@ -3517,7 +3566,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "小杉啓太",
@@ -3525,6 +3574,7 @@
       "birthDate": "2006-03-18",
       "position": "DF",
       "squadNumber": 26,
+      "statsCheckedAt": "2025-12-19",
       "career": [
         {
           "years": "2024-2025",
@@ -3586,7 +3636,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "小林友希",
@@ -3594,6 +3644,7 @@
       "birthDate": "2000-07-18",
       "position": "DF",
       "squadNumber": 4,
+      "statsCheckedAt": "2026-05-29",
       "career": [
         {
           "years": "2018-2022",
@@ -3687,7 +3738,7 @@
       "leagueDivision": "1部",
       "leagueId": "ekstraklasa",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "松岡大起",
@@ -3695,6 +3746,7 @@
       "birthDate": "2001-06-01",
       "position": "MF",
       "squadNumber": 41,
+      "statsCheckedAt": "2026-02-07",
       "career": [
         {
           "years": "2019-2021",
@@ -3756,7 +3808,7 @@
       "leagueDivision": "1部",
       "leagueId": "slovak-superliga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "松田隼風",
@@ -3764,6 +3816,7 @@
       "birthDate": "2003-10-02",
       "position": "DF",
       "squadNumber": 3,
+      "statsCheckedAt": "2025-06-22",
       "career": [
         {
           "years": "2022-2025",
@@ -3817,7 +3870,7 @@
       "leagueDivision": "[[2. ブンデスリーガ (ドイツサッカー)|2部]]",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "松木玖生",
@@ -3825,6 +3878,7 @@
       "birthDate": "2003-04-30",
       "position": "MF",
       "squadNumber": null,
+      "statsCheckedAt": "2026-05-17",
       "career": [
         {
           "years": "2022-2024",
@@ -3862,7 +3916,7 @@
       "leagueDivision": "2部",
       "leagueId": "championship",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "松澤海斗",
@@ -3870,6 +3924,7 @@
       "birthDate": "2001-02-05",
       "position": "MF",
       "squadNumber": 38,
+      "statsCheckedAt": "2026-06-28",
       "career": [
         {
           "years": "2023-2025",
@@ -3898,7 +3953,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "上田綺世",
@@ -3906,6 +3961,7 @@
       "birthDate": "1998-08-28",
       "position": "FW",
       "squadNumber": 9,
+      "statsCheckedAt": "2025-05-28",
       "career": [
         {
           "years": "2019-2022",
@@ -3967,7 +4023,7 @@
       "leagueDivision": "1部",
       "leagueId": "eredivisie",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "常本佳吾",
@@ -3975,6 +4031,7 @@
       "birthDate": "1998-10-21",
       "position": "DF",
       "squadNumber": 6,
+      "statsCheckedAt": "2026-06-30",
       "career": [
         {
           "years": "2020-2023",
@@ -4020,7 +4077,7 @@
       "leagueDivision": null,
       "leagueId": "swiss-super-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "新川志音",
@@ -4028,6 +4085,7 @@
       "birthDate": "2007-08-06",
       "position": "FW",
       "squadNumber": 99,
+      "statsCheckedAt": "2026-06-16",
       "career": [
         {
           "years": "2025",
@@ -4056,7 +4114,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "森下龍矢",
@@ -4064,6 +4122,7 @@
       "birthDate": "1997-04-11",
       "position": "MF",
       "squadNumber": 25,
+      "statsCheckedAt": "2026-08-15",
       "career": [
         {
           "years": "2020",
@@ -4133,7 +4192,7 @@
       "leagueDivision": "2部",
       "leagueId": "championship",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "水多海斗",
@@ -4141,6 +4200,7 @@
       "birthDate": "2000-04-08",
       "position": "MF",
       "squadNumber": 17,
+      "statsCheckedAt": "2025-01-26",
       "career": [
         {
           "years": "2019-2021",
@@ -4193,7 +4253,7 @@
       "leagueDivision": "[[リーグ・アン]](1部)",
       "leagueId": "ligue-1",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "菅原由勢",
@@ -4201,6 +4261,7 @@
       "birthDate": "2000-06-28",
       "position": "DF",
       "squadNumber": 16,
+      "statsCheckedAt": "2025-08-26",
       "career": [
         {
           "years": "2018-2020",
@@ -4278,7 +4339,7 @@
       "leagueDivision": "2部",
       "leagueId": "championship",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "瀬古歩夢",
@@ -4286,6 +4347,7 @@
       "birthDate": "2000-06-07",
       "position": "DF",
       "squadNumber": 15,
+      "statsCheckedAt": "2025-07-22",
       "career": [
         {
           "years": "2019-2021",
@@ -4347,7 +4409,7 @@
       "leagueDivision": "[[リーグ・アン]](1部)",
       "leagueId": "ligue-1",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "斉藤光毅",
@@ -4355,6 +4417,7 @@
       "birthDate": "2001-08-10",
       "position": "MF",
       "squadNumber": null,
+      "statsCheckedAt": "2026-05-07",
       "career": [
         {
           "years": "2018-2020",
@@ -4464,7 +4527,7 @@
       "leagueDivision": "[[EFLチャンピオンシップ|チャンピオンシップ]]",
       "leagueId": "championship",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "石渡ネルソン",
@@ -4472,6 +4535,7 @@
       "birthDate": "2005-05-10",
       "position": "MF",
       "squadNumber": 18,
+      "statsCheckedAt": "2026-06-08",
       "career": [
         {
           "years": "2022-2026",
@@ -4516,7 +4580,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "川﨑颯太",
@@ -4524,6 +4588,7 @@
       "birthDate": "2001-07-30",
       "position": "MF",
       "squadNumber": 24,
+      "statsCheckedAt": "2026-05-21",
       "career": [
         {
           "years": "2020-2026",
@@ -4585,7 +4650,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "前田大然",
@@ -4593,6 +4658,7 @@
       "birthDate": "1997-10-20",
       "position": "FW",
       "squadNumber": 38,
+      "statsCheckedAt": "2026-05-17",
       "career": [
         {
           "years": "2016-2020",
@@ -4694,7 +4760,7 @@
       "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "大橋祐紀",
@@ -4702,6 +4768,7 @@
       "birthDate": "1996-07-27",
       "position": "FW",
       "squadNumber": 23,
+      "statsCheckedAt": "2026-05-07",
       "career": [
         {
           "years": "2018-2023",
@@ -4747,7 +4814,7 @@
       "leagueDivision": "2部",
       "leagueId": "championship",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "大堀亮之介",
@@ -4755,6 +4822,7 @@
       "birthDate": "2001-01-10",
       "position": "MF",
       "squadNumber": 10,
+      "statsCheckedAt": "2026-05-23",
       "career": [
         {
           "years": "2020",
@@ -4831,7 +4899,7 @@
       "leagueDivision": "1部",
       "leagueId": "serbian-superliga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "谷口彰悟",
@@ -4839,6 +4907,7 @@
       "birthDate": "1991-07-15",
       "position": "DF",
       "squadNumber": 5,
+      "statsCheckedAt": "2026-06-23",
       "career": [
         {
           "years": "2014-2022",
@@ -4884,7 +4953,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "中山雄太",
@@ -4892,6 +4961,7 @@
       "birthDate": "1997-02-16",
       "position": "DF",
       "squadNumber": 3,
+      "statsCheckedAt": "2026-08-23",
       "career": [
         {
           "years": "2015-2018",
@@ -4977,7 +5047,7 @@
       "leagueDivision": "1部",
       "leagueId": "serbian-superliga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "中村敬斗",
@@ -4985,6 +5055,7 @@
       "birthDate": "2000-07-28",
       "position": "MF",
       "squadNumber": 17,
+      "statsCheckedAt": "2026-05-20",
       "career": [
         {
           "years": "2018-2021",
@@ -5070,7 +5141,7 @@
       "leagueDivision": "[[リーグ・ドゥ]](2部)",
       "leagueId": "ligue-2",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "中村草太",
@@ -5078,6 +5149,7 @@
       "birthDate": "2002-10-15",
       "position": "FW",
       "squadNumber": 30,
+      "statsCheckedAt": "2026-07-18",
       "career": [
         {
           "years": "2025-",
@@ -5115,7 +5187,7 @@
       "leagueDivision": "[[リーグ・アン]](1部)",
       "leagueId": "ligue-1",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "中埜信吾",
@@ -5123,6 +5195,7 @@
       "birthDate": "2004-12-16",
       "position": "FW",
       "squadNumber": 11,
+      "statsCheckedAt": "2025-08-23",
       "career": [
         {
           "years": "2023",
@@ -5159,7 +5232,7 @@
       "leagueDivision": "1部",
       "leagueId": "austrian-bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "町田浩樹",
@@ -5167,6 +5240,7 @@
       "birthDate": "1997-08-25",
       "position": "DF",
       "squadNumber": 28,
+      "statsCheckedAt": "2026-05-16",
       "career": [
         {
           "years": "2016-2023",
@@ -5228,7 +5302,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "町野修斗",
@@ -5236,6 +5310,7 @@
       "birthDate": "1999-09-30",
       "position": "FW",
       "squadNumber": 18,
+      "statsCheckedAt": "2026-06-12",
       "career": [
         {
           "years": "2018-2019",
@@ -5305,7 +5380,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "長田澪",
@@ -5313,6 +5388,7 @@
       "birthDate": "2004-04-16",
       "position": "GK",
       "squadNumber": null,
+      "statsCheckedAt": "2026-05-23",
       "career": [
         {
           "years": "2022-2026",
@@ -5422,7 +5498,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "田中聡",
@@ -5430,6 +5506,7 @@
       "birthDate": "2002-08-13",
       "position": "MF",
       "squadNumber": 13,
+      "statsCheckedAt": "2025-12-30",
       "career": [
         {
           "years": "2020-2024",
@@ -5499,7 +5576,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "田中碧",
@@ -5507,6 +5584,7 @@
       "birthDate": "1998-09-10",
       "position": "MF",
       "squadNumber": 22,
+      "statsCheckedAt": "2026-07-04",
       "career": [
         {
           "years": "2017-2022",
@@ -5568,7 +5646,7 @@
       "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "渡辺剛",
@@ -5576,6 +5654,7 @@
       "birthDate": "1997-02-05",
       "position": "DF",
       "squadNumber": 4,
+      "statsCheckedAt": "2025-07-30",
       "career": [
         {
           "years": "2018-2021",
@@ -5637,7 +5716,7 @@
       "leagueDivision": "1部",
       "leagueId": "eredivisie",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "藤田譲瑠チマ",
@@ -5645,6 +5724,7 @@
       "birthDate": "2002-02-16",
       "position": "MF",
       "squadNumber": 16,
+      "statsCheckedAt": "2025-06-27",
       "career": [
         {
           "years": "2019-2020",
@@ -5730,7 +5810,7 @@
       "leagueDivision": "2部",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "藤本寛也",
@@ -5738,6 +5818,7 @@
       "birthDate": "1999-07-01",
       "position": "MF",
       "squadNumber": null,
+      "statsCheckedAt": "2025-05-28",
       "career": [
         {
           "years": "2018-2022",
@@ -5791,7 +5872,7 @@
       "leagueDivision": "2部",
       "leagueId": "championship",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "堂安律",
@@ -5799,6 +5880,7 @@
       "birthDate": "1998-06-16",
       "position": "MF",
       "squadNumber": 20,
+      "statsCheckedAt": "2025-08-07",
       "career": [
         {
           "years": "2015-2018",
@@ -5908,7 +5990,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "南野拓実",
@@ -5916,6 +5998,7 @@
       "birthDate": "1995-01-16",
       "position": "MF",
       "squadNumber": 18,
+      "statsCheckedAt": "2026-06-23",
       "career": [
         {
           "years": "2012-2014",
@@ -6001,7 +6084,7 @@
       "leagueDivision": "[[リーグ・アン]](1部)",
       "leagueId": "ligue-1",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "倍井謙",
@@ -6009,6 +6092,7 @@
       "birthDate": "2001-04-04",
       "position": "MF",
       "squadNumber": null,
+      "statsCheckedAt": "2026-05-09",
       "career": [
         {
           "years": "2023-",
@@ -6053,7 +6137,7 @@
       "leagueDivision": "2部",
       "leagueId": "challenger-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "畑大雅",
@@ -6061,6 +6145,7 @@
       "birthDate": "2002-01-20",
       "position": "DF",
       "squadNumber": 3,
+      "statsCheckedAt": "2026-06-30",
       "career": [
         {
           "years": "2020-2025",
@@ -6098,7 +6183,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "板倉滉",
@@ -6106,6 +6191,7 @@
       "birthDate": "1997-01-27",
       "position": "DF",
       "squadNumber": 6,
+      "statsCheckedAt": "2026-08-20",
       "career": [
         {
           "years": "2015-2018",
@@ -6247,7 +6333,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "冨安健洋",
@@ -6255,6 +6341,7 @@
       "birthDate": "1998-11-05",
       "position": "DF",
       "squadNumber": 17,
+      "statsCheckedAt": "2026-08-07",
       "career": [
         {
           "years": "2015-2017",
@@ -6356,7 +6443,7 @@
       "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "福井太智",
@@ -6364,6 +6451,7 @@
       "birthDate": "2004-07-15",
       "position": "MF",
       "squadNumber": 21,
+      "statsCheckedAt": "2026-06-03",
       "career": [
         {
           "years": "2021-2022",
@@ -6433,7 +6521,7 @@
       "leagueDivision": "1部",
       "leagueId": "primeira-liga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "福田師王",
@@ -6441,6 +6529,7 @@
       "birthDate": "2004-04-08",
       "position": "FW",
       "squadNumber": 13,
+      "statsCheckedAt": "2026-06-18",
       "career": [
         {
           "years": "2023-2025",
@@ -6494,7 +6583,7 @@
       "leagueDivision": "[[2. ブンデスリーガ (ドイツサッカー)|2部]]",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "福田翔生",
@@ -6502,6 +6591,7 @@
       "birthDate": "2001-03-23",
       "position": "FW",
       "squadNumber": 19,
+      "statsCheckedAt": "2025-06-28",
       "career": [
         {
           "years": "2019-2022",
@@ -6546,7 +6636,7 @@
       "leagueDivision": "1部",
       "leagueId": "danish-superliga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "平河悠",
@@ -6554,6 +6644,7 @@
       "birthDate": "2001-01-03",
       "position": "FW",
       "squadNumber": 7,
+      "statsCheckedAt": "2026-05-16",
       "career": [
         {
           "years": "2021-2025",
@@ -6623,7 +6714,7 @@
       "leagueDivision": "2部",
       "leagueId": "championship",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "北野颯太",
@@ -6631,6 +6722,7 @@
       "birthDate": "2004-08-13",
       "position": "FW",
       "squadNumber": 8,
+      "statsCheckedAt": "2026-06-10",
       "career": [
         {
           "years": "2020",
@@ -6684,7 +6776,7 @@
       "leagueDivision": "1部",
       "leagueId": "austrian-bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "毎熊晟矢",
@@ -6692,6 +6784,7 @@
       "birthDate": "1997-10-16",
       "position": "DF",
       "squadNumber": 2,
+      "statsCheckedAt": "2025-05-28",
       "career": [
         {
           "years": "2020-2021",
@@ -6737,7 +6830,7 @@
       "leagueDivision": "1部",
       "leagueId": "eredivisie",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "木村誠二",
@@ -6745,6 +6838,7 @@
       "birthDate": "2001-08-24",
       "position": "DF",
       "squadNumber": 5,
+      "statsCheckedAt": "2026-06-08",
       "career": [
         {
           "years": "2018-2019",
@@ -6822,7 +6916,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "野澤大志ブランドン",
@@ -6830,6 +6924,7 @@
       "birthDate": "2002-12-25",
       "position": "GK",
       "squadNumber": 41,
+      "statsCheckedAt": "2026-06-26",
       "career": [
         {
           "years": "2019",
@@ -6923,7 +7018,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "鈴木彩艶",
@@ -6931,6 +7026,7 @@
       "birthDate": "2002-08-21",
       "position": "GK",
       "squadNumber": 1,
+      "statsCheckedAt": "2026-08-19",
       "career": [
         {
           "years": "2021-2024",
@@ -7032,7 +7128,7 @@
       "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "鈴木淳之介",
@@ -7040,6 +7136,7 @@
       "birthDate": "2003-07-12",
       "position": "DF",
       "squadNumber": 20,
+      "statsCheckedAt": "2026-07-08",
       "career": [
         {
           "years": "2022-2025",
@@ -7077,7 +7174,7 @@
       "leagueDivision": "1部",
       "leagueId": "danish-superliga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "鈴木唯人",
@@ -7085,6 +7182,7 @@
       "birthDate": "2001-10-25",
       "position": "MF",
       "squadNumber": 14,
+      "statsCheckedAt": "2025-05-27",
       "career": [
         {
           "years": "2020-2023",
@@ -7154,7 +7252,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "齋藤俊輔",
@@ -7162,6 +7260,7 @@
       "birthDate": "2005-04-26",
       "position": "MF",
       "squadNumber": 38,
+      "statsCheckedAt": "2026-06-03",
       "career": [
         {
           "years": "2024-2025",
@@ -7199,7 +7298,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     },
     {
       "nameJa": "髙橋仁胡",
@@ -7207,6 +7306,7 @@
       "birthDate": "2005-08-16",
       "position": "DF",
       "squadNumber": null,
+      "statsCheckedAt": "2026-07-14",
       "career": [
         {
           "years": "2024-",
@@ -7268,7 +7368,7 @@
       "leagueDivision": "2部",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-08-29"
+      "checkedAt": "2026-08-30"
     }
   ]
 }

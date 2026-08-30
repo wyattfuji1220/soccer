@@ -140,7 +140,8 @@ for (const p of abroad) {
     club: "${esc(p.club)}",
     clubEn: "${esc(p.clubEn)}",
     league: "${p.leagueId}",${p.squadNumber ? `\n    squadNumber: ${p.squadNumber},` : ""}
-    confidence: "needs-review",
+    confidence: "needs-review",${p.statsCheckedAt ? `
+    statsCheckedAt: "${p.statsCheckedAt}",` : ""}
     sources: [wiki("${esc(p.nameJa)}", "${p.checkedAt}")],${factsBlock}
     career: [
 ${careerLines}

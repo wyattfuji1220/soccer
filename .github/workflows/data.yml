@@ -42,6 +42,9 @@ jobs:
       - name: 所属の変化を記録する
         run: npm run data:transfers
 
+      - name: 今季の成績を取り直す
+        run: npm run data:season
+
       - name: 掲載データを点検する
         run: npm run data:check
 

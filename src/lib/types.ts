@@ -97,6 +97,22 @@ export type Alumnus = {
   clubs: string[];
 };
 
+/**
+ * 今季のリーグ戦の記録。英語版Wikipediaの「Career statistics」表から取る。
+ * 日本語版のインフォボックスは通算値しか持たず、今季ぶんを切り出せないため。
+ */
+export type SeasonStat = {
+  slug: string;
+  apps: number;
+  goals: number;
+  /** 英語版の表に書かれたディビジョン名。行によっては省略されている */
+  division: string | null;
+  /** 表が自己申告している更新時点。古ければ直近の試合は反映されていない */
+  updatedAt: string | null;
+  /** 出どころの英語版記事名 */
+  source: string | null;
+};
+
 export type CupId =
   | "champions-league"
   | "europa-league"
@@ -143,6 +159,8 @@ export type Player = {
   squadNumber?: number;
   /** 所属情報の確度。移籍市場中は needs-review になりやすい */
   confidence: Confidence;
+  /** 出場数・得点数がいつ時点のものか（Wikipediaの「クラブ成績更新日」） */
+  statsCheckedAt?: string;
   sources: Source[];
   /** 事実の箇条書き。ニュースの転載ではなく、確認済みの事実のみ。任意 */
   facts?: string[];
