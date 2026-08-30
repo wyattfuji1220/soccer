@@ -18,11 +18,17 @@ const RAKUTEN_AFFILIATE_ID = process.env.NEXT_PUBLIC_RAKUTEN_AFFILIATE_ID ?? "";
  */
 const MOSHIMO_RAKUTEN = process.env.NEXT_PUBLIC_AFFILIATE_MOSHIMO_RAKUTEN ?? "";
 
-/** どこでもリンクの遷移先を差し替える。設定が無ければ null */
+/**
+ * どこでもリンクの遷移先を差し替える。設定が無ければ null。
+ *
+ * 管理画面が吐くリンクは「//af.moshimo.com/…」とスキームが省略された形なので、
+ * 貼り付けたまま渡せるよう、こちらで https: を補う。
+ */
 function moshimoLink(template: string, destination: string): string | null {
-  if (!template) return null;
+  const raw = template.trim();
+  if (!raw) return null;
   try {
-    const url = new URL(template);
+    const url = new URL(raw.startsWith("//") ? `https:${raw}` : raw);
     if (!url.searchParams.has("url")) return null;
     url.searchParams.set("url", destination);
     return url.toString();
