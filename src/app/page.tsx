@@ -214,7 +214,7 @@ export default function Home() {
             </li>
             <li>
               <strong style={{ color: "var(--text)" }}>権利物を扱わない。</strong>{" "}
-              選手写真・クラブエンブレム・試合映像は掲載せず、データと文章のみで構成しています。
+              選手写真やクラブエンブレムは掲載しません。動画は権利者が公式チャンネルに出したものを、その公式プレーヤーで見てもらいます。
             </li>
             <li>
               <strong style={{ color: "var(--text)" }}>不確かなものは不確かと書く。</strong>{" "}

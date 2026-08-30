@@ -205,13 +205,28 @@ function Row({ row, showScore }: { row: ResultRow; showScore: boolean }) {
             href={row.highlight.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-2 flex items-start gap-2 text-xs px-3 py-2 rounded-md hover:opacity-80 transition-opacity"
+            className="mt-3 flex items-start gap-3 text-xs p-2 rounded-lg hover:opacity-80 transition-opacity"
             style={{ background: "var(--accent-soft)" }}
           >
-            <span className="font-bold accent whitespace-nowrap">ハイライト</span>
-            <span className="min-w-0">
-              <span className="block leading-relaxed">{row.highlight.title}</span>
-              <span className="block muted mt-0.5">{row.highlight.channel}（YouTubeで開く）</span>
+            {/*
+              サムネイルはYouTubeの配信元からそのまま読む。当サイトは画像を
+              持たない。まだ取得していない領域を占めて画面が飛ばないよう、
+              縦横を指定しておく。
+            */}
+            <img
+              src={`https://i.ytimg.com/vi/${row.highlight.videoId}/mqdefault.jpg`}
+              alt=""
+              width={160}
+              height={90}
+              loading="lazy"
+              decoding="async"
+              className="rounded-md shrink-0 w-[7.5rem] sm:w-40 h-auto"
+              style={{ aspectRatio: "16 / 9", objectFit: "cover" }}
+            />
+            <span className="min-w-0 pt-0.5">
+              <span className="font-bold accent">ハイライト</span>
+              <span className="block leading-relaxed mt-1">{row.highlight.title}</span>
+              <span className="block muted mt-1">{row.highlight.channel}（YouTubeで開く）</span>
             </span>
           </a>
         )}
