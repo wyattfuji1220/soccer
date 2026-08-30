@@ -13,6 +13,7 @@
         {
           "years": "2019",
           "team": "デュッセルドルフ U-23",
+          "teamArticle": "フォルトゥナ・デュッセルドルフ",
           "country": "GER",
           "loan": false,
           "apps": 25,
@@ -21,6 +22,7 @@
         {
           "years": "2019-2026",
           "team": "デュッセルドルフ",
+          "teamArticle": "フォルトゥナ・デュッセルドルフ",
           "country": "GER",
           "loan": false,
           "apps": 159,
@@ -29,6 +31,7 @@
         {
           "years": "2026-",
           "team": "グロイター・フュルト",
+          "teamArticle": "SpVggグロイター・フュルト",
           "country": "GER",
           "loan": false,
           "apps": null,
@@ -39,6 +42,7 @@
         {
           "years": "2017",
           "team": "日本 U-17",
+          "teamArticle": "U-17サッカー日本代表",
           "country": "JPN",
           "loan": false,
           "apps": 3,
@@ -47,6 +51,7 @@
         {
           "years": "2018",
           "team": "日本 U-18",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 2,
@@ -55,6 +60,7 @@
         {
           "years": "2021",
           "team": "ドイツ U-21",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 2,
@@ -83,6 +89,7 @@
         {
           "years": "2022-",
           "team": "VfBシュトゥットガルトII",
+          "teamArticle": "VfBシュトゥットガルト",
           "country": "GER",
           "loan": false,
           "apps": 46,
@@ -91,6 +98,7 @@
         {
           "years": "2024-2025",
           "team": "VfBシュトゥットガルト",
+          "teamArticle": "VfBシュトゥットガルト",
           "country": "GER",
           "loan": false,
           "apps": 12,
@@ -99,6 +107,7 @@
         {
           "years": "2025-",
           "team": "レッドブル・ザルツブルク",
+          "teamArticle": "レッドブル・ザルツブルク",
           "country": "AUT",
           "loan": false,
           "apps": 4,
@@ -109,6 +118,7 @@
         {
           "years": "2020",
           "team": "日本 U-17",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -117,6 +127,7 @@
         {
           "years": "2021",
           "team": "日本 U-22",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -125,6 +136,7 @@
         {
           "years": "2022",
           "team": "日本 U-21",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -133,6 +145,7 @@
         {
           "years": "2023",
           "team": "日本 U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -161,6 +174,7 @@
         {
           "years": "2013-2015",
           "team": "名古屋グランパス",
+          "teamArticle": "名古屋グランパスエイト",
           "country": "JPN",
           "loan": false,
           "apps": 3,
@@ -169,6 +183,7 @@
         {
           "years": "2014-2015",
           "team": "Jリーグ・U-22選抜",
+          "teamArticle": "Jリーグ・アンダー22選抜",
           "country": "JPN",
           "loan": true,
           "apps": 7,
@@ -177,6 +192,7 @@
         {
           "years": "2016-2018",
           "team": "SVホルン",
+          "teamArticle": "SVホルン",
           "country": "AUT",
           "loan": false,
           "apps": 66,
@@ -185,6 +201,7 @@
         {
           "years": "2018-2019",
           "team": "FCヴィル1900",
+          "teamArticle": "FCヴィル1900",
           "country": "SWI",
           "loan": false,
           "apps": 27,
@@ -193,6 +210,7 @@
         {
           "years": "2019-2023",
           "team": "FCトゥーン",
+          "teamArticle": "FCトゥーン",
           "country": "SWI",
           "loan": false,
           "apps": 92,
@@ -201,6 +219,7 @@
         {
           "years": "2022-2023",
           "team": "ヌーシャテル",
+          "teamArticle": "ヌーシャテル・ザマックス",
           "country": "SWI",
           "loan": true,
           "apps": 26,
@@ -209,6 +228,7 @@
         {
           "years": "2023-2026",
           "team": "SVリート",
+          "teamArticle": "SVリート",
           "country": "AUT",
           "loan": false,
           "apps": 88,
@@ -217,6 +237,7 @@
         {
           "years": "2026-",
           "team": "ユニオンSG",
+          "teamArticle": "ロイヤル・ユニオン・サン＝ジロワーズ",
           "country": "BEL",
           "loan": false,
           "apps": null,
@@ -227,6 +248,7 @@
         {
           "years": "2011-2012",
           "team": "日本 U-18",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 4,
@@ -235,6 +257,7 @@
         {
           "years": "2013",
           "team": "日本 U-19",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 1,
@@ -263,6 +286,7 @@
         {
           "years": "2013-2017",
           "team": "東京ヴェルディ",
+          "teamArticle": "東京ヴェルディ1969",
           "country": "JPN",
           "loan": false,
           "apps": 1,
@@ -271,6 +295,7 @@
         {
           "years": "2016",
           "team": "FC岐阜",
+          "teamArticle": "FC岐阜",
           "country": "JPN",
           "loan": true,
           "apps": 4,
@@ -279,6 +304,7 @@
         {
           "years": "2017",
           "team": "川崎フロンターレ",
+          "teamArticle": "川崎フロンターレ",
           "country": "JPN",
           "loan": true,
           "apps": 0,
@@ -287,6 +313,7 @@
         {
           "years": "2018-2020",
           "team": "川崎フロンターレ",
+          "teamArticle": "川崎フロンターレ",
           "country": "JPN",
           "loan": false,
           "apps": 0,
@@ -295,6 +322,7 @@
         {
           "years": "2019",
           "team": "大分トリニータ",
+          "teamArticle": "大分トリニータ",
           "country": "JPN",
           "loan": true,
           "apps": 0,
@@ -303,6 +331,7 @@
         {
           "years": "2020",
           "team": "ファジアーノ岡山",
+          "teamArticle": "ファジアーノ岡山FC",
           "country": "JPN",
           "loan": true,
           "apps": 40,
@@ -311,6 +340,7 @@
         {
           "years": "2021",
           "team": "大分トリニータ",
+          "teamArticle": "大分トリニータ",
           "country": "JPN",
           "loan": false,
           "apps": 14,
@@ -319,6 +349,7 @@
         {
           "years": "2022-2023",
           "team": "FC町田ゼルビア",
+          "teamArticle": "FC町田ゼルビア",
           "country": "JPN",
           "loan": false,
           "apps": 48,
@@ -327,6 +358,7 @@
         {
           "years": "2024-2025",
           "team": "横浜F・マリノス",
+          "teamArticle": "横浜F・マリノス",
           "country": "JPN",
           "loan": false,
           "apps": 25,
@@ -335,6 +367,7 @@
         {
           "years": "2025-",
           "team": "湘南ベルマーレ",
+          "teamArticle": "湘南ベルマーレ",
           "country": "JPN",
           "loan": false,
           "apps": 7,
@@ -343,6 +376,7 @@
         {
           "years": "2026-",
           "team": "ベールスホット",
+          "teamArticle": "KベールスホットVA",
           "country": "BEL",
           "loan": true,
           "apps": null,
@@ -353,6 +387,7 @@
         {
           "years": "2014",
           "team": "日本 U-23",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 1,
@@ -381,6 +416,7 @@
         {
           "years": "2026",
           "team": "水戸ホーリーホック",
+          "teamArticle": "水戸ホーリーホック",
           "country": null,
           "loan": false,
           "apps": 8,
@@ -389,6 +425,7 @@
         {
           "years": "2026-",
           "team": "ロイヤル・アントワープFC",
+          "teamArticle": "ロイヤル・アントワープFC",
           "country": null,
           "loan": false,
           "apps": null,
@@ -418,6 +455,7 @@
         {
           "years": "2021-2022",
           "team": "FC今治",
+          "teamArticle": "FC今治",
           "country": "JPN",
           "loan": false,
           "apps": 44,
@@ -426,6 +464,7 @@
         {
           "years": "2023-2024",
           "team": "大分トリニータ",
+          "teamArticle": "大分トリニータ",
           "country": "JPN",
           "loan": false,
           "apps": 64,
@@ -434,6 +473,7 @@
         {
           "years": "2025",
           "team": "アビスパ福岡",
+          "teamArticle": "アビスパ福岡",
           "country": "JPN",
           "loan": false,
           "apps": 36,
@@ -442,6 +482,7 @@
         {
           "years": "2026-",
           "team": "FCザンクトパウリ",
+          "teamArticle": "FCザンクトパウリ",
           "country": "GER",
           "loan": false,
           "apps": 15,
@@ -452,6 +493,7 @@
         {
           "years": "2018",
           "team": "日本 U-19",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -460,6 +502,7 @@
         {
           "years": "2025-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -488,6 +531,7 @@
         {
           "years": "2021-",
           "team": "V・ファーレン長崎",
+          "teamArticle": "V・ファーレン長崎",
           "country": "JPN",
           "loan": false,
           "apps": 47,
@@ -496,6 +540,7 @@
         {
           "years": "2025-2026",
           "team": "FCルツェルン",
+          "teamArticle": "FCルツェルン",
           "country": "SUI",
           "loan": true,
           "apps": 34,
@@ -504,6 +549,7 @@
         {
           "years": "2026-",
           "team": "ホルシュタイン・キール",
+          "teamArticle": "ホルシュタイン・キール",
           "country": "GER",
           "loan": true,
           "apps": null,
@@ -514,6 +560,7 @@
         {
           "years": "2023",
           "team": "日本 U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 2,
@@ -542,6 +589,7 @@
         {
           "years": "2015",
           "team": "ヴァンフォーレ甲府",
+          "teamArticle": "ヴァンフォーレ甲府",
           "country": "JPN",
           "loan": false,
           "apps": 30,
@@ -550,6 +598,7 @@
         {
           "years": "2016-2020",
           "team": "柏レイソル",
+          "teamArticle": "柏レイソル",
           "country": "JPN",
           "loan": false,
           "apps": 101,
@@ -558,6 +607,7 @@
         {
           "years": "2018-2020",
           "team": "ゲンク",
+          "teamArticle": "KRCゲンク",
           "country": "BEL",
           "loan": true,
           "apps": 42,
@@ -566,6 +616,7 @@
         {
           "years": "2020-2022",
           "team": "ゲンク",
+          "teamArticle": "ゲンク",
           "country": "BEL",
           "loan": false,
           "apps": 78,
@@ -574,6 +625,7 @@
         {
           "years": "2022-2025",
           "team": "スタッド・ランス",
+          "teamArticle": "スタッド・ランス",
           "country": "FRA",
           "loan": false,
           "apps": 99,
@@ -582,6 +634,7 @@
         {
           "years": "2025-",
           "team": "ゲンク",
+          "teamArticle": "ゲンク",
           "country": "BEL",
           "loan": false,
           "apps": 28,
@@ -592,6 +645,7 @@
         {
           "years": "2017-",
           "team": "日本代表",
+          "teamArticle": "サッカー日本代表",
           "country": "JPN",
           "loan": false,
           "apps": 73,
@@ -620,6 +674,7 @@
         {
           "years": "2021-2024",
           "team": "浦和レッズ",
+          "teamArticle": "浦和レッドダイヤモンズ",
           "country": "JPN",
           "loan": false,
           "apps": 121,
@@ -628,6 +683,7 @@
         {
           "years": "2024-2026",
           "team": "ヘント",
+          "teamArticle": "KAAヘント",
           "country": "BEL",
           "loan": false,
           "apps": 65,
@@ -636,6 +692,7 @@
         {
           "years": "2026-",
           "team": "ボルトン",
+          "teamArticle": "ボルトン・ワンダラーズFC",
           "country": "ENG",
           "loan": false,
           "apps": 0,
@@ -646,6 +703,7 @@
         {
           "years": "2023",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -674,6 +732,7 @@
         {
           "years": "2018-2022",
           "team": "ジュビロ磐田",
+          "teamArticle": "ジュビロ磐田",
           "country": "JPN",
           "loan": false,
           "apps": 58,
@@ -682,6 +741,7 @@
         {
           "years": "2019",
           "team": "名古屋グランパス",
+          "teamArticle": "名古屋グランパスエイト",
           "country": "JPN",
           "loan": true,
           "apps": 2,
@@ -690,6 +750,7 @@
         {
           "years": "2021-2022",
           "team": "シュトゥットガルト",
+          "teamArticle": "VfBシュトゥットガルト",
           "country": "GER",
           "loan": true,
           "apps": 29,
@@ -698,6 +759,7 @@
         {
           "years": "2022-2024",
           "team": "シュトゥットガルト",
+          "teamArticle": "シュトゥットガルト",
           "country": "GER",
           "loan": false,
           "apps": 56,
@@ -706,6 +768,7 @@
         {
           "years": "2024-",
           "team": "バイエルン・ミュンヘン",
+          "teamArticle": "FCバイエルン・ミュンヘン",
           "country": "GER",
           "loan": false,
           "apps": 22,
@@ -716,6 +779,7 @@
         {
           "years": "2019",
           "team": "日本 U-20",
+          "teamArticle": "日本 U-20",
           "country": "JPN",
           "loan": false,
           "apps": 3,
@@ -724,6 +788,7 @@
         {
           "years": "2022-",
           "team": "日本代表",
+          "teamArticle": "日本",
           "country": "JPN",
           "loan": false,
           "apps": 28,
@@ -752,6 +817,7 @@
         {
           "years": "2022-2024",
           "team": "FC町田ゼルビア",
+          "teamArticle": "FC町田ゼルビア",
           "country": "JPN",
           "loan": false,
           "apps": 31,
@@ -760,6 +826,7 @@
         {
           "years": "2024",
           "team": "清水エスパルス",
+          "teamArticle": "清水エスパルス",
           "country": "JPN",
           "loan": true,
           "apps": 12,
@@ -768,6 +835,7 @@
         {
           "years": "2025-2026",
           "team": "清水エスパルス",
+          "teamArticle": "清水エスパルス",
           "country": "JPN",
           "loan": false,
           "apps": 44,
@@ -776,6 +844,7 @@
         {
           "years": "2026-",
           "team": "ボルシアMG",
+          "teamArticle": "ボルシア・メンヒェングラートバッハ",
           "country": "GER",
           "loan": false,
           "apps": null,
@@ -786,6 +855,7 @@
         {
           "years": "2025-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 2,
@@ -814,6 +884,7 @@
         {
           "years": "2015-2017",
           "team": "ジェフユナイテッド市原・千葉",
+          "teamArticle": "ジェフユナイテッド市原・千葉",
           "country": "JPN",
           "loan": false,
           "apps": 0,
@@ -822,6 +893,7 @@
         {
           "years": "2016",
           "team": "PSTC",
+          "teamArticle": "パラナ・サッカー・テクニカル・センター",
           "country": "BRA",
           "loan": true,
           "apps": 2,
@@ -830,6 +902,7 @@
         {
           "years": "2016",
           "team": "FC琉球",
+          "teamArticle": "FC琉球OKINAWA",
           "country": "JPN",
           "loan": true,
           "apps": 8,
@@ -838,6 +911,7 @@
         {
           "years": "2017",
           "team": "ギラヴァンツ北九州",
+          "teamArticle": "ギラヴァンツ北九州",
           "country": "JPN",
           "loan": true,
           "apps": 13,
@@ -846,6 +920,7 @@
         {
           "years": "2018",
           "team": "ギラヴァンツ北九州",
+          "teamArticle": "ギラヴァンツ北九州",
           "country": "JPN",
           "loan": false,
           "apps": 26,
@@ -854,6 +929,7 @@
         {
           "years": "2019",
           "team": "FCゾリャ・ルハーンシク",
+          "teamArticle": "FCゾリャ・ルハーンシク",
           "country": "UKR",
           "loan": false,
           "apps": 0,
@@ -862,6 +938,7 @@
         {
           "years": "2020-2023",
           "team": "NKヴァラジュディン",
+          "teamArticle": "NKヴァラジュディン",
           "country": "HRV",
           "loan": false,
           "apps": 61,
@@ -870,6 +947,7 @@
         {
           "years": "2023-2024",
           "team": "NKマリボル",
+          "teamArticle": "NKマリボル",
           "country": "SVN",
           "loan": false,
           "apps": 18,
@@ -878,6 +956,7 @@
         {
           "years": "2025-",
           "team": "FCブニョドコル",
+          "teamArticle": "FCブニョドコル",
           "country": "UZB",
           "loan": false,
           "apps": null,
@@ -888,6 +967,7 @@
         {
           "years": "2013-2014",
           "team": "日本U-17",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -896,6 +976,7 @@
         {
           "years": "2015-2017",
           "team": "日本U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 2,
@@ -904,6 +985,7 @@
         {
           "years": "2017",
           "team": "日本U-23",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 1,
@@ -932,6 +1014,7 @@
         {
           "years": "2010-2015",
           "team": "湘南ベルマーレ",
+          "teamArticle": "湘南ベルマーレ",
           "country": "JPN",
           "loan": false,
           "apps": 158,
@@ -940,6 +1023,7 @@
         {
           "years": "2016-2018",
           "team": "浦和レッズ",
+          "teamArticle": "浦和レッドダイヤモンズ",
           "country": "JPN",
           "loan": false,
           "apps": 73,
@@ -948,6 +1032,7 @@
         {
           "years": "2018-2020",
           "team": "シントトロイデンVV",
+          "teamArticle": "シント＝トロイデンVV",
           "country": "BEL",
           "loan": false,
           "apps": 29,
@@ -956,6 +1041,7 @@
         {
           "years": "2019-2020",
           "team": "VfBシュトゥットガルト",
+          "teamArticle": "VfBシュトゥットガルト",
           "country": "GER",
           "loan": true,
           "apps": 21,
@@ -964,6 +1050,7 @@
         {
           "years": "2020-2023",
           "team": "VfBシュトゥットガルト",
+          "teamArticle": "VfBシュトゥットガルト",
           "country": "GER",
           "loan": false,
           "apps": 99,
@@ -972,6 +1059,7 @@
         {
           "years": "2023-",
           "team": "リヴァプールFC",
+          "teamArticle": "リヴァプールFC",
           "country": "ENG",
           "loan": false,
           "apps": 57,
@@ -982,6 +1070,7 @@
         {
           "years": "2016",
           "team": "日本 U-23",
+          "teamArticle": "日本 U-23",
           "country": "JPN",
           "loan": false,
           "apps": 3,
@@ -990,6 +1079,7 @@
         {
           "years": "2021",
           "team": "日本 U-24（OA）",
+          "teamArticle": "日本 U-24（OA）",
           "country": "JPN",
           "loan": false,
           "apps": 6,
@@ -998,6 +1088,7 @@
         {
           "years": "2015-2026",
           "team": "日本代表",
+          "teamArticle": "日本",
           "country": "JPN",
           "loan": false,
           "apps": 73,
@@ -1026,6 +1117,7 @@
         {
           "years": "2024",
           "team": "横浜F・マリノス",
+          "teamArticle": "横浜F・マリノス",
           "country": "JPN",
           "loan": false,
           "apps": 7,
@@ -1034,6 +1126,7 @@
         {
           "years": "2024-2026",
           "team": "NEC",
+          "teamArticle": "NECナイメヘン",
           "country": "NED",
           "loan": false,
           "apps": 37,
@@ -1042,6 +1135,7 @@
         {
           "years": "2026-",
           "team": "ヴォルフスブルク",
+          "teamArticle": "VfLヴォルフスブルク",
           "country": "GER",
           "loan": false,
           "apps": 12,
@@ -1052,6 +1146,7 @@
         {
           "years": "2023",
           "team": "日本 U-18",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 9,
@@ -1060,6 +1155,7 @@
         {
           "years": "2024",
           "team": "日本 U-19",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 7,
@@ -1068,6 +1164,7 @@
         {
           "years": "2026-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -1096,6 +1193,7 @@
         {
           "years": "2021-2022",
           "team": "松本山雅FC",
+          "teamArticle": "松本山雅FC",
           "country": "JPN",
           "loan": false,
           "apps": 45,
@@ -1104,6 +1202,7 @@
         {
           "years": "2023-2024",
           "team": "サガン鳥栖",
+          "teamArticle": "サガン鳥栖",
           "country": "JPN",
           "loan": false,
           "apps": 41,
@@ -1112,6 +1211,7 @@
         {
           "years": "2024-",
           "team": "バーミンガム・シティFC",
+          "teamArticle": "バーミンガム・シティFC",
           "country": "ENG",
           "loan": false,
           "apps": 10,
@@ -1120,6 +1220,7 @@
         {
           "years": "2025-",
           "team": "KRCゲンク",
+          "teamArticle": "KRCゲンク",
           "country": "BEL",
           "loan": true,
           "apps": 0,
@@ -1128,6 +1229,7 @@
         {
           "years": "2025-",
           "team": "ヨング・ゲンク",
+          "teamArticle": "ヨング・ゲンク",
           "country": "BEL",
           "loan": true,
           "apps": 21,
@@ -1157,6 +1259,7 @@
         {
           "years": "2021-2022",
           "team": "ヴァルミエラ",
+          "teamArticle": "ヴァルミエラFC",
           "country": "LAT",
           "loan": false,
           "apps": 57,
@@ -1165,6 +1268,7 @@
         {
           "years": "2023-2024",
           "team": "グールニク・ザブジェ",
+          "teamArticle": "グールニク・ザブジェ",
           "country": "POL",
           "loan": false,
           "apps": 31,
@@ -1173,6 +1277,7 @@
         {
           "years": "2024-2026",
           "team": "ヘント",
+          "teamArticle": "KAAヘント",
           "country": "BEL",
           "loan": false,
           "apps": 9,
@@ -1181,6 +1286,7 @@
         {
           "years": "2024-2025",
           "team": "カイザースラウテルン",
+          "teamArticle": "1.FCカイザースラウテルン",
           "country": "GER",
           "loan": true,
           "apps": 25,
@@ -1189,6 +1295,7 @@
         {
           "years": "2025-2026",
           "team": "ハノーファー",
+          "teamArticle": "ハノーファー96",
           "country": "GER",
           "loan": true,
           "apps": 28,
@@ -1197,6 +1304,7 @@
         {
           "years": "2026-",
           "team": "レンジャーズ",
+          "teamArticle": "レンジャーズFC",
           "country": "SCO",
           "loan": false,
           "apps": null,
@@ -1226,6 +1334,7 @@
         {
           "years": "2018-",
           "team": "浦和レッズ",
+          "teamArticle": "浦和レッドダイヤモンズ",
           "country": "JPN",
           "loan": false,
           "apps": 76,
@@ -1234,6 +1343,7 @@
         {
           "years": "2020",
           "team": "アルビレックス新潟",
+          "teamArticle": "アルビレックス新潟",
           "country": "JPN",
           "loan": true,
           "apps": 24,
@@ -1242,6 +1352,7 @@
         {
           "years": "2021-2022",
           "team": "京都サンガF.C.",
+          "teamArticle": "京都サンガF.C.",
           "country": "JPN",
           "loan": true,
           "apps": 61,
@@ -1250,6 +1361,7 @@
         {
           "years": "2024-2025",
           "team": "ディナモ・ザグレブ",
+          "teamArticle": "GNKディナモ・ザグレブ",
           "country": "CRO",
           "loan": true,
           "apps": 12,
@@ -1258,6 +1370,7 @@
         {
           "years": "2026-",
           "team": "OHルーヴェン",
+          "teamArticle": "OHルーヴェン",
           "country": "BEL",
           "loan": true,
           "apps": 0,
@@ -1268,6 +1381,7 @@
         {
           "years": "2017-2019",
           "team": "日本 U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -1296,6 +1410,7 @@
         {
           "years": "2022-",
           "team": "V・ファーレン長崎",
+          "teamArticle": "V・ファーレン長崎",
           "country": "JPN",
           "loan": false,
           "apps": 95,
@@ -1304,6 +1419,7 @@
         {
           "years": "2026-",
           "team": "パトロ・アイスデン・マースメヘレン",
+          "teamArticle": "パトロ・アイスデン・マースメヘレン",
           "country": "BEL",
           "loan": true,
           "apps": null,
@@ -1333,6 +1449,7 @@
         {
           "years": "2015-2017",
           "team": "サガン鳥栖",
+          "teamArticle": "サガン鳥栖",
           "country": "JPN",
           "loan": false,
           "apps": 65,
@@ -1341,6 +1458,7 @@
         {
           "years": "2017-2023",
           "team": "アイントラハト・フランクフルト",
+          "teamArticle": "アイントラハト・フランクフルト",
           "country": "GER",
           "loan": false,
           "apps": 127,
@@ -1349,6 +1467,7 @@
         {
           "years": "2018-2019",
           "team": "シント＝トロイデンVV",
+          "teamArticle": "シント＝トロイデンVV",
           "country": "BEL",
           "loan": true,
           "apps": 34,
@@ -1357,6 +1476,7 @@
         {
           "years": "2023-2024",
           "team": "SSラツィオ",
+          "teamArticle": "SSラツィオ",
           "country": "ITA",
           "loan": false,
           "apps": 29,
@@ -1365,6 +1485,7 @@
         {
           "years": "2024-",
           "team": "クリスタル・パレスFC",
+          "teamArticle": "クリスタル・パレスFC",
           "country": "ENG",
           "loan": false,
           "apps": 62,
@@ -1375,6 +1496,7 @@
         {
           "years": "2019-",
           "team": "日本代表",
+          "teamArticle": "サッカー日本代表",
           "country": "JPN",
           "loan": false,
           "apps": 53,
@@ -1403,6 +1525,7 @@
         {
           "years": "2023-2024",
           "team": "柏レイソル",
+          "teamArticle": "柏レイソル",
           "country": "JPN",
           "loan": false,
           "apps": 31,
@@ -1411,6 +1534,7 @@
         {
           "years": "2025-",
           "team": "スタッド・ランス",
+          "teamArticle": "スタッド・ランス",
           "country": "FRA",
           "loan": false,
           "apps": 39,
@@ -1419,6 +1543,7 @@
         {
           "years": "2026-",
           "team": "ホルシュタイン・キール",
+          "teamArticle": "ホルシュタイン・キール",
           "country": "GER",
           "loan": true,
           "apps": null,
@@ -1429,6 +1554,7 @@
         {
           "years": "2024",
           "team": "日本 U-23",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -1437,6 +1563,7 @@
         {
           "years": "2024-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -1465,6 +1592,7 @@
         {
           "years": "2016-2020",
           "team": "大分トリニータ",
+          "teamArticle": "大分トリニータ",
           "country": "JPN",
           "loan": false,
           "apps": 112,
@@ -1473,6 +1601,7 @@
         {
           "years": "2021-2023",
           "team": "横浜F・マリノス",
+          "teamArticle": "横浜F・マリノス",
           "country": "JPN",
           "loan": false,
           "apps": 66,
@@ -1481,6 +1610,7 @@
         {
           "years": "2023",
           "team": "セルティック",
+          "teamArticle": "セルティックFC",
           "country": "SCO",
           "loan": true,
           "apps": 13,
@@ -1489,6 +1619,7 @@
         {
           "years": "2023-2024",
           "team": "セルティック",
+          "teamArticle": "セルティックFC",
           "country": "SCO",
           "loan": false,
           "apps": 19,
@@ -1497,6 +1628,7 @@
         {
           "years": "2024-",
           "team": "バーミンガム・シティ",
+          "teamArticle": "バーミンガム・シティFC",
           "country": "ENG",
           "loan": false,
           "apps": 85,
@@ -1507,6 +1639,7 @@
         {
           "years": "2015-2017",
           "team": "日本 U-18/19/20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 14,
@@ -1515,6 +1648,7 @@
         {
           "years": "2019",
           "team": "日本 U-22",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -1523,6 +1657,7 @@
         {
           "years": "2019-2022",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 4,
@@ -1551,6 +1686,7 @@
         {
           "years": "2024-2026",
           "team": "京都サンガF.C.",
+          "teamArticle": "京都サンガF.C.",
           "country": "JPN",
           "loan": false,
           "apps": 0,
@@ -1559,6 +1695,7 @@
         {
           "years": "2025-2026",
           "team": "レアル・ソシエダB",
+          "teamArticle": "レアル・ソシエダB",
           "country": "ESP",
           "loan": true,
           "apps": 31,
@@ -1567,6 +1704,7 @@
         {
           "years": "2026-",
           "team": "レアル・ソシエダB",
+          "teamArticle": "レアル・ソシエダB",
           "country": "ESP",
           "loan": false,
           "apps": null,
@@ -1596,6 +1734,7 @@
         {
           "years": "2019-2021",
           "team": "川崎フロンターレ",
+          "teamArticle": "川崎フロンターレ",
           "country": "JPN",
           "loan": false,
           "apps": 62,
@@ -1604,6 +1743,7 @@
         {
           "years": "2022-",
           "team": "セルティック",
+          "teamArticle": "セルティックFC",
           "country": "SCO",
           "loan": false,
           "apps": 132,
@@ -1614,6 +1754,7 @@
         {
           "years": "2021",
           "team": "日本 U-24",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 5,
@@ -1622,6 +1763,7 @@
         {
           "years": "2021",
           "team": "日本・オリンピック",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 5,
@@ -1630,6 +1772,7 @@
         {
           "years": "2022-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 11,
@@ -1658,6 +1801,7 @@
         {
           "years": "2024-",
           "team": "KRCヘンク",
+          "teamArticle": "KRCヘンク",
           "country": "BEL",
           "loan": false,
           "apps": 0,
@@ -1666,6 +1810,7 @@
         {
           "years": "2024-",
           "team": "ヨングヘンク",
+          "teamArticle": "ヨングヘンク",
           "country": "BEL",
           "loan": false,
           "apps": 14,
@@ -1695,6 +1840,7 @@
         {
           "years": "2016-2018",
           "team": "FC東京U-23",
+          "teamArticle": "FC東京#FC東京U-23",
           "country": "JPN",
           "loan": false,
           "apps": 34,
@@ -1703,6 +1849,7 @@
         {
           "years": "2017-2019",
           "team": "FC東京",
+          "teamArticle": "FC東京",
           "country": "JPN",
           "loan": false,
           "apps": 19,
@@ -1711,6 +1858,7 @@
         {
           "years": "2018",
           "team": "横浜F・マリノス",
+          "teamArticle": "横浜F・マリノス",
           "country": "JPN",
           "loan": true,
           "apps": 5,
@@ -1719,6 +1867,7 @@
         {
           "years": "2019-2022",
           "team": "レアル・マドリード",
+          "teamArticle": "レアル・マドリード",
           "country": "ESP",
           "loan": false,
           "apps": 0,
@@ -1727,6 +1876,7 @@
         {
           "years": "2019-2020",
           "team": "マジョルカ",
+          "teamArticle": "RCDマジョルカ",
           "country": "ESP",
           "loan": true,
           "apps": 35,
@@ -1735,6 +1885,7 @@
         {
           "years": "2020",
           "team": "ビジャレアル",
+          "teamArticle": "ビジャレアルCF",
           "country": "ESP",
           "loan": true,
           "apps": 13,
@@ -1743,6 +1894,7 @@
         {
           "years": "2021",
           "team": "ヘタフェ",
+          "teamArticle": "ヘタフェCF",
           "country": "ESP",
           "loan": true,
           "apps": 18,
@@ -1751,6 +1903,7 @@
         {
           "years": "2021-2022",
           "team": "マジョルカ",
+          "teamArticle": "マジョルカ",
           "country": "ESP",
           "loan": true,
           "apps": 28,
@@ -1759,6 +1912,7 @@
         {
           "years": "2022-",
           "team": "レアル・ソシエダ",
+          "teamArticle": "レアル・ソシエダ",
           "country": "ESP",
           "loan": false,
           "apps": 125,
@@ -1769,6 +1923,7 @@
         {
           "years": "2015-2017",
           "team": "日本 U-17",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 28,
@@ -1777,6 +1932,7 @@
         {
           "years": "2016-2018",
           "team": "日本 U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 15,
@@ -1785,6 +1941,7 @@
         {
           "years": "2019-2021",
           "team": "日本 U-23",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 10,
@@ -1793,6 +1950,7 @@
         {
           "years": "2021",
           "team": "日本・オリンピック",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 6,
@@ -1801,6 +1959,7 @@
         {
           "years": "2019-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 50,
@@ -1829,6 +1988,7 @@
         {
           "years": "2018-2023",
           "team": "川崎フロンターレ",
+          "teamArticle": "川崎フロンターレ",
           "country": "JPN",
           "loan": false,
           "apps": 46,
@@ -1837,6 +1997,7 @@
         {
           "years": "2019",
           "team": "レノファ山口FC",
+          "teamArticle": "レノファ山口FC",
           "country": "JPN",
           "loan": true,
           "apps": 19,
@@ -1845,6 +2006,7 @@
         {
           "years": "2021",
           "team": "徳島ヴォルティス",
+          "teamArticle": "徳島ヴォルティス",
           "country": "JPN",
           "loan": true,
           "apps": 32,
@@ -1853,6 +2015,7 @@
         {
           "years": "2022",
           "team": "サガン鳥栖",
+          "teamArticle": "サガン鳥栖",
           "country": "JPN",
           "loan": true,
           "apps": 22,
@@ -1861,6 +2024,7 @@
         {
           "years": "2024-2026",
           "team": "ヴィッセル神戸",
+          "teamArticle": "ヴィッセル神戸",
           "country": "JPN",
           "loan": false,
           "apps": 66,
@@ -1869,6 +2033,7 @@
         {
           "years": "2026",
           "team": "ラス・パルマス",
+          "teamArticle": "UDラス・パルマス",
           "country": "ESP",
           "loan": true,
           "apps": 19,
@@ -1877,6 +2042,7 @@
         {
           "years": "2026-",
           "team": "ラス・パルマス",
+          "teamArticle": "ラス・パルマス",
           "country": "ESP",
           "loan": false,
           "apps": null,
@@ -1887,6 +2053,7 @@
         {
           "years": "2017",
           "team": "日本 U-17",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -1895,6 +2062,7 @@
         {
           "years": "2019",
           "team": "日本 U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -1903,6 +2071,7 @@
         {
           "years": "2025-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 2,
@@ -1931,6 +2100,7 @@
         {
           "years": "2018-2021",
           "team": "浦和レッズ",
+          "teamArticle": "浦和レッドダイヤモンズ",
           "country": "JPN",
           "loan": false,
           "apps": 74,
@@ -1939,6 +2109,7 @@
         {
           "years": "2021",
           "team": "シント＝トロイデン",
+          "teamArticle": "シント＝トロイデンVV",
           "country": "BEL",
           "loan": true,
           "apps": 6,
@@ -1947,6 +2118,7 @@
         {
           "years": "2022-2024",
           "team": "シント＝トロイデン",
+          "teamArticle": "シント＝トロイデン",
           "country": "BEL",
           "loan": false,
           "apps": 80,
@@ -1955,6 +2127,7 @@
         {
           "years": "2024-2025",
           "team": "ルートン・タウン",
+          "teamArticle": "ルートン・タウンFC",
           "country": "ENG",
           "loan": false,
           "apps": 27,
@@ -1963,6 +2136,7 @@
         {
           "years": "2025-",
           "team": "スラヴィア・プラハ",
+          "teamArticle": "SKスラヴィア・プラハ",
           "country": "CZE",
           "loan": false,
           "apps": 8,
@@ -1971,6 +2145,7 @@
         {
           "years": "2026",
           "team": "ヘント",
+          "teamArticle": "KAAヘント",
           "country": "BEL",
           "loan": true,
           "apps": 7,
@@ -1979,6 +2154,7 @@
         {
           "years": "2026-",
           "team": "ボルシアMG",
+          "teamArticle": "ボルシア・メンヒェングラートバッハ",
           "country": "GER",
           "loan": true,
           "apps": 0,
@@ -1989,6 +2165,7 @@
         {
           "years": "2021",
           "team": "日本U-24",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -1997,6 +2174,7 @@
         {
           "years": "2019-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 12,
@@ -2025,6 +2203,7 @@
         {
           "years": "2009-2014",
           "team": "浦和レッズ",
+          "teamArticle": "浦和レッドダイヤモンズ",
           "country": "JPN",
           "loan": false,
           "apps": 167,
@@ -2033,6 +2212,7 @@
         {
           "years": "2014-2018",
           "team": "ヘルタ・ベルリン",
+          "teamArticle": "ヘルタ・ベルリン",
           "country": "GER",
           "loan": false,
           "apps": 91,
@@ -2041,6 +2221,7 @@
         {
           "years": "2018",
           "team": "デュッセルドルフ",
+          "teamArticle": "フォルトゥナ・デュッセルドルフ",
           "country": "GER",
           "loan": true,
           "apps": 13,
@@ -2049,6 +2230,7 @@
         {
           "years": "2018-2021",
           "team": "ハノーファー",
+          "teamArticle": "ハノーファー96",
           "country": "GER",
           "loan": false,
           "apps": 94,
@@ -2057,6 +2239,7 @@
         {
           "years": "2021-2023",
           "team": "ウニオン・ベルリン",
+          "teamArticle": "1.FCウニオン・ベルリン",
           "country": "GER",
           "loan": false,
           "apps": 41,
@@ -2065,6 +2248,7 @@
         {
           "years": "2023-2024",
           "team": "シュトゥットガルト",
+          "teamArticle": "VfBシュトゥットガルト",
           "country": "GER",
           "loan": false,
           "apps": 13,
@@ -2073,6 +2257,7 @@
         {
           "years": "2024-2025",
           "team": "浦和レッズ",
+          "teamArticle": "浦和レッズ",
           "country": "JPN",
           "loan": false,
           "apps": 31,
@@ -2081,6 +2266,7 @@
         {
           "years": "2025-",
           "team": "ベールスホット",
+          "teamArticle": "KベールスホットVA",
           "country": "BEL",
           "loan": false,
           "apps": 26,
@@ -2091,6 +2277,7 @@
         {
           "years": "2008",
           "team": "日本 U-19",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -2099,6 +2286,7 @@
         {
           "years": "2011-2012",
           "team": "日本 U-22/23",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -2107,6 +2295,7 @@
         {
           "years": "2011-2022",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 74,
@@ -2135,6 +2324,7 @@
         {
           "years": "2017-2019",
           "team": "FC東京U-23",
+          "teamArticle": "FC東京#FC東京U-23",
           "country": "JPN",
           "loan": false,
           "apps": 72,
@@ -2143,6 +2333,7 @@
         {
           "years": "2018-2020",
           "team": "FC東京",
+          "teamArticle": "FC東京",
           "country": "JPN",
           "loan": false,
           "apps": 26,
@@ -2151,6 +2342,7 @@
         {
           "years": "2021",
           "team": "NKイストラ1961",
+          "teamArticle": "NKイストラ1961",
           "country": "CRO",
           "loan": false,
           "apps": 14,
@@ -2159,6 +2351,7 @@
         {
           "years": "2021-2023",
           "team": "デポルティーボ・アラベス",
+          "teamArticle": "デポルティーボ・アラベス",
           "country": "ESP",
           "loan": false,
           "apps": 15,
@@ -2167,6 +2360,7 @@
         {
           "years": "2021-2022",
           "team": "シント＝トロイデンVV",
+          "teamArticle": "シント＝トロイデンVV",
           "country": "BEL",
           "loan": true,
           "apps": 28,
@@ -2175,6 +2369,7 @@
         {
           "years": "2023",
           "team": "シント＝トロイデンVV",
+          "teamArticle": "シント＝トロイデンVV",
           "country": "BEL",
           "loan": true,
           "apps": 11,
@@ -2183,6 +2378,7 @@
         {
           "years": "2023-2025",
           "team": "京都サンガF.C.",
+          "teamArticle": "京都サンガF.C.",
           "country": "JPN",
           "loan": false,
           "apps": 84,
@@ -2191,6 +2387,7 @@
         {
           "years": "2026-",
           "team": "FCザンクトパウリ",
+          "teamArticle": "FCザンクトパウリ",
           "country": "GER",
           "loan": false,
           "apps": 2,
@@ -2201,6 +2398,7 @@
         {
           "years": "2019",
           "team": "日本 U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -2209,6 +2407,7 @@
         {
           "years": "2025-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 2,
@@ -2237,6 +2436,7 @@
         {
           "years": "2022-2025",
           "team": "ジュビロ磐田",
+          "teamArticle": "ジュビロ磐田",
           "country": "JPN",
           "loan": false,
           "apps": 59,
@@ -2245,6 +2445,7 @@
         {
           "years": "2024-2025",
           "team": "グールニク・ザブジェ",
+          "teamArticle": "グールニク・ザブジェ",
           "country": "POL",
           "loan": true,
           "apps": 24,
@@ -2253,6 +2454,7 @@
         {
           "years": "2025-",
           "team": "ダルムシュタット",
+          "teamArticle": "SVダルムシュタット98",
           "country": "GER",
           "loan": false,
           "apps": null,
@@ -2282,6 +2484,7 @@
         {
           "years": "2023-2024",
           "team": "ジュビロ磐田",
+          "teamArticle": "ジュビロ磐田",
           "country": "JPN",
           "loan": false,
           "apps": 33,
@@ -2290,6 +2493,7 @@
         {
           "years": "2024",
           "team": "RSCAフューチャーズ",
+          "teamArticle": "RSCアンデルレヒト",
           "country": "BEL",
           "loan": true,
           "apps": 14,
@@ -2298,6 +2502,7 @@
         {
           "years": "2025-2026",
           "team": "アンデルレヒト",
+          "teamArticle": "RSCアンデルレヒト",
           "country": "BEL",
           "loan": false,
           "apps": 6,
@@ -2306,6 +2511,7 @@
         {
           "years": "2025",
           "team": "RSCAフューチャーズ",
+          "teamArticle": "RSCAフューチャーズ",
           "country": "BEL",
           "loan": true,
           "apps": 17,
@@ -2314,6 +2520,7 @@
         {
           "years": "2025-2026",
           "team": "シント＝トロイデン",
+          "teamArticle": "シント＝トロイデンVV",
           "country": "BEL",
           "loan": true,
           "apps": 28,
@@ -2322,6 +2529,7 @@
         {
           "years": "2026-",
           "team": "フライブルク",
+          "teamArticle": "SCフライブルク",
           "country": "GER",
           "loan": false,
           "apps": null,
@@ -2332,6 +2540,7 @@
         {
           "years": "2020",
           "team": "日本 U-16",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 4,
@@ -2340,6 +2549,7 @@
         {
           "years": "2022-2023",
           "team": "日本 U-18",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 2,
@@ -2348,6 +2558,7 @@
         {
           "years": "2025-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 5,
@@ -2376,6 +2587,7 @@
         {
           "years": "2023-2025",
           "team": "東京ヴェルディ",
+          "teamArticle": "東京ヴェルディ1969",
           "country": "JPN",
           "loan": false,
           "apps": 87,
@@ -2384,6 +2596,7 @@
         {
           "years": "2025-",
           "team": "ロイヤル・アントワープ",
+          "teamArticle": "ロイヤル・アントワープFC",
           "country": "BEL",
           "loan": false,
           "apps": 24,
@@ -2394,6 +2607,7 @@
         {
           "years": "2025-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 1,
@@ -2422,6 +2636,7 @@
         {
           "years": "2020-2026",
           "team": "鹿島アントラーズ",
+          "teamArticle": "鹿島アントラーズ",
           "country": "JPN",
           "loan": false,
           "apps": 123,
@@ -2430,6 +2645,7 @@
         {
           "years": "2024",
           "team": "FC東京",
+          "teamArticle": "FC東京",
           "country": "JPN",
           "loan": true,
           "apps": 29,
@@ -2438,6 +2654,7 @@
         {
           "years": "2026-",
           "team": "シント＝トロイデン",
+          "teamArticle": "シント＝トロイデンVV",
           "country": "BEL",
           "loan": false,
           "apps": null,
@@ -2448,6 +2665,7 @@
         {
           "years": "2022",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 0,
@@ -2456,6 +2674,7 @@
         {
           "years": "2022-2024",
           "team": "日本 U-23",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 12,
@@ -2484,6 +2703,7 @@
         {
           "years": "2022-2025",
           "team": "川崎フロンターレ",
+          "teamArticle": "川崎フロンターレ",
           "country": "JPN",
           "loan": false,
           "apps": 60,
@@ -2492,6 +2712,7 @@
         {
           "years": "2025-",
           "team": "トッテナム・ホットスパー",
+          "teamArticle": "トッテナム・ホットスパーFC",
           "country": "ENG",
           "loan": false,
           "apps": 2,
@@ -2500,6 +2721,7 @@
         {
           "years": "2026",
           "team": "ボルシアMG",
+          "teamArticle": "ボルシア・メンヒェングラートバッハ",
           "country": "GER",
           "loan": true,
           "apps": 8,
@@ -2510,6 +2732,7 @@
         {
           "years": "2023",
           "team": "日本 U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -2518,6 +2741,7 @@
         {
           "years": "2024",
           "team": "日本 U-23",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -2526,6 +2750,7 @@
         {
           "years": "2024‐2025",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 4,
@@ -2554,6 +2779,7 @@
         {
           "years": "2025-2026",
           "team": "サウサンプトン",
+          "teamArticle": "サウサンプトンFC",
           "country": "ENG",
           "loan": false,
           "apps": 0,
@@ -2562,6 +2788,7 @@
         {
           "years": "2025-2026",
           "team": "ヴァランシエンヌ",
+          "teamArticle": "ヴァランシエンヌFC",
           "country": "FRA",
           "loan": true,
           "apps": 16,
@@ -2570,6 +2797,7 @@
         {
           "years": "2026-",
           "team": "マースメヘレン",
+          "teamArticle": "パトロ・アイスデン・マースメヘレン",
           "country": "BEL",
           "loan": false,
           "apps": null,
@@ -2580,6 +2808,7 @@
         {
           "years": "2023-",
           "team": "日本 U-17",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -2608,6 +2837,7 @@
         {
           "years": "2023-2026",
           "team": "FC東京",
+          "teamArticle": "FC東京",
           "country": "JPN",
           "loan": false,
           "apps": 22,
@@ -2616,6 +2846,7 @@
         {
           "years": "2025",
           "team": "ファジアーノ岡山",
+          "teamArticle": "ファジアーノ岡山FC",
           "country": "JPN",
           "loan": true,
           "apps": 28,
@@ -2624,6 +2855,7 @@
         {
           "years": "2026-",
           "team": "バレンシアCF",
+          "teamArticle": "バレンシアCF",
           "country": "ESP",
           "loan": false,
           "apps": null,
@@ -2634,6 +2866,7 @@
         {
           "years": "2025-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 5,
@@ -2662,6 +2895,7 @@
         {
           "years": "2019-2022",
           "team": "町田ゼルビア",
+          "teamArticle": "FC町田ゼルビア",
           "country": "JPN",
           "loan": false,
           "apps": 116,
@@ -2670,6 +2904,7 @@
         {
           "years": "2023-2024",
           "team": "鹿島アントラーズ",
+          "teamArticle": "鹿島アントラーズ",
           "country": "JPN",
           "loan": false,
           "apps": 47,
@@ -2678,6 +2913,7 @@
         {
           "years": "2024-",
           "team": "1.FSVマインツ05",
+          "teamArticle": "1.FSVマインツ05",
           "country": "GER",
           "loan": false,
           "apps": 68,
@@ -2688,6 +2924,7 @@
         {
           "years": "2023-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 16,
@@ -2716,6 +2953,7 @@
         {
           "years": "2022-2023",
           "team": "ファジアーノ岡山",
+          "teamArticle": "ファジアーノ岡山FC",
           "country": "JPN",
           "loan": false,
           "apps": 48,
@@ -2724,6 +2962,7 @@
         {
           "years": "2023-2026",
           "team": "NECナイメヘン",
+          "teamArticle": "NECナイメヘン",
           "country": "NED",
           "loan": false,
           "apps": 84,
@@ -2732,6 +2971,7 @@
         {
           "years": "2026-",
           "team": "PSVアイントホーフェン",
+          "teamArticle": "PSVアイントホーフェン",
           "country": "NED",
           "loan": false,
           "apps": 1,
@@ -2742,6 +2982,7 @@
         {
           "years": "2023",
           "team": "日本U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -2750,6 +2991,7 @@
         {
           "years": "2024",
           "team": "日本U-23",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -2758,6 +3000,7 @@
         {
           "years": "2025-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 2,
@@ -2786,6 +3029,7 @@
         {
           "years": "2019",
           "team": "モンテディオ山形",
+          "teamArticle": "モンテディオ山形",
           "country": "JPN",
           "loan": false,
           "apps": 42,
@@ -2794,6 +3038,7 @@
         {
           "years": "2020-2022",
           "team": "セレッソ大阪",
+          "teamArticle": "セレッソ大阪",
           "country": "JPN",
           "loan": false,
           "apps": 66,
@@ -2802,6 +3047,7 @@
         {
           "years": "2022",
           "team": "オーステンデ",
+          "teamArticle": "KVオーステンデ",
           "country": "BEL",
           "loan": true,
           "apps": 12,
@@ -2810,6 +3056,7 @@
         {
           "years": "2022-2023",
           "team": "オーステンデ",
+          "teamArticle": "KVオーステンデ",
           "country": "BEL",
           "loan": false,
           "apps": 30,
@@ -2818,6 +3065,7 @@
         {
           "years": "2023-",
           "team": "コヴェントリー・シティ",
+          "teamArticle": "コヴェントリー・シティFC",
           "country": "ENG",
           "loan": false,
           "apps": 106,
@@ -2828,6 +3076,7 @@
         {
           "years": "2021",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 2,
@@ -2856,6 +3105,7 @@
         {
           "years": "2020",
           "team": "ガンバ大阪U-23",
+          "teamArticle": "ガンバ大阪#ガンバ大阪U-23",
           "country": "JPN",
           "loan": false,
           "apps": 11,
@@ -2864,6 +3114,7 @@
         {
           "years": "2022-2025",
           "team": "ガンバ大阪",
+          "teamArticle": "ガンバ大阪",
           "country": "JPN",
           "loan": false,
           "apps": 46,
@@ -2872,6 +3123,7 @@
         {
           "years": "2023",
           "team": "ファジアーノ岡山",
+          "teamArticle": "ファジアーノ岡山FC",
           "country": "JPN",
           "loan": true,
           "apps": 24,
@@ -2880,6 +3132,7 @@
         {
           "years": "2025",
           "team": "ウェステルロー",
+          "teamArticle": "KVCウェステルロー",
           "country": "BEL",
           "loan": true,
           "apps": 9,
@@ -2888,6 +3141,7 @@
         {
           "years": "2025-",
           "team": "ウェステルロー",
+          "teamArticle": "ウェステルロー",
           "country": "BEL",
           "loan": false,
           "apps": 30,
@@ -2898,6 +3152,7 @@
         {
           "years": "2023",
           "team": "日本U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 2,
@@ -2926,6 +3181,7 @@
         {
           "years": "2020-2023",
           "team": "アルビレックス新潟",
+          "teamArticle": "アルビレックス新潟",
           "country": "JPN",
           "loan": false,
           "apps": 80,
@@ -2934,6 +3190,7 @@
         {
           "years": "2024-",
           "team": "スパルタ・ロッテルダム",
+          "teamArticle": "スパルタ・ロッテルダム",
           "country": "NED",
           "loan": false,
           "apps": 73,
@@ -2944,6 +3201,7 @@
         {
           "years": "2017",
           "team": "日本 U-15",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -2952,6 +3210,7 @@
         {
           "years": "2018",
           "team": "日本 U-16",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -2960,6 +3219,7 @@
         {
           "years": "2019",
           "team": "日本 U-17",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -2968,6 +3228,7 @@
         {
           "years": "2020",
           "team": "日本 U-18",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -2976,6 +3237,7 @@
         {
           "years": "2022-2024",
           "team": "日本 U-22",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -2984,6 +3246,7 @@
         {
           "years": "2024",
           "team": "日本 U-23",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 4,
@@ -2992,6 +3255,7 @@
         {
           "years": "2025-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 1,
@@ -3020,6 +3284,7 @@
         {
           "years": "2015-2020",
           "team": "川崎フロンターレ",
+          "teamArticle": "川崎フロンターレ",
           "country": "JPN",
           "loan": false,
           "apps": 31,
@@ -3028,6 +3293,7 @@
         {
           "years": "2015",
           "team": "Jリーグ・アンダー22選抜",
+          "teamArticle": "Jリーグ・アンダー22選抜",
           "country": "JPN",
           "loan": true,
           "apps": 8,
@@ -3036,6 +3302,7 @@
         {
           "years": "2018",
           "team": "北海道コンサドーレ札幌",
+          "teamArticle": "北海道コンサドーレ札幌",
           "country": "JPN",
           "loan": true,
           "apps": 26,
@@ -3044,6 +3311,7 @@
         {
           "years": "2019",
           "team": "横浜F・マリノス",
+          "teamArticle": "横浜F・マリノス",
           "country": "JPN",
           "loan": true,
           "apps": 19,
@@ -3052,6 +3320,7 @@
         {
           "years": "2019-2020",
           "team": "ロイヤル・アントワープ",
+          "teamArticle": "ロイヤル・アントワープFC",
           "country": "BEL",
           "loan": true,
           "apps": 14,
@@ -3060,6 +3329,7 @@
         {
           "years": "2020-2023",
           "team": "ロイヤル・アントワープ",
+          "teamArticle": "ロイヤル・アントワープ",
           "country": "BEL",
           "loan": false,
           "apps": 49,
@@ -3068,6 +3338,7 @@
         {
           "years": "2023-2024",
           "team": "バーミンガム",
+          "teamArticle": "バーミンガム・シティFC",
           "country": "ENG",
           "loan": false,
           "apps": 46,
@@ -3076,6 +3347,7 @@
         {
           "years": "2024-",
           "team": "ボーフム",
+          "teamArticle": "VfLボーフム",
           "country": "GER",
           "loan": false,
           "apps": 15,
@@ -3086,6 +3358,7 @@
         {
           "years": "2013",
           "team": "日本U-17",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -3094,6 +3367,7 @@
         {
           "years": "2017",
           "team": "日本U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -3102,6 +3376,7 @@
         {
           "years": "2020",
           "team": "日本U-23",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 5,
@@ -3110,6 +3385,7 @@
         {
           "years": "2019-2020",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 5,
@@ -3138,6 +3414,7 @@
         {
           "years": "2020-2021",
           "team": "川崎フロンターレ",
+          "teamArticle": "川崎フロンターレ",
           "country": "JPN",
           "loan": false,
           "apps": 50,
@@ -3146,6 +3423,7 @@
         {
           "years": "2021-",
           "team": "ブライトン",
+          "teamArticle": "ブライトン・アンド・ホーヴ・アルビオンFC",
           "country": "ENG",
           "loan": false,
           "apps": 113,
@@ -3154,6 +3432,7 @@
         {
           "years": "2021-2022",
           "team": "ユニオンSG",
+          "teamArticle": "ロイヤル・ユニオン・サン＝ジロワーズ",
           "country": "BEL",
           "loan": true,
           "apps": 27,
@@ -3164,6 +3443,7 @@
         {
           "years": "2021",
           "team": "日本 U-23",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -3172,6 +3452,7 @@
         {
           "years": "2021-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 31,
@@ -3200,6 +3481,7 @@
         {
           "years": "2023-2025",
           "team": "川崎フロンターレ",
+          "teamArticle": "川崎フロンターレ",
           "country": "JPN",
           "loan": false,
           "apps": 86,
@@ -3208,6 +3490,7 @@
         {
           "years": "2025-",
           "team": "セルティック",
+          "teamArticle": "セルティックFC",
           "country": "SCO",
           "loan": false,
           "apps": 8,
@@ -3216,6 +3499,7 @@
         {
           "years": "2026",
           "team": "プロイセン・ミュンスター",
+          "teamArticle": "SCプロイセン・ミュンスター",
           "country": "GER",
           "loan": true,
           "apps": null,
@@ -3226,6 +3510,7 @@
         {
           "years": "2025",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 1,
@@ -3254,6 +3539,7 @@
         {
           "years": "2019-2022",
           "team": "東京ヴェルディ",
+          "teamArticle": "東京ヴェルディ1969",
           "country": "JPN",
           "loan": false,
           "apps": 104,
@@ -3262,6 +3548,7 @@
         {
           "years": "2022-2024",
           "team": "ガンバ大阪",
+          "teamArticle": "ガンバ大阪",
           "country": "JPN",
           "loan": false,
           "apps": 13,
@@ -3270,6 +3557,7 @@
         {
           "years": "2023-2024",
           "team": "シント＝トロイデン",
+          "teamArticle": "シント＝トロイデンVV",
           "country": "BEL",
           "loan": true,
           "apps": 28,
@@ -3278,6 +3566,7 @@
         {
           "years": "2024ｰ2026",
           "team": "シント=トロイデン",
+          "teamArticle": "シント=トロイデン",
           "country": "BEL",
           "loan": false,
           "apps": 47,
@@ -3286,6 +3575,7 @@
         {
           "years": "2026-",
           "team": "フライブルク",
+          "teamArticle": "SCフライブルク",
           "country": "GER",
           "loan": false,
           "apps": null,
@@ -3296,6 +3586,7 @@
         {
           "years": "2024",
           "team": "日本U-23",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 4,
@@ -3324,6 +3615,7 @@
         {
           "years": "2023-2025",
           "team": "大宮アルディージャ<br/ >/ RB大宮アルディージャ",
+          "teamArticle": "RB大宮アルディージャ",
           "country": "JPN",
           "loan": false,
           "apps": 77,
@@ -3332,6 +3624,7 @@
         {
           "years": "2026-",
           "team": "AZアルクマール",
+          "teamArticle": "AZアルクマール",
           "country": "NED",
           "loan": false,
           "apps": null,
@@ -3342,6 +3635,7 @@
         {
           "years": "2024",
           "team": "日本 U-19",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -3350,6 +3644,7 @@
         {
           "years": "2025",
           "team": "日本 U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -3358,6 +3653,7 @@
         {
           "years": "2026-",
           "team": "日本 U-21",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -3386,6 +3682,7 @@
         {
           "years": "2018-2020",
           "team": "川崎フロンターレ",
+          "teamArticle": "川崎フロンターレ",
           "country": "JPN",
           "loan": false,
           "apps": 81,
@@ -3394,6 +3691,7 @@
         {
           "years": "2021-2022",
           "team": "サンタ・クララ",
+          "teamArticle": "CDサンタ・クララ",
           "country": "POR",
           "loan": false,
           "apps": 48,
@@ -3402,6 +3700,7 @@
         {
           "years": "2022-2026",
           "team": "スポルティング",
+          "teamArticle": "スポルティング・クルーベ・デ・ポルトゥガル",
           "country": "POR",
           "loan": false,
           "apps": 112,
@@ -3410,6 +3709,7 @@
         {
           "years": "2026-",
           "team": "ハル・シティ",
+          "teamArticle": "ハル・シティAFC",
           "country": "ENG",
           "loan": false,
           "apps": 0,
@@ -3420,6 +3720,7 @@
         {
           "years": "2018-2025",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 40,
@@ -3448,6 +3749,7 @@
         {
           "years": "2019-",
           "team": "アルビレックス新潟",
+          "teamArticle": "アルビレックス新潟",
           "country": "JPN",
           "loan": false,
           "apps": 118,
@@ -3456,6 +3758,7 @@
         {
           "years": "2020",
           "team": "アスルクラロ沼津",
+          "teamArticle": "アスルクラロ沼津",
           "country": "JPN",
           "loan": true,
           "apps": 8,
@@ -3464,6 +3767,7 @@
         {
           "years": "2021",
           "team": "鹿児島ユナイテッドFC",
+          "teamArticle": "鹿児島ユナイテッドFC",
           "country": "JPN",
           "loan": true,
           "apps": 9,
@@ -3472,6 +3776,7 @@
         {
           "years": "2025-",
           "team": "SVダルムシュタット98",
+          "teamArticle": "SVダルムシュタット98",
           "country": "GER",
           "loan": true,
           "apps": 32,
@@ -3501,6 +3806,7 @@
         {
           "years": "2020-2024",
           "team": "ベンフィカB",
+          "teamArticle": "SLベンフィカB",
           "country": "POR",
           "loan": false,
           "apps": 25,
@@ -3509,6 +3815,7 @@
         {
           "years": "2022-2024",
           "team": "ベンフィカ",
+          "teamArticle": "SLベンフィカ",
           "country": "POR",
           "loan": false,
           "apps": 0,
@@ -3517,6 +3824,7 @@
         {
           "years": "2024-",
           "team": "シント＝トロイデン",
+          "teamArticle": "シント＝トロイデンVV",
           "country": "BEL",
           "loan": false,
           "apps": 63,
@@ -3527,6 +3835,7 @@
         {
           "years": "2016",
           "team": "日本U-16",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -3535,6 +3844,7 @@
         {
           "years": "2018-2019",
           "team": "日本U-18",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -3543,6 +3853,7 @@
         {
           "years": "2019-2024",
           "team": "日本U-23",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 4,
@@ -3551,6 +3862,7 @@
         {
           "years": "2025-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -3579,6 +3891,7 @@
         {
           "years": "2024-2025",
           "team": "ユールゴーデン",
+          "teamArticle": "ユールゴーデンスIFフットボール",
           "country": "SWE",
           "loan": false,
           "apps": 42,
@@ -3587,6 +3900,7 @@
         {
           "years": "2026-",
           "team": "フランクフルト",
+          "teamArticle": "アイントラハト・フランクフルト",
           "country": "GER",
           "loan": false,
           "apps": null,
@@ -3597,6 +3911,7 @@
         {
           "years": "2020",
           "team": "日本 U-15",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -3605,6 +3920,7 @@
         {
           "years": "2021-2022",
           "team": "日本 U-16",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -3613,6 +3929,7 @@
         {
           "years": "2023",
           "team": "日本 U-17",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -3621,6 +3938,7 @@
         {
           "years": "2024",
           "team": "日本 U-19",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -3649,6 +3967,7 @@
         {
           "years": "2018-2022",
           "team": "ヴィッセル神戸",
+          "teamArticle": "ヴィッセル神戸",
           "country": "JPN",
           "loan": false,
           "apps": 56,
@@ -3657,6 +3976,7 @@
         {
           "years": "2019",
           "team": "FC町田ゼルビア",
+          "teamArticle": "FC町田ゼルビア",
           "country": "JPN",
           "loan": true,
           "apps": 15,
@@ -3665,6 +3985,7 @@
         {
           "years": "2020",
           "team": "横浜FC",
+          "teamArticle": "横浜FC",
           "country": "JPN",
           "loan": true,
           "apps": 28,
@@ -3673,6 +3994,7 @@
         {
           "years": "2023-2024",
           "team": "セルティック",
+          "teamArticle": "セルティックFC",
           "country": "SCO",
           "loan": false,
           "apps": 5,
@@ -3681,6 +4003,7 @@
         {
           "years": "2024-2025",
           "team": "ポルティモネンセSC",
+          "teamArticle": "ポルティモネンセSC",
           "country": "POR",
           "loan": false,
           "apps": 25,
@@ -3689,6 +4012,7 @@
         {
           "years": "2025-",
           "team": "ヤギエロニア・ビャウィストク",
+          "teamArticle": "ヤギエロニア・ビャウィストク",
           "country": "POL",
           "loan": false,
           "apps": 15,
@@ -3699,6 +4023,7 @@
         {
           "years": "2015",
           "team": "日本 U-15",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 5,
@@ -3707,6 +4032,7 @@
         {
           "years": "2016",
           "team": "日本 U-16",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 13,
@@ -3715,6 +4041,7 @@
         {
           "years": "2016-2017",
           "team": "日本 U-17",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 16,
@@ -3723,6 +4050,7 @@
         {
           "years": "2019",
           "team": "日本U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 4,
@@ -3751,6 +4079,7 @@
         {
           "years": "2019-2021",
           "team": "サガン鳥栖",
+          "teamArticle": "サガン鳥栖",
           "country": "JPN",
           "loan": false,
           "apps": 76,
@@ -3759,6 +4088,7 @@
         {
           "years": "2021-2023",
           "team": "清水エスパルス",
+          "teamArticle": "清水エスパルス",
           "country": "JPN",
           "loan": false,
           "apps": 40,
@@ -3767,6 +4097,7 @@
         {
           "years": "2023",
           "team": "グレミオ・ノヴォリゾンチーノ",
+          "teamArticle": "グレミオ・ノヴォリゾンチーノ",
           "country": "BRA",
           "loan": true,
           "apps": 0,
@@ -3775,6 +4106,7 @@
         {
           "years": "2024-",
           "team": "アビスパ福岡",
+          "teamArticle": "アビスパ福岡",
           "country": "JPN",
           "loan": false,
           "apps": 72,
@@ -3783,6 +4115,7 @@
         {
           "years": "2026-",
           "team": "スロヴァン・ブラチスラヴァ",
+          "teamArticle": "ŠKスロヴァン・ブラチスラヴァ",
           "country": "SVK",
           "loan": true,
           "apps": null,
@@ -3793,6 +4126,7 @@
         {
           "years": "2022",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 0,
@@ -3821,6 +4155,7 @@
         {
           "years": "2022-2025",
           "team": "水戸ホーリーホック",
+          "teamArticle": "水戸ホーリーホック",
           "country": "JPN",
           "loan": false,
           "apps": 20,
@@ -3829,6 +4164,7 @@
         {
           "years": "2023-2025",
           "team": "ハノーファー96 II",
+          "teamArticle": "ハノーファー96",
           "country": "GER",
           "loan": true,
           "apps": 62,
@@ -3837,6 +4173,7 @@
         {
           "years": "2025-",
           "team": "ハノーファー96",
+          "teamArticle": "ハノーファー96",
           "country": "GER",
           "loan": false,
           "apps": null,
@@ -3847,6 +4184,7 @@
         {
           "years": "2019-2020",
           "team": "日本 U-16/17",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -3855,6 +4193,7 @@
         {
           "years": "2023",
           "team": "日本 U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 6,
@@ -3883,6 +4222,7 @@
         {
           "years": "2022-2024",
           "team": "FC東京",
+          "teamArticle": "FC東京",
           "country": "JPN",
           "loan": false,
           "apps": 71,
@@ -3893,6 +4233,7 @@
         {
           "years": "2023",
           "team": "日本 U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -3901,6 +4242,7 @@
         {
           "years": "2021-",
           "team": "日本 U-23",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -3929,6 +4271,7 @@
         {
           "years": "2023-2025",
           "team": "V・ファーレン長崎",
+          "teamArticle": "V・ファーレン長崎",
           "country": "JPN",
           "loan": false,
           "apps": 63,
@@ -3937,6 +4280,7 @@
         {
           "years": "2025-",
           "team": "シント＝トロイデンVV",
+          "teamArticle": "シント＝トロイデンVV",
           "country": "BEL",
           "loan": false,
           "apps": 22,
@@ -3966,6 +4310,7 @@
         {
           "years": "2019-2022",
           "team": "鹿島アントラーズ",
+          "teamArticle": "鹿島アントラーズ",
           "country": "JPN",
           "loan": false,
           "apps": 86,
@@ -3974,6 +4319,7 @@
         {
           "years": "2022-2023",
           "team": "セルクル・ブルージュ",
+          "teamArticle": "セルクル・ブルージュ",
           "country": "BEL",
           "loan": false,
           "apps": 40,
@@ -3982,6 +4328,7 @@
         {
           "years": "2023-",
           "team": "フェイエノールト",
+          "teamArticle": "フェイエノールト",
           "country": "NED",
           "loan": false,
           "apps": 80,
@@ -3992,6 +4339,7 @@
         {
           "years": "2018-2021",
           "team": "日本 U-23",
+          "teamArticle": "U-23サッカー日本代表",
           "country": "JPN",
           "loan": false,
           "apps": 17,
@@ -4000,6 +4348,7 @@
         {
           "years": "2021",
           "team": "日本・オリンピック",
+          "teamArticle": "日本・オリンピック",
           "country": "JPN",
           "loan": false,
           "apps": 6,
@@ -4008,6 +4357,7 @@
         {
           "years": "2019-",
           "team": "日本代表",
+          "teamArticle": "サッカー日本代表",
           "country": "JPN",
           "loan": false,
           "apps": 43,
@@ -4036,6 +4386,7 @@
         {
           "years": "2020-2023",
           "team": "鹿島アントラーズ",
+          "teamArticle": "鹿島アントラーズ",
           "country": "JPN",
           "loan": false,
           "apps": 71,
@@ -4044,6 +4395,7 @@
         {
           "years": "2023-2025",
           "team": "セルヴェット",
+          "teamArticle": "セルヴェットFC",
           "country": "SUI",
           "loan": false,
           "apps": 66,
@@ -4052,6 +4404,7 @@
         {
           "years": "2025-",
           "team": "バーゼル",
+          "teamArticle": "FCバーゼル",
           "country": "SUI",
           "loan": false,
           "apps": 20,
@@ -4062,6 +4415,7 @@
         {
           "years": "2015",
           "team": "日本 U-17",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 4,
@@ -4090,6 +4444,7 @@
         {
           "years": "2025",
           "team": "サガン鳥栖",
+          "teamArticle": "サガン鳥栖",
           "country": "JPN",
           "loan": false,
           "apps": 33,
@@ -4098,6 +4453,7 @@
         {
           "years": "2026-",
           "team": "シント＝トロイデンVV",
+          "teamArticle": "シント＝トロイデンVV",
           "country": "BEL",
           "loan": false,
           "apps": 0,
@@ -4127,6 +4483,7 @@
         {
           "years": "2020",
           "team": "サガン鳥栖",
+          "teamArticle": "サガン鳥栖",
           "country": "JPN",
           "loan": false,
           "apps": 33,
@@ -4135,6 +4492,7 @@
         {
           "years": "2021-2024",
           "team": "名古屋グランパス",
+          "teamArticle": "名古屋グランパスエイト",
           "country": "JPN",
           "loan": false,
           "apps": 54,
@@ -4143,6 +4501,7 @@
         {
           "years": "2024",
           "team": "レギア・ワルシャワ",
+          "teamArticle": "レギア・ワルシャワ",
           "country": "POL",
           "loan": true,
           "apps": 30,
@@ -4151,6 +4510,7 @@
         {
           "years": "2024-2025",
           "team": "レギア・ワルシャワ",
+          "teamArticle": "レギア・ワルシャワ",
           "country": "POL",
           "loan": false,
           "apps": 18,
@@ -4159,6 +4519,7 @@
         {
           "years": "2025-",
           "team": "ブラックバーン",
+          "teamArticle": "ブラックバーン・ローヴァーズFC",
           "country": "ENG",
           "loan": false,
           "apps": 37,
@@ -4169,6 +4530,7 @@
         {
           "years": "2015",
           "team": "日本 U-18",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -4177,6 +4539,7 @@
         {
           "years": "2023-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -4205,6 +4568,7 @@
         {
           "years": "2019-2021",
           "team": "シュトラーレン",
+          "teamArticle": "SVシュトラーレン",
           "country": "GER",
           "loan": false,
           "apps": 60,
@@ -4213,6 +4577,7 @@
         {
           "years": "2021-2023",
           "team": "マインツII",
+          "teamArticle": "1.FSVマインツ05",
           "country": "GER",
           "loan": false,
           "apps": 66,
@@ -4221,6 +4586,7 @@
         {
           "years": "2023-2025",
           "team": "アルミニア・ビーレフェルト",
+          "teamArticle": "アルミニア・ビーレフェルト",
           "country": "GER",
           "loan": false,
           "apps": 39,
@@ -4229,6 +4595,7 @@
         {
           "years": "2025-2026",
           "team": "ロートヴァイス・エッセン",
+          "teamArticle": "ロートヴァイス・エッセン",
           "country": "GER",
           "loan": false,
           "apps": 36,
@@ -4237,6 +4604,7 @@
         {
           "years": "2026-",
           "team": "ル・アーヴルAC",
+          "teamArticle": "ル・アーヴルAC",
           "country": "FRA",
           "loan": false,
           "apps": null,
@@ -4266,6 +4634,7 @@
         {
           "years": "2018-2020",
           "team": "名古屋グランパス",
+          "teamArticle": "名古屋グランパスエイト",
           "country": "JPN",
           "loan": false,
           "apps": 13,
@@ -4274,6 +4643,7 @@
         {
           "years": "2019-2020",
           "team": "AZアルクマール",
+          "teamArticle": "AZアルクマール",
           "country": "NED",
           "loan": true,
           "apps": 23,
@@ -4282,6 +4652,7 @@
         {
           "years": "2020-2024",
           "team": "AZアルクマール",
+          "teamArticle": "AZアルクマール",
           "country": "NED",
           "loan": false,
           "apps": 124,
@@ -4290,6 +4661,7 @@
         {
           "years": "2024-",
           "team": "サウサンプトンFC",
+          "teamArticle": "サウサンプトンFC",
           "country": "ENG",
           "loan": false,
           "apps": 32,
@@ -4298,6 +4670,7 @@
         {
           "years": "2025-2026",
           "team": "ヴェルダー・ブレーメン",
+          "teamArticle": "ヴェルダー・ブレーメン",
           "country": "GER",
           "loan": true,
           "apps": 31,
@@ -4308,6 +4681,7 @@
         {
           "years": "2015-2017",
           "team": "日本 U-17",
+          "teamArticle": "日本 U-17",
           "country": "JPN",
           "loan": false,
           "apps": 4,
@@ -4316,6 +4690,7 @@
         {
           "years": "2018-2019",
           "team": "日本 U-20",
+          "teamArticle": "日本 U-20",
           "country": "JPN",
           "loan": false,
           "apps": 4,
@@ -4324,6 +4699,7 @@
         {
           "years": "2020-",
           "team": "日本代表",
+          "teamArticle": "日本",
           "country": "JPN",
           "loan": false,
           "apps": 25,
@@ -4352,6 +4728,7 @@
         {
           "years": "2019-2021",
           "team": "セレッソ大阪",
+          "teamArticle": "セレッソ大阪",
           "country": "JPN",
           "loan": false,
           "apps": 67,
@@ -4360,6 +4737,7 @@
         {
           "years": "2022-2025",
           "team": "グラスホッパー",
+          "teamArticle": "グラスホッパー・クラブ・チューリッヒ",
           "country": "SUI",
           "loan": false,
           "apps": 117,
@@ -4368,6 +4746,7 @@
         {
           "years": "2025-",
           "team": "ル・アーヴル",
+          "teamArticle": "ル・アーヴルAC",
           "country": "FRA",
           "loan": false,
           "apps": 30,
@@ -4378,6 +4757,7 @@
         {
           "years": "2019",
           "team": "日本 U-20",
+          "teamArticle": "日本 U-20",
           "country": "JPN",
           "loan": false,
           "apps": 3,
@@ -4386,6 +4766,7 @@
         {
           "years": "2021",
           "team": "日本 U-24",
+          "teamArticle": "日本 U-24",
           "country": "JPN",
           "loan": false,
           "apps": 0,
@@ -4394,6 +4775,7 @@
         {
           "years": "2023-",
           "team": "日本代表",
+          "teamArticle": "日本",
           "country": "JPN",
           "loan": false,
           "apps": 16,
@@ -4422,6 +4804,7 @@
         {
           "years": "2018-2020",
           "team": "横浜FC",
+          "teamArticle": "横浜FC",
           "country": "JPN",
           "loan": false,
           "apps": 63,
@@ -4430,6 +4813,7 @@
         {
           "years": "2021-2025",
           "team": "ロンメル",
+          "teamArticle": "ロンメルSK",
           "country": "BEL",
           "loan": false,
           "apps": 29,
@@ -4438,6 +4822,7 @@
         {
           "years": "2022-2024",
           "team": "スパルタ・ロッテルダム",
+          "teamArticle": "スパルタ・ロッテルダム",
           "country": "NED",
           "loan": true,
           "apps": 47,
@@ -4446,6 +4831,7 @@
         {
           "years": "2024-2025",
           "team": "QPR",
+          "teamArticle": "クイーンズ・パーク・レンジャーズ",
           "country": "ENG",
           "loan": true,
           "apps": 39,
@@ -4454,6 +4840,7 @@
         {
           "years": "2025-",
           "team": "QPR",
+          "teamArticle": "クイーンズ・パーク・レンジャーズ",
           "country": "ENG",
           "loan": false,
           "apps": 34,
@@ -4464,6 +4851,7 @@
         {
           "years": "2017",
           "team": "日本 U-16",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 7,
@@ -4472,6 +4860,7 @@
         {
           "years": "2017",
           "team": "日本 U-17",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 8,
@@ -4480,6 +4869,7 @@
         {
           "years": "2018",
           "team": "日本 U-18",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 4,
@@ -4488,6 +4878,7 @@
         {
           "years": "2019",
           "team": "日本 U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 6,
@@ -4496,6 +4887,7 @@
         {
           "years": "2022",
           "team": "日本 U-23",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -4504,6 +4896,7 @@
         {
           "years": "2024",
           "team": "日本・オリンピック",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -4512,6 +4905,7 @@
         {
           "years": "2025-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 1,
@@ -4540,6 +4934,7 @@
         {
           "years": "2022-2026",
           "team": "セレッソ大阪",
+          "teamArticle": "セレッソ大阪",
           "country": "JPN",
           "loan": false,
           "apps": 18,
@@ -4548,6 +4943,7 @@
         {
           "years": "2024",
           "team": "愛媛FC",
+          "teamArticle": "愛媛FC",
           "country": "JPN",
           "loan": true,
           "apps": 12,
@@ -4556,6 +4952,7 @@
         {
           "years": "2025",
           "team": "いわきFC",
+          "teamArticle": "いわきFC",
           "country": "JPN",
           "loan": true,
           "apps": 29,
@@ -4564,6 +4961,7 @@
         {
           "years": "2026-",
           "team": "シント = トロイデン",
+          "teamArticle": "シント＝トロイデンVV",
           "country": "BEL",
           "loan": false,
           "apps": null,
@@ -4593,6 +4991,7 @@
         {
           "years": "2020-2026",
           "team": "京都サンガF.C.",
+          "teamArticle": "京都サンガF.C.",
           "country": "JPN",
           "loan": false,
           "apps": 166,
@@ -4601,6 +5000,7 @@
         {
           "years": "2025-2026",
           "team": "1.FSVマインツ05",
+          "teamArticle": "1.FSVマインツ05",
           "country": "GER",
           "loan": true,
           "apps": 10,
@@ -4609,6 +5009,7 @@
         {
           "years": "2026-",
           "team": "1.FSVマインツ05",
+          "teamArticle": "1.FSVマインツ05",
           "country": "GER",
           "loan": false,
           "apps": null,
@@ -4619,6 +5020,7 @@
         {
           "years": "2019",
           "team": "日本 U-18",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -4627,6 +5029,7 @@
         {
           "years": "2024",
           "team": "日本 U-23",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -4635,6 +5038,7 @@
         {
           "years": "2023",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 0,
@@ -4663,6 +5067,7 @@
         {
           "years": "2016-2020",
           "team": "松本山雅FC",
+          "teamArticle": "松本山雅FC",
           "country": "JPN",
           "loan": false,
           "apps": 56,
@@ -4671,6 +5076,7 @@
         {
           "years": "2017",
           "team": "水戸ホーリーホック",
+          "teamArticle": "水戸ホーリーホック",
           "country": "JPN",
           "loan": true,
           "apps": 36,
@@ -4679,6 +5085,7 @@
         {
           "years": "2019-2020",
           "team": "CSマリティモ",
+          "teamArticle": "CSマリティモ",
           "country": "POR",
           "loan": true,
           "apps": 23,
@@ -4687,6 +5094,7 @@
         {
           "years": "2020",
           "team": "横浜F・マリノス",
+          "teamArticle": "横浜F・マリノス",
           "country": "JPN",
           "loan": true,
           "apps": 23,
@@ -4695,6 +5103,7 @@
         {
           "years": "2021-2022",
           "team": "横浜F・マリノス",
+          "teamArticle": "横浜F・マリノス",
           "country": "JPN",
           "loan": false,
           "apps": 36,
@@ -4703,6 +5112,7 @@
         {
           "years": "2022",
           "team": "セルティック",
+          "teamArticle": "セルティックFC",
           "country": "SCO",
           "loan": true,
           "apps": 16,
@@ -4711,6 +5121,7 @@
         {
           "years": "2022-2026",
           "team": "セルティック",
+          "teamArticle": "セルティック",
           "country": "SCO",
           "loan": false,
           "apps": 133,
@@ -4719,6 +5130,7 @@
         {
           "years": "2026-",
           "team": "イプスウィッチ・タウン",
+          "teamArticle": "イプスウィッチ・タウンFC",
           "country": "ENG",
           "loan": false,
           "apps": null,
@@ -4729,6 +5141,7 @@
         {
           "years": "2018-2021",
           "team": "日本 U-23",
+          "teamArticle": "日本 U-23",
           "country": "JPN",
           "loan": false,
           "apps": 14,
@@ -4737,6 +5150,7 @@
         {
           "years": "2021",
           "team": "日本・オリンピック",
+          "teamArticle": "日本・オリンピック",
           "country": "JPN",
           "loan": false,
           "apps": 3,
@@ -4745,6 +5159,7 @@
         {
           "years": "2019-",
           "team": "日本代表",
+          "teamArticle": "サッカー日本代表",
           "country": "JPN",
           "loan": false,
           "apps": 30,
@@ -4773,6 +5188,7 @@
         {
           "years": "2018-2023",
           "team": "湘南ベルマーレ",
+          "teamArticle": "湘南ベルマーレ",
           "country": "JPN",
           "loan": false,
           "apps": 90,
@@ -4781,6 +5197,7 @@
         {
           "years": "2024",
           "team": "サンフレッチェ広島",
+          "teamArticle": "サンフレッチェ広島F.C",
           "country": "JPN",
           "loan": false,
           "apps": 22,
@@ -4789,6 +5206,7 @@
         {
           "years": "2024-",
           "team": "ブラックバーン",
+          "teamArticle": "ブラックバーン・ローヴァーズFC",
           "country": "ENG",
           "loan": false,
           "apps": 82,
@@ -4799,6 +5217,7 @@
         {
           "years": "2024-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 2,
@@ -4827,6 +5246,7 @@
         {
           "years": "2020",
           "team": "ダウガフピルス",
+          "teamArticle": "BFCダウガフピルス",
           "country": "LVA",
           "loan": false,
           "apps": 3,
@@ -4835,6 +5255,7 @@
         {
           "years": "2021",
           "team": "SRC広島",
+          "teamArticle": "SRC広島",
           "country": "JPN",
           "loan": false,
           "apps": 1,
@@ -4843,6 +5264,7 @@
         {
           "years": "2022",
           "team": "慶南FC",
+          "teamArticle": "慶南FC",
           "country": "KOR",
           "loan": false,
           "apps": 1,
@@ -4851,6 +5273,7 @@
         {
           "years": "2023",
           "team": "SRC広島",
+          "teamArticle": "SRC広島",
           "country": "JPN",
           "loan": false,
           "apps": 16,
@@ -4859,6 +5282,7 @@
         {
           "years": "2024",
           "team": "FKトランスインヴェスト",
+          "teamArticle": "FKトランスインヴェスト",
           "country": "LIT",
           "loan": false,
           "apps": 31,
@@ -4867,6 +5291,7 @@
         {
           "years": "2025-2026",
           "team": "ネフチ・バクー",
+          "teamArticle": "ネフチ・バクー",
           "country": "AZE",
           "loan": false,
           "apps": 8,
@@ -4875,6 +5300,7 @@
         {
           "years": "2025-2026",
           "team": "カパズPFK",
+          "teamArticle": "カパズPFK",
           "country": "AZE",
           "loan": true,
           "apps": 24,
@@ -4883,6 +5309,7 @@
         {
           "years": "2026-",
           "team": "FKラドニク・スルドゥリツァ",
+          "teamArticle": "FKラドニク・スルドゥリツァ",
           "country": "SRB",
           "loan": false,
           "apps": null,
@@ -4912,6 +5339,7 @@
         {
           "years": "2014-2022",
           "team": "川崎フロンターレ",
+          "teamArticle": "川崎フロンターレ",
           "country": "JPN",
           "loan": false,
           "apps": 289,
@@ -4920,6 +5348,7 @@
         {
           "years": "2023-2024",
           "team": "アル・ラーヤン",
+          "teamArticle": "アル・ラーヤンSC",
           "country": "QAT",
           "loan": false,
           "apps": 37,
@@ -4928,6 +5357,7 @@
         {
           "years": "2024-",
           "team": "シント＝トロイデン",
+          "teamArticle": "シント＝トロイデンVV",
           "country": "BEL",
           "loan": false,
           "apps": 43,
@@ -4938,6 +5368,7 @@
         {
           "years": "2015-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 41,
@@ -4966,6 +5397,7 @@
         {
           "years": "2015-2018",
           "team": "柏レイソル",
+          "teamArticle": "柏レイソル",
           "country": "JPN",
           "loan": false,
           "apps": 76,
@@ -4974,6 +5406,7 @@
         {
           "years": "2015",
           "team": "Jリーグ・アンダー22選抜",
+          "teamArticle": "Jリーグ・アンダー22選抜",
           "country": "JPN",
           "loan": true,
           "apps": 12,
@@ -4982,6 +5415,7 @@
         {
           "years": "2019-2022",
           "team": "PECズヴォレ",
+          "teamArticle": "PECズヴォレ",
           "country": "NED",
           "loan": false,
           "apps": 79,
@@ -4990,6 +5424,7 @@
         {
           "years": "2022-2024",
           "team": "ハダースフィールド・タウン",
+          "teamArticle": "ハダースフィールド・タウンFC",
           "country": "ENG",
           "loan": false,
           "apps": 37,
@@ -4998,6 +5433,7 @@
         {
           "years": "2024-2026",
           "team": "町田ゼルビア",
+          "teamArticle": "FC町田ゼルビア",
           "country": "JPN",
           "loan": false,
           "apps": 58,
@@ -5006,6 +5442,7 @@
         {
           "years": "2026-",
           "team": "レッドスター・ベオグラード",
+          "teamArticle": "レッドスター・ベオグラード",
           "country": "SRB",
           "loan": false,
           "apps": null,
@@ -5016,6 +5453,7 @@
         {
           "years": "2017",
           "team": "日本 U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 4,
@@ -5024,6 +5462,7 @@
         {
           "years": "2021",
           "team": "日本 U-24",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 6,
@@ -5032,6 +5471,7 @@
         {
           "years": "2019-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 22,
@@ -5060,6 +5500,7 @@
         {
           "years": "2018-2021",
           "team": "ガンバ大阪",
+          "teamArticle": "ガンバ大阪",
           "country": "JPN",
           "loan": false,
           "apps": 45,
@@ -5068,6 +5509,7 @@
         {
           "years": "2019-2020",
           "team": "FCトゥウェンテ",
+          "teamArticle": "FCトゥウェンテ",
           "country": "NED",
           "loan": true,
           "apps": 17,
@@ -5076,6 +5518,7 @@
         {
           "years": "2020",
           "team": "シントトロイデンVV",
+          "teamArticle": "シント＝トロイデンVV",
           "country": "BEL",
           "loan": true,
           "apps": 5,
@@ -5084,6 +5527,7 @@
         {
           "years": "2021",
           "team": "FCジュニアーズ",
+          "teamArticle": "FCジュニアーズ",
           "country": "AUT",
           "loan": true,
           "apps": 14,
@@ -5092,6 +5536,7 @@
         {
           "years": "2021-2023",
           "team": "LASK",
+          "teamArticle": "LASKリンツ",
           "country": "AUT",
           "loan": false,
           "apps": 54,
@@ -5100,6 +5545,7 @@
         {
           "years": "2023-",
           "team": "スタッド・ランス",
+          "teamArticle": "スタッド・ランス",
           "country": "FRA",
           "loan": false,
           "apps": 86,
@@ -5110,6 +5556,7 @@
         {
           "years": "2017",
           "team": "日本 U-17",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 11,
@@ -5118,6 +5565,7 @@
         {
           "years": "2019",
           "team": "日本 U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 4,
@@ -5126,6 +5574,7 @@
         {
           "years": "2023-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 29,
@@ -5154,6 +5603,7 @@
         {
           "years": "2025-",
           "team": "サンフレッチェ広島",
+          "teamArticle": "サンフレッチェ広島F.C",
           "country": "JPN",
           "loan": false,
           "apps": 48,
@@ -5162,6 +5612,7 @@
         {
           "years": "2026-",
           "team": "ル・アーヴル",
+          "teamArticle": "ル・アーヴルAC",
           "country": "FRA",
           "loan": true,
           "apps": null,
@@ -5172,6 +5623,7 @@
         {
           "years": "2025-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 2,
@@ -5200,6 +5652,7 @@
         {
           "years": "2023",
           "team": "世田谷ユナイテッド",
+          "teamArticle": "世田谷ユナイテッド",
           "country": "JPN",
           "loan": false,
           "apps": null,
@@ -5208,6 +5661,7 @@
         {
           "years": "2024-2026",
           "team": "アルビレックス新潟S",
+          "teamArticle": "アルビレックス新潟シンガポール",
           "country": "SGP",
           "loan": false,
           "apps": 50,
@@ -5216,6 +5670,7 @@
         {
           "years": "2026-",
           "team": "ラインドルフ・アルタッハ",
+          "teamArticle": "SCラインドルフ・アルタッハ",
           "country": "AUT",
           "loan": false,
           "apps": null,
@@ -5245,6 +5700,7 @@
         {
           "years": "2016-2023",
           "team": "鹿島アントラーズ",
+          "teamArticle": "鹿島アントラーズ",
           "country": "JPN",
           "loan": false,
           "apps": 87,
@@ -5253,6 +5709,7 @@
         {
           "years": "2022-2023",
           "team": "ユニオンSG",
+          "teamArticle": "ロイヤル・ユニオン・サン＝ジロワーズ",
           "country": "BEL",
           "loan": true,
           "apps": 19,
@@ -5261,6 +5718,7 @@
         {
           "years": "2023-2025",
           "team": "ユニオンSG",
+          "teamArticle": "ユニオンSG",
           "country": "BEL",
           "loan": false,
           "apps": 65,
@@ -5269,6 +5727,7 @@
         {
           "years": "2025-",
           "team": "ホッフェンハイム",
+          "teamArticle": "TSG1899ホッフェンハイム",
           "country": "GER",
           "loan": false,
           "apps": 1,
@@ -5279,6 +5738,7 @@
         {
           "years": "2021",
           "team": "日本U-24",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 1,
@@ -5287,6 +5747,7 @@
         {
           "years": "2023-2025",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 17,
@@ -5315,6 +5776,7 @@
         {
           "years": "2018-2019",
           "team": "横浜F・マリノス",
+          "teamArticle": "横浜F・マリノス",
           "country": "JPN",
           "loan": false,
           "apps": 0,
@@ -5323,6 +5785,7 @@
         {
           "years": "2019",
           "team": "ギラヴァンツ北九州",
+          "teamArticle": "ギラヴァンツ北九州",
           "country": "JPN",
           "loan": true,
           "apps": 30,
@@ -5331,6 +5794,7 @@
         {
           "years": "2020",
           "team": "ギラヴァンツ北九州",
+          "teamArticle": "ギラヴァンツ北九州",
           "country": "JPN",
           "loan": false,
           "apps": 32,
@@ -5339,6 +5803,7 @@
         {
           "years": "2021-2023",
           "team": "湘南ベルマーレ",
+          "teamArticle": "湘南ベルマーレ",
           "country": "JPN",
           "loan": false,
           "apps": 80,
@@ -5347,6 +5812,7 @@
         {
           "years": "2023-2025",
           "team": "ホルシュタイン・キール",
+          "teamArticle": "ホルシュタイン・キール",
           "country": "GER",
           "loan": false,
           "apps": 63,
@@ -5355,6 +5821,7 @@
         {
           "years": "2025-",
           "team": "ボルシア・メンヘングラートバッハ",
+          "teamArticle": "ボルシア・メンヒェングラートバッハ",
           "country": "GER",
           "loan": false,
           "apps": 32,
@@ -5365,6 +5832,7 @@
         {
           "years": "2022-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 15,
@@ -5393,6 +5861,7 @@
         {
           "years": "2022-2026",
           "team": "ブレーメン",
+          "teamArticle": "ヴェルダー・ブレーメン",
           "country": "GER",
           "loan": false,
           "apps": 32,
@@ -5401,6 +5870,7 @@
         {
           "years": "2022-2023",
           "team": "ブレーメンⅡ",
+          "teamArticle": "ヴェルダー・ブレーメン",
           "country": "GER",
           "loan": true,
           "apps": 14,
@@ -5409,6 +5879,7 @@
         {
           "years": "2023-2024",
           "team": "フォレンダム",
+          "teamArticle": "FCフォレンダム",
           "country": "NED",
           "loan": true,
           "apps": 33,
@@ -5417,6 +5888,7 @@
         {
           "years": "2026-",
           "team": "フライブルク",
+          "teamArticle": "SCフライブルク",
           "country": "GER",
           "loan": false,
           "apps": null,
@@ -5427,6 +5899,7 @@
         {
           "years": "2018",
           "team": "日本 U-15",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 1,
@@ -5435,6 +5908,7 @@
         {
           "years": "2019",
           "team": "ドイツ U-15",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 1,
@@ -5443,6 +5917,7 @@
         {
           "years": "2019",
           "team": "ドイツ U-16",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 4,
@@ -5451,6 +5926,7 @@
         {
           "years": "2020",
           "team": "ドイツ U-17",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 1,
@@ -5459,6 +5935,7 @@
         {
           "years": "2021",
           "team": "ドイツ U-18",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 4,
@@ -5467,6 +5944,7 @@
         {
           "years": "2022",
           "team": "ドイツ U-19",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 2,
@@ -5475,6 +5953,7 @@
         {
           "years": "2023",
           "team": "ドイツ U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 9,
@@ -5483,6 +5962,7 @@
         {
           "years": "2025-",
           "team": "ドイツ U-21",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 5,
@@ -5511,6 +5991,7 @@
         {
           "years": "2020-2024",
           "team": "湘南ベルマーレ",
+          "teamArticle": "湘南ベルマーレ",
           "country": "JPN",
           "loan": false,
           "apps": 114,
@@ -5519,6 +6000,7 @@
         {
           "years": "2022-2023",
           "team": "コルトレイク",
+          "teamArticle": "KVコルトレイク",
           "country": "BEL",
           "loan": true,
           "apps": 15,
@@ -5527,6 +6009,7 @@
         {
           "years": "2025",
           "team": "サンフレッチェ広島",
+          "teamArticle": "サンフレッチェ広島F.C",
           "country": "JPN",
           "loan": false,
           "apps": 26,
@@ -5535,6 +6018,7 @@
         {
           "years": "2026",
           "team": "デュッセルドルフ",
+          "teamArticle": "フォルトゥナ・デュッセルドルフ",
           "country": "GER",
           "loan": false,
           "apps": 13,
@@ -5543,6 +6027,7 @@
         {
           "years": "2026-",
           "team": "シャルケ",
+          "teamArticle": "シャルケ04",
           "country": "GER",
           "loan": false,
           "apps": null,
@@ -5553,6 +6038,7 @@
         {
           "years": "2019",
           "team": "日本 U-17",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 9,
@@ -5561,6 +6047,7 @@
         {
           "years": "2025-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 1,
@@ -5589,6 +6076,7 @@
         {
           "years": "2017-2022",
           "team": "川崎フロンターレ",
+          "teamArticle": "川崎フロンターレ",
           "country": "JPN",
           "loan": false,
           "apps": 79,
@@ -5597,6 +6085,7 @@
         {
           "years": "2021-2022",
           "team": "フォルトゥナ・デュッセルドルフ",
+          "teamArticle": "フォルトゥナ・デュッセルドルフ",
           "country": "GER",
           "loan": true,
           "apps": 29,
@@ -5605,6 +6094,7 @@
         {
           "years": "2022-2024",
           "team": "フォルトゥナ・デュッセルドルフ",
+          "teamArticle": "フォルトゥナ・デュッセルドルフ",
           "country": "GER",
           "loan": false,
           "apps": 55,
@@ -5613,6 +6103,7 @@
         {
           "years": "2024‐",
           "team": "リーズ・ユナイテッド",
+          "teamArticle": "リーズ・ユナイテッドFC",
           "country": "ENG",
           "loan": false,
           "apps": 71,
@@ -5623,6 +6114,7 @@
         {
           "years": "2021",
           "team": "日本・オリンピック",
+          "teamArticle": "日本・オリンピック",
           "country": "JPN",
           "loan": false,
           "apps": 6,
@@ -5631,6 +6123,7 @@
         {
           "years": "2019-",
           "team": "日本代表",
+          "teamArticle": "日本",
           "country": "JPN",
           "loan": false,
           "apps": 41,
@@ -5659,6 +6152,7 @@
         {
           "years": "2018-2021",
           "team": "FC東京",
+          "teamArticle": "FC東京",
           "country": "JPN",
           "loan": false,
           "apps": 81,
@@ -5667,6 +6161,7 @@
         {
           "years": "2022-2023",
           "team": "コルトレイク",
+          "teamArticle": "KVコルトレイク",
           "country": "BEL",
           "loan": false,
           "apps": 41,
@@ -5675,6 +6170,7 @@
         {
           "years": "2023-2025",
           "team": "ヘント",
+          "teamArticle": "KAAヘント",
           "country": "BEL",
           "loan": false,
           "apps": 70,
@@ -5683,6 +6179,7 @@
         {
           "years": "2025-",
           "team": "フェイエノールト",
+          "teamArticle": "フェイエノールト",
           "country": "NED",
           "loan": false,
           "apps": 30,
@@ -5693,6 +6190,7 @@
         {
           "years": "2019-2021",
           "team": "日本 U-23",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 4,
@@ -5701,6 +6199,7 @@
         {
           "years": "2019-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 13,
@@ -5729,6 +6228,7 @@
         {
           "years": "2019-2020",
           "team": "東京ヴェルディ",
+          "teamArticle": "東京ヴェルディ1969",
           "country": "JPN",
           "loan": false,
           "apps": 45,
@@ -5737,6 +6237,7 @@
         {
           "years": "2021",
           "team": "徳島ヴォルティス",
+          "teamArticle": "徳島ヴォルティス",
           "country": "JPN",
           "loan": false,
           "apps": 28,
@@ -5745,6 +6246,7 @@
         {
           "years": "2022-2023",
           "team": "横浜F・マリノス",
+          "teamArticle": "横浜F・マリノス",
           "country": "JPN",
           "loan": false,
           "apps": 46,
@@ -5753,6 +6255,7 @@
         {
           "years": "2023-2025",
           "team": "シント＝トロインデン",
+          "teamArticle": "シント＝トロイデンVV",
           "country": "BEL",
           "loan": false,
           "apps": 58,
@@ -5761,6 +6264,7 @@
         {
           "years": "2025-",
           "team": "ザンクトパウリ",
+          "teamArticle": "FCザンクトパウリ",
           "country": "GER",
           "loan": false,
           "apps": 32,
@@ -5771,6 +6275,7 @@
         {
           "years": "2019",
           "team": "日本 U-17",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 4,
@@ -5779,6 +6284,7 @@
         {
           "years": "2020-2021",
           "team": "日本 U-19",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -5787,6 +6293,7 @@
         {
           "years": "2021-2024",
           "team": "日本 U-23",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 4,
@@ -5795,6 +6302,7 @@
         {
           "years": "2022-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 7,
@@ -5823,6 +6331,7 @@
         {
           "years": "2018-2022",
           "team": "東京ヴェルディ",
+          "teamArticle": "東京ヴェルディ1969",
           "country": "JPN",
           "loan": false,
           "apps": 49,
@@ -5831,6 +6340,7 @@
         {
           "years": "2020-2022",
           "team": "ジル・ヴィセンテ",
+          "teamArticle": "ジル・ヴィセンテFC",
           "country": "POR",
           "loan": true,
           "apps": 59,
@@ -5839,6 +6349,7 @@
         {
           "years": "2022-2025",
           "team": "ジル・ヴィセンテ",
+          "teamArticle": "ジル・ヴィセンテFC",
           "country": "POR",
           "loan": false,
           "apps": 97,
@@ -5847,6 +6358,7 @@
         {
           "years": "2025-",
           "team": "バーミンガム・シティFC",
+          "teamArticle": "バーミンガム・シティFC",
           "country": "ENG",
           "loan": false,
           "apps": 5,
@@ -5857,6 +6369,7 @@
         {
           "years": "2019",
           "team": "日本U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 2,
@@ -5885,6 +6398,7 @@
         {
           "years": "2015-2018",
           "team": "ガンバ大阪",
+          "teamArticle": "ガンバ大阪",
           "country": "JPN",
           "loan": false,
           "apps": 36,
@@ -5893,6 +6407,7 @@
         {
           "years": "2017-2018",
           "team": "FCフローニンゲン",
+          "teamArticle": "FCフローニンゲン",
           "country": "NED",
           "loan": true,
           "apps": 29,
@@ -5901,6 +6416,7 @@
         {
           "years": "2018-2019",
           "team": "FCフローニンゲン",
+          "teamArticle": "FCフローニンゲン",
           "country": "NED",
           "loan": false,
           "apps": 32,
@@ -5909,6 +6425,7 @@
         {
           "years": "2019-2022",
           "team": "PSVアイントホーフェン",
+          "teamArticle": "PSVアイントホーフェン",
           "country": "NED",
           "loan": false,
           "apps": 43,
@@ -5917,6 +6434,7 @@
         {
           "years": "2020-2021",
           "team": "アルミニア・ビーレフェルト",
+          "teamArticle": "アルミニア・ビーレフェルト",
           "country": "GER",
           "loan": true,
           "apps": 34,
@@ -5925,6 +6443,7 @@
         {
           "years": "2022-2025",
           "team": "SCフライブルク",
+          "teamArticle": "SCフライブルク",
           "country": "GER",
           "loan": false,
           "apps": 97,
@@ -5933,6 +6452,7 @@
         {
           "years": "2025-",
           "team": "アイントラハト・フランクフルト",
+          "teamArticle": "アイントラハト・フランクフルト",
           "country": "GER",
           "loan": false,
           "apps": 31,
@@ -5943,6 +6463,7 @@
         {
           "years": "2013-2015",
           "team": "日本 U-17",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 4,
@@ -5951,6 +6472,7 @@
         {
           "years": "2015-2017",
           "team": "日本 U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 9,
@@ -5959,6 +6481,7 @@
         {
           "years": "2019-2021",
           "team": "日本 U-24",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 5,
@@ -5967,6 +6490,7 @@
         {
           "years": "2021",
           "team": "日本・オリンピック",
+          "teamArticle": "日本・オリンピック",
           "country": "JPN",
           "loan": false,
           "apps": 6,
@@ -5975,6 +6499,7 @@
         {
           "years": "2018-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 69,
@@ -6003,6 +6528,7 @@
         {
           "years": "2012-2014",
           "team": "セレッソ大阪",
+          "teamArticle": "セレッソ大阪",
           "country": "JPN",
           "loan": false,
           "apps": 62,
@@ -6011,6 +6537,7 @@
         {
           "years": "2015-2019",
           "team": "レッドブル・ザルツブルク",
+          "teamArticle": "レッドブル・ザルツブルク",
           "country": "AUT",
           "loan": false,
           "apps": 136,
@@ -6019,6 +6546,7 @@
         {
           "years": "2020-2022",
           "team": "リヴァプール",
+          "teamArticle": "リヴァプールFC",
           "country": "ENG",
           "loan": false,
           "apps": 30,
@@ -6027,6 +6555,7 @@
         {
           "years": "2021",
           "team": "サウサンプトン",
+          "teamArticle": "サウサンプトンFC",
           "country": "ENG",
           "loan": true,
           "apps": 10,
@@ -6035,6 +6564,7 @@
         {
           "years": "2022-",
           "team": "モナコ",
+          "teamArticle": "ASモナコ",
           "country": "MON",
           "loan": false,
           "apps": 94,
@@ -6045,6 +6575,7 @@
         {
           "years": "2009-2012",
           "team": "日本 U-17",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 15,
@@ -6053,6 +6584,7 @@
         {
           "years": "2011-2014",
           "team": "日本 U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 8,
@@ -6061,6 +6593,7 @@
         {
           "years": "2015-2016",
           "team": "日本・オリンピック",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 14,
@@ -6069,6 +6602,7 @@
         {
           "years": "2015-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 73,
@@ -6097,6 +6631,7 @@
         {
           "years": "2023-",
           "team": "名古屋グランパス",
+          "teamArticle": "名古屋グランパスエイト",
           "country": "JPN",
           "loan": false,
           "apps": 26,
@@ -6105,6 +6640,7 @@
         {
           "years": "2025",
           "team": "ジュビロ磐田",
+          "teamArticle": "ジュビロ磐田",
           "country": "JPN",
           "loan": true,
           "apps": 38,
@@ -6113,6 +6649,7 @@
         {
           "years": "2026",
           "team": "ベールスホット",
+          "teamArticle": "KベールスホットVA",
           "country": "BEL",
           "loan": true,
           "apps": 10,
@@ -6121,6 +6658,7 @@
         {
           "years": "2026-",
           "team": "KVコルトレイク",
+          "teamArticle": "KVコルトレイク",
           "country": "BEL",
           "loan": true,
           "apps": null,
@@ -6150,6 +6688,7 @@
         {
           "years": "2020-2025",
           "team": "湘南ベルマーレ",
+          "teamArticle": "湘南ベルマーレ",
           "country": "JPN",
           "loan": false,
           "apps": 128,
@@ -6158,6 +6697,7 @@
         {
           "years": "2025-",
           "team": "シント＝トロイデンVV",
+          "teamArticle": "シント＝トロイデンVV",
           "country": "BEL",
           "loan": false,
           "apps": 26,
@@ -6168,6 +6708,7 @@
         {
           "years": "2018-2019",
           "team": "日本 U-17",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 13,
@@ -6196,6 +6737,7 @@
         {
           "years": "2015-2018",
           "team": "川崎フロンターレ",
+          "teamArticle": "川崎フロンターレ",
           "country": "JPN",
           "loan": false,
           "apps": 7,
@@ -6204,6 +6746,7 @@
         {
           "years": "2015",
           "team": "Jリーグ・アンダー22選抜",
+          "teamArticle": "Jリーグ・アンダー22選抜",
           "country": "JPN",
           "loan": true,
           "apps": 2,
@@ -6212,6 +6755,7 @@
         {
           "years": "2018",
           "team": "ベガルタ仙台",
+          "teamArticle": "ベガルタ仙台",
           "country": "JPN",
           "loan": true,
           "apps": 24,
@@ -6220,6 +6764,7 @@
         {
           "years": "2019-2022",
           "team": "マンチェスター・シティ",
+          "teamArticle": "マンチェスター・シティFC",
           "country": "ENG",
           "loan": false,
           "apps": 0,
@@ -6228,6 +6773,7 @@
         {
           "years": "2019-2021",
           "team": "フローニンゲン",
+          "teamArticle": "FCフローニンゲン",
           "country": "NED",
           "loan": true,
           "apps": 56,
@@ -6236,6 +6782,7 @@
         {
           "years": "2021-2022",
           "team": "シャルケ",
+          "teamArticle": "シャルケ04",
           "country": "GER",
           "loan": true,
           "apps": 31,
@@ -6244,6 +6791,7 @@
         {
           "years": "2022-2025",
           "team": "ボルシアMG",
+          "teamArticle": "ボルシア・メンヒェングラートバッハ",
           "country": "GER",
           "loan": false,
           "apps": 75,
@@ -6252,6 +6800,7 @@
         {
           "years": "2025-2026",
           "team": "アヤックス",
+          "teamArticle": "アヤックス・アムステルダム",
           "country": "NED",
           "loan": false,
           "apps": 19,
@@ -6260,6 +6809,7 @@
         {
           "years": "2026-",
           "team": "ボルシアMG",
+          "teamArticle": "ボルシアMG",
           "country": "GER",
           "loan": false,
           "apps": null,
@@ -6270,6 +6820,7 @@
         {
           "years": "2015",
           "team": "日本 U-18",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 2,
@@ -6278,6 +6829,7 @@
         {
           "years": "2016",
           "team": "日本 U-19",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 2,
@@ -6286,6 +6838,7 @@
         {
           "years": "2017",
           "team": "日本 U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 5,
@@ -6294,6 +6847,7 @@
         {
           "years": "2018",
           "team": "日本 U-21",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 14,
@@ -6302,6 +6856,7 @@
         {
           "years": "2019-2020",
           "team": "日本 U-23",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 5,
@@ -6310,6 +6865,7 @@
         {
           "years": "2021",
           "team": "日本・オリンピック",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 6,
@@ -6318,6 +6874,7 @@
         {
           "years": "2019-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 42,
@@ -6346,6 +6903,7 @@
         {
           "years": "2015-2017",
           "team": "アビスパ福岡",
+          "teamArticle": "アビスパ福岡",
           "country": "JPN",
           "loan": false,
           "apps": 45,
@@ -6354,6 +6912,7 @@
         {
           "years": "2018-2019",
           "team": "シント＝トロイデン",
+          "teamArticle": "シント＝トロイデンVV",
           "country": "BEL",
           "loan": false,
           "apps": 27,
@@ -6362,6 +6921,7 @@
         {
           "years": "2019-2021",
           "team": "ボローニャ",
+          "teamArticle": "ボローニャFC",
           "country": "ITA",
           "loan": false,
           "apps": 61,
@@ -6370,6 +6930,7 @@
         {
           "years": "2021-2025",
           "team": "アーセナル",
+          "teamArticle": "アーセナルFC",
           "country": "ENG",
           "loan": false,
           "apps": 65,
@@ -6378,6 +6939,7 @@
         {
           "years": "2025-2026",
           "team": "アヤックス",
+          "teamArticle": "アヤックス・アムステルダム",
           "country": "NED",
           "loan": false,
           "apps": 7,
@@ -6386,6 +6948,7 @@
         {
           "years": "2026-",
           "team": "クリスタル・パレス",
+          "teamArticle": "クリスタル・パレスFC",
           "country": "ENG",
           "loan": false,
           "apps": 0,
@@ -6396,6 +6959,7 @@
         {
           "years": "2013-2015",
           "team": "日本 U-17",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 19,
@@ -6404,6 +6968,7 @@
         {
           "years": "2015-2017",
           "team": "日本 U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 28,
@@ -6412,6 +6977,7 @@
         {
           "years": "2018-2021",
           "team": "日本 U-23",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 7,
@@ -6420,6 +6986,7 @@
         {
           "years": "2021",
           "team": "日本・オリンピック",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -6428,6 +6995,7 @@
         {
           "years": "2018-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 46,
@@ -6456,6 +7024,7 @@
         {
           "years": "2021-2022",
           "team": "サガン鳥栖",
+          "teamArticle": "サガン鳥栖",
           "country": "JPN",
           "loan": false,
           "apps": 5,
@@ -6464,6 +7033,7 @@
         {
           "years": "2023-2025",
           "team": "FCバイエルン・ミュンヘン",
+          "teamArticle": "FCバイエルン・ミュンヘン",
           "country": "GER",
           "loan": false,
           "apps": 0,
@@ -6472,6 +7042,7 @@
         {
           "years": "2023",
           "team": "FCバイエルン・ミュンヘンII",
+          "teamArticle": "FCバイエルン・ミュンヘンII",
           "country": "GER",
           "loan": true,
           "apps": 27,
@@ -6480,6 +7051,7 @@
         {
           "years": "2024",
           "team": "ポルティモネンセSC",
+          "teamArticle": "ポルティモネンセSC",
           "country": "POR",
           "loan": true,
           "apps": 11,
@@ -6488,6 +7060,7 @@
         {
           "years": "2024-2025",
           "team": "FCアロウカ",
+          "teamArticle": "FCアロウカ",
           "country": "POR",
           "loan": true,
           "apps": 17,
@@ -6496,6 +7069,7 @@
         {
           "years": "2025-",
           "team": "FCアロウカ",
+          "teamArticle": "FCアロウカ",
           "country": "POR",
           "loan": false,
           "apps": 46,
@@ -6506,6 +7080,7 @@
         {
           "years": "2023",
           "team": "日本U-22",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -6534,6 +7109,7 @@
         {
           "years": "2023-2025",
           "team": "ボルシアMG II",
+          "teamArticle": "ボルシア・メンヒェングラートバッハII",
           "country": "GER",
           "loan": false,
           "apps": 36,
@@ -6542,6 +7118,7 @@
         {
           "years": "2024-2026",
           "team": "ボルシアMG",
+          "teamArticle": "ボルシア・メンヒェングラートバッハ",
           "country": "GER",
           "loan": false,
           "apps": 11,
@@ -6550,6 +7127,7 @@
         {
           "years": "2025-2026",
           "team": "カールスルーエ",
+          "teamArticle": "カールスルーエSC",
           "country": "GER",
           "loan": true,
           "apps": 20,
@@ -6558,6 +7136,7 @@
         {
           "years": "2026-",
           "team": "カールスルーエ",
+          "teamArticle": "カールスルーエ",
           "country": "GER",
           "loan": false,
           "apps": null,
@@ -6568,6 +7147,7 @@
         {
           "years": "2023",
           "team": "日本U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -6596,6 +7176,7 @@
         {
           "years": "2019-2022",
           "team": "FC今治",
+          "teamArticle": "FC今治",
           "country": "JPN",
           "loan": false,
           "apps": 36,
@@ -6604,6 +7185,7 @@
         {
           "years": "2023",
           "team": "Y.S.C.C.横浜",
+          "teamArticle": "横浜スポーツ&カルチャークラブ",
           "country": "JPN",
           "loan": false,
           "apps": 21,
@@ -6612,6 +7194,7 @@
         {
           "years": "2023-2025",
           "team": "湘南ベルマーレ",
+          "teamArticle": "湘南ベルマーレ",
           "country": "JPN",
           "loan": false,
           "apps": 61,
@@ -6620,6 +7203,7 @@
         {
           "years": "2025-",
           "team": "ブレンビーIF",
+          "teamArticle": "ブレンビーIF",
           "country": "DEN",
           "loan": false,
           "apps": null,
@@ -6649,6 +7233,7 @@
         {
           "years": "2021-2025",
           "team": "FC町田ゼルビア",
+          "teamArticle": "FC町田ゼルビア",
           "country": "JPN",
           "loan": false,
           "apps": 70,
@@ -6657,6 +7242,7 @@
         {
           "years": "2024-2025",
           "team": "ブリストル・シティ",
+          "teamArticle": "ブリストル・シティFC",
           "country": "ENG",
           "loan": true,
           "apps": 36,
@@ -6665,6 +7251,7 @@
         {
           "years": "2025-",
           "team": "ブリストル・シティ",
+          "teamArticle": "ブリストル・シティ",
           "country": "ENG",
           "loan": false,
           "apps": 26,
@@ -6673,6 +7260,7 @@
         {
           "years": "2026",
           "team": "ハル・シティ",
+          "teamArticle": "ハル・シティAFC",
           "country": "ENG",
           "loan": true,
           "apps": 7,
@@ -6683,6 +7271,7 @@
         {
           "years": "2023",
           "team": "日本 U-22",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 1,
@@ -6691,6 +7280,7 @@
         {
           "years": "2024",
           "team": "日本 U-23",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 1,
@@ -6699,6 +7289,7 @@
         {
           "years": "2025",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 1,
@@ -6727,6 +7318,7 @@
         {
           "years": "2020",
           "team": "セレッソ大阪U-23",
+          "teamArticle": "セレッソ大阪#セレッソ大阪U-23",
           "country": "JPN",
           "loan": false,
           "apps": 8,
@@ -6735,6 +7327,7 @@
         {
           "years": "2022-2025",
           "team": "セレッソ大阪",
+          "teamArticle": "セレッソ大阪",
           "country": "JPN",
           "loan": false,
           "apps": 68,
@@ -6743,6 +7336,7 @@
         {
           "years": "2025-",
           "team": "レッドブル・ザルツブルク",
+          "teamArticle": "レッドブル・ザルツブルク",
           "country": "AUT",
           "loan": false,
           "apps": 25,
@@ -6753,6 +7347,7 @@
         {
           "years": "2023",
           "team": "日本U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 19,
@@ -6761,6 +7356,7 @@
         {
           "years": "2025-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 1,
@@ -6789,6 +7385,7 @@
         {
           "years": "2020-2021",
           "team": "V・ファーレン長崎",
+          "teamArticle": "V・ファーレン長崎",
           "country": "JPN",
           "loan": false,
           "apps": 74,
@@ -6797,6 +7394,7 @@
         {
           "years": "2022-2024",
           "team": "セレッソ大阪",
+          "teamArticle": "セレッソ大阪",
           "country": "JPN",
           "loan": false,
           "apps": 74,
@@ -6805,6 +7403,7 @@
         {
           "years": "2024-",
           "team": "AZアルクマール",
+          "teamArticle": "AZアルクマール",
           "country": "NED",
           "loan": false,
           "apps": 26,
@@ -6815,6 +7414,7 @@
         {
           "years": "2023-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 8,
@@ -6843,6 +7443,7 @@
         {
           "years": "2018-2019",
           "team": "FC東京U-23",
+          "teamArticle": "FC東京#FC東京U-23",
           "country": "JPN",
           "loan": false,
           "apps": 37,
@@ -6851,6 +7452,7 @@
         {
           "years": "2020-2025",
           "team": "FC東京",
+          "teamArticle": "FC東京",
           "country": "JPN",
           "loan": false,
           "apps": 23,
@@ -6859,6 +7461,7 @@
         {
           "years": "2021",
           "team": "京都サンガF.C.",
+          "teamArticle": "京都サンガF.C.",
           "country": "JPN",
           "loan": true,
           "apps": 1,
@@ -6867,6 +7470,7 @@
         {
           "years": "2021",
           "team": "SC相模原",
+          "teamArticle": "SC相模原",
           "country": "JPN",
           "loan": true,
           "apps": 17,
@@ -6875,6 +7479,7 @@
         {
           "years": "2022",
           "team": "モンテディオ山形",
+          "teamArticle": "モンテディオ山形",
           "country": "JPN",
           "loan": true,
           "apps": 6,
@@ -6883,6 +7488,7 @@
         {
           "years": "2024",
           "team": "サガン鳥栖",
+          "teamArticle": "サガン鳥栖",
           "country": "JPN",
           "loan": true,
           "apps": 26,
@@ -6891,6 +7497,7 @@
         {
           "years": "2025-",
           "team": "KVCウェステルロー",
+          "teamArticle": "KVCウェステルロー",
           "country": "BEL",
           "loan": false,
           "apps": 14,
@@ -6901,6 +7508,7 @@
         {
           "years": "2024",
           "team": "日本U-23",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -6929,6 +7537,7 @@
         {
           "years": "2019",
           "team": "FC東京U-23",
+          "teamArticle": "FC東京#FC東京U-23",
           "country": "JPN",
           "loan": false,
           "apps": 5,
@@ -6937,6 +7546,7 @@
         {
           "years": "2020-2025",
           "team": "FC東京",
+          "teamArticle": "FC東京",
           "country": "JPN",
           "loan": false,
           "apps": 53,
@@ -6945,6 +7555,7 @@
         {
           "years": "2021-2022",
           "team": "いわてグルージャ盛岡",
+          "teamArticle": "いわてグルージャ盛岡",
           "country": "JPN",
           "loan": true,
           "apps": 36,
@@ -6953,6 +7564,7 @@
         {
           "years": "2025-",
           "team": "ロイヤル・アントワープ",
+          "teamArticle": "ロイヤル・アントワープFC",
           "country": "BEL",
           "loan": false,
           "apps": 21,
@@ -6963,6 +7575,7 @@
         {
           "years": "2017",
           "team": "日本 U-15",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 2,
@@ -6971,6 +7584,7 @@
         {
           "years": "2018",
           "team": "日本 U-16",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 5,
@@ -6979,6 +7593,7 @@
         {
           "years": "2019",
           "team": "日本 U-17",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 4,
@@ -6987,6 +7602,7 @@
         {
           "years": "2019",
           "team": "日本 U-18",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 2,
@@ -6995,6 +7611,7 @@
         {
           "years": "2024",
           "team": "日本 U-23",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 0,
@@ -7003,6 +7620,7 @@
         {
           "years": "2024-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 0,
@@ -7031,6 +7649,7 @@
         {
           "years": "2021-2024",
           "team": "浦和レッズ",
+          "teamArticle": "浦和レッドダイヤモンズ",
           "country": "JPN",
           "loan": false,
           "apps": 8,
@@ -7039,6 +7658,7 @@
         {
           "years": "2023-2024",
           "team": "シント＝トロイデン",
+          "teamArticle": "シント＝トロイデンVV",
           "country": "BEL",
           "loan": true,
           "apps": 32,
@@ -7047,6 +7667,7 @@
         {
           "years": "2024-2026",
           "team": "パルマ",
+          "teamArticle": "パルマ・カルチョ1913",
           "country": "ITA",
           "loan": false,
           "apps": 57,
@@ -7055,6 +7676,7 @@
         {
           "years": "2026-",
           "team": "アストン・ヴィラ",
+          "teamArticle": "アストン・ヴィラFC",
           "country": "ENG",
           "loan": false,
           "apps": null,
@@ -7065,6 +7687,7 @@
         {
           "years": "2016-2017",
           "team": "日本 U-15",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 7,
@@ -7073,6 +7696,7 @@
         {
           "years": "2017",
           "team": "日本 U-16",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 2,
@@ -7081,6 +7705,7 @@
         {
           "years": "2017-2019",
           "team": "日本 U-17",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 9,
@@ -7089,6 +7714,7 @@
         {
           "years": "2022",
           "team": "日本 U-21",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 6,
@@ -7097,6 +7723,7 @@
         {
           "years": "2023",
           "team": "日本 U-22",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 5,
@@ -7105,6 +7732,7 @@
         {
           "years": "2021",
           "team": "日本 U-24",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 1,
@@ -7113,6 +7741,7 @@
         {
           "years": "2022-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 28,
@@ -7141,6 +7770,7 @@
         {
           "years": "2022-2025",
           "team": "湘南ベルマーレ",
+          "teamArticle": "湘南ベルマーレ",
           "country": "JPN",
           "loan": false,
           "apps": 49,
@@ -7149,6 +7779,7 @@
         {
           "years": "2025-",
           "team": "FCコペンハーゲン",
+          "teamArticle": "FCコペンハーゲン",
           "country": "DEN",
           "loan": false,
           "apps": 22,
@@ -7159,6 +7790,7 @@
         {
           "years": "2025-",
           "team": "日本代表",
+          "teamArticle": "日本",
           "country": "JPN",
           "loan": false,
           "apps": 8,
@@ -7187,6 +7819,7 @@
         {
           "years": "2020-2023",
           "team": "清水エスパルス",
+          "teamArticle": "清水エスパルス",
           "country": "JPN",
           "loan": false,
           "apps": 86,
@@ -7195,6 +7828,7 @@
         {
           "years": "2023",
           "team": "ストラスブール",
+          "teamArticle": "RCストラスブール",
           "country": "FRA",
           "loan": true,
           "apps": 3,
@@ -7203,6 +7837,7 @@
         {
           "years": "2023",
           "team": "ストラスブールB",
+          "teamArticle": "RCストラスブール",
           "country": "FRA",
           "loan": true,
           "apps": 1,
@@ -7211,6 +7846,7 @@
         {
           "years": "2023-2025",
           "team": "ブレンビー",
+          "teamArticle": "ブレンビーIF",
           "country": "DEN",
           "loan": false,
           "apps": 58,
@@ -7219,6 +7855,7 @@
         {
           "years": "2025-",
           "team": "フライブルク",
+          "teamArticle": "SCフライブルク",
           "country": "GER",
           "loan": false,
           "apps": 25,
@@ -7229,6 +7866,7 @@
         {
           "years": "2019",
           "team": "日本 U-18",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,
@@ -7237,6 +7875,7 @@
         {
           "years": "2024-",
           "team": "日本代表",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 8,
@@ -7265,6 +7904,7 @@
         {
           "years": "2024-2025",
           "team": "水戸ホーリーホック",
+          "teamArticle": "水戸ホーリーホック",
           "country": "JPN",
           "loan": false,
           "apps": 43,
@@ -7273,6 +7913,7 @@
         {
           "years": "2026-",
           "team": "ウェステルロー",
+          "teamArticle": "KVCウェステルロー",
           "country": "BEL",
           "loan": false,
           "apps": 7,
@@ -7283,6 +7924,7 @@
         {
           "years": "2025-",
           "team": "日本 U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 2,
@@ -7311,6 +7953,7 @@
         {
           "years": "2024-",
           "team": "セレッソ大阪",
+          "teamArticle": "セレッソ大阪",
           "country": "JPN",
           "loan": false,
           "apps": 23,
@@ -7319,6 +7962,7 @@
         {
           "years": "2026",
           "team": "アルメレ・シティFC",
+          "teamArticle": "アルメレ・シティFC",
           "country": "NED",
           "loan": true,
           "apps": 16,
@@ -7327,6 +7971,7 @@
         {
           "years": "2026-",
           "team": "ホルシュタイン・キール",
+          "teamArticle": "ホルシュタイン・キール",
           "country": "GER",
           "loan": true,
           "apps": null,
@@ -7337,6 +7982,7 @@
         {
           "years": "2021",
           "team": "スペイン U-16",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -7345,6 +7991,7 @@
         {
           "years": "2022",
           "team": "日本 U-19",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": null,
@@ -7353,6 +8000,7 @@
         {
           "years": "2023",
           "team": "日本 U-20",
+          "teamArticle": null,
           "country": null,
           "loan": false,
           "apps": 3,

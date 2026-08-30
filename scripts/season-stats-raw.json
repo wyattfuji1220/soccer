@@ -76,7 +76,7 @@
   },
   "鎌田大地": {
    "division": "Premier League",
-   "apps": 1,
+   "apps": 2,
    "goals": 0,
    "european": true,
    "updatedAt": "2026-08-22",
@@ -260,10 +260,10 @@
   },
   "森下龍矢": {
    "division": "Championship",
-   "apps": 1,
-   "goals": 0,
+   "apps": 3,
+   "goals": 1,
    "european": true,
-   "updatedAt": "2026-08-14",
+   "updatedAt": "2026-08-29",
    "source": "Ryōya Morishita"
   },
   "水多海斗": {
@@ -316,10 +316,10 @@
   },
   "大橋祐紀": {
    "division": "Championship",
-   "apps": 1,
+   "apps": 2,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-14",
+   "updatedAt": "2026-08-25",
    "source": "Yūki Ōhashi"
   },
   "中村草太": {
@@ -388,10 +388,10 @@
   },
   "冨安健洋": {
    "division": "Premier League",
-   "apps": 1,
+   "apps": 2,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-22",
+   "updatedAt": "2026-08-28",
    "source": "Takehiro Tomiyasu"
   },
   "福田師王": {
