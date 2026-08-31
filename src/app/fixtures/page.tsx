@@ -5,7 +5,7 @@ import { cupMap } from "@/data/cups";
 import { broadcasters } from "@/data/broadcasters";
 import { broadcasterLink } from "@/lib/affiliate";
 import { getFixtures, playersInFixture, usingSampleData, fixturesUpdatedAt, fetchFailures } from "@/lib/fixtures";
-import { jstTime, jstDate, nightKey } from "@/lib/jst";
+import { jstTime, nightKey } from "@/lib/jst";
 import { FixtureBoard, type FixtureRow } from "./FixtureBoard";
 import { Jp } from "@/lib/jp";
 
@@ -31,7 +31,6 @@ function toRows(now: Date): FixtureRow[] {
     return {
       id: String(f.id),
       night: nightKey(kickoff),
-      nightLabel: jstDate(kickoff),
       utcDate: f.utcDate,
       time: jstTime(kickoff),
       league: f.league,
@@ -52,7 +51,6 @@ function toRows(now: Date): FixtureRow[] {
 export default function FixturesPage() {
   const now = new Date();
   const rows = toRows(now).sort((a, b) => a.utcDate.localeCompare(b.utcDate));
-  const todayNight = nightKey(now);
 
   // 絞り込みの選択肢は、実際に試合があるリーグだけ出す
   const present = [...new Set(rows.map((r) => r.league))];
@@ -87,7 +85,7 @@ export default function FixturesPage() {
         </p>
       )}
 
-      <FixtureBoard rows={rows} todayNight={todayNight} leagues={options} />
+      <FixtureBoard rows={rows} buildTime={now.toISOString()} leagues={options} />
 
       <p className="mt-10 text-xs muted leading-relaxed">
         日程データ出典:{" "}

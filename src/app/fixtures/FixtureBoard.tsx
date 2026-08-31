@@ -1,8 +1,9 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { Flag } from "@/components/Flag";
+import { fromJst, jstDate, nightKey } from "@/lib/jst";
 
 /**
  * 試合日程の絞り込みと日付移動。
@@ -13,14 +14,15 @@ import { Flag } from "@/components/Flag";
  * 終わった試合のスコアは既定で隠している。日程を確かめに来ただけの人に
  * 結果が目に入るのは、録画で観る人にとって困るため。
  * 表示にした状態は覚えない。開き直すたびに隠れた状態から始める。
+ *
+ * 「今夜」がどの夜かは、ビルドした時刻ではなくブラウザの時刻で決める。
+ * 1日1回しかビルドしない時期、日中はずっと前の晩を「今夜」と呼んでいた。
  */
 
 export type FixtureRow = {
   id: string;
   /** 観戦ナイトのキー（JST 9時区切り） */
   night: string;
-  /** 日付タブの見出し。「8/30(日)」 */
-  nightLabel: string;
   utcDate: string;
   time: string;
   league: string;
@@ -39,29 +41,53 @@ export type FixtureRow = {
 
 type Props = {
   rows: FixtureRow[];
-  /** 今夜のキー。ここが最初に開く */
-  todayNight: string;
+  /** ビルドした時刻。ブラウザの時計を読むまでの仮の基準にする */
+  buildTime: string;
   leagues: { id: string; name: string; country: string }[];
 };
 
+/**
+ * 夜のキー（2026-08-31）を見出しにする。
+ * 試合のキックオフ日ではなく夜の日付から作らないと、深夜の試合と翌晩の試合が
+ * 同じ見出しになり、タブに同じ日付が2つ並ぶ。
+ */
+function nightLabel(key: string): string {
+  const [y, m, d] = key.split("-").map(Number);
+  return jstDate(fromJst(y, m, d, 12));
+}
+
 type Order = "time" | "league";
 
-export function FixtureBoard({ rows, todayNight, leagues }: Props) {
+export function FixtureBoard({ rows, buildTime, leagues }: Props) {
   const [league, setLeague] = useState("all");
   const [query, setQuery] = useState("");
   const [order, setOrder] = useState<Order>("time");
   const [showScores, setShowScores] = useState(false);
-  const [night, setNight] = useState(todayNight);
+  /** 利用者が自分でタブを選んだら、その夜を固定する。未選択なら今夜 */
+  const [picked, setPicked] = useState<string | null>(null);
+
+  /*
+   * 最初の描画はビルド時刻で行い、そのあとブラウザの時計に切り替える。
+   * 最初から現在時刻で描くと、サーバーが作ったHTMLと食い違う。
+   */
+  const [now, setNow] = useState(() => new Date(buildTime));
+  useEffect(() => {
+    setNow(new Date());
+    const timer = setInterval(() => setNow(new Date()), 60_000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const todayNight = nightKey(now);
+  const night = picked ?? todayNight;
 
   const past = useMemo(() => rows.filter((r) => r.night < todayNight), [rows, todayNight]);
   const future = useMemo(() => rows.filter((r) => r.night >= todayNight), [rows, todayNight]);
 
   /** 日付タブに出す夜。試合がある日だけ並べる */
-  const nights = useMemo(() => {
-    const seen = new Map<string, string>();
-    for (const r of future) seen.set(r.night, r.nightLabel);
-    return [...seen].sort((a, b) => a[0].localeCompare(b[0]));
-  }, [future]);
+  const nights = useMemo(
+    () => [...new Set(future.map((r) => r.night))].sort().map((key) => [key, nightLabel(key)] as const),
+    [future]
+  );
 
   const matches = (r: FixtureRow) => {
     if (league !== "all" && r.league !== league) return false;
@@ -90,10 +116,7 @@ export function FixtureBoard({ rows, todayNight, leagues }: Props) {
   const pastShown = useMemo(() => past.filter(matches).sort((a, b) => b.utcDate.localeCompare(a.utcDate)), [past, league, query]);
 
   const total = rows.filter(matches).length;
-  const range =
-    rows.length > 0
-      ? `${rows[0].nightLabel}〜${rows[rows.length - 1].nightLabel}`
-      : "";
+  const range = rows.length > 0 ? `${nightLabel(rows[0].night)}〜${nightLabel(rows[rows.length - 1].night)}` : "";
 
   return (
     <div className="jp-auto mt-8">
@@ -169,7 +192,7 @@ export function FixtureBoard({ rows, todayNight, leagues }: Props) {
               <button
                 key={key}
                 type="button"
-                onClick={() => setNight(key)}
+                onClick={() => setPicked(key)}
                 aria-pressed={effectiveNight === key}
                 className={`tap px-3 py-2 rounded-md text-xs font-semibold whitespace-nowrap transition-colors ${
                   effectiveNight === key ? "bg-pitch-500 text-white" : "surface hover:border-pitch-500/60"

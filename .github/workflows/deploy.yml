@@ -3,9 +3,12 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
-  # 日程データの鮮度を保つため毎日再ビルドする（21:00 JST = 12:00 UTC）
+  # 試合・順位・ハイライトは日中も動くので、6時間ごとに作り直す。
+  # 1日1回だった頃は、日中ずっと前の晩のデータを出していた。
+  # UTC 0/6/12/18 = JST 9時／15時／21時／翌3時。
+  # 欧州の試合は JST の未明に終わるので、9時のビルドで結果が載る。
   schedule:
-    - cron: "0 12 * * *"
+    - cron: "0 0,6,12,18 * * *"
   workflow_dispatch:
 
 permissions:
@@ -43,6 +46,18 @@ jobs:
             npm run data:standings
           else
             echo "FOOTBALL_DATA_TOKEN が未設定のため、サンプル日程のままビルドします"
+          fi
+
+      - name: ハイライトを取得
+        # 試合の数時間後に投稿されるため、日程と同じ頻度で取り直す。
+        # 取得できなければ、リポジトリにある前回の内容のままビルドする。
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: |
+          if [ -n "$YOUTUBE_API_KEY" ]; then
+            npm run data:highlights
+          else
+            echo "YOUTUBE_API_KEY が未設定のため、前回のハイライトのままビルドします"
           fi
 
       - name: ビルド

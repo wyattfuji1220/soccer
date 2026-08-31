@@ -1,7 +1,8 @@
 name: 選手データの更新
 
-# 公開用のビルド（deploy.yml）は 12:00 UTC に走る。
-# その30分前にデータを取り直し、変わっていればコミットしておく。
+# 変わりにくいもの（選手・移籍・経歴・今季成績）だけをここで扱う。
+# 試合・順位・ハイライトは動きが速いので、deploy.yml が毎回のビルドで取り直す。
+# 公開用のビルドは 12:00 UTC にも走るので、その30分前にコミットしておく。
 # コミットは GITHUB_TOKEN で行うため deploy.yml は再起動されない。
 # 毎日の実行では日曜だけ、重い経歴データ（1200件超）もまとめて取り直す。
 on:
@@ -44,17 +45,6 @@ jobs:
 
       - name: 今季の成績を取り直す
         run: npm run data:season
-
-      - name: ハイライト動画を取り直す
-        # キーが未設定なら前回の内容のままビルドする
-        env:
-          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-        run: |
-          if [ -n "$YOUTUBE_API_KEY" ]; then
-            npm run data:highlights
-          else
-            echo "YOUTUBE_API_KEY が未設定のため、ハイライトの更新をとばします"
-          fi
 
       - name: 掲載データを点検する
         run: npm run data:check
