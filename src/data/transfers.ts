@@ -10,5 +10,24 @@ import type { Transfer } from "@/lib/types";
  * Wikipediaへの反映を待つぶん、発表より数日遅れることがある。
  */
 export const transfers: Transfer[] = [
-
+  {
+    date: "2026-08-31",
+    slug: "ayase-ueda",
+    nameJa: "上田綺世",
+    kind: "move",
+    fromClub: "フェイエノールト",
+    toClub: "フェイエノールト・ロッテルダム",
+    fromLeague: "eredivisie",
+    toLeague: "eredivisie",
+  },
+  {
+    date: "2026-08-31",
+    slug: "tsuyoshi-watanabe",
+    nameJa: "渡辺剛",
+    kind: "move",
+    fromClub: "フェイエノールト",
+    toClub: "フェイエノールト・ロッテルダム",
+    fromLeague: "eredivisie",
+    toLeague: "eredivisie",
+  },
 ];

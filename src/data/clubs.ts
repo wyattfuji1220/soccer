@@ -7,7 +7,7 @@ import type { Club } from "@/lib/types";
  * リダイレクト解決で正式な記事名に寄せている。
  * 現所属選手がいる、または過去に2人以上が在籍したクラブだけを収録している。
  *
- * 最終取得: 2026-08-30
+ * 最終取得: 2026-08-31
  */
 export const clubs: Club[] = [
   {
@@ -240,10 +240,10 @@ export const clubs: Club[] = [
     ],
   },
   {
-    slug: "feyenoord",
-    name: "フェイエノールト",
-    nameEn: "Feyenoord",
-    article: "フェイエノールト",
+    slug: "club-83",
+    name: "フェイエノールト・ロッテルダム",
+    nameEn: null,
+    article: "フェイエノールト・ロッテルダム",
     countries: ["NED"],
     currentPlayers: ["上田綺世", "渡辺剛"],
     pastPlayers: [
@@ -920,6 +920,20 @@ export const clubs: Club[] = [
     ],
   },
   {
+    slug: "dusseldorf",
+    name: "デュッセルドルフ",
+    nameEn: "Düsseldorf",
+    article: "デュッセルドルフ",
+    countries: ["GER"],
+    currentPlayers: [],
+    pastPlayers: [
+      { nameJa: "アペルカンプ真大", years: "2019-2026", loan: false },
+      { nameJa: "原口元気", years: "2018", loan: true },
+      { nameJa: "田中聡", years: "2026", loan: false },
+      { nameJa: "田中碧", years: "2021-2022", loan: true },
+    ],
+  },
+  {
     slug: "vfb-stuttgart",
     name: "VfBシュトゥットガルト",
     nameEn: "VfB Stuttgart",
@@ -1015,19 +1029,6 @@ export const clubs: Club[] = [
       { nameJa: "山本理仁", years: "2022-2024", loan: false },
       { nameJa: "中村敬斗", years: "2018-2021", loan: false },
       { nameJa: "堂安律", years: "2015-2018", loan: false },
-    ],
-  },
-  {
-    slug: "dusseldorf",
-    name: "デュッセルドルフ",
-    nameEn: "Düsseldorf",
-    article: "デュッセルドルフ",
-    countries: ["GER"],
-    currentPlayers: [],
-    pastPlayers: [
-      { nameJa: "アペルカンプ真大", years: "2019-2026", loan: false },
-      { nameJa: "原口元気", years: "2018", loan: true },
-      { nameJa: "田中聡", years: "2026", loan: false },
     ],
   },
   {

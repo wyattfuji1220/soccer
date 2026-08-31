@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-08-30",
+ "takenAt": "2026-08-31",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -28,8 +28,8 @@
   },
   "伊東純也": {
    "division": "Belgian Pro League",
-   "apps": 3,
-   "goals": 0,
+   "apps": 4,
+   "goals": 1,
    "european": true,
    "updatedAt": "2026-08-22",
    "source": "Junya Itō"
@@ -108,10 +108,10 @@
   },
   "橋岡大樹": {
    "division": "Bundesliga",
-   "apps": 0,
+   "apps": 1,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-23",
+   "updatedAt": "2026-08-30",
    "source": "Daiki Hashioka"
   },
   "原大智": {
@@ -140,10 +140,10 @@
   },
   "高岡伶颯": {
    "division": "Challenger Pro League",
-   "apps": 2,
+   "apps": 3,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-22",
+   "updatedAt": "2026-08-29",
    "source": "Rento Takaoka"
   },
   "佐藤龍之介": {
@@ -252,8 +252,8 @@
   },
   "上田綺世": {
    "division": "Eredivisie",
-   "apps": 3,
-   "goals": 2,
+   "apps": 4,
+   "goals": 3,
    "european": true,
    "updatedAt": "2026-08-16",
    "source": "Ayase Ueda"
@@ -292,10 +292,10 @@
   },
   "斉藤光毅": {
    "division": "EFL Championship",
-   "apps": 1,
+   "apps": 2,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-08-15",
+   "updatedAt": "2026-08-29",
    "source": "Kōki Saitō (footballer)"
   },
   "川﨑颯太": {
@@ -380,10 +380,10 @@
   },
   "板倉滉": {
    "division": "Bundesliga",
-   "apps": 0,
+   "apps": 1,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-23",
+   "updatedAt": "2026-08-29",
    "source": "Kō Itakura"
   },
   "冨安健洋": {
@@ -436,10 +436,10 @@
   },
   "鈴木唯人": {
    "division": "Bundesliga",
-   "apps": 0,
-   "goals": 0,
+   "apps": 1,
+   "goals": 3,
    "european": true,
-   "updatedAt": "2026-08-27",
+   "updatedAt": "2026-08-30",
    "source": "Yuito Suzuki"
   }
  }
