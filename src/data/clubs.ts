@@ -7,7 +7,7 @@ import type { Club } from "@/lib/types";
  * リダイレクト解決で正式な記事名に寄せている。
  * 現所属選手がいる、または過去に2人以上が在籍したクラブだけを収録している。
  *
- * 最終取得: 2026-08-31
+ * 最終取得: 2026-09-01
  */
 export const clubs: Club[] = [
   {
@@ -240,17 +240,6 @@ export const clubs: Club[] = [
     ],
   },
   {
-    slug: "club-83",
-    name: "フェイエノールト・ロッテルダム",
-    nameEn: null,
-    article: "フェイエノールト・ロッテルダム",
-    countries: ["NED"],
-    currentPlayers: ["上田綺世", "渡辺剛"],
-    pastPlayers: [
-
-    ],
-  },
-  {
     slug: "blackburn-rovers",
     name: "ブラックバーン・ローヴァーズFC",
     nameEn: "Blackburn Rovers F.C.",
@@ -341,6 +330,17 @@ export const clubs: Club[] = [
     currentPlayers: ["守田英正"],
     pastPlayers: [
       { nameJa: "平河悠", years: "2026", loan: true },
+    ],
+  },
+  {
+    slug: "club-84",
+    name: "フェイエノールト・ロッテルダム",
+    nameEn: null,
+    article: "フェイエノールト・ロッテルダム",
+    countries: ["NED"],
+    currentPlayers: ["渡辺剛"],
+    pastPlayers: [
+      { nameJa: "上田綺世", years: "2023-2026", loan: false },
     ],
   },
   {
@@ -537,6 +537,17 @@ export const clubs: Club[] = [
     article: "ハノーファー96",
     countries: ["GER"],
     currentPlayers: ["松田隼風"],
+    pastPlayers: [
+
+    ],
+  },
+  {
+    slug: "lille-osc",
+    name: "LOSCリール",
+    nameEn: "Lille OSC",
+    article: "LOSCリール",
+    countries: ["FRA"],
+    currentPlayers: ["上田綺世"],
     pastPlayers: [
 
     ],
