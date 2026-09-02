@@ -7,7 +7,7 @@ import type { Club } from "@/lib/types";
  * リダイレクト解決で正式な記事名に寄せている。
  * 現所属選手がいる、または過去に2人以上が在籍したクラブだけを収録している。
  *
- * 最終取得: 2026-09-01
+ * 最終取得: 2026-09-02
  */
 export const clubs: Club[] = [
   {
@@ -16,7 +16,7 @@ export const clubs: Club[] = [
     nameEn: "Sint-Truidense VV",
     article: "シント＝トロイデンVV",
     countries: ["BEL"],
-    currentPlayers: ["荒木遼太郎", "小久保玲央ブライアン", "松澤海斗", "新川志音", "石渡ネルソン", "谷口彰悟", "畑大雅"],
+    currentPlayers: ["荒木遼太郎", "高井幸大", "小久保玲央ブライアン", "松澤海斗", "新川志音", "石渡ネルソン", "谷口彰悟", "畑大雅"],
     pastPlayers: [
       { nameJa: "遠藤航", years: "2018-2020", loan: false },
       { nameJa: "鎌田大地", years: "2018-2019", loan: true },
@@ -64,23 +64,23 @@ export const clubs: Club[] = [
     ],
   },
   {
-    slug: "holstein-kiel",
-    name: "ホルシュタイン・キール",
-    nameEn: "Holstein Kiel",
-    article: "ホルシュタイン・キール",
-    countries: ["GER"],
-    currentPlayers: ["安部大晴", "関根大輝", "髙橋仁胡"],
-    pastPlayers: [
-      { nameJa: "町野修斗", years: "2023-2025", loan: false },
-    ],
-  },
-  {
     slug: "st-pauli",
     name: "FCザンクトパウリ",
     nameEn: "FC St. Pauli",
     article: "FCザンクトパウリ",
     countries: ["GER"],
     currentPlayers: ["安藤智哉", "原大智", "藤田譲瑠チマ"],
+    pastPlayers: [
+
+    ],
+  },
+  {
+    slug: "holstein-kiel",
+    name: "ホルシュタイン・キール",
+    nameEn: "Holstein Kiel",
+    article: "ホルシュタイン・キール",
+    countries: ["GER"],
+    currentPlayers: ["安部大晴", "関根大輝", "髙橋仁胡"],
     pastPlayers: [
 
     ],
@@ -229,17 +229,6 @@ export const clubs: Club[] = [
     ],
   },
   {
-    slug: "southampton-2",
-    name: "サウサンプトンFC",
-    nameEn: "Southampton F.C.",
-    article: "サウサンプトンFC",
-    countries: ["ENG"],
-    currentPlayers: ["松木玖生", "菅原由勢"],
-    pastPlayers: [
-
-    ],
-  },
-  {
     slug: "blackburn-rovers",
     name: "ブラックバーン・ローヴァーズFC",
     nameEn: "Blackburn Rovers F.C.",
@@ -248,20 +237,6 @@ export const clubs: Club[] = [
     currentPlayers: ["森下龍矢", "大橋祐紀"],
     pastPlayers: [
 
-    ],
-  },
-  {
-    slug: "celtic",
-    name: "セルティックFC",
-    nameEn: "Celtic F.C.",
-    article: "セルティックFC",
-    countries: ["SCO"],
-    currentPlayers: ["旗手怜央"],
-    pastPlayers: [
-      { nameJa: "岩田智輝", years: "2023", loan: true },
-      { nameJa: "山田新", years: "2025-", loan: false },
-      { nameJa: "小林友希", years: "2023-2024", loan: false },
-      { nameJa: "前田大然", years: "2022", loan: true },
     ],
   },
   {
@@ -330,6 +305,17 @@ export const clubs: Club[] = [
     currentPlayers: ["守田英正"],
     pastPlayers: [
       { nameJa: "平河悠", years: "2026", loan: true },
+    ],
+  },
+  {
+    slug: "southampton-2",
+    name: "サウサンプトンFC",
+    nameEn: "Southampton F.C.",
+    article: "サウサンプトンFC",
+    countries: ["ENG"],
+    currentPlayers: ["松木玖生"],
+    pastPlayers: [
+      { nameJa: "菅原由勢", years: "2024-", loan: false },
     ],
   },
   {
@@ -432,6 +418,17 @@ export const clubs: Club[] = [
     ],
   },
   {
+    slug: "burnley",
+    name: "バーンリーFC",
+    nameEn: "Burnley F.C.",
+    article: "バーンリーFC",
+    countries: ["ENG"],
+    currentPlayers: ["旗手怜央"],
+    pastPlayers: [
+
+    ],
+  },
+  {
     slug: "real-sociedad",
     name: "レアル・ソシエダ",
     nameEn: "Real Sociedad",
@@ -449,17 +446,6 @@ export const clubs: Club[] = [
     article: "UDラス・パルマス",
     countries: ["ESP"],
     currentPlayers: ["宮代大聖"],
-    pastPlayers: [
-
-    ],
-  },
-  {
-    slug: "tottenham-hotspur",
-    name: "トッテナム・ホットスパーFC",
-    nameEn: "Tottenham Hotspur F.C.",
-    article: "トッテナム・ホットスパーFC",
-    countries: ["ENG"],
-    currentPlayers: ["高井幸大"],
     pastPlayers: [
 
     ],
@@ -559,6 +545,17 @@ export const clubs: Club[] = [
     article: "FCバーゼル",
     countries: ["SUI"],
     currentPlayers: ["常本佳吾"],
+    pastPlayers: [
+
+    ],
+  },
+  {
+    slug: "cagliari-calcio",
+    name: "カリアリ・カルチョ",
+    nameEn: "Cagliari Calcio",
+    article: "カリアリ・カルチョ",
+    countries: ["ITA"],
+    currentPlayers: ["菅原由勢"],
     pastPlayers: [
 
     ],
@@ -913,6 +910,21 @@ export const clubs: Club[] = [
       { nameJa: "原大智", years: "2023-2025", loan: false },
       { nameJa: "川﨑颯太", years: "2020-2026", loan: false },
       { nameJa: "木村誠二", years: "2021", loan: true },
+    ],
+  },
+  {
+    slug: "celtic",
+    name: "セルティックFC",
+    nameEn: "Celtic F.C.",
+    article: "セルティックFC",
+    countries: ["SCO"],
+    currentPlayers: [],
+    pastPlayers: [
+      { nameJa: "岩田智輝", years: "2023", loan: true },
+      { nameJa: "旗手怜央", years: "2022-2026", loan: false },
+      { nameJa: "山田新", years: "2025-", loan: false },
+      { nameJa: "小林友希", years: "2023-2024", loan: false },
+      { nameJa: "前田大然", years: "2022", loan: true },
     ],
   },
   {
@@ -1336,6 +1348,18 @@ export const clubs: Club[] = [
     pastPlayers: [
       { nameJa: "瀬古歩夢", years: "2025-", loan: false },
       { nameJa: "中村草太", years: "2026-", loan: true },
+    ],
+  },
+  {
+    slug: "club-99",
+    name: "キール",
+    nameEn: null,
+    article: "キール",
+    countries: ["GER"],
+    currentPlayers: [],
+    pastPlayers: [
+      { nameJa: "町野修斗", years: "2023-2025", loan: false },
+      { nameJa: "髙橋仁胡", years: "2026-", loan: true },
     ],
   },
   {

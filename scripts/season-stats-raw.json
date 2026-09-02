@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-09-01",
+ "takenAt": "2026-09-02",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -252,10 +252,10 @@
   },
   "松木玖生": {
    "division": "Championship",
-   "apps": 3,
+   "apps": 4,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-29",
+   "updatedAt": "2026-09-01",
    "source": "Kuryu Matsuki"
   },
   "上田綺世": {
@@ -348,10 +348,10 @@
   },
   "長田澪": {
    "division": "Bundesliga",
-   "apps": 0,
+   "apps": 1,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-27",
+   "updatedAt": "2026-08-30",
    "source": "Mio Backhaus"
   },
   "田中聡": {

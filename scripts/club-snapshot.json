@@ -1,5 +1,5 @@
 {
- "takenAt": "2026-09-01",
+ "takenAt": "2026-09-02",
  "players": {
   "shinta-appelkamp": {
    "nameJa": "アペルカンプ真大",
@@ -108,8 +108,8 @@
   },
   "reo-hatate": {
    "nameJa": "旗手怜央",
-   "club": "セルティックFC",
-   "league": "scottish-premiership"
+   "club": "バーンリーFC",
+   "league": "championship"
   },
   "yumeki-yoshinaga": {
    "nameJa": "吉永夢希",
@@ -163,8 +163,8 @@
   },
   "kota-takai": {
    "nameJa": "高井幸大",
-   "club": "トッテナム・ホットスパーFC",
-   "league": "premier-league"
+   "club": "シント＝トロイデンVV",
+   "league": "jupiler-pro-league"
   },
   "rento-takaoka": {
    "nameJa": "高岡伶颯",
@@ -298,8 +298,8 @@
   },
   "yukinari-sugawara": {
    "nameJa": "菅原由勢",
-   "club": "サウサンプトンFC",
-   "league": "championship"
+   "club": "カリアリ・カルチョ",
+   "league": "serie-a"
   },
   "ayumu-seko": {
    "nameJa": "瀬古歩夢",
@@ -400,11 +400,6 @@
    "nameJa": "藤本寛也",
    "club": "バーミンガム・シティFC",
    "league": "championship"
-  },
-  "ritsu-doan": {
-   "nameJa": "堂安律",
-   "club": "アイントラハト・フランクフルト",
-   "league": "bundesliga"
   },
   "takumi-minamino": {
    "nameJa": "南野拓実",
