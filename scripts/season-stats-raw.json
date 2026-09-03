@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-09-02",
+ "takenAt": "2026-09-03",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -20,10 +20,10 @@
   },
   "安藤智哉": {
    "division": "2. Bundesliga",
-   "apps": 2,
+   "apps": 3,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-23",
+   "updatedAt": "2026-08-30",
    "source": "Tomoya Ando"
   },
   "伊東純也": {
@@ -60,10 +60,10 @@
   },
   "塩貝健人": {
    "division": "2. Bundesliga",
-   "apps": 2,
+   "apps": 3,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-24",
+   "updatedAt": "2026-08-29",
    "source": "Kento Shiogai"
   },
   "横山歩夢": {
@@ -116,10 +116,10 @@
   },
   "原大智": {
    "division": "2. Bundesliga",
-   "apps": 2,
+   "apps": 3,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-08-23",
+   "updatedAt": "2026-08-30",
    "source": "Taichi Hara"
   },
   "後藤啓介": {
@@ -196,10 +196,10 @@
   },
   "三好康児": {
    "division": null,
-   "apps": 2,
+   "apps": 3,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-23",
+   "updatedAt": "2026-08-28",
    "source": "Kōji Miyoshi"
   },
   "山本理仁": {
@@ -258,14 +258,6 @@
    "updatedAt": "2026-09-01",
    "source": "Kuryu Matsuki"
   },
-  "上田綺世": {
-   "division": "Eredivisie",
-   "apps": 4,
-   "goals": 3,
-   "european": true,
-   "updatedAt": "2026-08-16",
-   "source": "Ayase Ueda"
-  },
   "森下龍矢": {
    "division": "Championship",
    "apps": 3,
@@ -276,10 +268,10 @@
   },
   "水多海斗": {
    "division": "Ligue 1",
-   "apps": 1,
+   "apps": 2,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-23",
+   "updatedAt": "2026-08-29",
    "source": "Kaito Mizuta"
   },
   "菅原由勢": {
@@ -292,10 +284,10 @@
   },
   "瀬古歩夢": {
    "division": null,
-   "apps": 1,
+   "apps": 2,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-23",
+   "updatedAt": "2026-08-29",
    "source": "Ayumu Seko"
   },
   "斉藤光毅": {
@@ -332,10 +324,10 @@
   },
   "中村草太": {
    "division": "Ligue 1",
-   "apps": 1,
+   "apps": 2,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-23",
+   "updatedAt": "2026-08-29",
    "source": "Sōta Nakamura"
   },
   "町野修斗": {

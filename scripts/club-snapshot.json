@@ -1,5 +1,5 @@
 {
- "takenAt": "2026-09-02",
+ "takenAt": "2026-09-03",
  "players": {
   "shinta-appelkamp": {
    "nameJa": "アペルカンプ真大",
@@ -271,11 +271,6 @@
    "club": "シント＝トロイデンVV",
    "league": "jupiler-pro-league"
   },
-  "ayase-ueda": {
-   "nameJa": "上田綺世",
-   "club": "LOSCリール",
-   "league": "ligue-1"
-  },
   "keigo-tsunemoto": {
    "nameJa": "常本佳吾",
    "club": "FCバーゼル",
@@ -348,8 +343,8 @@
   },
   "keito-nakamura": {
    "nameJa": "中村敬斗",
-   "club": "スタッド・ランス",
-   "league": "ligue-2"
+   "club": "オリンピック・リヨン",
+   "league": "ligue-1"
   },
   "sota-nakamura": {
    "nameJa": "中村草太",
