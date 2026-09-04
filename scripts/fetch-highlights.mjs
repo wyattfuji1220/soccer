@@ -27,7 +27,8 @@ if (!KEY) {
   process.exit(1);
 }
 
-const DAYS = Number(process.argv[2] ?? 45);
+// 遡る日数は数字の引数から取る。--report のような指定と取り違えないようにする
+const DAYS = Number(process.argv.slice(2).find((a) => /^\d+$/.test(a)) ?? 45);
 const API = "https://www.googleapis.com/youtube/v3";
 const outPath = path.join(ROOT, "src/data/highlights.ts");
 
@@ -83,32 +84,67 @@ async function recentUploads(playlistId, since) {
 }
 
 /**
- * 題名に出てくるクラブを見分けるための手がかり。
+ * 題名に出てくるクラブを見分ける。
  *
- * 掲載しているのは「ブライトン・アンド・ホーヴ・アルビオンFC」だが、題名では
- * 「ブライトン」と短く書かれる。先頭のカタカナのまとまりを鍵にする。
- * 3文字だと「レアル」がレアル・マドリーにも当たるため、5文字以上に限る。
+ * 掲載名と題名の書き方は揃わない。掲載が「LOSCリール」でも題名は「リール」、
+ * 掲載が「アストン・ヴィラFC」でも題名は「アストン・ヴィラ」、
+ * 掲載が「フェイエノールト・ロッテルダム」でも題名は「フェイエノールト」と書かれる。
+ * ラテン文字の接頭辞と接尾辞、中黒、数字の付き方がまちまちなので、
+ * 両方からカタカナ以外を捨ててから比べる。
+ *
+ * 掲載名のほうが長いことも多いため、中黒で切ったまとまりも鍵にする。
+ * ただし「ユナイテッド」「シティ」のように複数のクラブが共有する語は、
+ * どのクラブか決められないので鍵にしない。
  */
+const katakana = (s) => s.replace(/[^ァ-ヺー]/g, "");
+
+/** 中黒・イコールで切ったまとまり。「レアル・ソシエダ」→ レアル / ソシエダ */
+const parts = (name) => name.split(/[・＝]/).map(katakana);
+
 function clubKeys() {
   const src = fs.readFileSync(path.join(ROOT, "src/data/clubs.ts"), "utf8");
-  const keys = new Map();
+  const clubs = [];
   for (const blk of src.split("\n  {\n").slice(1)) {
     const name = blk.match(/name: "([^"]+)"/)?.[1];
     const countries = [...(blk.match(/countries: \[([^\]]*)\]/)?.[1] ?? "").matchAll(/"([A-Z]{3})"/g)].map((m) => m[1]);
     if (!name || countries.includes("JPN")) continue;
-    const head = name.match(/^[ァ-ヺー]{5,}/)?.[0];
-    const stripped = name.replace(/(FC|SC|AC|CF|VV|AFC)/g, "").replace(/[・＝\s]/g, "");
-    for (const k of [head, stripped, name].filter((k) => k && k.length >= 4)) {
-      if (!keys.has(k)) keys.set(k, name);
-    }
+    /*
+     * 予備チーム（レアル・ソシエダB）は鍵にしない。
+     * カタカナだけにすると末尾のBが落ちてトップチームと同じ鍵になり、
+     * トップチームの試合が予備チームのものとして記録されてしまう。
+     * 権利者が予備リーグのハイライトを出すこともない。
+     */
+    if (/(B|II)$/.test(name)) continue;
+    clubs.push(name);
   }
-  return keys;
+
+  const keys = new Map();
+  const add = (key, name) => {
+    if (key.length < 3) return;
+    // 同じ鍵に複数のクラブが当たるなら、どれか決められないので鍵ごと捨てる
+    if (keys.has(key) && keys.get(key) !== name) keys.set(key, null);
+    else if (!keys.has(key)) keys.set(key, name);
+  };
+  for (const name of clubs) add(katakana(name), name);
+  for (const name of clubs) for (const t of parts(name)) if (t.length >= 4) add(t, name);
+  return new Map([...keys].filter(([, name]) => name !== null));
 }
 
-/** 掲載している選手の名前。題名に出ていれば拾う */
+/**
+ * 短い名前が長い名前の一部になっていることがある（「リール」と「リールセ」）。
+ * 題名に複数当たったときは、より長い名前に含まれてしまうほうを捨てる。
+ */
+function clubsInTitle(title, keys) {
+  const t = katakana(title);
+  const hits = [...keys].filter(([k]) => t.includes(k));
+  const kept = hits.filter(([k]) => !hits.some(([other]) => other !== k && other.includes(k)));
+  return [...new Set(kept.map(([, name]) => name))];
+}
+
+/** 掲載している選手の名前 */
 function playerNames() {
   const src = fs.readFileSync(path.join(ROOT, "src/data/players.ts"), "utf8");
-  return [...src.matchAll(/nameJa: "([^"]+)"/g)].map((m) => m[1]);
+  return [...src.matchAll(/^\s{4}nameJa: "([^"]+)"/gm)].map((m) => m[1]);
 }
 
 const since = new Date(Date.now() - DAYS * 86400000).toISOString().slice(0, 10);
@@ -117,6 +153,8 @@ const names = playerNames();
 console.log(`${since} 以降のハイライトを集めます（掲載クラブ ${new Set(keys.values()).size}件）`);
 
 const found = new Map();
+/** ハイライトではあるが掲載クラブに結び付かなかったもの。--report で中身を見る */
+const unmatched = [];
 for (const ch of CHANNELS) {
   const info = await uploadsPlaylist(ch.handle);
   if (!info) {
@@ -128,14 +166,17 @@ for (const ch of CHANNELS) {
   for (const v of uploads) {
     if (OTHER_SPORTS.test(v.title) || DOMESTIC.test(v.title)) continue;
     if (!HIGHLIGHT.test(v.title)) continue;
-    const clubs = [...new Set([...keys].filter(([k]) => v.title.includes(k)).map(([, name]) => name))];
-    if (clubs.length === 0) continue;
-    found.set(v.videoId, {
-      ...v,
-      channel: info.title,
-      clubs,
-      players: names.filter((n) => v.title.includes(n)),
-    });
+    /*
+     * クラブは題名からだけ決める。選手名から今の所属クラブを補うことはしない。
+     * 移籍したばかりの選手だと、前のクラブでの試合に今のクラブを貼ってしまう
+     * （上田綺世のフェイエノールト戦がリールの試合として記録された）。
+     */
+    const clubs = clubsInTitle(v.title, keys);
+    if (clubs.length === 0) {
+      unmatched.push(v.title);
+      continue;
+    }
+    found.set(v.videoId, { ...v, channel: info.title, clubs, players: names.filter((n) => v.title.includes(n)) });
     hit++;
   }
   console.log(`  ${info.title}: 投稿${uploads.length}件 → ハイライト${hit}件`);
@@ -176,5 +217,16 @@ ${body}
 );
 
 console.log(`\n${rows.length}件を src/data/highlights.ts に書き出しました`);
+
+/*
+ * 取りこぼしを見つけるための報告。掲載クラブの試合なのに拾えていないものが
+ * 混じっていないかを、ここで確かめる。日本人選手のいない試合が並ぶのは正常。
+ * 実行: node scripts/fetch-highlights.mjs --report
+ */
+if (process.argv.includes("--report")) {
+  console.log(`
+クラブに結び付かなかったハイライト ${unmatched.length}件:`);
+  for (const t of unmatched) console.log(`  ${t}`);
+}
 const withPlayer = rows.filter((r) => r.players.length > 0).length;
 console.log(`  題名に掲載選手の名前が入っているもの: ${withPlayer}件`);
