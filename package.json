@@ -26,7 +26,9 @@
     "data:candidates": "node scripts/fetch-candidates.mjs --report",
     "data:players": "node scripts/fetch-candidates.mjs && node scripts/fetch-players.mjs scripts/player-candidates.json && node scripts/generate-players.mjs && node scripts/fetch-clubs.mjs",
     "data:clubs": "node scripts/fetch-clubs.mjs",
-    "data:loans": "node scripts/check-loans.mjs"
+    "data:loans": "node scripts/check-loans.mjs",
+    "x:tonight": "node scripts/post-to-x.mjs --kind=tonight",
+    "x:results": "node scripts/post-to-x.mjs --kind=results"
   },
   "dependencies": {
     "next": "^15.5.23",

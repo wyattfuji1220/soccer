@@ -1,0 +1,68 @@
+# Xへ自動投稿する。
+#
+# 鍵（X_API_KEY 等）が未設定のあいだは、投稿せず下書きを実行ログに出すだけ。
+# 揃ったら自動で投稿に切り替わるので、準備が済むのを待たずに動かしておける。
+#
+# 本文にURLは入れない。X APIはURLを含む投稿を $0.200、含まない投稿を $0.015 で
+# 課金する。誘導はプロフィール欄のリンクに任せる。
+name: Xへ投稿
+
+on:
+  schedule:
+    # 日本時間 8:30 — 昨夜の結果とハイライト
+    - cron: "30 23 * * *"
+    # 日本時間 19:00 — 今夜の試合予定
+    - cron: "0 10 * * *"
+  workflow_dispatch:
+    inputs:
+      kind:
+        description: どちらの文面を出すか
+        type: choice
+        options: [tonight, results]
+        default: tonight
+      post:
+        description: 実際に投稿する（外すと下書きのみ）
+        type: boolean
+        default: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+
+      # 日程はビルドのたびに取り直しており、リポジトリには入っていない
+      - name: 試合日程を取得
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+        run: npm run data:fixtures
+
+      # ハイライトの本数を実際の値に合わせる。取得は1〜2ユニットで済む
+      - name: ハイライトを取得
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: npm run data:highlights || echo "ハイライトの取得に失敗。前回の値で続けます"
+
+      - name: 文面を作って投稿する
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          # 8:30の回は昨夜の結果、19:00の回は今夜の予定。手動実行では選べる
+          KIND: ${{ github.event.inputs.kind || (github.event.schedule == '30 23 * * *' && 'results' || 'tonight') }}
+          WANT_POST: ${{ github.event.inputs.post || 'true' }}
+        run: |
+          if [ -z "$X_API_KEY" ]; then
+            echo "::notice::Xの鍵が未設定です。下書きだけ出します"
+            node scripts/post-to-x.mjs --kind="$KIND"
+          elif [ "$WANT_POST" = "true" ]; then
+            node scripts/post-to-x.mjs --kind="$KIND" --post
+          else
+            node scripts/post-to-x.mjs --kind="$KIND"
+          fi
