@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { players } from "@/data/players";
+import type { Player } from "@/lib/types";
 import { leagueMap } from "@/data/leagues";
 import { season, seasonStatMap } from "@/data/season-stats";
 import { clubsForPlayer } from "@/data/clubs";
@@ -17,6 +18,7 @@ import { amazonSearchUrl, rakutenSearchUrl } from "@/lib/affiliate";
 import { Jp } from "@/lib/jp";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumb } from "@/lib/schema";
+import { teammates, sameLeague, listsOf, elsewhere } from "@/lib/related";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -51,6 +53,12 @@ export default async function PlayerPage({ params }: Props) {
   const latestCheck = player.sources[0]?.checkedAt;
   const relatedClubs = clubsForPlayer(player.nameJa);
   const loan = loanStatus(player);
+  const mates = teammates(player);
+  const leagueMates = sameLeague(player);
+  // どのページにも置く回遊枠。ここが無いと、リーグに1人しかいない選手が
+  // ほかの選手ページから一度も指されないままになる
+  const others = elsewhere(player, [...mates, ...leagueMates]);
+  const lists = listsOf(player);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -194,26 +202,63 @@ export default async function PlayerPage({ params }: Props) {
 
       <CupCoverage league={player.league} />
 
+      {mates.length > 0 && (
+        <section className="mt-12">
+          <h2 className="text-xl font-bold mb-1">{player.club}の日本人選手</h2>
+          <p className="muted text-sm mb-4">同じクラブに、ほかにも日本人選手がいます。</p>
+          <div className="flex flex-wrap gap-2">
+            {mates.map((p) => (
+              <PlayerChip key={p.slug} player={p} />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {leagueMates.length > 0 && (
+        <section className="mt-12">
+          <h2 className="text-xl font-bold mb-1">{league.name}のほかの日本人選手</h2>
+          <p className="muted text-sm mb-4">同じ大会に出るため、同じ配信サービスで観られます。</p>
+          <div className="flex flex-wrap gap-2">
+            {leagueMates.map((p) => (
+              <PlayerChip key={p.slug} player={p} />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {others.length > 0 && (
+        <section className="mt-12">
+          <h2 className="text-xl font-bold mb-1">ほかの日本人選手</h2>
+          <p className="muted text-sm mb-4">
+            {leagueMates.length === 0
+              ? `${league.name}でプレーする日本人は、いまのところ${player.nameJa}だけです。`
+              : "欧州各国でプレーする選手を、リーグをまたいで並べています。"}
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {others.map((p) => (
+              <PlayerChip key={p.slug} player={p} />
+            ))}
+          </div>
+        </section>
+      )}
+
       <section className="mt-12">
         <h2 className="text-xl font-bold mb-4">関連ページ</h2>
         <div className="flex flex-wrap gap-2">
           {relatedClubs.map((c) => (
-            <Link
-              key={c.slug}
-              href={`/clubs/${c.slug}/`}
-              className="text-sm px-3 py-2 rounded-lg border hover:border-pitch-500/60 transition-colors"
-              style={{ borderColor: "var(--border)" }}
-            >
+            <RelatedLink key={c.slug} href={`/clubs/${c.slug}/`}>
               {c.name}の日本人選手
-            </Link>
+            </RelatedLink>
           ))}
-          <Link
-            href={`/players/?league=${player.league}`}
-            className="text-sm px-3 py-2 rounded-lg border hover:border-pitch-500/60 transition-colors"
-            style={{ borderColor: "var(--border)" }}
-          >
-            {league.name}の日本人選手
-          </Link>
+          {/* 一覧の絞り込みではなく、リーグごとの独立したページに送る */}
+          <RelatedLink href={`/leagues/${player.league}/`}>{league.name}の日本人選手</RelatedLink>
+          {lists.map((l) => (
+            <RelatedLink key={l.slug} href={`/lists/${l.slug}/`}>
+              {l.heading}
+            </RelatedLink>
+          ))}
+          <RelatedLink href="/fixtures/">これからの試合</RelatedLink>
+          <RelatedLink href="/results/">試合結果とハイライト</RelatedLink>
         </div>
       </section>
 
@@ -251,5 +296,34 @@ export default async function PlayerPage({ params }: Props) {
         </div>
       </section>
     </Jp>
+  );
+}
+
+/**
+ * 他の選手ページへの入口。名前だけだと誰か分からないので、クラブ名を添える。
+ * 選手ページは行き止まりになりやすく、ここが唯一の出口になる。
+ */
+function PlayerChip({ player }: { player: Player }) {
+  return (
+    <Link
+      href={`/players/${player.slug}/`}
+      className="tap text-sm px-3 py-2 rounded-lg border hover:border-pitch-500/60 transition-colors"
+      style={{ borderColor: "var(--border)" }}
+    >
+      <span className="font-medium">{player.nameJa}</span>
+      <span className="muted text-xs ml-2">{player.club}</span>
+    </Link>
+  );
+}
+
+function RelatedLink({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <Link
+      href={href}
+      className="tap text-sm px-3 py-2 rounded-lg border hover:border-pitch-500/60 transition-colors"
+      style={{ borderColor: "var(--border)" }}
+    >
+      {children}
+    </Link>
   );
 }
