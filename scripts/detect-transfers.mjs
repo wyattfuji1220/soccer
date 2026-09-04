@@ -57,6 +57,20 @@ function readTransfers() {
   return rows;
 }
 
+/*
+ * 「掲載終了（left）」を書く前に、その選手が候補にも残っていないことを確かめる。
+ *
+ * 候補には挙がっているのに掲載できていない場合、本人が海外を離れたのではなく、
+ * こちらの取り込みが失敗しただけのことがある。生年月日の書き方が
+ * 「[[1998年]][[6月16日]]」に変わっただけで落ちた例があり（堂安律・2026-09-02）、
+ * そのとき「フランクフルトを離れた」という誤りを公開してしまった。
+ * 移籍を事実として載せる以上、取りこぼしと見分けがつかないものは記録しない。
+ */
+const candidatePath = path.join(ROOT, "scripts/player-candidates.json");
+const stillCandidate = new Set(
+  fs.existsSync(candidatePath) ? JSON.parse(fs.readFileSync(candidatePath, "utf8")) : []
+);
+
 const now = readPlayers();
 const before = fs.existsSync(snapshotPath)
   ? new Map(Object.entries(JSON.parse(fs.readFileSync(snapshotPath, "utf8")).players))
@@ -64,6 +78,8 @@ const before = fs.existsSync(snapshotPath)
 
 const today = new Date().toISOString().slice(0, 10);
 const found = [];
+/** 候補に残っているのに掲載できなかった選手。移籍ではなく取り込みの失敗 */
+const unresolved = [];
 
 if (before === null) {
   console.log("前回の記録がないため、今回は基準を作るだけにします");
@@ -80,6 +96,10 @@ if (before === null) {
   }
   for (const [slug, old] of before) {
     if (now.has(slug)) continue;
+    if (stillCandidate.has(old.nameJa)) {
+      unresolved.push(old.nameJa);
+      continue;
+    }
     found.push({ date: today, slug, nameJa: old.nameJa, kind: "left", fromClub: old.club, toClub: null, fromLeague: old.league, toLeague: null });
   }
 }
@@ -127,6 +147,13 @@ fs.writeFileSync(
   snapshotPath,
   JSON.stringify({ takenAt: today, players: Object.fromEntries(now) }, null, 1) + "\n"
 );
+
+if (unresolved.length > 0) {
+  console.warn(`
+⚠ 候補に残っているのに掲載できていない選手が ${unresolved.length}人います`);
+  console.warn(`  ${unresolved.join("、")}`);
+  console.warn("  移籍としては記録していません。取り込みが失敗していないか確かめてください");
+}
 
 if (found.length === 0) {
   console.log(`所属の変化はありませんでした（記録済み ${all.length}件）`);

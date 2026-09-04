@@ -161,6 +161,39 @@ for (const c of countries) {
 }
 for (const t of current.keys()) alumni.delete(t);
 
+/*
+ * すでに掲載している選手は、一覧記事から消えても候補に残す。
+ *
+ * 一覧記事は国ごとに名簿が分かれている。対象リーグどうしの移籍が起きると、
+ * 編集者が前の国から名前を消したあと、新しい国に書き足すまでに時間が空く。
+ * その隙に取り込むと、現にプレーしている選手が丸ごと消える。
+ * 2026-09-03、上田綺世がフェイエノールトからリールへ移った際に実際に起きた
+ * （記事に残っていたのは過去の出場ランキングの表だけだった）。
+ *
+ * 掲載を続けるかどうかの判断は、この一覧ではなく fetch-players.mjs が持っている。
+ * あちらは選手記事のインフォボックスから所属クラブを読み、対応するリーグが
+ * 無ければ落とす。国内へ戻っても引退しても、そこで自然に外れる。
+ * だから候補に残しておいても、掲載が古びることはない。
+ *
+ * なお alumni からは引かない。一覧が「過去所属」の側へ移した選手は、
+ * 実際に海外を離れていれば掲載からは落ち、歴史の集計にだけ残るのが正しい。
+ */
+function publishedNames() {
+  const file = path.join(ROOT, "src/data/players.ts");
+  if (!fs.existsSync(file)) return [];
+  const src = fs.readFileSync(file, "utf8");
+  return [...src.matchAll(/^\s{4}nameJa: "([^"]+)"/gm)].map((m) => m[1]);
+}
+
+const retained = publishedNames().filter((n) => !current.has(n));
+for (const n of retained) current.set(n, "掲載中 / 一覧記事に無し");
+if (retained.length > 0) {
+  console.log(`
+一覧記事に見当たらないが、掲載中のため候補に残した選手 ${retained.length}人:`);
+  console.log(`  ${retained.join("、")}`);
+  console.log("  所属が対象リーグから外れていれば、このあとの取り込みで落ちる");
+}
+
 if (process.argv.includes("--report")) {
   console.log(`女子選手として除外: ${women.size}人\n`);
   console.log("掲載対象になった選手\n");

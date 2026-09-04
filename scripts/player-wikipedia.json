@@ -1,6 +1,12 @@
 {
-  "fetchedAt": "2026-09-03",
-  "missing": [],
+  "fetchedAt": "2026-09-04",
+  "missing": [
+    "原大智（選手記事ではない）",
+    "後藤啓介（選手記事ではない）",
+    "田中聡（選手記事ではない）",
+    "田中碧（選手記事ではない）",
+    "渡辺剛（選手記事ではない）"
+  ],
   "players": [
     {
       "nameJa": "アペルカンプ真大",
@@ -76,7 +82,7 @@
       "leagueDivision": "2部",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "チェイス・アンリ",
@@ -161,7 +167,7 @@
       "leagueDivision": "1部",
       "leagueId": "austrian-bundesliga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "ハーフナー・ニッキ",
@@ -273,7 +279,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "ポープ・ウィリアム",
@@ -403,7 +409,7 @@
       "leagueDivision": "2部",
       "leagueId": "challenger-pro-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "安藤晃希",
@@ -442,7 +448,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "安藤智哉",
@@ -518,7 +524,7 @@
       "leagueDivision": "2部",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "安部大晴",
@@ -576,7 +582,7 @@
       "leagueDivision": "2部",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "伊東純也",
@@ -661,7 +667,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "伊藤敦樹",
@@ -719,7 +725,7 @@
       "leagueDivision": "2部",
       "leagueId": "championship",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "伊藤洋輝",
@@ -804,7 +810,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "宇野禅斗",
@@ -871,7 +877,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "浦田樹",
@@ -1001,7 +1007,7 @@
       "leagueDivision": "1部",
       "leagueId": null,
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "遠藤航",
@@ -1031,7 +1037,7 @@
         },
         {
           "years": "2018-2020",
-          "team": "シントトロイデンVV",
+          "team": "シント＝トロイデン",
           "teamArticle": "シント＝トロイデンVV",
           "country": "BEL",
           "loan": false,
@@ -1040,7 +1046,7 @@
         },
         {
           "years": "2019-2020",
-          "team": "VfBシュトゥットガルト",
+          "team": "シュトゥットガルト",
           "teamArticle": "VfBシュトゥットガルト",
           "country": "GER",
           "loan": true,
@@ -1049,8 +1055,8 @@
         },
         {
           "years": "2020-2023",
-          "team": "VfBシュトゥットガルト",
-          "teamArticle": "VfBシュトゥットガルト",
+          "team": "シュトゥットガルト",
+          "teamArticle": "シュトゥットガルト",
           "country": "GER",
           "loan": false,
           "apps": 99,
@@ -1058,20 +1064,20 @@
         },
         {
           "years": "2023-",
-          "team": "リヴァプールFC",
+          "team": "リヴァプール",
           "teamArticle": "リヴァプールFC",
           "country": "ENG",
           "loan": false,
           "apps": 57,
-          "goals": 2
+          "goals": 1
         }
       ],
       "nationalCareer": [
         {
           "years": "2016",
           "team": "日本 U-23",
-          "teamArticle": "日本 U-23",
-          "country": "JPN",
+          "teamArticle": null,
+          "country": null,
           "loan": false,
           "apps": 3,
           "goals": 0
@@ -1079,8 +1085,8 @@
         {
           "years": "2021",
           "team": "日本 U-24（OA）",
-          "teamArticle": "日本 U-24（OA）",
-          "country": "JPN",
+          "teamArticle": null,
+          "country": null,
           "loan": false,
           "apps": 6,
           "goals": 0
@@ -1088,8 +1094,8 @@
         {
           "years": "2015-2026",
           "team": "日本代表",
-          "teamArticle": "日本",
-          "country": "JPN",
+          "teamArticle": null,
+          "country": null,
           "loan": false,
           "apps": 73,
           "goals": 4
@@ -1104,7 +1110,7 @@
       "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "塩貝健人",
@@ -1180,7 +1186,7 @@
       "leagueDivision": "2部",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "横山歩夢",
@@ -1246,7 +1252,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "横田大祐",
@@ -1330,7 +1336,7 @@
       "leagueDivision": "1部",
       "leagueId": "scottish-premiership",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "荻原拓也",
@@ -1406,7 +1412,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "笠柳翼",
@@ -1445,7 +1451,7 @@
       "leagueDivision": null,
       "leagueId": "challenger-pro-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "鎌田大地",
@@ -1466,7 +1472,7 @@
         },
         {
           "years": "2017-2023",
-          "team": "アイントラハト・フランクフルト",
+          "team": "フランクフルト",
           "teamArticle": "アイントラハト・フランクフルト",
           "country": "GER",
           "loan": false,
@@ -1475,7 +1481,7 @@
         },
         {
           "years": "2018-2019",
-          "team": "シント＝トロイデンVV",
+          "team": "シント＝トロイデン",
           "teamArticle": "シント＝トロイデンVV",
           "country": "BEL",
           "loan": true,
@@ -1484,7 +1490,7 @@
         },
         {
           "years": "2023-2024",
-          "team": "SSラツィオ",
+          "team": "ラツィオ",
           "teamArticle": "SSラツィオ",
           "country": "ITA",
           "loan": false,
@@ -1493,7 +1499,7 @@
         },
         {
           "years": "2024-",
-          "team": "クリスタル・パレスFC",
+          "team": "クリスタル・パレス",
           "teamArticle": "クリスタル・パレスFC",
           "country": "ENG",
           "loan": false,
@@ -1505,8 +1511,8 @@
         {
           "years": "2019-",
           "team": "日本代表",
-          "teamArticle": "サッカー日本代表",
-          "country": "JPN",
+          "teamArticle": null,
+          "country": null,
           "loan": false,
           "apps": 53,
           "goals": 14
@@ -1521,7 +1527,7 @@
       "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "関根大輝",
@@ -1588,7 +1594,7 @@
       "leagueDivision": "2部",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "岩田智輝",
@@ -1682,7 +1688,7 @@
       "leagueDivision": "2部",
       "leagueId": "championship",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "喜多壱也",
@@ -1730,7 +1736,7 @@
       "leagueDivision": "2部",
       "leagueId": "segunda-division",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "旗手怜央",
@@ -1806,7 +1812,7 @@
       "leagueDivision": "2部",
       "leagueId": "championship",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "吉永夢希",
@@ -1845,7 +1851,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "久保建英",
@@ -1993,7 +1999,7 @@
       "leagueDivision": "1部",
       "leagueId": "la-liga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "宮代大聖",
@@ -2105,7 +2111,7 @@
       "leagueDivision": "2部",
       "leagueId": "segunda-division",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "橋岡大樹",
@@ -2208,7 +2214,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "原口元気",
@@ -2329,7 +2335,7 @@
       "leagueDivision": "2部",
       "leagueId": "challenger-pro-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "原大智",
@@ -2441,7 +2447,7 @@
       "leagueDivision": "2部",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "古川陽介",
@@ -2489,7 +2495,7 @@
       "leagueDivision": "2部",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "後藤啓介",
@@ -2592,7 +2598,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "綱島悠斗",
@@ -2641,7 +2647,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "荒木遼太郎",
@@ -2708,7 +2714,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "高井幸大",
@@ -2793,7 +2799,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "高岡伶颯",
@@ -2851,7 +2857,7 @@
       "leagueDivision": null,
       "leagueId": "challenger-pro-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "佐藤龍之介",
@@ -2909,7 +2915,7 @@
       "leagueDivision": "1部",
       "leagueId": "la-liga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "佐野海舟",
@@ -2967,7 +2973,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "佐野航大",
@@ -3043,7 +3049,7 @@
       "leagueDivision": "1部",
       "leagueId": "eredivisie",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "坂元達裕",
@@ -3119,7 +3125,7 @@
       "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "坂本一彩",
@@ -3195,7 +3201,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "三戸舜介",
@@ -3298,7 +3304,7 @@
       "leagueDivision": "1部",
       "leagueId": "eredivisie",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "三好康児",
@@ -3428,7 +3434,7 @@
       "leagueDivision": "2部",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "三笘薫",
@@ -3495,7 +3501,7 @@
       "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "山田新",
@@ -3553,7 +3559,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "山本理仁",
@@ -3629,7 +3635,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "市原吏音",
@@ -3696,7 +3702,7 @@
       "leagueDivision": "1部",
       "leagueId": "eredivisie",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "守田英正",
@@ -3763,7 +3769,7 @@
       "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "秋山裕紀",
@@ -3820,7 +3826,7 @@
       "leagueDivision": "2部",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "小久保玲央ブライアン",
@@ -3905,7 +3911,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "小杉啓太",
@@ -3981,7 +3987,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "小林友希",
@@ -4093,7 +4099,7 @@
       "leagueDivision": "1部",
       "leagueId": "ekstraklasa",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "松岡大起",
@@ -4169,7 +4175,7 @@
       "leagueDivision": "1部",
       "leagueId": "slovak-superliga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "松田隼風",
@@ -4236,7 +4242,7 @@
       "leagueDivision": "[[2. ブンデスリーガ (ドイツサッカー)|2部]]",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "松木玖生",
@@ -4285,7 +4291,7 @@
       "leagueDivision": "2部",
       "leagueId": "championship",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "松澤海斗",
@@ -4324,7 +4330,92 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
+    },
+    {
+      "nameJa": "上田綺世",
+      "nameEn": "Ayase Ueda",
+      "birthDate": "1998-08-28",
+      "position": "FW",
+      "squadNumber": 18,
+      "statsCheckedAt": "2026-09-04",
+      "career": [
+        {
+          "years": "2019-2022",
+          "team": "鹿島アントラーズ",
+          "teamArticle": "鹿島アントラーズ",
+          "country": "JPN",
+          "loan": false,
+          "apps": 86,
+          "goals": 38
+        },
+        {
+          "years": "2022-2023",
+          "team": "サークル・ブルッヘ",
+          "teamArticle": "サークル・ブルッヘ",
+          "country": "BEL",
+          "loan": false,
+          "apps": 40,
+          "goals": 22
+        },
+        {
+          "years": "2023-2026",
+          "team": "フェイエノールト",
+          "teamArticle": "フェイエノールト・ロッテルダム",
+          "country": "NED",
+          "loan": false,
+          "apps": 82,
+          "goals": 40
+        },
+        {
+          "years": "2026-",
+          "team": "リール",
+          "teamArticle": "LOSCリール",
+          "country": "FRA",
+          "loan": false,
+          "apps": 1,
+          "goals": 1
+        }
+      ],
+      "nationalCareer": [
+        {
+          "years": "2018-2021",
+          "team": "日本 U-23",
+          "teamArticle": "U-23サッカー日本代表",
+          "country": "JPN",
+          "loan": false,
+          "apps": 17,
+          "goals": 6
+        },
+        {
+          "years": "2021",
+          "team": "日本・オリンピック",
+          "teamArticle": "日本・オリンピック",
+          "country": "JPN",
+          "loan": false,
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "years": "2019-",
+          "team": "日本代表",
+          "teamArticle": null,
+          "country": null,
+          "loan": false,
+          "apps": 43,
+          "goals": 18
+        }
+      ],
+      "country": "FRA",
+      "club": "LOSCリール",
+      "clubArticle": "LOSCリール",
+      "clubEn": "Lille OSC",
+      "leagueLabel": "フランスプロサッカーリーグ",
+      "leagueArticle": "フランスプロサッカーリーグ",
+      "leagueDivision": "[[リーグ・アン]](1部)",
+      "leagueId": "ligue-1",
+      "abroad": true,
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "常本佳吾",
@@ -4382,7 +4473,7 @@
       "leagueDivision": null,
       "leagueId": "swiss-super-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "新川志音",
@@ -4421,7 +4512,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "森下龍矢",
@@ -4506,7 +4597,7 @@
       "leagueDivision": "2部",
       "leagueId": "championship",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "水多海斗",
@@ -4572,7 +4663,7 @@
       "leagueDivision": "[[リーグ・アン]](1部)",
       "leagueId": "ligue-1",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "菅原由勢",
@@ -4593,25 +4684,43 @@
         },
         {
           "years": "2019-2020",
-          "team": "AZアルクマール",
+          "team": "AZ",
           "teamArticle": "AZアルクマール",
           "country": "NED",
           "loan": true,
-          "apps": 23,
+          "apps": 16,
           "goals": 2
         },
         {
-          "years": "2020-2024",
-          "team": "AZアルクマール",
+          "years": "2019-2020",
+          "team": "ヨングAZ",
           "teamArticle": "AZアルクマール",
           "country": "NED",
+          "loan": true,
+          "apps": 7,
+          "goals": 0
+        },
+        {
+          "years": "2020-2024",
+          "team": "AZ",
+          "teamArticle": "AZ",
+          "country": "NED",
           "loan": false,
-          "apps": 124,
-          "goals": 11
+          "apps": 119,
+          "goals": 10
+        },
+        {
+          "years": "2020-2021",
+          "team": "ヨングAZ",
+          "teamArticle": "ヨングAZ",
+          "country": "NED",
+          "loan": true,
+          "apps": 5,
+          "goals": 1
         },
         {
           "years": "2024-",
-          "team": "サウサンプトンFC",
+          "team": "サウサンプトン",
           "teamArticle": "サウサンプトンFC",
           "country": "ENG",
           "loan": false,
@@ -4620,7 +4729,7 @@
         },
         {
           "years": "2025-2026",
-          "team": "ヴェルダー・ブレーメン",
+          "team": "ブレーメン",
           "teamArticle": "ヴェルダー・ブレーメン",
           "country": "GER",
           "loan": true,
@@ -4629,7 +4738,7 @@
         },
         {
           "years": "2026-",
-          "team": "カリアリ・カルチョ",
+          "team": "カリアリ",
           "teamArticle": "カリアリ・カルチョ",
           "country": "ITA",
           "loan": true,
@@ -4675,7 +4784,7 @@
       "leagueDivision": "1部",
       "leagueId": "serie-a",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "瀬古歩夢",
@@ -4696,8 +4805,8 @@
         },
         {
           "years": "2016-2019",
-          "team": "セレッソ大阪 U-23",
-          "teamArticle": "セレッソ大阪 U-23",
+          "team": "セレッソ大阪U-23",
+          "teamArticle": "セレッソ大阪U-23",
           "country": "JPN",
           "loan": true,
           "apps": 35,
@@ -4760,7 +4869,7 @@
       "leagueDivision": "[[リーグ・アン]](1部)",
       "leagueId": "ligue-1",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "斉藤光毅",
@@ -4890,7 +4999,7 @@
       "leagueDivision": "[[EFLチャンピオンシップ|チャンピオンシップ]]",
       "leagueId": "championship",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "石渡ネルソン",
@@ -4947,7 +5056,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "川﨑颯太",
@@ -5023,7 +5132,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "前田大然",
@@ -5098,7 +5207,7 @@
         },
         {
           "years": "2026-",
-          "team": "イプスウィッチ・タウン",
+          "team": "イプスウィッチ",
           "teamArticle": "イプスウィッチ・タウンFC",
           "country": "ENG",
           "loan": false,
@@ -5110,8 +5219,8 @@
         {
           "years": "2018-2021",
           "team": "日本 U-23",
-          "teamArticle": "日本 U-23",
-          "country": "JPN",
+          "teamArticle": null,
+          "country": null,
           "loan": false,
           "apps": 14,
           "goals": 8
@@ -5119,8 +5228,8 @@
         {
           "years": "2021",
           "team": "日本・オリンピック",
-          "teamArticle": "日本・オリンピック",
-          "country": "JPN",
+          "teamArticle": null,
+          "country": null,
           "loan": false,
           "apps": 3,
           "goals": 1
@@ -5128,8 +5237,8 @@
         {
           "years": "2019-",
           "team": "日本代表",
-          "teamArticle": "サッカー日本代表",
-          "country": "JPN",
+          "teamArticle": null,
+          "country": null,
           "loan": false,
           "apps": 30,
           "goals": 5
@@ -5144,7 +5253,7 @@
       "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "大橋祐紀",
@@ -5202,7 +5311,7 @@
       "leagueDivision": "2部",
       "leagueId": "championship",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "大堀亮之介",
@@ -5295,7 +5404,7 @@
       "leagueDivision": "1部",
       "leagueId": "serbian-superliga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "谷口彰悟",
@@ -5353,7 +5462,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "中山雄太",
@@ -5456,7 +5565,7 @@
       "leagueDivision": "1部",
       "leagueId": "serbian-superliga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "中村敬斗",
@@ -5568,7 +5677,7 @@
       "leagueDivision": "[[リーグ・アン]](1部)",
       "leagueId": "ligue-1",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "中村草太",
@@ -5617,7 +5726,7 @@
       "leagueDivision": "[[リーグ・アン]](1部)",
       "leagueId": "ligue-1",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "中埜信吾",
@@ -5665,7 +5774,7 @@
       "leagueDivision": "1部",
       "leagueId": "austrian-bundesliga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "町田浩樹",
@@ -5741,7 +5850,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "町野修斗",
@@ -5826,7 +5935,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "長田澪",
@@ -5956,7 +6065,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "田中聡",
@@ -6041,7 +6150,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "田中碧",
@@ -6117,7 +6226,7 @@
       "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "渡辺剛",
@@ -6137,12 +6246,12 @@
           "goals": 0
         },
         {
-          "years": "2018-2021",
+          "years": "2019-2021",
           "team": "FC東京",
           "teamArticle": "FC東京",
           "country": "JPN",
           "loan": false,
-          "apps": 81,
+          "apps": 75,
           "goals": 5
         },
         {
@@ -6166,7 +6275,7 @@
         {
           "years": "2025-",
           "team": "フェイエノールト",
-          "teamArticle": "フェイエノールト",
+          "teamArticle": "フェイエノールト・ロッテルダム",
           "country": "NED",
           "loan": false,
           "apps": 30,
@@ -6202,7 +6311,7 @@
       "leagueDivision": "1部",
       "leagueId": "eredivisie",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "藤田譲瑠チマ",
@@ -6305,7 +6414,7 @@
       "leagueDivision": "2部",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "藤本寛也",
@@ -6372,12 +6481,12 @@
       "leagueDivision": "2部",
       "leagueId": "championship",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "堂安律",
       "nameEn": "Ritsu Doan",
-      "birthDate": null,
+      "birthDate": "1998-06-16",
       "position": "MF",
       "squadNumber": 20,
       "statsCheckedAt": "2025-08-07",
@@ -6393,7 +6502,7 @@
         },
         {
           "years": "2017-2018",
-          "team": "FCフローニンゲン",
+          "team": "フローニンゲン",
           "teamArticle": "FCフローニンゲン",
           "country": "NED",
           "loan": true,
@@ -6402,8 +6511,8 @@
         },
         {
           "years": "2018-2019",
-          "team": "FCフローニンゲン",
-          "teamArticle": "FCフローニンゲン",
+          "team": "フローニンゲン",
+          "teamArticle": "フローニンゲン",
           "country": "NED",
           "loan": false,
           "apps": 32,
@@ -6411,7 +6520,7 @@
         },
         {
           "years": "2019-2022",
-          "team": "PSVアイントホーフェン",
+          "team": "PSV",
           "teamArticle": "PSVアイントホーフェン",
           "country": "NED",
           "loan": false,
@@ -6429,7 +6538,7 @@
         },
         {
           "years": "2022-2025",
-          "team": "SCフライブルク",
+          "team": "フライブルク",
           "teamArticle": "SCフライブルク",
           "country": "GER",
           "loan": false,
@@ -6438,7 +6547,7 @@
         },
         {
           "years": "2025-",
-          "team": "アイントラハト・フランクフルト",
+          "team": "フランクフルト",
           "teamArticle": "アイントラハト・フランクフルト",
           "country": "GER",
           "loan": false,
@@ -6502,7 +6611,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "南野拓実",
@@ -6605,7 +6714,7 @@
       "leagueDivision": "[[リーグ・アン]](1部)",
       "leagueId": "ligue-1",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "倍井謙",
@@ -6662,7 +6771,7 @@
       "leagueDivision": "2部",
       "leagueId": "challenger-pro-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "畑大雅",
@@ -6711,7 +6820,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "板倉滉",
@@ -6877,7 +6986,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "冨安健洋",
@@ -6998,7 +7107,7 @@
       "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "福井太智",
@@ -7083,7 +7192,7 @@
       "leagueDivision": "1部",
       "leagueId": "primeira-liga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "福田師王",
@@ -7150,7 +7259,7 @@
       "leagueDivision": "[[2. ブンデスリーガ (ドイツサッカー)|2部]]",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "福田翔生",
@@ -7207,7 +7316,7 @@
       "leagueDivision": "1部",
       "leagueId": "danish-superliga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "平河悠",
@@ -7292,7 +7401,7 @@
       "leagueDivision": "2部",
       "leagueId": "championship",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "北野颯太",
@@ -7359,7 +7468,7 @@
       "leagueDivision": "1部",
       "leagueId": "austrian-bundesliga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "毎熊晟矢",
@@ -7417,7 +7526,7 @@
       "leagueDivision": "1部",
       "leagueId": "eredivisie",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "木村誠二",
@@ -7511,7 +7620,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "野澤大志ブランドン",
@@ -7623,7 +7732,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "鈴木彩艶",
@@ -7744,7 +7853,7 @@
       "leagueDivision": "1部",
       "leagueId": "premier-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "鈴木淳之介",
@@ -7765,7 +7874,7 @@
         },
         {
           "years": "2025-",
-          "team": "FCコペンハーゲン",
+          "team": "コペンハーゲン",
           "teamArticle": "FCコペンハーゲン",
           "country": "DEN",
           "loan": false,
@@ -7777,8 +7886,8 @@
         {
           "years": "2025-",
           "team": "日本代表",
-          "teamArticle": "日本",
-          "country": "JPN",
+          "teamArticle": null,
+          "country": null,
           "loan": false,
           "apps": 8,
           "goals": 0
@@ -7793,7 +7902,7 @@
       "leagueDivision": "1部",
       "leagueId": "danish-superliga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "鈴木唯人",
@@ -7878,7 +7987,7 @@
       "leagueDivision": "1部",
       "leagueId": "bundesliga",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "齋藤俊輔",
@@ -7927,7 +8036,7 @@
       "leagueDivision": "1部",
       "leagueId": "jupiler-pro-league",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     },
     {
       "nameJa": "髙橋仁胡",
@@ -8003,7 +8112,7 @@
       "leagueDivision": "2部",
       "leagueId": "bundesliga-2",
       "abroad": true,
-      "checkedAt": "2026-09-03"
+      "checkedAt": "2026-09-04"
     }
   ]
 }

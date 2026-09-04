@@ -1,13 +1,13 @@
 {
  "season": "2026-27",
- "takenAt": "2026-09-03",
+ "takenAt": "2026-09-04",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
-   "apps": 1,
+   "apps": 2,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-15",
+   "updatedAt": "2026-08-30",
    "source": "Nikki Havenaar"
   },
   "安藤晃希": {
@@ -100,10 +100,10 @@
   },
   "久保建英": {
    "division": "La Liga",
-   "apps": 3,
+   "apps": 4,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-29",
+   "updatedAt": "2026-09-03",
    "source": "Takefusa Kubo"
   },
   "橋岡大樹": {
@@ -257,6 +257,14 @@
    "european": true,
    "updatedAt": "2026-09-01",
    "source": "Kuryu Matsuki"
+  },
+  "上田綺世": {
+   "division": "Eredivisie",
+   "apps": 4,
+   "goals": 3,
+   "european": true,
+   "updatedAt": "2026-09-03",
+   "source": "Ayase Ueda"
   },
   "森下龍矢": {
    "division": "Championship",
@@ -428,10 +436,10 @@
   },
   "鈴木淳之介": {
    "division": "Danish Superliga",
-   "apps": 4,
+   "apps": 6,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-27",
+   "updatedAt": "2026-09-03",
    "source": "Junnosuke Suzuki"
   },
   "鈴木唯人": {

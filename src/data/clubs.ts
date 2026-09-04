@@ -7,7 +7,7 @@ import type { Club } from "@/lib/types";
  * リダイレクト解決で正式な記事名に寄せている。
  * 現所属選手がいる、または過去に2人以上が在籍したクラブだけを収録している。
  *
- * 最終取得: 2026-09-03
+ * 最終取得: 2026-09-04
  */
 export const clubs: Club[] = [
   {
@@ -141,28 +141,6 @@ export const clubs: Club[] = [
     ],
   },
   {
-    slug: "eintracht-frankfurt",
-    name: "アイントラハト・フランクフルト",
-    nameEn: "Eintracht Frankfurt",
-    article: "アイントラハト・フランクフルト",
-    countries: ["GER"],
-    currentPlayers: ["小杉啓太", "堂安律"],
-    pastPlayers: [
-      { nameJa: "鎌田大地", years: "2017-2023", loan: false },
-    ],
-  },
-  {
-    slug: "az-alkmaar",
-    name: "AZアルクマール",
-    nameEn: "AZ Alkmaar",
-    article: "AZアルクマール",
-    countries: ["NED"],
-    currentPlayers: ["市原吏音", "毎熊晟矢"],
-    pastPlayers: [
-      { nameJa: "菅原由勢", years: "2019-2020", loan: true },
-    ],
-  },
-  {
     slug: "k-beerschot-va",
     name: "KベールスホットVA",
     nameEn: "K Beerschot VA",
@@ -185,7 +163,7 @@ export const clubs: Club[] = [
     ],
   },
   {
-    slug: "club-47",
+    slug: "club-48",
     name: "パトロ・アイスデン・マースメヘレン",
     nameEn: null,
     article: "パトロ・アイスデン・マースメヘレン",
@@ -229,6 +207,28 @@ export const clubs: Club[] = [
     ],
   },
   {
+    slug: "az-alkmaar",
+    name: "AZアルクマール",
+    nameEn: "AZ Alkmaar",
+    article: "AZアルクマール",
+    countries: ["NED"],
+    currentPlayers: ["市原吏音", "毎熊晟矢"],
+    pastPlayers: [
+
+    ],
+  },
+  {
+    slug: "eintracht-frankfurt",
+    name: "アイントラハト・フランクフルト",
+    nameEn: "Eintracht Frankfurt",
+    article: "アイントラハト・フランクフルト",
+    countries: ["GER"],
+    currentPlayers: ["小杉啓太", "堂安律"],
+    pastPlayers: [
+
+    ],
+  },
+  {
     slug: "blackburn-rovers",
     name: "ブラックバーン・ローヴァーズFC",
     nameEn: "Blackburn Rovers F.C.",
@@ -263,17 +263,6 @@ export const clubs: Club[] = [
     ],
   },
   {
-    slug: "psv-eindhoven",
-    name: "PSVアイントホーフェン",
-    nameEn: "PSV Eindhoven",
-    article: "PSVアイントホーフェン",
-    countries: ["NED"],
-    currentPlayers: ["佐野航大"],
-    pastPlayers: [
-      { nameJa: "堂安律", years: "2019-2022", loan: false },
-    ],
-  },
-  {
     slug: "sparta-rotterdam",
     name: "スパルタ・ロッテルダム",
     nameEn: "Sparta Rotterdam",
@@ -296,14 +285,14 @@ export const clubs: Club[] = [
     ],
   },
   {
-    slug: "southampton-2",
-    name: "サウサンプトンFC",
-    nameEn: "Southampton F.C.",
-    article: "サウサンプトンFC",
-    countries: ["ENG"],
-    currentPlayers: ["松木玖生"],
+    slug: "feyenoord",
+    name: "フェイエノールト・ロッテルダム",
+    nameEn: "Feyenoord",
+    article: "フェイエノールト・ロッテルダム",
+    countries: ["NED"],
+    currentPlayers: ["渡辺剛"],
     pastPlayers: [
-      { nameJa: "菅原由勢", years: "2024-", loan: false },
+      { nameJa: "上田綺世", years: "2023-2026", loan: false },
     ],
   },
   {
@@ -439,6 +428,17 @@ export const clubs: Club[] = [
     ],
   },
   {
+    slug: "psv-eindhoven",
+    name: "PSVアイントホーフェン",
+    nameEn: "PSV Eindhoven",
+    article: "PSVアイントホーフェン",
+    countries: ["NED"],
+    currentPlayers: ["佐野航大"],
+    pastPlayers: [
+
+    ],
+  },
+  {
     slug: "coventry-city",
     name: "コヴェントリー・シティFC",
     nameEn: "Coventry City F.C.",
@@ -500,6 +500,28 @@ export const clubs: Club[] = [
     article: "ハノーファー96",
     countries: ["GER"],
     currentPlayers: ["松田隼風"],
+    pastPlayers: [
+
+    ],
+  },
+  {
+    slug: "southampton-2",
+    name: "サウサンプトンFC",
+    nameEn: "Southampton F.C.",
+    article: "サウサンプトンFC",
+    countries: ["ENG"],
+    currentPlayers: ["松木玖生"],
+    pastPlayers: [
+
+    ],
+  },
+  {
+    slug: "lille-osc",
+    name: "LOSCリール",
+    nameEn: "Lille OSC",
+    article: "LOSCリール",
+    countries: ["FRA"],
+    currentPlayers: ["上田綺世"],
     pastPlayers: [
 
     ],
@@ -610,17 +632,6 @@ export const clubs: Club[] = [
     article: "リーズ・ユナイテッドFC",
     countries: ["ENG"],
     currentPlayers: ["田中碧"],
-    pastPlayers: [
-
-    ],
-  },
-  {
-    slug: "feyenoord",
-    name: "フェイエノールト・ロッテルダム",
-    nameEn: "Feyenoord",
-    article: "フェイエノールト・ロッテルダム",
-    countries: ["NED"],
-    currentPlayers: ["渡辺剛"],
     pastPlayers: [
 
     ],
@@ -801,7 +812,7 @@ export const clubs: Club[] = [
       { nameJa: "荒木遼太郎", years: "2024", loan: true },
       { nameJa: "佐藤龍之介", years: "2023-2026", loan: false },
       { nameJa: "松木玖生", years: "2022-2024", loan: false },
-      { nameJa: "渡辺剛", years: "2018-2021", loan: false },
+      { nameJa: "渡辺剛", years: "2019-2021", loan: false },
       { nameJa: "木村誠二", years: "2020-2025", loan: false },
       { nameJa: "野澤大志ブランドン", years: "2020-2025", loan: false },
     ],
@@ -916,6 +927,21 @@ export const clubs: Club[] = [
     ],
   },
   {
+    slug: "kashima-antlers",
+    name: "鹿島アントラーズ",
+    nameEn: "Kashima Antlers",
+    article: "鹿島アントラーズ",
+    countries: ["JPN"],
+    currentPlayers: [],
+    pastPlayers: [
+      { nameJa: "荒木遼太郎", years: "2020-2026", loan: false },
+      { nameJa: "佐野海舟", years: "2023-2024", loan: false },
+      { nameJa: "上田綺世", years: "2019-2022", loan: false },
+      { nameJa: "常本佳吾", years: "2020-2023", loan: false },
+      { nameJa: "町田浩樹", years: "2016-2023", loan: false },
+    ],
+  },
+  {
     slug: "dusseldorf",
     name: "デュッセルドルフ",
     nameEn: "Düsseldorf",
@@ -1011,20 +1037,6 @@ export const clubs: Club[] = [
       { nameJa: "古川陽介", years: "2022-2025", loan: false },
       { nameJa: "後藤啓介", years: "2023-2024", loan: false },
       { nameJa: "倍井謙", years: "2025", loan: true },
-    ],
-  },
-  {
-    slug: "kashima-antlers",
-    name: "鹿島アントラーズ",
-    nameEn: "Kashima Antlers",
-    article: "鹿島アントラーズ",
-    countries: ["JPN"],
-    currentPlayers: [],
-    pastPlayers: [
-      { nameJa: "荒木遼太郎", years: "2020-2026", loan: false },
-      { nameJa: "佐野海舟", years: "2023-2024", loan: false },
-      { nameJa: "常本佳吾", years: "2020-2023", loan: false },
-      { nameJa: "町田浩樹", years: "2016-2023", loan: false },
     ],
   },
   {
@@ -1133,7 +1145,20 @@ export const clubs: Club[] = [
     ],
   },
   {
-    slug: "club-50",
+    slug: "frankfurt",
+    name: "フランクフルト・アム・マイン",
+    nameEn: "Frankfurt",
+    article: "フランクフルト・アム・マイン",
+    countries: ["GER"],
+    currentPlayers: [],
+    pastPlayers: [
+      { nameJa: "鎌田大地", years: "2017-2023", loan: false },
+      { nameJa: "小杉啓太", years: "2026-", loan: false },
+      { nameJa: "堂安律", years: "2025-", loan: false },
+    ],
+  },
+  {
+    slug: "club-51",
     name: "キール",
     nameEn: null,
     article: "キール",
@@ -1143,6 +1168,19 @@ export const clubs: Club[] = [
       { nameJa: "関根大輝", years: "2026-", loan: true },
       { nameJa: "町野修斗", years: "2023-2025", loan: false },
       { nameJa: "髙橋仁胡", years: "2026-", loan: true },
+    ],
+  },
+  {
+    slug: "southampton",
+    name: "サウサンプトン",
+    nameEn: "Southampton",
+    article: "サウサンプトン",
+    countries: ["ENG"],
+    currentPlayers: [],
+    pastPlayers: [
+      { nameJa: "高岡伶颯", years: "2025-2026", loan: false },
+      { nameJa: "菅原由勢", years: "2024-", loan: false },
+      { nameJa: "南野拓実", years: "2021", loan: true },
     ],
   },
   {
@@ -1206,6 +1244,18 @@ export const clubs: Club[] = [
     pastPlayers: [
       { nameJa: "浦田樹", years: "2017", loan: true },
       { nameJa: "町野修斗", years: "2019", loan: true },
+    ],
+  },
+  {
+    slug: "liverpool-2",
+    name: "リヴァプール",
+    nameEn: "Liverpool",
+    article: "リヴァプール",
+    countries: ["ENG"],
+    currentPlayers: [],
+    pastPlayers: [
+      { nameJa: "遠藤航", years: "2023-", loan: false },
+      { nameJa: "南野拓実", years: "2020-2022", loan: false },
     ],
   },
   {
@@ -1281,15 +1331,15 @@ export const clubs: Club[] = [
     ],
   },
   {
-    slug: "southampton",
-    name: "サウサンプトン",
-    nameEn: "Southampton",
-    article: "サウサンプトン",
-    countries: ["ENG"],
+    slug: "psv",
+    name: "PSV",
+    nameEn: "PSV",
+    article: "PSV",
+    countries: ["NED"],
     currentPlayers: [],
     pastPlayers: [
-      { nameJa: "高岡伶颯", years: "2025-2026", loan: false },
-      { nameJa: "南野拓実", years: "2021", loan: true },
+      { nameJa: "佐野航大", years: "2026-", loan: false },
+      { nameJa: "堂安律", years: "2019-2022", loan: false },
     ],
   },
   {
@@ -1305,7 +1355,7 @@ export const clubs: Club[] = [
     ],
   },
   {
-    slug: "club-71",
+    slug: "club-73",
     name: "ウェステルロー",
     nameEn: null,
     article: "ウェステルロー",
@@ -1365,6 +1415,18 @@ export const clubs: Club[] = [
     ],
   },
   {
+    slug: "bremen",
+    name: "ブレーメン",
+    nameEn: "Bremen",
+    article: "ブレーメン",
+    countries: ["GER"],
+    currentPlayers: [],
+    pastPlayers: [
+      { nameJa: "菅原由勢", years: "2025-2026", loan: true },
+      { nameJa: "長田澪", years: "2022-2026", loan: false },
+    ],
+  },
+  {
     slug: "kortrijk",
     name: "コルトレイク",
     nameEn: "Kortrijk",
@@ -1374,6 +1436,18 @@ export const clubs: Club[] = [
     pastPlayers: [
       { nameJa: "田中聡", years: "2022-2023", loan: true },
       { nameJa: "渡辺剛", years: "2022-2023", loan: false },
+    ],
+  },
+  {
+    slug: "groningen",
+    name: "フローニンゲン",
+    nameEn: "Groningen",
+    article: "フローニンゲン",
+    countries: ["NED"],
+    currentPlayers: [],
+    pastPlayers: [
+      { nameJa: "堂安律", years: "2017-2018", loan: true },
+      { nameJa: "板倉滉", years: "2019-2021", loan: true },
     ],
   },
   {
