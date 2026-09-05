@@ -1,5 +1,5 @@
 {
- "takenAt": "2026-09-04",
+ "takenAt": "2026-09-05",
  "players": {
   "shinta-appelkamp": {
    "nameJa": "アペルカンプ真大",
@@ -55,6 +55,11 @@
    "nameJa": "宇野禅斗",
    "club": "ボルシア・メンヒェングラートバッハ",
    "league": "bundesliga"
+  },
+  "takatora-einaga": {
+   "nameJa": "永長鷹虎",
+   "club": "KベールスホットVA",
+   "league": "challenger-pro-league"
   },
   "wataru-endo": {
    "nameJa": "遠藤航",
@@ -441,6 +446,11 @@
    "club": "カールスルーエSC",
    "league": "bundesliga-2"
   },
+  "shinnosuke-fukuda": {
+   "nameJa": "福田心之助",
+   "club": "レギア・ワルシャワ",
+   "league": "ekstraklasa"
+  },
   "sho-fukuda": {
    "nameJa": "福田翔生",
    "club": "ブレンビーIF",
@@ -460,6 +470,11 @@
    "nameJa": "毎熊晟矢",
    "club": "AZアルクマール",
    "league": "eredivisie"
+  },
+  "gaku-nawata": {
+   "nameJa": "名和田我空",
+   "club": "シャルルロワSC",
+   "league": "jupiler-pro-league"
   },
   "seiji-kimura": {
    "nameJa": "木村誠二",

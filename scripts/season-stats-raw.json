@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-09-04",
+ "takenAt": "2026-09-05",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -244,18 +244,18 @@
   },
   "松岡大起": {
    "division": "Slovak First Football League",
-   "apps": 4,
-   "goals": 1,
+   "apps": 5,
+   "goals": 2,
    "european": true,
-   "updatedAt": "2026-08-22",
+   "updatedAt": "2026-08-30",
    "source": "Daiki Matsuoka"
   },
   "松木玖生": {
    "division": "Championship",
-   "apps": 4,
+   "apps": 5,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-01",
+   "updatedAt": "2026-09-05",
    "source": "Kuryu Matsuki"
   },
   "上田綺世": {
@@ -268,10 +268,10 @@
   },
   "森下龍矢": {
    "division": "Championship",
-   "apps": 3,
+   "apps": 4,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-08-29",
+   "updatedAt": "2026-09-01",
    "source": "Ryōya Morishita"
   },
   "水多海斗": {
@@ -409,6 +409,14 @@
    "european": true,
    "updatedAt": "2026-05-17",
    "source": "Shiō Fukuda"
+  },
+  "福田心之助": {
+   "division": "J1 100 Year Vision League",
+   "apps": 13,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-08-29",
+   "source": "Shinnosuke Fukuda"
   },
   "北野颯太": {
    "division": "Austrian Bundesliga",

@@ -28,7 +28,7 @@ export const players: Player[] = [
     league: "bundesliga-2",
     confidence: "needs-review",
     statsCheckedAt: "2026-07-03",
-    sources: [wiki("アペルカンプ真大", "2026-09-04")],
+    sources: [wiki("アペルカンプ真大", "2026-09-05")],
     career: [
       { years: "2019", team: "デュッセルドルフ U-23", country: "GER", loan: false, apps: 25, goals: 8 },
       { years: "2019-2026", team: "デュッセルドルフ", country: "GER", loan: false, apps: 159, goals: 21 },
@@ -52,7 +52,7 @@ export const players: Player[] = [
     squadNumber: 45,
     confidence: "needs-review",
     statsCheckedAt: "2026-08-21",
-    sources: [wiki("チェイス・アンリ", "2026-09-04")],
+    sources: [wiki("チェイス・アンリ", "2026-09-05")],
     career: [
       { years: "2022-", team: "VfBシュトゥットガルトII", country: "GER", loan: false, apps: 46, goals: 2 },
       { years: "2024-2025", team: "VfBシュトゥットガルト", country: "GER", loan: false, apps: 12, goals: 0 },
@@ -75,7 +75,7 @@ export const players: Player[] = [
     clubEn: "Royale Union Saint-Gilloise",
     league: "jupiler-pro-league",
     confidence: "needs-review",
-    sources: [wiki("ハーフナー・ニッキ", "2026-09-04")],
+    sources: [wiki("ハーフナー・ニッキ", "2026-09-05")],
     career: [
       { years: "2013-2015", team: "名古屋グランパス", country: "JPN", loan: false, apps: 3, goals: 0 },
       { years: "2014-2015", team: "Jリーグ・U-22選抜", country: "JPN", loan: true, apps: 7, goals: 1 },
@@ -102,7 +102,7 @@ export const players: Player[] = [
     league: "challenger-pro-league",
     confidence: "needs-review",
     statsCheckedAt: "2026-01-25",
-    sources: [wiki("ポープ・ウィリアム", "2026-09-04")],
+    sources: [wiki("ポープ・ウィリアム", "2026-09-05")],
     career: [
       { years: "2013-2017", team: "東京ヴェルディ", country: "JPN", loan: false, apps: 1, goals: 0 },
       { years: "2016", team: "FC岐阜", country: "JPN", loan: true, apps: 4, goals: 0 },
@@ -132,7 +132,7 @@ export const players: Player[] = [
     squadNumber: 33,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-18",
-    sources: [wiki("安藤晃希", "2026-09-04")],
+    sources: [wiki("安藤晃希", "2026-09-05")],
     career: [
       { years: "2026", team: "水戸ホーリーホック", country: null, loan: false, apps: 8, goals: 2 },
       { years: "2026-", team: "ロイヤル・アントワープFC", country: null, loan: false, apps: null, goals: null },
@@ -153,7 +153,7 @@ export const players: Player[] = [
     squadNumber: 15,
     confidence: "needs-review",
     statsCheckedAt: "2023-11-12",
-    sources: [wiki("安藤智哉", "2026-09-04")],
+    sources: [wiki("安藤智哉", "2026-09-05")],
     career: [
       { years: "2021-2022", team: "FC今治", country: "JPN", loan: false, apps: 44, goals: 7 },
       { years: "2023-2024", team: "大分トリニータ", country: "JPN", loan: false, apps: 64, goals: 2 },
@@ -176,7 +176,7 @@ export const players: Player[] = [
     league: "bundesliga-2",
     confidence: "needs-review",
     statsCheckedAt: "2026-06-30",
-    sources: [wiki("安部大晴", "2026-09-04")],
+    sources: [wiki("安部大晴", "2026-09-05")],
     career: [
       { years: "2021-", team: "V・ファーレン長崎", country: "JPN", loan: false, apps: 47, goals: 2 },
       { years: "2025-2026", team: "FCルツェルン", country: "SUI", loan: true, apps: 34, goals: 0 },
@@ -198,7 +198,7 @@ export const players: Player[] = [
     squadNumber: 10,
     confidence: "needs-review",
     statsCheckedAt: "2026-08-10",
-    sources: [wiki("伊東純也", "2026-09-04")],
+    sources: [wiki("伊東純也", "2026-09-05")],
     career: [
       { years: "2015", team: "ヴァンフォーレ甲府", country: "JPN", loan: false, apps: 30, goals: 4 },
       { years: "2016-2020", team: "柏レイソル", country: "JPN", loan: false, apps: 101, goals: 19 },
@@ -222,7 +222,7 @@ export const players: Player[] = [
     league: "championship",
     confidence: "needs-review",
     statsCheckedAt: "2026-08-29",
-    sources: [wiki("伊藤敦樹", "2026-09-04")],
+    sources: [wiki("伊藤敦樹", "2026-09-05")],
     career: [
       { years: "2021-2024", team: "浦和レッズ", country: "JPN", loan: false, apps: 121, goals: 12 },
       { years: "2024-2026", team: "ヘント", country: "BEL", loan: false, apps: 65, goals: 6 },
@@ -244,7 +244,7 @@ export const players: Player[] = [
     squadNumber: 21,
     confidence: "needs-review",
     statsCheckedAt: "2025-05-28",
-    sources: [wiki("伊藤洋輝", "2026-09-04")],
+    sources: [wiki("伊藤洋輝", "2026-09-05")],
     career: [
       { years: "2018-2022", team: "ジュビロ磐田", country: "JPN", loan: false, apps: 58, goals: 4 },
       { years: "2019", team: "名古屋グランパス", country: "JPN", loan: true, apps: 2, goals: 0 },
@@ -269,7 +269,7 @@ export const players: Player[] = [
     squadNumber: 47,
     confidence: "needs-review",
     statsCheckedAt: "2026-07-04",
-    sources: [wiki("宇野禅斗", "2026-09-04")],
+    sources: [wiki("宇野禅斗", "2026-09-05")],
     career: [
       { years: "2022-2024", team: "FC町田ゼルビア", country: "JPN", loan: false, apps: 31, goals: 3 },
       { years: "2024", team: "清水エスパルス", country: "JPN", loan: true, apps: 12, goals: 2 },
@@ -278,6 +278,32 @@ export const players: Player[] = [
     ],
     nationalCareer: [
       { years: "2025-", team: "日本代表", country: null, loan: false, apps: 2, goals: 0 },
+    ],
+  },
+  {
+    slug: "takatora-einaga",
+    nameJa: "永長鷹虎",
+    nameEn: "Takatora Einaga",
+    position: "MF",
+    birthDate: "2003-04-07",
+    club: "KベールスホットVA",
+    clubEn: "K Beerschot VA",
+    league: "challenger-pro-league",
+    squadNumber: 32,
+    confidence: "needs-review",
+    statsCheckedAt: "2026-06-17",
+    sources: [wiki("永長鷹虎", "2026-09-05")],
+    career: [
+      { years: "2022-", team: "川崎フロンターレ", country: "JPN", loan: false, apps: 1, goals: 0 },
+      { years: "2023", team: "水戸ホーリーホック", country: "JPN", loan: true, apps: 16, goals: 1 },
+      { years: "2024", team: "ザスパ群馬", country: "JPN", loan: true, apps: 11, goals: 0 },
+      { years: "2024", team: "テゲバジャーロ宮崎", country: "JPN", loan: true, apps: 11, goals: 1 },
+      { years: "2025", team: "FC琉球", country: "JPN", loan: true, apps: 15, goals: 0 },
+      { years: "2026-", team: "福島ユナイテッドFC", country: "JPN", loan: true, apps: 16, goals: 0 },
+      { years: "2026-", team: "ベールスホット", country: "BEL", loan: false, apps: null, goals: null },
+    ],
+    nationalCareer: [
+      { years: "2023", team: "日本U-20", country: null, loan: false, apps: 2, goals: 0 },
     ],
   },
   {
@@ -292,7 +318,7 @@ export const players: Player[] = [
     squadNumber: 3,
     confidence: "needs-review",
     statsCheckedAt: "2026-05-26",
-    sources: [wiki("遠藤航", "2026-09-04")],
+    sources: [wiki("遠藤航", "2026-09-05")],
     facts: [
       "VfBシュトゥットガルト時代の2020-21シーズン、ブンデスリーガのデュエル勝利数で1位を記録した。",
       "2023年にリヴァプールへ移籍し、プレミアリーグでプレーしている。",
@@ -324,7 +350,7 @@ export const players: Player[] = [
     squadNumber: 7,
     confidence: "needs-review",
     statsCheckedAt: "2025-05-28",
-    sources: [wiki("塩貝健人", "2026-09-04")],
+    sources: [wiki("塩貝健人", "2026-09-05")],
     career: [
       { years: "2024", team: "横浜F・マリノス", country: "JPN", loan: false, apps: 7, goals: 1 },
       { years: "2024-2026", team: "NEC", country: "NED", loan: false, apps: 37, goals: 11 },
@@ -348,7 +374,7 @@ export const players: Player[] = [
     squadNumber: 64,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-28",
-    sources: [wiki("横山歩夢", "2026-09-04")],
+    sources: [wiki("横山歩夢", "2026-09-05")],
     career: [
       { years: "2021-2022", team: "松本山雅FC", country: "JPN", loan: false, apps: 45, goals: 11 },
       { years: "2023-2024", team: "サガン鳥栖", country: "JPN", loan: false, apps: 41, goals: 5 },
@@ -372,7 +398,7 @@ export const players: Player[] = [
     squadNumber: 17,
     confidence: "needs-review",
     statsCheckedAt: "2026-08-06",
-    sources: [wiki("横田大祐", "2026-09-04")],
+    sources: [wiki("横田大祐", "2026-09-05")],
     career: [
       { years: "2019-2020", team: "カールツァイス・イェーナⅡ", country: "GER", loan: false, apps: 3, goals: 2 },
       { years: "2021-2023", team: "ヴァルミエラ", country: "LAT", loan: false, apps: 57, goals: 9 },
@@ -397,7 +423,7 @@ export const players: Player[] = [
     league: "jupiler-pro-league",
     confidence: "needs-review",
     statsCheckedAt: "2026-07-17",
-    sources: [wiki("荻原拓也", "2026-09-04")],
+    sources: [wiki("荻原拓也", "2026-09-05")],
     career: [
       { years: "2018-", team: "浦和レッズ", country: "JPN", loan: false, apps: 76, goals: 1 },
       { years: "2020", team: "アルビレックス新潟", country: "JPN", loan: true, apps: 24, goals: 0 },
@@ -421,7 +447,7 @@ export const players: Player[] = [
     squadNumber: 33,
     confidence: "needs-review",
     statsCheckedAt: "2026-07-17",
-    sources: [wiki("笠柳翼", "2026-09-04")],
+    sources: [wiki("笠柳翼", "2026-09-05")],
     career: [
       { years: "2022-", team: "V・ファーレン長崎", country: "JPN", loan: false, apps: 95, goals: 8 },
       { years: "2026-", team: "パトロ・アイスデン・マースメヘレン", country: "BEL", loan: true, apps: null, goals: null },
@@ -442,7 +468,7 @@ export const players: Player[] = [
     squadNumber: 18,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-17",
-    sources: [wiki("鎌田大地", "2026-09-04")],
+    sources: [wiki("鎌田大地", "2026-09-05")],
     facts: [
       "サガン鳥栖から2017年に欧州へ渡った。",
       "アイントラハト・フランクフルトで2021-22シーズンのUEFAヨーロッパリーグ制覇に貢献した。",
@@ -470,7 +496,7 @@ export const players: Player[] = [
     squadNumber: 32,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-28",
-    sources: [wiki("関根大輝", "2026-09-04")],
+    sources: [wiki("関根大輝", "2026-09-05")],
     career: [
       { years: "2023-2024", team: "柏レイソル", country: "JPN", loan: false, apps: 31, goals: 0 },
       { years: "2025-", team: "スタッド・ランス", country: "FRA", loan: false, apps: 39, goals: 0 },
@@ -493,7 +519,7 @@ export const players: Player[] = [
     squadNumber: 24,
     confidence: "needs-review",
     statsCheckedAt: "2026-05-12",
-    sources: [wiki("岩田智輝", "2026-09-04")],
+    sources: [wiki("岩田智輝", "2026-09-05")],
     career: [
       { years: "2016-2020", team: "大分トリニータ", country: "JPN", loan: false, apps: 112, goals: 7 },
       { years: "2021-2023", team: "横浜F・マリノス", country: "JPN", loan: false, apps: 66, goals: 2 },
@@ -519,7 +545,7 @@ export const players: Player[] = [
     squadNumber: 15,
     confidence: "needs-review",
     statsCheckedAt: "2026-07-02",
-    sources: [wiki("喜多壱也", "2026-09-04")],
+    sources: [wiki("喜多壱也", "2026-09-05")],
     career: [
       { years: "2024-2026", team: "京都サンガF.C.", country: "JPN", loan: false, apps: 0, goals: 0 },
       { years: "2025-2026", team: "レアル・ソシエダB", country: "ESP", loan: true, apps: 31, goals: 0 },
@@ -540,7 +566,7 @@ export const players: Player[] = [
     league: "championship",
     confidence: "needs-review",
     statsCheckedAt: "2026-05-13",
-    sources: [wiki("旗手怜央", "2026-09-04")],
+    sources: [wiki("旗手怜央", "2026-09-05")],
     career: [
       { years: "2019-2021", team: "川崎フロンターレ", country: "JPN", loan: false, apps: 62, goals: 10 },
       { years: "2022-2026", team: "セルティック", country: "SCO", loan: false, apps: 132, goals: 25 },
@@ -564,7 +590,7 @@ export const players: Player[] = [
     squadNumber: 55,
     confidence: "needs-review",
     statsCheckedAt: "2025-08-13",
-    sources: [wiki("吉永夢希", "2026-09-04")],
+    sources: [wiki("吉永夢希", "2026-09-05")],
     career: [
       { years: "2024-", team: "KRCヘンク", country: "BEL", loan: false, apps: 0, goals: 0 },
       { years: "2024-", team: "ヨングヘンク", country: "BEL", loan: false, apps: 14, goals: 2 },
@@ -585,7 +611,7 @@ export const players: Player[] = [
     squadNumber: 14,
     confidence: "needs-review",
     statsCheckedAt: "2025-11-10",
-    sources: [wiki("久保建英", "2026-09-04")],
+    sources: [wiki("久保建英", "2026-09-05")],
     facts: [
       "FCバルセロナの下部組織を経て、FC東京でJ1デビューを果たした。",
       "2019年にレアル・マドリードへ移籍。以降はスペインのクラブでプレーを続けている。",
@@ -622,7 +648,7 @@ export const players: Player[] = [
     squadNumber: 18,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-26",
-    sources: [wiki("宮代大聖", "2026-09-04")],
+    sources: [wiki("宮代大聖", "2026-09-05")],
     career: [
       { years: "2018-2023", team: "川崎フロンターレ", country: "JPN", loan: false, apps: 46, goals: 9 },
       { years: "2019", team: "レノファ山口FC", country: "JPN", loan: true, apps: 19, goals: 2 },
@@ -650,7 +676,7 @@ export const players: Player[] = [
     squadNumber: 14,
     confidence: "needs-review",
     statsCheckedAt: "2026-08-12",
-    sources: [wiki("橋岡大樹", "2026-09-04")],
+    sources: [wiki("橋岡大樹", "2026-09-05")],
     career: [
       { years: "2018-2021", team: "浦和レッズ", country: "JPN", loan: false, apps: 74, goals: 4 },
       { years: "2021", team: "シント＝トロイデン", country: "BEL", loan: true, apps: 6, goals: 0 },
@@ -677,7 +703,7 @@ export const players: Player[] = [
     squadNumber: 78,
     confidence: "needs-review",
     statsCheckedAt: "2026-05-25",
-    sources: [wiki("原口元気", "2026-09-04")],
+    sources: [wiki("原口元気", "2026-09-05")],
     career: [
       { years: "2009-2014", team: "浦和レッズ", country: "JPN", loan: false, apps: 167, goals: 33 },
       { years: "2014-2018", team: "ヘルタ・ベルリン", country: "GER", loan: false, apps: 91, goals: 4 },
@@ -706,7 +732,7 @@ export const players: Player[] = [
     squadNumber: 18,
     confidence: "needs-review",
     statsCheckedAt: "2026-03-20",
-    sources: [wiki("原大智", "2026-09-04")],
+    sources: [wiki("原大智", "2026-09-05")],
     career: [
       { years: "2017-2019", team: "FC東京U-23", country: "JPN", loan: false, apps: 72, goals: 28 },
       { years: "2018-2020", team: "FC東京", country: "JPN", loan: false, apps: 26, goals: 3 },
@@ -733,7 +759,7 @@ export const players: Player[] = [
     league: "bundesliga-2",
     confidence: "needs-review",
     statsCheckedAt: "2025-06-19",
-    sources: [wiki("古川陽介", "2026-09-04")],
+    sources: [wiki("古川陽介", "2026-09-05")],
     career: [
       { years: "2022-2025", team: "ジュビロ磐田", country: "JPN", loan: false, apps: 59, goals: 4 },
       { years: "2024-2025", team: "グールニク・ザブジェ", country: "POL", loan: true, apps: 24, goals: 2 },
@@ -755,7 +781,7 @@ export const players: Player[] = [
     squadNumber: 42,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-11",
-    sources: [wiki("後藤啓介", "2026-09-04")],
+    sources: [wiki("後藤啓介", "2026-09-05")],
     career: [
       { years: "2023-2024", team: "ジュビロ磐田", country: "JPN", loan: false, apps: 33, goals: 7 },
       { years: "2024", team: "RSCAフューチャーズ", country: "BEL", loan: true, apps: 14, goals: 6 },
@@ -782,7 +808,7 @@ export const players: Player[] = [
     squadNumber: 4,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-30",
-    sources: [wiki("綱島悠斗", "2026-09-04")],
+    sources: [wiki("綱島悠斗", "2026-09-05")],
     career: [
       { years: "2023-2025", team: "東京ヴェルディ", country: "JPN", loan: false, apps: 87, goals: 7 },
       { years: "2025-", team: "ロイヤル・アントワープ", country: "BEL", loan: false, apps: 24, goals: 1 },
@@ -803,7 +829,7 @@ export const players: Player[] = [
     squadNumber: 71,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-10",
-    sources: [wiki("荒木遼太郎", "2026-09-04")],
+    sources: [wiki("荒木遼太郎", "2026-09-05")],
     career: [
       { years: "2020-2026", team: "鹿島アントラーズ", country: "JPN", loan: false, apps: 123, goals: 14 },
       { years: "2024", team: "FC東京", country: "JPN", loan: true, apps: 29, goals: 7 },
@@ -826,7 +852,7 @@ export const players: Player[] = [
     squadNumber: 4,
     confidence: "needs-review",
     statsCheckedAt: "2026-09-01",
-    sources: [wiki("高井幸大", "2026-09-04")],
+    sources: [wiki("高井幸大", "2026-09-05")],
     career: [
       { years: "2022-2025", team: "川崎フロンターレ", country: "JPN", loan: false, apps: 60, goals: 4 },
       { years: "2025-", team: "トッテナム", country: "ENG", loan: false, apps: 0, goals: 0 },
@@ -850,7 +876,7 @@ export const players: Player[] = [
     league: "challenger-pro-league",
     confidence: "needs-review",
     statsCheckedAt: "2025-08-06",
-    sources: [wiki("高岡伶颯", "2026-09-04")],
+    sources: [wiki("高岡伶颯", "2026-09-05")],
     career: [
       { years: "2025-2026", team: "サウサンプトン", country: "ENG", loan: false, apps: 0, goals: 0 },
       { years: "2025-2026", team: "ヴァランシエンヌ", country: "FRA", loan: true, apps: 16, goals: 3 },
@@ -872,7 +898,7 @@ export const players: Player[] = [
     squadNumber: 39,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-10",
-    sources: [wiki("佐藤龍之介", "2026-09-04")],
+    sources: [wiki("佐藤龍之介", "2026-09-05")],
     career: [
       { years: "2023-2026", team: "FC東京", country: "JPN", loan: false, apps: 22, goals: 6 },
       { years: "2025", team: "ファジアーノ岡山", country: "JPN", loan: true, apps: 28, goals: 6 },
@@ -894,7 +920,7 @@ export const players: Player[] = [
     squadNumber: 6,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-21",
-    sources: [wiki("佐野海舟", "2026-09-04")],
+    sources: [wiki("佐野海舟", "2026-09-05")],
     career: [
       { years: "2019-2022", team: "町田ゼルビア", country: "JPN", loan: false, apps: 116, goals: 8 },
       { years: "2023-2024", team: "鹿島アントラーズ", country: "JPN", loan: false, apps: 47, goals: 1 },
@@ -916,7 +942,7 @@ export const players: Player[] = [
     squadNumber: 24,
     confidence: "needs-review",
     statsCheckedAt: "2026-08-31",
-    sources: [wiki("佐野航大", "2026-09-04")],
+    sources: [wiki("佐野航大", "2026-09-05")],
     career: [
       { years: "2022-2023", team: "ファジアーノ岡山", country: "JPN", loan: false, apps: 48, goals: 5 },
       { years: "2023-2026", team: "NEC", country: "NED", loan: false, apps: 84, goals: 10 },
@@ -940,7 +966,7 @@ export const players: Player[] = [
     squadNumber: 7,
     confidence: "needs-review",
     statsCheckedAt: "2026-05-21",
-    sources: [wiki("坂元達裕", "2026-09-04")],
+    sources: [wiki("坂元達裕", "2026-09-05")],
     career: [
       { years: "2019", team: "モンテディオ山形", country: "JPN", loan: false, apps: 42, goals: 7 },
       { years: "2020-2022", team: "セレッソ大阪", country: "JPN", loan: false, apps: 66, goals: 8 },
@@ -964,7 +990,7 @@ export const players: Player[] = [
     squadNumber: 13,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-08",
-    sources: [wiki("坂本一彩", "2026-09-04")],
+    sources: [wiki("坂本一彩", "2026-09-05")],
     career: [
       { years: "2020", team: "ガンバ大阪U-23", country: "JPN", loan: false, apps: 11, goals: 3 },
       { years: "2022-2025", team: "ガンバ大阪", country: "JPN", loan: false, apps: 46, goals: 11 },
@@ -987,7 +1013,7 @@ export const players: Player[] = [
     league: "eredivisie",
     confidence: "needs-review",
     statsCheckedAt: "2025-05-28",
-    sources: [wiki("三戸舜介", "2026-09-04")],
+    sources: [wiki("三戸舜介", "2026-09-05")],
     career: [
       { years: "2020-2023", team: "アルビレックス新潟", country: "JPN", loan: false, apps: 80, goals: 12 },
       { years: "2024-", team: "スパルタ・ロッテルダム", country: "NED", loan: false, apps: 73, goals: 14 },
@@ -1014,7 +1040,7 @@ export const players: Player[] = [
     squadNumber: 23,
     confidence: "needs-review",
     statsCheckedAt: "2025-05-18",
-    sources: [wiki("三好康児", "2026-09-04")],
+    sources: [wiki("三好康児", "2026-09-05")],
     career: [
       { years: "2015-2020", team: "川崎フロンターレ", country: "JPN", loan: false, apps: 31, goals: 5 },
       { years: "2015", team: "Jリーグ・アンダー22選抜", country: "JPN", loan: true, apps: 8, goals: 1 },
@@ -1044,7 +1070,7 @@ export const players: Player[] = [
     squadNumber: 7,
     confidence: "needs-review",
     statsCheckedAt: "2025-05-26",
-    sources: [wiki("三笘薫", "2026-09-04")],
+    sources: [wiki("三笘薫", "2026-09-05")],
     facts: [
       "筑波大学在学中に、自身のドリブルを主題とした卒業論文を書いたことで知られる。",
       "川崎フロンターレから2021年にブライトンへ移籍し、ユニオンSGでの武者修行を経て定着した。",
@@ -1072,7 +1098,7 @@ export const players: Player[] = [
     squadNumber: 20,
     confidence: "needs-review",
     statsCheckedAt: "2025-07-19",
-    sources: [wiki("山田新", "2026-09-04")],
+    sources: [wiki("山田新", "2026-09-05")],
     career: [
       { years: "2023-2025", team: "川崎フロンターレ", country: "JPN", loan: false, apps: 86, goals: 25 },
       { years: "2025-", team: "セルティック", country: "SCO", loan: false, apps: 8, goals: 0 },
@@ -1094,7 +1120,7 @@ export const players: Player[] = [
     squadNumber: 20,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-28",
-    sources: [wiki("山本理仁", "2026-09-04")],
+    sources: [wiki("山本理仁", "2026-09-05")],
     career: [
       { years: "2019-2022", team: "東京ヴェルディ", country: "JPN", loan: false, apps: 104, goals: 3 },
       { years: "2022-2024", team: "ガンバ大阪", country: "JPN", loan: false, apps: 13, goals: 0 },
@@ -1118,7 +1144,7 @@ export const players: Player[] = [
     squadNumber: 18,
     confidence: "needs-review",
     statsCheckedAt: "2026-01-31",
-    sources: [wiki("市原吏音", "2026-09-04")],
+    sources: [wiki("市原吏音", "2026-09-05")],
     career: [
       { years: "2023-2025", team: "大宮アルディージャ<br/ >/ RB大宮アルディージャ", country: "JPN", loan: false, apps: 77, goals: 5 },
       { years: "2026-", team: "AZアルクマール", country: "NED", loan: false, apps: null, goals: null },
@@ -1141,7 +1167,7 @@ export const players: Player[] = [
     squadNumber: 5,
     confidence: "needs-review",
     statsCheckedAt: "2026-07-25",
-    sources: [wiki("守田英正", "2026-09-04")],
+    sources: [wiki("守田英正", "2026-09-05")],
     career: [
       { years: "2018-2020", team: "川崎フロンターレ", country: "JPN", loan: false, apps: 81, goals: 1 },
       { years: "2021-2022", team: "サンタ・クララ", country: "POR", loan: false, apps: 48, goals: 3 },
@@ -1164,7 +1190,7 @@ export const players: Player[] = [
     squadNumber: 16,
     confidence: "needs-review",
     statsCheckedAt: "2026-05-29",
-    sources: [wiki("秋山裕紀", "2026-09-04")],
+    sources: [wiki("秋山裕紀", "2026-09-05")],
     career: [
       { years: "2019-", team: "アルビレックス新潟", country: "JPN", loan: false, apps: 118, goals: 3 },
       { years: "2020", team: "アスルクラロ沼津", country: "JPN", loan: true, apps: 8, goals: 3 },
@@ -1187,7 +1213,7 @@ export const players: Player[] = [
     squadNumber: 16,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-28",
-    sources: [wiki("小久保玲央ブライアン", "2026-09-04")],
+    sources: [wiki("小久保玲央ブライアン", "2026-09-05")],
     career: [
       { years: "2020-2024", team: "ベンフィカB", country: "POR", loan: false, apps: 25, goals: 0 },
       { years: "2022-2024", team: "ベンフィカ", country: "POR", loan: false, apps: 0, goals: 0 },
@@ -1212,7 +1238,7 @@ export const players: Player[] = [
     squadNumber: 26,
     confidence: "needs-review",
     statsCheckedAt: "2025-12-19",
-    sources: [wiki("小杉啓太", "2026-09-04")],
+    sources: [wiki("小杉啓太", "2026-09-05")],
     career: [
       { years: "2024-2025", team: "ユールゴーデン", country: "SWE", loan: false, apps: 42, goals: 1 },
       { years: "2026-", team: "フランクフルト", country: "GER", loan: false, apps: null, goals: null },
@@ -1236,7 +1262,7 @@ export const players: Player[] = [
     squadNumber: 4,
     confidence: "needs-review",
     statsCheckedAt: "2026-05-29",
-    sources: [wiki("小林友希", "2026-09-04")],
+    sources: [wiki("小林友希", "2026-09-05")],
     career: [
       { years: "2018-2022", team: "ヴィッセル神戸", country: "JPN", loan: false, apps: 56, goals: 0 },
       { years: "2019", team: "FC町田ゼルビア", country: "JPN", loan: true, apps: 15, goals: 0 },
@@ -1264,7 +1290,7 @@ export const players: Player[] = [
     squadNumber: 41,
     confidence: "needs-review",
     statsCheckedAt: "2026-02-07",
-    sources: [wiki("松岡大起", "2026-09-04")],
+    sources: [wiki("松岡大起", "2026-09-05")],
     career: [
       { years: "2019-2021", team: "サガン鳥栖", country: "JPN", loan: false, apps: 76, goals: 0 },
       { years: "2021-2023", team: "清水エスパルス", country: "JPN", loan: false, apps: 40, goals: 0 },
@@ -1288,7 +1314,7 @@ export const players: Player[] = [
     squadNumber: 3,
     confidence: "needs-review",
     statsCheckedAt: "2025-06-22",
-    sources: [wiki("松田隼風", "2026-09-04")],
+    sources: [wiki("松田隼風", "2026-09-05")],
     career: [
       { years: "2022-2025", team: "水戸ホーリーホック", country: "JPN", loan: false, apps: 20, goals: 1 },
       { years: "2023-2025", team: "ハノーファー96 II", country: "GER", loan: true, apps: 62, goals: 4 },
@@ -1310,7 +1336,7 @@ export const players: Player[] = [
     league: "championship",
     confidence: "needs-review",
     statsCheckedAt: "2026-05-17",
-    sources: [wiki("松木玖生", "2026-09-04")],
+    sources: [wiki("松木玖生", "2026-09-05")],
     career: [
       { years: "2022-2024", team: "FC東京", country: "JPN", loan: false, apps: 71, goals: 5 },
     ],
@@ -1331,7 +1357,7 @@ export const players: Player[] = [
     squadNumber: 38,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-28",
-    sources: [wiki("松澤海斗", "2026-09-04")],
+    sources: [wiki("松澤海斗", "2026-09-05")],
     career: [
       { years: "2023-2025", team: "V・ファーレン長崎", country: "JPN", loan: false, apps: 63, goals: 4 },
       { years: "2025-", team: "シント＝トロイデンVV", country: "BEL", loan: false, apps: 22, goals: 2 },
@@ -1352,7 +1378,7 @@ export const players: Player[] = [
     squadNumber: 18,
     confidence: "needs-review",
     statsCheckedAt: "2026-09-04",
-    sources: [wiki("上田綺世", "2026-09-04")],
+    sources: [wiki("上田綺世", "2026-09-05")],
     facts: [
       "法政大学在学中に、特別指定選手として鹿島アントラーズでプロデビューした。",
       "セルクル・ブルージュを経て2023年にフェイエノールトへ加入した。",
@@ -1381,7 +1407,7 @@ export const players: Player[] = [
     squadNumber: 6,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-30",
-    sources: [wiki("常本佳吾", "2026-09-04")],
+    sources: [wiki("常本佳吾", "2026-09-05")],
     career: [
       { years: "2020-2023", team: "鹿島アントラーズ", country: "JPN", loan: false, apps: 71, goals: 2 },
       { years: "2023-2025", team: "セルヴェット", country: "SUI", loan: false, apps: 66, goals: 1 },
@@ -1403,7 +1429,7 @@ export const players: Player[] = [
     squadNumber: 99,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-16",
-    sources: [wiki("新川志音", "2026-09-04")],
+    sources: [wiki("新川志音", "2026-09-05")],
     career: [
       { years: "2025", team: "サガン鳥栖", country: "JPN", loan: false, apps: 33, goals: 5 },
       { years: "2026-", team: "シント＝トロイデンVV", country: "BEL", loan: false, apps: 0, goals: 0 },
@@ -1424,7 +1450,7 @@ export const players: Player[] = [
     squadNumber: 25,
     confidence: "needs-review",
     statsCheckedAt: "2026-08-15",
-    sources: [wiki("森下龍矢", "2026-09-04")],
+    sources: [wiki("森下龍矢", "2026-09-05")],
     career: [
       { years: "2020", team: "サガン鳥栖", country: "JPN", loan: false, apps: 33, goals: 3 },
       { years: "2021-2024", team: "名古屋グランパス", country: "JPN", loan: false, apps: 54, goals: 1 },
@@ -1449,7 +1475,7 @@ export const players: Player[] = [
     squadNumber: 17,
     confidence: "needs-review",
     statsCheckedAt: "2026-07-26",
-    sources: [wiki("水多海斗", "2026-09-04")],
+    sources: [wiki("水多海斗", "2026-09-05")],
     career: [
       { years: "2019-2021", team: "シュトラーレン", country: "GER", loan: false, apps: 60, goals: 17 },
       { years: "2021-2023", team: "マインツII", country: "GER", loan: false, apps: 66, goals: 15 },
@@ -1472,7 +1498,7 @@ export const players: Player[] = [
     league: "serie-a",
     confidence: "needs-review",
     statsCheckedAt: "2026-09-02",
-    sources: [wiki("菅原由勢", "2026-09-04")],
+    sources: [wiki("菅原由勢", "2026-09-05")],
     career: [
       { years: "2018-2020", team: "名古屋グランパス", country: "JPN", loan: false, apps: 13, goals: 0 },
       { years: "2019-2020", team: "AZ", country: "NED", loan: true, apps: 16, goals: 2 },
@@ -1501,7 +1527,7 @@ export const players: Player[] = [
     squadNumber: 15,
     confidence: "needs-review",
     statsCheckedAt: "2026-07-22",
-    sources: [wiki("瀬古歩夢", "2026-09-04")],
+    sources: [wiki("瀬古歩夢", "2026-09-05")],
     career: [
       { years: "2019-2021", team: "セレッソ大阪", country: "JPN", loan: false, apps: 67, goals: 2 },
       { years: "2016-2019", team: "セレッソ大阪U-23", country: "JPN", loan: true, apps: 35, goals: 1 },
@@ -1525,7 +1551,7 @@ export const players: Player[] = [
     league: "championship",
     confidence: "needs-review",
     statsCheckedAt: "2026-05-07",
-    sources: [wiki("斉藤光毅", "2026-09-04")],
+    sources: [wiki("斉藤光毅", "2026-09-05")],
     career: [
       { years: "2018-2020", team: "横浜FC", country: "JPN", loan: false, apps: 63, goals: 9 },
       { years: "2021-2025", team: "ロンメル", country: "BEL", loan: false, apps: 29, goals: 5 },
@@ -1555,7 +1581,7 @@ export const players: Player[] = [
     squadNumber: 18,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-08",
-    sources: [wiki("石渡ネルソン", "2026-09-04")],
+    sources: [wiki("石渡ネルソン", "2026-09-05")],
     career: [
       { years: "2022-2026", team: "セレッソ大阪", country: "JPN", loan: false, apps: 18, goals: 0 },
       { years: "2024", team: "愛媛FC", country: "JPN", loan: true, apps: 12, goals: 1 },
@@ -1578,7 +1604,7 @@ export const players: Player[] = [
     squadNumber: 24,
     confidence: "needs-review",
     statsCheckedAt: "2026-05-21",
-    sources: [wiki("川﨑颯太", "2026-09-04")],
+    sources: [wiki("川﨑颯太", "2026-09-05")],
     career: [
       { years: "2020-2026", team: "京都サンガF.C.", country: "JPN", loan: false, apps: 166, goals: 13 },
       { years: "2025-2026", team: "1.FSVマインツ05", country: "GER", loan: true, apps: 10, goals: 0 },
@@ -1602,7 +1628,7 @@ export const players: Player[] = [
     squadNumber: 38,
     confidence: "needs-review",
     statsCheckedAt: "2026-05-17",
-    sources: [wiki("前田大然", "2026-09-04")],
+    sources: [wiki("前田大然", "2026-09-05")],
     career: [
       { years: "2016-2020", team: "松本山雅", country: "JPN", loan: false, apps: 56, goals: 9 },
       { years: "2017", team: "水戸ホーリーホック", country: "JPN", loan: true, apps: 36, goals: 13 },
@@ -1631,7 +1657,7 @@ export const players: Player[] = [
     squadNumber: 23,
     confidence: "needs-review",
     statsCheckedAt: "2026-05-07",
-    sources: [wiki("大橋祐紀", "2026-09-04")],
+    sources: [wiki("大橋祐紀", "2026-09-05")],
     career: [
       { years: "2018-2023", team: "湘南ベルマーレ", country: "JPN", loan: false, apps: 90, goals: 20 },
       { years: "2024", team: "サンフレッチェ広島", country: "JPN", loan: false, apps: 22, goals: 11 },
@@ -1653,7 +1679,7 @@ export const players: Player[] = [
     squadNumber: 10,
     confidence: "needs-review",
     statsCheckedAt: "2026-05-23",
-    sources: [wiki("大堀亮之介", "2026-09-04")],
+    sources: [wiki("大堀亮之介", "2026-09-05")],
     career: [
       { years: "2020", team: "ダウガフピルス", country: "LVA", loan: false, apps: 3, goals: 0 },
       { years: "2021", team: "SRC広島", country: "JPN", loan: false, apps: 1, goals: 0 },
@@ -1680,7 +1706,7 @@ export const players: Player[] = [
     squadNumber: 5,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-23",
-    sources: [wiki("谷口彰悟", "2026-09-04")],
+    sources: [wiki("谷口彰悟", "2026-09-05")],
     career: [
       { years: "2014-2022", team: "川崎フロンターレ", country: "JPN", loan: false, apps: 289, goals: 20 },
       { years: "2023-2024", team: "アル・ラーヤン", country: "QAT", loan: false, apps: 37, goals: 1 },
@@ -1702,7 +1728,7 @@ export const players: Player[] = [
     squadNumber: 3,
     confidence: "needs-review",
     statsCheckedAt: "2026-08-23",
-    sources: [wiki("中山雄太", "2026-09-04")],
+    sources: [wiki("中山雄太", "2026-09-05")],
     career: [
       { years: "2015-2018", team: "柏レイソル", country: "JPN", loan: false, apps: 76, goals: 6 },
       { years: "2015", team: "Jリーグ・アンダー22選抜", country: "JPN", loan: true, apps: 12, goals: 0 },
@@ -1729,7 +1755,7 @@ export const players: Player[] = [
     squadNumber: 11,
     confidence: "needs-review",
     statsCheckedAt: "2026-09-03",
-    sources: [wiki("中村敬斗", "2026-09-04")],
+    sources: [wiki("中村敬斗", "2026-09-05")],
     facts: [
       "ガンバ大阪の下部組織出身。オランダ、ベルギー、オーストリアを渡り歩いてフランスにたどり着いた。",
       "左ウイングから内側へ切れ込み、左足で仕留める形を得意とする。",
@@ -1739,9 +1765,9 @@ export const players: Player[] = [
       { years: "2018-2019", team: "ガンバ大阪U-23", country: "JPN", loan: true, apps: 21, goals: 5 },
       { years: "2019-2020", team: "トゥウェンテ", country: "NED", loan: true, apps: 17, goals: 4 },
       { years: "2020", team: "シント＝トロイデン", country: "BEL", loan: true, apps: 5, goals: 1 },
-      { years: "2021-2023", team: "LASK", country: "AUT", loan: false, apps: 54, goals: 20 },
+      { years: "2021-2023", team: "LASKリンツ", country: "AUT", loan: false, apps: 54, goals: 20 },
       { years: "2023-2026", team: "スタッド・ランス", country: "FRA", loan: false, apps: 86, goals: 29 },
-      { years: "2026-", team: "リヨン", country: "FRA", loan: false, apps: 0, goals: 0 },
+      { years: "2026-", team: "オリンピック・リヨン", country: "FRA", loan: false, apps: 0, goals: 0 },
     ],
     nationalCareer: [
       { years: "2017", team: "日本 U-17", country: null, loan: false, apps: 11, goals: 5 },
@@ -1761,7 +1787,7 @@ export const players: Player[] = [
     squadNumber: 30,
     confidence: "needs-review",
     statsCheckedAt: "2026-07-18",
-    sources: [wiki("中村草太", "2026-09-04")],
+    sources: [wiki("中村草太", "2026-09-05")],
     career: [
       { years: "2025-", team: "サンフレッチェ広島", country: "JPN", loan: false, apps: 48, goals: 11 },
       { years: "2026-", team: "ル・アーヴル", country: "FRA", loan: true, apps: null, goals: null },
@@ -1782,7 +1808,7 @@ export const players: Player[] = [
     squadNumber: 11,
     confidence: "needs-review",
     statsCheckedAt: "2025-08-23",
-    sources: [wiki("中埜信吾", "2026-09-04")],
+    sources: [wiki("中埜信吾", "2026-09-05")],
     career: [
       { years: "2023", team: "世田谷ユナイテッド", country: "JPN", loan: false, apps: null, goals: null },
       { years: "2024-2026", team: "アルビレックス新潟S", country: "SGP", loan: false, apps: 50, goals: 43 },
@@ -1804,7 +1830,7 @@ export const players: Player[] = [
     squadNumber: 28,
     confidence: "needs-review",
     statsCheckedAt: "2026-05-16",
-    sources: [wiki("町田浩樹", "2026-09-04")],
+    sources: [wiki("町田浩樹", "2026-09-05")],
     career: [
       { years: "2016-2023", team: "鹿島アントラーズ", country: "JPN", loan: false, apps: 87, goals: 8 },
       { years: "2022-2023", team: "ユニオンSG", country: "BEL", loan: true, apps: 19, goals: 0 },
@@ -1828,7 +1854,7 @@ export const players: Player[] = [
     squadNumber: 18,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-12",
-    sources: [wiki("町野修斗", "2026-09-04")],
+    sources: [wiki("町野修斗", "2026-09-05")],
     career: [
       { years: "2018-2019", team: "横浜F・マリノス", country: "JPN", loan: false, apps: 0, goals: 0 },
       { years: "2019", team: "ギラヴァンツ北九州", country: "JPN", loan: true, apps: 30, goals: 8 },
@@ -1852,7 +1878,7 @@ export const players: Player[] = [
     league: "bundesliga",
     confidence: "needs-review",
     statsCheckedAt: "2026-05-23",
-    sources: [wiki("長田澪", "2026-09-04")],
+    sources: [wiki("長田澪", "2026-09-05")],
     career: [
       { years: "2022-2026", team: "ブレーメン", country: "GER", loan: false, apps: 32, goals: 0 },
       { years: "2022-2023", team: "ブレーメンⅡ", country: "GER", loan: true, apps: 14, goals: 0 },
@@ -1882,7 +1908,7 @@ export const players: Player[] = [
     squadNumber: 13,
     confidence: "needs-review",
     statsCheckedAt: "2025-12-30",
-    sources: [wiki("田中聡", "2026-09-04")],
+    sources: [wiki("田中聡", "2026-09-05")],
     career: [
       { years: "2020-2024", team: "湘南ベルマーレ", country: "JPN", loan: false, apps: 114, goals: 7 },
       { years: "2022-2023", team: "コルトレイク", country: "BEL", loan: true, apps: 15, goals: 0 },
@@ -1907,7 +1933,7 @@ export const players: Player[] = [
     squadNumber: 22,
     confidence: "needs-review",
     statsCheckedAt: "2026-07-04",
-    sources: [wiki("田中碧", "2026-09-04")],
+    sources: [wiki("田中碧", "2026-09-05")],
     career: [
       { years: "2017-2022", team: "川崎フロンターレ", country: "JPN", loan: false, apps: 79, goals: 8 },
       { years: "2021-2022", team: "デュッセルドルフ", country: "GER", loan: true, apps: 29, goals: 1 },
@@ -1931,7 +1957,7 @@ export const players: Player[] = [
     squadNumber: 4,
     confidence: "needs-review",
     statsCheckedAt: "2025-07-30",
-    sources: [wiki("渡辺剛", "2026-09-04")],
+    sources: [wiki("渡辺剛", "2026-09-05")],
     career: [
       { years: "2018-2019", team: "FC東京U-23", country: "JPN", loan: false, apps: 6, goals: 0 },
       { years: "2019-2021", team: "FC東京", country: "JPN", loan: false, apps: 75, goals: 5 },
@@ -1956,7 +1982,7 @@ export const players: Player[] = [
     squadNumber: 16,
     confidence: "needs-review",
     statsCheckedAt: "2025-06-27",
-    sources: [wiki("藤田譲瑠チマ", "2026-09-04")],
+    sources: [wiki("藤田譲瑠チマ", "2026-09-05")],
     career: [
       { years: "2019-2020", team: "東京ヴェルディ", country: "JPN", loan: false, apps: 45, goals: 3 },
       { years: "2021", team: "徳島ヴォルティス", country: "JPN", loan: false, apps: 28, goals: 1 },
@@ -1982,7 +2008,7 @@ export const players: Player[] = [
     league: "championship",
     confidence: "needs-review",
     statsCheckedAt: "2025-05-28",
-    sources: [wiki("藤本寛也", "2026-09-04")],
+    sources: [wiki("藤本寛也", "2026-09-05")],
     career: [
       { years: "2018-2022", team: "東京ヴェルディ", country: "JPN", loan: false, apps: 49, goals: 4 },
       { years: "2020-2022", team: "ジル・ヴィセンテ", country: "POR", loan: true, apps: 59, goals: 4 },
@@ -2005,7 +2031,7 @@ export const players: Player[] = [
     squadNumber: 20,
     confidence: "needs-review",
     statsCheckedAt: "2025-08-07",
-    sources: [wiki("堂安律", "2026-09-04")],
+    sources: [wiki("堂安律", "2026-09-05")],
     facts: [
       "ガンバ大阪の下部組織出身。フローニンゲン、PSVアイントホーフェンを経てドイツへ渡った。",
       "カタールW杯では、ドイツ戦とスペイン戦の両方でゴールを記録した。",
@@ -2039,7 +2065,7 @@ export const players: Player[] = [
     squadNumber: 18,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-23",
-    sources: [wiki("南野拓実", "2026-09-04")],
+    sources: [wiki("南野拓実", "2026-09-05")],
     career: [
       { years: "2012-2014", team: "セレッソ大阪", country: "JPN", loan: false, apps: 62, goals: 7 },
       { years: "2015-2019", team: "レッドブル・ザルツブルク", country: "AUT", loan: false, apps: 136, goals: 42 },
@@ -2065,7 +2091,7 @@ export const players: Player[] = [
     league: "challenger-pro-league",
     confidence: "needs-review",
     statsCheckedAt: "2026-05-09",
-    sources: [wiki("倍井謙", "2026-09-04")],
+    sources: [wiki("倍井謙", "2026-09-05")],
     career: [
       { years: "2023-", team: "名古屋グランパス", country: "JPN", loan: false, apps: 26, goals: 2 },
       { years: "2025", team: "ジュビロ磐田", country: "JPN", loan: true, apps: 38, goals: 6 },
@@ -2088,7 +2114,7 @@ export const players: Player[] = [
     squadNumber: 3,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-30",
-    sources: [wiki("畑大雅", "2026-09-04")],
+    sources: [wiki("畑大雅", "2026-09-05")],
     career: [
       { years: "2020-2025", team: "湘南ベルマーレ", country: "JPN", loan: false, apps: 128, goals: 4 },
       { years: "2025-", team: "シント＝トロイデンVV", country: "BEL", loan: false, apps: 26, goals: 0 },
@@ -2109,7 +2135,7 @@ export const players: Player[] = [
     squadNumber: 6,
     confidence: "needs-review",
     statsCheckedAt: "2026-08-20",
-    sources: [wiki("板倉滉", "2026-09-04")],
+    sources: [wiki("板倉滉", "2026-09-05")],
     career: [
       { years: "2015-2018", team: "川崎フロンターレ", country: "JPN", loan: false, apps: 7, goals: 0 },
       { years: "2015", team: "Jリーグ・アンダー22選抜", country: "JPN", loan: true, apps: 2, goals: 0 },
@@ -2143,7 +2169,7 @@ export const players: Player[] = [
     squadNumber: 17,
     confidence: "needs-review",
     statsCheckedAt: "2026-08-07",
-    sources: [wiki("冨安健洋", "2026-09-04")],
+    sources: [wiki("冨安健洋", "2026-09-05")],
     facts: [
       "アビスパ福岡の下部組織出身。シント＝トロイデン、ボローニャを経て2021年にアーセナルへ加入した。",
       "右サイドバック・左サイドバック・センターバックをこなすユーティリティ性が特長。",
@@ -2176,7 +2202,7 @@ export const players: Player[] = [
     squadNumber: 21,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-03",
-    sources: [wiki("福井太智", "2026-09-04")],
+    sources: [wiki("福井太智", "2026-09-05")],
     career: [
       { years: "2021-2022", team: "サガン鳥栖", country: "JPN", loan: false, apps: 5, goals: 0 },
       { years: "2023-2025", team: "FCバイエルン・ミュンヘン", country: "GER", loan: false, apps: 0, goals: 0 },
@@ -2201,7 +2227,7 @@ export const players: Player[] = [
     squadNumber: 13,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-18",
-    sources: [wiki("福田師王", "2026-09-04")],
+    sources: [wiki("福田師王", "2026-09-05")],
     career: [
       { years: "2023-2025", team: "ボルシアMG II", country: "GER", loan: false, apps: 36, goals: 11 },
       { years: "2024-2026", team: "ボルシアMG", country: "GER", loan: false, apps: 11, goals: 1 },
@@ -2210,6 +2236,27 @@ export const players: Player[] = [
     ],
     nationalCareer: [
       { years: "2023", team: "日本U-20", country: null, loan: false, apps: 3, goals: 0 },
+    ],
+  },
+  {
+    slug: "shinnosuke-fukuda",
+    nameJa: "福田心之助",
+    nameEn: "Shinnosuke Fukuda",
+    position: "DF",
+    birthDate: "2000-09-04",
+    club: "レギア・ワルシャワ",
+    clubEn: "Legia Warsaw",
+    league: "ekstraklasa",
+    squadNumber: 2,
+    confidence: "needs-review",
+    statsCheckedAt: "2026-07-05",
+    sources: [wiki("福田心之助", "2026-09-05")],
+    career: [
+      { years: "2023-", team: "京都サンガF.C.", country: "JPN", loan: false, apps: 99, goals: 9 },
+      { years: "2026-", team: "レギア", country: "POL", loan: true, apps: 0, goals: 0 },
+    ],
+    nationalCareer: [
+
     ],
   },
   {
@@ -2224,7 +2271,7 @@ export const players: Player[] = [
     squadNumber: 19,
     confidence: "needs-review",
     statsCheckedAt: "2025-06-28",
-    sources: [wiki("福田翔生", "2026-09-04")],
+    sources: [wiki("福田翔生", "2026-09-05")],
     career: [
       { years: "2019-2022", team: "FC今治", country: "JPN", loan: false, apps: 36, goals: 0 },
       { years: "2023", team: "Y.S.C.C.横浜", country: "JPN", loan: false, apps: 21, goals: 11 },
@@ -2247,7 +2294,7 @@ export const players: Player[] = [
     squadNumber: 7,
     confidence: "needs-review",
     statsCheckedAt: "2026-05-16",
-    sources: [wiki("平河悠", "2026-09-04")],
+    sources: [wiki("平河悠", "2026-09-05")],
     career: [
       { years: "2021-2025", team: "FC町田ゼルビア", country: "JPN", loan: false, apps: 70, goals: 10 },
       { years: "2024-2025", team: "ブリストル・シティ", country: "ENG", loan: true, apps: 36, goals: 2 },
@@ -2272,7 +2319,7 @@ export const players: Player[] = [
     squadNumber: 8,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-10",
-    sources: [wiki("北野颯太", "2026-09-04")],
+    sources: [wiki("北野颯太", "2026-09-05")],
     career: [
       { years: "2020", team: "セレッソ大阪U-23", country: "JPN", loan: false, apps: 8, goals: 0 },
       { years: "2022-2025", team: "セレッソ大阪", country: "JPN", loan: false, apps: 68, goals: 8 },
@@ -2295,7 +2342,7 @@ export const players: Player[] = [
     squadNumber: 2,
     confidence: "needs-review",
     statsCheckedAt: "2025-05-28",
-    sources: [wiki("毎熊晟矢", "2026-09-04")],
+    sources: [wiki("毎熊晟矢", "2026-09-05")],
     career: [
       { years: "2020-2021", team: "V・ファーレン長崎", country: "JPN", loan: false, apps: 74, goals: 6 },
       { years: "2022-2024", team: "セレッソ大阪", country: "JPN", loan: false, apps: 74, goals: 4 },
@@ -2303,6 +2350,25 @@ export const players: Player[] = [
     ],
     nationalCareer: [
       { years: "2023-", team: "日本代表", country: null, loan: false, apps: 8, goals: 0 },
+    ],
+  },
+  {
+    slug: "gaku-nawata",
+    nameJa: "名和田我空",
+    nameEn: "Gaku Nawata",
+    position: "MF",
+    birthDate: "2006-07-29",
+    club: "シャルルロワSC",
+    clubEn: "Royal Charleroi SC",
+    league: "jupiler-pro-league",
+    confidence: "needs-review",
+    sources: [wiki("名和田我空", "2026-09-05")],
+    career: [
+      { years: "2025-", team: "ガンバ大阪", country: "JPN", loan: false, apps: 17, goals: 2 },
+      { years: "2026-", team: "シャルルロワ", country: "BEL", loan: true, apps: 0, goals: 0 },
+    ],
+    nationalCareer: [
+      { years: "2022-", team: "日本 U-17", country: null, loan: false, apps: null, goals: null },
     ],
   },
   {
@@ -2317,7 +2383,7 @@ export const players: Player[] = [
     squadNumber: 5,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-08",
-    sources: [wiki("木村誠二", "2026-09-04")],
+    sources: [wiki("木村誠二", "2026-09-05")],
     career: [
       { years: "2018-2019", team: "FC東京U-23", country: "JPN", loan: false, apps: 37, goals: 1 },
       { years: "2020-2025", team: "FC東京", country: "JPN", loan: false, apps: 23, goals: 0 },
@@ -2343,7 +2409,7 @@ export const players: Player[] = [
     squadNumber: 41,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-26",
-    sources: [wiki("野澤大志ブランドン", "2026-09-04")],
+    sources: [wiki("野澤大志ブランドン", "2026-09-05")],
     career: [
       { years: "2019", team: "FC東京U-23", country: "JPN", loan: false, apps: 5, goals: 0 },
       { years: "2020-2025", team: "FC東京", country: "JPN", loan: false, apps: 53, goals: 0 },
@@ -2371,7 +2437,7 @@ export const players: Player[] = [
     squadNumber: 1,
     confidence: "needs-review",
     statsCheckedAt: "2026-08-19",
-    sources: [wiki("鈴木彩艶", "2026-09-04")],
+    sources: [wiki("鈴木彩艶", "2026-09-05")],
     facts: [
       "浦和レッズの下部組織出身。シント＝トロイデンでの経験を経てセリエAへ渡った。",
       "190cmを超える体格とリーチを活かしたシュートストップが持ち味。",
@@ -2404,7 +2470,7 @@ export const players: Player[] = [
     squadNumber: 20,
     confidence: "needs-review",
     statsCheckedAt: "2026-07-08",
-    sources: [wiki("鈴木淳之介", "2026-09-04")],
+    sources: [wiki("鈴木淳之介", "2026-09-05")],
     career: [
       { years: "2022-2025", team: "湘南ベルマーレ", country: "JPN", loan: false, apps: 49, goals: 0 },
       { years: "2025-", team: "コペンハーゲン", country: "DEN", loan: false, apps: 22, goals: 2 },
@@ -2425,7 +2491,7 @@ export const players: Player[] = [
     squadNumber: 14,
     confidence: "needs-review",
     statsCheckedAt: "2025-05-27",
-    sources: [wiki("鈴木唯人", "2026-09-04")],
+    sources: [wiki("鈴木唯人", "2026-09-05")],
     career: [
       { years: "2020-2023", team: "清水エスパルス", country: "JPN", loan: false, apps: 86, goals: 6 },
       { years: "2023", team: "ストラスブール", country: "FRA", loan: true, apps: 3, goals: 1 },
@@ -2450,7 +2516,7 @@ export const players: Player[] = [
     squadNumber: 38,
     confidence: "needs-review",
     statsCheckedAt: "2026-06-03",
-    sources: [wiki("齋藤俊輔", "2026-09-04")],
+    sources: [wiki("齋藤俊輔", "2026-09-05")],
     career: [
       { years: "2024-2025", team: "水戸ホーリーホック", country: "JPN", loan: false, apps: 43, goals: 9 },
       { years: "2026-", team: "ウェステルロー", country: "BEL", loan: false, apps: 7, goals: 0 },
@@ -2471,7 +2537,7 @@ export const players: Player[] = [
     squadNumber: 3,
     confidence: "needs-review",
     statsCheckedAt: "2026-07-14",
-    sources: [wiki("髙橋仁胡", "2026-09-04")],
+    sources: [wiki("髙橋仁胡", "2026-09-05")],
     career: [
       { years: "2024-", team: "セレッソ大阪", country: "JPN", loan: false, apps: 23, goals: 1 },
       { years: "2026", team: "アルメレ", country: "NED", loan: true, apps: 16, goals: 0 },
