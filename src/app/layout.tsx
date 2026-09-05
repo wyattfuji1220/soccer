@@ -42,8 +42,8 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/icon.svg", type: "image/svg+xml" },
       { url: "/favicon-32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-48.png", type: "image/png", sizes: "48x48" },
     ],
     apple: [{ url: "/apple-icon.png", sizes: "180x180" }],
   },
@@ -96,9 +96,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           style={{ borderColor: "var(--border)", background: "color-mix(in srgb, var(--bg) 88%, transparent)" }}
         >
           <div className="mx-auto max-w-6xl px-4 h-14 flex items-center gap-6">
-            <Link href="/" className="tap shrink-0 text-pitch-600 dark:text-pitch-300" aria-label="海外組ポータル">
-              {/* 図案は縦に積む構成で背が高い。ヘッダーの高さに収まる倍率にする */}
-              <Logo scale={0.68} />
+            <Link href="/" className="tap shrink-0 text-pitch-600 dark:text-pitch-300">
+              {/* ヘッダーの帯は56px。上下に余白を残す高さにする */}
+              <Logo height={34} />
             </Link>
             <nav className="ml-auto flex items-center gap-0.5 text-[13px] overflow-x-auto">
               {nav.map((n) => (
@@ -119,7 +119,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="border-t mt-16" style={{ borderColor: "var(--border)" }}>
           <Jp as="div" className="mx-auto max-w-6xl px-4 py-10 text-sm muted space-y-3">
             <p className="text-pitch-600 dark:text-pitch-300">
-              <Logo scale={1.15} />
+              <Logo height={52} />
             </p>
             <p>
               当サイトは公開情報にもとづく事実の整理を目的としています。選手写真・クラブロゴ・試合映像等の著作権保護対象コンテンツは掲載していません。データの出典は各ページに明記しています。

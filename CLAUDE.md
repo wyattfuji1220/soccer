@@ -108,6 +108,29 @@ npm run typecheck
 npm run build
 ```
 
+## ロゴと画像素材
+
+ロゴの原画は利用者が用意したもので、**こちらで描き変えない**。原画は `scripts/brand/` に置く。
+
+- `logo-wide.png` 横組み（海外組／PORTAL／右にコーナー）。ヘッダー・フッター・共有カードで使う
+- `logo-tall.png` 縦組み。ボールが大きく描かれているので、アイコンはここから切り出す
+
+原画は白地に緑（#098741）で描かれており、そのままでは濃紺の上に置けない。
+`npm run assets:brand` が「緑がどれだけ乗っているか」を透明度に変換したマスクを作る。
+表示側は CSS の mask で `currentColor` を流し込むので、明暗どちらの配色でも1枚で足りる。
+
+```
+npm run assets:brand      # public/ のロゴ・アイコン・og.png を作り直す
+npm run assets:x-header   # output/x-header.png（Xのプロフィール用）
+```
+
+Satori（共有カードとXのヘッダー）は CSS の mask を解釈しないため、
+そちらは色を焼いた `public/logo-mint.png` を読む。**原画を差し替えたら
+`assets:brand` → `assets:x-header` の順に実行する**（後者が前者の出力を使う）。
+
+`public/logo-green.png` は白地向けに色を焼いたもの。サイトでは使っていないが、
+外部に渡すときのために置いてある。
+
 ## SNS用のカード画像（OGP）
 
 選手・リーグ・記事のページは `og.png` というルートで画像を作る（`src/lib/og.tsx`）。

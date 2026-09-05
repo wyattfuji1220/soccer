@@ -9,7 +9,6 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "export:output": "node scripts/copy-to-output.mjs",
-    "assets:icons": "node scripts/make-icons.mjs",
     "assets:og-font": "python scripts/make-og-font.py",
     "assets:font": "python scripts/make-font.py",
     "check:highlights": "node scripts/check-highlights.mjs",
@@ -29,7 +28,8 @@
     "data:loans": "node scripts/check-loans.mjs",
     "x:tonight": "node scripts/post-to-x.mjs --kind=tonight",
     "x:results": "node scripts/post-to-x.mjs --kind=results",
-    "assets:x-header": "node scripts/make-x-header.mjs"
+    "assets:x-header": "node scripts/make-x-header.mjs",
+    "assets:brand": "python scripts/make-brand.py"
   },
   "dependencies": {
     "next": "^15.5.23",

@@ -1,7 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
 import { ImageResponse } from "next/og";
-import { BALL_PATH } from "@/components/Logo";
 
 /**
  * SNSで共有されたときに出るカード画像を、ページごとに作る。
@@ -33,17 +32,15 @@ const BOLD = font("og-bold.ttf");
  * ŠKスロヴァンのようなクラブ名で出る。近い字に置き換えて逃がす。
  */
 const NOT_IN_FONT: Record<string, string> = { "Š": "S", "š": "s", "Ł": "L", "ł": "l" };
+const safe = (s: string) => s.replace(/[ŠšŁł]/g, (c) => NOT_IN_FONT[c] ?? c);
 
 /*
- * ロゴのボール。Satori は SVG の要素をそのまま解釈しないので、画像として渡す。
- * 図形は Logo.tsx が持っているものをそのまま使い、二重に持たない。
+ * ロゴ。Satori は CSS の mask を解釈しないので、色を焼いた画像を読む。
+ * 原画から作った公開用のファイルをそのまま使い、図案をここで組み直さない。
  */
-const ballUri = (color: string) =>
-  "data:image/svg+xml;base64," +
-  Buffer.from(
-    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="${color}" fill-rule="evenodd" d="${BALL_PATH}"/></svg>`
-  ).toString("base64");
-const safe = (s: string) => s.replace(/[ŠšŁł]/g, (c) => NOT_IN_FONT[c] ?? c);
+const LOGO = fs.readFileSync(path.join(process.cwd(), "public/logo-mint.png"));
+const LOGO_URI = `data:image/png;base64,${LOGO.toString("base64")}`;
+const LOGO_ASPECT = 687 / 226;
 
 const BG = "#0a1120";
 const SURFACE = "#101a2c";
@@ -110,15 +107,8 @@ export function ogImage({ title: rawTitle, subtitle: rawSubtitle, kind, stats = 
         </div>
 
         <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between" }}>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <div style={{ color: ACCENT, fontSize: 34, fontWeight: 700, letterSpacing: 2 }}>海外組</div>
-            <div style={{ display: "flex", alignItems: "center", color: MUTED, fontSize: 20, letterSpacing: 6, marginTop: 4 }}>
-              P
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={ballUri(ACCENT)} width={19} height={19} style={{ margin: "0 3px" }} alt="" />
-              RTAL
-            </div>
-          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={LOGO_URI} height={76} width={76 * LOGO_ASPECT} alt="海外組ポータル" />
           <div style={{ display: "flex", gap: 48 }}>
             {stats.map((s) => (
               <div key={s.label} style={{ display: "flex", flexDirection: "column", alignItems: "flex-end" }}>

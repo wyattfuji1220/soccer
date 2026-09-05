@@ -38,35 +38,15 @@ function counts() {
 
 const { players, leagues } = counts();
 
-/** ロゴの図形は src/components/Logo.tsx から読む。二重に持たない */
-const logoSrc = fs.readFileSync(path.join(ROOT, "src/components/Logo.tsx"), "utf8");
-const BALL = logoSrc.match(/const BALL_PATH =\s+"([^"]+)"/)[1];
-const CORNER = logoSrc.match(/const CORNER_PATH =\s+"([^"]+)"/)[1];
-const uri = (svg) => "data:image/svg+xml;base64," + Buffer.from(svg).toString("base64");
-const ballUri = (c) =>
-  uri(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="${c}" fill-rule="evenodd" d="${BALL}"/></svg>`);
-const cornerUri = (c) =>
-  uri(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 112"><path fill="${c}" d="${CORNER}"/></svg>`);
+/*
+ * ロゴは原画から作った公開用の画像をそのまま置く。
+ * Satori は CSS の mask を解釈しないので、色を焼いたものを読む。
+ */
+const LOGO = fs.readFileSync(path.join(ROOT, "public/logo-mint.png"));
+const LOGO_URI = `data:image/png;base64,${LOGO.toString("base64")}`;
+const LOGO_ASPECT = 687 / 226;
 
 const box = (style, children) => h("div", { style: { display: "flex", ...style } }, children);
-
-/** ロゴ本体。寸法の比は Logo.tsx と同じ */
-function lockup(scale, color) {
-  const ja = 19 * scale, en = ja * 1.35, ball = en * 0.92;
-  return h(
-    "div",
-    { style: { position: "relative", display: "flex", flexDirection: "column", color, paddingRight: en * 0.42, paddingBottom: en * 0.5 } },
-    [
-      h("div", { key: "ja", style: { display: "flex", fontSize: ja, fontWeight: 700, letterSpacing: "-0.04em" } }, "海外組"),
-      h("div", { key: "en", style: { display: "flex", alignItems: "center", fontSize: en, letterSpacing: `${0.13 * en}px`, marginTop: ja * 0.24 } }, [
-        h("div", { key: "p", style: { display: "flex" } }, "P"),
-        h("img", { key: "b", src: ballUri(color), width: ball, height: ball, style: { margin: `0 ${en * 0.07}px` } }),
-        h("div", { key: "r", style: { display: "flex" } }, "RTAL"),
-      ]),
-      h("img", { key: "c", src: cornerUri(color), width: en * 4.0, height: en * 1.85, style: { position: "absolute", right: 0, top: ja * 1.38 } }),
-    ]
-  );
-}
 
 const image = new ImageResponse(
   box(
@@ -82,7 +62,7 @@ const image = new ImageResponse(
       fontFamily: "OG",
     },
     [
-      box({ key: "logo" }, [lockup(3.4, ACCENT)]),
+      h("img", { key: "logo", src: LOGO_URI, height: 150, width: 150 * LOGO_ASPECT }),
       h(
         "div",
         { key: "s", style: { display: "flex", fontSize: 32, color: MUTED, marginTop: 26 } },
