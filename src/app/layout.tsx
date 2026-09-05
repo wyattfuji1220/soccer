@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SITE_URL, SITE_NAME, ADSENSE_CLIENT } from "@/lib/site";
 import { usingSampleData } from "@/lib/fixtures";
 import { Logo } from "@/components/Logo";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import "./globals.css";
 import { Jp } from "@/lib/jp";
 
@@ -65,8 +66,23 @@ const nav = [
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ja">
+    /*
+      data-theme は描画前のスクリプトが付けるため、サーバー側の出力とは必ず食い違う。
+      意図した差なので、ここだけ照合を止める。
+    */
+    <html lang="ja" suppressHydrationWarning>
       <head>
+        {/*
+          配色の指定を、画面が描かれる前に <html> へ付ける。
+          あとから付けると、暗い配色を選んでいる人に一瞬だけ明るい画面が出る。
+          保存されていなければ何も付けず、端末の設定に従わせる。
+        */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              'try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}',
+          }}
+        />
         {/* 本文の書体は自前で配信する。最初に必要になるので先に読ませる */}
         <link
           rel="preload"
@@ -111,6 +127,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </Link>
               ))}
             </nav>
+            <ThemeToggle />
           </div>
         </header>
 

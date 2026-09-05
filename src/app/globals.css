@@ -1,6 +1,24 @@
 @import "tailwindcss";
 
 /*
+ * dark: の付いたクラスがいつ効くかの決まり。状態は3つある。
+ *   何も指定していない  → 端末の設定に従う
+ *   data-theme="light"  → 端末が暗くても明るいまま
+ *   data-theme="dark"   → 端末が明るくても暗いまま
+ * 属性は <html> に付ける。付けるのは layout.tsx の先頭で走る小さなスクリプト。
+ */
+@custom-variant dark {
+  @media (prefers-color-scheme: dark) {
+    &:where(:not([data-theme="light"] *)) {
+      @slot;
+    }
+  }
+  &:where([data-theme="dark"] *) {
+    @slot;
+  }
+}
+
+/*
  * 本文の書体。このサイトに出てくる文字だけを収めた1ファイルを自前で配信する。
  * Google Fonts から読むとページごとに断片が追加で落ちてくるため
  * （選手一覧で実測54ファイル・1.3MB）、まとめて持つほうが軽い。
@@ -57,8 +75,10 @@
 
 /* 明るい面。数字と罫線で作る端末の見た目を、紙色の地でも保つ */
 :root {
-  --bg: #f5f8fc;
-  --surface: #ffffff;
+  --bg: #f4f6f1;
+  --surface: #fbfcfa;
+  /* 背景にうっすら敷くピッチの線。暗い面では出さない */
+  --pitch-line: rgba(12, 122, 66, 0.11);
   --border: #d5dded;
   --hairline: #e7ecf6;
   --text: #0a1020;
@@ -69,8 +89,9 @@
   --live-soft: rgba(168, 98, 10, 0.1);
 }
 
+/* 端末が暗い配色のとき。ただし明るい配色を選んでいる場合は当てない */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #0a1120;
     --surface: #101a2c;
     --border: #22304c;
@@ -81,11 +102,52 @@
     --accent-soft: rgba(95, 224, 154, 0.12);
     --live: #f5a524;
     --live-soft: rgba(245, 165, 36, 0.12);
+    --pitch-line: transparent;
   }
+}
+
+/* 暗い配色を選んだとき。端末の設定より優先する */
+:root[data-theme="dark"] {
+    --bg: #0a1120;
+    --surface: #101a2c;
+    --border: #22304c;
+    --hairline: #1a2640;
+    --text: #e9eefa;
+    --text-muted: #8496b6;
+    --accent: #5fe09a;
+    --accent-soft: rgba(95, 224, 154, 0.12);
+    --live: #f5a524;
+    --live-soft: rgba(245, 165, 36, 0.12);
+    --pitch-line: transparent;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/*
+ * 明るい面の背景に、ピッチの線をうっすら敷く。
+ *
+ * 画像に色を焼かず、マスクとして扱って色を流し込む。こうすると
+ * --pitch-line を変えるだけで濃さを調整でき、暗い面では透明にして消せる。
+ * 内容の上には出さないよう、いちばん奥に固定する。
+ */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-color: var(--pitch-line);
+  mask-image: url("/pitch.svg");
+  -webkit-mask-image: url("/pitch.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  /* 画面の幅いっぱいに広げると線が太く見えるので、少し内側に収める */
+  mask-size: min(190vh, 132%) auto;
+  -webkit-mask-size: min(190vh, 132%) auto;
 }
 
 body {

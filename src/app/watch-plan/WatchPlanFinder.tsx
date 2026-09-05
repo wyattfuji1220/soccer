@@ -7,6 +7,7 @@ import { solvePlan, type Plan } from "@/lib/watch-plan";
 import { broadcasterLink, AD_DISCLOSURE } from "@/lib/affiliate";
 import { yen } from "@/lib/format";
 import { AdDisclosure } from "@/components/Badges";
+import { Flag } from "@/components/Flag";
 
 function PlanCard({ plan, tone }: { plan: Plan; tone: "primary" | "compare" }) {
   const primary = tone === "primary";
@@ -177,9 +178,26 @@ function PlanCard({ plan, tone }: { plan: Plan; tone: "primary" | "compare" }) {
 
 export function WatchPlanFinder() {
   const [selected, setSelected] = useState<string[]>([]);
+  /*
+   * 掲載が99人まで増え、全員を並べると縦に長くなりすぎた。
+   * 先にリーグを選んでもらい、そのリーグの選手だけを出す。
+   */
+  const [openLeagues, setOpenLeagues] = useState<string[]>([]);
 
   const toggle = (slug: string) =>
     setSelected((prev) => (prev.includes(slug) ? prev.filter((s) => s !== slug) : [...prev, slug]));
+
+  /*
+   * リーグを閉じるときは、そのリーグで選んでいた選手も外す。
+   * 残したままだと、画面に出ていない選手が計算に効いて理由が分からなくなる。
+   */
+  const toggleLeague = (id: string) => {
+    const open = openLeagues.includes(id);
+    setOpenLeagues((prev) => (open ? prev.filter((x) => x !== id) : [...prev, id]));
+    if (open) {
+      setSelected((sel) => sel.filter((slug) => players.find((p) => p.slug === slug)?.league !== id));
+    }
+  };
 
   const selectedPlayers = useMemo(
     () => players.filter((p) => selected.includes(p.slug)),
@@ -188,15 +206,43 @@ export function WatchPlanFinder() {
 
   const result = useMemo(() => solvePlan(selectedPlayers), [selectedPlayers]);
 
-  const grouped = leagues
+  const byLeague = leagues
     .map((l) => ({ league: l, list: players.filter((p) => p.league === l.id) }))
     .filter((g) => g.list.length > 0);
+  const grouped = byLeague.filter((g) => openLeagues.includes(g.league.id));
 
   return (
     <div className="jp-auto mt-10">
       <section>
+        <h2 className="text-xl font-bold">1. 追いかけたいリーグを選ぶ</h2>
+        <p className="mt-2 text-sm muted leading-relaxed">
+          選んだリーグの選手だけを次に出します。いくつでも選べます。
+        </p>
+        <div className="mt-4 flex flex-wrap gap-2">
+          {byLeague.map(({ league, list }) => {
+            const on = openLeagues.includes(league.id);
+            return (
+              <button
+                key={league.id}
+                onClick={() => toggleLeague(league.id)}
+                aria-pressed={on}
+                className={`tap inline-flex items-center gap-2 px-3 py-2 rounded-lg text-sm border transition-colors ${
+                  on ? "bg-pitch-500 text-white border-pitch-500" : "hover:border-pitch-500/60"
+                }`}
+                style={{ borderColor: on ? undefined : "var(--border)" }}
+              >
+                <Flag country={league.country} size={13} />
+                {league.name}
+                <span className={`num text-xs ${on ? "text-white/70" : "muted"}`}>{list.length}</span>
+              </button>
+            );
+          })}
+        </div>
+      </section>
+
+      <section className="mt-12">
         <div className="flex items-baseline justify-between gap-4 flex-wrap">
-          <h2 className="text-xl font-bold">1. 追いかけたい選手を選ぶ</h2>
+          <h2 className="text-xl font-bold">2. 追いかけたい選手を選ぶ</h2>
           {selected.length > 0 && (
             <button
               onClick={() => setSelected([])}
@@ -206,6 +252,12 @@ export function WatchPlanFinder() {
             </button>
           )}
         </div>
+
+        {grouped.length === 0 && (
+          <p className="mt-5 text-sm muted px-4 py-3 rounded-lg" style={{ background: "var(--surface)" }}>
+            上でリーグを選ぶと、その選手がここに出ます。
+          </p>
+        )}
 
         <div className="mt-5 space-y-5">
           {grouped.map(({ league, list }) => (
@@ -241,7 +293,7 @@ export function WatchPlanFinder() {
       </section>
 
       <section className="mt-12">
-        <h2 className="text-xl font-bold">2. 必要な契約と費用</h2>
+        <h2 className="text-xl font-bold">3. 必要な契約と費用</h2>
 
         {!result ? (
           <div

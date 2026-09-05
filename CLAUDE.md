@@ -103,6 +103,24 @@ npm run x:results    # 昨夜の結果とハイライト
 npm run assets:x-header    # output/x-header.png
 ```
 
+## 配色（明るい面と暗い面）
+
+状態は3つある。何も指定していなければ端末の設定に従い、選べばそれが優先される。
+選択は `<html data-theme="light|dark">` で表し、localStorage に残す。
+
+属性を付けるのは `layout.tsx` の `<head>` 先頭にある小さなスクリプト。
+Reactが動く前に走らせないと、暗い配色を選んでいる人に一瞬だけ明るい画面が出る。
+サーバー側の出力とは必ず食い違うので、`<html>` に `suppressHydrationWarning` を付けてある。
+
+`dark:` の判定は `globals.css` の `@custom-variant dark`。色の変数も同じ3状態で書く。
+**片方の状態にしか無い色を作らないこと**——`:root` に明るい面を全部置き、
+暗い面は `@media (prefers-color-scheme: dark) の :root:not([data-theme="light"])` と
+`:root[data-theme="dark"]` の両方で上書きする。片方だけだと、端末の設定と選択が
+食い違ったときに文字と地の色がちぐはぐになる。
+
+明るい面の背景には `public/pitch.svg` をうっすら敷いている。色を焼かずマスクとして扱い、
+`--pitch-line` を変えるだけで濃さを変えられる。暗い面では `transparent` にして消す。
+
 ## テスト・検証
 
 変更後は必ず以下を実行してから完了とする。
