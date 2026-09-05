@@ -10,6 +10,77 @@ import { AdDisclosure } from "@/components/Badges";
 
 function PlanCard({ plan, tone }: { plan: Plan; tone: "primary" | "compare" }) {
   const primary = tone === "primary";
+
+  /*
+   * 契約すべきものが何も無い場合。選んだ選手のリーグを、どのサービスも
+   * 配信していないときに起きる。
+   *
+   * 数字の表を出すと「月額0円・0試合」と並び、無料で観られるように見えてしまう。
+   * 契約の話ではなくなるので、何が起きているかだけを書く。
+   */
+  if (plan.services.length === 0) {
+    return (
+      <div className="rounded-xl p-5 sm:p-6 border" style={{ borderColor: "var(--border)", background: "var(--surface)" }}>
+        <p className="label mb-3 text-amber-700 dark:text-amber-400">No Service</p>
+        <p className="font-bold text-lg leading-snug">観る手段が見つかりませんでした</p>
+        <p className="mt-3 text-sm muted leading-relaxed">
+          選んだ選手が所属する
+          {plan.unavailable.map((l) => leagueMap[l].name).join("・")}
+          は、当サイトが掲載しているどのサービスでも配信を確認できていません。
+          契約を増やしても観られないため、組み合わせを出していません。
+        </p>
+        <p className="mt-3 text-sm muted leading-relaxed">
+          クラブの公式チャンネルなど、リーグ単位ではない視聴手段がある場合があります。
+          国内での配信が始まっていることに気づいたら、ぜひ教えてください。
+        </p>
+      </div>
+    );
+  }
+
+  /*
+   * 契約はあるが、全試合の配信は無い場合。
+   * 数字の表には「観られる試合数」があり、全試合配信のリーグしか数えていない。
+   * ここで表を出すと「月額4,200円・0試合/年」と並んで、払うのに観られないように見える。
+   * 何が観られるかを言葉で書く。
+   */
+  if (plan.covered.length === 0) {
+    return (
+      <div className="rounded-xl p-5 sm:p-6 border" style={{ borderColor: "var(--border)", background: "var(--surface)" }}>
+        <p className="label mb-3 text-amber-700 dark:text-amber-400">Partial Coverage</p>
+        <div className="flex flex-wrap items-center gap-2">
+          {plan.services.map((s) => (
+            <span key={s.id} className="font-bold text-lg">
+              {s.name}
+            </span>
+          ))}
+          <span className="num text-lg muted">{yen(plan.monthlyYen)}</span>
+          <span className="text-xs muted">／月（税込）</span>
+        </div>
+        <p className="mt-3 text-sm muted leading-relaxed">
+          全試合の配信はありません。
+          {plan.partialOnly.map((x) => leagueMap[x.league].name).join("・")}
+          は毎節一部の試合だけが配信されるため、観たい試合が必ず入るとは限りません。
+          申し込む前に、配信予定に目当ての試合があるかを公式ページで確認してください。
+        </p>
+        <div className="mt-4">
+          {plan.services.map((s) => (
+            <a
+              key={s.id}
+              href={broadcasterLink(s)}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="tap inline-block text-sm font-semibold px-4 py-2.5 rounded-lg text-pitch-600 dark:text-pitch-300"
+              style={{ background: "var(--accent-soft)" }}
+            >
+              {s.name}の配信予定を見る
+            </a>
+          ))}
+        </div>
+        <p className="mt-3 text-xs muted">料金の最終確認: {plan.services.map((s) => `${s.name} ${s.lastChecked}`).join(" / ")}</p>
+      </div>
+    );
+  }
+
   return (
     <div
       className="rounded-xl p-5 sm:p-6 border"

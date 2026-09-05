@@ -38,9 +38,9 @@ export const broadcasters: Broadcaster[] = [
     partialLeagues: ["championship"],
     cups: ["efl-cup"],
     officialUrl: "https://www.dazn.com/ja-JP/",
-    lastChecked: "2026-08-25",
+    lastChecked: "2026-09-05",
     confidence: "verified",
-    note: "スタンダード月間プランの価格。年間一括やABEMA de DAZNなど、より安い契約経路がある。EFLチャンピオンシップは毎節3試合前後の配信で全試合ではない。",
+    note: "スタンダード月間プランの価格。年間一括やABEMA de DAZNなど、より安い契約経路がある。EFLチャンピオンシップは全試合ではなく毎節3〜4試合の配信だが、選ばれているのは日本人選手が出る試合が中心で、DAZNの番組表にも選手名が併記されている（2026年9月5日に配信予定で確認）。観たい試合が入っているかは公式の配信予定で確かめられる。",
   },
   {
     id: "abema",

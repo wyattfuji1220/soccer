@@ -91,6 +91,30 @@ export function solvePlan(selected: Player[]): PlanResult | null {
     .filter((s) => isMinimal(s, needed))
     .map((s) => buildPlan(s, needed, selected));
 
+  /*
+   * 選んだ選手のリーグをどのサービスも配信していない場合、上の絞り込みで
+   * 候補が全部消える。カバー数が最初から0なので、1社抜いても0のままで、
+   * どの組み合わせも「無駄がない」と見なされないため。
+   *
+   * 契約なしの計画を返す。表示側は「観る手段が見つからない」と出せばよく、
+   * ここで空を返すと best が undefined になって画面ごと落ちる。
+   */
+  if (candidates.length === 0) {
+    /*
+     * 全試合の配信が無くても、一部の試合なら観られることがある。
+     * 「観る手段がない」と言い切る前にそちらを探す。EFLチャンピオンシップが
+     * これに当たり、DAZNが毎節数試合を配信している。
+     */
+    const partial = broadcasters
+      .filter((b) => needed.some((l) => b.partialLeagues?.includes(l)))
+      .sort((a, b) => {
+        const count = (x: Broadcaster) => needed.filter((l) => x.partialLeagues?.includes(l)).length;
+        return count(b) - count(a) || a.monthlyPriceYen - b.monthlyPriceYen;
+      });
+    const services = partial.length > 0 ? [partial[0]] : [];
+    return { best: buildPlan(services, needed, selected), singleBest: null, neededLeagues: needed };
+  }
+
   // カバー数が多いほど良い。同数なら安いほうを選ぶ。
   const rank = (p: Plan) => [-p.covered.length, p.monthlyYen];
   const sorted = [...candidates].sort((a, b) => {
