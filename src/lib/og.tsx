@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { ImageResponse } from "next/og";
+import { BALL_PATH } from "@/components/Logo";
 
 /**
  * SNSで共有されたときに出るカード画像を、ページごとに作る。
@@ -32,6 +33,16 @@ const BOLD = font("og-bold.ttf");
  * ŠKスロヴァンのようなクラブ名で出る。近い字に置き換えて逃がす。
  */
 const NOT_IN_FONT: Record<string, string> = { "Š": "S", "š": "s", "Ł": "L", "ł": "l" };
+
+/*
+ * ロゴのボール。Satori は SVG の要素をそのまま解釈しないので、画像として渡す。
+ * 図形は Logo.tsx が持っているものをそのまま使い、二重に持たない。
+ */
+const ballUri = (color: string) =>
+  "data:image/svg+xml;base64," +
+  Buffer.from(
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="${color}" fill-rule="evenodd" d="${BALL_PATH}"/></svg>`
+  ).toString("base64");
 const safe = (s: string) => s.replace(/[ŠšŁł]/g, (c) => NOT_IN_FONT[c] ?? c);
 
 const BG = "#0a1120";
@@ -101,7 +112,12 @@ export function ogImage({ title: rawTitle, subtitle: rawSubtitle, kind, stats = 
         <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between" }}>
           <div style={{ display: "flex", flexDirection: "column" }}>
             <div style={{ color: ACCENT, fontSize: 34, fontWeight: 700, letterSpacing: 2 }}>海外組</div>
-            <div style={{ color: MUTED, fontSize: 20, letterSpacing: 6 }}>PORTAL</div>
+            <div style={{ display: "flex", alignItems: "center", color: MUTED, fontSize: 20, letterSpacing: 6, marginTop: 4 }}>
+              P
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={ballUri(ACCENT)} width={19} height={19} style={{ margin: "0 3px" }} alt="" />
+              RTAL
+            </div>
           </div>
           <div style={{ display: "flex", gap: 48 }}>
             {stats.map((s) => (

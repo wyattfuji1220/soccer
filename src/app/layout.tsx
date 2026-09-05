@@ -97,7 +97,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           <div className="mx-auto max-w-6xl px-4 h-14 flex items-center gap-6">
             <Link href="/" className="tap shrink-0 text-pitch-600 dark:text-pitch-300" aria-label="海外組ポータル">
-              <Logo />
+              {/* 図案は縦に積む構成で背が高い。ヘッダーの高さに収まる倍率にする */}
+              <Logo scale={0.68} />
             </Link>
             <nav className="ml-auto flex items-center gap-0.5 text-[13px] overflow-x-auto">
               {nav.map((n) => (

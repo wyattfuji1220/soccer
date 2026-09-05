@@ -38,7 +38,35 @@ function counts() {
 
 const { players, leagues } = counts();
 
+/** ロゴの図形は src/components/Logo.tsx から読む。二重に持たない */
+const logoSrc = fs.readFileSync(path.join(ROOT, "src/components/Logo.tsx"), "utf8");
+const BALL = logoSrc.match(/const BALL_PATH =\s+"([^"]+)"/)[1];
+const CORNER = logoSrc.match(/const CORNER_PATH =\s+"([^"]+)"/)[1];
+const uri = (svg) => "data:image/svg+xml;base64," + Buffer.from(svg).toString("base64");
+const ballUri = (c) =>
+  uri(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="${c}" fill-rule="evenodd" d="${BALL}"/></svg>`);
+const cornerUri = (c) =>
+  uri(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 112"><path fill="${c}" d="${CORNER}"/></svg>`);
+
 const box = (style, children) => h("div", { style: { display: "flex", ...style } }, children);
+
+/** ロゴ本体。寸法の比は Logo.tsx と同じ */
+function lockup(scale, color) {
+  const ja = 19 * scale, en = ja * 1.35, ball = en * 0.92;
+  return h(
+    "div",
+    { style: { position: "relative", display: "flex", flexDirection: "column", color, paddingRight: en * 0.42, paddingBottom: en * 0.5 } },
+    [
+      h("div", { key: "ja", style: { display: "flex", fontSize: ja, fontWeight: 700, letterSpacing: "-0.04em" } }, "海外組"),
+      h("div", { key: "en", style: { display: "flex", alignItems: "center", fontSize: en, letterSpacing: `${0.13 * en}px`, marginTop: ja * 0.24 } }, [
+        h("div", { key: "p", style: { display: "flex" } }, "P"),
+        h("img", { key: "b", src: ballUri(color), width: ball, height: ball, style: { margin: `0 ${en * 0.07}px` } }),
+        h("div", { key: "r", style: { display: "flex" } }, "RTAL"),
+      ]),
+      h("img", { key: "c", src: cornerUri(color), width: en * 4.0, height: en * 1.85, style: { position: "absolute", right: 0, top: ja * 1.38 } }),
+    ]
+  );
+}
 
 const image = new ImageResponse(
   box(
@@ -50,25 +78,22 @@ const image = new ImageResponse(
       flexDirection: "column",
       justifyContent: "center",
       // 左下200四方はアイコンが重なるので空けておく
-      padding: "0 90px 0 260px",
+      padding: "0 90px 0 250px",
       fontFamily: "OG",
     },
     [
-      box({ key: "t", alignItems: "baseline", gap: 22 }, [
-        h("div", { key: "a", style: { fontSize: 92, fontWeight: 700, letterSpacing: "-0.03em" } }, "海外組ポータル"),
-        h("div", { key: "b", style: { fontSize: 30, color: ACCENT, letterSpacing: "0.28em" } }, "PORTAL"),
-      ]),
+      box({ key: "logo" }, [lockup(3.4, ACCENT)]),
       h(
         "div",
-        { key: "s", style: { display: "flex", fontSize: 34, color: MUTED, marginTop: 22 } },
+        { key: "s", style: { display: "flex", fontSize: 32, color: MUTED, marginTop: 26 } },
         "欧州でプレーする日本人サッカー選手のファクトデータベース"
       ),
-      box({ key: "n", gap: 40, marginTop: 34, alignItems: "center" }, [
-        h("div", { key: "1", style: { display: "flex", fontSize: 30 } }, `掲載 ${players}人`),
-        h("div", { key: "d1", style: { display: "flex", fontSize: 30, color: MUTED } }, "/"),
-        h("div", { key: "2", style: { display: "flex", fontSize: 30 } }, `${leagues}リーグ`),
-        h("div", { key: "d2", style: { display: "flex", fontSize: 30, color: MUTED } }, "/"),
-        h("div", { key: "3", style: { display: "flex", fontSize: 30, color: ACCENT } }, "日本時間で表示"),
+      box({ key: "n", gap: 34, marginTop: 22, alignItems: "center" }, [
+        h("div", { key: "1", style: { display: "flex", fontSize: 28 } }, `掲載 ${players}人`),
+        h("div", { key: "d1", style: { display: "flex", fontSize: 28, color: MUTED } }, "/"),
+        h("div", { key: "2", style: { display: "flex", fontSize: 28 } }, `${leagues}リーグ`),
+        h("div", { key: "d2", style: { display: "flex", fontSize: 28, color: MUTED } }, "/"),
+        h("div", { key: "3", style: { display: "flex", fontSize: 28, color: ACCENT } }, "日本時間で表示"),
       ]),
     ]
   ),
