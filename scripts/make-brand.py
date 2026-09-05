@@ -15,7 +15,7 @@ import io
 import os
 from collections import deque
 
-from PIL import Image
+from PIL import Image, ImageDraw
 
 ROOT = os.getcwd()
 SRC = os.path.join(ROOT, "scripts/brand")
@@ -147,6 +147,24 @@ def main():
     save(icon(ball, 32, fg=GREEN, scale=0.96), "favicon-32.png")
     save(icon(ball, 48, fg=GREEN, scale=0.96), "favicon-48.png")
 
+    # Xのプロフィール画像。サイトには載せないので output/ に出す。
+    #
+    # 表示は円に切り抜かれるうえ、タイムラインでは32〜48pxまで小さくなる。
+    # その寸法では細部が消えて色の塊としてしか見えないため、塗り面積が最大になる
+    # 「緑の円に白抜き」にしてある。白背景でも濃色背景でも同じ見え方になる。
+    tall = trim(tall_all)
+    size = 800
+    avatar = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+    circle = Image.new("L", (size, size), 0)
+    ImageDraw.Draw(circle).ellipse([0, 0, size - 1, size - 1], fill=255)
+    avatar.paste(Image.new("RGBA", (size, size), ICON_BG + (255,)), (0, 0), circle)
+    mh = round(size * 0.62)
+    mw = round(mh * tall.width / tall.height)
+    mark = tinted(tall.resize((mw, mh), Image.LANCZOS), WHITE)
+    avatar.paste(mark, ((size - mw) // 2, (size - mh) // 2), mark)
+    os.makedirs(os.path.join(ROOT, "output"), exist_ok=True)
+    save(avatar, "x-avatar.png", where=os.path.join(ROOT, "output"))
+
     # 既定の共有カード。ページごとの og.png が無いときに出る。
     # 濃紺にミントで、選手ページのカードと同じ見え方にそろえる
     card = Image.new("RGBA", (1200, 630), (0x0A, 0x11, 0x20, 255))
@@ -158,7 +176,7 @@ def main():
     print(f"原画: 横組み {wide.size[0]}×{wide.size[1]} / ボール {ball.size[0]}×{ball.size[1]}")
     for name, size in files:
         print(f"  {name:20s} {size / 1024:6.1f} KB")
-    print(f"\n{len(files)}件を public/ に書き出しました")
+    print(f"\n{len(files)}件を書き出しました（x-avatar.png のみ output/、ほかは public/）")
 
 
 main()

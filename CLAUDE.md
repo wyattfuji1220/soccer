@@ -124,9 +124,13 @@ npm run build
 表示側は CSS の mask で `currentColor` を流し込むので、明暗どちらの配色でも1枚で足りる。
 
 ```
-npm run assets:brand      # public/ のロゴ・アイコン・og.png を作り直す
+npm run assets:brand      # public/ のロゴ・アイコン・og.png と output/x-avatar.png
 npm run assets:x-header   # output/x-header.png（Xのプロフィール用）
 ```
+
+Xのプロフィール画像（`output/x-avatar.png`）は緑の円に白抜き。タイムラインでは
+32〜48pxまで小さくなり、その寸法では細部が消えて色の塊にしか見えないため、
+塗り面積が最大になる形にしてある。白背景でも濃色背景でも同じ見え方になる。
 
 Satori（共有カードとXのヘッダー）は CSS の mask を解釈しないため、
 そちらは色を焼いた `public/logo-mint.png` を読む。**原画を差し替えたら
