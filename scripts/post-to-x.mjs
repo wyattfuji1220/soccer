@@ -55,11 +55,23 @@ function players() {
   return out.filter((p) => p.nameJa);
 }
 
-/** ハイライトの本数だけを数える。題名は使わない */
-function highlightCount(sinceDate) {
-  return [...read("src/data/highlights.ts").matchAll(/publishedAt: "([\d-]+)"/g)].filter(
-    (m) => m[1] >= sinceDate
-  ).length;
+/**
+ * その夜のハイライトの本数と、題名に名前が出ていた掲載選手。
+ *
+ * 題名そのものは権利者が書いた文章なので使わない。誰が話題になったかを
+ * 知るためだけに読み、投稿では自分たちのデータから組み立てた事実を書く。
+ */
+function highlightsOf(sinceDate) {
+  const players = new Set();
+  let count = 0;
+  for (const line of read("src/data/highlights.ts").split("\n")) {
+    const date = line.match(/publishedAt: "([\d-]+)"/)?.[1];
+    if (!date || date < sinceDate) continue;
+    count++;
+    const names = line.match(/players: \[([^\]]*)\]/)?.[1] ?? "";
+    for (const m of names.matchAll(/"([^"]+)"/g)) players.add(m[1]);
+  }
+  return { count, players };
 }
 
 const fixtures = JSON.parse(read("src/data/fixtures.json")).matches ?? [];
@@ -125,8 +137,12 @@ function tonightPost() {
  * 実行時刻から逆算すると、9時の境界をまたぐたびに意味が変わって間違えやすい。
  * 終わった試合が実際に入っている夜のうち、いちばん新しいものを選ぶ。
  *
- * 誰が点を取ったかは持っていないので書かない。無料で取れるのは日程と結果だけで、
- * 得点者は有料のデータにしか入っていない。
+ * 誰が点を取ったかは持っていない。無料で取れるのは日程と結果だけで、
+ * 得点者は有料のデータにしか入っていない。そのため「出場した」「決めた」とは書かず、
+ * 所属クラブの試合があったという事実だけを並べる。
+ *
+ * 並べる順は、その夜のハイライトの題名に名前が出ていた選手を先にする。
+ * 題名そのものは権利者の文章なので使わない。順番を決める手がかりにするだけ。
  */
 function resultsPost() {
   const nights = [
@@ -144,28 +160,57 @@ function resultsPost() {
   );
   const [y, m, d] = night.split("-").map(Number);
   const label = md.format(new Date(Date.UTC(y, m - 1, d, 12))).replace(/\s/g, "");
-  const clips = highlightCount(night);
-  const clubs = [...new Set(done.flatMap((f) => playersOf(f).map((p) => p.club)))];
+  const { count: clips, players: featured } = highlightsOf(night);
+
+  /*
+   * クラブごとにまとめる。同じクラブに複数いるのは珍しくなく、
+   * 1人ずつクラブ名を繰り返すと文字数を食って載る人数が減る。
+   */
+  const byClub = new Map();
+  for (const f of done) {
+    for (const p of playersOf(f)) {
+      const list = byClub.get(p.club) ?? [];
+      if (!list.includes(p.nameJa)) list.push(p.nameJa);
+      byClub.set(p.club, list);
+    }
+  }
+  if (byClub.size === 0) return null;
+
+  // ハイライトの題名に名前が出ていたクラブを先に出す
+  const roster = [...byClub].sort(
+    (a, b) => Number(b[1].some((n) => featured.has(n))) - Number(a[1].some((n) => featured.has(n)))
+  );
+  const total = roster.reduce((n, [, list]) => n + list.length, 0);
 
   const head = [
     `【${label}の海外組】`,
-    `日本人選手が所属するクラブの試合が${done.length}試合ありました。`,
-    clips > 0 ? `公式チャンネルのハイライトは${clips}本出ています。` : null,
-    "スコアはふせて並べているので、これから観る人も大丈夫です。",
-  ].filter(Boolean);
-  const tail = "結果とハイライトはプロフィールのリンクから";
+    clips > 0
+      ? `所属クラブの試合が${done.length}試合。ハイライトは${clips}本出ています。`
+      : `所属クラブの試合が${done.length}試合ありました。`,
+  ];
+  const tail = ["※出場の有無は含みません", "結果とハイライトはプロフィールのリンクから"];
 
-  // クラブ名は長いものがあるので、収まるぶんだけ足す
-  const shown = [];
-  for (const c of clubs) {
-    if (weigh([...head, `${[...shown, c].join(" / ")} ほか`, tail].join("\n")) > LIMIT) break;
-    shown.push(c);
+  // 名前もクラブも長さがまちまちなので、収まるぶんだけ足す
+  const build = (rows, shownCount) => {
+    const rest = total - shownCount;
+    return [...head, "", ...rows, rest > 0 ? `ほか${rest}人` : null, "", ...tail]
+      .filter((x) => x !== null)
+      .join("\n");
+  };
+
+  const lines = [];
+  let shown = 0;
+  for (const [club, names] of roster) {
+    const line = `${names.join("、")}（${club}）`;
+    // 入らない行は飛ばして次を試す。打ち切ると、たまたま名前の長いクラブが
+    // 早い順番に来ただけで、あとに載せられたはずの選手まで落ちてしまう
+    if (weigh(build([...lines, line], shown + names.length)) > LIMIT) continue;
+    lines.push(line);
+    shown += names.length;
   }
-  const line =
-    shown.length > 0
-      ? [`${shown.join(" / ")}${shown.length < clubs.length ? " ほか" : ""}`]
-      : [];
-  return [...head, ...line, tail].join("\n");
+  if (lines.length === 0) return null;
+
+  return build(lines, shown);
 }
 
 /* ---------------- 投稿する ---------------- */
