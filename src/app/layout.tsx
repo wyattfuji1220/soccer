@@ -7,6 +7,12 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import "./globals.css";
 import { Jp } from "@/lib/jp";
 
+/*
+ * 共有カードの版。SNSは一度読んだ画像をURLごとに保存し、中身を差し替えても
+ * しばらく古いものを出し続ける。絵柄を変えたらこの数字を上げる。
+ */
+const OG = "/og.png?v=2";
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
@@ -35,11 +41,11 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ja_JP",
     siteName: SITE_NAME,
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: SITE_NAME }],
+    images: [{ url: OG, width: 1200, height: 630, alt: SITE_NAME }],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/og.png"],
+    images: [OG],
   },
   icons: {
     icon: [

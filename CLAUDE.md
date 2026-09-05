@@ -175,6 +175,13 @@ Satori（共有カードとXのヘッダー）は CSS の mask を解釈しな�
 
 ## SNS用のカード画像（OGP）
 
+既定のカードは `public/og.png`（`npm run assets:brand` が作る）。ロゴと説明の2行で、
+Xのヘッダーと同じ見え方にそろえてある。
+
+**絵柄を変えたら `layout.tsx` の `OG` の版を上げること。** SNSは読んだ画像をURLごとに
+保存し、中身を差し替えてもしばらく古いものを出し続ける。URLが変われば読み直す。
+
+
 選手・リーグ・記事のページは `og.png` というルートで画像を作る（`src/lib/og.tsx`）。
 Next の `opengraph-image.tsx` は拡張子の無いファイルとして書き出され、
 GitHub Pages では画像として配信されないため使わない。

@@ -15,7 +15,7 @@ import io
 import os
 from collections import deque
 
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFont
 
 ROOT = os.getcwd()
 SRC = os.path.join(ROOT, "scripts/brand")
@@ -165,12 +165,20 @@ def main():
     os.makedirs(os.path.join(ROOT, "output"), exist_ok=True)
     save(avatar, "x-avatar.png", where=os.path.join(ROOT, "output"))
 
-    # 既定の共有カード。ページごとの og.png が無いときに出る。
-    # 濃紺にミントで、選手ページのカードと同じ見え方にそろえる
+    # 既定の共有カード。ページごとの og.png を持たないページで出る。
+    # Xのヘッダーと同じ見え方にそろえる（ロゴと説明の2行）。
     card = Image.new("RGBA", (1200, 630), (0x0A, 0x11, 0x20, 255))
-    lw = 620
+    lw = 560
     mark = tinted(wide.resize((lw, round(lw * wide.height / wide.width)), Image.LANCZOS), MINT)
-    card.paste(mark, ((1200 - mark.width) // 2, (630 - mark.height) // 2), mark)
+    tagline = "欧州でプレーする日本人選手のファクトデータベース｜日本時間"
+    font = ImageFont.truetype(os.path.join(ROOT, "scripts/fonts/og-regular.ttf"), 30)
+    draw = ImageDraw.Draw(card)
+    tw = draw.textlength(tagline, font=font)
+    gap = 46
+    block = mark.height + gap + 30
+    top = (630 - block) // 2
+    card.paste(mark, ((1200 - mark.width) // 2, top), mark)
+    draw.text(((1200 - tw) / 2, top + mark.height + gap), tagline, font=font, fill=(0x84, 0x96, 0xB6, 255))
     save(card, "og.png")
 
     print(f"原画: 横組み {wide.size[0]}×{wide.size[1]} / ボール {ball.size[0]}×{ball.size[1]}")
