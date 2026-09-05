@@ -11,6 +11,12 @@ import type { Broadcaster, CupId } from "@/lib/types";
  *  - エールディヴィジも U-NEXT
  *  - SPOTV NOW は欧州主要リーグの配信から外れている
  *  - スコティッシュ・プレミアシップは国内の定額配信がなく、クラブ公式チャンネルのみ
+ *
+ * 2026年9月5日に追記。2.ブンデスリーガを配信するイージースポーツ2を見つけた。
+ * 掲載13人（3番目に多い）を抱えるリーグなのに視聴手段が1件も無い状態だった。
+ * なお同社の価格は公式サイトのトップ画像に焼かれていて本文からは読み取れない。
+ * 規約に載っているのは「定額チケット」という仕組みの説明だけで金額は書かれていないため、
+ * 表示を実際に見て確かめること。
  */
 export const broadcasters: Broadcaster[] = [
   {
@@ -61,6 +67,16 @@ export const broadcasters: Broadcaster[] = [
     freeTrialNote: "ショートハイライトは無料で視聴できる。",
   },
   {
+    id: "easysports2",
+    name: "イージースポーツ2",
+    monthlyPriceYen: 1980,
+    leagues: ["bundesliga-2"],
+    officialUrl: "https://easysports2.stores.play.jp/",
+    lastChecked: "2026-09-05",
+    confidence: "verified",
+    note: "EASY PRODUCTION株式会社が運営。2.ブンデスリーガの全試合をライブ配信すると公式サイトに明示されている。月額のほかに試合ごとに購入する方式もあり、そちらの価格は各試合のページに出る。見逃し配信の有無は試合によって違うため、観たい試合のページで確認が必要。",
+  },
+  {
     id: "celtic-tv",
     name: "セルティックTV",
     monthlyPriceYen: 3000,
@@ -93,7 +109,6 @@ export const cupsWithoutBroadcaster: Partial<Record<CupId, string>> = {
 };
 
 export const leaguesWithoutBroadcaster: Record<string, string> = {
-  "bundesliga-2": "国内での定額配信は確認できていません。",
   "ligue-2": "国内での定額配信は確認できていません。",
   "segunda-division": "国内での定額配信は確認できていません。",
   "challenger-pro-league": "国内での定額配信は確認できていません。",
