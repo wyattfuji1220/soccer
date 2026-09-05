@@ -57,23 +57,27 @@ const image = new ImageResponse(
       color: TEXT,
       flexDirection: "column",
       justifyContent: "center",
-      // 左下200四方はアイコンが重なるので空けておく
-      padding: "0 90px 0 250px",
+      /*
+       * アイコンは左下に重なる。実測すると横は幅の四分の一ほど、
+       * 縦は下の四割ほどまで隠れるので、そこには何も置かない。
+       * 上下は表示のたびに切られることがあるため、文字は縦の中央に寄せる。
+       */
+      padding: "0 80px 0 430px",
       fontFamily: "OG",
     },
     [
-      h("img", { key: "logo", src: LOGO_URI, height: 150, width: 150 * LOGO_ASPECT }),
+      h("img", { key: "logo", src: LOGO_URI, height: 132, width: 132 * LOGO_ASPECT }),
       h(
         "div",
-        { key: "s", style: { display: "flex", fontSize: 32, color: MUTED, marginTop: 26 } },
+        { key: "s", style: { display: "flex", fontSize: 30, color: MUTED, marginTop: 22 } },
         "欧州でプレーする日本人サッカー選手のファクトデータベース"
       ),
-      box({ key: "n", gap: 34, marginTop: 22, alignItems: "center" }, [
-        h("div", { key: "1", style: { display: "flex", fontSize: 28 } }, `掲載 ${players}人`),
-        h("div", { key: "d1", style: { display: "flex", fontSize: 28, color: MUTED } }, "/"),
-        h("div", { key: "2", style: { display: "flex", fontSize: 28 } }, `${leagues}リーグ`),
-        h("div", { key: "d2", style: { display: "flex", fontSize: 28, color: MUTED } }, "/"),
-        h("div", { key: "3", style: { display: "flex", fontSize: 28, color: ACCENT } }, "日本時間で表示"),
+      box({ key: "n", gap: 30, marginTop: 18, alignItems: "center" }, [
+        h("div", { key: "1", style: { display: "flex", fontSize: 26 } }, `掲載 ${players}人`),
+        h("div", { key: "d1", style: { display: "flex", fontSize: 26, color: MUTED } }, "/"),
+        h("div", { key: "2", style: { display: "flex", fontSize: 26 } }, `${leagues}リーグ`),
+        h("div", { key: "d2", style: { display: "flex", fontSize: 26, color: MUTED } }, "/"),
+        h("div", { key: "3", style: { display: "flex", fontSize: 26, color: ACCENT } }, "日本時間で表示"),
       ]),
     ]
   ),
