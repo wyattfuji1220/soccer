@@ -1,87 +1,94 @@
 "use client";
 
-import { useEffect, useState } from "react";
-
 /**
  * 明るい配色と暗い配色の切り替え。
  *
  * 状態は3つある。何も選んでいなければ端末の設定に従い、選べばそれが優先される。
- * 選んだ結果は localStorage に残す。実際に <html> へ属性を付けるのは、
- * 画面が描かれる前に走る layout.tsx のスクリプト。ここは押されたときの
- * 付け替えと、いまどちらかの表示だけを受け持つ。
+ * 選んだ結果は localStorage に残し、次に開いたときは layout.tsx の先頭で走る
+ * スクリプトが <html> に付け直す。
  *
- * 図案は自前。太陽は中心の円と8本の光、月は円を2つ重ねて欠けを作る。
+ * ここでは状態を持たない。持つと、載るまでどちらの形か決まらず一瞬空白になる。
+ * つまみの位置とアイコンの出し分けは globals.css が配色から決めているので、
+ * このボタンは属性を付け替えるだけでよい。
+ *
+ * 図案は自前。太陽は中心の円と45度おきの光8本、月は円弧を2つ重ねた三日月。
  */
 
-type Theme = "light" | "dark";
-
-const STORAGE_KEY = "theme";
-
-function systemTheme(): Theme {
-  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-}
+const TRACK_W = 52;
+const TRACK_H = 26;
+const KNOB = 20;
 
 export function ThemeToggle() {
-  /*
-   * 初回の描画はサーバー側と同じにしておく必要がある。端末の設定はサーバーでは
-   * 分からないので、載ってから読み取る。それまでは何も出さない。
-   */
-  const [theme, setTheme] = useState<Theme | null>(null);
-
-  useEffect(() => {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    setTheme(saved === "light" || saved === "dark" ? saved : systemTheme());
-  }, []);
-
   function toggle() {
-    const next: Theme = theme === "dark" ? "light" : "dark";
-    setTheme(next);
-    document.documentElement.dataset.theme = next;
-    localStorage.setItem(STORAGE_KEY, next);
+    const root = document.documentElement;
+    const dark = root.dataset.theme
+      ? root.dataset.theme === "dark"
+      : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const next = dark ? "light" : "dark";
+    root.dataset.theme = next;
+    try {
+      localStorage.setItem("theme", next);
+    } catch {
+      // 保存できない設定の端末でも、その場の切り替えは効かせる
+    }
   }
-
-  const dark = theme === "dark";
 
   return (
     <button
       type="button"
       onClick={toggle}
-      aria-label={dark ? "明るい配色に切り替える" : "暗い配色に切り替える"}
-      title={dark ? "明るい配色に切り替える" : "暗い配色に切り替える"}
-      className="tap shrink-0 grid place-items-center w-9 h-9 rounded-full border transition-colors hover:border-pitch-500/60"
-      style={{ borderColor: "var(--border)", background: "var(--surface)" }}
+      aria-label="明るい配色と暗い配色を切り替える"
+      title="明るい配色と暗い配色を切り替える"
+      className="tap shrink-0 relative rounded-full border transition-colors hover:border-pitch-500/60"
+      style={{
+        width: TRACK_W,
+        height: TRACK_H,
+        borderColor: "var(--border)",
+        background: "var(--surface)",
+      }}
     >
-      {/* 読み込み前は形を確定できないので、場所だけ空けておく */}
-      {theme === null ? (
-        <span className="block w-4 h-4" />
-      ) : dark ? (
-        <MoonIcon />
-      ) : (
-        <SunIcon />
-      )}
+      {/* 下地。両端に薄く置いて、どちらへ動くのかを見せる */}
+      <Sun size={13} color="var(--text-muted)" style={{ position: "absolute", left: 5, top: "50%", transform: "translateY(-50%)" }} />
+      <Moon size={13} color="var(--text-muted)" style={{ position: "absolute", right: 5, top: "50%", transform: "translateY(-50%)" }} />
+
+      {/* つまみ。位置と中身のアイコンはCSSが配色から決める */}
+      <span
+        className="theme-knob absolute rounded-full flex items-center justify-center"
+        style={{
+          width: KNOB,
+          height: KNOB,
+          left: 2,
+          top: "50%",
+          background: "var(--accent)",
+        }}
+      >
+        <Sun className="knob-sun" size={13} color="var(--surface)" />
+        <Moon className="knob-moon" size={13} color="var(--surface)" />
+      </span>
     </button>
   );
 }
 
+type IconProps = { size?: number; color: string; className?: string; style?: React.CSSProperties };
+
 /** 太陽。中心の円と、45度おきの光8本 */
-function SunIcon() {
-  const rays = [0, 45, 90, 135, 180, 225, 270, 315];
+function Sun({ size = 14, color, className, style }: IconProps) {
   return (
-    <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-      <circle cx="12" cy="12" r="4.4" fill="var(--accent)" />
-      {rays.map((deg) => {
+    <svg width={size} height={size} viewBox="0 0 24 24" className={className} style={style} aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="4.6" fill={color} />
+      {[0, 45, 90, 135, 180, 225, 270, 315].map((deg) => {
         const rad = (deg * Math.PI) / 180;
-        const x = 12 + Math.cos(rad);
-        const y = 12 + Math.sin(rad);
+        const c = Math.cos(rad);
+        const s = Math.sin(rad);
         return (
           <line
             key={deg}
-            x1={(x + Math.cos(rad) * 6.4).toFixed(2)}
-            y1={(y + Math.sin(rad) * 6.4).toFixed(2)}
-            x2={(x + Math.cos(rad) * 9.2).toFixed(2)}
-            y2={(y + Math.sin(rad) * 9.2).toFixed(2)}
-            stroke="var(--accent)"
-            strokeWidth="1.9"
+            x1={(12 + c * 7.6).toFixed(2)}
+            y1={(12 + s * 7.6).toFixed(2)}
+            x2={(12 + c * 10.4).toFixed(2)}
+            y2={(12 + s * 10.4).toFixed(2)}
+            stroke={color}
+            strokeWidth="2.1"
             strokeLinecap="round"
           />
         );
@@ -90,15 +97,19 @@ function SunIcon() {
   );
 }
 
-/** 月。円を2つ重ね、右上を欠けさせて三日月にする */
-function MoonIcon() {
+/**
+ * 月。外側の円は中心(12,12)・半径8.6で、右上にずらした同じ半径の円で欠けさせる。
+ * 形の重心は左下に寄るので、見た目を中心へ戻すぶんだけ右上へ寄せてある。
+ */
+function Moon({ size = 14, color, className, style }: IconProps) {
   return (
-    <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <svg width={size} height={size} viewBox="0 0 24 24" className={className} style={style} aria-hidden="true" focusable="false">
       <path
         d="M20.2 14.6A8.6 8.6 0 0 1 9.4 3.8a8.6 8.6 0 1 0 10.8 10.8Z"
+        transform="translate(0.9 -0.9)"
         fill="none"
-        stroke="var(--accent)"
-        strokeWidth="1.9"
+        stroke={color}
+        strokeWidth="2.1"
         strokeLinejoin="round"
       />
     </svg>
