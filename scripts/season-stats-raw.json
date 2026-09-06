@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-09-05",
+ "takenAt": "2026-09-06",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -76,10 +76,10 @@
   },
   "鎌田大地": {
    "division": "Premier League",
-   "apps": 2,
+   "apps": 3,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-22",
+   "updatedAt": "2026-09-05",
    "source": "Daichi Kamada"
   },
   "喜多壱也": {
@@ -418,6 +418,14 @@
    "updatedAt": "2026-08-29",
    "source": "Shinnosuke Fukuda"
   },
+  "平河悠": {
+   "division": "EFL Championship",
+   "apps": 5,
+   "goals": 1,
+   "european": true,
+   "updatedAt": "2026-09-05",
+   "source": "Yū Hirakawa"
+  },
   "北野颯太": {
    "division": "Austrian Bundesliga",
    "apps": 4,
@@ -436,10 +444,10 @@
   },
   "鈴木彩艶": {
    "division": "Premier League",
-   "apps": 1,
+   "apps": 2,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-31",
+   "updatedAt": "2026-09-05",
    "source": "Zion Suzuki"
   },
   "鈴木淳之介": {

@@ -239,7 +239,7 @@ export const alumni: Alumnus[] = [
     article: "小野伸二",
     from: 2001,
     to: 2014,
-    spells: [{ club: "フェイエノールト", country: "NED", from: 2001, to: 2005 }, { club: "VfLボーフム", country: "GER", from: 2008, to: 2009 }, { club: "ウェスタン・シドニー・ワンダラーズFC", country: "AUS", from: 2012, to: 2014 }],
+    spells: [{ club: "フェイエノールト・ロッテルダム", country: "NED", from: 2001, to: 2005 }, { club: "VfLボーフム", country: "GER", from: 2008, to: 2009 }, { club: "ウェスタン・シドニー・ワンダラーズFC", country: "AUS", from: 2012, to: 2014 }],
   },
   {
     nameJa: "水越潤",
@@ -2878,7 +2878,7 @@ export const alumni: Alumnus[] = [
     article: "小川航基",
     from: 2023,
     to: 2026,
-    spells: [{ club: "NECナイメヘン", country: "NLD", from: 2023, to: 2024 }, { club: "NECナイメヘン", country: "NLD", from: 2024, to: 2026 }],
+    spells: [{ club: "NECナイメヘン", country: "NLD", from: 2023, to: 2024 }, { club: "NEC", country: "NLD", from: 2024, to: 2026 }],
   },
   {
     nameJa: "小田裕太郎",
