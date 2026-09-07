@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-09-06",
+ "takenAt": "2026-09-07",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -114,10 +114,18 @@
    "updatedAt": "2026-08-30",
    "source": "Daiki Hashioka"
   },
+  "原口元気": {
+   "division": "Challenger Pro League",
+   "apps": 4,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-09-06",
+   "source": "Genki Haraguchi"
+  },
   "原大智": {
    "division": "2. Bundesliga",
-   "apps": 3,
-   "goals": 1,
+   "apps": 4,
+   "goals": 2,
    "european": true,
    "updatedAt": "2026-08-30",
    "source": "Taichi Hara"
@@ -356,10 +364,10 @@
   },
   "田中聡": {
    "division": "Bundesliga",
-   "apps": 0,
+   "apps": 1,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-24",
+   "updatedAt": "2026-09-06",
    "source": "Satoshi Tanaka"
   },
   "田中碧": {
