@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-09-10",
+ "takenAt": "2026-09-11",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -47,7 +47,7 @@
    "apps": 0,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-05-23",
+   "updatedAt": "2026-09-10",
    "source": "Hiroki Itō (footballer, born 1999)"
   },
   "宇野禅斗": {
@@ -180,10 +180,10 @@
   },
   "佐野航大": {
    "division": "Eredivisie",
-   "apps": 2,
+   "apps": 4,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-23",
+   "updatedAt": "2026-09-10",
    "source": "Kodai Sano (footballer)"
   },
   "坂元達裕": {
