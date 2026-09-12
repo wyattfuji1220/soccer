@@ -7,7 +7,7 @@ import type { Club } from "@/lib/types";
  * リダイレクト解決で正式な記事名に寄せている。
  * 現所属選手がいる、または過去に2人以上が在籍したクラブだけを収録している。
  *
- * 最終取得: 2026-09-11
+ * 最終取得: 2026-09-12
  */
 export const clubs: Club[] = [
   {
@@ -174,7 +174,7 @@ export const clubs: Club[] = [
     ],
   },
   {
-    slug: "club-47",
+    slug: "patro-eisden-maasmechelen",
     name: "パトロ・アイスデン・マースメヘレン",
     nameEn: null,
     article: "パトロ・アイスデン・マースメヘレン",
