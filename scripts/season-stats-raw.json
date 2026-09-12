@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-09-11",
+ "takenAt": "2026-09-12",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -132,10 +132,10 @@
   },
   "後藤啓介": {
    "division": "Bundesliga",
-   "apps": 0,
+   "apps": 2,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-27",
+   "updatedAt": "2026-09-05",
    "source": "Keisuke Gotō"
   },
   "荒木遼太郎": {
@@ -172,10 +172,10 @@
   },
   "佐野海舟": {
    "division": "Bundesliga",
-   "apps": 1,
+   "apps": 2,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-29",
+   "updatedAt": "2026-09-06",
    "source": "Kaishū Sano"
   },
   "佐野航大": {
@@ -236,10 +236,10 @@
   },
   "小杉啓太": {
    "division": "Bundesliga",
-   "apps": 1,
+   "apps": 2,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-29",
+   "updatedAt": "2026-09-06",
    "source": "Keita Kosugi"
   },
   "小林友希": {
@@ -394,6 +394,14 @@
    "updatedAt": "2026-08-23",
    "source": "Joel Chima Fujita"
   },
+  "堂安律": {
+   "division": "Bundesliga",
+   "apps": 1,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-09-06",
+   "source": "Ritsu Dōan"
+  },
   "板倉滉": {
    "division": "Bundesliga",
    "apps": 2,
@@ -468,10 +476,10 @@
   },
   "鈴木唯人": {
    "division": "Bundesliga",
-   "apps": 1,
+   "apps": 2,
    "goals": 3,
    "european": true,
-   "updatedAt": "2026-08-30",
+   "updatedAt": "2026-09-05",
    "source": "Yuito Suzuki"
   }
  }
