@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { activeLeagues } from "@/lib/leagues";
 import { leagues, leagueMap } from "@/data/leagues";
 import { players } from "@/data/players";
 import { clubs } from "@/data/clubs";
@@ -18,7 +19,8 @@ import { breadcrumb, collection } from "@/lib/schema";
 type Props = { params: Promise<{ id: string }> };
 
 export function generateStaticParams() {
-  return leagues.map((l) => ({ id: l.id }));
+  // 掲載選手が1人もいないリーグは、中身が無いのでページを作らない
+  return activeLeagues.map((l) => ({ id: l.id }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

@@ -58,9 +58,16 @@ const countryLists = [...new Set(leagues.map((l) => l.country))]
       description: `${country}のリーグに所属する日本人選手を、クラブ・ポジション・年齢とあわせて一覧にしています。`,
       lead: `当サイトが${country}で対象にしているのは${names.join("・")}です。`,
       players: list,
+      /* 国の一覧は、その国で対象にしているリーグが2つ以上あるときだけ意味を持つ */
+      leagueCount: ids.length,
     };
   })
-  .filter((l) => l.players.length > 0);
+  /*
+   * 対象リーグが1つしかない国は、その国の一覧とリーグのページが同じ顔ぶれになる。
+   * イタリアならセリエAだけなので /lists/country-serie-a/ は /leagues/serie-a/ の
+   * 写しにしかならず、Googleにも重複として扱われていた。
+   */
+  .filter((l) => l.players.length > 0 && l.leagueCount > 1);
 
 /*
  * ロサンゼルス五輪（2028年）の年齢制限は2005年1月1日以降に生まれた選手。

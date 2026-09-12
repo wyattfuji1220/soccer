@@ -4,7 +4,7 @@ import { guides } from "@/data/guides";
 import { clubs } from "@/data/clubs";
 import { highlightsTakenAt } from "@/data/highlights";
 import { playerLists } from "@/lib/lists";
-import { leagues } from "@/data/leagues";
+import { activeLeagues } from "@/lib/leagues";
 import { fixturesUpdatedAt } from "@/lib/fixtures";
 import { standingsUpdatedAt } from "@/lib/standings";
 import type { Player } from "@/lib/types";
@@ -79,7 +79,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry("/about/", 0.8, "yearly"),
     entry("/privacy/", 0.8, "yearly"),
 
-    ...leagues.map((l) => entry(`/leagues/${l.id}/`, 0.85, "daily", leagueDate(l.id))),
+    ...activeLeagues.map((l) => entry(`/leagues/${l.id}/`, 0.85, "daily", leagueDate(l.id))),
     ...playerLists.map((l) =>
       entry(`/lists/${l.slug}/`, 0.75, "weekly", latest(...l.players.map(playerDate)))
     ),

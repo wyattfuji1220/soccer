@@ -157,6 +157,17 @@ console.log(`  ${new Set([...rawNames].filter(Boolean).map(finalArticle)).size}�
 /** 表示名は記事名から曖昧さ回避の括弧を落としたもの */
 const display = (article) => article.replace(/\s*\((?:サッカー|フットボール)[^)]*\)$/, "").trim();
 
+/**
+ * 英語版に記事が無いクラブのURL。
+ *
+ * slugOf は英語名からURLを作る。英語名が無いと日本語の記事名が渡るが、
+ * ラテン文字以外は落ちるので結果が空になり、club-47 のような連番になってしまう。
+ * 意味の分からないURLは読む人にも検索にも不利なので、綴りをここに書く。
+ */
+const slugOverride = {
+  "パトロ・アイスデン・マースメヘレン": "patro-eisden-maasmechelen",
+};
+
 const slugOf = (en, fallback) =>
   (en ?? fallback)
     .normalize("NFD")
@@ -204,7 +215,7 @@ const selected = [...clubs.values()].filter((c) => c.current.length > 0 || c.pas
 
 const seen = new Set();
 for (const c of selected) {
-  let s = slugOf(c.nameEn, c.article);
+  let s = slugOverride[c.article] ?? slugOf(c.nameEn, c.article);
   if (!s) s = `club-${seen.size}`;
   if (seen.has(s)) s = `${s}-2`;
   seen.add(s);
