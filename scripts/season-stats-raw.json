@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-09-12",
+ "takenAt": "2026-09-13",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -260,10 +260,10 @@
   },
   "松木玖生": {
    "division": "Championship",
-   "apps": 6,
-   "goals": 0,
+   "apps": 7,
+   "goals": 1,
    "european": true,
-   "updatedAt": "2026-09-08",
+   "updatedAt": "2026-09-12",
    "source": "Kuryu Matsuki"
   },
   "上田綺世": {
@@ -284,10 +284,10 @@
   },
   "水多海斗": {
    "division": "Ligue 1",
-   "apps": 2,
+   "apps": 3,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-29",
+   "updatedAt": "2026-09-12",
    "source": "Kaito Mizuta"
   },
   "菅原由勢": {
@@ -295,15 +295,15 @@
    "apps": 0,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-05-09",
+   "updatedAt": "2026-09-12",
    "source": "Yukinari Sugawara"
   },
   "瀬古歩夢": {
    "division": null,
-   "apps": 2,
+   "apps": 4,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-29",
+   "updatedAt": "2026-09-12",
    "source": "Ayumu Seko"
   },
   "斉藤光毅": {
@@ -338,12 +338,20 @@
    "updatedAt": "2026-08-25",
    "source": "Yūki Ōhashi"
   },
-  "中村草太": {
+  "中村敬斗": {
    "division": "Ligue 1",
-   "apps": 2,
+   "apps": 1,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-29",
+   "updatedAt": "2026-09-12",
+   "source": "Keito Nakamura"
+  },
+  "中村草太": {
+   "division": "Ligue 1",
+   "apps": 4,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-09-12",
    "source": "Sōta Nakamura"
   },
   "町野修斗": {
@@ -460,10 +468,10 @@
   },
   "鈴木彩艶": {
    "division": "Premier League",
-   "apps": 2,
+   "apps": 3,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-08",
+   "updatedAt": "2026-09-12",
    "source": "Zion Suzuki"
   },
   "鈴木淳之介": {
