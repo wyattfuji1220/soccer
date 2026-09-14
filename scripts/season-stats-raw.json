@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-09-13",
+ "takenAt": "2026-09-14",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -11,11 +11,11 @@
    "source": "Nikki Havenaar"
   },
   "安藤晃希": {
-   "division": "Belgian Pro League",
-   "apps": 0,
+   "division": "Belgian Division 2",
+   "apps": 3,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-05-30",
+   "updatedAt": "2026-09-12",
    "source": "Koki Ando (footballer)"
   },
   "安藤智哉": {
@@ -74,6 +74,14 @@
    "updatedAt": "2026-08-28",
    "source": "Ayumu Yokoyama"
   },
+  "荻原拓也": {
+   "division": "Belgian Pro League",
+   "apps": 4,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-09-07",
+   "source": "Takuya Ogiwara"
+  },
   "鎌田大地": {
    "division": "Premier League",
    "apps": 3,
@@ -100,10 +108,10 @@
   },
   "久保建英": {
    "division": "La Liga",
-   "apps": 4,
+   "apps": 5,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-03",
+   "updatedAt": "2026-09-13",
    "source": "Takefusa Kubo"
   },
   "橋岡大樹": {
@@ -140,10 +148,10 @@
   },
   "荒木遼太郎": {
    "division": "Belgian Pro League",
-   "apps": 1,
+   "apps": 4,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-08-30",
+   "updatedAt": "2026-09-12",
    "source": "Ryōtarō Araki"
   },
   "高井幸大": {
@@ -180,10 +188,10 @@
   },
   "佐野航大": {
    "division": "Eredivisie",
-   "apps": 4,
-   "goals": 0,
+   "apps": 5,
+   "goals": 1,
    "european": true,
-   "updatedAt": "2026-09-10",
+   "updatedAt": "2026-09-13",
    "source": "Kodai Sano (footballer)"
   },
   "坂元達裕": {
@@ -313,6 +321,14 @@
    "european": true,
    "updatedAt": "2026-08-29",
    "source": "Kōki Saitō (footballer)"
+  },
+  "石渡ネルソン": {
+   "division": "Belgian Pro League",
+   "apps": 5,
+   "goals": 1,
+   "european": true,
+   "updatedAt": "2026-09-06",
+   "source": "Nelson Ishiwatari"
   },
   "川﨑颯太": {
    "division": "Bundesliga",
