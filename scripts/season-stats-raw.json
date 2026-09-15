@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-09-14",
+ "takenAt": "2026-09-15",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -396,10 +396,10 @@
   },
   "田中碧": {
    "division": "Premier League",
-   "apps": 0,
-   "goals": 0,
+   "apps": 3,
+   "goals": 1,
    "european": true,
-   "updatedAt": "2026-08-25",
+   "updatedAt": "2026-09-14",
    "source": "Ao Tanaka"
   },
   "渡辺剛": {
