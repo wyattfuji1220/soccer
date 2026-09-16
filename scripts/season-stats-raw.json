@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-09-15",
+ "takenAt": "2026-09-16",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -140,10 +140,10 @@
   },
   "後藤啓介": {
    "division": "Bundesliga",
-   "apps": 2,
+   "apps": 3,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-05",
+   "updatedAt": "2026-09-12",
    "source": "Keisuke Gotō"
   },
   "荒木遼太郎": {
@@ -180,10 +180,10 @@
   },
   "佐野海舟": {
    "division": "Bundesliga",
-   "apps": 2,
+   "apps": 3,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-06",
+   "updatedAt": "2026-09-12",
    "source": "Kaishū Sano"
   },
   "佐野航大": {
@@ -244,10 +244,10 @@
   },
   "小杉啓太": {
    "division": "Bundesliga",
-   "apps": 2,
+   "apps": 3,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-06",
+   "updatedAt": "2026-09-12",
    "source": "Keita Kosugi"
   },
   "小林友希": {
@@ -279,7 +279,7 @@
    "apps": 4,
    "goals": 3,
    "european": true,
-   "updatedAt": "2026-09-08",
+   "updatedAt": "2026-09-13",
    "source": "Ayase Ueda"
   },
   "森下龍矢": {
@@ -370,28 +370,36 @@
    "updatedAt": "2026-09-12",
    "source": "Sōta Nakamura"
   },
-  "町野修斗": {
+  "町田浩樹": {
    "division": "Bundesliga",
-   "apps": 0,
+   "apps": 1,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-23",
+   "updatedAt": "2026-09-12",
+   "source": "Kōki Machida"
+  },
+  "町野修斗": {
+   "division": "Bundesliga",
+   "apps": 1,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-09-12",
    "source": "Shūto Machino"
   },
   "長田澪": {
    "division": "Bundesliga",
-   "apps": 1,
+   "apps": 3,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-30",
+   "updatedAt": "2026-09-12",
    "source": "Mio Backhaus"
   },
   "田中聡": {
    "division": "Bundesliga",
-   "apps": 1,
+   "apps": 2,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-06",
+   "updatedAt": "2026-09-11",
    "source": "Satoshi Tanaka"
   },
   "田中碧": {
@@ -420,18 +428,18 @@
   },
   "堂安律": {
    "division": "Bundesliga",
-   "apps": 1,
+   "apps": 2,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-06",
+   "updatedAt": "2026-09-12",
    "source": "Ritsu Dōan"
   },
   "板倉滉": {
    "division": "Bundesliga",
-   "apps": 2,
+   "apps": 3,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-05",
+   "updatedAt": "2026-09-12",
    "source": "Kō Itakura"
   },
   "冨安健洋": {
@@ -458,6 +466,14 @@
    "updatedAt": "2026-08-29",
    "source": "Shinnosuke Fukuda"
   },
+  "福田翔生": {
+   "division": "Danish Superliga",
+   "apps": 6,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-09-14",
+   "source": "Shō Fukuda"
+  },
   "平河悠": {
    "division": "EFL Championship",
    "apps": 5,
@@ -476,10 +492,10 @@
   },
   "毎熊晟矢": {
    "division": "Eredivisie",
-   "apps": 2,
+   "apps": 4,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-22",
+   "updatedAt": "2026-09-06",
    "source": "Seiya Maikuma"
   },
   "鈴木彩艶": {
@@ -500,10 +516,10 @@
   },
   "鈴木唯人": {
    "division": "Bundesliga",
-   "apps": 2,
+   "apps": 3,
    "goals": 3,
    "european": true,
-   "updatedAt": "2026-09-05",
+   "updatedAt": "2026-09-12",
    "source": "Yuito Suzuki"
   }
  }
