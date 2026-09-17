@@ -7,7 +7,7 @@ import type { Club } from "@/lib/types";
  * リダイレクト解決で正式な記事名に寄せている。
  * 現所属選手がいる、または過去に2人以上が在籍したクラブだけを収録している。
  *
- * 最終取得: 2026-09-16
+ * 最終取得: 2026-09-17
  */
 export const clubs: Club[] = [
   {
@@ -138,17 +138,6 @@ export const clubs: Club[] = [
     currentPlayers: ["チェイス・アンリ", "北野颯太"],
     pastPlayers: [
       { nameJa: "南野拓実", years: "2015-2019", loan: false },
-    ],
-  },
-  {
-    slug: "birmingham-city",
-    name: "バーミンガム・シティFC",
-    nameEn: "Birmingham City F.C.",
-    article: "バーミンガム・シティFC",
-    countries: ["ENG"],
-    currentPlayers: ["岩田智輝", "藤本寛也"],
-    pastPlayers: [
-      { nameJa: "横山歩夢", years: "2024-", loan: false },
     ],
   },
   {
@@ -308,6 +297,17 @@ export const clubs: Club[] = [
     currentPlayers: ["遠藤航"],
     pastPlayers: [
       { nameJa: "南野拓実", years: "2020-2022", loan: false },
+    ],
+  },
+  {
+    slug: "birmingham-city",
+    name: "バーミンガム・シティFC",
+    nameEn: "Birmingham City F.C.",
+    article: "バーミンガム・シティFC",
+    countries: ["ENG"],
+    currentPlayers: ["岩田智輝"],
+    pastPlayers: [
+      { nameJa: "横山歩夢", years: "2024-", loan: false },
     ],
   },
   {
@@ -925,21 +925,6 @@ export const clubs: Club[] = [
     ],
   },
   {
-    slug: "tokyo-verdy",
-    name: "東京ヴェルディ1969",
-    nameEn: "Tokyo Verdy",
-    article: "東京ヴェルディ1969",
-    countries: ["JPN"],
-    currentPlayers: [],
-    pastPlayers: [
-      { nameJa: "ポープ・ウィリアム", years: "2013-2017", loan: false },
-      { nameJa: "綱島悠斗", years: "2023-2025", loan: false },
-      { nameJa: "山本理仁", years: "2019-2022", loan: false },
-      { nameJa: "藤田譲瑠チマ", years: "2019-2020", loan: false },
-      { nameJa: "藤本寛也", years: "2018-2022", loan: false },
-    ],
-  },
-  {
     slug: "mito-hollyhock",
     name: "水戸ホーリーホック",
     nameEn: "Mito HollyHock",
@@ -1025,6 +1010,20 @@ export const clubs: Club[] = [
       { nameJa: "伊藤洋輝", years: "2021-2022", loan: true },
       { nameJa: "遠藤航", years: "2019-2020", loan: true },
       { nameJa: "原口元気", years: "2023-2024", loan: false },
+    ],
+  },
+  {
+    slug: "tokyo-verdy",
+    name: "東京ヴェルディ1969",
+    nameEn: "Tokyo Verdy",
+    article: "東京ヴェルディ1969",
+    countries: ["JPN"],
+    currentPlayers: [],
+    pastPlayers: [
+      { nameJa: "ポープ・ウィリアム", years: "2013-2017", loan: false },
+      { nameJa: "綱島悠斗", years: "2023-2025", loan: false },
+      { nameJa: "山本理仁", years: "2019-2022", loan: false },
+      { nameJa: "藤田譲瑠チマ", years: "2019-2020", loan: false },
     ],
   },
   {

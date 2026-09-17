@@ -1,13 +1,13 @@
 {
  "season": "2026-27",
- "takenAt": "2026-09-16",
+ "takenAt": "2026-09-17",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
-   "apps": 2,
+   "apps": 4,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-30",
+   "updatedAt": "2026-09-12",
    "source": "Nikki Havenaar"
   },
   "安藤晃希": {
@@ -164,10 +164,10 @@
   },
   "高岡伶颯": {
    "division": "Challenger Pro League",
-   "apps": 4,
+   "apps": 5,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-04",
+   "updatedAt": "2026-09-13",
    "source": "Rento Takaoka"
   },
   "佐藤龍之介": {
@@ -359,7 +359,7 @@
    "apps": 1,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-12",
+   "updatedAt": "2026-09-16",
    "source": "Keito Nakamura"
   },
   "中村草太": {
@@ -484,10 +484,10 @@
   },
   "北野颯太": {
    "division": "Austrian Bundesliga",
-   "apps": 4,
+   "apps": 5,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-09-02",
+   "updatedAt": "2026-09-11",
    "source": "Sōta Kitano"
   },
   "毎熊晟矢": {
@@ -503,7 +503,7 @@
    "apps": 3,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-12",
+   "updatedAt": "2026-09-16",
    "source": "Zion Suzuki"
   },
   "鈴木淳之介": {
