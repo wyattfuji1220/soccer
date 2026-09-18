@@ -1,13 +1,13 @@
 {
  "season": "2026-27",
- "takenAt": "2026-09-17",
+ "takenAt": "2026-09-18",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
    "apps": 4,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-12",
+   "updatedAt": "2026-09-17",
    "source": "Nikki Havenaar"
   },
   "安藤晃希": {
@@ -84,10 +84,10 @@
   },
   "鎌田大地": {
    "division": "Premier League",
-   "apps": 3,
+   "apps": 4,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-08",
+   "updatedAt": "2026-09-17",
    "source": "Daichi Kamada"
   },
   "喜多壱也": {
@@ -111,7 +111,7 @@
    "apps": 5,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-13",
+   "updatedAt": "2026-09-17",
    "source": "Takefusa Kubo"
   },
   "橋岡大樹": {
@@ -199,7 +199,7 @@
    "apps": 1,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-29",
+   "updatedAt": "2026-09-16",
    "source": "Tatsuhiro Sakamoto"
   },
   "三戸舜介": {
@@ -354,6 +354,14 @@
    "updatedAt": "2026-08-25",
    "source": "Yūki Ōhashi"
   },
+  "中山雄太": {
+   "division": "J1 League",
+   "apps": 3,
+   "goals": 1,
+   "european": true,
+   "updatedAt": "2026-09-17",
+   "source": "Yūta Nakayama"
+  },
   "中村敬斗": {
    "division": "Ligue 1",
    "apps": 1,
@@ -375,7 +383,7 @@
    "apps": 1,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-12",
+   "updatedAt": "2026-09-17",
    "source": "Kōki Machida"
   },
   "町野修斗": {
@@ -471,7 +479,7 @@
    "apps": 6,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-14",
+   "updatedAt": "2026-09-17",
    "source": "Shō Fukuda"
   },
   "平河悠": {
@@ -487,7 +495,7 @@
    "apps": 5,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-09-11",
+   "updatedAt": "2026-09-17",
    "source": "Sōta Kitano"
   },
   "毎熊晟矢": {
