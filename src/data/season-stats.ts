@@ -11,7 +11,7 @@ import type { SeasonStat } from "@/lib/types";
  * まだ今季の行が書かれていないということで、0試合という意味ではない。
  */
 export const season = "2026-27";
-export const seasonTakenAt = "2026-09-18";
+export const seasonTakenAt = "2026-09-19";
 
 export const seasonStats: SeasonStat[] = [
   { slug: "ayase-ueda", apps: 4, goals: 3, division: "Eredivisie", updatedAt: "2026-09-13", source: "Ayase Ueda" },
@@ -32,7 +32,7 @@ export const seasonStats: SeasonStat[] = [
   { slug: "yuta-nakayama", apps: 3, goals: 1, division: "J1 League", updatedAt: "2026-09-17", source: "Yūta Nakayama" },
   { slug: "koki-saito", apps: 2, goals: 1, division: "EFL Championship", updatedAt: "2026-08-29", source: "Kōki Saitō (footballer)" },
   { slug: "shinnosuke-fukuda", apps: 13, goals: 0, division: "J1 100 Year Vision League", updatedAt: "2026-08-29", source: "Shinnosuke Fukuda" },
-  { slug: "junnosuke-suzuki", apps: 6, goals: 0, division: "Danish Superliga", updatedAt: "2026-09-03", source: "Junnosuke Suzuki" },
+  { slug: "junnosuke-suzuki", apps: 8, goals: 0, division: "Danish Superliga", updatedAt: "2026-09-15", source: "Junnosuke Suzuki" },
   { slug: "sho-fukuda", apps: 6, goals: 0, division: "Danish Superliga", updatedAt: "2026-09-17", source: "Shō Fukuda" },
   { slug: "rento-takaoka", apps: 5, goals: 0, division: "Challenger Pro League", updatedAt: "2026-09-13", source: "Rento Takaoka" },
   { slug: "takefusa-kubo", apps: 5, goals: 0, division: "La Liga", updatedAt: "2026-09-17", source: "Takefusa Kubo" },

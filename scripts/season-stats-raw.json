@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-09-18",
+ "takenAt": "2026-09-19",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -516,10 +516,10 @@
   },
   "鈴木淳之介": {
    "division": "Danish Superliga",
-   "apps": 6,
+   "apps": 8,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-03",
+   "updatedAt": "2026-09-15",
    "source": "Junnosuke Suzuki"
   },
   "鈴木唯人": {
