@@ -3109,7 +3109,7 @@ export const alumni: Alumnus[] = [
     article: "ンダウ・ターラ",
     from: 2025,
     to: null,
-    spells: [{ club: "ナッシャー・ライオンズFC", country: "MLT", from: 2025, to: 2025 }, { club: "タンピネス・ローバースFC", country: "SIN", from: 2025, to: null }],
+    spells: [{ club: "ナッシャー・ライオンズFC", country: "MLT", from: 2025, to: 2025 }, { club: "タンピネス・ローバースFC", country: "SIN", from: 2025, to: 2026 }, { club: "ムアンルーイ・ユナイテッドFC", country: "THA", from: 2026, to: null }],
   },
   {
     nameJa: "安齋悠人",

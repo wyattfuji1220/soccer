@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-09-19",
+ "takenAt": "2026-09-20",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -268,10 +268,10 @@
   },
   "松木玖生": {
    "division": "Championship",
-   "apps": 7,
+   "apps": 8,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-09-12",
+   "updatedAt": "2026-09-19",
    "source": "Kuryu Matsuki"
   },
   "上田綺世": {
@@ -284,10 +284,10 @@
   },
   "森下龍矢": {
    "division": "Championship",
-   "apps": 4,
-   "goals": 1,
+   "apps": 8,
+   "goals": 2,
    "european": true,
-   "updatedAt": "2026-09-01",
+   "updatedAt": "2026-09-19",
    "source": "Ryōya Morishita"
   },
   "水多海斗": {
@@ -303,7 +303,7 @@
    "apps": 0,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-12",
+   "updatedAt": "2026-09-19",
    "source": "Yukinari Sugawara"
   },
   "瀬古歩夢": {
@@ -508,10 +508,10 @@
   },
   "鈴木彩艶": {
    "division": "Premier League",
-   "apps": 3,
+   "apps": 4,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-16",
+   "updatedAt": "2026-09-19",
    "source": "Zion Suzuki"
   },
   "鈴木淳之介": {
@@ -524,10 +524,10 @@
   },
   "鈴木唯人": {
    "division": "Bundesliga",
-   "apps": 3,
-   "goals": 3,
+   "apps": 7,
+   "goals": 4,
    "european": true,
-   "updatedAt": "2026-09-12",
+   "updatedAt": "2026-09-19",
    "source": "Yuito Suzuki"
   }
  }

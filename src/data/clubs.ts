@@ -7,7 +7,7 @@ import type { Club } from "@/lib/types";
  * リダイレクト解決で正式な記事名に寄せている。
  * 現所属選手がいる、または過去に2人以上が在籍したクラブだけを収録している。
  *
- * 最終取得: 2026-09-19
+ * 最終取得: 2026-09-20
  */
 export const clubs: Club[] = [
   {
@@ -158,17 +158,6 @@ export const clubs: Club[] = [
     article: "OHルーヴェン",
     countries: ["BEL"],
     currentPlayers: ["荻原拓也", "山田新"],
-    pastPlayers: [
-
-    ],
-  },
-  {
-    slug: "patro-eisden-maasmechelen",
-    name: "パトロ・アイスデン・マースメヘレン",
-    nameEn: null,
-    article: "パトロ・アイスデン・マースメヘレン",
-    countries: ["BEL"],
-    currentPlayers: ["笠柳翼", "高岡伶颯"],
     pastPlayers: [
 
     ],

@@ -1,5 +1,5 @@
 {
- "takenAt": "2026-09-19",
+ "takenAt": "2026-09-20",
  "players": {
   "shinta-appelkamp": {
    "nameJa": "アペルカンプ真大",
@@ -86,11 +86,6 @@
    "club": "OHルーヴェン",
    "league": "jupiler-pro-league"
   },
-  "tsubasa-kasayanagi": {
-   "nameJa": "笠柳翼",
-   "club": "パトロ・アイスデン・マースメヘレン",
-   "league": "challenger-pro-league"
-  },
   "daichi-kamada": {
    "nameJa": "鎌田大地",
    "club": "クリスタル・パレスFC",
@@ -170,11 +165,6 @@
    "nameJa": "高井幸大",
    "club": "シント＝トロイデンVV",
    "league": "jupiler-pro-league"
-  },
-  "rento-takaoka": {
-   "nameJa": "高岡伶颯",
-   "club": "パトロ・アイスデン・マースメヘレン",
-   "league": "challenger-pro-league"
   },
   "ryunosuke-sato": {
    "nameJa": "佐藤龍之介",
