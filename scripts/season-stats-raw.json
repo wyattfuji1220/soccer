@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-09-22",
+ "takenAt": "2026-09-24",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -20,10 +20,10 @@
   },
   "安藤智哉": {
    "division": "2. Bundesliga",
-   "apps": 3,
+   "apps": 5,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-30",
+   "updatedAt": "2026-09-20",
    "source": "Tomoya Ando"
   },
   "伊東純也": {
@@ -60,10 +60,10 @@
   },
   "塩貝健人": {
    "division": "2. Bundesliga",
-   "apps": 3,
+   "apps": 5,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-29",
+   "updatedAt": "2026-09-12",
    "source": "Kento Shiogai"
   },
   "横山歩夢": {
@@ -132,10 +132,10 @@
   },
   "原大智": {
    "division": "2. Bundesliga",
-   "apps": 4,
-   "goals": 2,
+   "apps": 7,
+   "goals": 3,
    "european": true,
-   "updatedAt": "2026-08-30",
+   "updatedAt": "2026-09-20",
    "source": "Taichi Hara"
   },
   "後藤啓介": {
@@ -164,10 +164,10 @@
   },
   "高岡伶颯": {
    "division": "Challenger Pro League",
-   "apps": 5,
+   "apps": 6,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-13",
+   "updatedAt": "2026-09-20",
    "source": "Rento Takaoka"
   },
   "佐藤龍之介": {
@@ -308,10 +308,10 @@
   },
   "瀬古歩夢": {
    "division": null,
-   "apps": 4,
+   "apps": 5,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-12",
+   "updatedAt": "2026-09-19",
    "source": "Ayumu Seko"
   },
   "斉藤光毅": {
@@ -364,18 +364,18 @@
   },
   "中村敬斗": {
    "division": "Ligue 1",
-   "apps": 1,
+   "apps": 2,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-16",
+   "updatedAt": "2026-09-19",
    "source": "Keito Nakamura"
   },
   "中村草太": {
    "division": "Ligue 1",
-   "apps": 4,
+   "apps": 5,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-12",
+   "updatedAt": "2026-09-19",
    "source": "Sōta Nakamura"
   },
   "町田浩樹": {
@@ -428,10 +428,10 @@
   },
   "藤田譲瑠チマ": {
    "division": "2. Bundesliga",
-   "apps": 2,
-   "goals": 0,
+   "apps": 4,
+   "goals": 1,
    "european": true,
-   "updatedAt": "2026-08-23",
+   "updatedAt": "2026-09-20",
    "source": "Joel Chima Fujita"
   },
   "堂安律": {
