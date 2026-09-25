@@ -1,13 +1,13 @@
 {
  "season": "2026-27",
- "takenAt": "2026-09-24",
+ "takenAt": "2026-09-25",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
-   "apps": 4,
+   "apps": 5,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-17",
+   "updatedAt": "2026-09-20",
    "source": "Nikki Havenaar"
   },
   "安藤晃希": {
@@ -28,18 +28,18 @@
   },
   "伊東純也": {
    "division": "Belgian Pro League",
-   "apps": 4,
+   "apps": 7,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-08-28",
+   "updatedAt": "2026-09-20",
    "source": "Junya Itō"
   },
   "伊藤敦樹": {
    "division": "EFL Championship",
-   "apps": 0,
-   "goals": 0,
+   "apps": 2,
+   "goals": 1,
    "european": true,
-   "updatedAt": "2026-05-31",
+   "updatedAt": "2026-09-20",
    "source": "Atsuki Itō"
   },
   "伊藤洋輝": {
@@ -68,10 +68,10 @@
   },
   "横山歩夢": {
    "division": "Belgian Pro League",
-   "apps": 4,
+   "apps": 7,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-08-28",
+   "updatedAt": "2026-09-20",
    "source": "Ayumu Yokoyama"
   },
   "荻原拓也": {
@@ -188,10 +188,10 @@
   },
   "佐野航大": {
    "division": "Eredivisie",
-   "apps": 5,
+   "apps": 6,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-09-13",
+   "updatedAt": "2026-09-20",
    "source": "Kodai Sano (footballer)"
   },
   "坂元達裕": {
@@ -204,10 +204,10 @@
   },
   "三戸舜介": {
    "division": "Eredivisie",
-   "apps": 3,
+   "apps": 5,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-08-22",
+   "updatedAt": "2026-09-04",
    "source": "Shunsuke Mito"
   },
   "三好康児": {
@@ -420,10 +420,10 @@
   },
   "渡辺剛": {
    "division": "Eredivisie",
-   "apps": 4,
+   "apps": 6,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-09",
+   "updatedAt": "2026-09-20",
    "source": "Tsuyoshi Watanabe"
   },
   "藤田譲瑠チマ": {
@@ -492,18 +492,18 @@
   },
   "北野颯太": {
    "division": "Austrian Bundesliga",
-   "apps": 5,
+   "apps": 6,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-09-17",
+   "updatedAt": "2026-09-20",
    "source": "Sōta Kitano"
   },
   "毎熊晟矢": {
    "division": "Eredivisie",
-   "apps": 4,
+   "apps": 5,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-06",
+   "updatedAt": "2026-09-20",
    "source": "Seiya Maikuma"
   },
   "鈴木彩艶": {

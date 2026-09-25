@@ -7,7 +7,7 @@ import type { Club } from "@/lib/types";
  * リダイレクト解決で正式な記事名に寄せている。
  * 現所属選手がいる、または過去に2人以上が在籍したクラブだけを収録している。
  *
- * 最終取得: 2026-09-24
+ * 最終取得: 2026-09-25
  */
 export const clubs: Club[] = [
   {
@@ -1044,6 +1044,20 @@ export const clubs: Club[] = [
     ],
   },
   {
+    slug: "kashiwa-reysol",
+    name: "柏レイソル",
+    nameEn: "Kashiwa Reysol",
+    article: "柏レイソル",
+    countries: ["JPN"],
+    currentPlayers: [],
+    pastPlayers: [
+      { nameJa: "伊東純也", years: "2016-2020", loan: false },
+      { nameJa: "関根大輝", years: "2023-2024", loan: false },
+      { nameJa: "小久保玲央ブライアン", years: null, loan: false },
+      { nameJa: "中山雄太", years: "2015-2018", loan: false },
+    ],
+  },
+  {
     slug: "kaa-gent",
     name: "KAAヘント",
     nameEn: "KAA Gent",
@@ -1095,19 +1109,6 @@ export const clubs: Club[] = [
       { nameJa: "安藤智哉", years: "2025", loan: false },
       { nameJa: "松岡大起", years: "2024-", loan: false },
       { nameJa: "冨安健洋", years: "2015-2017", loan: false },
-    ],
-  },
-  {
-    slug: "kashiwa-reysol",
-    name: "柏レイソル",
-    nameEn: "Kashiwa Reysol",
-    article: "柏レイソル",
-    countries: ["JPN"],
-    currentPlayers: [],
-    pastPlayers: [
-      { nameJa: "伊東純也", years: "2016-2020", loan: false },
-      { nameJa: "関根大輝", years: "2023-2024", loan: false },
-      { nameJa: "中山雄太", years: "2015-2018", loan: false },
     ],
   },
   {
