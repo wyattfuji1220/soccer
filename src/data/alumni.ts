@@ -2094,7 +2094,7 @@ export const alumni: Alumnus[] = [
     article: "立川嶺",
     from: 2018,
     to: null,
-    spells: [{ club: "ペラフィタFC", country: "POR", from: 2018, to: 2018 }, { club: "FCフェルゲイラス1932", country: "POR", from: 2019, to: 2019 }, { club: "サンタ・ルチアFC", country: "MLT", from: 2019, to: 2021 }, { club: "セイレーンズFC", country: "MLT", from: 2021, to: 2023 }, { club: "ジャムシェードプルFC", country: "IND", from: 2023, to: null }],
+    spells: [{ club: "ペラフィタFC", country: "POR", from: 2018, to: 2018 }, { club: "FCフェルゲイラス1932", country: "POR", from: 2019, to: 2019 }, { club: "サンタ・ルチアFC", country: "MLT", from: 2019, to: 2021 }, { club: "セイレーンズFC", country: "MLT", from: 2021, to: 2023 }, { club: "ジャムシェードプルFC", country: "IND", from: 2023, to: 2026 }, { club: "プラチュワップFC", country: "THA", from: 2026, to: null }],
   },
   {
     nameJa: "鈴木準弥",
@@ -2459,6 +2459,13 @@ export const alumni: Alumnus[] = [
     from: 2020,
     to: null,
     spells: [{ club: "アルビレックス新潟シンガポール", country: "SGP", from: 2020, to: 2020 }, { club: "ホウガン・ユナイテッドFC", country: "SGP", from: 2021, to: 2021 }, { club: "KFバイリス・バルシュ", country: "ALB", from: 2023, to: 2023 }, { club: "ゲイラン・インターナショナルFC", country: "SGP", from: 2024, to: 2025 }, { club: "BGパトゥム・ユナイテッドFC", country: "THA", from: 2025, to: null }, { club: "チョンブリーFC", country: "THA", from: 2026, to: null }],
+  },
+  {
+    nameJa: "藤本寛也",
+    article: "藤本寛也",
+    from: 2020,
+    to: null,
+    spells: [{ club: "ジル・ヴィセンテFC", country: "POR", from: 2020, to: 2022 }, { club: "ジル・ヴィセンテFC", country: "POR", from: 2022, to: 2025 }, { club: "バーミンガム・シティFC", country: "ENG", from: 2025, to: null }],
   },
   {
     nameJa: "内野貴史",
@@ -3236,6 +3243,13 @@ export const alumni: Alumnus[] = [
     from: 2026,
     to: 2026,
     spells: [{ club: "FKトゥクムス2000", country: "LAT", from: 2026, to: 2026 }],
+  },
+  {
+    nameJa: "荒木大吾",
+    article: "荒木大吾",
+    from: 2026,
+    to: null,
+    spells: [{ club: "SWブレゲンツ", country: "AUT", from: 2026, to: null }],
   },
   {
     nameJa: "山本天翔",
