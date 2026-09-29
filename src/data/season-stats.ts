@@ -11,7 +11,7 @@ import type { SeasonStat } from "@/lib/types";
  * まだ今季の行が書かれていないということで、0試合という意味ではない。
  */
 export const season = "2026-27";
-export const seasonTakenAt = "2026-09-28";
+export const seasonTakenAt = "2026-09-29";
 
 export const seasonStats: SeasonStat[] = [
   { slug: "yuito-suzuki", apps: 7, goals: 4, division: "Bundesliga", updatedAt: "2026-09-19", source: "Yuito Suzuki" },
