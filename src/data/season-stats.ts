@@ -11,7 +11,7 @@ import type { SeasonStat } from "@/lib/types";
  * まだ今季の行が書かれていないということで、0試合という意味ではない。
  */
 export const season = "2026-27";
-export const seasonTakenAt = "2026-10-02";
+export const seasonTakenAt = "2026-10-03";
 
 export const seasonStats: SeasonStat[] = [
   { slug: "yuito-suzuki", apps: 7, goals: 4, division: "Bundesliga", updatedAt: "2026-09-19", source: "Yuito Suzuki" },
@@ -37,6 +37,7 @@ export const seasonStats: SeasonStat[] = [
   { slug: "shuto-machino", apps: 2, goals: 1, division: "Bundesliga", updatedAt: "2026-09-19", source: "Shūto Machino" },
   { slug: "shinnosuke-fukuda", apps: 13, goals: 0, division: "J1 100 Year Vision League", updatedAt: "2026-08-29", source: "Shinnosuke Fukuda" },
   { slug: "junnosuke-suzuki", apps: 9, goals: 0, division: "Danish Superliga", updatedAt: "2026-09-20", source: "Junnosuke Suzuki" },
+  { slug: "keigo-tsunemoto", apps: 9, goals: 0, division: "Swiss Super League", updatedAt: "2026-10-02", source: "Keigo Tsunemoto" },
   { slug: "sho-fukuda", apps: 6, goals: 0, division: "Danish Superliga", updatedAt: "2026-09-17", source: "Shō Fukuda" },
   { slug: "tsuyoshi-watanabe", apps: 6, goals: 0, division: "Eredivisie", updatedAt: "2026-09-20", source: "Tsuyoshi Watanabe" },
   { slug: "ayumu-seko", apps: 5, goals: 0, division: null, updatedAt: "2026-09-19", source: "Ayumu Seko" },

@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-10-02",
+ "takenAt": "2026-10-03",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -281,6 +281,14 @@
    "european": true,
    "updatedAt": "2026-09-20",
    "source": "Ayase Ueda"
+  },
+  "常本佳吾": {
+   "division": "Swiss Super League",
+   "apps": 9,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-10-02",
+   "source": "Keigo Tsunemoto"
   },
   "森下龍矢": {
    "division": "Championship",
