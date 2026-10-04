@@ -1505,8 +1505,8 @@ export const alumni: Alumnus[] = [
     nameJa: "中川風希",
     article: "中川風希",
     from: 2015,
-    to: null,
-    spells: [{ club: "バリェカスCF", country: "ESP", from: 2015, to: 2016 }, { club: "CDベティス・サン・イシドロ", country: "ESP", from: 2016, to: 2017 }, { club: "セメン・パダンFC", country: "IDN", from: 2026, to: null }],
+    to: 2026,
+    spells: [{ club: "バリェカスCF", country: "ESP", from: 2015, to: 2016 }, { club: "CDベティス・サン・イシドロ", country: "ESP", from: 2016, to: 2017 }, { club: "セメン・パダンFC", country: "IDN", from: 2026, to: 2026 }],
   },
   {
     nameJa: "長谷川アーリアジャスール",
@@ -2797,13 +2797,6 @@ export const alumni: Alumnus[] = [
     spells: [{ club: "RWDモレンベーク (2015年)", country: "BEL", from: 2023, to: 2025 }],
   },
   {
-    nameJa: "伊藤涼太郎",
-    article: "伊藤涼太郎",
-    from: 2023,
-    to: 2026,
-    spells: [{ club: "シント＝トロイデンVV", country: "BEL", from: 2023, to: 2026 }],
-  },
-  {
     nameJa: "永田滉太朗",
     article: "永田滉太朗",
     from: 2023,
@@ -3271,6 +3264,13 @@ export const alumni: Alumnus[] = [
     from: 2026,
     to: null,
     spells: [{ club: "SWブレゲンツ", country: "AUT", from: 2026, to: null }],
+  },
+  {
+    nameJa: "中野桂太",
+    article: "中野桂太",
+    from: 2026,
+    to: null,
+    spells: [{ club: "CEエウロパ", country: "ESP", from: 2026, to: null }],
   },
   {
     nameJa: "飯田陸斗",
