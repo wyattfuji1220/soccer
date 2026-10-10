@@ -11,7 +11,7 @@ import type { SeasonStat } from "@/lib/types";
  * まだ今季の行が書かれていないということで、0試合という意味ではない。
  */
 export const season = "2026-27";
-export const seasonTakenAt = "2026-10-09";
+export const seasonTakenAt = "2026-10-10";
 
 export const seasonStats: SeasonStat[] = [
   { slug: "yuito-suzuki", apps: 7, goals: 4, division: "Bundesliga", updatedAt: "2026-09-19", source: "Yuito Suzuki" },
@@ -58,12 +58,12 @@ export const seasonStats: SeasonStat[] = [
   { slug: "takuya-ogiwara", apps: 4, goals: 0, division: "Belgian Pro League", updatedAt: "2026-09-07", source: "Takuya Ogiwara" },
   { slug: "zion-suzuki", apps: 4, goals: 0, division: "Premier League", updatedAt: "2026-09-19", source: "Zion Suzuki" },
   { slug: "kaito-mizuta", apps: 3, goals: 0, division: "Ligue 1", updatedAt: "2026-09-12", source: "Kaito Mizuta" },
+  { slug: "keito-nakamura", apps: 3, goals: 0, division: "Ligue 1", updatedAt: "2026-10-09", source: "Keito Nakamura" },
   { slug: "koki-ando", apps: 3, goals: 0, division: "Belgian Division 2", updatedAt: "2026-09-12", source: "Koki Ando (footballer)" },
   { slug: "ritsu-doan", apps: 3, goals: 0, division: "Bundesliga", updatedAt: "2026-09-19", source: "Ritsu Dōan" },
   { slug: "satoshi-tanaka", apps: 3, goals: 0, division: "Bundesliga", updatedAt: "2026-09-20", source: "Satoshi Tanaka" },
   { slug: "takehiro-tomiyasu", apps: 3, goals: 0, division: "Premier League", updatedAt: "2026-09-20", source: "Takehiro Tomiyasu" },
   { slug: "daiki-hashioka", apps: 2, goals: 0, division: "Bundesliga", updatedAt: "2026-09-19", source: "Daiki Hashioka" },
-  { slug: "keito-nakamura", apps: 2, goals: 0, division: "Ligue 1", updatedAt: "2026-09-19", source: "Keito Nakamura" },
   { slug: "koki-machida", apps: 2, goals: 0, division: "Bundesliga", updatedAt: "2026-09-20", source: "Kōki Machida" },
   { slug: "yuki-ohashi", apps: 2, goals: 0, division: "Championship", updatedAt: "2026-08-25", source: "Yūki Ōhashi" },
   { slug: "daizen-maeda", apps: 1, goals: 0, division: "Premier League", updatedAt: "2026-08-25", source: "Daizen Maeda" },
