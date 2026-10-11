@@ -1681,7 +1681,7 @@ export const alumni: Alumnus[] = [
     article: "柴田駿 (サッカー選手)",
     from: 2016,
     to: null,
-    spells: [{ club: "SVゴンセンハイム", country: "GER", from: 2016, to: 2017 }, { club: "FKアウダ", country: "LAT", from: 2019, to: 2019 }, { club: "オリンピア・ザンブルフ", country: "POL", from: 2020, to: 2021 }, { club: "ストミール・オルシュティン", country: "POL", from: 2021, to: 2023 }, { club: "GKSカトヴィツェ", country: "POL", from: 2023, to: null }],
+    spells: [{ club: "SVゴンセンハイム", country: "GER", from: 2016, to: 2017 }, { club: "FKアウダ", country: "LAT", from: 2019, to: 2019 }, { club: "オリンピア・ザンブルフ", country: "POL", from: 2020, to: 2021 }, { club: "ストミール・オルシュティン", country: "POL", from: 2021, to: 2023 }, { club: "GKSカトヴィツェ", country: "POL", from: 2023, to: 2024 }, { club: "ヴァルタ・ポズナン", country: "POL", from: 2024, to: 2025 }, { club: "ホイニツァンカ・ホイニツェ", country: "POL", from: 2025, to: 2026 }, { club: "FKトゥクムス2000", country: "LAT", from: 2026, to: null }],
   },
   {
     nameJa: "小長谷勇太",
@@ -1856,7 +1856,7 @@ export const alumni: Alumnus[] = [
     article: "坂井大将",
     from: 2017,
     to: null,
-    spells: [{ club: "AFCテュビズ", country: "BEL", from: 2017, to: 2017 }, { club: "サムットプラーカーン・シティFC", country: "THA", from: 2021, to: 2022 }, { club: "カスタムズ・ユナイテッドFC", country: "THA", from: 2022, to: 2023 }, { club: "ケーララ・ブラスターズFC", country: "IND", from: 2023, to: 2024 }, { club: "PSMマカッサル", country: "IDN", from: 2024, to: null }],
+    spells: [{ club: "AFCテュビズ", country: "BEL", from: 2017, to: 2017 }, { club: "サムットプラーカーン・シティFC", country: "THA", from: 2021, to: 2022 }, { club: "カスタムズ・ユナイテッドFC", country: "THA", from: 2022, to: 2023 }, { club: "ケーララ・ブラスターズFC", country: "IND", from: 2023, to: 2024 }, { club: "PSMマカッサル", country: "IDN", from: 2024, to: null }, { club: "ヤング・ライオンズ", country: "SGP", from: 2026, to: null }],
   },
   {
     nameJa: "三宅海斗",
