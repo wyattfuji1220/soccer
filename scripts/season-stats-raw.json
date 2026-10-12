@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-10-11",
+ "takenAt": "2026-10-12",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -52,10 +52,10 @@
   },
   "宇野禅斗": {
    "division": "Bundesliga",
-   "apps": 0,
+   "apps": 1,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-05-24",
+   "updatedAt": "2026-10-11",
    "source": "Zento Uno"
   },
   "塩貝健人": {
@@ -84,10 +84,10 @@
   },
   "鎌田大地": {
    "division": "Premier League",
-   "apps": 5,
-   "goals": 0,
+   "apps": 6,
+   "goals": 1,
    "european": true,
-   "updatedAt": "2026-09-20",
+   "updatedAt": "2026-10-11",
    "source": "Daichi Kamada"
   },
   "喜多壱也": {
@@ -116,10 +116,10 @@
   },
   "橋岡大樹": {
    "division": "Bundesliga",
-   "apps": 2,
+   "apps": 3,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-19",
+   "updatedAt": "2026-10-11",
    "source": "Daiki Hashioka"
   },
   "原口元気": {
@@ -140,10 +140,10 @@
   },
   "後藤啓介": {
    "division": "Bundesliga",
-   "apps": 4,
-   "goals": 0,
+   "apps": 5,
+   "goals": 1,
    "european": true,
-   "updatedAt": "2026-09-19",
+   "updatedAt": "2026-10-11",
    "source": "Keisuke Gotō"
   },
   "荒木遼太郎": {
@@ -244,10 +244,10 @@
   },
   "小杉啓太": {
    "division": "Bundesliga",
-   "apps": 4,
+   "apps": 5,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-19",
+   "updatedAt": "2026-10-10",
    "source": "Keita Kosugi"
   },
   "小林友希": {
@@ -311,7 +311,7 @@
    "apps": 0,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-19",
+   "updatedAt": "2026-10-11",
    "source": "Yukinari Sugawara"
   },
   "瀬古歩夢": {
@@ -396,18 +396,18 @@
   },
   "町野修斗": {
    "division": "Bundesliga",
-   "apps": 2,
+   "apps": 3,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-09-19",
+   "updatedAt": "2026-10-11",
    "source": "Shūto Machino"
   },
   "長田澪": {
    "division": "Bundesliga",
-   "apps": 4,
+   "apps": 5,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-19",
+   "updatedAt": "2026-10-11",
    "source": "Mio Backhaus"
   },
   "田中聡": {
@@ -444,10 +444,10 @@
   },
   "堂安律": {
    "division": "Bundesliga",
-   "apps": 3,
+   "apps": 4,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-19",
+   "updatedAt": "2026-10-10",
    "source": "Ritsu Dōan"
   },
   "畑大雅": {
@@ -540,10 +540,10 @@
   },
   "鈴木唯人": {
    "division": "Bundesliga",
-   "apps": 7,
+   "apps": 5,
    "goals": 4,
    "european": true,
-   "updatedAt": "2026-09-19",
+   "updatedAt": "2026-10-11",
    "source": "Yuito Suzuki"
   }
  }
