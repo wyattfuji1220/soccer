@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-10-13",
+ "takenAt": "2026-10-14",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -36,10 +36,10 @@
   },
   "伊藤敦樹": {
    "division": "EFL Championship",
-   "apps": 2,
-   "goals": 1,
+   "apps": 4,
+   "goals": 2,
    "european": true,
-   "updatedAt": "2026-09-20",
+   "updatedAt": "2026-10-13",
    "source": "Atsuki Itō"
   },
   "伊藤洋輝": {
@@ -47,7 +47,7 @@
    "apps": 0,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-10",
+   "updatedAt": "2026-10-13",
    "source": "Hiroki Itō (footballer, born 1999)"
   },
   "宇野禅斗": {
@@ -111,7 +111,7 @@
    "apps": 0,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-10",
+   "updatedAt": "2026-10-13",
    "source": "Reo Hatate"
   },
   "久保建英": {
@@ -172,10 +172,10 @@
   },
   "高岡伶颯": {
    "division": "Challenger Pro League",
-   "apps": 6,
+   "apps": 7,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-20",
+   "updatedAt": "2026-10-11",
    "source": "Rento Takaoka"
   },
   "佐藤龍之介": {
@@ -199,7 +199,7 @@
    "apps": 7,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-10-09",
+   "updatedAt": "2026-10-13",
    "source": "Kodai Sano (footballer)"
   },
   "坂元達裕": {
@@ -268,10 +268,10 @@
   },
   "松岡大起": {
    "division": "Slovak First Football League",
-   "apps": 7,
+   "apps": 8,
    "goals": 2,
    "european": true,
-   "updatedAt": "2026-09-19",
+   "updatedAt": "2026-10-10",
    "source": "Daiki Matsuoka"
   },
   "松木玖生": {
@@ -287,7 +287,7 @@
    "apps": 4,
    "goals": 3,
    "european": true,
-   "updatedAt": "2026-10-10",
+   "updatedAt": "2026-10-13",
    "source": "Ayase Ueda"
   },
   "常本佳吾": {
