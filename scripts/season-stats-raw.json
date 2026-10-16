@@ -1,13 +1,13 @@
 {
  "season": "2026-27",
- "takenAt": "2026-10-15",
+ "takenAt": "2026-10-16",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
-   "apps": 5,
+   "apps": 6,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-20",
+   "updatedAt": "2026-10-15",
    "source": "Nikki Havenaar"
   },
   "安藤晃希": {
@@ -87,7 +87,7 @@
    "apps": 6,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-10-11",
+   "updatedAt": "2026-10-15",
    "source": "Daichi Kamada"
   },
   "岩田智輝": {
@@ -119,7 +119,7 @@
    "apps": 5,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-17",
+   "updatedAt": "2026-10-15",
    "source": "Takefusa Kubo"
   },
   "橋岡大樹": {
@@ -151,7 +151,7 @@
    "apps": 5,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-10-11",
+   "updatedAt": "2026-10-15",
    "source": "Keisuke Gotō"
   },
   "荒木遼太郎": {
@@ -300,10 +300,10 @@
   },
   "森下龍矢": {
    "division": "Championship",
-   "apps": 9,
+   "apps": 10,
    "goals": 2,
    "european": true,
-   "updatedAt": "2026-10-10",
+   "updatedAt": "2026-10-13",
    "source": "Ryōya Morishita"
   },
   "水多海斗": {
@@ -375,7 +375,7 @@
    "apps": 3,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-09-17",
+   "updatedAt": "2026-10-15",
    "source": "Yūta Nakayama"
   },
   "中村敬斗": {
@@ -383,7 +383,7 @@
    "apps": 3,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-09",
+   "updatedAt": "2026-10-15",
    "source": "Keito Nakamura"
   },
   "中村草太": {
@@ -399,7 +399,7 @@
    "apps": 3,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-10",
+   "updatedAt": "2026-10-15",
    "source": "Kōki Machida"
   },
   "町野修斗": {
@@ -415,7 +415,7 @@
    "apps": 5,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-11",
+   "updatedAt": "2026-10-15",
    "source": "Mio Backhaus"
   },
   "田中聡": {
@@ -457,6 +457,14 @@
    "european": true,
    "updatedAt": "2026-10-10",
    "source": "Ritsu Dōan"
+  },
+  "南野拓実": {
+   "division": "Ligue 1",
+   "apps": 0,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-10-15",
+   "source": "Takumi Minamino"
   },
   "畑大雅": {
    "division": "Belgian Pro League",
@@ -519,7 +527,7 @@
    "apps": 7,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-10-10",
+   "updatedAt": "2026-10-15",
    "source": "Sōta Kitano"
   },
   "毎熊晟矢": {
@@ -527,7 +535,7 @@
    "apps": 5,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-20",
+   "updatedAt": "2026-10-15",
    "source": "Seiya Maikuma"
   },
   "鈴木彩艶": {
@@ -551,7 +559,7 @@
    "apps": 5,
    "goals": 4,
    "european": true,
-   "updatedAt": "2026-10-11",
+   "updatedAt": "2026-10-15",
    "source": "Yuito Suzuki"
   }
  }
