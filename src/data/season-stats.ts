@@ -11,7 +11,7 @@ import type { SeasonStat } from "@/lib/types";
  * まだ今季の行が書かれていないということで、0試合という意味ではない。
  */
 export const season = "2026-27";
-export const seasonTakenAt = "2026-10-16";
+export const seasonTakenAt = "2026-10-17";
 
 export const seasonStats: SeasonStat[] = [
   { slug: "yuito-suzuki", apps: 5, goals: 4, division: "Bundesliga", updatedAt: "2026-10-15", source: "Yuito Suzuki" },
@@ -38,7 +38,7 @@ export const seasonStats: SeasonStat[] = [
   { slug: "yuta-nakayama", apps: 3, goals: 1, division: "J1 League", updatedAt: "2026-10-15", source: "Yūta Nakayama" },
   { slug: "koki-saito", apps: 2, goals: 1, division: "EFL Championship", updatedAt: "2026-08-29", source: "Kōki Saitō (footballer)" },
   { slug: "shinnosuke-fukuda", apps: 13, goals: 0, division: "J1 100 Year Vision League", updatedAt: "2026-08-29", source: "Shinnosuke Fukuda" },
-  { slug: "junnosuke-suzuki", apps: 9, goals: 0, division: "Danish Superliga", updatedAt: "2026-09-20", source: "Junnosuke Suzuki" },
+  { slug: "junnosuke-suzuki", apps: 9, goals: 0, division: "Danish Superliga", updatedAt: "2026-10-15", source: "Junnosuke Suzuki" },
   { slug: "keigo-tsunemoto", apps: 9, goals: 0, division: "Swiss Super League", updatedAt: "2026-10-02", source: "Keigo Tsunemoto" },
   { slug: "tomoki-iwata", apps: 9, goals: 0, division: "Championship", updatedAt: "2026-10-10", source: "Tomoki Iwata" },
   { slug: "taiga-hata", apps: 7, goals: 0, division: "Belgian Pro League", updatedAt: "2026-09-20", source: "Taiga Hata" },
