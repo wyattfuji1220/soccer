@@ -2006,6 +2006,13 @@ export const alumni: Alumnus[] = [
     spells: [{ club: "ADアルコルコン", country: "ESP", from: 2018, to: 2018 }, { club: "CDEルーゴ・フエンラブラダ", country: "ESP", from: 2019, to: 2020 }],
   },
   {
+    nameJa: "古賀俊太郎",
+    article: "古賀俊太郎",
+    from: 2018,
+    to: 2018,
+    spells: [{ club: "ロイヤル・ユニオン・サン＝ジロワーズ", country: "BEL", from: 2018, to: 2018 }],
+  },
+  {
     nameJa: "佐藤遵樹",
     article: "佐藤遵樹",
     from: 2018,
@@ -2674,8 +2681,8 @@ export const alumni: Alumnus[] = [
     nameJa: "斎藤彰人",
     article: "斎藤彰人",
     from: 2022,
-    to: null,
-    spells: [{ club: "レルナイン・アルトサフFC", country: "ARM", from: 2022, to: 2022 }, { club: "アイゾールFC", country: "IND", from: 2022, to: 2023 }, { club: "カヤFC", country: "PHI", from: 2023, to: 2025 }, { club: "トラートFC", country: "THA", from: 2025, to: 2025 }, { club: "マハーサーラカーム・SBT FC", country: "THA", from: 2026, to: null }],
+    to: 2026,
+    spells: [{ club: "レルナイン・アルトサフFC", country: "ARM", from: 2022, to: 2022 }, { club: "アイゾールFC", country: "IND", from: 2022, to: 2023 }, { club: "カヤFC", country: "PHI", from: 2023, to: 2025 }, { club: "トラートFC", country: "THA", from: 2025, to: 2025 }, { club: "マハーサーラカーム・SBT FC", country: "THA", from: 2026, to: 2026 }],
   },
   {
     nameJa: "三浦ジンボスティーブン",
