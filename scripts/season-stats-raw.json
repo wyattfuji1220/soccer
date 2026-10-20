@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-10-19",
+ "takenAt": "2026-10-20",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -175,7 +175,7 @@
    "apps": 7,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-11",
+   "updatedAt": "2026-10-16",
    "source": "Rento Takaoka"
   },
   "佐藤龍之介": {
@@ -196,10 +196,10 @@
   },
   "佐野航大": {
    "division": "Eredivisie",
-   "apps": 7,
+   "apps": 8,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-10-13",
+   "updatedAt": "2026-10-17",
    "source": "Kodai Sano (footballer)"
   },
   "坂元達裕": {
@@ -268,10 +268,10 @@
   },
   "松岡大起": {
    "division": "Slovak First Football League",
-   "apps": 8,
+   "apps": 9,
    "goals": 2,
    "european": true,
-   "updatedAt": "2026-10-10",
+   "updatedAt": "2026-10-17",
    "source": "Daiki Matsuoka"
   },
   "松木玖生": {
@@ -380,10 +380,10 @@
   },
   "中村敬斗": {
    "division": "Ligue 1",
-   "apps": 3,
+   "apps": 4,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-15",
+   "updatedAt": "2026-10-18",
    "source": "Keito Nakamura"
   },
   "中村草太": {
@@ -460,10 +460,10 @@
   },
   "南野拓実": {
    "division": "Ligue 1",
-   "apps": 0,
+   "apps": 1,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-15",
+   "updatedAt": "2026-10-18",
    "source": "Takumi Minamino"
   },
   "畑大雅": {
