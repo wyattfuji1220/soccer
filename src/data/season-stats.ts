@@ -11,7 +11,7 @@ import type { SeasonStat } from "@/lib/types";
  * まだ今季の行が書かれていないということで、0試合という意味ではない。
  */
 export const season = "2026-27";
-export const seasonTakenAt = "2026-10-20";
+export const seasonTakenAt = "2026-10-21";
 
 export const seasonStats: SeasonStat[] = [
   { slug: "yuito-suzuki", apps: 5, goals: 4, division: "Bundesliga", updatedAt: "2026-10-15", source: "Yuito Suzuki" },
@@ -22,11 +22,11 @@ export const seasonStats: SeasonStat[] = [
   { slug: "daiki-matsuoka", apps: 9, goals: 2, division: "Slovak First Football League", updatedAt: "2026-10-17", source: "Daiki Matsuoka" },
   { slug: "atsuki-ito", apps: 4, goals: 2, division: "EFL Championship", updatedAt: "2026-10-13", source: "Atsuki Itō" },
   { slug: "koji-miyoshi", apps: 4, goals: 2, division: null, updatedAt: "2026-08-28", source: "Kōji Miyoshi" },
-  { slug: "kodai-sano", apps: 8, goals: 1, division: "Eredivisie", updatedAt: "2026-10-17", source: "Kodai Sano (footballer)" },
-  { slug: "ayumu-yokoyama", apps: 7, goals: 1, division: "Belgian Pro League", updatedAt: "2026-09-20", source: "Ayumu Yokoyama" },
+  { slug: "junya-ito", apps: 8, goals: 1, division: "Belgian Pro League", updatedAt: "2026-10-17", source: "Junya Itō" },
+  { slug: "kodai-sano", apps: 8, goals: 1, division: "Eredivisie", updatedAt: "2026-10-20", source: "Kodai Sano (footballer)" },
+  { slug: "ayumu-yokoyama", apps: 7, goals: 1, division: "Belgian Pro League", updatedAt: "2026-10-17", source: "Ayumu Yokoyama" },
   { slug: "daichi-kamada", apps: 7, goals: 1, division: "Premier League", updatedAt: "2026-10-18", source: "Daichi Kamada" },
   { slug: "daizen-maeda", apps: 7, goals: 1, division: "Premier League", updatedAt: "2026-10-17", source: "Daizen Maeda" },
-  { slug: "junya-ito", apps: 7, goals: 1, division: "Belgian Pro League", updatedAt: "2026-09-20", source: "Junya Itō" },
   { slug: "nelson-yuichiro-ishiwatari", apps: 7, goals: 1, division: "Belgian Pro League", updatedAt: "2026-10-11", source: "Nelson Ishiwatari" },
   { slug: "sota-kitano", apps: 7, goals: 1, division: "Austrian Bundesliga", updatedAt: "2026-10-15", source: "Sōta Kitano" },
   { slug: "keisuke-goto", apps: 6, goals: 1, division: "Bundesliga", updatedAt: "2026-10-18", source: "Keisuke Gotō" },
@@ -44,17 +44,18 @@ export const seasonStats: SeasonStat[] = [
   { slug: "junnosuke-suzuki", apps: 9, goals: 0, division: "Danish Superliga", updatedAt: "2026-10-15", source: "Junnosuke Suzuki" },
   { slug: "keigo-tsunemoto", apps: 9, goals: 0, division: "Swiss Super League", updatedAt: "2026-10-02", source: "Keigo Tsunemoto" },
   { slug: "tomoki-iwata", apps: 9, goals: 0, division: "Championship", updatedAt: "2026-10-10", source: "Tomoki Iwata" },
+  { slug: "sota-nakamura", apps: 7, goals: 0, division: "Ligue 1", updatedAt: "2026-10-18", source: "Sōta Nakamura" },
   { slug: "taiga-hata", apps: 7, goals: 0, division: "Belgian Pro League", updatedAt: "2026-09-20", source: "Taiga Hata" },
+  { slug: "tsuyoshi-watanabe", apps: 7, goals: 0, division: "Eredivisie", updatedAt: "2026-10-17", source: "Tsuyoshi Watanabe" },
   { slug: "ayumu-seko", apps: 6, goals: 0, division: null, updatedAt: "2026-10-10", source: "Ayumu Seko" },
   { slug: "kaishu-sano", apps: 6, goals: 0, division: "Bundesliga", updatedAt: "2026-10-17", source: "Kaishū Sano" },
   { slug: "keita-kosugi", apps: 6, goals: 0, division: "Bundesliga", updatedAt: "2026-10-16", source: "Keita Kosugi" },
   { slug: "mio-backhaus", apps: 6, goals: 0, division: "Bundesliga", updatedAt: "2026-10-18", source: "Mio Backhaus" },
   { slug: "nikki-havenaar", apps: 6, goals: 0, division: "Belgian Pro League", updatedAt: "2026-10-15", source: "Nikki Havenaar" },
   { slug: "sho-fukuda", apps: 6, goals: 0, division: "Danish Superliga", updatedAt: "2026-09-17", source: "Shō Fukuda" },
-  { slug: "sota-nakamura", apps: 6, goals: 0, division: "Ligue 1", updatedAt: "2026-10-10", source: "Sōta Nakamura" },
   { slug: "takuya-ogiwara", apps: 6, goals: 0, division: "Belgian Pro League", updatedAt: "2026-10-11", source: "Takuya Ogiwara" },
-  { slug: "tsuyoshi-watanabe", apps: 6, goals: 0, division: "Eredivisie", updatedAt: "2026-10-14", source: "Tsuyoshi Watanabe" },
   { slug: "zion-suzuki", apps: 6, goals: 0, division: "Premier League", updatedAt: "2026-10-17", source: "Zion Suzuki" },
+  { slug: "kaito-mizuta", apps: 5, goals: 0, division: "Ligue 1", updatedAt: "2026-10-18", source: "Kaito Mizuta" },
   { slug: "kento-shiogai", apps: 5, goals: 0, division: "2. Bundesliga", updatedAt: "2026-09-12", source: "Kento Shiogai" },
   { slug: "ritsu-doan", apps: 5, goals: 0, division: "Bundesliga", updatedAt: "2026-10-16", source: "Ritsu Dōan" },
   { slug: "seiya-maikuma", apps: 5, goals: 0, division: "Eredivisie", updatedAt: "2026-10-15", source: "Seiya Maikuma" },
@@ -62,7 +63,6 @@ export const seasonStats: SeasonStat[] = [
   { slug: "tomoya-ando", apps: 5, goals: 0, division: "2. Bundesliga", updatedAt: "2026-09-20", source: "Tomoya Ando" },
   { slug: "daiki-hashioka", apps: 4, goals: 0, division: "Bundesliga", updatedAt: "2026-10-19", source: "Daiki Hashioka" },
   { slug: "genki-haraguchi", apps: 4, goals: 0, division: "Challenger Pro League", updatedAt: "2026-09-06", source: "Genki Haraguchi" },
-  { slug: "kaito-mizuta", apps: 4, goals: 0, division: "Ligue 1", updatedAt: "2026-10-10", source: "Kaito Mizuta" },
   { slug: "keito-nakamura", apps: 4, goals: 0, division: "Ligue 1", updatedAt: "2026-10-18", source: "Keito Nakamura" },
   { slug: "koki-machida", apps: 4, goals: 0, division: "Bundesliga", updatedAt: "2026-10-18", source: "Kōki Machida" },
   { slug: "kou-itakura", apps: 4, goals: 0, division: "Bundesliga", updatedAt: "2026-09-19", source: "Kō Itakura" },

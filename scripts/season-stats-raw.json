@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-10-20",
+ "takenAt": "2026-10-21",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -28,10 +28,10 @@
   },
   "伊東純也": {
    "division": "Belgian Pro League",
-   "apps": 7,
+   "apps": 8,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-09-20",
+   "updatedAt": "2026-10-17",
    "source": "Junya Itō"
   },
   "伊藤敦樹": {
@@ -71,7 +71,7 @@
    "apps": 7,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-09-20",
+   "updatedAt": "2026-10-17",
    "source": "Ayumu Yokoyama"
   },
   "荻原拓也": {
@@ -199,7 +199,7 @@
    "apps": 8,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-10-17",
+   "updatedAt": "2026-10-20",
    "source": "Kodai Sano (footballer)"
   },
   "坂元達裕": {
@@ -308,10 +308,10 @@
   },
   "水多海斗": {
    "division": "Ligue 1",
-   "apps": 4,
+   "apps": 5,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-10",
+   "updatedAt": "2026-10-18",
    "source": "Kaito Mizuta"
   },
   "菅原由勢": {
@@ -388,10 +388,10 @@
   },
   "中村草太": {
    "division": "Ligue 1",
-   "apps": 6,
+   "apps": 7,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-10",
+   "updatedAt": "2026-10-18",
    "source": "Sōta Nakamura"
   },
   "町田浩樹": {
@@ -436,10 +436,10 @@
   },
   "渡辺剛": {
    "division": "Eredivisie",
-   "apps": 6,
+   "apps": 7,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-14",
+   "updatedAt": "2026-10-17",
    "source": "Tsuyoshi Watanabe"
   },
   "藤田譲瑠チマ": {
