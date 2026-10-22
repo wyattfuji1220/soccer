@@ -1,13 +1,13 @@
 {
  "season": "2026-27",
- "takenAt": "2026-10-21",
+ "takenAt": "2026-10-22",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
    "apps": 6,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-15",
+   "updatedAt": "2026-10-18",
    "source": "Nikki Havenaar"
   },
   "安藤晃希": {
@@ -319,7 +319,7 @@
    "apps": 0,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-11",
+   "updatedAt": "2026-10-19",
    "source": "Yukinari Sugawara"
   },
   "瀬古歩夢": {
@@ -439,7 +439,7 @@
    "apps": 7,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-17",
+   "updatedAt": "2026-10-21",
    "source": "Tsuyoshi Watanabe"
   },
   "藤田譲瑠チマ": {
@@ -524,10 +524,10 @@
   },
   "北野颯太": {
    "division": "Austrian Bundesliga",
-   "apps": 7,
+   "apps": 8,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-10-15",
+   "updatedAt": "2026-10-18",
    "source": "Sōta Kitano"
   },
   "毎熊晟矢": {
@@ -551,15 +551,15 @@
    "apps": 6,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-17",
+   "updatedAt": "2026-10-21",
    "source": "Zion Suzuki"
   },
   "鈴木淳之介": {
    "division": "Danish Superliga",
-   "apps": 9,
+   "apps": 10,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-15",
+   "updatedAt": "2026-10-18",
    "source": "Junnosuke Suzuki"
   },
   "鈴木唯人": {
