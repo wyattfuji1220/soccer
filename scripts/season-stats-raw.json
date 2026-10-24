@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-10-23",
+ "takenAt": "2026-10-24",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -204,10 +204,10 @@
   },
   "坂元達裕": {
    "division": "Premier League",
-   "apps": 2,
+   "apps": 3,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-12",
+   "updatedAt": "2026-10-19",
    "source": "Tatsuhiro Sakamoto"
   },
   "三戸舜介": {
