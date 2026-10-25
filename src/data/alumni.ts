@@ -1702,7 +1702,7 @@ export const alumni: Alumnus[] = [
     article: "小林祐希",
     from: 2016,
     to: null,
-    spells: [{ club: "SCヘーレンフェーン", country: "NED", from: 2016, to: 2019 }, { club: "ワースラント＝ベフェレン", country: "BEL", from: 2019, to: 2020 }, { club: "アル・ホールSC", country: "QAT", from: 2020, to: 2021 }, { club: "ソウルイーランドFC", country: "KOR", from: 2021, to: 2021 }, { club: "江原FC", country: "KOR", from: 2022, to: 2022 }, { club: "タンピネス・ローバースFC", country: "SIN", from: 2026, to: null }],
+    spells: [{ club: "SCヘーレンフェーン", country: "NED", from: 2016, to: 2019 }, { club: "ワースラント＝ベフェレン", country: "BEL", from: 2019, to: 2020 }, { club: "アル・ホールSC", country: "QAT", from: 2020, to: 2021 }, { club: "ソウルイーランドFC", country: "KOR", from: 2021, to: 2021 }, { club: "江原FC", country: "KOR", from: 2022, to: 2022 }, { club: "タンピネス・ローバーズFC", country: "SIN", from: 2026, to: null }],
   },
   {
     nameJa: "松永拓也",
@@ -2990,7 +2990,7 @@ export const alumni: Alumnus[] = [
     article: "タルハニ存哉",
     from: 2024,
     to: null,
-    spells: [{ club: "アルビレックス新潟シンガポール", country: "SIN", from: 2024, to: null }, { club: "タンピネス・ローバースFC", country: "SIN", from: 2025, to: 2025 }],
+    spells: [{ club: "アルビレックス新潟シンガポール", country: "SIN", from: 2024, to: null }, { club: "タンピネス・ローバーズFC", country: "SIN", from: 2025, to: 2025 }],
   },
   {
     nameJa: "デューク・カルロス",
@@ -3116,7 +3116,7 @@ export const alumni: Alumnus[] = [
     article: "ンダウ・ターラ",
     from: 2025,
     to: null,
-    spells: [{ club: "ナッシャー・ライオンズFC", country: "MLT", from: 2025, to: 2025 }, { club: "タンピネス・ローバースFC", country: "SIN", from: 2025, to: 2026 }, { club: "ムアンルーイ・ユナイテッドFC", country: "THA", from: 2026, to: null }],
+    spells: [{ club: "ナッシャー・ライオンズFC", country: "MLT", from: 2025, to: 2025 }, { club: "タンピネス・ローバーズFC", country: "SIN", from: 2025, to: 2026 }, { club: "ムアンルーイ・ユナイテッドFC", country: "THA", from: 2026, to: null }],
   },
   {
     nameJa: "安齋悠人",

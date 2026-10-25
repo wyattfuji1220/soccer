@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-10-24",
+ "takenAt": "2026-10-25",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -52,10 +52,10 @@
   },
   "宇野禅斗": {
    "division": "Bundesliga",
-   "apps": 2,
+   "apps": 3,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-18",
+   "updatedAt": "2026-10-23",
    "source": "Zento Uno"
   },
   "塩貝健人": {
@@ -124,10 +124,10 @@
   },
   "橋岡大樹": {
    "division": "Bundesliga",
-   "apps": 4,
+   "apps": 5,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-19",
+   "updatedAt": "2026-10-23",
    "source": "Daiki Hashioka"
   },
   "原口元気": {
@@ -188,10 +188,10 @@
   },
   "佐野海舟": {
    "division": "Bundesliga",
-   "apps": 6,
+   "apps": 7,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-17",
+   "updatedAt": "2026-10-24",
    "source": "Kaishū Sano"
   },
   "佐野航大": {
@@ -276,10 +276,10 @@
   },
   "松木玖生": {
    "division": "Championship",
-   "apps": 11,
-   "goals": 2,
+   "apps": 12,
+   "goals": 3,
    "european": true,
-   "updatedAt": "2026-10-17",
+   "updatedAt": "2026-10-24",
    "source": "Kuryu Matsuki"
   },
   "上田綺世": {
@@ -319,7 +319,7 @@
    "apps": 0,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-19",
+   "updatedAt": "2026-10-24",
    "source": "Yukinari Sugawara"
   },
   "瀬古歩夢": {
@@ -404,10 +404,10 @@
   },
   "町野修斗": {
    "division": "Bundesliga",
-   "apps": 4,
-   "goals": 1,
+   "apps": 5,
+   "goals": 2,
    "european": true,
-   "updatedAt": "2026-10-18",
+   "updatedAt": "2026-10-23",
    "source": "Shūto Machino"
   },
   "長田澪": {
@@ -452,10 +452,10 @@
   },
   "堂安律": {
    "division": "Bundesliga",
-   "apps": 5,
+   "apps": 6,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-16",
+   "updatedAt": "2026-10-24",
    "source": "Ritsu Dōan"
   },
   "南野拓実": {
@@ -548,10 +548,10 @@
   },
   "鈴木彩艶": {
    "division": "Premier League",
-   "apps": 6,
+   "apps": 7,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-21",
+   "updatedAt": "2026-10-24",
    "source": "Zion Suzuki"
   },
   "鈴木淳之介": {
