@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-10-25",
+ "takenAt": "2026-10-26",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -44,10 +44,10 @@
   },
   "伊藤洋輝": {
    "division": "Bundesliga",
-   "apps": 0,
+   "apps": 1,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-13",
+   "updatedAt": "2026-10-25",
    "source": "Hiroki Itō (footballer, born 1999)"
   },
   "宇野禅斗": {
@@ -84,10 +84,10 @@
   },
   "鎌田大地": {
    "division": "Premier League",
-   "apps": 7,
+   "apps": 8,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-10-18",
+   "updatedAt": "2026-10-25",
    "source": "Daichi Kamada"
   },
   "岩田智輝": {
@@ -172,10 +172,10 @@
   },
   "高岡伶颯": {
    "division": "Challenger Pro League",
-   "apps": 7,
+   "apps": 8,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-16",
+   "updatedAt": "2026-10-25",
    "source": "Rento Takaoka"
   },
   "佐藤龍之介": {
@@ -228,10 +228,10 @@
   },
   "山本理仁": {
    "division": "Bundesliga",
-   "apps": 0,
+   "apps": 1,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-11",
+   "updatedAt": "2026-10-25",
    "source": "Rihito Yamamoto"
   },
   "市原吏音": {
@@ -396,10 +396,10 @@
   },
   "町田浩樹": {
    "division": "Bundesliga",
-   "apps": 4,
+   "apps": 5,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-18",
+   "updatedAt": "2026-10-25",
    "source": "Kōki Machida"
   },
   "町野修斗": {
@@ -412,10 +412,10 @@
   },
   "長田澪": {
    "division": "Bundesliga",
-   "apps": 6,
+   "apps": 7,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-18",
+   "updatedAt": "2026-10-25",
    "source": "Mio Backhaus"
   },
   "田中聡": {
@@ -564,10 +564,10 @@
   },
   "鈴木唯人": {
    "division": "Bundesliga",
-   "apps": 5,
+   "apps": 6,
    "goals": 4,
    "european": true,
-   "updatedAt": "2026-10-15",
+   "updatedAt": "2026-10-25",
    "source": "Yuito Suzuki"
   }
  }
