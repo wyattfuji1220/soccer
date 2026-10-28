@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-10-27",
+ "takenAt": "2026-10-28",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -140,10 +140,10 @@
   },
   "原大智": {
    "division": "2. Bundesliga",
-   "apps": 7,
+   "apps": 9,
    "goals": 3,
    "european": true,
-   "updatedAt": "2026-09-20",
+   "updatedAt": "2026-10-23",
    "source": "Taichi Hara"
   },
   "後藤啓介": {
@@ -444,10 +444,10 @@
   },
   "藤田譲瑠チマ": {
    "division": "2. Bundesliga",
-   "apps": 4,
+   "apps": 7,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-09-20",
+   "updatedAt": "2026-10-23",
    "source": "Joel Chima Fujita"
   },
   "堂安律": {
