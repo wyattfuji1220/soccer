@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-10-30",
+ "takenAt": "2026-10-31",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -188,10 +188,10 @@
   },
   "佐野海舟": {
    "division": "Bundesliga",
-   "apps": 7,
+   "apps": 8,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-24",
+   "updatedAt": "2026-10-30",
    "source": "Kaishū Sano"
   },
   "佐野航大": {
@@ -351,7 +351,7 @@
    "apps": 0,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-04-16",
+   "updatedAt": "2026-10-27",
    "source": "Sōta Kawasaki"
   },
   "前田大然": {
@@ -559,7 +559,7 @@
    "apps": 10,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-18",
+   "updatedAt": "2026-10-29",
    "source": "Junnosuke Suzuki"
   },
   "鈴木唯人": {
