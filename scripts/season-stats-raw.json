@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-10-31",
+ "takenAt": "2026-11-01",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -204,10 +204,10 @@
   },
   "坂元達裕": {
    "division": "Premier League",
-   "apps": 3,
-   "goals": 0,
+   "apps": 5,
+   "goals": 1,
    "european": true,
-   "updatedAt": "2026-10-19",
+   "updatedAt": "2026-10-31",
    "source": "Tatsuhiro Sakamoto"
   },
   "三戸舜介": {
@@ -276,10 +276,10 @@
   },
   "松木玖生": {
    "division": "Championship",
-   "apps": 12,
-   "goals": 3,
+   "apps": 13,
+   "goals": 4,
    "european": true,
-   "updatedAt": "2026-10-24",
+   "updatedAt": "2026-10-31",
    "source": "Kuryu Matsuki"
   },
   "上田綺世": {
@@ -319,7 +319,7 @@
    "apps": 0,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-24",
+   "updatedAt": "2026-10-27",
    "source": "Yukinari Sugawara"
   },
   "瀬古歩夢": {
@@ -412,10 +412,10 @@
   },
   "長田澪": {
    "division": "Bundesliga",
-   "apps": 7,
+   "apps": 8,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-25",
+   "updatedAt": "2026-10-31",
    "source": "Mio Backhaus"
   },
   "田中聡": {
@@ -476,10 +476,10 @@
   },
   "板倉滉": {
    "division": "Bundesliga",
-   "apps": 4,
+   "apps": 5,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-09-19",
+   "updatedAt": "2026-10-31",
    "source": "Kō Itakura"
   },
   "冨安健洋": {
@@ -548,10 +548,10 @@
   },
   "鈴木彩艶": {
    "division": "Premier League",
-   "apps": 7,
+   "apps": 8,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-24",
+   "updatedAt": "2026-10-31",
    "source": "Zion Suzuki"
   },
   "鈴木淳之介": {

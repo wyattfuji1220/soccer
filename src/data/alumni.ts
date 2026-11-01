@@ -3088,7 +3088,7 @@ export const alumni: Alumnus[] = [
     article: "藤井陽也",
     from: 2024,
     to: 2025,
-    spells: [{ club: "KVコルトレイク", country: "BEL", from: 2024, to: 2024 }, { club: "KVコルトレイク", country: "BEL", from: 2024, to: 2025 }],
+    spells: [{ club: "KVコルトレイク", country: "BEL", from: 2024, to: 2024 }, { club: "コルトレイク", country: "BEL", from: 2024, to: 2025 }],
   },
   {
     nameJa: "道脇豊",
