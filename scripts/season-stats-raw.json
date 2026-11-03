@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-11-02",
+ "takenAt": "2026-11-03",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -84,10 +84,10 @@
   },
   "鎌田大地": {
    "division": "Premier League",
-   "apps": 8,
+   "apps": 9,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-10-25",
+   "updatedAt": "2026-10-31",
    "source": "Daichi Kamada"
   },
   "岩田智輝": {
@@ -268,10 +268,10 @@
   },
   "松岡大起": {
    "division": "Slovak First Football League",
-   "apps": 9,
+   "apps": 11,
    "goals": 2,
    "european": true,
-   "updatedAt": "2026-10-17",
+   "updatedAt": "2026-10-31",
    "source": "Daiki Matsuoka"
   },
   "松木玖生": {
@@ -436,10 +436,10 @@
   },
   "渡辺剛": {
    "division": "Eredivisie",
-   "apps": 8,
+   "apps": 9,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-25",
+   "updatedAt": "2026-10-31",
    "source": "Tsuyoshi Watanabe"
   },
   "藤田譲瑠チマ": {
