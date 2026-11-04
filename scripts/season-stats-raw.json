@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-11-03",
+ "takenAt": "2026-11-04",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -111,7 +111,7 @@
    "apps": 0,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-24",
+   "updatedAt": "2026-11-03",
    "source": "Reo Hatate"
   },
   "久保建英": {
@@ -196,10 +196,10 @@
   },
   "佐野航大": {
    "division": "Eredivisie",
-   "apps": 9,
-   "goals": 1,
+   "apps": 10,
+   "goals": 2,
    "european": true,
-   "updatedAt": "2026-10-25",
+   "updatedAt": "2026-10-31",
    "source": "Kodai Sano (footballer)"
   },
   "坂元達裕": {
@@ -276,10 +276,10 @@
   },
   "松木玖生": {
    "division": "Championship",
-   "apps": 13,
+   "apps": 14,
    "goals": 4,
    "european": true,
-   "updatedAt": "2026-10-31",
+   "updatedAt": "2026-11-03",
    "source": "Kuryu Matsuki"
   },
   "上田綺世": {
@@ -439,7 +439,7 @@
    "apps": 9,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-31",
+   "updatedAt": "2026-11-03",
    "source": "Tsuyoshi Watanabe"
   },
   "藤田譲瑠チマ": {
@@ -551,7 +551,7 @@
    "apps": 8,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-31",
+   "updatedAt": "2026-11-03",
    "source": "Zion Suzuki"
   },
   "鈴木淳之介": {
