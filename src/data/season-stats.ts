@@ -11,7 +11,7 @@ import type { SeasonStat } from "@/lib/types";
  * まだ今季の行が書かれていないということで、0試合という意味ではない。
  */
 export const season = "2026-27";
-export const seasonTakenAt = "2026-11-04";
+export const seasonTakenAt = "2026-11-05";
 
 export const seasonStats: SeasonStat[] = [
   { slug: "kuryu-matsuki", apps: 14, goals: 4, division: "Championship", updatedAt: "2026-11-03", source: "Kuryu Matsuki" },
@@ -20,7 +20,7 @@ export const seasonStats: SeasonStat[] = [
   { slug: "ayase-ueda", apps: 4, goals: 3, division: "Eredivisie", updatedAt: "2026-10-13", source: "Ayase Ueda" },
   { slug: "daiki-matsuoka", apps: 11, goals: 2, division: "Slovak First Football League", updatedAt: "2026-10-31", source: "Daiki Matsuoka" },
   { slug: "ryuya-morishita", apps: 11, goals: 2, division: "Championship", updatedAt: "2026-10-17", source: "Ryōya Morishita" },
-  { slug: "kodai-sano", apps: 10, goals: 2, division: "Eredivisie", updatedAt: "2026-10-31", source: "Kodai Sano (footballer)" },
+  { slug: "kodai-sano", apps: 10, goals: 2, division: "Eredivisie", updatedAt: "2026-11-04", source: "Kodai Sano (footballer)" },
   { slug: "junya-ito", apps: 9, goals: 2, division: "Belgian Pro League", updatedAt: "2026-10-25", source: "Junya Itō" },
   { slug: "shuto-machino", apps: 6, goals: 2, division: "Bundesliga", updatedAt: "2026-10-31", source: "Shūto Machino" },
   { slug: "atsuki-ito", apps: 4, goals: 2, division: "EFL Championship", updatedAt: "2026-10-13", source: "Atsuki Itō" },
