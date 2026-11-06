@@ -11,7 +11,7 @@ import type { SeasonStat } from "@/lib/types";
  * まだ今季の行が書かれていないということで、0試合という意味ではない。
  */
 export const season = "2026-27";
-export const seasonTakenAt = "2026-11-05";
+export const seasonTakenAt = "2026-11-06";
 
 export const seasonStats: SeasonStat[] = [
   { slug: "kuryu-matsuki", apps: 14, goals: 4, division: "Championship", updatedAt: "2026-11-03", source: "Kuryu Matsuki" },
@@ -25,7 +25,7 @@ export const seasonStats: SeasonStat[] = [
   { slug: "shuto-machino", apps: 6, goals: 2, division: "Bundesliga", updatedAt: "2026-10-31", source: "Shūto Machino" },
   { slug: "atsuki-ito", apps: 4, goals: 2, division: "EFL Championship", updatedAt: "2026-10-13", source: "Atsuki Itō" },
   { slug: "koji-miyoshi", apps: 4, goals: 2, division: null, updatedAt: "2026-08-28", source: "Kōji Miyoshi" },
-  { slug: "daichi-kamada", apps: 9, goals: 1, division: "Premier League", updatedAt: "2026-10-31", source: "Daichi Kamada" },
+  { slug: "daichi-kamada", apps: 9, goals: 1, division: "Premier League", updatedAt: "2026-11-05", source: "Daichi Kamada" },
   { slug: "ayumu-yokoyama", apps: 8, goals: 1, division: "Belgian Pro League", updatedAt: "2026-10-25", source: "Ayumu Yokoyama" },
   { slug: "sota-kitano", apps: 8, goals: 1, division: "Austrian Bundesliga", updatedAt: "2026-10-18", source: "Sōta Kitano" },
   { slug: "daizen-maeda", apps: 7, goals: 1, division: "Premier League", updatedAt: "2026-10-17", source: "Daizen Maeda" },
