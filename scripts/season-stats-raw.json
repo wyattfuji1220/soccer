@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-11-06",
+ "takenAt": "2026-11-07",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -44,10 +44,10 @@
   },
   "伊藤洋輝": {
    "division": "Bundesliga",
-   "apps": 1,
+   "apps": 2,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-28",
+   "updatedAt": "2026-11-07",
    "source": "Hiroki Itō (footballer, born 1999)"
   },
   "宇野禅斗": {

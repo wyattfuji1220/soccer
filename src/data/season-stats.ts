@@ -11,7 +11,7 @@ import type { SeasonStat } from "@/lib/types";
  * まだ今季の行が書かれていないということで、0試合という意味ではない。
  */
 export const season = "2026-27";
-export const seasonTakenAt = "2026-11-06";
+export const seasonTakenAt = "2026-11-07";
 
 export const seasonStats: SeasonStat[] = [
   { slug: "kuryu-matsuki", apps: 14, goals: 4, division: "Championship", updatedAt: "2026-11-03", source: "Kuryu Matsuki" },
@@ -71,8 +71,8 @@ export const seasonStats: SeasonStat[] = [
   { slug: "gaku-nawata", apps: 3, goals: 0, division: "J1 League", updatedAt: "2026-10-11", source: "Gaku Nawata" },
   { slug: "satoshi-tanaka", apps: 3, goals: 0, division: "Bundesliga", updatedAt: "2026-09-20", source: "Satoshi Tanaka" },
   { slug: "takehiro-tomiyasu", apps: 3, goals: 0, division: "Premier League", updatedAt: "2026-09-20", source: "Takehiro Tomiyasu" },
+  { slug: "hiroki-ito", apps: 2, goals: 0, division: "Bundesliga", updatedAt: "2026-11-07", source: "Hiroki Itō (footballer, born 1999)" },
   { slug: "yuki-ohashi", apps: 2, goals: 0, division: "Championship", updatedAt: "2026-08-25", source: "Yūki Ōhashi" },
-  { slug: "hiroki-ito", apps: 1, goals: 0, division: "Bundesliga", updatedAt: "2026-10-28", source: "Hiroki Itō (footballer, born 1999)" },
   { slug: "rihito-yamamoto", apps: 1, goals: 0, division: "Bundesliga", updatedAt: "2026-10-25", source: "Rihito Yamamoto" },
   { slug: "rion-ichihara", apps: 1, goals: 0, division: "Eredivisie", updatedAt: "2026-10-22", source: "Rion Ichihara" },
   { slug: "takumi-minamino", apps: 1, goals: 0, division: "Ligue 1", updatedAt: "2026-10-18", source: "Takumi Minamino" },
