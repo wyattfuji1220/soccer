@@ -3182,6 +3182,13 @@ export const alumni: Alumnus[] = [
     spells: [{ club: "UDオリヴェイレンセ", country: "POR", from: 2025, to: 2025 }],
   },
   {
+    nameJa: "青垣翔",
+    article: "青垣翔",
+    from: 2025,
+    to: null,
+    spells: [{ club: "Rēzekne FA", country: "LAT", from: 2025, to: 2025 }, { club: "SKスーパー・ノヴァ", country: "LAT", from: 2026, to: 2026 }, { club: "Leevon PPK", country: "LAT", from: 2026, to: null }],
+  },
+  {
     nameJa: "大畑歩夢",
     article: "大畑歩夢",
     from: 2025,
