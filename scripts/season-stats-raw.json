@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-11-08",
+ "takenAt": "2026-11-09",
  "players": {
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
@@ -116,10 +116,10 @@
   },
   "久保建英": {
    "division": "La Liga",
-   "apps": 7,
+   "apps": 8,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-11-01",
+   "updatedAt": "2026-11-08",
    "source": "Takefusa Kubo"
   },
   "橋岡大樹": {
@@ -548,10 +548,10 @@
   },
   "鈴木彩艶": {
    "division": "Premier League",
-   "apps": 8,
+   "apps": 9,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-11-03",
+   "updatedAt": "2026-11-08",
    "source": "Zion Suzuki"
   },
   "鈴木淳之介": {
