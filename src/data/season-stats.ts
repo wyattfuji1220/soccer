@@ -11,7 +11,7 @@ import type { SeasonStat } from "@/lib/types";
  * まだ今季の行が書かれていないということで、0試合という意味ではない。
  */
 export const season = "2026-27";
-export const seasonTakenAt = "2026-11-12";
+export const seasonTakenAt = "2026-11-13";
 
 export const seasonStats: SeasonStat[] = [
   { slug: "kuryu-matsuki", apps: 15, goals: 4, division: "Championship", updatedAt: "2026-11-07", source: "Kuryu Matsuki" },
@@ -34,8 +34,8 @@ export const seasonStats: SeasonStat[] = [
   { slug: "keisuke-goto", apps: 7, goals: 1, division: "Bundesliga", updatedAt: "2026-10-31", source: "Keisuke Gotō" },
   { slug: "nelson-yuichiro-ishiwatari", apps: 7, goals: 1, division: "Belgian Pro League", updatedAt: "2026-10-11", source: "Nelson Ishiwatari" },
   { slug: "ryotaro-araki", apps: 6, goals: 1, division: "Belgian Pro League", updatedAt: "2026-10-11", source: "Ryōtarō Araki" },
+  { slug: "tatsuhiro-sakamoto", apps: 6, goals: 1, division: "Premier League", updatedAt: "2026-11-06", source: "Tatsuhiro Sakamoto" },
   { slug: "koki-ando", apps: 5, goals: 1, division: "Belgian Division 2", updatedAt: "2026-10-11", source: "Koki Ando (footballer)" },
-  { slug: "tatsuhiro-sakamoto", apps: 5, goals: 1, division: "Premier League", updatedAt: "2026-10-31", source: "Tatsuhiro Sakamoto" },
   { slug: "yu-hirakawa", apps: 5, goals: 1, division: "EFL Championship", updatedAt: "2026-09-05", source: "Yū Hirakawa" },
   { slug: "yuki-kobayashi", apps: 5, goals: 1, division: "Ekstraklasa", updatedAt: "2026-09-03", source: "Yuki Kobayashi (footballer, born 2000)" },
   { slug: "ao-tanaka", apps: 3, goals: 1, division: "Premier League", updatedAt: "2026-09-14", source: "Ao Tanaka" },
