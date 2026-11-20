@@ -1,5 +1,5 @@
 {
- "takenAt": "2026-11-19",
+ "takenAt": "2026-11-20",
  "players": {
   "shinta-appelkamp": {
    "nameJa": "アペルカンプ真大",
@@ -10,6 +10,11 @@
    "nameJa": "チェイス・アンリ",
    "club": "レッドブル・ザルツブルク",
    "league": "austrian-bundesliga"
+  },
+  "tobias-storm": {
+   "nameJa": "トビアス・ストーム",
+   "club": "NECナイメヘン",
+   "league": "eredivisie"
   },
   "nikki-havenaar": {
    "nameJa": "ハーフナー・ニッキ",

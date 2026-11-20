@@ -11,6 +11,16 @@ import type { Transfer } from "@/lib/types";
  */
 export const transfers: Transfer[] = [
   {
+    date: "2026-11-20",
+    slug: "tobias-storm",
+    nameJa: "トビアス・ストーム",
+    kind: "arrived",
+    fromClub: null,
+    toClub: "NECナイメヘン",
+    fromLeague: null,
+    toLeague: "eredivisie",
+  },
+  {
     date: "2026-09-25",
     slug: "leo-brian-kokubo",
     nameJa: "小久保玲央ブライアン",

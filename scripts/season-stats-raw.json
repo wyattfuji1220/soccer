@@ -1,7 +1,15 @@
 {
  "season": "2026-27",
- "takenAt": "2026-11-19",
+ "takenAt": "2026-11-20",
  "players": {
+  "トビアス・ストーム": {
+   "division": "Eredivisie",
+   "apps": 9,
+   "goals": 0,
+   "european": true,
+   "updatedAt": "2026-10-25",
+   "source": "Tobias Storm"
+  },
   "ハーフナー・ニッキ": {
    "division": "Belgian Pro League",
    "apps": 7,

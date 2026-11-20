@@ -7,7 +7,7 @@ import type { Club } from "@/lib/types";
  * リダイレクト解決で正式な記事名に寄せている。
  * 現所属選手がいる、または過去に2人以上が在籍したクラブだけを収録している。
  *
- * 最終取得: 2026-11-19
+ * 最終取得: 2026-11-20
  */
 export const clubs: Club[] = [
   {
@@ -228,6 +228,18 @@ export const clubs: Club[] = [
       { nameJa: "高岡伶颯", years: "2025-2026", loan: false },
       { nameJa: "菅原由勢", years: "2024-", loan: false },
       { nameJa: "南野拓実", years: "2021", loan: true },
+    ],
+  },
+  {
+    slug: "nec-nijmegen",
+    name: "NECナイメヘン",
+    nameEn: "NEC Nijmegen",
+    article: "NECナイメヘン",
+    countries: ["NED"],
+    currentPlayers: ["トビアス・ストーム"],
+    pastPlayers: [
+      { nameJa: "塩貝健人", years: "2024-2026", loan: false },
+      { nameJa: "佐野航大", years: "2023-2026", loan: false },
     ],
   },
   {
@@ -1209,18 +1221,6 @@ export const clubs: Club[] = [
     pastPlayers: [
       { nameJa: "浦田樹", years: "2017", loan: true },
       { nameJa: "町野修斗", years: "2019", loan: true },
-    ],
-  },
-  {
-    slug: "nec-nijmegen",
-    name: "NECナイメヘン",
-    nameEn: "NEC Nijmegen",
-    article: "NECナイメヘン",
-    countries: ["NED"],
-    currentPlayers: [],
-    pastPlayers: [
-      { nameJa: "塩貝健人", years: "2024-2026", loan: false },
-      { nameJa: "佐野航大", years: "2023-2026", loan: false },
     ],
   },
   {
