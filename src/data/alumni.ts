@@ -3273,6 +3273,13 @@ export const alumni: Alumnus[] = [
     spells: [{ club: "アイントラハト・フランクフルト", country: "GER", from: 2026, to: null }],
   },
   {
+    nameJa: "神田泰斗",
+    article: "神田泰斗",
+    from: 2026,
+    to: null,
+    spells: [{ club: "RBライプツィヒ", country: "GER", from: 2026, to: null }],
+  },
+  {
     nameJa: "相澤ピーターコアミ",
     article: "相澤ピーターコアミ",
     from: 2026,

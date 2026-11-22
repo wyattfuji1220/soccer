@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-11-21",
+ "takenAt": "2026-11-22",
  "players": {
   "トビアス・ストーム": {
    "division": "Eredivisie",
@@ -124,10 +124,10 @@
   },
   "久保建英": {
    "division": "La Liga",
-   "apps": 8,
+   "apps": 9,
    "goals": 1,
    "european": true,
-   "updatedAt": "2026-11-08",
+   "updatedAt": "2026-11-22",
    "source": "Takefusa Kubo"
   },
   "橋岡大樹": {
@@ -212,10 +212,10 @@
   },
   "坂元達裕": {
    "division": "Premier League",
-   "apps": 6,
-   "goals": 1,
+   "apps": 7,
+   "goals": 2,
    "european": true,
-   "updatedAt": "2026-11-06",
+   "updatedAt": "2026-11-21",
    "source": "Tatsuhiro Sakamoto"
   },
   "三戸舜介": {
@@ -468,10 +468,10 @@
   },
   "南野拓実": {
    "division": "Ligue 1",
-   "apps": 1,
+   "apps": 4,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-10-18",
+   "updatedAt": "2026-11-21",
    "source": "Takumi Minamino"
   },
   "畑大雅": {
@@ -556,10 +556,10 @@
   },
   "鈴木彩艶": {
    "division": "Premier League",
-   "apps": 9,
+   "apps": 10,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-11-08",
+   "updatedAt": "2026-11-21",
    "source": "Zion Suzuki"
   },
   "鈴木淳之介": {
