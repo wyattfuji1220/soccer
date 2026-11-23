@@ -1,5 +1,5 @@
 {
- "takenAt": "2026-11-22",
+ "takenAt": "2026-11-23",
  "players": {
   "shinta-appelkamp": {
    "nameJa": "アペルカンプ真大",
@@ -25,6 +25,11 @@
    "nameJa": "ポープ・ウィリアム",
    "club": "KベールスホットVA",
    "league": "challenger-pro-league"
+  },
+  "luke-rawlings": {
+   "nameJa": "ローリングス・ルーク",
+   "club": "ウルヴァーハンプトン・ワンダラーズFC",
+   "league": "championship"
   },
   "koki-ando": {
    "nameJa": "安藤晃希",

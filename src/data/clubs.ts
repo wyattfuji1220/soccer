@@ -7,7 +7,7 @@ import type { Club } from "@/lib/types";
  * リダイレクト解決で正式な記事名に寄せている。
  * 現所属選手がいる、または過去に2人以上が在籍したクラブだけを収録している。
  *
- * 最終取得: 2026-11-22
+ * 最終取得: 2026-11-23
  */
 export const clubs: Club[] = [
   {
@@ -384,6 +384,17 @@ export const clubs: Club[] = [
     article: "SpVggグロイター・フュルト",
     countries: ["GER"],
     currentPlayers: ["アペルカンプ真大"],
+    pastPlayers: [
+
+    ],
+  },
+  {
+    slug: "wolverhampton-wanderers",
+    name: "ウルヴァーハンプトン・ワンダラーズFC",
+    nameEn: "Wolverhampton Wanderers F.C.",
+    article: "ウルヴァーハンプトン・ワンダラーズFC",
+    countries: ["ENG"],
+    currentPlayers: ["ローリングス・ルーク"],
     pastPlayers: [
 
     ],
