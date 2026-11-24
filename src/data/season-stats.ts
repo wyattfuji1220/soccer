@@ -11,7 +11,7 @@ import type { SeasonStat } from "@/lib/types";
  * まだ今季の行が書かれていないということで、0試合という意味ではない。
  */
 export const season = "2026-27";
-export const seasonTakenAt = "2026-11-23";
+export const seasonTakenAt = "2026-11-24";
 
 export const seasonStats: SeasonStat[] = [
   { slug: "kuryu-matsuki", apps: 16, goals: 4, division: "Championship", updatedAt: "2026-11-21", source: "Kuryu Matsuki" },
@@ -43,7 +43,7 @@ export const seasonStats: SeasonStat[] = [
   { slug: "koki-saito", apps: 2, goals: 1, division: "EFL Championship", updatedAt: "2026-08-29", source: "Kōki Saitō (footballer)" },
   { slug: "shinnosuke-fukuda", apps: 13, goals: 0, division: "J1 100 Year Vision League", updatedAt: "2026-08-29", source: "Shinnosuke Fukuda" },
   { slug: "junnosuke-suzuki", apps: 10, goals: 0, division: "Danish Superliga", updatedAt: "2026-10-29", source: "Junnosuke Suzuki" },
-  { slug: "zion-suzuki", apps: 10, goals: 0, division: "Premier League", updatedAt: "2026-11-21", source: "Zion Suzuki" },
+  { slug: "zion-suzuki", apps: 10, goals: 0, division: "Premier League", updatedAt: "2026-11-24", source: "Zion Suzuki" },
   { slug: "keigo-tsunemoto", apps: 9, goals: 0, division: "Swiss Super League", updatedAt: "2026-10-02", source: "Keigo Tsunemoto" },
   { slug: "tobias-storm", apps: 9, goals: 0, division: "Eredivisie", updatedAt: "2026-10-25", source: "Tobias Storm" },
   { slug: "tomoki-iwata", apps: 9, goals: 0, division: "Championship", updatedAt: "2026-10-10", source: "Tomoki Iwata" },
@@ -80,7 +80,7 @@ export const seasonStats: SeasonStat[] = [
   { slug: "hidemasa-morita", apps: 0, goals: 0, division: "Premier League", updatedAt: "2026-08-25", source: "Hidemasa Morita" },
   { slug: "kazunari-kita", apps: 0, goals: 0, division: "Segunda División", updatedAt: "2026-05-24", source: "Kazunari Kita" },
   { slug: "kota-takai", apps: 0, goals: 0, division: "Belgian Pro League", updatedAt: "2026-04-25", source: "Kōta Takai" },
-  { slug: "reo-hatate", apps: 0, goals: 0, division: null, updatedAt: "2026-11-07", source: "Reo Hatate" },
+  { slug: "reo-hatate", apps: 0, goals: 0, division: null, updatedAt: "2026-11-22", source: "Reo Hatate" },
   { slug: "ryunosuke-sato", apps: 0, goals: 0, division: "La Liga", updatedAt: "2026-03-06", source: "Ryūnosuke Satō" },
   { slug: "shiou-fukuda", apps: 0, goals: 0, division: "2. Bundesliga", updatedAt: "2026-05-17", source: "Shiō Fukuda" },
   { slug: "sota-kawasaki", apps: 0, goals: 0, division: "Bundesliga", updatedAt: "2026-10-27", source: "Sōta Kawasaki" },
