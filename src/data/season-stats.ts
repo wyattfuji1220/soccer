@@ -11,10 +11,10 @@ import type { SeasonStat } from "@/lib/types";
  * まだ今季の行が書かれていないということで、0試合という意味ではない。
  */
 export const season = "2026-27";
-export const seasonTakenAt = "2026-11-24";
+export const seasonTakenAt = "2026-11-25";
 
 export const seasonStats: SeasonStat[] = [
-  { slug: "kuryu-matsuki", apps: 16, goals: 4, division: "Championship", updatedAt: "2026-11-21", source: "Kuryu Matsuki" },
+  { slug: "kuryu-matsuki", apps: 17, goals: 4, division: "Championship", updatedAt: "2026-11-24", source: "Kuryu Matsuki" },
   { slug: "yuito-suzuki", apps: 7, goals: 4, division: "Bundesliga", updatedAt: "2026-10-31", source: "Yuito Suzuki" },
   { slug: "taichi-hara", apps: 9, goals: 3, division: "2. Bundesliga", updatedAt: "2026-10-23", source: "Taichi Hara" },
   { slug: "ayase-ueda", apps: 4, goals: 3, division: "Eredivisie", updatedAt: "2026-10-13", source: "Ayase Ueda" },
