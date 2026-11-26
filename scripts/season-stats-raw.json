@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-11-25",
+ "takenAt": "2026-11-26",
  "players": {
   "トビアス・ストーム": {
    "division": "Eredivisie",
@@ -55,7 +55,7 @@
    "apps": 2,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-11-07",
+   "updatedAt": "2026-11-25",
    "source": "Hiroki Itō (footballer, born 1999)"
   },
   "宇野禅斗": {
@@ -119,7 +119,7 @@
    "apps": 0,
    "goals": 0,
    "european": true,
-   "updatedAt": "2026-11-22",
+   "updatedAt": "2026-11-25",
    "source": "Reo Hatate"
   },
   "久保建英": {
@@ -295,7 +295,7 @@
    "apps": 4,
    "goals": 3,
    "european": true,
-   "updatedAt": "2026-10-13",
+   "updatedAt": "2026-11-25",
    "source": "Ayase Ueda"
   },
   "常本佳吾": {

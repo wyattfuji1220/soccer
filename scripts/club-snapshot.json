@@ -1,5 +1,5 @@
 {
- "takenAt": "2026-11-25",
+ "takenAt": "2026-11-26",
  "players": {
   "shinta-appelkamp": {
    "nameJa": "アペルカンプ真大",
@@ -60,6 +60,11 @@
    "nameJa": "伊藤洋輝",
    "club": "FCバイエルン・ミュンヘン",
    "league": "bundesliga"
+  },
+  "ryotaro-ito": {
+   "nameJa": "伊藤涼太郎",
+   "club": "レアル・バリャドリード",
+   "league": "segunda-division"
   },
   "zento-uno": {
    "nameJa": "宇野禅斗",

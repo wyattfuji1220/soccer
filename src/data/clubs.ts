@@ -7,7 +7,7 @@ import type { Club } from "@/lib/types";
  * リダイレクト解決で正式な記事名に寄せている。
  * 現所属選手がいる、または過去に2人以上が在籍したクラブだけを収録している。
  *
- * 最終取得: 2026-11-25
+ * 最終取得: 2026-11-26
  */
 export const clubs: Club[] = [
   {
@@ -18,6 +18,7 @@ export const clubs: Club[] = [
     countries: ["BEL"],
     currentPlayers: ["荒木遼太郎", "高井幸大", "小久保玲央ブライアン", "松澤海斗", "新川志音", "石渡ネルソン", "谷口彰悟", "畑大雅"],
     pastPlayers: [
+      { nameJa: "伊藤涼太郎", years: "2023-2026", loan: false },
       { nameJa: "遠藤航", years: "2018-2020", loan: false },
       { nameJa: "鎌田大地", years: "2018-2019", loan: true },
       { nameJa: "橋岡大樹", years: "2021", loan: true },
@@ -406,6 +407,17 @@ export const clubs: Club[] = [
     article: "ボルトン・ワンダラーズFC",
     countries: ["ENG"],
     currentPlayers: ["伊藤敦樹"],
+    pastPlayers: [
+
+    ],
+  },
+  {
+    slug: "real-valladolid",
+    name: "レアル・バリャドリード",
+    nameEn: "Real Valladolid",
+    article: "レアル・バリャドリード",
+    countries: ["ESP"],
+    currentPlayers: ["伊藤涼太郎"],
     pastPlayers: [
 
     ],
@@ -857,6 +869,23 @@ export const clubs: Club[] = [
     ],
   },
   {
+    slug: "urawa-red-diamonds",
+    name: "浦和レッドダイヤモンズ",
+    nameEn: "Urawa Red Diamonds",
+    article: "浦和レッドダイヤモンズ",
+    countries: ["JPN"],
+    currentPlayers: [],
+    pastPlayers: [
+      { nameJa: "伊藤敦樹", years: "2021-2024", loan: false },
+      { nameJa: "伊藤涼太郎", years: "2016-2021", loan: false },
+      { nameJa: "遠藤航", years: "2016-2018", loan: false },
+      { nameJa: "荻原拓也", years: "2018-", loan: false },
+      { nameJa: "橋岡大樹", years: "2018-2021", loan: false },
+      { nameJa: "原口元気", years: "2009-2014", loan: false },
+      { nameJa: "鈴木彩艶", years: "2021-2024", loan: false },
+    ],
+  },
+  {
     slug: "cerezo-osaka",
     name: "セレッソ大阪",
     nameEn: "Cerezo Osaka",
@@ -890,19 +919,19 @@ export const clubs: Club[] = [
     ],
   },
   {
-    slug: "urawa-red-diamonds",
-    name: "浦和レッドダイヤモンズ",
-    nameEn: "Urawa Red Diamonds",
-    article: "浦和レッドダイヤモンズ",
+    slug: "mito-hollyhock",
+    name: "水戸ホーリーホック",
+    nameEn: "Mito HollyHock",
+    article: "水戸ホーリーホック",
     countries: ["JPN"],
     currentPlayers: [],
     pastPlayers: [
-      { nameJa: "伊藤敦樹", years: "2021-2024", loan: false },
-      { nameJa: "遠藤航", years: "2016-2018", loan: false },
-      { nameJa: "荻原拓也", years: "2018-", loan: false },
-      { nameJa: "橋岡大樹", years: "2018-2021", loan: false },
-      { nameJa: "原口元気", years: "2009-2014", loan: false },
-      { nameJa: "鈴木彩艶", years: "2021-2024", loan: false },
+      { nameJa: "安藤晃希", years: "2026", loan: false },
+      { nameJa: "伊藤涼太郎", years: "2017-2018", loan: true },
+      { nameJa: "永長鷹虎", years: "2023", loan: true },
+      { nameJa: "松田隼風", years: "2022-2025", loan: false },
+      { nameJa: "前田大然", years: "2017", loan: true },
+      { nameJa: "齋藤俊輔", years: "2024-2025", loan: false },
     ],
   },
   {
@@ -934,21 +963,6 @@ export const clubs: Club[] = [
       { nameJa: "森下龍矢", years: "2021-2024", loan: false },
       { nameJa: "菅原由勢", years: "2018-2020", loan: false },
       { nameJa: "倍井謙", years: "2023-", loan: false },
-    ],
-  },
-  {
-    slug: "mito-hollyhock",
-    name: "水戸ホーリーホック",
-    nameEn: "Mito HollyHock",
-    article: "水戸ホーリーホック",
-    countries: ["JPN"],
-    currentPlayers: [],
-    pastPlayers: [
-      { nameJa: "安藤晃希", years: "2026", loan: false },
-      { nameJa: "永長鷹虎", years: "2023", loan: true },
-      { nameJa: "松田隼風", years: "2022-2025", loan: false },
-      { nameJa: "前田大然", years: "2017", loan: true },
-      { nameJa: "齋藤俊輔", years: "2024-2025", loan: false },
     ],
   },
   {
@@ -1039,6 +1053,20 @@ export const clubs: Club[] = [
     ],
   },
   {
+    slug: "oita-trinita",
+    name: "大分トリニータ",
+    nameEn: "Oita Trinita",
+    article: "大分トリニータ",
+    countries: ["JPN"],
+    currentPlayers: [],
+    pastPlayers: [
+      { nameJa: "ポープ・ウィリアム", years: "2019", loan: true },
+      { nameJa: "安藤智哉", years: "2023-2024", loan: false },
+      { nameJa: "伊藤涼太郎", years: "2019", loan: true },
+      { nameJa: "岩田智輝", years: "2016-2020", loan: false },
+    ],
+  },
+  {
     slug: "fagiano-okayama",
     name: "ファジアーノ岡山FC",
     nameEn: "Fagiano Okayama",
@@ -1095,16 +1123,17 @@ export const clubs: Club[] = [
     ],
   },
   {
-    slug: "oita-trinita",
-    name: "大分トリニータ",
-    nameEn: "Oita Trinita",
-    article: "大分トリニータ",
+    slug: "albirex-niigata",
+    name: "アルビレックス新潟",
+    nameEn: "Albirex Niigata",
+    article: "アルビレックス新潟",
     countries: ["JPN"],
     currentPlayers: [],
     pastPlayers: [
-      { nameJa: "ポープ・ウィリアム", years: "2019", loan: true },
-      { nameJa: "安藤智哉", years: "2023-2024", loan: false },
-      { nameJa: "岩田智輝", years: "2016-2020", loan: false },
+      { nameJa: "伊藤涼太郎", years: "2022-2023", loan: false },
+      { nameJa: "荻原拓也", years: "2020", loan: true },
+      { nameJa: "三戸舜介", years: "2020-2023", loan: false },
+      { nameJa: "秋山裕紀", years: "2019-", loan: false },
     ],
   },
   {
@@ -1157,19 +1186,6 @@ export const clubs: Club[] = [
       { nameJa: "宇野禅斗", years: "2024", loan: true },
       { nameJa: "松岡大起", years: "2021-2023", loan: false },
       { nameJa: "鈴木唯人", years: "2020-2023", loan: false },
-    ],
-  },
-  {
-    slug: "albirex-niigata",
-    name: "アルビレックス新潟",
-    nameEn: "Albirex Niigata",
-    article: "アルビレックス新潟",
-    countries: ["JPN"],
-    currentPlayers: [],
-    pastPlayers: [
-      { nameJa: "荻原拓也", years: "2020", loan: true },
-      { nameJa: "三戸舜介", years: "2020-2023", loan: false },
-      { nameJa: "秋山裕紀", years: "2019-", loan: false },
     ],
   },
   {
