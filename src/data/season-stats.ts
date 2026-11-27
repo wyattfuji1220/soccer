@@ -11,7 +11,7 @@ import type { SeasonStat } from "@/lib/types";
  * まだ今季の行が書かれていないということで、0試合という意味ではない。
  */
 export const season = "2026-27";
-export const seasonTakenAt = "2026-11-26";
+export const seasonTakenAt = "2026-11-27";
 
 export const seasonStats: SeasonStat[] = [
   { slug: "kuryu-matsuki", apps: 17, goals: 4, division: "Championship", updatedAt: "2026-11-24", source: "Kuryu Matsuki" },
@@ -68,7 +68,7 @@ export const seasonStats: SeasonStat[] = [
   { slug: "shunsuke-mito", apps: 5, goals: 0, division: "Eredivisie", updatedAt: "2026-09-04", source: "Shunsuke Mito" },
   { slug: "tomoya-ando", apps: 5, goals: 0, division: "2. Bundesliga", updatedAt: "2026-09-20", source: "Tomoya Ando" },
   { slug: "genki-haraguchi", apps: 4, goals: 0, division: "Challenger Pro League", updatedAt: "2026-09-06", source: "Genki Haraguchi" },
-  { slug: "takumi-minamino", apps: 4, goals: 0, division: "Ligue 1", updatedAt: "2026-11-21", source: "Takumi Minamino" },
+  { slug: "takumi-minamino", apps: 4, goals: 0, division: "Ligue 1", updatedAt: "2026-11-26", source: "Takumi Minamino" },
   { slug: "zento-uno", apps: 4, goals: 0, division: "Bundesliga", updatedAt: "2026-10-31", source: "Zento Uno" },
   { slug: "gaku-nawata", apps: 3, goals: 0, division: "J1 League", updatedAt: "2026-10-11", source: "Gaku Nawata" },
   { slug: "satoshi-tanaka", apps: 3, goals: 0, division: "Bundesliga", updatedAt: "2026-09-20", source: "Satoshi Tanaka" },
