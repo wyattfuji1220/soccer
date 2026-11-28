@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "takenAt": "2026-11-27",
+ "takenAt": "2026-11-28",
  "players": {
   "トビアス・ストーム": {
    "division": "Eredivisie",
@@ -284,10 +284,10 @@
   },
   "松木玖生": {
    "division": "Championship",
-   "apps": 17,
+   "apps": 18,
    "goals": 4,
    "european": true,
-   "updatedAt": "2026-11-24",
+   "updatedAt": "2026-11-27",
    "source": "Kuryu Matsuki"
   },
   "上田綺世": {
